@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
+  <div id="app" class="">
       <Header/>
       <Home/>
       <About/>
       <Skills/>
       <Projects/>
       <Companies/>
-      <Resume/>
+      <Timeline/>
       <Contact/>
       <Footer/>
   </div>
@@ -20,7 +20,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Companies from "./components/Companies";
-import Resume from "./components/Resume";
+import Timeline from "./components/Timeline";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 export default {
@@ -28,7 +28,7 @@ export default {
   components: {
       Footer,
       Contact,
-      Resume,
+      Timeline,
       Companies,
       Skills,
       Projects,
@@ -41,5 +41,11 @@ export default {
 </script>
 
 <style lang="scss">
+    html, body, #app {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 10px;
+    }
 
 </style>
