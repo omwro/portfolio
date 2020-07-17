@@ -1,5 +1,5 @@
 <template>
-    <div id="projects">
+    <div id="projects" class="section">
         <h1>Projects</h1>
         <div class="content">
             <img src="../assets/projects/project_corendon.webp" class="horizontal" alt="corendon">
@@ -19,7 +19,7 @@
     @import "src/styles/variables";
 
     #projects {
-        background-color: $light4;
+        background-color: $light0;
 
         .content {
             flex-direction: row;

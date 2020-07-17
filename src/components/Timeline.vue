@@ -1,6 +1,6 @@
 <template>
-    <div id="timeline">
-        <h1>Resume</h1>
+    <div id="timeline" class="section">
+        <h1>Timeline</h1>
         <div class="content">
             <div id="git"></div>
             <div id="timeline-table">
@@ -69,27 +69,28 @@
     @import "src/styles/variables";
 
     #timeline {
-        background-color: $light4;
+        background-color: $light0;
 
         #timeline-table {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin: 10px;
 
             .event {
                 display: flex;
                 flex-direction: column;
-                border: dashed 1px $light4;
-                border-right: solid 1px $light4;
+                border: dashed 1px black;
+                border-right: solid 1px black;
                 border-left: solid 3px $brilliant_red;
                 padding: 10px;
 
                 &:first-child {
-                    border-top: solid 1px $light4;
+                    border-top: solid 1px black;
                 }
 
                 &:last-child {
-                    border-bottom: solid 1px $light4;
+                    border-bottom: solid 1px black;
                 }
 
                 &::before {
@@ -103,19 +104,19 @@
                     &::before {
                         position: relative;
                         left: -100px;
-                        top: 22px;
+                        top: 19px;
                         height: 0;
                     }
 
                     &::after {
                         position: absolute;
-                        height: 15px;
-                        width: 15px;
+                        height: 8px;
+                        width: 8px;
                         border: solid 3px $brilliant_red;
                         border-radius: 50%;
                         content: "";
                         margin-left: -19px;
-                        margin-top: 25px;
+                        margin-top: 19px;
                         background-color: $brilliant_red;
                     }
                 }

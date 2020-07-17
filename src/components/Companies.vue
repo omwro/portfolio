@@ -1,23 +1,41 @@
 <template>
-    <div id="companies">
+    <div id="companies" class="section">
         <h1>Companies</h1>
         <div class="content">
-            <!-- Using Tiny Slider for convenience https://github.com/ganlanyuan/tiny-slider -->
-            <div class="company-slider">
-                <div><img alt="kennethkoh" src=../assets/companies/kennethkoh.webp></div>
-                <div><img alt="digidot" src=../assets/companies/digidot.webp></div>
-                <div><img alt="corendon" src=../assets/companies/corendon.webp></div>
-                <div><img alt="amsta" src=../assets/companies/amsta.webp></div>
-                <div><img alt="aquadis" src=../assets/companies/aquadis.webp></div>
-                <div><img alt="boldcommerce" src=../assets/companies/boldcommerce.webp></div>
-            </div>
+            <!-- Using an image Slider for convenience https://antoniandre.github.io/vueper-slides -->
+            <VueSlickCarousel v-bind="settings">
+                <div><img alt="kennethkoh" src=../assets/companies/kennethkoh.webp /></div>
+                <div><img alt="digidot" src=../assets/companies/digidot.webp /></div>
+                <div><img alt="corendon" src=../assets/companies/corendon.webp /></div>
+                <div><img alt="amsta" src=../assets/companies/amsta.webp /></div>
+                <div><img alt="aquadis" src=../assets/companies/aquadis.webp /></div>
+                <div><img alt="boldcommerce" src=../assets/companies/boldcommerce.webp /></div>
+            </VueSlickCarousel>
         </div>
     </div>
 </template>
 
 <script>
+    import VueSlickCarousel from 'vue-slick-carousel'
+    import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+    import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+
     export default {
-        name: "Companies"
+        name: "Companies",
+        components: {VueSlickCarousel},
+        data: function () {
+            return {
+                settings: {
+                    "dots": true,
+                    "focusOnSelect": true,
+                    "infinite": true,
+                    "speed": 500,
+                    "slidesToShow": 3,
+                    "slidesToScroll": 3,
+                    "touchThreshold": 5
+                }
+            }
+        }
     }
 </script>
 
@@ -25,11 +43,16 @@
     @import "src/styles/variables";
 
     #companies {
-        background-color: $light2;
+        background-color: $light1;
 
         .content {
             display: flex;
             flex-direction: row;
+            img {
+                padding: 10px;
+                max-width: 300px;
+                max-height: 120px;
+            }
 
             .company-slider {
                 width: 300px;
@@ -94,11 +117,7 @@
                 right: -30px;
             }
 
-            img {
-                padding: 10px;
-                max-width: 300px;
-                max-height: 120px;
-            }
+
         }
 
         .boldcommerce {

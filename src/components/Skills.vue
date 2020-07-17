@@ -1,18 +1,23 @@
 <template>
-    <div id="skills">
+    <div id="skills" class="section">
         <h1>Skills</h1>
         <div class="content">
-            <div>
-                <h2>Enviroment</h2>
-                <canvas id="eviromentChart"></canvas>
+            <div class="top">
+                <img src="../assets/languages/html.webp" alt="html">
+                <img src="../assets/languages/css.webp" alt="css">
+                <img src="../assets/languages/javascript.webp" alt="javascript">
             </div>
-            <div>
-                <h2>Frontend</h2>
-                <canvas id="frontendChart"></canvas>
-            </div>
-            <div>
-                <h2>Backend</h2>
-                <canvas id="backendChart"></canvas>
+            <div class="bottom">
+                <img src="../assets/languages/php.webp" alt="php">
+                <img src="../assets/languages/java.webp" alt="java">
+                <img src="../assets/languages/mysql.webp" alt="mysql">
+                <img src="../assets/languages/angular.webp" alt="angular">
+                <img src="../assets/languages/vue.png" alt="vue">
+                <img src="../assets/languages/sass.png" alt="sass">
+                <img src="../assets/languages/typescript.webp" alt="typescript">
+                <img src="../assets/languages/magento.webp" alt="magetno">
+                <img src="../assets/languages/laravel.png" alt="laravel">
+                <img src="../assets/languages/nodejs.webp" alt="nodejs">
             </div>
         </div>
     </div>
@@ -28,13 +33,25 @@
     @import "src/styles/variables";
 
     #skills {
-        background-color: $light3;
+        background-color: $light1;
 
-        .content {
+        .content > div {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             text-align: center;
+            justify-content: center;
+
+            &.top img {
+                width: 128px;
+                height: 128px;
+                margin: 16px;
+            }
+            &.bottom img {
+                width: 64px;
+                height: 64px;
+                margin: 8px;
+            }
         }
     }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div id="footer">
+    <div id="footer" class="section">
         <div class="copyright">&copy; 2020 Omer Erdem All Rights Reserved</div>
     </div>
 </template>

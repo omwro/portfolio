@@ -1,5 +1,5 @@
 <template>
-    <div id="home">
+    <div id="home" class="section">
         <div class="background-image">
             <div class="introduction">
                 <span class="bold">Hi</span>, my name is <span class="bold">Omer Erdem</span>

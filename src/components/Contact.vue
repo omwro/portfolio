@@ -1,5 +1,5 @@
 <template>
-    <div id="contact">
+    <div id="contact" class="section">
         <h1>Get in contact</h1>
         <div class="content">
             <form>
@@ -24,13 +24,25 @@
                     <label>Message</label>
                 </div>
                 <div class="bottom-box">
-                    <a href="mailto:m.o.erdem@outlook.com"><i class="fas fa-at"></i></a>
-                    <a href="https://www.linkedin.com/in/omer-erdem-179745153/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="skype:live:omer.boy?chat"><i class="fab fa-skype"></i></a>
+                    <a href="mailto:m.o.erdem@outlook.com">
+                        <font-awesome-icon icon="at" class="icon at"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/omer-erdem-179745153/">
+                        <font-awesome-icon :icon="['fab', 'linkedin']" class="icon linkedin"/>
+                    </a>
+                    <a href="skype:live:omer.boy?chat">
+                        <font-awesome-icon :icon="['fab', 'skype']" class="icon skype"/>
+                    </a>
                     <button type="submit">SUBMIT</button>
-                    <a href="https://discord.gg/wkb42Rb"><i class="fab fa-discord"></i></a>
-                    <a href="https://codepen.io/omwro"><i class="fab fa-codepen"></i></a>
-                    <a href="https://github.com/omwro"><i class="fab fa-github"></i></a>
+                    <a href="https://discord.gg/wkb42Rb">
+                        <font-awesome-icon :icon="['fab', 'discord']" class="icon discord"/>
+                    </a>
+                    <a href="https://codepen.io/omwro">
+                        <font-awesome-icon :icon="['fab', 'codepen']" class="icon codepen"/>
+                    </a>
+                    <a href="https://github.com/omwro">
+                        <font-awesome-icon :icon="['fab', 'github']" class="icon github"/>
+                    </a>
                 </div>
             </form>
         </div>
@@ -47,16 +59,17 @@
     @import "src/styles/variables";
 
     #contact {
-        background-color: $light4;
+        background-color: $light1;
 
         form {
             display: flex;
             flex-direction: column;
             max-width: 500px;
-            background-color: $light4;
+            background-color: $light0;
             padding: 30px 10px 20px;
             border-radius: 10px;
-            border: solid 1px $light5;
+            border: solid 1px black;
+
             @media all and (min-width: 550px) {
                 margin: auto;
                 width: 500px;
@@ -94,7 +107,7 @@
                 span {
                     position: absolute;
                     left: 0;
-                    top: 40px;
+                    top: 35px;
                     content: '';
                     background-color: $brilliant_red;
                     transition: all 1s linear;
@@ -123,10 +136,26 @@
                     transition: .5s;
                 }
             }
-            .fas,
-            .fab {
+            .icon {
                 font-size: 20px;
                 cursor: pointer;
+                margin: 5px;
+
+                &.at {
+                   color: #0071c4;
+                }
+                &.linkedin {
+                    color: #0072b1;
+                }
+                &.skype {
+                    color: #00aff0;
+                }
+                &.discord {
+                    color: #7289da;
+                }
+                &.codepen, &.github {
+                    color: black;
+                }
             }
 
             button {
@@ -136,13 +165,17 @@
                 outline: none;
                 padding: 10px 20px;
 
-                &:active {
+                &:hover {
                     background-color: rgba($brilliant_red, 0.5);
+                }
+
+                &:active {
+                    background-color: $brilliant_red;
                 }
             }
 
             .message-box span {
-                top: 109px;
+                top: 130px;
             }
 
             .bottom-box {
