@@ -123,4 +123,15 @@
             }
         }
     }
+
+    .dark #timeline {
+        background-color: $dark2;
+        color: $light0;
+
+        #timeline-table .event {
+            border-top-color: $light0;
+            border-right-color: $light0;
+            border-bottom-color: $light0;
+        }
+    }
 </style>

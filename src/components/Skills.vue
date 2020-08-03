@@ -54,4 +54,9 @@
             }
         }
     }
+
+    .dark #skills {
+        background-color: $dark1;
+        color: $light0;
+    }
 </style>

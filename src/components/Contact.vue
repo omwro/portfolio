@@ -2,24 +2,24 @@
     <div id="contact" class="section">
         <h1>Get in contact</h1>
         <div class="content">
-            <form>
+            <div id="form">
                 <div class="name-box">
-                    <input type="text" name="name" required>
+                    <input v-model="name" type="text" name="name" required>
                     <span></span>
                     <label>Name</label>
                 </div>
                 <div class="email-box">
-                    <input type="text" name="email" required>
+                    <input v-model="email" type="email" name="email" required>
                     <span></span>
                     <label>Email</label>
                 </div>
                 <div class="subject-box">
-                    <input type="email" name="subject" required>
+                    <input v-model="subject" type="text" name="subject" required>
                     <span></span>
                     <label>Subject</label>
                 </div>
                 <div class="message-box">
-                    <textarea name="message" required></textarea>
+                    <textarea v-model="message" name="message" required></textarea>
                     <span></span>
                     <label>Message</label>
                 </div>
@@ -33,7 +33,7 @@
                     <a href="skype:live:omer.boy?chat">
                         <font-awesome-icon :icon="['fab', 'skype']" class="icon skype"/>
                     </a>
-                    <button type="submit">SUBMIT</button>
+                    <button @click="sendMail">{{submitTxt}}</button>
                     <a href="https://discord.gg/wkb42Rb">
                         <font-awesome-icon :icon="['fab', 'discord']" class="icon discord"/>
                     </a>
@@ -44,14 +44,36 @@
                         <font-awesome-icon :icon="['fab', 'github']" class="icon github"/>
                     </a>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "Contact"
+        name: "Contact",
+        data: () => {
+            return {
+                name: "",
+                email: "",
+                subject: "",
+                message: "",
+                submitTxt: "SUBMIT"
+            };
+        },
+        methods: {
+            sendMail() {
+                const form = new FormData();
+                form.append('name', this.name);
+                form.append('email', this.email);
+                form.append('subject', this.subject);
+                form.append('message', this.message);
+                this.axios.post("mail.php", form).then(res => {
+                    console.log(res)
+                    this.submitTxt = "SUCCESS!";
+                });
+            }
+        }
     }
 </script>
 
@@ -61,7 +83,7 @@
     #contact {
         background-color: $light1;
 
-        form {
+        #form {
             display: flex;
             flex-direction: column;
             max-width: 500px;
@@ -136,23 +158,28 @@
                     transition: .5s;
                 }
             }
+
             .icon {
                 font-size: 20px;
                 cursor: pointer;
                 margin: 5px;
 
                 &.at {
-                   color: #0071c4;
+                    color: #0071c4;
                 }
+
                 &.linkedin {
                     color: #0072b1;
                 }
+
                 &.skype {
                     color: #00aff0;
                 }
+
                 &.discord {
                     color: #7289da;
                 }
+
                 &.codepen, &.github {
                     color: black;
                 }
@@ -182,6 +209,23 @@
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
+            }
+        }
+    }
+
+    .dark #contact {
+        background-color: $dark1;
+        color: $light0;
+
+        #form {
+            background-color: $dark2;
+
+            input, textarea, button {
+                color: $light0;
+
+                &:not(button) {
+                    border-bottom-color: $light0;
+                }
             }
         }
     }

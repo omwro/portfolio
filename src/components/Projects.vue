@@ -44,4 +44,9 @@
             }
         }
     }
+
+    .dark #projects {
+        background-color: $dark2;
+        color: $light0;
+    }
 </style>

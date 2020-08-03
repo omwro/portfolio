@@ -44,8 +44,10 @@
                 align-items: center;
 
                 img {
-                    height: 450px;
-                    width: 300px;
+                    width: 100%;
+                    max-height: 450px;
+                    min-width: 200px;
+                    max-width: 300px;
                     border: solid $dark5 2px;
                 }
             }
@@ -60,13 +62,18 @@
                 }
             }
 
-            @media (min-width: 480px) {
+            @media (min-width: $breakpoint-sm) {
                 margin: 20px 50px;
             }
-            @media (min-width: 768px) {
+            @media (min-width: $breakpoint-m) {
                 margin: 20px 100px;
                 flex-direction: row;
             }
         }
+    }
+
+    .dark #about {
+        background-color: $dark2;
+        color: $light0;
     }
 </style>

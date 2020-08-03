@@ -1,7 +1,8 @@
 <template>
-  <div id="app" class="">
+  <div id="app">
       <Header/>
       <Home/>
+      <Action/>
       <About/>
       <Skills/>
       <Projects/>
@@ -9,6 +10,7 @@
       <Timeline/>
       <Contact/>
       <Footer/>
+      <Menu/>
   </div>
 </template>
 
@@ -23,10 +25,14 @@ import Companies from "./components/Companies";
 import Timeline from "./components/Timeline";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Menu from "./components/Menu";
+import Action from "./components/Action";
 
 export default {
   name: 'App',
   components: {
+      Action,
+      Menu,
       Footer,
       Contact,
       Timeline,
@@ -70,6 +76,14 @@ export default {
             font-weight: bold;
             border-bottom: solid 2px $brilliant-red;
             font-size: 3.6rem;
+        }
+
+        h2 {
+            margin: 25px auto 10px auto;
+            text-align: center;
+            font-weight: bold;
+            border-bottom: solid 2px $brilliant-red;
+            font-size: 2.6rem;
         }
 
         .content {
