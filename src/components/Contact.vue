@@ -123,6 +123,7 @@ export default {
                 padding: 10px 0;
                 width: 100%;
                 resize: none;
+                font-size: 1.4rem;
 
                 &:focus,
                 &:valid {
@@ -142,7 +143,7 @@ export default {
             span {
                 position: absolute;
                 left: 0;
-                top: 36px;
+                top: calc(100% - 31px);
                 content: '';
                 background-color: $brilliant_red;
                 transition: all 1s linear;
