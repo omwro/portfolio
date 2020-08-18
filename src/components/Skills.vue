@@ -5,29 +5,64 @@
             <div class="img-container">
                 <div class="image">
                     <img src="../assets/languages/html.webp" alt="html">
-                    <span>HTML5</span>
-                    <Stars class="stars" :stars="8"></Stars>
+                    <span>HTML</span>
+                    <Stars class="stars html" stars="8"></Stars>
                 </div>
                 <div class="image">
                     <img src="../assets/languages/css.webp" alt="css">
-                    <span>CSS3</span>
-                    <div class="stars">STARS</div>
+                    <span>CSS</span>
+                    <Stars class="stars" stars="7"></Stars>
                 </div>
                 <div class="image">
                     <img src="../assets/languages/javascript.webp" alt="javascript">
                     <span>JavaScript</span>
-                    <div class="stars">STARS</div>
+                    <Stars class="stars" stars="9"></Stars>
                 </div>
-                <img src="../assets/languages/php.webp" alt="php">
-                <img src="../assets/languages/java.webp" alt="java">
-                <img src="../assets/languages/mysql.webp" alt="mysql">
-                <img src="../assets/languages/angular.webp" alt="angular">
-                <img src="../assets/languages/vue.png" alt="vue">
-                <img src="../assets/languages/sass.png" alt="sass">
-                <img src="../assets/languages/typescript.webp" alt="typescript">
-                <img src="../assets/languages/magento.webp" alt="magetno">
-                <img src="../assets/languages/laravel.png" alt="laravel">
-                <img src="../assets/languages/nodejs.webp" alt="nodejs">
+                <div class="image">
+                    <img src="../assets/languages/php.webp" alt="php">
+                    <span>PHP</span>
+                    <Stars class="stars" stars="7"></Stars>
+                </div>
+                <div class="image">
+                    <img src="../assets/languages/java.webp" alt="java">
+                    <span>Java</span>
+                    <Stars class="stars" stars="7"></Stars>
+                </div>
+                <div class="image">
+                    <img src="../assets/languages/mysql.webp" alt="mysql">
+                    <span>MySQL</span>
+                    <Stars class="stars" stars="8"></Stars>
+                </div>
+                <div class="image">
+                    <img src="../assets/languages/angular.webp" alt="angular">
+                    <span>Angular</span>
+                    <Stars class="stars" stars="7"></Stars>
+                </div>
+                <div class="image">
+                    <img src="../assets/languages/vue.png" alt="vue">
+                    <span>Vue</span>
+                    <Stars class="stars" stars="7"></Stars>
+                </div>
+                <div class="image">
+                    <img src="../assets/languages/sass.png" alt="sass">
+                    <span>Sass</span>
+                    <Stars class="stars" stars="6"></Stars>
+                </div>
+                <div class="image">
+                    <img src="../assets/languages/typescript.webp" alt="typescript">
+                    <span>TypeScript</span>
+                    <Stars class="stars" stars="6"></Stars>
+                </div>
+                <div class="image">
+                    <img src="../assets/languages/magento.webp" alt="magento">
+                    <span>Magento</span>
+                    <Stars class="stars" stars="6"></Stars>
+                </div>
+                <div class="image">
+                    <img src="../assets/languages/laravel.png" alt="laravel">
+                    <span>Laravel</span>
+                    <Stars class="stars" stars="6"></Stars>
+                </div>
             </div>
         </div>
     </div>
@@ -63,6 +98,7 @@ export default {
             align-items: center;
             transition: width 1s;
             transition-timing-function: ease-in-out;
+            margin: 8px;
 
             img {
                 width: 64px;

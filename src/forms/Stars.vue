@@ -1,21 +1,21 @@
 <template>
     <div>
-        <font-awesome-icon :icon="['fas', 'star']" class="star"/>
-        <font-awesome-icon :icon="['fas', 'star']" class="star"/>
-        <font-awesome-icon :icon="['fas', 'star-half-alt']" class="star"/>
-        <font-awesome-icon :icon="['far', 'star']" class="star"/>
-        <font-awesome-icon :icon="['far', 'star']" class="star"/>
+        <template v-for="i in Math.floor(parseInt(this.stars) / 2)">
+            <font-awesome-icon v-if="i > 0" :key="'0'+i" :icon="['fas', 'star']" class="star"/>
+        </template>
+        <template v-for="i in Math.floor(parseInt(this.stars) % 2)">
+            <font-awesome-icon v-if="i > 0" :key="'1'+i" :icon="['fas', 'star-half-alt']" class="star"/>
+        </template>
+        <template v-for="i in Math.floor(5 - (parseInt(this.stars) / 2))">
+            <font-awesome-icon v-if="i > 0" :key="'2'+i" :icon="['far', 'star']" class="star"/>
+        </template>
     </div>
 </template>
 
 <script>
-const fullStar = '<font-awesome-icon :icon="[\'fas\', \'star\']" class="star"/>';
 export default {
     name: "Stars",
-    props: ['stars'],
-    created() {
-        console.log(this.stars, fullStar);
-    }
+    props: ['stars']
 }
 </script>
 

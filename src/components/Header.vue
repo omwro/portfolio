@@ -90,4 +90,8 @@
             }
         }
     }
+
+    .dark #header {
+        color: $light0;
+    }
 </style>

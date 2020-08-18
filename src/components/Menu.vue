@@ -132,4 +132,8 @@
             }
         }
     }
+
+    .dark #menu {
+        color: $light0;
+    }
 </style>
