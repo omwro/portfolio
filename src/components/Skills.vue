@@ -155,4 +155,7 @@ export default {
     background-color: $dark1;
     color: $light0;
 }
+  .programmer #skills {
+    display: none;
+  }
 </style>

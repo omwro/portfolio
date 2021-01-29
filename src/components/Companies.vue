@@ -68,4 +68,8 @@
             filter: brightness(2);
         }
     }
+
+    .programmer #companies {
+      display: none;
+    }
 </style>

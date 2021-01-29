@@ -129,6 +129,7 @@
     @import "src/styles/variables";
 
     #aboutIde {
+      display: none;
         background-color: $light0;
 
         .content {
@@ -142,6 +143,7 @@
                 line-height: 1.6;
                 display: flex;
                 flex-direction: column;
+                padding: 8px;
 
                 .row {
                     flex-direction: row;
@@ -200,5 +202,9 @@
     .dark #aboutIde {
         background-color: $dark2;
         color: $light0;
+    }
+
+    .programmer #aboutIde {
+      display: flex;
     }
 </style>

@@ -49,4 +49,8 @@
         background-color: $dark2;
         color: $light0;
     }
+
+    .programmer #projects {
+      display: none;
+    }
 </style>

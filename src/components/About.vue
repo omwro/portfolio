@@ -76,4 +76,8 @@
         background-color: $dark2;
         color: $light0;
     }
+
+    .programmer #about {
+      display: none;
+    }
 </style>

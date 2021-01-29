@@ -9,10 +9,11 @@
         </div>
         <div id="menulist">
             <a href="#home" @click="closeMenu">Home</a>
-            <a href="#about" @click="closeMenu">About</a>
-            <a href="#skills" @click="closeMenu">Skills</a>
-            <a href="#projects" @click="closeMenu">Projects</a>
-            <a href="#companies" @click="closeMenu">Companies</a>
+            <a href="#aboutIde" @click="closeMenu" class="programmer-only">About</a>
+            <a href="#about" @click="closeMenu" class="normal-only">About</a>
+            <a href="#skills" @click="closeMenu" class="normal-only">Skills</a>
+            <a href="#projects" @click="closeMenu" class="normal-only">Projects</a>
+            <a href="#companies" @click="closeMenu" class="normal-only">Companies</a>
             <a href="#timeline" @click="closeMenu">Timeline</a>
             <a href="#contact" @click="closeMenu">Contact</a>
         </div>
@@ -139,5 +140,17 @@
 
     .dark #menu {
         color: $light0;
+    }
+
+    #menu #menulist .programmer-only {
+      display: none;
+    }
+
+    .programmer #menu #menulist a.programmer-only {
+      display: block;
+    }
+
+    .programmer #menu #menulist a.normal-only {
+      display: none;
     }
 </style>
