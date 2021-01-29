@@ -5,21 +5,21 @@
             <div>
                 <span>Dark Mode</span>
                 <label class="switch">
-                    <input id="darkSwitch" @click="onDarkMode" type="checkbox">
+                    <input id="darkSwitch" @click="onDarkModeToggle" type="checkbox">
                     <span class="slider round"></span>
                 </label>
             </div>
             <div>
                 <span>Programmer Mode</span>
                 <label class="switch">
-                    <input id="programmerSwitch" @click="onProgrammerMode" type="checkbox">
+                    <input id="programmerSwitch" @click="onProgrammerModeToggle" type="checkbox">
                     <span class="slider round"></span>
                 </label>
             </div>
             <div>
                 <span>Experiment Mode</span>
                 <label class="switch">
-                    <input id="experimentSwitch" @click="onExperimentMode" type="checkbox">
+                    <input id="experimentSwitch" @click="onExperimentModeToggle" type="checkbox">
                     <span class="slider round"></span>
                 </label>
             </div>
@@ -34,29 +34,67 @@
         name: "Action",
         created() {
             $(document).ready(() => {
-                $('#darkSwitch').prop('checked', JSON.parse(localStorage.getItem('darkmode')));
-                $('#programmerSwitch').prop('checked', JSON.parse(localStorage.getItem('programmermode')));
-                $('#experimentSwitch').prop('checked', JSON.parse(localStorage.getItem('experimentmode')));
-                this.setDarkMode(JSON.parse(localStorage.getItem('darkmode')));
+                if (localStorage.getItem("darkmode") === null ||
+                    localStorage.getItem("programmermode") === null ||
+                    localStorage.getItem("experimentmode") === null) {
+                    localStorage.setItem("darkmode", false)
+                    this.setDarkMode(false)
+                    localStorage.setItem("programmermode", false)
+                    this.setProgrammerMode(false)
+                    localStorage.setItem("experimentmode", false)
+                    this.setExperimentMode(false)
+                } else {
+                    this.setDarkMode(JSON.parse(localStorage.getItem('darkmode')));
+                    this.setProgrammerMode(JSON.parse(localStorage.getItem('programmermode')));
+                    this.setExperimentMode(JSON.parse(localStorage.getItem('experimentmode')));
+                }
             });
         },
         methods: {
+            onDarkModeToggle() {
+                let currentDarkModeValue = JSON.parse(localStorage.getItem('darkmode'))
+                this.setDarkMode(!currentDarkModeValue);
+            },
             setDarkMode(bool) {
+                localStorage.setItem('darkmode', JSON.parse(bool));
                 if (bool) {
+                    this.darkMode = true
                     $('#app').addClass('dark');
                 } else {
+                    this.darkMode = false
                     $('#app').removeClass('dark');
+                    if (this.programmerMode === true) {
+                        this.setProgrammerMode(false)
+                    }
                 }
+                $('#darkSwitch').prop('checked', bool);
             },
-            onDarkMode() {
-                localStorage.setItem('darkmode', !JSON.parse(localStorage.getItem('darkmode')));
-                this.setDarkMode(JSON.parse(localStorage.getItem('darkmode')));
+            onProgrammerModeToggle() {
+                let currentProgrammerModeValue = JSON.parse(localStorage.getItem('programmermode'))
+                this.setProgrammerMode(!currentProgrammerModeValue);
             },
-            onProgrammerMode() {
-                localStorage.setItem('programmermode', !JSON.parse(localStorage.getItem('programmermode')));
+            setProgrammerMode(bool) {
+                localStorage.setItem('programmermode', JSON.parse(bool));
+                if (bool) {
+                    this.programmerMode = true
+                    this.setDarkMode(true)
+                } else {
+                    this.programmerMode = false
+                }
+                $('#programmerSwitch').prop('checked', bool);
             },
-            onExperimentMode() {
-                localStorage.setItem('experimentmode', !JSON.parse(localStorage.getItem('experimentmode')));
+            onExperimentModeToggle() {
+                let currentExperimentModeValue = JSON.parse(localStorage.getItem('experimentmode'))
+                this.setExperimentMode(!currentExperimentModeValue);
+            },
+            setExperimentMode(bool) {
+                localStorage.setItem('experimentmode', JSON.parse(bool));
+                if (bool) {
+                    this.experimentMode = true
+                } else {
+                    this.experimentMode = false
+                }
+                $('#experimentSwitch').prop('checked', bool);
             }
         }
     }

@@ -1,6 +1,6 @@
 <template>
     <div id="header">
-        <img id="logo" src="../assets/logo.webp" alt="logo">
+        <img class="logo" src="../assets/logo.webp" alt="logo">
         <h1>Omer Erdem</h1>
         <div class="hamburger" @click="openMenu">
             <span class="hamburger-top"></span>
@@ -45,7 +45,7 @@
             margin: 16px;
         }
 
-        #logo {
+        .logo {
             max-width: 32px;
             max-height: 32px;
             @media (min-width: $breakpoint-sm) {
@@ -93,5 +93,8 @@
 
     .dark #header {
         color: $light0;
+        .logo {
+            filter: invert(100%);
+        }
     }
 </style>

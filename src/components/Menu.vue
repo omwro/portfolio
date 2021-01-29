@@ -25,15 +25,15 @@
     export default {
         name: "Menu",
         created() {
-          $(document).on('click', (e) => {
-              if(
-                  $(e.target)[0].id !== "menu" &&
-                  $("#menu").hasClass("active") &&
-                  !$(e.target)[0].className.includes("hamburger")
-              ) {
-                  this.closeMenu();
-              }
-          });
+            $(document).on('click', (e) => {
+                if (
+                    $(e.target)[0].id !== "menu" &&
+                    $("#menu").hasClass("active") &&
+                    !$(e.target)[0].className.includes("hamburger")
+                ) {
+                    this.closeMenu();
+                }
+            });
         },
         methods: {
             closeMenu() {
@@ -75,7 +75,7 @@
         .header {
             display: flex;
             flex-direction: row;
-            margin: 20px 16px;
+            margin: 16px;
             align-items: center;
             font-size: 3rem;
             justify-content: space-between;
@@ -120,15 +120,19 @@
             }
         }
 
-        #menulist a {
-            display: flex;
-            font-size: 1.6rem;
-            color: inherit;
-            text-decoration: none;
-            margin: 10px;
+        #menulist {
+            margin-left: 6px;
 
-            &:hover {
-                color: $brilliant-red;
+            a {
+                display: flex;
+                font-size: 1.6rem;
+                color: inherit;
+                text-decoration: none;
+                margin: 10px;
+
+                &:hover {
+                    color: $brilliant-red;
+                }
             }
         }
     }

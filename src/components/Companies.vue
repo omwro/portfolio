@@ -2,12 +2,12 @@
     <div id="companies" class="section">
         <h1>Companies</h1>
         <div class="content">
-                <div><img alt="kennethkoh" src=../assets/companies/kennethkoh.webp /></div>
-                <div><img alt="digidot" src=../assets/companies/digidot.webp /></div>
+                <div><img class="dark-bright" alt="kennethkoh" src=../assets/companies/kennethkoh.webp /></div>
+                <div><img class="dark-bright" alt="digidot" src=../assets/companies/digidot.webp /></div>
                 <div><img alt="corendon" src=../assets/companies/corendon.webp /></div>
                 <div><img alt="amsta" src=../assets/companies/amsta.webp /></div>
-                <div><img alt="aquadis" src=../assets/companies/aquadis.webp /></div>
-                <div><img alt="boldcommerce" src=../assets/companies/boldcommerce-black.webp /></div>
+                <div><img class="dark-invert" alt="aquadis" src=../assets/companies/aquadis.webp /></div>
+                <div><img class="dark-invert" alt="boldcommerce" src=../assets/companies/boldcommerce-black.webp /></div>
         </div>
     </div>
 </template>
@@ -61,5 +61,11 @@
     .dark #companies {
         background-color: $dark1;
         color: $light0;
+        .dark-invert {
+            filter: invert(100%);
+        }
+        .dark-bright {
+            filter: brightness(2);
+        }
     }
 </style>

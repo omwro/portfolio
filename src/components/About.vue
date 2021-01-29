@@ -8,7 +8,7 @@
             </div>
             <div class="intro">
                 <div>
-                    My name is Omer Erdem and I am a second year Software Engineer student at the
+                    My name is Omer Erdem and I am a third year Software Engineer student at the
                     Amsterdam University of Applied Sciences. I am currently 21 years old and everyday
                     in search for new challenges to improve my skills to become a Full Stack Developer.
                 </div>
@@ -23,7 +23,7 @@
 
 <script>
     export default {
-        name: "About"
+        name: "About",
     }
 </script>
 

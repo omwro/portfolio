@@ -28,20 +28,20 @@
                     <a href="mailto:m.o.erdem@outlook.com">
                         <font-awesome-icon icon="at" class="icon at"/>
                     </a>
-                    <a href="https://www.linkedin.com/in/omer-erdem-179745153/">
+                    <a href="https://www.linkedin.com/in/omer-erdem-179745153/" target="_blank">
                         <font-awesome-icon :icon="['fab', 'linkedin']" class="icon linkedin"/>
                     </a>
                     <a href="skype:live:omer.boy?chat">
                         <font-awesome-icon :icon="['fab', 'skype']" class="icon skype"/>
                     </a>
                     <button @click="sendMail">{{ submitTxt }}</button>
-                    <a href="https://discord.gg/wkb42Rb">
+                    <a href="https://discord.gg/wkb42Rb" target="_blank">
                         <font-awesome-icon :icon="['fab', 'discord']" class="icon discord"/>
                     </a>
-                    <a href="https://codepen.io/omwro">
+                    <a href="https://codepen.io/omwro" target="_blank">
                         <font-awesome-icon :icon="['fab', 'codepen']" class="icon codepen"/>
                     </a>
-                    <a href="https://github.com/omwro">
+                    <a href="https://github.com/omwro" target="_blank">
                         <font-awesome-icon :icon="['fab', 'github']" class="icon github"/>
                     </a>
                 </div>

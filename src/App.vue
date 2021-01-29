@@ -3,7 +3,8 @@
       <Header/>
       <Home/>
       <Action/>
-      <About/>
+      <AboutIDE v-if="programmerMode === true"/>
+      <About v-if="programmerMode === false"/>
       <Skills/>
       <Projects/>
       <Companies/>
@@ -27,10 +28,19 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Action from "./components/Action";
+import AboutIDE from "./components/AboutIDE";
 
 export default {
   name: 'App',
+    data() {
+      return {
+          darkMode: false,
+          programmerMode: false,
+          experimentMode: false
+      }
+    },
   components: {
+      AboutIDE,
       Action,
       Menu,
       Footer,
@@ -42,7 +52,6 @@ export default {
       About,
       Home,
       Header
-
   }
 }
 </script>
