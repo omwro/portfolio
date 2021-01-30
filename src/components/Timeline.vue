@@ -2,7 +2,95 @@
     <div id="timeline" class="section">
         <h1>Timeline</h1>
         <div class="content">
-            <div id="git"></div>
+            <div id="git">
+                <div class="row" v-for="item in gitItems" :key="item.id">
+                    <template v-if="item.tag">
+                        <div :class="'tag color'+item.line">{{item.tag}}</div>
+                        <div :class="'hline hl-h color'+item.line"></div>
+                    </template>
+                    <template v-else>
+                        <div class="spacer-1"></div>
+                    </template>
+
+                    <template v-for="i in item.line">
+                        <template v-if="i === item.line">
+                            <template v-if="item.style === 'commit'">
+                                <div :class="'bullet b-img color'+item.line" :key="i">
+                                    <img :src="item.img" alt="profile picture"/>
+                                </div>
+                            </template>
+                            <template v-else-if="item.style === 'start'">
+                                <div :class="'bottomcornerline color'+item.line" :key="i"></div>
+                            </template>
+                            <template v-else-if="item.style === 'merge'">
+                                <div :class="'topcornerline color'+item.line" :key="i"></div>
+                            </template>
+                            <template v-else>
+                                <div :class="'vline color'+i" :key="i"></div>
+                            </template>
+                        </template>
+                        <template v-else>
+                            <template v-if="item.style === 'start'">
+                                <template v-if="i < item.start">
+                                    <div class="block" :key="i">
+                                        <div :class="'vline color'+i"></div>
+                                        <div :class="'hline hl-l hl-h color'+item.line"></div>
+                                        <div :class="'hline hl-r hl-h color'+item.line"></div>
+                                    </div>
+                                </template>
+                                <template v-else-if="i === item.start">
+                                    <div class="block" :key="i">
+                                        <div :class="'vline color'+i"></div>
+                                        <div :class="'hline hl-l hl-h color'+item.line"></div>
+                                        <div :class="'hline hl-r color'+item.line"></div>
+                                        <div :class="'bullet b-s color'+item.line"></div>
+                                    </div>
+                                </template>
+                                <template v-else-if="i > item.start">
+                                    <div class="block" :key="i">
+                                        <div :class="'vline color'+i"></div>
+                                        <div :class="'hline color'+item.line"></div>
+                                        <div :class="'hline color'+item.line"></div>
+                                    </div>
+                                </template>
+                            </template>
+                            <template v-else-if="item.style === 'commit'">
+                                <div :class="'vline color'+i" :key="i"></div>
+                            </template>
+                            <template v-else-if="item.style === 'merge'">
+                                <template v-if="i < item.merge">
+                                    <div :class="'vline color'+i" :key="i"></div>
+                                </template>
+                                <template v-else-if="i === item.merge">
+                                    <div class="block" :key="i">
+                                        <div :class="'vline color'+i"></div>
+                                        <div :class="'hline hl-r color'+item.line"></div>
+                                        <div :class="'bullet b-s color'+item.line"></div>
+                                    </div>
+                                </template>
+                                <template v-else-if="i > item.merge">
+                                    <div class="block" :key="i">
+                                        <div :class="'vline color'+i"></div>
+                                        <div :class="'hline color'+item.line"></div>
+                                        <div :class="'hline color'+item.line"></div>
+                                    </div>
+                                </template>
+                            </template>
+                            <template v-else>
+                                <div :class="'vline color'+i" :key="i"></div>
+                            </template>
+                        </template>
+                    </template>
+
+                    <template v-if="item.msg">
+                        <div :class="'commit c-'+item.spacing+' color'+item.line">
+                            <div></div>
+                            <div>{{item.msg}}</div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
             <div id="timeline-table">
                 <div class="event" data-date="Feb 2020">
                     <h3>Intern Magento Developer</h3>
@@ -60,13 +148,156 @@
 </template>
 
 <script>
+    // import $ from 'jquery';
+
     export default {
-        name: "Timeline"
+        name: "Timeline",
+        data() {
+            return {
+                gitItems: [
+                    {
+                        id: 0,
+                        line: 4
+                    }, {
+                        id: 1,
+                        line: 4,
+                        style: "commit",
+                        img: "https://spawnpk.net/forums/uploads/monthly_2017_07/K.png.a2c097685b01729c98069b9a0e4c20b6.png",
+                        spacing: 0,
+                        msg: "Internship3"
+                    }, {
+                        id: 2,
+                        line: 4,
+                        tag: "Feb 2020",
+                        style: "start",
+                        start: 3,
+                        spacing: 0,
+                        msg: "new internship branch"
+                    }, {
+                        id: 3,
+                        line: 3,
+                        style: "commit",
+                        img: "https://spawnpk.net/forums/uploads/monthly_2017_07/K.png.a2c097685b01729c98069b9a0e4c20b6.png",
+                        spacing: 1,
+                        msg: "Highschool"
+                    }, {
+                        id: 4,
+                        line: 3,
+                        tag: "Sep 2018",
+                        style: "start",
+                        start: 1,
+                        spacing: 1,
+                        msg: "new study branch"
+                    }, {
+                        id: 5,
+                        line: 3,
+                        style: "merge",
+                        merge: 1,
+                        spacing: 1,
+                        msg: "merge study"
+                    }, {
+                        id: 6,
+                        line: 4,
+                        style: "merge",
+                        merge: 3,
+                        spacing: 0,
+                        msg: "merge internship"
+                    }, {
+                        id: 7,
+                        line: 4,
+                        style: "commit",
+                        img: "https://spawnpk.net/forums/uploads/monthly_2017_07/K.png.a2c097685b01729c98069b9a0e4c20b6.png",
+                        spacing: 0,
+                        msg: "Intership2"
+                    }, {
+                        id: 8,
+                        line: 4,
+                        tag: "Feb 2018",
+                        style: "start",
+                        start: 3,
+                        spacing: 0,
+                        msg: "new internship branch"
+                    }, {
+                        id: 9,
+                        line: 4,
+                        style: "merge",
+                        merge: 3,
+                        spacing: 0,
+                        msg: "merge internship"
+                    }, {
+                        id: 10,
+                        line: 4,
+                        style: "commit",
+                        img: "https://spawnpk.net/forums/uploads/monthly_2017_07/K.png.a2c097685b01729c98069b9a0e4c20b6.png",
+                        spacing: 0,
+                        msg: "Internship1"
+                    }, {
+                        id: 11,
+                        line: 4,
+                        tag: "Sep 2016",
+                        style: "start",
+                        start: 3,
+                        spacing: 0,
+                        msg: "new internship branch"
+                    },
+                    {
+                        id: 12,
+                        line: 3,
+                        style: "commit",
+                        img: "https://spawnpk.net/forums/uploads/monthly_2017_07/K.png.a2c097685b01729c98069b9a0e4c20b6.png",
+                        spacing: 1,
+                        msg: "Highschool"
+                    },
+                    {
+                        id: 13,
+                        line: 3,
+                        tag: "Sep 2015",
+                        style: "start",
+                        start: 1,
+                        spacing: 1,
+                        msg: "new study branch"
+                    },
+                    {
+                        id: 14,
+                        line: 2,
+                        style: "commit",
+                        img: "https://spawnpk.net/forums/uploads/monthly_2017_07/K.png.a2c097685b01729c98069b9a0e4c20b6.png",
+                        spacing: 2,
+                        msg: "cashier"
+                    },
+                    {
+                        id: 15,
+                        line: 2,
+                        tag: "Jan 2015",
+                        style: "start",
+                        start: 1,
+                        spacing: 2,
+                        msg: "new work branch"
+                    },
+                    {
+                        id: 16,
+                        line: 1,
+                        style: "commit",
+                        img: "https://spawnpk.net/forums/uploads/monthly_2017_07/K.png.a2c097685b01729c98069b9a0e4c20b6.png",
+                        spacing: 3,
+                        msg: "initial commit"
+                    }
+                ]
+            }
+        }
     }
 </script>
 
 <style scoped lang="scss">
     @import "src/styles/variables";
+
+    $color1: red;
+    $color2: blue;
+    $color3: orange;
+    $color4: green;
+    $color5: purple;
+    $transparent: rgba(0, 0, 0, 0);
+    $hover-color: rgba(white, .1);
 
     #timeline {
         background-color: $light0;
@@ -122,6 +353,283 @@
                 }
             }
         }
+
+        #git {
+            display: none;
+            flex-direction: column;
+            height: 100%;
+
+            .row {
+                display: flex;
+                flex-direction: row;
+                height: 30px;
+                min-width: 500px;
+
+                &:hover {
+                    background-color: $hover-color;
+                }
+
+                .tag {
+                    width: 88px;
+                    height: 12px;
+                    padding: 5px;
+                    margin: 3px 0;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 2px;
+
+                    &.color1 {
+                        background-color: rgba($color1, 0.5);
+                        border: solid 1px $color1;
+                    }
+
+                    &.color2 {
+                        background-color: rgba($color2, 0.5);
+                        border: solid 1px rgba($color2, 1);
+                    }
+
+                    &.color3 {
+                        background-color: rgba($color3, 0.5);
+                        border: solid 1px rgba($color3, 1);
+                    }
+
+                    &.color4 {
+                        background-color: rgba($color4, 0.5);
+                        border: solid 1px rgba($color4, 1);
+                    }
+
+                    &.color5 {
+                        background-color: rgba($color5, 0.5);
+                        border: solid 1px rgba($color5, 1);
+                    }
+                }
+
+                .block {
+                    height: 30px;
+                    width: 30px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    position: relative;
+
+                    .hline,
+                    .vline,
+                    .b-s {
+                        position: absolute;
+                    }
+                }
+
+                .bullet {
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    align-self: center;
+
+                    &.b-s {
+                        height: 16px;
+                        width: 16px;
+                        margin: 7px;
+                        position: relative;
+                    }
+
+                    &.b-img {
+                        height: 24px;
+                        width: 24px;
+                        border: 3px solid;
+                        overflow: hidden;
+
+                        img {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+
+                    &.color1 {
+                        background-color: $color1;
+                        border-color: $color1;
+                    }
+
+                    &.color2 {
+                        background-color: $color2;
+                        border-color: $color2;
+                    }
+
+                    &.color3 {
+                        background-color: $color3;
+                        border-color: $color3;
+                    }
+
+                    &.color4 {
+                        background-color: $color4;
+                        border-color: $color4;
+                    }
+
+                    &.color5 {
+                        background-color: $color5;
+                        border-color: $color5;
+                    }
+                }
+
+                .hline {
+                    width: 30px;
+                    height: 13px;
+                    margin-top: 13px;
+                    border-top: 4px solid;
+
+                    &.hl-r {
+                        width: 15px;
+                        right: 0;
+                    }
+
+                    &.hl-l {
+                        width: 15px;
+                        left: 0;
+                    }
+
+                    &.hl-h {
+                        height: 14px;
+                        margin-top: 14px;
+                        border-width: 2px;
+                    }
+                }
+
+                .vline {
+                    width: 13px;
+                    height: 30px;
+                    margin-right: 13px;
+                    border-right: 4px solid;
+                }
+
+                .topcornerline {
+                    width: 13px;
+                    height: 13px;
+                    margin: 13px 13px 0 0;
+                    border-top: 4px solid;
+                    border-right: 4px solid;
+                    border-radius: 0 15px 0 0;
+                }
+
+                .bottomcornerline {
+                    width: 13px;
+                    height: 13px;
+                    margin: 0 13px 13px 0;
+                    border-bottom: 4px solid;
+                    border-right: 4px solid;
+                    border-radius: 0 0 15px 0;
+                }
+
+                .hline,
+                .vline,
+                .topcornerline,
+                .bottomcornerline {
+                    &.color1 {
+                        border-color: $color1;
+                    }
+
+                    &.color2 {
+                        border-color: $color2;
+                    }
+
+                    &.color3 {
+                        border-color: $color3;
+                    }
+
+                    &.color4 {
+                        border-color: $color4;
+                    }
+
+                    &.color5 {
+                        border-color: $color5;
+                    }
+                }
+
+                .spacer-1 {
+                    margin-left: 130px;
+                }
+
+                .commit {
+                    display: flex;
+                    width: auto;
+                    height: 30px;
+                    align-self: center;
+
+                    > div:first-child {
+                        width: 50px;
+                        border-right: 3px solid;
+                        margin: 3px 10px 3px 0;
+                    }
+
+                    > div:last-child {
+                        align-self: center;
+                    }
+
+                    &.c-1 > div:first-child {
+                        width: 80px;
+                    }
+
+                    &.c-2 > div:first-child {
+                        width: 110px;
+                    }
+
+                    &.c-3 > div:first-child {
+                        width: 140px;
+                    }
+
+                    &.c-4 > div:first-child {
+                        width: 170px;
+                    }
+
+                    &.color1 > div:first-child {
+                        border-color: $color1;
+                        background: linear-gradient(
+                                        to right,
+                                        $transparent 0%,
+                                        rgba($color1, 0.2) 50%,
+                                        rgba($color1, 0.5) 100%
+                        );
+                    }
+
+                    &.color2 > div:first-child {
+                        border-color: $color2;
+                        background: linear-gradient(
+                                        to right,
+                                        $transparent 0%,
+                                        rgba($color2, 0.2) 50%,
+                                        rgba($color2, 0.5) 100%
+                        );
+                    }
+
+                    &.color3 > div:first-child {
+                        border-color: $color3;
+                        background: linear-gradient(
+                                        to right,
+                                        $transparent 0%,
+                                        rgba($color3, 0.2) 50%,
+                                        rgba($color3, 0.5) 100%
+                        );
+                    }
+
+                    &.color4 > div:first-child {
+                        border-color: $color4;
+                        background: linear-gradient(
+                                        to right,
+                                        $transparent 0%,
+                                        rgba($color4, 0.2) 50%,
+                                        rgba($color4, 0.5) 100%
+                        );
+                    }
+
+                    &.color5 > div:first-child {
+                        border-color: $color5;
+                        background: linear-gradient(
+                                        to right,
+                                        $transparent 0%,
+                                        rgba($color5, 0.2) 50%,
+                                        rgba($color5, 0.5) 100%
+                        );
+                    }
+                }
+            }
+        }
     }
 
     .dark #timeline {
@@ -132,6 +640,16 @@
             border-top-color: $light0;
             border-right-color: $light0;
             border-bottom-color: $light0;
+        }
+    }
+
+    .programmer #timeline {
+        #git {
+            display: flex;
+        }
+
+        #timeline-table {
+            display: none;
         }
     }
 </style>
