@@ -16,7 +16,7 @@
                         <template v-if="i === item.line">
                             <template v-if="item.style === 'commit'">
                                 <div :class="'bullet b-img color'+item.line" :key="i">
-                                    <img :src="item.img" alt="profile picture"/>
+                                    <img :src="profile" alt="profile picture"/>
                                 </div>
                             </template>
                             <template v-else-if="item.style === 'start'">
@@ -154,61 +154,66 @@
         name: "Timeline",
         data() {
             return {
+                profile: require(`../assets/selfies/profile.png`),
                 gitItems: [
                     {
-                        id: 0,
-                        line: 4
+                        id: 17,
+                        line: 3
                     }, {
-                        id: 1,
+                        id: 16,
+                        line: 4,
+                        style: "merge",
+                        merge: 3,
+                        spacing: 0,
+                        msg: "Merge Internship"
+                    }, {
+                        id: 15,
                         line: 4,
                         style: "commit",
-                        img: "https://spawnpk.net/forums/uploads/monthly_2017_07/K.png.a2c097685b01729c98069b9a0e4c20b6.png",
                         spacing: 0,
-                        msg: "Internship3"
+                        msg: "Intern Magento Developer"
                     }, {
-                        id: 2,
+                        id: 14,
                         line: 4,
                         tag: "Feb 2020",
                         style: "start",
                         start: 3,
                         spacing: 0,
-                        msg: "new internship branch"
+                        msg: "New Internship Branch"
                     }, {
-                        id: 3,
+                        id: 13,
                         line: 3,
                         style: "commit",
-                        img: "https://spawnpk.net/forums/uploads/monthly_2017_07/K.png.a2c097685b01729c98069b9a0e4c20b6.png",
                         spacing: 1,
-                        msg: "Highschool"
+                        msg: "Software Engineering"
                     }, {
-                        id: 4,
+                        id: 12,
                         line: 3,
                         tag: "Sep 2018",
                         style: "start",
                         start: 1,
                         spacing: 1,
-                        msg: "new study branch"
+                        msg: "New Study Branch"
                     }, {
-                        id: 5,
+                        id: 11,
                         line: 3,
                         style: "merge",
                         merge: 1,
                         spacing: 1,
-                        msg: "merge study"
+                        msg: "Merge Study"
                     }, {
-                        id: 6,
+                        id: 10,
                         line: 4,
                         style: "merge",
                         merge: 3,
                         spacing: 0,
-                        msg: "merge internship"
+                        msg: "Merge Internship"
                     }, {
-                        id: 7,
+                        id: 9,
                         line: 4,
                         style: "commit",
-                        img: "https://spawnpk.net/forums/uploads/monthly_2017_07/K.png.a2c097685b01729c98069b9a0e4c20b6.png",
                         spacing: 0,
-                        msg: "Intership2"
+                        msg: "Intern Frontend Developer"
                     }, {
                         id: 8,
                         line: 4,
@@ -216,71 +221,67 @@
                         style: "start",
                         start: 3,
                         spacing: 0,
-                        msg: "new internship branch"
+                        msg: "New Internship Branch"
                     }, {
-                        id: 9,
+                        id: 7,
                         line: 4,
                         style: "merge",
                         merge: 3,
                         spacing: 0,
-                        msg: "merge internship"
+                        msg: "Merge Internship"
                     }, {
-                        id: 10,
+                        id: 6,
                         line: 4,
                         style: "commit",
-                        img: "https://spawnpk.net/forums/uploads/monthly_2017_07/K.png.a2c097685b01729c98069b9a0e4c20b6.png",
                         spacing: 0,
-                        msg: "Internship1"
+                        msg: "Intern Game Developer"
                     }, {
-                        id: 11,
+                        id: 5,
                         line: 4,
                         tag: "Sep 2016",
                         style: "start",
                         start: 3,
                         spacing: 0,
-                        msg: "new internship branch"
+                        msg: "New Internship Branch"
                     },
                     {
-                        id: 12,
+                        id: 4,
                         line: 3,
                         style: "commit",
-                        img: "https://spawnpk.net/forums/uploads/monthly_2017_07/K.png.a2c097685b01729c98069b9a0e4c20b6.png",
                         spacing: 1,
-                        msg: "Highschool"
+                        msg: "Application Development"
                     },
                     {
-                        id: 13,
+                        id: 3,
                         line: 3,
                         tag: "Sep 2015",
                         style: "start",
                         start: 1,
                         spacing: 1,
-                        msg: "new study branch"
+                        msg: "New Study Branch"
                     },
                     {
-                        id: 14,
+                        id: 2,
                         line: 2,
                         style: "commit",
-                        img: "https://spawnpk.net/forums/uploads/monthly_2017_07/K.png.a2c097685b01729c98069b9a0e4c20b6.png",
                         spacing: 2,
-                        msg: "cashier"
+                        msg: "Cashier"
                     },
                     {
-                        id: 15,
+                        id: 1,
                         line: 2,
                         tag: "Jan 2015",
                         style: "start",
                         start: 1,
                         spacing: 2,
-                        msg: "new work branch"
+                        msg: "New Work Branch"
                     },
                     {
-                        id: 16,
+                        id: 0,
                         line: 1,
                         style: "commit",
-                        img: "https://spawnpk.net/forums/uploads/monthly_2017_07/K.png.a2c097685b01729c98069b9a0e4c20b6.png",
                         spacing: 3,
-                        msg: "initial commit"
+                        msg: "Initial Commit"
                     }
                 ]
             }
@@ -295,7 +296,6 @@
     $color2: blue;
     $color3: orange;
     $color4: green;
-    $color5: purple;
     $transparent: rgba(0, 0, 0, 0);
     $hover-color: rgba(white, .1);
 
@@ -397,11 +397,6 @@
                         background-color: rgba($color4, 0.5);
                         border: solid 1px rgba($color4, 1);
                     }
-
-                    &.color5 {
-                        background-color: rgba($color5, 0.5);
-                        border: solid 1px rgba($color5, 1);
-                    }
                 }
 
                 .block {
@@ -461,11 +456,6 @@
                     &.color4 {
                         background-color: $color4;
                         border-color: $color4;
-                    }
-
-                    &.color5 {
-                        background-color: $color5;
-                        border-color: $color5;
                     }
                 }
 
@@ -535,10 +525,6 @@
 
                     &.color4 {
                         border-color: $color4;
-                    }
-
-                    &.color5 {
-                        border-color: $color5;
                     }
                 }
 
@@ -615,16 +601,6 @@
                                         $transparent 0%,
                                         rgba($color4, 0.2) 50%,
                                         rgba($color4, 0.5) 100%
-                        );
-                    }
-
-                    &.color5 > div:first-child {
-                        border-color: $color5;
-                        background: linear-gradient(
-                                        to right,
-                                        $transparent 0%,
-                                        rgba($color5, 0.2) 50%,
-                                        rgba($color5, 0.5) 100%
                         );
                     }
                 }
