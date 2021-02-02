@@ -2,7 +2,7 @@
     <div id="projects" class="section">
         <h1>Projects</h1>
         <div class="content">
-            <tiny-slider
+            <vue-tiny-slider ref="tinySlider"
                 :mouse-drag="true"
                 :loop="false"
                 :items="1"
@@ -39,20 +39,29 @@
                     </div>
                     <div class="carousel-languages">HTML, CSS, JS, Angular, Java, Spring, Rest, Mysql</div>
                 </div>
-            </tiny-slider>
+            </vue-tiny-slider>
         </div>
     </div>
 </template>
 
 <script>
+    import $ from 'jquery';
     import VueTinySlider from 'vue-tiny-slider';
 
     export default {
         name: "Projects",
         components: {
-            'tiny-slider': VueTinySlider
+            'vue-tiny-slider': VueTinySlider
+        },
+        mounted() {
+            let slider = this.$refs.tinySlider.slider
+            $('#projects').find('img').on('load', function () {
+                slider.updateSliderHeight()
+            });
         }
     }
+
+
 </script>
 
 <style lang="scss">
