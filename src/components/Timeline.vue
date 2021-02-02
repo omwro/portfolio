@@ -16,7 +16,7 @@
                         <template v-if="i === item.line">
                             <template v-if="item.style === 'commit'">
                                 <div :class="'bullet b-img color'+item.line" :key="i">
-                                    <img :src="profile" alt="profile picture"/>
+                                    <img v-lazy="profile" alt="profile picture"/>
                                 </div>
                             </template>
                             <template v-else-if="item.style === 'start'">

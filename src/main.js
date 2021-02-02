@@ -8,11 +8,13 @@ import { faAt, faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons'
 import { faStar as faStarEmpty } from '@fortawesome/free-regular-svg-icons'
 import { faFontAwesome, faLinkedin, faSkype, faDiscord, faCodepen, faGithub } from '@fortawesome/free-brands-svg-icons'
 import VueTinySlider from 'vue-tiny-slider';
+import VueLazyload from 'vue-lazyload'
 
 library.add(faAt, faLinkedin, faSkype, faDiscord, faCodepen, faGithub, faFontAwesome, faStar, faStarHalfAlt, faStarEmpty)
 
 Vue.config.productionTip = false
 Vue.use(VueAxios, axios)
+Vue.use(VueLazyload)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 new Vue({

@@ -3,7 +3,7 @@
         <h1>Who am I ?</h1>
         <div class="content">
             <div class="selfie">
-                <img src="../assets/selfies/selfie.webp" alt="selfie">
+                <img v-lazy="'./img/selfie/selfie.webp'" alt="selfie">
                 <span>Download Resume</span>
             </div>
             <div class="intro">

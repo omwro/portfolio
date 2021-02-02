@@ -2,64 +2,64 @@
     <div id="skills" class="section">
         <h1>Skills</h1>
         <div class="content">
-            <div class="img-container">
+            <div class="img-container" v-lazy-container="{ selector: 'img' }">
                 <div class="image">
-                    <img src="../assets/languages/html.webp" alt="html">
+                    <img data-src="./img/language/html.webp" alt="html">
                     <span>HTML</span>
                     <Stars class="stars html" stars="8"></Stars>
                 </div>
                 <div class="image">
-                    <img src="../assets/languages/css.webp" alt="css">
+                    <img data-src="./img/language/css.webp" alt="css">
                     <span>CSS</span>
                     <Stars class="stars" stars="7"></Stars>
                 </div>
                 <div class="image">
-                    <img src="../assets/languages/javascript.webp" alt="javascript">
+                    <img data-src="./img/language/javascript.webp" alt="javascript">
                     <span>JavaScript</span>
                     <Stars class="stars" stars="9"></Stars>
                 </div>
                 <div class="image">
-                    <img src="../assets/languages/php.webp" alt="php">
+                    <img data-src="./img/language/php.webp" alt="php">
                     <span>PHP</span>
                     <Stars class="stars" stars="7"></Stars>
                 </div>
                 <div class="image">
-                    <img src="../assets/languages/java.webp" alt="java">
+                    <img data-src="./img/language/java.webp" alt="java">
                     <span>Java</span>
                     <Stars class="stars" stars="7"></Stars>
                 </div>
                 <div class="image">
-                    <img src="../assets/languages/mysql.webp" alt="mysql">
+                    <img data-src="./img/language/mysql.webp" alt="mysql">
                     <span>MySQL</span>
                     <Stars class="stars" stars="8"></Stars>
                 </div>
                 <div class="image">
-                    <img src="../assets/languages/angular.webp" alt="angular">
+                    <img data-src="./img/language/angular.webp" alt="angular">
                     <span>Angular</span>
                     <Stars class="stars" stars="7"></Stars>
                 </div>
                 <div class="image">
-                    <img src="../assets/languages/vue.png" alt="vue">
+                    <img data-src="./img/language/vue.png" alt="vue">
                     <span>Vue</span>
                     <Stars class="stars" stars="7"></Stars>
                 </div>
                 <div class="image">
-                    <img src="../assets/languages/sass.png" alt="sass">
+                    <img data-src="./img/language/sass.png" alt="sass">
                     <span>Sass</span>
                     <Stars class="stars" stars="6"></Stars>
                 </div>
                 <div class="image">
-                    <img src="../assets/languages/typescript.webp" alt="typescript">
+                    <img data-src="./img/language/typescript.webp" alt="typescript">
                     <span>TypeScript</span>
                     <Stars class="stars" stars="6"></Stars>
                 </div>
                 <div class="image">
-                    <img src="../assets/languages/magento.webp" alt="magento">
+                    <img data-src="./img/language/magento.webp" alt="magento">
                     <span>Magento</span>
                     <Stars class="stars" stars="6"></Stars>
                 </div>
                 <div class="image">
-                    <img src="../assets/languages/laravel.png" alt="laravel">
+                    <img data-src="./img/language/laravel.png" alt="laravel">
                     <span>Laravel</span>
                     <Stars class="stars" stars="6"></Stars>
                 </div>
