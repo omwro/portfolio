@@ -2,44 +2,113 @@
     <div id="projects" class="section">
         <h1>Projects</h1>
         <div class="content">
-            <img src="../assets/projects/project_corendon.webp" class="horizontal" alt="corendon">
-            <img src="../assets/projects/project_amsta.webp" class="vertical" alt="amsta">
-            <img src="../assets/projects/project_aquadis.webp" class="horizontal" alt="aquadis">
+            <tiny-slider
+                :mouse-drag="true"
+                :loop="false"
+                :items="1"
+                :gutter="10"
+                :center="true"
+                :auto-height="true"
+                :lazyload="true"
+            >
+                <div>
+                    <img class="tns-lazy-img" data-src="./img/project/project_corendon.webp" alt="corendon">
+                    <div class="carousel-title">Corendon dating website</div>
+                    <div class="carousel-description">
+                        A school project for Corendon that would like to have a dating website for travelers
+                        that travel alone and would like to have a partner to party with.
+                    </div>
+                    <div class="carousel-languages">HTML, CSS, JS, MYSQL, Ajax</div>
+                </div>
+                <div>
+                    <img class="tns-lazy-img" data-src="./img/project/project_amsta.webp" alt="amsta">
+                    <div class="carousel-title">Amsta Animal Go app</div>
+                    <div class="carousel-description">
+                        A school project for Amsta that would like to have an Android application which allows
+                        the elderlies from Amsta to exercise and stay fit while having fun with catching animals.
+                    </div>
+                    <div class="carousel-languages">HTML, CSS, Java</div>
+                </div>
+                <div>
+                    <img class="tns-lazy-img" data-src="./img/project/project_aquadis.webp" alt="aquadis">
+                    <div class="carousel-title">Aquadis texting website</div>
+                    <div class="carousel-description">
+                        A school project for Aquadis that would like to have an texting based game which allows
+                        the players to place messages on the maps and other people can see them if they are near
+                        and respond to it.
+                    </div>
+                    <div class="carousel-languages">HTML, CSS, JS, Angular, Java, Spring, Rest, Mysql</div>
+                </div>
+            </tiny-slider>
         </div>
     </div>
 </template>
 
 <script>
+    import VueTinySlider from 'vue-tiny-slider';
+
     export default {
-        name: "Projects"
+        name: "Projects",
+        components: {
+            'tiny-slider': VueTinySlider
+        }
     }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
     @import "src/styles/variables";
+    @import 'node_modules/tiny-slider/src/tiny-slider';
 
     #projects {
         background-color: $light0;
 
         .content {
-            flex-direction: row;
-            flex-wrap: wrap;
+            overflow: hidden;
 
-            img {
-                margin: 10px;
+            .tns-nav, .tns-controls {
+                text-align: center;
+                margin: 8px;
 
-                &.horizontal {
-                    max-width: 300px;
-                    max-height: 150px;
-                    @media all and (min-width: 420px) {
-                        max-width: 400px;
-                        max-height: 200px;
-                    }
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .tns-nav > button {
+                border: solid $brilliant-red 3px;
+                width: 16px;
+                height: 16px;
+                border-radius: 25px;
+                background-color: transparent;
+                margin: 4px;
+                padding: 4px;
+
+                &:focus {
+                    outline: none;
                 }
 
-                &.vertical {
-                    max-width: 200px;
-                    max-height: 400px;
+                &.tns-nav-active {
+                    background-color: $brilliant-red;
+                }
+            }
+
+            .tns-item {
+                text-align: center;
+
+                > * {
+                    padding-top: 4px;
+                }
+
+                > img {
+                    max-width: 100%;
+                }
+
+                .carousel-title {
+                    font-size: 24px;
+                }
+
+                .carousel-description {
+                    font-style: italic;
                 }
             }
         }

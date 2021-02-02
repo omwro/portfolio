@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faAt, faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons'
 import { faStar as faStarEmpty } from '@fortawesome/free-regular-svg-icons'
 import { faFontAwesome, faLinkedin, faSkype, faDiscord, faCodepen, faGithub } from '@fortawesome/free-brands-svg-icons'
+import VueTinySlider from 'vue-tiny-slider';
 
 library.add(faAt, faLinkedin, faSkype, faDiscord, faCodepen, faGithub, faFontAwesome, faStar, faStarHalfAlt, faStarEmpty)
 
@@ -15,5 +16,8 @@ Vue.use(VueAxios, axios)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 new Vue({
-  render: h => h(App)
+  render: h => h(App),
+  components: {
+    'tiny-slider': VueTinySlider
+  }
 }).$mount('#app')
