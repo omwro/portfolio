@@ -12,7 +12,7 @@
                 :lazyload="true"
             >
                 <div>
-                    <img class="tns-lazy-img" data-src="./img/project/project_corendon.webp" alt="corendon">
+                    <img class="tns-lazy-img" data-src="./img/project/project_corendon.webp" v-lazy="'./img/project/project_corendon.webp'" alt="corendon">
                     <div class="carousel-title">Corendon dating website</div>
                     <div class="carousel-description">
                         A school project for Corendon that would like to have a dating website for travelers

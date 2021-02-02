@@ -292,10 +292,10 @@
 <style scoped lang="scss">
     @import "src/styles/variables";
 
-    $color1: red;
-    $color2: blue;
-    $color3: orange;
-    $color4: green;
+    $color1: $brilliant-red;
+    $color2: $brilliant-blue;
+    $color3: $brilliant-green;
+    $color4: $brilliant-orange;
     $transparent: rgba(0, 0, 0, 0);
     $hover-color: rgba(white, .1);
 

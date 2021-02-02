@@ -2,66 +2,109 @@
     <div id="skills" class="section">
         <h1>Skills</h1>
         <div class="content">
+            <div class="star-scheme">
+                <stars stars="10" class="star5"/>
+                <stars stars="8" class="star4"/>
+                <stars stars="6" class="star3"/>
+                <stars stars="4" class="star2"/>
+                <stars stars="2" class="star1"/>
+            </div>
             <div class="img-container" v-lazy-container="{ selector: 'img' }">
-                <div class="image">
-                    <img data-src="./img/language/html.webp" alt="html">
-                    <span>HTML</span>
-                    <Stars class="stars html" stars="8"></Stars>
+                <div>
+                    <img data-src=./img/language/html.png class="star5" alt="html"/>
+                    <div>HTML5</div>
                 </div>
-                <div class="image">
-                    <img data-src="./img/language/css.webp" alt="css">
-                    <span>CSS</span>
-                    <Stars class="stars" stars="7"></Stars>
+                <div>
+                    <img data-src=./img/language/js.png class="star5" alt="js"/>
+                    <div>JavaScript</div>
                 </div>
-                <div class="image">
-                    <img data-src="./img/language/javascript.webp" alt="javascript">
-                    <span>JavaScript</span>
-                    <Stars class="stars" stars="9"></Stars>
+                <div>
+                    <img data-src=./img/language/php.png class="star4" alt="php"/>
+                    <div>PHP</div>
                 </div>
-                <div class="image">
-                    <img data-src="./img/language/php.webp" alt="php">
-                    <span>PHP</span>
-                    <Stars class="stars" stars="7"></Stars>
+                <div>
+                    <img data-src=./img/language/java.png class="star4" alt="java"/>
+                    <div>Java</div>
                 </div>
-                <div class="image">
-                    <img data-src="./img/language/java.webp" alt="java">
-                    <span>Java</span>
-                    <Stars class="stars" stars="7"></Stars>
+                <div>
+                    <img data-src=./img/language/css.png class="star4" alt="css"/>
+                    <div>CSS3</div>
                 </div>
-                <div class="image">
-                    <img data-src="./img/language/mysql.webp" alt="mysql">
-                    <span>MySQL</span>
-                    <Stars class="stars" stars="8"></Stars>
+                <div>
+                    <img data-src=./img/language/jquery.png class="star4" alt="jquery"/>
+                    <div>jQuery</div>
                 </div>
-                <div class="image">
-                    <img data-src="./img/language/angular.webp" alt="angular">
-                    <span>Angular</span>
-                    <Stars class="stars" stars="7"></Stars>
+                <div>
+                    <img data-src=./img/language/mysql.png class="star4" alt="mysql"/>
+                    <div>MySQL</div>
                 </div>
-                <div class="image">
-                    <img data-src="./img/language/vue.png" alt="vue">
-                    <span>Vue</span>
-                    <Stars class="stars" stars="7"></Stars>
+                <div>
+                    <img data-src=./img/language/vue.png class="star4" alt="vue"/>
+                    <div>Vue.js 2</div>
                 </div>
-                <div class="image">
-                    <img data-src="./img/language/sass.png" alt="sass">
-                    <span>Sass</span>
-                    <Stars class="stars" stars="6"></Stars>
+                <div>
+                    <img data-src=./img/language/angular.png class="star3" alt="angular"/>
+                    <div>Angular 8</div>
                 </div>
-                <div class="image">
-                    <img data-src="./img/language/typescript.webp" alt="typescript">
-                    <span>TypeScript</span>
-                    <Stars class="stars" stars="6"></Stars>
+                <div>
+                    <img data-src=./img/language/ts.png class="star3" alt="ts"/>
+                    <div>TypeScript</div>
                 </div>
-                <div class="image">
-                    <img data-src="./img/language/magento.webp" alt="magento">
-                    <span>Magento</span>
-                    <Stars class="stars" stars="6"></Stars>
+                <div>
+                    <img data-src=./img/language/kotlin.png class="star3" alt="kotlin"/>
+                    <div>Kotlin</div>
                 </div>
-                <div class="image">
-                    <img data-src="./img/language/laravel.png" alt="laravel">
-                    <span>Laravel</span>
-                    <Stars class="stars" stars="6"></Stars>
+                <div>
+                    <img data-src=./img/language/spring.png class="star3" alt="spring"/>
+                    <div>Spring Boot</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/sass.png class="star3" alt="sass"/>
+                    <div>Sass/Scss</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/git.png class="star3" alt="git"/>
+                    <div>Git</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/json.png class="star3" alt="json"/>
+                    <div>JSON</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/pcbuild.png class="star3" alt="pcbuild"/>
+                    <div>PC Building</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/android.png class="star2" alt="android"/>
+                    <div>Android</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/node.png class="star2" alt="node"/>
+                    <div>Node.js</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/magento.png class="star2" alt="magento"/>
+                    <div>Magento 2</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/laravel.png class="star2" alt="laravel"/>
+                    <div>Laravel</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/rpi.png class="star2" alt="rpi"/>
+                    <div>Raspberry Pi</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/apache.png class="star2" alt="apache"/>
+                    <div>Apache 2</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/csharp.png class="star1" alt="csharp"/>
+                    <div>C#</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/unity.png class="star1" alt="unity"/>
+                    <div>Unity</div>
                 </div>
             </div>
         </div>
@@ -70,9 +113,10 @@
 
 <script>
 import Stars from "@/forms/Stars";
+
 export default {
     name: "Skills",
-    components: {Stars}
+    components: {Stars},
 }
 </script>
 
@@ -82,6 +126,20 @@ export default {
 #skills {
     background-color: $light1;
 
+    .content .star-scheme {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 16px;
+
+        > * {
+            margin: 0 8px;
+            padding: 4px;
+            border-radius: 10px;
+        }
+    }
+
     .content .img-container {
         display: flex;
         flex-direction: row;
@@ -90,64 +148,33 @@ export default {
         justify-content: center;
         margin: 0 15px;
 
-        .image {
-            width: 64px;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: width 1s;
-            transition-timing-function: ease-in-out;
-            margin: 8px;
-
-            img {
-                width: 64px;
-                height: 64px;
-                margin: 8px;
-                transition: width 1s, height 1s;
-                transition-timing-function: ease-in-out;
-            }
-            span, .stars {
-                opacity: 0;
-                text-align: center;
-                transition-timing-function: ease-in-out;
-            }
-
-            &:hover {
-                width: 128px;
-                transition: width 1s;
-                transition-timing-function: ease-in-out;
-
-                img {
-                    width: 128px;
-                    height: 128px;
-                    margin: 16px;
-                    transition: width 1s, height 1s;
-                    transition-timing-function: ease-in-out;
-                }
-                span, .stars {
-                    opacity: 1;
-                    transition-timing-function: ease-in-out;
-                }
-            }
-
-        }
-
         img {
             width: 64px;
             height: 64px;
-            margin: 8px;
-            transition: width 1s, height 1s;
-            transition-timing-function: ease-in-out;
-
-            &:hover {
-                width: 128px;
-                height: 128px;
-                margin: 16px;
-                transition: width 1s, height 1s;
-                transition-timing-function: ease-in-out;
-            }
+            padding: 8px;
+            margin: 16px 8px 0 8px;
+            border-radius: 25px;
         }
+    }
+
+    .star5 {
+        background-color: $brilliant-red;
+    }
+
+    .star4 {
+        background-color: $brilliant-blue;
+    }
+
+    .star3 {
+        background-color: $brilliant-green;
+    }
+
+    .star2 {
+        background-color: $brilliant-orange;
+    }
+
+    .star1 {
+        background-color: $dark5;
     }
 }
 
@@ -155,7 +182,8 @@ export default {
     background-color: $dark1;
     color: $light0;
 }
-  .programmer #skills {
+
+.programmer #skills {
     display: none;
-  }
+}
 </style>

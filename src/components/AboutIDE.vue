@@ -11,13 +11,17 @@
                         <span class="orange">this</span>.<span class="purple">name</span> = <span class="green">"Omer Erdem"</span>
                     </div>
                     <div class="row spacing">
-                        <span class="orange">this</span>.<span class="purple">gender</span> = <span class="orange">Gender</span>.<span class="purple">MALE</span>
+                        <span class="orange">this</span>.<span class="purple">gender</span> = <span class="orange">Gender</span>.<span
+                        class="purple">MALE</span>
                     </div>
                     <div class="row spacing">
-                        <span class="orange">this</span>.<span class="purple">birthdayTimestamp</span> = <span class="blue">920505600</span>
+                        <span class="orange">this</span>.<span class="purple">birthdayTimestamp</span> = <span
+                        class="blue">920505600</span>
                     </div>
                     <div class="row spacing">
-                        <span class="orange">this</span>.<span class="purple">residence</span> = <span class="orange">Pair</span>&lt;<span class="orange">Latitude</span>, <span class="orange">Longitude</span>&gt;(<span class="blue">52.37319418639191</span>, <span class="blue">4.891432372896032</span>)
+                        <span class="orange">this</span>.<span class="purple">residence</span> = <span class="orange">Pair</span>&lt;<span
+                        class="orange">Latitude</span>, <span class="orange">Longitude</span>&gt;(<span class="blue">52.37319418639191</span>,
+                        <span class="blue">4.891432372896032</span>)
                     </div>
                     }
                 </div>
@@ -45,37 +49,100 @@
                     <div class="row spacing">
                         <span class="orange">return</span> [
                         <div class="row spacing">
-                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"HTML5"</span>, <span class="purple">stars &rarr; </span><span class="blue">4</span>, <span class="purple">years &rarr; </span><span class="blue">5</span>),
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"HTML5"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">5</span>),
                         </div>
                         <div class="row spacing">
-                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"CSS3"</span>, <span class="purple">stars &rarr; </span><span class="blue">3.5</span>, <span class="purple">years &rarr; </span><span class="blue">5</span>),
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"JavaScript"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">5</span>),
                         </div>
                         <div class="row spacing">
-                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Javascript"</span>, <span class="purple">stars &rarr; </span><span class="blue">4.5</span>, <span class="purple">years &rarr; </span><span class="blue">4</span>),
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"PHP"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">4</span>),
                         </div>
                         <div class="row spacing">
-                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"PHP"</span>, <span class="purple">stars &rarr; </span><span class="blue">3.5</span>, <span class="purple">years &rarr; </span><span class="blue">3</span>),
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Java"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">4</span>),
                         </div>
                         <div class="row spacing">
-                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Java"</span>, <span class="purple">stars &rarr; </span><span class="blue">3.5</span>, <span class="purple">years &rarr; </span><span class="blue">2</span>),
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"CSS3"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">4</span>),
                         </div>
                         <div class="row spacing">
-                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"SQL"</span>, <span class="purple">stars &rarr; </span><span class="blue">4</span>, <span class="purple">years &rarr; </span><span class="blue">3</span>),
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"jQuery"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">4</span>),
                         </div>
                         <div class="row spacing">
-                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Angular"</span>, <span class="purple">stars &rarr; </span><span class="blue">3.5</span>, <span class="purple">years &rarr; </span><span class="blue">1</span>),
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"MySQL"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">4</span>),
                         </div>
                         <div class="row spacing">
-                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Vue.js"</span>, <span class="purple">stars &rarr; </span><span class="blue">3.5</span>, <span class="purple">years &rarr; </span><span class="blue">1</span>),
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Vue.js 2"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">4</span>),
                         </div>
                         <div class="row spacing">
-                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Typescript"</span>, <span class="purple">stars &rarr; </span><span class="blue">3</span>, <span class="purple">years &rarr; </span><span class="blue">1</span>),
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Angular 8"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">3</span>),
                         </div>
                         <div class="row spacing">
-                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Magento"</span>, <span class="purple">stars &rarr; </span><span class="blue">3</span>, <span class="purple">years &rarr; </span><span class="blue">0.5</span>),
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"TypeScript"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">3</span>),
                         </div>
                         <div class="row spacing">
-                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Laravel"</span>, <span class="purple">stars &rarr; </span><span class="blue">3</span>, <span class="purple">years &rarr; </span><span class="blue">0.5</span>)
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Kotlin"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">3</span>),
+                        </div>
+                        <div class="row spacing">
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Spring Boot"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">3</span>),
+                        </div>
+                        <div class="row spacing">
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Sass/Scss"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">3</span>),
+                        </div>
+                        <div class="row spacing">
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Git"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">3</span>),
+                        </div>
+                        <div class="row spacing">
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"JSON"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">3</span>),
+                        </div>
+                        <div class="row spacing">
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"PC Building"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">3</span>),
+                        </div>
+                        <div class="row spacing">
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Android"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">2</span>),
+                        </div>
+                        <div class="row spacing">
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Node.js"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">2</span>),
+                        </div>
+                        <div class="row spacing">
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Magento 2"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">2</span>),
+                        </div>
+                        <div class="row spacing">
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Laravel"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">2</span>),
+                        </div>
+                        <div class="row spacing">
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Raspberry Pi"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">2</span>),
+                        </div>
+                        <div class="row spacing">
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Apache 2"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">2</span>),
+                        </div>
+                        <div class="row spacing">
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"C#"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">1</span>),
+                        </div>
+                        <div class="row spacing">
+                            <span class="orange">XP</span>(<span class="purple">name &rarr; </span><span class="green">"Unity"</span>,
+                            <span class="purple">stars &rarr; </span><span class="blue">1</span>)
                         </div>
                         ]
                     </div>
@@ -85,7 +152,8 @@
                 <div class="row spacing">
                     <span class="orange">function</span> <span class="yellow">getPreferences</span>() {
                     <div class="row spacing">
-                        <span class="orange">return</span> [<span class="green">"Windows"</span>, <span class="green">"Frontend"</span>, <span class="green">"Dark mode"</span>, <span class="green">"Minimalistic"</span>]
+                        <span class="orange">return</span> [<span class="green">"Windows"</span>, <span class="green">"Frontend"</span>,
+                        <span class="green">"Dark mode"</span>, <span class="green">"Minimalistic"</span>]
                     </div>
                     }
                 </div>
@@ -93,7 +161,9 @@
                 <div class="row spacing">
                     <span class="orange">function</span> <span class="yellow">getCompanies</span>() {
                     <div class="row spacing">
-                        <span class="orange">return</span> [<span class="green">"Kenneth & Koh"</span>, <span class="green">"DiGidot"</span>, <span class="green">"Corendon"</span>, <span class="green">"Amsta"</span>, <span class="green">"Aquadis"</span>, <span class="green">"Bold Commerce"</span>]
+                        <span class="orange">return</span> [<span class="green">"Kenneth & Koh"</span>, <span
+                        class="green">"DiGidot"</span>, <span class="green">"Corendon"</span>, <span class="green">"Amsta"</span>,
+                        <span class="green">"Aquadis"</span>, <span class="green">"Bold Commerce"</span>]
                     </div>
                     }
                 </div>
@@ -101,7 +171,11 @@
                 <div class="row spacing">
                     <span class="orange">function</span> <span class="yellow">getProjects</span>() {
                     <div class="row spacing">
-                        <span class="orange">return</span> [<span class="green">"Dating website for one-man travelers"</span>, <span class="green">"Pokemon Go for elderly"</span>, <span class="green">"Pokemon Go for messaging"</span>, <span class="green">"Admin panel"</span>, <span class="green">"Spotify app"</span>, <span class="green">"Roll-a-Ball game"</span>, <span class="green">"Hardware installation panel"</span>]
+                        <span class="orange">return</span> [<span
+                        class="green">"Dating website for one-man travelers"</span>, <span class="green">"Pokemon Go for elderly"</span>,
+                        <span class="green">"Pokemon Go for messaging"</span>, <span class="green">"Admin panel"</span>,
+                        <span class="green">"Spotify app"</span>, <span class="green">"Roll-a-Ball game"</span>, <span
+                        class="green">"Hardware installation panel"</span>]
                     </div>
                     }
                 </div>
@@ -109,7 +183,8 @@
                 <div class="row spacing">
                     <span class="orange">function</span> <span class="yellow">getHobbies</span>() {
                     <div class="row spacing">
-                        <span class="orange">return</span> [<span class="green">"Programming"</span>, <span class="green">"Gaming"</span>, <span class="green">"Driving around"</span>, <span class="green">"Experimenting"</span>]
+                        <span class="orange">return</span> [<span class="green">"Programming"</span>, <span
+                        class="green">"Gaming"</span>, <span class="green">"Driving around"</span>, <span class="green">"Experimenting"</span>]
                     </div>
                     }
                 </div>
@@ -120,91 +195,91 @@
 </template>
 
 <script>
-    export default {
-        name: "AboutIDE"
-    }
+export default {
+    name: "AboutIDE"
+}
 </script>
 
 <style scoped lang="scss">
-    @import "src/styles/variables";
+@import "src/styles/variables";
 
-    #aboutIde {
-      display: none;
-        background-color: $light0;
+#aboutIde {
+    display: none;
+    background-color: $light0;
 
-        .content {
-            > div {
-                margin: 10px;
-            }
+    .content {
+        > div {
+            margin: 10px;
+        }
 
-            #ide {
-                background-color: #2B2B2B;
-                font-size: 18px;
-                line-height: 1.6;
-                display: flex;
-                flex-direction: column;
-                padding: 8px;
+        #ide {
+            background-color: #2B2B2B;
+            font-size: 18px;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            padding: 8px;
 
-                .row {
-                    flex-direction: row;
-                    flex-wrap: nowrap;
+            .row {
+                flex-direction: row;
+                flex-wrap: nowrap;
 
-                    &.spacing {
-                        margin-left: 16px;
+                &.spacing {
+                    margin-left: 16px;
+                }
+
+                &:empty {
+                    height: 20px;
+                }
+
+                span {
+                    &.space-left {
+                        margin-left: 4px;
                     }
 
-                    &:empty {
-                        height: 20px;
+                    &.space-right {
+                        margin-right: 4px;
                     }
 
-                    span {
-                        &.space-left {
-                            margin-left: 4px;
-                        }
+                    &.orange {
+                        color: #cc7832;
+                    }
 
-                        &.space-right {
-                            margin-right: 4px;
-                        }
+                    &.yellow {
+                        color: #ffc66d;
+                    }
 
-                        &.orange {
-                            color: #cc7832;
-                        }
+                    &.purple {
+                        color: #9876aa;
+                    }
 
-                        &.yellow {
-                            color: #ffc66d;
-                        }
+                    &.blue {
+                        color: #6897bb;
+                    }
 
-                        &.purple {
-                            color: #9876aa;
-                        }
-
-                        &.blue {
-                            color: #6897bb;
-                        }
-
-                        &.green {
-                            color: #6a8759;
-                        }
+                    &.green {
+                        color: #6a8759;
                     }
                 }
             }
+        }
 
-            @media (min-width: $breakpoint-sm) {
-                margin: 20px 50px;
-            }
-            @media (min-width: $breakpoint-m) {
-                margin: 20px 100px;
-                flex-direction: row;
-            }
+        @media (min-width: $breakpoint-sm) {
+            margin: 20px 50px;
+        }
+        @media (min-width: $breakpoint-m) {
+            margin: 20px 100px;
+            flex-direction: row;
         }
     }
+}
 
-    .dark #aboutIde {
-        background-color: $dark2;
-        color: $light0;
-    }
+.dark #aboutIde {
+    background-color: $dark2;
+    color: $light0;
+}
 
-    .programmer #aboutIde {
-      display: flex;
-    }
+.programmer #aboutIde {
+    display: flex;
+}
 </style>
