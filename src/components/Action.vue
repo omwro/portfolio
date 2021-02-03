@@ -16,13 +16,13 @@
           <span class="slider round"></span>
         </label>
       </div>
-      <div>
-        <span>Experiment Mode</span>
-        <label class="switch">
-          <input id="experimentSwitch" @click="onExperimentModeToggle" type="checkbox">
-          <span class="slider round"></span>
-        </label>
-      </div>
+<!--      <div>-->
+<!--        <span>Experiment Mode</span>-->
+<!--        <label class="switch">-->
+<!--          <input id="experimentSwitch" @click="onExperimentModeToggle" type="checkbox">-->
+<!--          <span class="slider round"></span>-->
+<!--        </label>-->
+<!--      </div>-->
     </div>
   </div>
 </template>
@@ -35,18 +35,18 @@ export default {
   created() {
     $(document).ready(() => {
       if (localStorage.getItem("darkmode") === null ||
-          localStorage.getItem("programmermode") === null ||
-          localStorage.getItem("experimentmode") === null) {
+          localStorage.getItem("programmermode") === null/* ||
+          localStorage.getItem("experimentmode") === null*/) {
         localStorage.setItem("darkmode", false)
         this.setDarkMode(false)
         localStorage.setItem("programmermode", false)
         this.setProgrammerMode(false)
-        localStorage.setItem("experimentmode", false)
-        this.setExperimentMode(false)
+        /*localStorage.setItem("experimentmode", false)
+        this.setExperimentMode(false)*/
       } else {
         this.setDarkMode(this.getDarkMode());
         this.setProgrammerMode(this.getProgrammerMode());
-        this.setExperimentMode(this.getExperimentMode());
+        /*this.setExperimentMode(this.getExperimentMode());*/
       }
     });
   },
@@ -85,7 +85,7 @@ export default {
       }
       $('#programmerSwitch').prop('checked', bool);
     },
-    onExperimentModeToggle() {
+    /*onExperimentModeToggle() {
       this.setExperimentMode(!this.getExperimentMode());
     },
     getExperimentMode() {
@@ -99,7 +99,7 @@ export default {
         $('#app').removeClass('experiment');
       }
       $('#experimentSwitch').prop('checked', bool);
-    }
+    }*/
   }
 }
 </script>

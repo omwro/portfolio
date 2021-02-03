@@ -214,11 +214,12 @@ export default {
 
         #ide {
             background-color: #2B2B2B;
-            font-size: 18px;
+            font-size: 14px;
             line-height: 1.6;
             display: flex;
             flex-direction: column;
             padding: 8px;
+            max-width: 1000px;
 
             .row {
                 flex-direction: row;
@@ -262,14 +263,24 @@ export default {
                     }
                 }
             }
+
+            @media (min-width: $breakpoint-sm) {
+                font-size: 16px;
+            }
+
+            @media (min-width: $breakpoint-m) {
+                font-size: 18px;
+            }
         }
 
         @media (min-width: $breakpoint-sm) {
             margin: 20px 50px;
+            font-size: 16px;
         }
         @media (min-width: $breakpoint-m) {
             margin: 20px 100px;
             flex-direction: row;
+            font-size: 18px;
         }
     }
 }

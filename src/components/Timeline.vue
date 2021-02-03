@@ -148,8 +148,6 @@
 </template>
 
 <script>
-    // import $ from 'jquery';
-
     export default {
         name: "Timeline",
         data() {
@@ -358,12 +356,13 @@
             display: none;
             flex-direction: column;
             height: 100%;
+            font-size: 16px;
+            margin: 0 8px;
 
             .row {
                 display: flex;
                 flex-direction: row;
                 height: 30px;
-                min-width: 500px;
 
                 &:hover {
                     background-color: $hover-color;
@@ -602,6 +601,112 @@
                                         rgba($color4, 0.2) 50%,
                                         rgba($color4, 0.5) 100%
                         );
+                    }
+                }
+            }
+        }
+
+        @media (max-width: $breakpoint-m) {
+            #git {
+                font-size: 14px;
+                min-width: 386px;
+
+                .row {
+                    .spacer-1 {
+                        margin-left: 79px;
+                    }
+
+                    .vline, .bottomcornerline, .topcornerline, .commit.c-0, .commit.c-1, .commit.c-2 {
+                        &.color2 {
+                            position: relative;
+                            left: -30px;
+                        }
+
+                        &.color3 {
+                            position: relative;
+                            left: -60px;
+                        }
+
+                        &.color4 {
+                            position: relative;
+                            left: -90px;
+                        }
+
+                        border-radius: 0;
+                        border-top: 0;
+                        border-bottom: 0;
+                    }
+
+                    .topcornerline.color4 {
+                        top: 5px;
+                    }
+
+                    .hline.hl-h:not(.hl-r):not(.hl-l) {
+                        width: 5px;
+                    }
+
+                    .hline.hl-r, .hline:not(.hl-h) {
+                        display: none;
+                    }
+
+                    .block:not(:nth-of-type(3)) .hline.color4:not(:first-of-type){
+                        display: none;
+                    }
+
+                    .tag {
+                        width: 62px;
+                    }
+
+
+                    .bullet {
+                        &.b-img {
+                            z-index: 5;
+                            &.color2 {
+                                left: -30px;
+                                position: relative;
+                            }
+
+                            &.color3 {
+                                left: -60px;
+                                position: relative;
+                            }
+
+                            &.color4 {
+                                left: -90px;
+                                position: relative;
+                            }
+                        }
+
+                        &.b-s {
+                            z-index: 4;
+                            &.color4 {
+                                left: -60px;
+                                top: -30px;
+                            }
+                        }
+                    }
+
+
+                    .commit {
+                        > div:first-child {
+                            width: 10px;
+                        }
+
+                        &.c-1 > div:first-child {
+                            width: 10px;
+                        }
+
+                        &.c-2 > div:first-child {
+                            width: 10px;
+                        }
+
+                        &.c-3 > div:first-child {
+                            width: 10px;
+                        }
+
+                        &.c-4 > div:first-child {
+                            width: 10px;
+                        }
                     }
                 }
             }
