@@ -172,8 +172,9 @@
                     <span class="orange">function</span> <span class="yellow">getProjects</span>() {
                     <div class="row spacing">
                         <span class="orange">return</span> [<span
+                        class="green">"Vue.js Portfolio website"</span>,<span
                         class="green">"Dating website for one-man travelers"</span>, <span class="green">"Pokemon Go for elderly"</span>,
-                        <span class="green">"Pokemon Go for messaging"</span>, <span class="green">"Admin panel"</span>,
+                        <span class="green">"Pokemon Go for messaging"</span>, <span class="green">"Admin dashboard"</span>,
                         <span class="green">"Spotify app"</span>, <span class="green">"Roll-a-Ball game"</span>, <span
                         class="green">"Hardware installation panel"</span>]
                     </div>

@@ -4,13 +4,13 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faAt, faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons'
+import { faAt, faStar, faStarHalfAlt, faHandPointer } from '@fortawesome/free-solid-svg-icons'
 import { faStar as faStarEmpty } from '@fortawesome/free-regular-svg-icons'
 import { faFontAwesome, faLinkedin, faSkype, faDiscord, faCodepen, faGithub } from '@fortawesome/free-brands-svg-icons'
 import VueTinySlider from 'vue-tiny-slider';
 import VueLazyload from 'vue-lazyload'
 
-library.add(faAt, faLinkedin, faSkype, faDiscord, faCodepen, faGithub, faFontAwesome, faStar, faStarHalfAlt, faStarEmpty)
+library.add(faAt, faLinkedin, faSkype, faDiscord, faCodepen, faGithub, faFontAwesome, faStar, faStarHalfAlt, faStarEmpty, faHandPointer)
 
 Vue.config.productionTip = false
 Vue.use(VueAxios, axios)

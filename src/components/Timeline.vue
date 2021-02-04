@@ -637,7 +637,7 @@
                         border-bottom: 0;
                     }
 
-                    .topcornerline.color4 {
+                    .topcornerline {
                         top: 5px;
                     }
 
