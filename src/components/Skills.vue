@@ -71,14 +71,6 @@
                     <div>JSON</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/pcbuild.png class="star3" alt="pcbuild"/>
-                    <div>PC Building</div>
-                </div>
-                <div>
-                    <img data-src=./img/language/android.png class="star2" alt="android"/>
-                    <div>Android</div>
-                </div>
-                <div>
                     <img data-src=./img/language/node.png class="star2" alt="node"/>
                     <div>Node.js</div>
                 </div>
@@ -102,9 +94,47 @@
                     <img data-src=./img/language/csharp.png class="star1" alt="csharp"/>
                     <div>C#</div>
                 </div>
+            </div>
+            <div class="line"></div>
+            <div class="img-container" v-lazy-container="{ selector: 'img' }">
+                <div>
+                    <img data-src=./img/language/web.png class="star5" alt="web"/>
+                    <div>Website</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/pcbuild.png class="star3" alt="pcbuild"/>
+                    <div>Custom PC</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/android.png class="star2" alt="android"/>
+                    <div>Android app</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/api.png class="star2" alt="api"/>
+                    <div>Web API</div>
+                </div>
                 <div>
                     <img data-src=./img/language/unity.png class="star1" alt="unity"/>
-                    <div>Unity</div>
+                    <div>Unity game</div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="img-container" v-lazy-container="{ selector: 'img' }">
+                <div>
+                    <img data-src=./img/language/fist.png class="star5" alt="fist"/>
+                    <div>Hard worker</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/team.png class="star4" alt="team"/>
+                    <div>Team player</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/problem.png class="star4" alt="problem"/>
+                    <div>Problem<br>solving</div>
+                </div>
+                <div>
+                    <img data-src=./img/language/creative.png class="star4" alt="light bulb"/>
+                    <div>Creativity</div>
                 </div>
             </div>
         </div>
@@ -175,6 +205,14 @@ export default {
 
     .star1 {
         background-color: $dark5;
+    }
+
+    .line {
+        width: 95%;
+        height: 1px;
+        background-color: $grey;
+        margin-top: 16px;
+        align-self: center;
     }
 }
 
