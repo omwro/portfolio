@@ -27,7 +27,7 @@
         .background-image {
             width: 100%;
             height: 100%;
-            background: url("../assets/selfies/car-selfie-blurred-720p.webp") no-repeat 60% 50%;
+            background: url("../../public/img/selfie/car-selfie-blurred-720p.webp") no-repeat 60% 50%;
             background-size: cover;
         }
 
@@ -50,19 +50,19 @@
 
         @media (min-width: $breakpoint-l) and (max-width: $breakpoint-xl) {
             .background-image {
-                background: url("../assets/selfies/car-selfie-blurred-1080p.webp") no-repeat 60% 50%;
+                background: url('../../public/img/selfie/car-selfie-blurred-1080p.webp') no-repeat 60% 50%;
             }
         }
 
         @media (min-width: $breakpoint-xl) and (max-width: $breakpoint-xxl) {
             .background-image {
-                background: url("../assets/selfies/car-selfie-blurred-1440p.webp") no-repeat 60% 50%;
+                background: url("../../public/img/selfie/car-selfie-blurred-1440p.webp") no-repeat 60% 50%;
             }
         }
 
         @media (min-width: $breakpoint-xxl) {
             .background-image {
-                background: url("../assets/selfies/car-selfie-blurred.webp") no-repeat 60% 50%;
+                background: url("../../public/img/selfie/car-selfie-blurred.webp") no-repeat 60% 50%;
             }
         }
     }

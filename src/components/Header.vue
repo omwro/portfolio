@@ -1,6 +1,6 @@
 <template>
     <div id="header">
-        <img class="logo" src="../assets/logo.webp" alt="logo">
+        <img class="logo" src="../../public/img/company/logo.webp" alt="logo">
         <h1>Omer Erdem</h1>
         <div class="hamburger" @click="openMenu">
             <span class="hamburger-top"></span>

@@ -75,10 +75,10 @@
                 a {
                     font-size: 16px;
                     margin-top: 4px;
-                    color: $brilliant-red;
+                    color: $dark0;
 
                     &:active {
-                        color: $brilliant-blue;
+                        color: $brilliant-red;
                     }
                 }
             }
@@ -106,6 +106,10 @@
     .dark #about {
         background-color: $dark2;
         color: $light0;
+
+        .selfie a {
+            color: $light0;
+        }
     }
 
     .programmer #about {

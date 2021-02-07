@@ -1,6 +1,6 @@
 <template>
   <div id="action" class="section">
-    <h2>Choose your preference</h2>
+    <h1 class="small">Choose your preference</h1>
     <div class="content">
       <div>
         <span>Dark Mode</span>

@@ -16,7 +16,7 @@
                         <template v-if="i === item.line">
                             <template v-if="item.style === 'commit'">
                                 <div :class="'bullet b-img color'+item.line" :key="i">
-                                    <img v-lazy="profile" alt="profile picture"/>
+                                    <img v-lazy="'./img/company/logo.webp'" alt="profile picture"/>
                                 </div>
                             </template>
                             <template v-else-if="item.style === 'start'">
@@ -93,7 +93,7 @@
 
             <div id="timeline-table">
                 <div class="event" data-date="Feb 2020">
-                    <h3>Intern Magento Developer</h3>
+                    <h2>Intern Magento Developer</h2>
                     <p>
                         Internship at Bold Commerce in Amsterdam an Id focused on improving frontend and
                         backend development while also helping in the Support team. Working with sprints
@@ -101,7 +101,7 @@
                     </p>
                 </div>
                 <div class="event" data-date="Sep 2018">
-                    <h3>Software Engineering</h3>
+                    <h2>Software Engineering</h2>
                     <p>
                         Following the 4 year plan study Software Engineering at Amsterdam University of
                         Applied Sciences. My goal is to improve skills in programming and business while
@@ -110,7 +110,7 @@
                     </p>
                 </div>
                 <div class="event" data-date="Feb 2018">
-                    <h3>Intern Frontend Developer</h3>
+                    <h2>Intern Frontend Developer</h2>
                     <p>
                         Graduation internship at DiGidot, subsidiary of InventDesign where I focused on
                         improving frontend skills by creating a web dashboard for the installations of
@@ -119,7 +119,7 @@
                     </p>
                 </div>
                 <div class="event" data-date="Sep 2016">
-                    <h3>Intern Game Developer</h3>
+                    <h2>Intern Game Developer</h2>
                     <p>
                         Internship at Kenneth&Koh in Aalsmeer and focused on working within a company
                         setting and improve my programming skills by creating a mobile game in Unity in C#
@@ -127,7 +127,7 @@
                     </p>
                 </div>
                 <div class="event" data-date="Sep 2015">
-                    <h3>Application Developer</h3>
+                    <h2>Application Developer</h2>
                     <p>
                         Following the 3 year plan study Application Development at Regio College Zaandam.
                         My goal is to get started with programming and maintain the leadership role in group
@@ -136,7 +136,7 @@
                     </p>
                 </div>
                 <div class="event" data-date="Jan 2015">
-                    <h3>Cashier</h3>
+                    <h2>Cashier</h2>
                     <p>
                         Working as a cashier at Deugd Erdem in Amsterdam with a 0 hour contract to
                         improve my communication skills with clients, while earning some pocket money.
@@ -152,7 +152,6 @@
         name: "Timeline",
         data() {
             return {
-                profile: require(`../assets/selfies/profile.png`),
                 gitItems: [
                     {
                         id: 17,
@@ -313,6 +312,11 @@
                 border-right: solid 1px black;
                 border-left: solid 3px $brilliant_red;
                 padding: 10px;
+
+                h2 {
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
 
                 &:first-child {
                     border-top: solid 1px black;
