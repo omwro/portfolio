@@ -3,7 +3,7 @@
         <h1>Skills</h1>
         <div class="content">
             <div class="star-scheme">
-                <stars stars="10" class="star5"/>
+                <stars stars="9" class="star5"/>
                 <stars stars="8" class="star4"/>
                 <stars stars="6" class="star3"/>
                 <stars stars="4" class="star2"/>

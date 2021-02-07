@@ -9,13 +9,13 @@
           <span class="slider round"></span>
         </label>
       </div>
-      <div>
-        <span>Programmer Mode</span>
-        <label class="switch">
-          <input id="programmerSwitch" @click="onProgrammerModeToggle" type="checkbox">
-          <span class="slider round"></span>
-        </label>
-      </div>
+<!--      <div>-->
+<!--        <span>Programmer Mode</span>-->
+<!--        <label class="switch">-->
+<!--          <input id="programmerSwitch" @click="onProgrammerModeToggle" type="checkbox">-->
+<!--          <span class="slider round"></span>-->
+<!--        </label>-->
+<!--      </div>-->
 <!--      <div>-->
 <!--        <span>Experiment Mode</span>-->
 <!--        <label class="switch">-->
@@ -34,18 +34,18 @@ export default {
   name: "Action",
   created() {
     $(document).ready(() => {
-      if (localStorage.getItem("darkmode") === null ||
-          localStorage.getItem("programmermode") === null/* ||
+      if (localStorage.getItem("darkmode") === null/* ||
+          localStorage.getItem("programmermode") === null*//* ||
           localStorage.getItem("experimentmode") === null*/) {
         localStorage.setItem("darkmode", false)
         this.setDarkMode(false)
-        localStorage.setItem("programmermode", false)
-        this.setProgrammerMode(false)
+        /*localStorage.setItem("programmermode", false)
+        this.setProgrammerMode(false)*/
         /*localStorage.setItem("experimentmode", false)
         this.setExperimentMode(false)*/
       } else {
         this.setDarkMode(this.getDarkMode());
-        this.setProgrammerMode(this.getProgrammerMode());
+        /*this.setProgrammerMode(this.getProgrammerMode());*/
         /*this.setExperimentMode(this.getExperimentMode());*/
       }
     });
@@ -63,13 +63,13 @@ export default {
         $('#app').addClass('dark');
       } else {
         $('#app').removeClass('dark');
-        if (this.getProgrammerMode() === true) {
+        /*if (this.getProgrammerMode() === true) {
           this.setProgrammerMode(false)
-        }
+        }*/
       }
       $('#darkSwitch').prop('checked', bool);
     },
-    onProgrammerModeToggle() {
+    /*onProgrammerModeToggle() {
       this.setProgrammerMode(!this.getProgrammerMode());
     },
     getProgrammerMode() {
@@ -84,7 +84,7 @@ export default {
         $('#app').removeClass('programmer');
       }
       $('#programmerSwitch').prop('checked', bool);
-    },
+    },*/
     /*onExperimentModeToggle() {
       this.setExperimentMode(!this.getExperimentMode());
     },

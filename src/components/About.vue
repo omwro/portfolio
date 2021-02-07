@@ -4,7 +4,7 @@
         <div class="content">
             <div class="selfie">
                 <img v-lazy="'./img/selfie/selfie.webp'" alt="selfie">
-                <span>Download Resume</span>
+                <a href="#" onclick="return false" v-on:click="getAccess">Download Resume</a>
             </div>
             <div class="intro">
                 <div>
@@ -24,6 +24,27 @@
 <script>
     export default {
         name: "About",
+        methods: {
+            getAccess: function () {
+                let code = prompt("Please enter the access code to download the file. Get in contact in case you don't have a code.")
+                if (code != null) {
+                    this.axios.get(window.location.origin+"/php/access.php?code="+code).then(response => {
+                        if (response.data === true) {
+                            console.log("ACCESS ALLOWED")
+                            this.downloadCV()
+                        } else {
+                            console.log("ACCESS DENIED")
+                        }
+                    })
+                }
+            },
+            downloadCV: function () {
+                let link = document.createElement('a');
+                link.href = window.location.origin+"/doc/OmerErdem_CV.pdf";
+                link.download = 'OmerErdem_CV.pdf';
+                link.dispatchEvent(new MouseEvent('click'));
+            }
+        }
     }
 </script>
 
@@ -49,6 +70,16 @@
                     min-width: 200px;
                     max-width: 300px;
                     border: solid $dark5 2px;
+                }
+
+                a {
+                    font-size: 16px;
+                    margin-top: 4px;
+                    color: $brilliant-red;
+
+                    &:active {
+                        color: $brilliant-blue;
+                    }
                 }
             }
 
