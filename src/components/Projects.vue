@@ -196,6 +196,7 @@
 
                 .carousel-description {
                     font-style: italic;
+                    font-size: 14px;
                     margin: 0 5%;
                 }
 
@@ -240,7 +241,7 @@
     }
 
     .dark #projects {
-        background-color: $dark2;
+        background-color: $dark1;
         color: $light0;
     }
 

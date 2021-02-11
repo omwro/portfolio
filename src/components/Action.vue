@@ -108,10 +108,11 @@ export default {
 @import "src/styles/variables";
 
 #action {
-  background-color: $light0;
+  background-color: $light1;
 
   .content {
     flex-direction: row;
+      margin: 16px auto;
 
     > div {
       display: flex;
@@ -192,7 +193,7 @@ export default {
 }
 
 .dark #action {
-  background-color: $dark1;
+  background-color: $dark2;
   color: $light0;
 }
 </style>

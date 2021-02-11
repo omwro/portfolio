@@ -94,13 +94,13 @@ export default {
 @import "src/styles/variables";
 
 #contact {
-    background-color: $light1;
+    background-color: $light0;
 
     #form {
         display: flex;
         flex-direction: column;
         max-width: 500px;
-        background-color: $light0;
+        background-color: $light1;
         padding: 30px 10px 20px;
         border-radius: 10px;
         border: solid 1px black;

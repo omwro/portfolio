@@ -104,7 +104,7 @@
     }
 
     .dark #about {
-        background-color: $dark2;
+        background-color: $dark1;
         color: $light0;
 
         .selfie a {

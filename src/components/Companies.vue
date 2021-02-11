@@ -36,7 +36,7 @@
     @import "src/styles/variables";
 
     #companies {
-        background-color: $light1;
+        background-color: $light0;
 
         .content {
             display: flex;

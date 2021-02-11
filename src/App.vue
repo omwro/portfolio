@@ -5,10 +5,15 @@
         <Action/>
         <AboutIDE/>
         <About/>
+        <Quicky msg="Currently not looking for any jobs until june 2022. I do however accept small projects."/>
         <Skills/>
+        <Quicky msg="Bucketlist: Python, React & C++"/>
         <Projects/>
+        <Quicky msg="`When something is important enough, you do it even if the odds are not in your favor.` - Elon Musk"/>
         <Companies/>
+        <Quicky msg="`Life is not fair, get used to it.` - Bill Gates"/>
         <Timeline/>
+        <Quicky msg="`Your brand is what other people say about you when you're not in the room.` - Jeff Bezos"/>
         <Contact/>
         <Footer/>
         <Menu/>
@@ -29,6 +34,7 @@ import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Action from "./components/Action";
 import AboutIDE from "./components/AboutIDE";
+import Quicky from "./forms/Quicky";
 
 export default {
     name: 'App',
@@ -44,7 +50,8 @@ export default {
         Projects,
         About,
         Home,
-        Header
+        Header,
+        Quicky
     }
 }
 </script>
@@ -61,6 +68,14 @@ html, body, #app {
     width: 100%;
     height: 100%;
     font-size: 10px;
+}
+
+#app {
+    color: $dark0;
+
+    &.dark {
+        color: $light0;
+    }
 }
 
 .section {

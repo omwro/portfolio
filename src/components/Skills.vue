@@ -154,7 +154,7 @@ export default {
 @import "src/styles/variables";
 
 #skills {
-    background-color: $light1;
+    background-color: $light0;
 
     .content .star-scheme {
         display: flex;

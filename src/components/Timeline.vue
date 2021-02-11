@@ -718,7 +718,7 @@
     }
 
     .dark #timeline {
-        background-color: $dark2;
+        background-color: $dark1;
         color: $light0;
 
         #timeline-table .event {
