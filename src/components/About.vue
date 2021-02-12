@@ -40,8 +40,8 @@
             },
             downloadCV: function () {
                 let link = document.createElement('a');
-                link.href = window.location.origin+"/doc/OmerErdem_CV.pdf";
-                link.download = 'OmerErdem_CV.pdf';
+                link.href = window.location.origin+"/doc/OmerErdem_Resume.pdf";
+                link.download = 'OmerErdem_Resume.pdf';
                 link.dispatchEvent(new MouseEvent('click'));
             }
         }

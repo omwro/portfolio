@@ -17,6 +17,7 @@
         <Contact/>
         <Footer/>
         <Menu/>
+<!--        <CV/>-->
     </div>
 </template>
 
@@ -35,6 +36,7 @@ import Menu from "./components/Menu";
 import Action from "./components/Action";
 import AboutIDE from "./components/AboutIDE";
 import Quicky from "./forms/Quicky";
+// import CV from "./components/CV";
 
 export default {
     name: 'App',
@@ -51,7 +53,8 @@ export default {
         About,
         Home,
         Header,
-        Quicky
+        Quicky,
+        // CV
     }
 }
 </script>
