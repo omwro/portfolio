@@ -32,10 +32,20 @@ export default {
             if (code != null) {
                 this.axios.get(window.location.origin + "/php/access.php?code=" + code).then(response => {
                     if (response.data === true) {
-                        console.log("ACCESS ALLOWED")
+                        this.$notify({
+                            type: "success",
+                            duration: 10000,
+                            title: 'Access Granted',
+                            text: 'The file shall start downloading soon.'
+                        });
                         this.downloadCV()
                     } else {
-                        console.log("ACCESS DENIED")
+                        this.$notify({
+                            type: "error",
+                            duration: 10000,
+                            title: 'Access Denied',
+                            text: 'Wrong code has been entered.'
+                        });
                     }
                 })
             }

@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <notifications position="top" width="100%"/>
         <Header/>
         <Home/>
         <Action/>
@@ -147,4 +148,20 @@ html, body, #app {
         display: none;
     }
 }
+
+
+.vue-notification-group {
+    margin-top: 0.5rem;
+
+    .notification-title {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .notification-content {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+
 </style>

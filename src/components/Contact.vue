@@ -72,6 +72,12 @@ export default {
             if (!this.name || !this.email || !this.subject || !this.message) {
                 formIsValid = false;
                 this.errorMsg = "All fields are required!";
+                this.$notify({
+                    type: "error",
+                    duration: 10000,
+                    title: 'Contact Form',
+                    text: 'All fields are required!'
+                });
             }
 
             if (formIsValid) {
@@ -83,7 +89,20 @@ export default {
                 this.axios.post("/php/mail.php", form).then(res => {
                     console.log(res)
                     this.name = this.email = this.subject = this.message = "";
-                    this.submitTxt = "SUCCESS!";
+                    this.$notify({
+                        type: "success",
+                        duration: 10000,
+                        title: 'Contact Form',
+                        text: 'The mail is sent. I will contact you as soon as possible.'
+                    });
+                }).catch(error => {
+                    console.error(error)
+                    this.$notify({
+                        type: "error",
+                        duration: 20000,
+                        title: 'Contact Form',
+                        text: "Something went wrong with sending the mail. Please send manually a mail to 'm.o.erdem@outlook.com'"
+                    });
                 });
             }
         }
