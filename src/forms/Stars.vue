@@ -19,10 +19,10 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-    .star {
-        color: gold;
-        width: 16px;
-        height: 16px;
-    }
+<style lang="scss" scoped>
+.star {
+    color: gold;
+    width: 16px;
+    height: 16px;
+}
 </style>

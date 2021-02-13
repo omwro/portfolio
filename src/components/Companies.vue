@@ -1,15 +1,15 @@
 <template>
     <div id="companies" class="section">
         <h1>Companies</h1>
-        <div class="content" v-lazy-container="{ selector: 'img' }">
+        <div v-lazy-container="{ selector: 'img' }" class="content">
             <div><img alt="themobilecompany" data-src=./img/company/themobilecompany.webp/></div>
-            <div><img class="dark-invert" alt="boldcommerce" data-src=./img/company/boldcommerce.webp/></div>
-            <div><img class="dark-invert" alt="aquadis" data-src=./img/company/aquadis.webp/></div>
+            <div><img alt="boldcommerce" class="dark-invert" data-src=./img/company/boldcommerce.webp/></div>
+            <div><img alt="aquadis" class="dark-invert" data-src=./img/company/aquadis.webp/></div>
             <div><img alt="amsta" data-src=./img/company/amsta.webp/></div>
             <div><img alt="corendon" data-src=./img/company/corendon.webp/></div>
-            <div><img class="dark-bright" alt="digidot" data-src=./img/company/digidot.webp/></div>
-            <div><img class="dark-bright" alt="kennethkoh" data-src=./img/company/kennethkoh.webp/></div>
-            <div><img class="dark-invert" alt="deugderdem" data-src=./img/company/deugderdem.webp/></div>
+            <div><img alt="digidot" class="dark-bright" data-src=./img/company/digidot.webp/></div>
+            <div><img alt="kennethkoh" class="dark-bright" data-src=./img/company/kennethkoh.webp/></div>
+            <div><img alt="deugderdem" class="dark-invert" data-src=./img/company/deugderdem.webp/></div>
         </div>
     </div>
 </template>
@@ -34,36 +34,29 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import "src/styles/variables";
 
-#companies {
-    background-color: $light0;
 
-    .content {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 1000px;
+#companies .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-        > div {
-            padding: 16px;
-            align-self: center;
+    > div {
+        padding: 16px;
+        align-self: center;
 
-            img {
-                width: auto;
-                height: auto;
-                max-width: 256px;
-                max-height: 128px;
-            }
+        img {
+            width: auto;
+            height: auto;
+            max-width: 256px;
+            max-height: 128px;
         }
     }
 }
 
 .dark #companies {
-    background-color: $dark1;
-    color: $light0;
-
     .dark-invert {
         filter: invert(100%);
     }

@@ -174,7 +174,8 @@
                         <span class="orange">return</span> [<span
                         class="green">"Vue.js Portfolio website"</span>,<span
                         class="green">"Dating website for one-man travelers"</span>, <span class="green">"Pokemon Go for elderly"</span>,
-                        <span class="green">"Pokemon Go for messaging"</span>, <span class="green">"Admin dashboard"</span>,
+                        <span class="green">"Pokemon Go for messaging"</span>, <span
+                        class="green">"Admin dashboard"</span>,
                         <span class="green">"Spotify app"</span>, <span class="green">"Roll-a-Ball game"</span>, <span
                         class="green">"Hardware installation panel"</span>]
                     </div>
@@ -201,7 +202,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import "src/styles/variables";
 
 #aboutIde {
@@ -265,20 +266,20 @@ export default {
                 }
             }
 
-            @media (min-width: $breakpoint-sm) {
+            @media (min-width: $mq-sm) {
                 font-size: 16px;
             }
 
-            @media (min-width: $breakpoint-m) {
+            @media (min-width: $mq-m) {
                 font-size: 18px;
             }
         }
 
-        @media (min-width: $breakpoint-sm) {
+        @media (min-width: $mq-sm) {
             margin: 20px 50px;
             font-size: 16px;
         }
-        @media (min-width: $breakpoint-m) {
+        @media (min-width: $mq-m) {
             margin: 20px 100px;
             flex-direction: row;
             font-size: 18px;

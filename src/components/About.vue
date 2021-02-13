@@ -50,67 +50,59 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import "src/styles/variables";
 
-#about {
-    background-color: $light0;
 
-    .content {
-        > div {
-            margin: 10px;
+#about .content {
+    > div {
+        margin: 10px;
+    }
+
+    .selfie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 100%;
+            max-height: 450px;
+            min-width: 200px;
+            max-width: 300px;
+            border: solid $dark5 2px;
         }
 
-        .selfie {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        a {
+            color: inherit;
+            font-size: 16px;
+            margin-top: 4px;
 
-            img {
-                width: 100%;
-                max-height: 450px;
-                min-width: 200px;
-                max-width: 300px;
-                border: solid $dark5 2px;
+            &:active {
+                color: $brilliant-red;
             }
-
-            a {
-                font-size: 16px;
-                margin-top: 4px;
-                color: $dark0;
-
-                &:active {
-                    color: $brilliant-red;
-                }
-            }
-        }
-
-        .intro {
-            font-size: 18px;
-            line-height: 1.6;
-            max-width: 650px;
-
-            > div {
-                padding-bottom: 20px;
-            }
-        }
-
-        @media (min-width: $breakpoint-sm) {
-            margin: 20px 50px;
-        }
-        @media (min-width: $breakpoint-m) {
-            margin: 20px 100px;
-            flex-direction: row;
         }
     }
-}
 
-.dark #about {
-    background-color: $dark1;
-    color: $light0;
+    .intro {
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 650px;
 
-    .selfie a {
-        color: $light0;
+        > div {
+            padding-bottom: 20px;
+        }
+    }
+
+    @media (min-width: $mq-sm) {
+        flex-direction: column;
+    }
+    @media (min-width: $mq-sm) {
+        margin: 20px 50px;
+    }
+    @media (min-width: $mq-m) {
+        flex-direction: row;
+        margin: 20px 100px;
+
     }
 }
 

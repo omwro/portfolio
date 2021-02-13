@@ -5,23 +5,19 @@
 </template>
 
 <script>
-    export default {
-        name: "Footer"
-    }
+export default {
+    name: "Footer"
+}
 </script>
 
-<style scoped lang="scss">
-    @import "src/styles/variables";
+<style lang="scss" scoped>
+@import "src/styles/variables";
 
-    #footer {
-        background-color: $dark5;
-
-        .copyright {
-            font-style: italic;
-            color: white;
-            text-align: center;
-            margin: 10px;
-            font-size: 14px;
-        }
-    }
+.copyright {
+    color: $light2;
+    font-style: italic;
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 0.9rem;
+}
 </style>

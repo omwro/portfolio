@@ -9,15 +9,16 @@
         <Skills/>
         <Quicky msg="Bucketlist: Python, React & C++"/>
         <Projects/>
-        <Quicky msg="`When something is important enough, you do it even if the odds are not in your favor.` - Elon Musk"/>
+        <Quicky
+            msg="`When something is important enough, you do it even if the odds are not in your favor.` - Elon Musk"/>
         <Companies/>
         <Quicky msg="`Life is not fair, get used to it.` - Bill Gates"/>
         <Timeline/>
-        <Quicky msg="`Your brand is what other people say about you when you're not in the room.` - Jeff Bezos"/>
+        <Quicky msg="`Your brand is what other people say about you when you're not in the room.` - Jeff P. Bezos"/>
         <Contact/>
         <Footer/>
         <Menu/>
-<!--        <CV/>-->
+        <!--        <CV/>-->
     </div>
 </template>
 
@@ -40,6 +41,16 @@ import Quicky from "./forms/Quicky";
 
 export default {
     name: 'App',
+    created() {
+        console.error("Hey fellow curious developer.\n" +
+            "My name is Omer and welcome to my portfolio website.\n" +
+            "This website is build to introduce myself and show off my skills.\n" +
+            "Ofcourse no website is perfect (unless it gets featured in awwwards) so hit me up for ideas or any " +
+            "improvements.\n\n" +
+            "This website is build in Vue.js just for fun, extra experience and cleaner/easier folder structure as a " +
+            "followup from the previous angular portfolio website and older plain html/css/js website.\n" +
+            "Website is still in development so 'prepare for trouble, make it double'.")
+    },
     components: {
         AboutIDE,
         Action,
@@ -62,22 +73,41 @@ export default {
 <style lang="scss">
 @import "src/styles/variables";
 
-html {
-    font-family: sans-serif;
-}
-
 html, body, #app {
     margin: 0;
     width: 100%;
     height: 100%;
-    font-size: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
 }
 
 #app {
-    color: $dark0;
+    .section {
+        color: $dark0;
+        background-color: $light0;
+
+        &#action, &.quicky {
+            background-color: $light1;
+        }
+
+        &#footer {
+            background-color: $dark5;
+        }
+    }
 
     &.dark {
-        color: $light0;
+        #header, #menu {
+            color: $light2;
+        }
+
+        .section {
+            color: $light2;
+            background-color: $dark1;
+
+            &#action, &.quicky {
+                background-color: $dark2;
+            }
+        }
     }
 }
 
@@ -96,11 +126,11 @@ html, body, #app {
         text-align: center;
         font-weight: bold;
         border-bottom: solid 2px $brilliant-red;
-        font-size: 3.6rem;
+        font-size: 2rem;
 
         &.small {
             margin: 25px auto 10px auto;
-            font-size: 2.6rem;
+            font-size: 1.25rem;
         }
 
     }
@@ -109,8 +139,8 @@ html, body, #app {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 1.4rem;
-        margin: 30px auto;
+        font-size: 1rem;
+        margin: 2rem auto;
     }
 
     .hide {

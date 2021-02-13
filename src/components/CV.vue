@@ -2,7 +2,7 @@
     <div id="cv">
         <div class="header">
             <div class="profile-img">
-                <img src="../../public/img/selfie/selfie-squared.webp" alt="profile picture">
+                <img alt="profile picture" src="../../public/img/selfie/selfie-squared.webp">
             </div>
             <div class="information">
                 <div class="name">MUHAMMED</div>
@@ -30,14 +30,10 @@
                 <div class="title bold">ABOUT ME</div>
                 <div class="desc color-grey">
                     I am a hardworking web- and software developer student who is every day in search for new projects
-                    and
-                    challenges to improve my skills to eventually become a Full Stack Developer. I am really passionate
-                    in
-                    programming and would not mind to get my hands dirty again. I am eager to learn new techniques and I
-                    am
-                    surely not afraid of hardware. I am someone who likes to make the world a better place, even if it
-                    goes
-                    unnoticed. My name is Ömer and thank you for showing your interest.
+                    and challenges to improve my skills to eventually become a Full Stack Developer. I am really
+                    passionate in programming and would not mind to get my hands dirty again. I am eager to learn new
+                    techniques and I am surely not afraid of hardware. I am someone who likes to make the world a better
+                    place, even if it goes unnoticed. My name is Ömer and thank you for showing your interest.
                 </div>
             </div>
         </div>
@@ -102,7 +98,7 @@
                     The new skills I have learned are: Leadership, HTML5, CSS3, JavaScript, C#, PHP, MySQL and ASP.NET.
                 </div>
                 <div class="qrcode">
-                    <img src="../../public/img/company/qr.png" alt="qrcode">
+                    <img alt="qrcode" src="../../public/img/company/qr.png">
                     <div>https://www.omererdem.nl</div>
                 </div>
             </div>
@@ -113,66 +109,66 @@
                 <div class="col">
                     <div>
                         <div>HTML5</div>
-                        <img src="../../public/img/language/html.png" alt="html"/>
+                        <img alt="html" src="../../public/img/language/html.png"/>
                         <stars stars="9"/>
                     </div>
                     <div>
                         <div>JAVASCRIPT</div>
-                        <img src="../../public/img/language/js.png" alt="javascript"/>
+                        <img alt="javascript" src="../../public/img/language/js.png"/>
                         <stars stars="9"/>
                     </div>
                     <div>
                         <div>PHP</div>
-                        <img src="../../public/img/language/php.png" alt="php"/>
+                        <img alt="php" src="../../public/img/language/php.png"/>
                         <stars stars="8"/>
                     </div>
                     <div>
                         <div>JAVA</div>
-                        <img src="../../public/img/language/java.png" alt="java"/>
+                        <img alt="java" src="../../public/img/language/java.png"/>
                         <stars stars="8"/>
                     </div>
                 </div>
                 <div class="col">
                     <div>
                         <div>CSS3</div>
-                        <img src="../../public/img/language/css.png" alt="css3"/>
+                        <img alt="css3" src="../../public/img/language/css.png"/>
                         <stars stars="8"/>
                     </div>
                     <div>
                         <div>VUE.JS 2</div>
-                        <img src="../../public/img/language/vue.png" alt="vuejs"/>
+                        <img alt="vuejs" src="../../public/img/language/vue.png"/>
                         <stars stars="8"/>
                     </div>
                     <div>
                         <div>ANGULAR 8</div>
-                        <img src="../../public/img/language/angular.png" alt="angular"/>
+                        <img alt="angular" src="../../public/img/language/angular.png"/>
                         <stars stars="6"/>
                     </div>
                     <div>
                         <div>MYSQL</div>
-                        <img src="../../public/img/language/mysql.png" alt="mysql"/>
+                        <img alt="mysql" src="../../public/img/language/mysql.png"/>
                         <stars stars="6"/>
                     </div>
                 </div>
                 <div class="col">
                     <div>
                         <div>HARD WORKER</div>
-                        <img src="../../public/img/language/fist.png" alt="fist"/>
+                        <img alt="fist" src="../../public/img/language/fist.png"/>
                         <stars stars="9"/>
                     </div>
                     <div>
                         <div>TEAM PLAYER</div>
-                        <img src="../../public/img/language/team.png" alt="team"/>
+                        <img alt="team" src="../../public/img/language/team.png"/>
                         <stars stars="8"/>
                     </div>
                     <div>
                         <div>PROBLEM SOLVER</div>
-                        <img src="../../public/img/language/problem.png" alt="problem"/>
+                        <img alt="problem" src="../../public/img/language/problem.png"/>
                         <stars stars="8"/>
                     </div>
                     <div>
                         <div>CREATIVITY</div>
-                        <img src="../../public/img/language/creative.png" alt="creative"/>
+                        <img alt="creative" src="../../public/img/language/creative.png"/>
                         <stars stars="8"/>
                     </div>
                 </div>

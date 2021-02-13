@@ -3,137 +3,137 @@
         <h1>Skills</h1>
         <div class="content">
             <div class="star-scheme">
-                <stars stars="9" class="star5"/>
-                <stars stars="8" class="star4"/>
-                <stars stars="6" class="star3"/>
-                <stars stars="4" class="star2"/>
-                <stars stars="2" class="star1"/>
+                <stars class="star5" stars="9"/>
+                <stars class="star4" stars="8"/>
+                <stars class="star3" stars="6"/>
+                <stars class="star2" stars="4"/>
+                <stars class="star1" stars="2"/>
             </div>
-            <div class="img-container" v-lazy-container="{ selector: 'img' }">
+            <div v-lazy-container="{ selector: 'img' }" class="img-container">
                 <div>
-                    <img data-src=./img/language/html.png class="star5" alt="html"/>
+                    <img alt="html" class="star5" data-src=./img/language/html.png/>
                     <div>HTML5</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/js.png class="star5" alt="js"/>
+                    <img alt="js" class="star5" data-src=./img/language/js.png/>
                     <div>JavaScript</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/php.png class="star4" alt="php"/>
+                    <img alt="php" class="star4" data-src=./img/language/php.png/>
                     <div>PHP</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/java.png class="star4" alt="java"/>
+                    <img alt="java" class="star4" data-src=./img/language/java.png/>
                     <div>Java</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/css.png class="star4" alt="css"/>
+                    <img alt="css" class="star4" data-src=./img/language/css.png/>
                     <div>CSS3</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/jquery.png class="star4" alt="jquery"/>
+                    <img alt="jquery" class="star4" data-src=./img/language/jquery.png/>
                     <div>jQuery</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/mysql.png class="star4" alt="mysql"/>
+                    <img alt="mysql" class="star4" data-src=./img/language/mysql.png/>
                     <div>MySQL</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/vue.png class="star4" alt="vue"/>
+                    <img alt="vue" class="star4" data-src=./img/language/vue.png/>
                     <div>Vue.js 2</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/angular.png class="star3" alt="angular"/>
+                    <img alt="angular" class="star3" data-src=./img/language/angular.png/>
                     <div>Angular 8</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/ts.png class="star3" alt="ts"/>
+                    <img alt="ts" class="star3" data-src=./img/language/ts.png/>
                     <div>TypeScript</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/kotlin.png class="star3" alt="kotlin"/>
+                    <img alt="kotlin" class="star3" data-src=./img/language/kotlin.png/>
                     <div>Kotlin</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/spring.png class="star3" alt="spring"/>
+                    <img alt="spring" class="star3" data-src=./img/language/spring.png/>
                     <div>Spring Boot</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/sass.png class="star3" alt="sass"/>
+                    <img alt="sass" class="star3" data-src=./img/language/sass.png/>
                     <div>Sass/Scss</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/git.png class="star3" alt="git"/>
+                    <img alt="git" class="star3" data-src=./img/language/git.png/>
                     <div>Git</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/json.png class="star3" alt="json"/>
+                    <img alt="json" class="star3" data-src=./img/language/json.png/>
                     <div>JSON</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/node.png class="star2" alt="node"/>
+                    <img alt="node" class="star2" data-src=./img/language/node.png/>
                     <div>Node.js</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/magento.png class="star2" alt="magento"/>
+                    <img alt="magento" class="star2" data-src=./img/language/magento.png/>
                     <div>Magento 2</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/laravel.png class="star2" alt="laravel"/>
+                    <img alt="laravel" class="star2" data-src=./img/language/laravel.png/>
                     <div>Laravel</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/rpi.png class="star2" alt="rpi"/>
+                    <img alt="rpi" class="star2" data-src=./img/language/rpi.png/>
                     <div>Raspberry Pi</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/apache.png class="star2" alt="apache"/>
+                    <img alt="apache" class="star2" data-src=./img/language/apache.png/>
                     <div>Apache 2</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/csharp.png class="star1" alt="csharp"/>
+                    <img alt="csharp" class="star1" data-src=./img/language/csharp.png/>
                     <div>C#</div>
                 </div>
             </div>
             <div class="line"></div>
-            <div class="img-container" v-lazy-container="{ selector: 'img' }">
+            <div v-lazy-container="{ selector: 'img' }" class="img-container">
                 <div>
-                    <img data-src=./img/language/web.png class="star5" alt="web"/>
+                    <img alt="web" class="star5" data-src=./img/language/web.png/>
                     <div>Website</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/pcbuild.png class="star3" alt="pcbuild"/>
+                    <img alt="pcbuild" class="star3" data-src=./img/language/pcbuild.png/>
                     <div>Custom PC</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/android.png class="star2" alt="android"/>
+                    <img alt="android" class="star2" data-src=./img/language/android.png/>
                     <div>Android app</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/api.png class="star2" alt="api"/>
+                    <img alt="api" class="star2" data-src=./img/language/api.png/>
                     <div>Web API</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/unity.png class="star1" alt="unity"/>
+                    <img alt="unity" class="star1" data-src=./img/language/unity.png/>
                     <div>Unity game</div>
                 </div>
             </div>
             <div class="line"></div>
-            <div class="img-container" v-lazy-container="{ selector: 'img' }">
+            <div v-lazy-container="{ selector: 'img' }" class="img-container">
                 <div>
-                    <img data-src=./img/language/fist.png class="star5" alt="fist"/>
+                    <img alt="fist" class="star5" data-src=./img/language/fist.png/>
                     <div>Hard worker</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/team.png class="star4" alt="team"/>
+                    <img alt="team" class="star4" data-src=./img/language/team.png/>
                     <div>Team player</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/problem.png class="star4" alt="problem"/>
+                    <img alt="problem" class="star4" data-src=./img/language/problem.png/>
                     <div>Problem<br>solving</div>
                 </div>
                 <div>
-                    <img data-src=./img/language/creative.png class="star4" alt="light bulb"/>
+                    <img alt="light bulb" class="star4" data-src=./img/language/creative.png/>
                     <div>Creativity</div>
                 </div>
             </div>
@@ -150,75 +150,67 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import "src/styles/variables";
 
-#skills {
-    background-color: $light0;
+.content .star-scheme {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 16px;
 
-    .content .star-scheme {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        justify-content: center;
-        margin-bottom: 16px;
-
-        > * {
-            margin: 0 8px;
-            padding: 4px;
-            border-radius: 10px;
-        }
-    }
-
-    .content .img-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
-        margin: 0 15px;
-
-        img {
-            width: 64px;
-            height: 64px;
-            padding: 8px;
-            margin: 16px 8px 0 8px;
-            border-radius: 25px;
-        }
-    }
-
-    .star5 {
-        background-color: $brilliant-red;
-    }
-
-    .star4 {
-        background-color: $brilliant-blue;
-    }
-
-    .star3 {
-        background-color: $brilliant-green;
-    }
-
-    .star2 {
-        background-color: $brilliant-orange;
-    }
-
-    .star1 {
-        background-color: $dark5;
-    }
-
-    .line {
-        width: 95%;
-        height: 1px;
-        background-color: $grey;
-        margin-top: 16px;
-        align-self: center;
+    > * {
+        margin: 0 8px;
+        padding: 4px;
+        border-radius: 10px;
     }
 }
 
-.dark #skills {
-    background-color: $dark1;
-    color: $light0;
+.content .img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: 0 15px;
+    font-size: 0.9rem;
+
+    img {
+        width: 64px;
+        height: 64px;
+        padding: 8px;
+        margin: 16px 8px 0 8px;
+        border-radius: 25px;
+    }
+}
+
+.star5 {
+    background-color: $brilliant-red;
+}
+
+.star4 {
+    background-color: $brilliant-blue;
+}
+
+.star3 {
+    background-color: $brilliant-green;
+}
+
+.star2 {
+    background-color: $brilliant-orange;
+}
+
+.star1 {
+    background-color: $dark5;
+}
+
+.line {
+    width: 95%;
+    height: 1px;
+    background-color: $grey;
+    margin-top: 16px;
+    align-self: center;
 }
 
 .programmer #skills {

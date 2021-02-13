@@ -12,58 +12,59 @@
 </template>
 
 <script>
-    export default {
-        name: "Home"
-    }
+export default {
+    name: "Home"
+}
 </script>
 
-<style scoped lang="scss">
-    @import "src/styles/variables";
+<style lang="scss" scoped>
+@import "src/styles/variables";
 
-    #home {
+#home {
+    width: 100%;
+    height: 100%;
+
+    .background-image {
         width: 100%;
         height: 100%;
+        background: url("../../public/img/selfie/car-selfie-blurred-720p.webp") no-repeat 60% 50%;
+        background-size: cover;
+    }
 
-        .background-image {
-            width: 100%;
-            height: 100%;
-            background: url("../../public/img/selfie/car-selfie-blurred-720p.webp") no-repeat 60% 50%;
-            background-size: cover;
-        }
+    .introduction {
+        display: block;
+        top: 25%;
+        position: relative;
 
-        .introduction {
-            display: block;
-            top: 25%;
-            position: relative;
+        padding: 0 10px;
+        max-width: 470px;
+        margin: auto;
+        text-align: center;
+        font-size: 1.5rem;
+        color: $light1;
 
-            padding: 0 10px;
-            max-width: 470px;
-            margin: auto;
-            text-align: center;
-            font-size: 2.6rem;
-            color: $light0;
 
-            .bold {
-                font-weight: bold;
-            }
-        }
-
-        @media (min-width: $breakpoint-l) and (max-width: $breakpoint-xl) {
-            .background-image {
-                background: url('../../public/img/selfie/car-selfie-blurred-1080p.webp') no-repeat 60% 50%;
-            }
-        }
-
-        @media (min-width: $breakpoint-xl) and (max-width: $breakpoint-xxl) {
-            .background-image {
-                background: url("../../public/img/selfie/car-selfie-blurred-1440p.webp") no-repeat 60% 50%;
-            }
-        }
-
-        @media (min-width: $breakpoint-xxl) {
-            .background-image {
-                background: url("../../public/img/selfie/car-selfie-blurred.webp") no-repeat 60% 50%;
-            }
+        .bold {
+            font-weight: bold;
         }
     }
+
+    @media (min-width: $mq-l) and (max-width: $mq-xl) {
+        .background-image {
+            background: url('../../public/img/selfie/car-selfie-blurred-1080p.webp') no-repeat 60% 50%;
+        }
+    }
+
+    @media (min-width: $mq-xl) and (max-width: $mq-xxl) {
+        .background-image {
+            background: url("../../public/img/selfie/car-selfie-blurred-1440p.webp") no-repeat 60% 50%;
+        }
+    }
+
+    @media (min-width: $mq-xxl) {
+        .background-image {
+            background: url("../../public/img/selfie/car-selfie-blurred.webp") no-repeat 60% 50%;
+        }
+    }
+}
 </style>

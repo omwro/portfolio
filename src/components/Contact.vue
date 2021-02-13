@@ -4,17 +4,17 @@
         <div class="content">
             <div id="form">
                 <div class="name-box">
-                    <input v-model="name" type="text" name="name" required>
+                    <input v-model="name" name="name" required type="text">
                     <span></span>
                     <label>Name</label>
                 </div>
                 <div class="email-box">
-                    <input v-model="email" type="text" name="email" required>
+                    <input v-model="email" name="email" required type="text">
                     <span></span>
                     <label>Email</label>
                 </div>
                 <div class="subject-box">
-                    <input v-model="subject" type="text" name="subject" required>
+                    <input v-model="subject" name="subject" required type="text">
                     <span></span>
                     <label>Subject</label>
                 </div>
@@ -25,23 +25,24 @@
                 </div>
                 <div class="error-msg">{{ errorMsg }}</div>
                 <div class="bottom-box">
-                    <a href="mailto:m.o.erdem@outlook.com" aria-label="mail">
-                        <font-awesome-icon icon="at" class="icon at"/>
+                    <a aria-label="mail" href="mailto:m.o.erdem@outlook.com">
+                        <font-awesome-icon class="icon at" icon="at"/>
                     </a>
-                    <a href="https://www.linkedin.com/in/omer-erdem-179745153/" aria-label="linkedin" target="_blank" rel="noopener">
+                    <a aria-label="linkedin" href="https://www.linkedin.com/in/omer-erdem-179745153/" rel="noopener"
+                       target="_blank">
                         <font-awesome-icon :icon="['fab', 'linkedin']" class="icon linkedin"/>
                     </a>
-                    <a href="skype:live:omer.boy?chat" aria-label="skype">
+                    <a aria-label="skype" href="skype:live:omer.boy?chat">
                         <font-awesome-icon :icon="['fab', 'skype']" class="icon skype"/>
                     </a>
                     <button @click="sendMail">{{ submitTxt }}</button>
-                    <a href="https://discord.gg/wkb42Rb" aria-label="discord" target="_blank" rel="noopener">
+                    <a aria-label="discord" href="https://discord.gg/wkb42Rb" rel="noopener" target="_blank">
                         <font-awesome-icon :icon="['fab', 'discord']" class="icon discord"/>
                     </a>
-                    <a href="https://codepen.io/omwro" aria-label="codepen" target="_blank" rel="noopener">
+                    <a aria-label="codepen" href="https://codepen.io/omwro" rel="noopener" target="_blank">
                         <font-awesome-icon :icon="['fab', 'codepen']" class="icon codepen"/>
                     </a>
-                    <a href="https://github.com/omwro" aria-label="github" target="_blank" rel="noopener">
+                    <a aria-label="github" href="https://github.com/omwro" rel="noopener" target="_blank">
                         <font-awesome-icon :icon="['fab', 'github']" class="icon github"/>
                     </a>
                 </div>
@@ -90,7 +91,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @import "src/styles/variables";
 
 #contact {

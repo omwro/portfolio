@@ -9,11 +9,11 @@
         </div>
         <div id="menulist">
             <a href="#home" @click="closeMenu">Home</a>
-            <a href="#aboutIde" @click="closeMenu" class="programmer-only">About</a>
-            <a href="#about" @click="closeMenu" class="normal-only">About</a>
-            <a href="#skills" @click="closeMenu" class="normal-only">Skills</a>
-            <a href="#projects" @click="closeMenu" class="normal-only">Projects</a>
-            <a href="#companies" @click="closeMenu" class="normal-only">Companies</a>
+            <a class="programmer-only" href="#aboutIde" @click="closeMenu">About</a>
+            <a class="normal-only" href="#about" @click="closeMenu">About</a>
+            <a class="normal-only" href="#skills" @click="closeMenu">Skills</a>
+            <a class="normal-only" href="#projects" @click="closeMenu">Projects</a>
+            <a class="normal-only" href="#companies" @click="closeMenu">Companies</a>
             <a href="#timeline" @click="closeMenu">Timeline</a>
             <a href="#contact" @click="closeMenu">Contact</a>
         </div>
@@ -21,136 +21,132 @@
 </template>
 
 <script>
-    import $ from 'jquery';
+import $ from 'jquery';
 
-    export default {
-        name: "Menu",
-        created() {
-            $(document).on('click', (e) => {
-                if (
-                    $(e.target)[0].id !== "menu" &&
-                    $("#menu").hasClass("active") &&
-                    !$(e.target)[0].className.includes("hamburger")
-                ) {
-                    this.closeMenu();
-                }
-            });
-        },
-        methods: {
-            closeMenu() {
-                $('#menu').removeClass('active');
+export default {
+    name: "Menu",
+    created() {
+        $(document).on('click', (e) => {
+            if (
+                $(e.target)[0].id !== "menu" &&
+                $("#menu").hasClass("active") &&
+                !$(e.target)[0].className.includes("hamburger")
+            ) {
+                this.closeMenu();
             }
+        });
+    },
+    methods: {
+        closeMenu() {
+            $('#menu').removeClass('active');
         }
     }
+}
 </script>
 
 <style lang="scss" scoped>
-    @import "src/styles/variables";
+@import "src/styles/variables";
 
-    #menu {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        position: fixed;
-        height: 100%;
-        width: 0;
-        bottom: 0;
-        right: 0;
-        padding: 0;
-        backdrop-filter: blur(10px);
-        z-index: 15;
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    backdrop-filter: blur(10px);
+    z-index: 15;
+    transition: 0.5s;
+    border-left: solid 2px transparent;
+
+    &.active {
+        width: 100%;
+        border-left: solid 2px $grey;
         transition: 0.5s;
-        border-left: solid 2px transparent;
+        transition-timing-function: ease-in-out;
 
-        &.active {
-            width: 100%;
-            border-left: solid 2px $grey;
-            transition: 0.5s;
-            transition-timing-function: ease-in-out;
+        @media (min-width: $mq-sm) {
+            width: 250px;
+        }
+    }
 
-            @media (min-width: $breakpoint-sm) {
-                width: 250px;
-            }
+    .header {
+        display: flex;
+        flex-direction: row;
+        margin: 16px;
+        align-items: center;
+        font-size: 1.5rem;
+        justify-content: space-between;
+
+        .title {
+            border-bottom: solid 2px $brilliant-red;
         }
 
-        .header {
+        .cross {
+            width: 25px;
+            height: 25px;
             display: flex;
-            flex-direction: row;
-            margin: 16px;
-            align-items: center;
-            font-size: 3rem;
-            justify-content: space-between;
+            flex-direction: column;
+            position: relative;
 
-            .title {
-                border-bottom: solid 2px $brilliant-red;
+            span {
+                width: 100%;
+                position: absolute;
+                border-top: solid 3px;
+                top: 10px;
             }
 
-            .cross {
-                width: 25px;
-                height: 25px;
-                display: flex;
-                flex-direction: column;
-                position: relative;
+            .cross-one {
+                transform: rotate(45deg);
+            }
 
-                span {
-                    width: 100%;
-                    position: absolute;
-                    border-top: solid 3px;
-                    top: 10px;
-                }
+            .cross-two {
+                transform: rotate(135deg);
+            }
 
+            &:hover {
                 .cross-one {
-                    transform: rotate(45deg);
+                    transform: rotate(135deg);
+                    transition: 0.3s;
                 }
 
                 .cross-two {
-                    transform: rotate(135deg);
-                }
-
-                &:hover {
-                    .cross-one {
-                        transform: rotate(135deg);
-                        transition: 0.3s;
-                    }
-
-                    .cross-two {
-                        transform: rotate(225deg);
-                        transition: 0.3s;
-                    }
-                }
-            }
-        }
-
-        #menulist {
-            margin-left: 6px;
-
-            a {
-                display: flex;
-                font-size: 1.6rem;
-                color: inherit;
-                text-decoration: none;
-                margin: 10px;
-
-                &:hover {
-                    color: $brilliant-red;
+                    transform: rotate(225deg);
+                    transition: 0.3s;
                 }
             }
         }
     }
 
-    .dark #menu {
-        color: $light0;
-    }
+    #menulist {
+        margin-left: 6px;
 
-    #menu #menulist .programmer-only {
-      display: none;
-    }
+        a {
+            display: flex;
+            font-size: 1rem;
+            color: inherit;
+            text-decoration: none;
+            margin: 10px;
 
-    .programmer #menu #menulist a.programmer-only {
-      display: block;
+            &:hover {
+                color: $brilliant-red;
+            }
+        }
     }
+}
 
-    .programmer #menu #menulist a.normal-only {
-      display: none;
-    }
+#menu #menulist .programmer-only {
+    display: none;
+}
+
+.programmer #menu #menulist a.programmer-only {
+    display: block;
+}
+
+.programmer #menu #menulist a.normal-only {
+    display: none;
+}
 </style>
