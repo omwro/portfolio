@@ -2,14 +2,14 @@
     <div id="companies" class="section">
         <h1>Companies</h1>
         <div v-lazy-container="{ selector: 'img' }" class="content">
-            <div><img alt="themobilecompany" data-src=./img/company/themobilecompany.webp/></div>
-            <div><img alt="boldcommerce" class="dark-invert" data-src=./img/company/boldcommerce.webp/></div>
-            <div><img alt="aquadis" class="dark-invert" data-src=./img/company/aquadis.webp/></div>
-            <div><img alt="amsta" data-src=./img/company/amsta.webp/></div>
-            <div><img alt="corendon" data-src=./img/company/corendon.webp/></div>
-            <div><img alt="digidot" class="dark-bright" data-src=./img/company/digidot.webp/></div>
-            <div><img alt="kennethkoh" class="dark-bright" data-src=./img/company/kennethkoh.webp/></div>
-            <div><img alt="deugderdem" class="dark-invert" data-src=./img/company/deugderdem.webp/></div>
+            <div><img data-src=./img/company/themobilecompany.webp alt="themobilecompany"/></div>
+            <div><img class="dark-invert" data-src=./img/company/boldcommerce.webp alt="boldcommerce"/></div>
+            <div><img class="dark-invert" data-src=./img/company/aquadis.webp alt="aquadis"/></div>
+            <div><img data-src=./img/company/amsta.webp alt="amsta"/></div>
+            <div><img data-src=./img/company/corendon.webp alt="corendon"/></div>
+            <div><img class="dark-bright" data-src=./img/company/digidot.webp alt="digidot"/></div>
+            <div><img class="dark-bright" data-src=./img/company/kennethkoh.webp alt="kennethkoh"/></div>
+            <div><img class="dark-invert" data-src=./img/company/deugderdem.webp alt="deugderdem"/></div>
         </div>
     </div>
 </template>

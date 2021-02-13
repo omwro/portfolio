@@ -11,129 +11,129 @@
             </div>
             <div v-lazy-container="{ selector: 'img' }" class="img-container">
                 <div>
-                    <img alt="html" class="star5" data-src=./img/language/html.png/>
+                    <img class="star5" data-src=./img/language/html.png alt="html"/>
                     <div>HTML5</div>
                 </div>
                 <div>
-                    <img alt="js" class="star5" data-src=./img/language/js.png/>
+                    <img class="star5" data-src=./img/language/js.png alt="js"/>
                     <div>JavaScript</div>
                 </div>
                 <div>
-                    <img alt="php" class="star4" data-src=./img/language/php.png/>
+                    <img class="star4" data-src=./img/language/php.png alt="php"/>
                     <div>PHP</div>
                 </div>
                 <div>
-                    <img alt="java" class="star4" data-src=./img/language/java.png/>
+                    <img class="star4" data-src=./img/language/java.png alt="java"/>
                     <div>Java</div>
                 </div>
                 <div>
-                    <img alt="css" class="star4" data-src=./img/language/css.png/>
+                    <img class="star4" data-src=./img/language/css.png alt="css"/>
                     <div>CSS3</div>
                 </div>
                 <div>
-                    <img alt="jquery" class="star4" data-src=./img/language/jquery.png/>
+                    <img class="star4" data-src=./img/language/jquery.png alt="jquery"/>
                     <div>jQuery</div>
                 </div>
                 <div>
-                    <img alt="mysql" class="star4" data-src=./img/language/mysql.png/>
+                    <img class="star4" data-src=./img/language/mysql.png alt="mysql"/>
                     <div>MySQL</div>
                 </div>
                 <div>
-                    <img alt="vue" class="star4" data-src=./img/language/vue.png/>
+                    <img class="star4" data-src=./img/language/vue.png alt="vue"/>
                     <div>Vue.js 2</div>
                 </div>
                 <div>
-                    <img alt="angular" class="star3" data-src=./img/language/angular.png/>
+                    <img class="star3" data-src=./img/language/angular.png  alt="angular"/>
                     <div>Angular 8</div>
                 </div>
                 <div>
-                    <img alt="ts" class="star3" data-src=./img/language/ts.png/>
+                    <img class="star3" data-src=./img/language/ts.png alt="ts"/>
                     <div>TypeScript</div>
                 </div>
                 <div>
-                    <img alt="kotlin" class="star3" data-src=./img/language/kotlin.png/>
+                    <img class="star3" data-src=./img/language/kotlin.png alt="kotlin"/>
                     <div>Kotlin</div>
                 </div>
                 <div>
-                    <img alt="spring" class="star3" data-src=./img/language/spring.png/>
+                    <img class="star3" data-src=./img/language/spring.png alt="spring"/>
                     <div>Spring Boot</div>
                 </div>
                 <div>
-                    <img alt="sass" class="star3" data-src=./img/language/sass.png/>
+                    <img class="star3" data-src=./img/language/sass.png alt="sass"/>
                     <div>Sass/Scss</div>
                 </div>
                 <div>
-                    <img alt="git" class="star3" data-src=./img/language/git.png/>
+                    <img class="star3" data-src=./img/language/git.png alt="git"/>
                     <div>Git</div>
                 </div>
                 <div>
-                    <img alt="json" class="star3" data-src=./img/language/json.png/>
+                    <img class="star3" data-src=./img/language/json.png alt="json"/>
                     <div>JSON</div>
                 </div>
                 <div>
-                    <img alt="node" class="star2" data-src=./img/language/node.png/>
+                    <img class="star2" data-src=./img/language/node.png alt="node"/>
                     <div>Node.js</div>
                 </div>
                 <div>
-                    <img alt="magento" class="star2" data-src=./img/language/magento.png/>
+                    <img class="star2" data-src=./img/language/magento.png alt="magento"/>
                     <div>Magento 2</div>
                 </div>
                 <div>
-                    <img alt="laravel" class="star2" data-src=./img/language/laravel.png/>
+                    <img class="star2" data-src=./img/language/laravel.png alt="laravel"/>
                     <div>Laravel</div>
                 </div>
                 <div>
-                    <img alt="rpi" class="star2" data-src=./img/language/rpi.png/>
+                    <img class="star2" data-src=./img/language/rpi.png alt="rpi"/>
                     <div>Raspberry Pi</div>
                 </div>
                 <div>
-                    <img alt="apache" class="star2" data-src=./img/language/apache.png/>
+                    <img class="star2" data-src=./img/language/apache.png alt="apache"/>
                     <div>Apache 2</div>
                 </div>
                 <div>
-                    <img alt="csharp" class="star1" data-src=./img/language/csharp.png/>
+                    <img class="star1" data-src=./img/language/csharp.png alt="csharp"/>
                     <div>C#</div>
                 </div>
             </div>
             <div class="line"></div>
             <div v-lazy-container="{ selector: 'img' }" class="img-container">
                 <div>
-                    <img alt="web" class="star5" data-src=./img/language/web.png/>
+                    <img class="star5" data-src=./img/language/web.png alt="web"/>
                     <div>Website</div>
                 </div>
                 <div>
-                    <img alt="pcbuild" class="star3" data-src=./img/language/pcbuild.png/>
+                    <img class="star3" data-src=./img/language/pcbuild.png alt="pcbuild"/>
                     <div>Custom PC</div>
                 </div>
                 <div>
-                    <img alt="android" class="star2" data-src=./img/language/android.png/>
+                    <img class="star2" data-src=./img/language/android.png alt="android"/>
                     <div>Android app</div>
                 </div>
                 <div>
-                    <img alt="api" class="star2" data-src=./img/language/api.png/>
+                    <img class="star2" data-src=./img/language/api.png alt="api"/>
                     <div>Web API</div>
                 </div>
                 <div>
-                    <img alt="unity" class="star1" data-src=./img/language/unity.png/>
+                    <img class="star1" data-src=./img/language/unity.png alt="unity"/>
                     <div>Unity game</div>
                 </div>
             </div>
             <div class="line"></div>
             <div v-lazy-container="{ selector: 'img' }" class="img-container">
                 <div>
-                    <img alt="fist" class="star5" data-src=./img/language/fist.png/>
+                    <img class="star5" data-src=./img/language/fist.png alt="fist"/>
                     <div>Hard worker</div>
                 </div>
                 <div>
-                    <img alt="team" class="star4" data-src=./img/language/team.png/>
+                    <img class="star4" data-src=./img/language/team.png alt="team"/>
                     <div>Team player</div>
                 </div>
                 <div>
-                    <img alt="problem" class="star4" data-src=./img/language/problem.png/>
+                    <img class="star4" data-src=./img/language/problem.png alt="problem"/>
                     <div>Problem<br>solving</div>
                 </div>
                 <div>
-                    <img alt="light bulb" class="star4" data-src=./img/language/creative.png/>
+                    <img class="star4" data-src=./img/language/creative.png alt="light bulb"/>
                     <div>Creativity</div>
                 </div>
             </div>

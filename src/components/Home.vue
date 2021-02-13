@@ -5,7 +5,7 @@
                 <!--<span class="bold">Hi</span>, my name is <span class="bold">Omer Erdem</span>
                 and welcome to my <span class="bold">portfolio website!</span>-->
                 Welcome to the new portfolio page of <span class="bold">Omer Erdem</span>.
-                It is still under construction and will be ready in <span class="bold">Q1 2021!</span>
+                It is still under construction and will be ready in <span class="bold">2021!</span>
             </div>
         </div>
     </div>

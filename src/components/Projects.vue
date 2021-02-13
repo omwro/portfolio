@@ -18,19 +18,18 @@
                          class="tns-lazy-img" data-src="./img/project/project_website.webp">
                     <div class="carousel-title">Portfolio website</div>
                     <div class="carousel-description">
-                        Creating of a good looking personal portfolio website have been a hobby project for years
-                        with multiple attempts in multiple languages and frameworks to create. This website will be
-                        continuously developed on, in order to improve my skills, while also experimenting with new
-                        features.
+                        Creating a good looking personal portfolio website have been a hobby project for years
+                        with multiple attempts in different languages and frameworks. This website will be
+                        continuously developed on, in order to improve my skills and to experiment with new features.
                     </div>
                     <div class="carousel-languages">
-                        <img alt="html" class="star5" data-src=./img/language/html.png/>
-                        <img alt="js" class="star5" data-src=./img/language/js.png/>
-                        <img alt="php" class="star4" data-src=./img/language/php.png/>
-                        <img alt="css" class="star4" data-src=./img/language/css.png/>
-                        <img alt="jquery" class="star4" data-src=./img/language/jquery.png/>
-                        <img alt="vue" class="star4" data-src=./img/language/vue.png/>
-                        <img alt="sass" class="star3" data-src=./img/language/sass.png/>
+                        <img class="star5" data-src=./img/language/html.png alt="html"/>
+                        <img class="star5" data-src=./img/language/js.png alt="js"/>
+                        <img class="star4" data-src=./img/language/php.png alt="php"/>
+                        <img class="star4" data-src=./img/language/css.png alt="css"/>
+                        <img class="star4" data-src=./img/language/jquery.png alt="jquery"/>
+                        <img class="star4" data-src=./img/language/vue.png alt="vue"/>
+                        <img class="star3" data-src=./img/language/sass.png alt="sass"/>
                     </div>
                 </div>
                 <div>
@@ -44,7 +43,7 @@
                         can also be used as a library for your application.
                     </div>
                     <div class="carousel-languages">
-                        <img alt="kotlin" class="star3" data-src=./img/language/kotlin.png/>
+                        <img class="star3" data-src=./img/language/kotlin.png alt="kotlin"/>
                     </div>
                 </div>
                 <div>
@@ -56,7 +55,7 @@
                         data. You can assign your custom tags to songs and create custom playlists.
                     </div>
                     <div class="carousel-languages">
-                        <img alt="kotlin" class="star3" data-src=./img/language/kotlin.png/>
+                        <img class="star3" data-src=./img/language/kotlin.png alt="kotlin"/>
                     </div>
                 </div>
                 <div>
@@ -65,19 +64,19 @@
                     <div class="carousel-title">Bold Commerce Support Dashboard</div>
                     <div class="carousel-description">
                         A support dashboard that helps the management to see all the important data in a glimpse of an
-                        eye. Using the ActiveCollab API in order to collect task and time management data while also
+                        eye. Using the ActiveCollab API in order to collect task and time management data, while also
                         following the Material IO guidelines.
                     </div>
                     <div class="carousel-languages">
-                        <img alt="html" class="star5" data-src=./img/language/html.png/>
-                        <img alt="js" class="star5" data-src=./img/language/js.png/>
-                        <img alt="php" class="star4" data-src=./img/language/php.png/>
-                        <img alt="css" class="star4" data-src=./img/language/css.png/>
-                        <img alt="jquery" class="star4" data-src=./img/language/jquery.png/>
-                        <img alt="mysql" class="star4" data-src=./img/language/mysql.png/>
-                        <img alt="vue" class="star4" data-src=./img/language/vue.png/>
-                        <img alt="sass" class="star3" data-src=./img/language/sass.png/>
-                        <img alt="laravel" class="star2" data-src=./img/language/laravel.png/>
+                        <img class="star5" data-src=./img/language/html.png alt="html"/>
+                        <img class="star5" data-src=./img/language/js.png alt="js"/>
+                        <img class="star4" data-src=./img/language/php.png alt="php"/>
+                        <img class="star4" data-src=./img/language/css.png alt="css"/>
+                        <img class="star4" data-src=./img/language/jquery.png alt="jquery"/>
+                        <img class="star4" data-src=./img/language/mysql.png alt="mysql"/>
+                        <img class="star4" data-src=./img/language/vue.png alt="vue"/>
+                        <img class="star3" data-src=./img/language/sass.png alt="sass"/>
+                        <img class="star2" data-src=./img/language/laravel.png alt="laravel"/>
                     </div>
                 </div>
                 <div>
@@ -85,17 +84,17 @@
                     <div class="carousel-title">Aquadis texting website</div>
                     <div class="carousel-description">
                         A school project for Aquadis that would like to have an texting based game which allows
-                        the players to place messages on the maps and other people can see them if they are near
+                        the players to place messages on the maps and other people can see them if they are nearby
                         and respond to it.
                     </div>
                     <div class="carousel-languages">
-                        <img alt="html" class="star5" data-src=./img/language/html.png/>
-                        <img alt="js" class="star5" data-src=./img/language/js.png/>
-                        <img alt="css" class="star4" data-src=./img/language/css.png/>
-                        <img alt="java" class="star4" data-src=./img/language/java.png/>
-                        <img alt="mysql" class="star4" data-src=./img/language/mysql.png/>
-                        <img alt="angular" class="star3" data-src=./img/language/angular.png/>
-                        <img alt="spring" class="star3" data-src=./img/language/spring.png/>
+                        <img class="star5" data-src=./img/language/html.png alt="html"/>
+                        <img class="star5" data-src=./img/language/js.png alt="js"/>
+                        <img class="star4" data-src=./img/language/css.png alt="css"/>
+                        <img class="star4" data-src=./img/language/java.png alt="java"/>
+                        <img class="star4" data-src=./img/language/mysql.png alt="mysql"/>
+                        <img class="star3" data-src=./img/language/angular.png alt="angular"/>
+                        <img class="star3" data-src=./img/language/spring.png alt="spring"/>
                     </div>
                 </div>
                 <div>
@@ -106,9 +105,9 @@
                         the elderlies from Amsta to exercise and stay fit while having fun with catching animals.
                     </div>
                     <div class="carousel-languages">
-                        <img alt="html" class="star5" data-src=./img/language/html.png/>
-                        <img alt="css" class="star4" data-src=./img/language/css.png/>
-                        <img alt="java" class="star4" data-src=./img/language/java.png/>
+                        <img class="star5" data-src=./img/language/html.png alt="html"/>
+                        <img class="star4" data-src=./img/language/css.png alt="css"/>
+                        <img class="star4" data-src=./img/language/java.png alt="java"/>
                     </div>
                 </div>
                 <div>
@@ -120,10 +119,10 @@
                         that travel alone and would like to have a partner to party with.
                     </div>
                     <div class="carousel-languages">
-                        <img alt="html" class="star5" data-src=./img/language/html.png/>
-                        <img alt="js" class="star5" data-src=./img/language/js.png/>
-                        <img alt="css" class="star4" data-src=./img/language/css.png/>
-                        <img alt="mysql" class="star4" data-src=./img/language/mysql.png/>
+                        <img class="star5" data-src=./img/language/html.png alt="html"/>
+                        <img class="star5" data-src=./img/language/js.png alt="js"/>
+                        <img class="star4" data-src=./img/language/css.png alt="css"/>
+                        <img class="star4" data-src=./img/language/mysql.png alt="mysql"/>
                     </div>
                 </div>
             </vue-tiny-slider>
