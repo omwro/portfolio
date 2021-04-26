@@ -2,10 +2,8 @@
     <div id="home" class="section">
         <div class="background-image">
             <div class="introduction">
-                <!--<span class="bold">Hi</span>, my name is <span class="bold">Omer Erdem</span>
-                and welcome to my <span class="bold">portfolio website!</span>-->
-                Welcome to the new portfolio page of <span class="bold">Omer Erdem</span>.
-                It is still under construction and will be ready in <span class="bold">2021!</span>
+                <span class="bold">Hi</span>, my name is <span class="bold">Omer Erdem</span>
+                and welcome to my <span class="bold">portfolio website!</span>
             </div>
         </div>
     </div>

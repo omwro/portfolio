@@ -9,7 +9,7 @@
             <div class="intro">
                 <div>
                     My name is Omer Erdem and I am a third year Software Engineer student at the Amsterdam University of
-                    Applied Sciences. I am currently 21 years old and I like to game, drive around and experiment.
+                    Applied Sciences. I am currently 22 years old and I like to game, drive around and experiment.
                 </div>
                 <div>
                     I am a hardworking web- and software developer student who is every day in search for new projects
