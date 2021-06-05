@@ -86,7 +86,7 @@ export default {
                 form.append('subject', this.subject);
                 form.append('message', this.message);
 
-                this.axios.post("/php/mail.php", form).then(res => {
+                this.axios.post("/api/mail.php", form).then(res => {
                     console.log(res)
                     this.name = this.email = this.subject = this.message = "";
                     this.$notify({

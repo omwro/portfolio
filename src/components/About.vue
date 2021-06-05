@@ -30,7 +30,7 @@ export default {
         getAccess: function () {
             let code = prompt("Please enter the access code to download the file. Get in contact in case you don't have a code.")
             if (code != null) {
-                this.axios.get(window.location.origin + "/php/access.php?code=" + code).then(response => {
+                this.axios.get(window.location.origin + "/api/access.php?code=" + code).then(response => {
                     if (response.data === true) {
                         this.$notify({
                             type: "success",
