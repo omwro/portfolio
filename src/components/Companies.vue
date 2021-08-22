@@ -1,6 +1,6 @@
 <template>
     <div id="companies" class="section">
-        <h1>Companies</h1>
+        <h1>{{$t('companies.title')}}</h1>
         <div v-lazy-container="{ selector: 'img' }" class="content">
             <div><img data-src=./img/company/themobilecompany.webp alt="themobilecompany"/></div>
             <div><img class="dark-invert" data-src=./img/company/boldcommerce.webp alt="boldcommerce"/></div>

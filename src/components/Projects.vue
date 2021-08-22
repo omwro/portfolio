@@ -16,12 +16,8 @@
                 <div>
                     <img v-lazy="'./img/project/project_website.webp'" alt="website"
                          class="tns-lazy-img" data-src="./img/project/project_website.webp">
-                    <div class="carousel-title">Portfolio website</div>
-                    <div class="carousel-description">
-                        Creating a good looking personal portfolio website have been a hobby project for years
-                        with multiple attempts in different languages and frameworks. This website will be
-                        continuously developed on, in order to improve my skills and to experiment with new features.
-                    </div>
+                    <div class="carousel-title">{{$t('projects.portfolioTitle')}}</div>
+                    <div class="carousel-description">{{$t('projects.portfolioDescription')}}</div>
                     <div class="carousel-languages">
                         <img class="star5" data-src=./img/language/html.png alt="html"/>
                         <img class="star5" data-src=./img/language/js.png alt="js"/>
@@ -35,13 +31,8 @@
                 <div>
                     <img v-lazy="'./img/project/project_themobilecompany.webp'" alt="themobilecompany"
                          class="tns-lazy-img" data-src="./img/project/project_themobilecompany.webp">
-                    <div class="carousel-title">NMEA Sensor Reader app</div>
-                    <div class="carousel-description">
-                        A project for The Mobile Company that would like to have a SDK that supports the NMEA 0183
-                        protocol, which can also automatically search your Wi-Fi and Bluetooth network in order to
-                        connect with the sensors and display all the data inside a simple android application. The SDK
-                        can also be used as a library for your application.
-                    </div>
+                    <div class="carousel-title">{{$t('projects.nmeaTitle')}}</div>
+                    <div class="carousel-description">{{$t('projects.nmeaDescription')}}</div>
                     <div class="carousel-languages">
                         <img class="star3" data-src=./img/language/kotlin.png alt="kotlin"/>
                     </div>
@@ -49,11 +40,8 @@
                 <div>
                     <img v-lazy="'./img/project/project_metafy.webp'" alt="metafy"
                          class="tns-lazy-img" data-src="./img/project/project_metafy.webp">
-                    <div class="carousel-title">Spotify MetaFy app</div>
-                    <div class="carousel-description">
-                        An Android application that uses the Spotify API to get your spotify account song and playlist
-                        data. You can assign your custom tags to songs and create custom playlists.
-                    </div>
+                    <div class="carousel-title">{{$t('projects.metafyAndroidTitle')}}</div>
+                    <div class="carousel-description">{{$t('projects.metafyAndroidDescription')}}</div>
                     <div class="carousel-languages">
                         <img class="star3" data-src=./img/language/kotlin.png alt="kotlin"/>
                     </div>
@@ -61,12 +49,8 @@
                 <div>
                     <img v-lazy="'./img/project/project_dashboard.webp'" alt="dashboard"
                          class="tns-lazy-img" data-src="./img/project/project_dashboard.webp">
-                    <div class="carousel-title">Bold Commerce Support Dashboard</div>
-                    <div class="carousel-description">
-                        A support dashboard that helps the management to see all the important data in a glimpse of an
-                        eye. Using the ActiveCollab API in order to collect task and time management data, while also
-                        following the Material IO guidelines.
-                    </div>
+                    <div class="carousel-title">{{$t('projects.boldTitle')}}</div>
+                    <div class="carousel-description">{{$t('projects.boldDescription')}}</div>
                     <div class="carousel-languages">
                         <img class="star5" data-src=./img/language/html.png alt="html"/>
                         <img class="star5" data-src=./img/language/js.png alt="js"/>
@@ -81,12 +65,8 @@
                 </div>
                 <div>
                     <img alt="aquadis" class="tns-lazy-img" data-src="./img/project/project_aquadis.webp">
-                    <div class="carousel-title">Aquadis texting website</div>
-                    <div class="carousel-description">
-                        A school project for Aquadis that would like to have an texting based game which allows
-                        the players to place messages on the maps and other people can see them if they are nearby
-                        and respond to it.
-                    </div>
+                    <div class="carousel-title">{{$t('projects.aquadisTitle')}}</div>
+                    <div class="carousel-description">{{$t('projects.aquadisDescription')}}</div>
                     <div class="carousel-languages">
                         <img class="star5" data-src=./img/language/html.png alt="html"/>
                         <img class="star5" data-src=./img/language/js.png alt="js"/>
@@ -99,11 +79,8 @@
                 </div>
                 <div>
                     <img alt="amsta" class="tns-lazy-img" data-src="./img/project/project_amsta.webp">
-                    <div class="carousel-title">Amsta Animal Go app</div>
-                    <div class="carousel-description">
-                        A school project for Amsta that would like to have an Android application which allows
-                        the elderlies from Amsta to exercise and stay fit while having fun with catching animals.
-                    </div>
+                    <div class="carousel-title">{{$t('projects.amstaTitle')}}</div>
+                    <div class="carousel-description">{{$t('projects.amstaDescription')}}</div>
                     <div class="carousel-languages">
                         <img class="star5" data-src=./img/language/html.png alt="html"/>
                         <img class="star4" data-src=./img/language/css.png alt="css"/>
@@ -113,11 +90,8 @@
                 <div>
                     <img v-lazy="'./img/project/project_corendon.webp'" alt="corendon"
                          class="tns-lazy-img" data-src="./img/project/project_corendon.webp">
-                    <div class="carousel-title">Corendon dating website</div>
-                    <div class="carousel-description">
-                        A school project for Corendon that would like to have a dating website for travelers
-                        that travel alone and would like to have a partner to party with.
-                    </div>
+                    <div class="carousel-title">{{$t('projects.corendonTitle')}}</div>
+                    <div class="carousel-description">{{$t('projects.corendonDescription')}}</div>
                     <div class="carousel-languages">
                         <img class="star5" data-src=./img/language/html.png alt="html"/>
                         <img class="star5" data-src=./img/language/js.png alt="js"/>

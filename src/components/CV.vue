@@ -5,17 +5,12 @@
                 <img alt="profile picture" src="../../public/img/selfie/selfie-squared.webp">
             </div>
             <div class="information">
-                <div class="name">MUHAMMED</div>
                 <div class="name color-red">ÖMER</div>
                 <div class="name color-blue">ERDEM</div>
                 <div class="study bold">SOFTWARE ENGINEER</div>
                 <div>
                     <span class="bold">Age:</span>
-                    <span class="color-grey">21</span>
-                </div>
-                <div>
-                    <span class="bold">Phone:</span>
-                    <span class="color-grey">(+31)6 81 67 56 66</span>
+                    <span class="color-grey">22</span>
                 </div>
                 <div>
                     <span class="bold">Area:</span>

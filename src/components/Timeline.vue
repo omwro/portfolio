@@ -1,6 +1,6 @@
 <template>
     <div id="timeline" class="section">
-        <h1>Timeline</h1>
+        <h1>{{$t('timeline.title')}}</h1>
         <div class="content">
             <!--            <div id="git">-->
             <!--                <div v-for="item in gitItems" :key="item.id" class="row">-->
@@ -93,57 +93,34 @@
 
             <div id="timeline-table">
                 <div class="event" data-date="Feb 2020 - Aug 2020">
-                    <h2>Intern Magento Developer</h2>
-                    <h3>Bold Commerce</h3>
-                    <p>
-                        Aimed at improving both my frontend and backend development skills, as well as communication skills
-                        with my colleagues and customers. Have worked in a real Agile environment and created a new
-                        Dashboard for the Support Team. The new skills I have learned are: Magento 2, Laravel, SASS,
-                        Vue.js 2 and Knockout.js.
-                    </p>
+                    <h2>{{$t('timeline.boldRole')}}</h2>
+                    <h3>{{$t('timeline.boldPlace')}}</h3>
+                    <p>{{$t('timeline.boldDescription')}}</p>
                 </div>
                 <div class="event" data-date="Sep 2018 - Present">
-                    <h2>Software Engineering</h2>
-                    <h3>Amsterdam University of Applied Sciences</h3>
-                    <p>
-                        Aimed at improving my skills in programming and in the business field, as well as expanding my
-                        network and keep having fun with my hobby projects. The new skills I have learned are: Java, NoSQL,
-                        Angular, TypeScript, Kotlin and Android Development.
-                    </p>
+                    <h2>{{$t('timeline.hvaRole')}}</h2>
+                    <h3>{{$t('timeline.hvaPlace')}}</h3>
+                    <p>{{$t('timeline.hvaDescription')}}</p>
                 </div>
                 <div class="event" data-date="Feb 2018 - Jun 2018">
-                    <h2>Intern Frontend Developer</h2>
-                    <h3>DiGidot</h3>
-                    <p>
-                        Aimed at improving my frontend skills by creating a Web Installation panel for the DiGidot C4
-                        hardware controllers. Designed and developed the installation panel in HTML5, CSS and JavaScript and
-                        worked with API calls.
-                    </p>
+                    <h2>{{$t('timeline.dgdRole')}}</h2>
+                    <h3>{{$t('timeline.dgdPlace')}}</h3>
+                    <p>{{$t('timeline.dgdDescription')}}</p>
                 </div>
                 <div class="event" data-date="Sep 2016 - Jan 2017">
-                    <h2>Intern Game Developer</h2>
-                    <h3>Kenneth & Koh</h3>
-                    <p>
-                        Aimed at improving my teamwork skills, as well as learning to work in a company setting. Improved
-                        my programming skills by creating a mobile and desktop game in Unity with C# and helped the
-                        developer team in testing their software.
-                    </p>
+                    <h2>{{$t('timeline.kkRole')}}</h2>
+                    <h3>{{$t('timeline.kkPlace')}}</h3>
+                    <p>{{$t('timeline.kkDescription')}}</p>
                 </div>
                 <div class="event" data-date="Sep 2015 - Jun 2018">
-                    <h2>Application Developer</h2>
-                    <h3>Regio College Zaandam</h3>
-                    <p>
-                        Aimed at getting started with programming and mastering the teamleader role for grouped projects.
-                        The new skills I have learned are: Leadership, HTML5, CSS3, JavaScript, C#, PHP, MySQL and ASP.NET.
-                    </p>
+                    <h2>{{$t('timeline.regioRole')}}</h2>
+                    <h3>{{$t('timeline.regioPlace')}}</h3>
+                    <p>{{$t('timeline.regioDescription')}}</p>
                 </div>
                 <div class="event" data-date="Jan 2015 - Present">
-                    <h2>Cashier</h2>
-                    <h3>Deugd Erdem</h3>
-                    <p>
-                        Worked as a cashier with a 0 hour contract to improve my communication skills with customers, while
-                        earning some pocket money and expanding my network.
-                    </p>
+                    <h2>{{$t('timeline.deugdRole')}}</h2>
+                    <h3>{{$t('timeline.deugdPlace')}}</h3>
+                    <p>{{$t('timeline.deugdDescription')}}</p>
                 </div>
             </div>
         </div>

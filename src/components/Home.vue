@@ -2,8 +2,9 @@
     <div id="home" class="section">
         <div class="background-image">
             <div class="introduction">
-                <span class="bold">Hi</span>, my name is <span class="bold">Omer Erdem</span>
-                and welcome to my <span class="bold">portfolio website!</span>
+                <span>{{$t("home.intro")}}</span>
+<!--                <span class="bold">Hi</span>, my name is <span class="bold">Omer Erdem</span>
+                and welcome to my <span class="bold">portfolio website!</span>-->
             </div>
         </div>
     </div>

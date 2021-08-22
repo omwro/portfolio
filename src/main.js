@@ -10,6 +10,7 @@ import { faFontAwesome, faLinkedin, faSkype, faDiscord, faCodepen, faGithub } fr
 import VueTinySlider from 'vue-tiny-slider';
 import VueLazyload from 'vue-lazyload'
 import Notifications  from "vue-notification";
+import i18n from './i18n'
 
 library.add(faAt, faLinkedin, faSkype, faDiscord, faCodepen, faGithub, faFontAwesome, faStar, faStarHalfAlt, faStarEmpty, faHandPointer)
 
@@ -23,5 +24,6 @@ new Vue({
   render: h => h(App),
   components: {
     'tiny-slider': VueTinySlider
-  }
+  },
+  i18n
 }).$mount('#app')

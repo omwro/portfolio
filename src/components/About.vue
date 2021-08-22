@@ -1,23 +1,14 @@
 <template>
     <div id="about" class="section">
-        <h1>Who am I ?</h1>
+        <h1>{{$t('about.title')}}</h1>
         <div class="content">
             <div class="selfie">
                 <img v-lazy="'./img/selfie/selfie.webp'" alt="selfie">
                 <a href="#" onclick="return false" v-on:click="getAccess">Download Resume</a>
             </div>
             <div class="intro">
-                <div>
-                    My name is Omer Erdem and I am a third year Software Engineer student at the Amsterdam University of
-                    Applied Sciences. I am currently 22 years old and I like to game, drive around and experiment.
-                </div>
-                <div>
-                    I am a hardworking web- and software developer student who is every day in search for new projects
-                    and challenges to improve my skills to eventually become a Full Stack Developer. I am really
-                    passionate in programming and would not mind to get my hands dirty again. I am eager to learn new
-                    techniques and I am surely not afraid of hardware. I am someone who likes to make the world a better
-                    place, even if it goes unnoticed.
-                </div>
+                <div>{{$t('about.description1')}}</div>
+                <div>{{$t('about.description2')}}</div>
             </div>
         </div>
     </div>

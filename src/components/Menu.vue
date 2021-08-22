@@ -10,11 +10,11 @@
         <div id="menulist">
             <a href="#home" @click="closeMenu">Home</a>
             <a class="programmer-only" href="#aboutIde" @click="closeMenu">About</a>
-            <a class="normal-only" href="#about" @click="closeMenu">About</a>
-            <a class="normal-only" href="#skills" @click="closeMenu">Skills</a>
-            <a class="normal-only" href="#projects" @click="closeMenu">Projects</a>
-            <a class="normal-only" href="#companies" @click="closeMenu">Companies</a>
-            <a href="#timeline" @click="closeMenu">Timeline</a>
+            <a class="normal-only" href="#about" @click="closeMenu">{{$t('about.title')}}</a>
+            <a class="normal-only" href="#skills" @click="closeMenu">{{$t('skills.title')}}</a>
+            <a class="normal-only" href="#projects" @click="closeMenu">{{$t('projects.title')}}</a>
+            <a class="normal-only" href="#companies" @click="closeMenu">{{$t('companies.title')}}</a>
+            <a href="#timeline" @click="closeMenu">{{$t('timeline.title')}}</a>
             <a href="#contact" @click="closeMenu">Contact</a>
         </div>
     </div>

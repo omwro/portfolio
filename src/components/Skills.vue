@@ -1,6 +1,6 @@
 <template>
     <div id="skills" class="section">
-        <h1>Skills</h1>
+        <h1>{{$t('skills.title')}}</h1>
         <div class="content">
             <div class="star-scheme">
                 <stars class="star5" stars="9"/>
@@ -122,19 +122,19 @@
             <div v-lazy-container="{ selector: 'img' }" class="img-container">
                 <div>
                     <img class="star5" data-src=./img/language/fist.png alt="fist"/>
-                    <div>Hard worker</div>
+                    <div>{{$t('skills.hardworker')}}</div>
                 </div>
                 <div>
                     <img class="star4" data-src=./img/language/team.png alt="team"/>
-                    <div>Team player</div>
+                    <div>{{$t('skills.teamplayer')}}</div>
                 </div>
                 <div>
                     <img class="star4" data-src=./img/language/problem.png alt="problem"/>
-                    <div>Problem<br>solving</div>
+                    <div>{{$t('skills.problemsolving')}}</div>
                 </div>
                 <div>
                     <img class="star4" data-src=./img/language/creative.png alt="light bulb"/>
-                    <div>Creativity</div>
+                    <div>{{$t('skills.creativity')}}</div>
                 </div>
             </div>
         </div>

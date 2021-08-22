@@ -1,6 +1,6 @@
 <template>
     <div id="action" class="section">
-        <h1 class="small">Choose your preference</h1>
+        <h1 class="small">{{$t('preferences.title')}}</h1>
         <div class="content">
             <div>
                 <span>Dark Mode</span>
@@ -8,6 +8,13 @@
                     <input id="darkSwitch" type="checkbox" @click="onDarkModeToggle">
                     <span class="slider round"></span>
                 </label>
+            </div>
+            <div>
+                <span>Language</span>
+                <select v-model="language" @change="setLanguage">
+                  <option selected value="en">English</option>
+                  <option value="nl">Dutch</option>
+                </select>
             </div>
             <!--      <div>-->
             <!--        <span>Programmer Mode</span>-->
@@ -32,6 +39,11 @@ import $ from 'jquery';
 
 export default {
     name: "Action",
+    data() {
+        return {
+            language: "en"
+        }
+    },
     created() {
         $(document).ready(() => {
             if (localStorage.getItem("darkmode") === null/* ||
@@ -69,6 +81,9 @@ export default {
             }
             $('#darkSwitch').prop('checked', bool);
         },
+        setLanguage() {
+            this.$i18n.locale = this.language
+        }
         /*onProgrammerModeToggle() {
           this.setProgrammerMode(!this.getProgrammerMode());
         },
