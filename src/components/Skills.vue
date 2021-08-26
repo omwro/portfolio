@@ -183,6 +183,10 @@ export default {
         margin: 16px 8px 0 8px;
         border-radius: 25px;
     }
+
+    div {
+        max-width: 96px;
+    }
 }
 
 .star5 {

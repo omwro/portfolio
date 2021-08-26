@@ -3,14 +3,14 @@
         <h1 class="small">{{$t('preferences.title')}}</h1>
         <div class="content">
             <div>
-                <span>Dark Mode</span>
+                <span>{{$t('preferences.darkmode')}}</span>
                 <label class="switch">
                     <input id="darkSwitch" type="checkbox" @click="onDarkModeToggle">
                     <span class="slider round"></span>
                 </label>
             </div>
             <div>
-                <span>Language</span>
+                <span>{{$t('preferences.language')}}</span>
                 <select v-model="language" @change="setLanguage">
                   <option selected value="en">English</option>
                   <option value="nl">Dutch</option>

@@ -92,32 +92,32 @@
             <!--            </div>-->
 
             <div id="timeline-table">
-                <div class="event" data-date="Feb 2020 - Aug 2020">
+                <div class="event" :data-date="$t('timeline.boldDate')" >
                     <h2>{{$t('timeline.boldRole')}}</h2>
                     <h3>{{$t('timeline.boldPlace')}}</h3>
                     <p>{{$t('timeline.boldDescription')}}</p>
                 </div>
-                <div class="event" data-date="Sep 2018 - Present">
+                <div class="event" :data-date="$t('timeline.hvaDate')">
                     <h2>{{$t('timeline.hvaRole')}}</h2>
                     <h3>{{$t('timeline.hvaPlace')}}</h3>
                     <p>{{$t('timeline.hvaDescription')}}</p>
                 </div>
-                <div class="event" data-date="Feb 2018 - Jun 2018">
+                <div class="event" :data-date="$t('timeline.dgdDate')">
                     <h2>{{$t('timeline.dgdRole')}}</h2>
                     <h3>{{$t('timeline.dgdPlace')}}</h3>
                     <p>{{$t('timeline.dgdDescription')}}</p>
                 </div>
-                <div class="event" data-date="Sep 2016 - Jan 2017">
+                <div class="event" :data-date="$t('timeline.kkDate')">
                     <h2>{{$t('timeline.kkRole')}}</h2>
                     <h3>{{$t('timeline.kkPlace')}}</h3>
                     <p>{{$t('timeline.kkDescription')}}</p>
                 </div>
-                <div class="event" data-date="Sep 2015 - Jun 2018">
+                <div class="event" :data-date="$t('timeline.regioDate')">
                     <h2>{{$t('timeline.regioRole')}}</h2>
                     <h3>{{$t('timeline.regioPlace')}}</h3>
                     <p>{{$t('timeline.regioDescription')}}</p>
                 </div>
-                <div class="event" data-date="Jan 2015 - Present">
+                <div class="event" :data-date="$t('timeline.deugdDate')">
                     <h2>{{$t('timeline.deugdRole')}}</h2>
                     <h3>{{$t('timeline.deugdPlace')}}</h3>
                     <p>{{$t('timeline.deugdDescription')}}</p>

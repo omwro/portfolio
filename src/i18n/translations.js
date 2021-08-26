@@ -4,7 +4,9 @@ const translations = {
             intro: "Hi, my name is Omer Erdem and welcome to my portfolio website!"
         },
         preferences: {
-            title: "Choose your preference"
+            title: "Choose your preference",
+            darkmode: "Dark Mode",
+            language: "Language"
         },
         quicky: {
             quicky1: "Currently not looking for any jobs until june 2022. I do however accept small projects.",
@@ -80,11 +82,77 @@ const translations = {
             intro: "Hey, mijn naam is Omer Erdem en welkom tot mijn portfolio website!"
         },
         preferences: {
-            title: "Kies jouw voorkeuren"
+            title: "Kies jouw voorkeuren",
+            darkmode: "Donkere Modus",
+            language: "Taal"
+        },
+        quicky: {
+            quicky1: "Momenteel niet op zoek naar banen tot en met juni 2022. Wel accepteer ik kleine projecten.",
+            quicky2: "Verlanglijst: Python & C++",
+            quicky3: "`Als iets belangrijk genoeg is, zal je het zelfs doen als de kansen niet in je voordeel zijn.` - Elon Musk",
+            quicky4: "`Het leven is oneerlijk, wen er maar aan.` - Bill Gates",
+            quicky5: "`Jouw merk is wat anderen over je vertellen wanneer je niet in de kamer bent.` - Jeff P. Bezos"
         },
         about: {
             title: "Wie ben ik ?",
-            resume: "Download CV"
+            resume: "Download CV",
+            description1: "Mijn naam is Omer Erdem en ik ben een derde jaars Software Ontwikkelaar student aan het Hogeschool van Amsterdam. Ik ben momenteel 22 jaar jong en vind het leuk om te gamen, rondjes te rijden en te experimenteren.",
+            description2: "Ik ben een hard werkend web- en software ontwikkelaar student waarbij ik elke dag op zoek ben naar nieuwe projecten en uitdagingen om mijn vaardigheden te verbeteren om uiteindelijk een Full Stack ontwikkelaar te worden. Ik ben erg gepassioneerd in programmeren en vind het niet erg om me handen vuil te maken. Ik ben gretig om nieuwe technieken te leren en ben zeker niet bang van hardware. Ik ben iemand die de wereld een beter plek wilt maken, zelfs als het onopgemerkt blijft."
+        },
+        skills: {
+            title: "Vaardigheden",
+            hardworker: "Harde werker",
+            teamplayer: "Team speler",
+            problemsolving: "Problemen oplossen",
+            creativity: "Creativiteit"
+        },
+        projects: {
+            title: "Projecten",
+            swipe: "Sleep om te scrollen",
+            corendonTitle: "Corendon dating website",
+            corendonDescription: "Een school project voor Corendom die graag een dating website wilt voor reizigers die alleen reizen en graag een partner willen om mee te feesten.",
+            amstaTitle: "Amsta Animal Go android app",
+            amstaDescription: "Een school project voor Amsta die graag een Android applicatie wilt met als doel om de ouderen van Amsta te laten bewegen en fit te blijven terwijl ze lol hebben met het vangen van dieren.",
+            aquadisTitle: "Aquadis texting webapp",
+            aquadisDescription: "Een school project voor Aquadis die graag een texting gebaseerd spel wilt waarbij de spelers op de kaart een bericht kunnen plaatsen en andere spelers die in de buurt zijn van het bericht, het kunnen lezen en reageren.",
+            boldTitle: "Bold Commerce Support Dashboard",
+            boldDescription: "Een support dashboard dat de directie helpt om alle belangrijke data in een oogopslag te zien. Met behulp van de ActiveCollab API halen we alle taken en de tijdsbeheer data op, terwijl we ook de Material IO richtlijnen volgen.",
+            metafyAndroidTitle: "Metafy spotify android app",
+            metafyAndroidDescription: "Een android app die de Spotify API gebruikt om de liedjes en playlist van je spotify account op te halen. Hiermee kan je liedjes tags en playlisten naar je wensen aanpassen.",
+            nmeaTitle: "NMEA Sensor Reader android app",
+            nmeaDescription: "Een project voor The Mobile Company die graag een SDK wou hebben die de NMEA 0183 protocol ondersteund. De SDK zoekt automatisch naar Wi-Fi en Bluetooth netwerken, zodat het een verbinding kan aanleggen met de sensoren en de sensor data kan tonen in een simpele android app. De SDK kan ook worden gebruikt als een bibliotheek voor jouw eigen app.",
+            portfolioTitle: "Portfolio website",
+            portfolioDescription: "Het maken van een mooie persoonlijke portfolio website is een hobby project waar ik jaren lang meerdere pogingen in verschillende talen en frameworks hebt gewaagd. De website zal continue doorontwikkeld worden om mijn vaardigheden te verbeterend en om met nieuwe features te ontwikkelen."
+        },
+        companies: {
+            title: "Bedrijven"
+        },
+        timeline: {
+            title: "Timeline",
+            deugdDate: "Jan 2015 - Huidig",
+            deugdRole: "Kassamedewerker",
+            deugdPlace: "Deugd Erdem",
+            deugdDescription: "Heb gewerkt als een kassamedewerker met een 0 uren contract om mijn communicatie vaardigheden te verbeteren met klanten, wat zakgeld te verdienen en mijn netwerk uit te bereiden.",
+            regioDate: "Sep 2015 - Jun 2018",
+            regioRole: "Applicatie Ontwikkelaar",
+            regioPlace: "Regio College Zaandam",
+            regioDescription: "Mijn doel was om een start te maken met het programmeren en om mijn leiderschap vaardigheden te verbeteren voor groepsprojecten. De vaardigheden die ik heb geleerd zijn als volgt: Leiderschap, HTML5, CSS3, JavaScript, C#, PHP, MySQL and ASP.NET.",
+            kkDate: "Sep 2016 - Jan 2017",
+            kkRole: "Stagiair Spel Ontwikkelaar",
+            kkPlace: "Kenneth & Koh",
+            kkDescription: "Mijn doel was om mijn samenwerking vaardigheden te verbeteren en ook om te leren hoe je moet werken in een bedrijfsomgeving. Heb mijn programmeer vaardigheden verbeterd door een mobiel en desktop spel te maken in Unity met C# en heb de ontwikkelaars team geholpen met het testen van hun software.",
+            dgdDate: "Feb 2018 - Jun 2018",
+            dgdRole: "Stagiair Frontend Ontwikkelaar",
+            dgdPlace: "Digidot",
+            dgdDescription: "Aimed at improving my frontend skills by creating a Web Installation panel for the DiGidot C4 hardware controllers. Designed and developed the installation panel in HTML5, CSS and JavaScript and worked with API calls.",
+            hvaDate: "Sep 2018 - Huidig",
+            hvaRole: "Software Ontwikkelaar",
+            hvaPlace: "Hogeschool van Amsterdam",
+            hvaDescription: "Aimed at improving my skills in programming and in the business field, as well as expanding my network and keep having fun with my hobby projects. The new skills I have learned are: Java, NoSQL, Angular, TypeScript, Kotlin and Android Development.",
+            boldDate: "Feb 2020 - Aug 2020",
+            boldRole: "Stagiair Magento Ontwikkelaar",
+            boldPlace: "Bold Commerce",
+            boldDescription: "Aimed at improving both my frontend and backend development skills, as well as communication skills with my colleagues and customers. Have worked in a real Agile environment and created a new Dashboard for the Support Team. The new skills I have learned are: Magento 2, Laravel, SASS, Vue.js 2 and Knockout.js."
         }
     }
 }

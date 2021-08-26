@@ -4,7 +4,7 @@
         <div class="content">
             <div class="selfie">
                 <img v-lazy="'./img/selfie/selfie.webp'" alt="selfie">
-                <a href="#" onclick="return false" v-on:click="getAccess">Download Resume</a>
+                <a href="#" onclick="return false" v-on:click="getAccess">{{$t('about.resume')}}</a>
             </div>
             <div class="intro">
                 <div>{{$t('about.description1')}}</div>
