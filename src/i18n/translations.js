@@ -110,7 +110,7 @@ const translations = {
             title: "Projecten",
             swipe: "Sleep om te scrollen",
             corendonTitle: "Corendon dating website",
-            corendonDescription: "Een school project voor Corendom die graag een dating website wilt voor reizigers die alleen reizen en graag een partner willen om mee te feesten.",
+            corendonDescription: "Een school project voor Corendon die graag een dating website wilt voor reizigers die alleen reizen en graag een partner willen om mee te feesten.",
             amstaTitle: "Amsta Animal Go android app",
             amstaDescription: "Een school project voor Amsta die graag een Android applicatie wilt met als doel om de ouderen van Amsta te laten bewegen en fit te blijven terwijl ze lol hebben met het vangen van dieren.",
             aquadisTitle: "Aquadis texting webapp",
@@ -128,7 +128,7 @@ const translations = {
             title: "Bedrijven"
         },
         timeline: {
-            title: "Timeline",
+            title: "Tijdlijn",
             deugdDate: "Jan 2015 - Huidig",
             deugdRole: "Kassamedewerker",
             deugdPlace: "Deugd Erdem",
@@ -144,15 +144,15 @@ const translations = {
             dgdDate: "Feb 2018 - Jun 2018",
             dgdRole: "Stagiair Frontend Ontwikkelaar",
             dgdPlace: "Digidot",
-            dgdDescription: "Aimed at improving my frontend skills by creating a Web Installation panel for the DiGidot C4 hardware controllers. Designed and developed the installation panel in HTML5, CSS and JavaScript and worked with API calls.",
+            dgdDescription: "Mijn doel was om mijn frontend vaardigheden te verbeteren door een web installatie paneel te maken voor de DiGidot C4 hardware bestuurders. Het paneel is ontworpen en ontwikkeld in HTML5, CSS en JavaScript en heb gewerkt met API verzoeken.",
             hvaDate: "Sep 2018 - Huidig",
             hvaRole: "Software Ontwikkelaar",
             hvaPlace: "Hogeschool van Amsterdam",
-            hvaDescription: "Aimed at improving my skills in programming and in the business field, as well as expanding my network and keep having fun with my hobby projects. The new skills I have learned are: Java, NoSQL, Angular, TypeScript, Kotlin and Android Development.",
+            hvaDescription: "Mijn doel was om mij vaardigheden te verbeteren in het programmeren en in de bedrijfsomgeving, als ook mijn netwerk uit te breiden en om lol te hebben leuke hobby projecten. De nieuwe vaardigheden die ik heb geleerd zijn als volgt: Java, NoSQL, Angular, TypeScript, Kotlin en Android ontwikkeling.",
             boldDate: "Feb 2020 - Aug 2020",
             boldRole: "Stagiair Magento Ontwikkelaar",
             boldPlace: "Bold Commerce",
-            boldDescription: "Aimed at improving both my frontend and backend development skills, as well as communication skills with my colleagues and customers. Have worked in a real Agile environment and created a new Dashboard for the Support Team. The new skills I have learned are: Magento 2, Laravel, SASS, Vue.js 2 and Knockout.js."
+            boldDescription: "Mijn doel was om mijn frontend en backend programmeer vaardigheden te verbeteren, als ook de communicatie vaardigheden met mijn collega's en klanten. Heb gewerkt in een echte Agile omgeving en heb een Dashboard gemaakt voor de Support team . De nieuwe vaardigheden die ik heb geleerd zijn als volgt: Magento 2, Laravel, SASS, Vue.js 2 en Knockout.js."
         }
     }
 }

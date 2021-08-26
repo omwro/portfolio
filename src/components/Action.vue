@@ -13,7 +13,7 @@
                 <span>{{$t('preferences.language')}}</span>
                 <select v-model="language" @change="setLanguage">
                   <option selected value="en">English</option>
-                  <option value="nl">Dutch</option>
+                  <option value="nl">Nederlands</option>
                 </select>
             </div>
             <!--      <div>-->
@@ -46,20 +46,34 @@ export default {
     },
     created() {
         $(document).ready(() => {
-            if (localStorage.getItem("darkmode") === null/* ||
-          localStorage.getItem("programmermode") === null*//* ||
-          localStorage.getItem("experimentmode") === null*/) {
+            if (localStorage.getItem("darkmode") === null) {
                 localStorage.setItem("darkmode", false)
                 this.setDarkMode(false)
-                /*localStorage.setItem("programmermode", false)
-                this.setProgrammerMode(false)*/
-                /*localStorage.setItem("experimentmode", false)
-                this.setExperimentMode(false)*/
             } else {
                 this.setDarkMode(this.getDarkMode());
-                /*this.setProgrammerMode(this.getProgrammerMode());*/
-                /*this.setExperimentMode(this.getExperimentMode());*/
             }
+            if (localStorage.getItem("language") === null) {
+                localStorage.setItem("language", "en")
+                this.language = "en"
+                this.setLanguage()
+            } else {
+                this.language = localStorage.getItem("language")
+                this.setLanguage()
+            }
+            /*if (localStorage.getItem("darkmode") === null ||
+          localStorage.getItem("programmermode") === null ||
+          localStorage.getItem("experimentmode") === null) {
+                localStorage.setItem("darkmode", false)
+                this.setDarkMode(false)
+                localStorage.setItem("programmermode", false)
+                this.setProgrammerMode(false)
+                localStorage.setItem("experimentmode", false)
+                this.setExperimentMode(false)
+            } else {
+                this.setDarkMode(this.getDarkMode());
+                this.setProgrammerMode(this.getProgrammerMode());
+                this.setExperimentMode(this.getExperimentMode());
+            }*/
         });
     },
     methods: {
@@ -82,6 +96,7 @@ export default {
             $('#darkSwitch').prop('checked', bool);
         },
         setLanguage() {
+            localStorage.setItem("language", this.language)
             this.$i18n.locale = this.language
         }
         /*onProgrammerModeToggle() {
