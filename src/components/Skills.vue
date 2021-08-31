@@ -31,28 +31,51 @@
                     <div>CSS3</div>
                 </div>
                 <div>
-                    <img class="star4" data-src=./img/language/jquery.png alt="jquery"/>
-                    <div>jQuery</div>
-                </div>
-                <div>
-                    <img class="star4" data-src=./img/language/mysql.png alt="mysql"/>
-                    <div>MySQL</div>
-                </div>
-                <div>
-                    <img class="star4" data-src=./img/language/vue.png alt="vue"/>
-                    <div>Vue.js 2</div>
-                </div>
-                <div>
-                    <img class="star3" data-src=./img/language/angular.png  alt="angular"/>
-                    <div>Angular 8</div>
-                </div>
-                <div>
                     <img class="star3" data-src=./img/language/ts.png alt="ts"/>
                     <div>TypeScript</div>
                 </div>
                 <div>
                     <img class="star3" data-src=./img/language/kotlin.png alt="kotlin"/>
                     <div>Kotlin</div>
+                </div>
+                <div>
+                    <img class="star3" data-src=./img/language/json.png alt="json"/>
+                    <div>JSON</div>
+                </div>
+                <div>
+                    <img class="star2" data-src=./img/language/json.png alt="json"/>
+                    <div>XML</div>
+                </div>
+                <div>
+                    <img class="star2" data-src=./img/language/node.png alt="node"/>
+                    <div>Node.js</div>
+                </div>
+                <div>
+                    <img class="star1" data-src=./img/language/csharp.png alt="csharp"/>
+                    <div>C#</div>
+                </div>
+                <div>
+                    <img class="star1" data-src=./img/language/csharp.png alt="csharp"/>
+                    <div>ASP.Net</div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div v-lazy-container="{ selector: 'img' }" class="img-container">
+                <div>
+                    <img class="star4" data-src=./img/language/vue.png alt="vue"/>
+                    <div>Vue.js 2</div>
+                </div>
+                <div>
+                    <img class="star4" data-src=./img/language/jquery.png alt="jquery"/>
+                    <div>jQuery</div>
+                </div>
+                <div>
+                    <img class="star3" data-src=./img/language/angular.png  alt="angular"/>
+                    <div>Angular 8</div>
+                </div>
+                <div>
+                    <img class="star3" data-src=./img/language/angular.png  alt="angular"/>
+                    <div>React</div>
                 </div>
                 <div>
                     <img class="star3" data-src=./img/language/spring.png alt="spring"/>
@@ -63,24 +86,39 @@
                     <div>Sass/Scss</div>
                 </div>
                 <div>
-                    <img class="star3" data-src=./img/language/git.png alt="git"/>
-                    <div>Git</div>
-                </div>
-                <div>
-                    <img class="star3" data-src=./img/language/json.png alt="json"/>
-                    <div>JSON</div>
-                </div>
-                <div>
-                    <img class="star2" data-src=./img/language/node.png alt="node"/>
-                    <div>Node.js</div>
-                </div>
-                <div>
                     <img class="star2" data-src=./img/language/magento.png alt="magento"/>
                     <div>Magento 2</div>
                 </div>
                 <div>
                     <img class="star2" data-src=./img/language/laravel.png alt="laravel"/>
                     <div>Laravel</div>
+                </div>
+                <div>
+                    <img class="star2" data-src=./img/language/laravel.png alt="laravel"/>
+                    <div>Bootstrap</div>
+                </div>
+                <div>
+                    <img class="star1" data-src=./img/language/laravel.png alt="laravel"/>
+                    <div>Knockout.js</div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div v-lazy-container="{ selector: 'img' }" class="img-container">
+                <div>
+                    <img class="star4" data-src=./img/language/rpi.png alt="rpi"/>
+                    <div>Windows</div>
+                </div>
+                <div>
+                    <img class="star4" data-src=./img/language/mysql.png alt="mysql"/>
+                    <div>MySQL</div>
+                </div>
+                <div>
+                    <img class="star3" data-src=./img/language/git.png alt="git"/>
+                    <div>Git</div>
+                </div>
+                <div>
+                    <img class="star2" data-src=./img/language/rpi.png alt="rpi"/>
+                    <div>MacOS</div>
                 </div>
                 <div>
                     <img class="star2" data-src=./img/language/rpi.png alt="rpi"/>
@@ -91,23 +129,27 @@
                     <div>Apache 2</div>
                 </div>
                 <div>
-                    <img class="star1" data-src=./img/language/csharp.png alt="csharp"/>
-                    <div>C#</div>
+                    <img class="star2" data-src=./img/language/mysql.png alt="mysql"/>
+                    <div>MongoDB</div>
+                </div>
+                <div>
+                    <img class="star2" data-src=./img/language/mysql.png alt="mysql"/>
+                    <div>Firebase</div>
                 </div>
             </div>
             <div class="line"></div>
             <div v-lazy-container="{ selector: 'img' }" class="img-container">
                 <div>
                     <img class="star5" data-src=./img/language/web.png alt="web"/>
-                    <div>Website</div>
+                    <div>Website Builder</div>
                 </div>
                 <div>
                     <img class="star3" data-src=./img/language/pcbuild.png alt="pcbuild"/>
-                    <div>Custom PC</div>
+                    <div>Custom Desktop PC Builder</div>
                 </div>
                 <div>
                     <img class="star2" data-src=./img/language/android.png alt="android"/>
-                    <div>Android app</div>
+                    <div>Android App</div>
                 </div>
                 <div>
                     <img class="star2" data-src=./img/language/api.png alt="api"/>
@@ -115,7 +157,7 @@
                 </div>
                 <div>
                     <img class="star1" data-src=./img/language/unity.png alt="unity"/>
-                    <div>Unity game</div>
+                    <div>Unity Game</div>
                 </div>
             </div>
             <div class="line"></div>
