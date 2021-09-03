@@ -9,8 +9,8 @@ const translations = {
             language: "Language"
         },
         quicky: {
-            quicky1: "Currently not looking for any jobs until june 2022. I do however accept small projects.",
-            quicky2: "Bucketlist: Python & C++",
+            quicky1: "Currently looking for Full Stack Web developer graduation internship for Feb - Jun 2022.",
+            quicky2: "Following a Data Science Minor with Python.",
             quicky3: "`When something is important enough, you do it even if the odds are not in your favor.` - Elon Musk",
             quicky4: "`Life is not fair, get used to it.` - Bill Gates",
             quicky5: "`Your brand is what other people say about you when you're not in the room.` - Jeff P. Bezos"
@@ -23,6 +23,11 @@ const translations = {
         },
         skills: {
             title: "Skills",
+            languages: "Languages",
+            frameworks: "Frameworks",
+            environments: "Environments",
+            projects: "Projects",
+            competencies: "Competencies",
             hardworker: "Hard worker",
             teamplayer: "Team player",
             problemsolving: "Problem solving",
@@ -87,8 +92,8 @@ const translations = {
             language: "Taal"
         },
         quicky: {
-            quicky1: "Momenteel niet op zoek naar banen tot en met juni 2022. Wel accepteer ik kleine projecten.",
-            quicky2: "Verlanglijst: Python & C++",
+            quicky1: "Momenteel op zoek naar een Full Stack Web ontwikkelaar afstudeerstage voor Feb - Jun 2022.",
+            quicky2: "Een Data Science Minor met Python aan het volgen.",
             quicky3: "`Als iets belangrijk genoeg is, zal je het zelfs doen als de kansen niet in je voordeel zijn.` - Elon Musk",
             quicky4: "`Het leven is oneerlijk, wen er maar aan.` - Bill Gates",
             quicky5: "`Jouw merk is wat anderen over je vertellen wanneer je niet in de kamer bent.` - Jeff P. Bezos"
@@ -101,6 +106,11 @@ const translations = {
         },
         skills: {
             title: "Vaardigheden",
+            languages: "Talen",
+            frameworks: "Frameworks",
+            environments: "Omgevingen",
+            projects: "Projecten",
+            competencies: "Competenties",
             hardworker: "Harde werker",
             teamplayer: "Team speler",
             problemsolving: "Problemen oplossen",

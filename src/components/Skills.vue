@@ -9,6 +9,7 @@
                 <stars class="star2" stars="4"/>
                 <stars class="star1" stars="2"/>
             </div>
+            <h1 class="small">{{$t('skills.languages')}}</h1>
             <div v-lazy-container="{ selector: 'img' }" class="img-container">
                 <div>
                     <img class="star5" data-src=./img/language/html.png alt="html"/>
@@ -43,7 +44,7 @@
                     <div>JSON</div>
                 </div>
                 <div>
-                    <img class="star2" data-src=./img/language/json.png alt="json"/>
+                    <img class="star2" data-src=./img/language/xml.png alt="json"/>
                     <div>XML</div>
                 </div>
                 <div>
@@ -55,11 +56,11 @@
                     <div>C#</div>
                 </div>
                 <div>
-                    <img class="star1" data-src=./img/language/csharp.png alt="csharp"/>
+                    <img class="star1" data-src=./img/language/aspnet.png alt="csharp"/>
                     <div>ASP.Net</div>
                 </div>
             </div>
-            <div class="line"></div>
+            <h1 class="small">{{$t('skills.frameworks')}}</h1>
             <div v-lazy-container="{ selector: 'img' }" class="img-container">
                 <div>
                     <img class="star4" data-src=./img/language/vue.png alt="vue"/>
@@ -74,7 +75,7 @@
                     <div>Angular 8</div>
                 </div>
                 <div>
-                    <img class="star3" data-src=./img/language/angular.png  alt="angular"/>
+                    <img class="star3" data-src=./img/language/react.png  alt="angular"/>
                     <div>React</div>
                 </div>
                 <div>
@@ -94,18 +95,18 @@
                     <div>Laravel</div>
                 </div>
                 <div>
-                    <img class="star2" data-src=./img/language/laravel.png alt="laravel"/>
+                    <img class="star2" data-src=./img/language/bootstrap.png alt="bootstrap"/>
                     <div>Bootstrap</div>
                 </div>
                 <div>
-                    <img class="star1" data-src=./img/language/laravel.png alt="laravel"/>
+                    <img class="star1" data-src=./img/language/knockoutjs.png alt="knockoutjs"/>
                     <div>Knockout.js</div>
                 </div>
             </div>
-            <div class="line"></div>
+            <h1 class="small">{{$t('skills.environments')}}</h1>
             <div v-lazy-container="{ selector: 'img' }" class="img-container">
                 <div>
-                    <img class="star4" data-src=./img/language/rpi.png alt="rpi"/>
+                    <img class="star4" data-src=./img/language/windows.png alt="windows"/>
                     <div>Windows</div>
                 </div>
                 <div>
@@ -117,7 +118,7 @@
                     <div>Git</div>
                 </div>
                 <div>
-                    <img class="star2" data-src=./img/language/rpi.png alt="rpi"/>
+                    <img class="star2" data-src=./img/language/macos.png alt="macos"/>
                     <div>MacOS</div>
                 </div>
                 <div>
@@ -129,15 +130,15 @@
                     <div>Apache 2</div>
                 </div>
                 <div>
-                    <img class="star2" data-src=./img/language/mysql.png alt="mysql"/>
+                    <img class="star2" data-src=./img/language/mongodb.png alt="mongodb"/>
                     <div>MongoDB</div>
                 </div>
                 <div>
-                    <img class="star2" data-src=./img/language/mysql.png alt="mysql"/>
+                    <img class="star2" data-src=./img/language/firebase.png alt="firebase"/>
                     <div>Firebase</div>
                 </div>
             </div>
-            <div class="line"></div>
+            <h1 class="small">{{$t('skills.projects')}}</h1>
             <div v-lazy-container="{ selector: 'img' }" class="img-container">
                 <div>
                     <img class="star5" data-src=./img/language/web.png alt="web"/>
@@ -156,11 +157,27 @@
                     <div>Web API</div>
                 </div>
                 <div>
+                    <img class="star2" data-src=./img/language/webscraper.png alt="webscraper"/>
+                    <div>Web Scraper</div>
+                </div>
+                <div>
+                    <img class="star2" data-src=./img/language/minecraft.png alt="minecraft"/>
+                    <div>Minecraft Plugin</div>
+                </div>
+                <div>
+                    <img class="star1" data-src=./img/language/discord.png alt="discord"/>
+                    <div>Discord Bot</div>
+                </div>
+                <div>
                     <img class="star1" data-src=./img/language/unity.png alt="unity"/>
                     <div>Unity Game</div>
                 </div>
+                <div>
+                    <img class="star1" data-src=./img/language/magento.png alt="unity"/>
+                    <div>E-Commerce Webshop</div>
+                </div>
             </div>
-            <div class="line"></div>
+            <h1 class="small">{{$t('skills.competencies')}}</h1>
             <div v-lazy-container="{ selector: 'img' }" class="img-container">
                 <div>
                     <img class="star5" data-src=./img/language/fist.png alt="fist"/>
@@ -195,6 +212,10 @@ export default {
 <style lang="scss" scoped>
 @import "src/styles/variables";
 
+.section .content h1.small {
+    margin-bottom: 0;
+}
+
 .content .star-scheme {
     display: flex;
     flex-direction: row;
@@ -222,12 +243,12 @@ export default {
         width: 64px;
         height: 64px;
         padding: 8px;
-        margin: 16px 8px 0 8px;
         border-radius: 25px;
     }
 
-    div {
+    > div {
         max-width: 96px;
+        margin: 16px 8px 8px;
     }
 }
 
