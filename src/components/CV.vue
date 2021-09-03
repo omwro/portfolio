@@ -191,9 +191,9 @@ export default {
     }
 }
 
-body {
+html body #app {
     width: 21cm !important;
-    height: 29.7cm !important;
+    height: 30cm !important;
     background: $dark1 repeat;
     display: flex;
     flex-direction: column;
