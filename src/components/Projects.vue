@@ -3,8 +3,8 @@
         <h1>{{$t("projects.title")}}</h1>
         <div class="content">
             <span class="swipe-txt">
-              <font-awesome-icon :icon="['fas', 'hand-pointer']" class="icon linkedin"/>
-              {{$t("projects.swipe")}}
+                <font-awesome-icon :icon="['fas', 'hand-pointer']" class="icon linkedin"/>
+                {{$t("projects.swipe")}}
             </span>
             <vue-tiny-slider ref="tinySlider"
                              :auto-height="true"
@@ -19,7 +19,15 @@
                 <div>
                     <img v-lazy="'./img/project/project_metafy_vue.webp'" alt="metafy vue"
                          class="tns-lazy-img" data-src="./img/project/project_themobilecompany.webp">
-                    <div class="carousel-title">{{$t('projects.metafyvueTitle')}}</div>
+                    <div class="carousel-title">
+                        {{$t('projects.metafyvueTitle')}}
+                        <a aria-label="github" href="https://github.com/omwro/metafy-vue" rel="noopener" target="_blank">
+                            <font-awesome-icon :icon="['fab', 'github']" class="icon"/>
+                        </a>
+                        <a aria-label="link" href="https://metafy.omererdem.nl/" rel="noopener" target="_blank">
+                            <font-awesome-icon :icon="['fas', 'external-link-alt']" class="icon"/>
+                        </a>
+                    </div>
                     <div class="carousel-description">{{$t('projects.metafyvueDescription')}}</div>
                     <div class="carousel-languages">
                         <img class="star5" data-src=./img/language/html.png alt="html"/>
@@ -48,7 +56,12 @@
                 <div>
                     <img v-lazy="'./img/project/project_website.webp'" alt="website"
                          class="tns-lazy-img" data-src="./img/project/project_website.webp">
-                    <div class="carousel-title">{{$t('projects.portfolioTitle')}}</div>
+                    <div class="carousel-title">
+                        {{$t('projects.portfolioTitle')}}
+                        <a aria-label="github" href="https://github.com/omwro/portfoliovue" rel="noopener" target="_blank">
+                            <font-awesome-icon :icon="['fab', 'github']" class="icon"/>
+                        </a>
+                    </div>
                     <div class="carousel-description">{{$t('projects.portfolioDescription')}}</div>
                     <div class="carousel-languages">
                         <img class="star5" data-src=./img/language/html.png alt="html"/>
@@ -73,7 +86,12 @@
                 <div>
                     <img v-lazy="'./img/project/project_metafy.webp'" alt="metafy"
                          class="tns-lazy-img" data-src="./img/project/project_metafy.webp">
-                    <div class="carousel-title">{{$t('projects.metafyAndroidTitle')}}</div>
+                    <div class="carousel-title">
+                        {{$t('projects.metafyAndroidTitle')}}
+                        <a aria-label="github" href="https://github.com/omwro/MetaFy" rel="noopener" target="_blank">
+                            <font-awesome-icon :icon="['fab', 'github']" class="icon"/>
+                        </a>
+                    </div>
                     <div class="carousel-description">{{$t('projects.metafyAndroidDescription')}}</div>
                     <div class="carousel-languages">
                         <img class="star3" data-src=./img/language/kotlin.png alt="kotlin"/>
@@ -265,5 +283,15 @@ export default {
 
 .programmer #projects {
     display: none;
+}
+
+a {
+    margin: 0 4px;
+
+    .icon {
+        color: white;
+        width: 20px;
+        height: 20px;
+    }
 }
 </style>
