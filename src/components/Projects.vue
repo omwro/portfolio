@@ -1,8 +1,11 @@
 <template>
     <div id="projects" class="section">
-        <h1>Projects</h1>
+        <h1>{{$t("projects.title")}}</h1>
         <div class="content">
-            <span class="swipe-txt"><font-awesome-icon :icon="['fas', 'hand-pointer']" class="icon linkedin"/> Swipe to scroll</span>
+            <span class="swipe-txt">
+              <font-awesome-icon :icon="['fas', 'hand-pointer']" class="icon linkedin"/>
+              {{$t("projects.swipe")}}
+            </span>
             <vue-tiny-slider ref="tinySlider"
                              :auto-height="true"
                              :center="true"
@@ -13,6 +16,35 @@
                              :loop="false"
                              :mouse-drag="true"
                              :prevent-scroll-on-touch="'auto'">
+                <div>
+                    <img v-lazy="'./img/project/project_metafy_vue.webp'" alt="metafy vue"
+                         class="tns-lazy-img" data-src="./img/project/project_themobilecompany.webp">
+                    <div class="carousel-title">{{$t('projects.metafyvueTitle')}}</div>
+                    <div class="carousel-description">{{$t('projects.metafyvueDescription')}}</div>
+                    <div class="carousel-languages">
+                        <img class="star5" data-src=./img/language/html.png alt="html"/>
+                        <img class="star5" data-src=./img/language/js.png alt="js"/>
+                        <img class="star4" data-src=./img/language/css.png alt="css"/>
+                        <img class="star4" data-src=./img/language/vue.png alt="vue"/>
+                        <img class="star3" data-src=./img/language/sass.png alt="sass"/>
+                    </div>
+                </div>
+                <div>
+                    <img v-lazy="'./img/project/project_barber2u.webp'" alt="barber2u"
+                         class="tns-lazy-img" data-src="./img/project/project_themobilecompany.webp">
+                    <div class="carousel-title">{{$t('projects.barber2uTitle')}}</div>
+                    <div class="carousel-description">{{$t('projects.barber2uDescription')}}</div>
+                    <div class="carousel-languages">
+                        <img class="star5" data-src=./img/language/html.png alt="html"/>
+                        <img class="star4" data-src=./img/language/css.png alt="css"/>
+                        <img class="star4" data-src=./img/language/java.png alt="java"/>
+                        <img class="star3" data-src=./img/language/ts.png alt="ts"/>
+                        <img class="star3" data-src=./img/language/react.png  alt="angular"/>
+                        <img class="star3" data-src=./img/language/spring.png alt="spring"/>
+                        <img class="star3" data-src=./img/language/sass.png alt="sass"/>
+                        <img class="star2" data-src=./img/language/mongodb.png alt="mongodb"/>
+                    </div>
+                </div>
                 <div>
                     <img v-lazy="'./img/project/project_website.webp'" alt="website"
                          class="tns-lazy-img" data-src="./img/project/project_website.webp">
@@ -35,6 +67,7 @@
                     <div class="carousel-description">{{$t('projects.nmeaDescription')}}</div>
                     <div class="carousel-languages">
                         <img class="star3" data-src=./img/language/kotlin.png alt="kotlin"/>
+                        <img class="star2" data-src=./img/language/xml.png alt="json"/>
                     </div>
                 </div>
                 <div>
@@ -44,6 +77,7 @@
                     <div class="carousel-description">{{$t('projects.metafyAndroidDescription')}}</div>
                     <div class="carousel-languages">
                         <img class="star3" data-src=./img/language/kotlin.png alt="kotlin"/>
+                        <img class="star2" data-src=./img/language/xml.png alt="json"/>
                     </div>
                 </div>
                 <div>

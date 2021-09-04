@@ -36,6 +36,10 @@ const translations = {
         projects: {
             title: "Projects",
             swipe: "Swipe to scroll",
+            metafyvueTitle: "Metafy spotify web app",
+            metafyvueDescription: "A follow up on the android app with the goal to make it accessible for multiple platforms. With is you can use the Spotify API to create dynamic playlists, where all the meta data is stored in the Spotify servers and works fully client-side. A premium version with server-side actions is in the making, with commercial purposes.",
+            barber2uTitle: "Barber2U barber uber",
+            barber2uDescription: "A school project devised and created by our team, where barbers can give the customers a haircut in the customer's living room. You can select the barbers in de app with the appointment moment and haircut style chosen by you.",
             corendonTitle: "Corendon dating website",
             corendonDescription: "A school project for Corendon that would like to have a dating website for travelers that travel alone and would like to have a partner to party with.",
             amstaTitle: "Amsta Animal Go android app",
@@ -93,7 +97,7 @@ const translations = {
         },
         quicky: {
             quicky1: "Momenteel op zoek naar een Full Stack Web ontwikkelaar afstudeerstage voor Feb - Jun 2022.",
-            quicky2: "Een Data Science Minor met Python aan het volgen.",
+            quicky2: "Momenteel een Data Science Minor met Python aan het volgen.",
             quicky3: "`Als iets belangrijk genoeg is, zal je het zelfs doen als de kansen niet in je voordeel zijn.` - Elon Musk",
             quicky4: "`Het leven is oneerlijk, wen er maar aan.` - Bill Gates",
             quicky5: "`Jouw merk is wat anderen over je vertellen wanneer je niet in de kamer bent.` - Jeff P. Bezos"
@@ -119,6 +123,10 @@ const translations = {
         projects: {
             title: "Projecten",
             swipe: "Sleep om te scrollen",
+            metafyvueTitle: "Metafy spotify web app",
+            metafyvueDescription: "Een vervolg op de android app met als doel om het globaal te maken voor meerdere platforms. Hiermee kan je de Spotify API gebruiken om dynamische playlists te gebruiken, waarbij alle meta data wordt opgeslagen in de Spotify servers, waardoor het volledig client-side werkt. Een premium versie met server-side actions is in de maak, met commerciele doeleinden.",
+            barber2uTitle: "Barber2U barber uber",
+            barber2uDescription: "Een school project bedacht en gemaakt door onze team, waarbij kappers de knipbeurten in de woonkamer van de klanten knippen. De kappers kan je selecteren in de app met daarbij door jouw gekozen moment en soort knipbeurt.",
             corendonTitle: "Corendon dating website",
             corendonDescription: "Een school project voor Corendon die graag een dating website wilt voor reizigers die alleen reizen en graag een partner willen om mee te feesten.",
             amstaTitle: "Amsta Animal Go android app",
