@@ -14,6 +14,7 @@
         <Companies/>
         <Quicky :msg="$t('quicky.quicky4')"/>
         <Timeline/>
+        <TimelineGit/>
         <Quicky :msg="$t('quicky.quicky5')"/>
         <Contact/>
         <Footer/>
@@ -37,6 +38,7 @@ import Menu from "./components/Menu";
 import Action from "./components/Action";
 import AboutIDE from "./components/AboutIDE";
 import Quicky from "./forms/Quicky";
+import TimelineGit from "@/components/TimelineGit";
 // import CV from "./components/CV";
 
 export default {
@@ -52,6 +54,7 @@ export default {
             "Website is still in development so 'prepare for trouble, make it double'.")
     },
     components: {
+        TimelineGit,
         AboutIDE,
         Action,
         Menu,
