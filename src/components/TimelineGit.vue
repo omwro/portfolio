@@ -1,5 +1,5 @@
 <template>
-    <div id="timeline" class="section">
+    <div id="timelineGit" class="section">
         <h1>{{ $t('timeline.title') }}</h1>
         <div class="content">
             <div id="git">
@@ -109,9 +109,9 @@
 <script>
 export default {
     name: "TimelineGit",
-    data() {
-        return {
-            gitItems: [
+    computed: {
+        gitItems() {
+            return [
                 {
                     id: 17,
                     line: 3
@@ -121,7 +121,7 @@ export default {
                     style: "merge",
                     merge: 3,
                     spacing: 0,
-                    msg: "Merge Internship"
+                    msg: this.$t('timeline.mergeInternship')
                 }, {
                     id: 15,
                     line: 4,
@@ -136,7 +136,7 @@ export default {
                     style: "start",
                     start: 3,
                     spacing: 0,
-                    msg: "New Internship Branch",
+                    msg: this.$t('timeline.newInternshipBranch')
                 }, {
                     id: 13,
                     line: 3,
@@ -151,21 +151,21 @@ export default {
                     style: "start",
                     start: 1,
                     spacing: 1,
-                    msg: "New Study Branch"
+                    msg: this.$t('timeline.newStudyBranch')
                 }, {
                     id: 11,
                     line: 3,
                     style: "merge",
                     merge: 1,
                     spacing: 1,
-                    msg: "Merge Study"
+                    msg: this.$t('timeline.mergeStudy')
                 }, {
                     id: 10,
                     line: 4,
                     style: "merge",
                     merge: 3,
                     spacing: 0,
-                    msg: "Merge Internship"
+                    msg: this.$t('timeline.mergeInternship')
                 }, {
                     id: 9,
                     line: 4,
@@ -180,14 +180,14 @@ export default {
                     style: "start",
                     start: 3,
                     spacing: 0,
-                    msg: "New Internship Branch"
+                    msg: this.$t('timeline.newInternshipBranch')
                 }, {
                     id: 7,
                     line: 4,
                     style: "merge",
                     merge: 3,
                     spacing: 0,
-                    msg: "Merge Internship"
+                    msg: this.$t('timeline.mergeInternship')
                 }, {
                     id: 6,
                     line: 4,
@@ -202,7 +202,7 @@ export default {
                     style: "start",
                     start: 3,
                     spacing: 0,
-                    msg: "New Internship Branch"
+                    msg: this.$t('timeline.newInternshipBranch')
                 },
                 {
                     id: 4,
@@ -219,7 +219,7 @@ export default {
                     style: "start",
                     start: 1,
                     spacing: 1,
-                    msg: "New Study Branch"
+                    msg: this.$t('timeline.newStudyBranch')
                 },
                 {
                     id: 2,
@@ -236,14 +236,14 @@ export default {
                     style: "start",
                     start: 1,
                     spacing: 2,
-                    msg: "New Work Branch"
+                    msg: this.$t('timeline.newWorkBranch')
                 },
                 {
                     id: 0,
                     line: 1,
                     style: "commit",
                     spacing: 3,
-                    msg: "Initial Commit"
+                    msg: this.$t('timeline.initialCommit')
                 }
             ]
         }
@@ -261,372 +261,380 @@ $color4: $brilliant-orange;
 $transparent: rgba(0, 0, 0, 0);
 $hover-color: rgba(white, .1);
 
-#git {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    font-size: 16px;
-    margin: 0 8px;
-    max-width: 1000px;
+#timelineGit {
+    display: none;
 
-    .row {
+    #git {
         display: flex;
-        flex-direction: row;
-        height: auto;
+        flex-direction: column;
+        height: 100%;
+        font-size: 16px;
+        margin: 0 8px;
+        max-width: 1000px;
 
-        .vline, .bottomcornerline, .topcornerline{
-            .color1 {
-                z-index: 1;
-            }
-
-            .color2 {
-                z-index: 2;
-            }
-
-            .color3 {
-                z-index: 3;
-            }
-
-            .color4 {
-                z-index: 4;
-            }
-        }
-
-        .tag {
-            width: 88px;
-            height: 12px;
-            padding: 5px;
-            margin: 3px 0;
+        .row {
             display: flex;
-            align-items: center;
-            border-radius: 2px;
+            flex-direction: row;
+            height: auto;
 
-            &.color1 {
-                background-color: rgba($color1, 0.5);
-                border: solid 1px $color1;
+            .vline, .bottomcornerline, .topcornerline{
+                .color1 {
+                    z-index: 1;
+                }
+
+                .color2 {
+                    z-index: 2;
+                }
+
+                .color3 {
+                    z-index: 3;
+                }
+
+                .color4 {
+                    z-index: 4;
+                }
             }
 
-            &.color2 {
-                background-color: rgba($color2, 0.5);
-                border: solid 1px rgba($color2, 1);
+            .tag {
+                width: 88px;
+                height: 12px;
+                padding: 5px;
+                margin: 3px 0;
+                display: flex;
+                align-items: center;
+                border-radius: 2px;
+
+                &.color1 {
+                    background-color: rgba($color1, 0.5);
+                    border: solid 1px $color1;
+                }
+
+                &.color2 {
+                    background-color: rgba($color2, 0.5);
+                    border: solid 1px rgba($color2, 1);
+                }
+
+                &.color3 {
+                    background-color: rgba($color3, 0.5);
+                    border: solid 1px rgba($color3, 1);
+                }
+
+                &.color4 {
+                    background-color: rgba($color4, 0.5);
+                    border: solid 1px rgba($color4, 1);
+                }
             }
 
-            &.color3 {
-                background-color: rgba($color3, 0.5);
-                border: solid 1px rgba($color3, 1);
+            .block {
+                width: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                min-height: 30px;
+
+                .hline,
+                .vline,
+                .b-s {
+                    position: absolute;
+                }
             }
 
-            &.color4 {
-                background-color: rgba($color4, 0.5);
-                border: solid 1px rgba($color4, 1);
-            }
-        }
+            .bullet {
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                align-self: center;
+                z-index: 5;
 
-        .block {
-            width: 30px;
-            display: flex;
-            flex-wrap: wrap;
-            position: relative;
-            min-height: 30px;
+                &.b-s {
+                    height: 16px;
+                    width: 16px;
+                    margin: 7px;
+                    position: relative;
+                }
+
+                &.b-img {
+                    height: 24px;
+                    width: 24px;
+                    border: 3px solid;
+                    overflow: hidden;
+                    flex: none;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        object-fit: contain;
+                    }
+                }
+
+                &.color1 {
+                    background-color: $color1;
+                    border-color: $color1;
+                }
+
+                &.color2 {
+                    background-color: $color2;
+                    border-color: $color2;
+                }
+
+                &.color3 {
+                    background-color: $color3;
+                    border-color: $color3;
+                }
+
+                &.color4 {
+                    background-color: $color4;
+                    border-color: $color4;
+                }
+            }
+
+            .hline {
+                width: 30px;
+                height: 13px;
+                margin-top: 13px;
+                border-top: 4px solid;
+
+                &.hl-r {
+                    width: 15px;
+                    right: 0;
+                }
+
+                &.hl-l {
+                    width: 15px;
+                    left: 0;
+                }
+
+                &.hl-h {
+                    height: 14px;
+                    margin-top: 14px;
+                    border-width: 2px;
+                }
+            }
+
+            .vline {
+                width: 13px;
+                height: auto;
+                margin-right: 13px;
+                border-right: 4px solid;
+                flex: none;
+
+                &.vl-t {
+                    height: 100%;
+                    top: 0;
+                }
+
+                &.vl-b {
+                    height: 100%;
+                    bottom: 0;
+                }
+            }
+
+            .topcornerline {
+                width: 13px;
+                height: 13px;
+                margin: 13px 13px 0 0;
+                border-top: 4px solid;
+                border-right: 4px solid;
+                border-radius: 0 15px 0 0;
+            }
+
+            .bottomcornerline {
+                width: 13px;
+                height: 13px;
+                margin: 0 13px 13px 0;
+                border-bottom: 4px solid;
+                border-right: 4px solid;
+                border-radius: 0 0 15px 0;
+            }
 
             .hline,
             .vline,
-            .b-s {
-                position: absolute;
-            }
-        }
+            .topcornerline,
+            .bottomcornerline {
+                &.color1 {
+                    border-color: $color1;
+                }
 
-        .bullet {
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            align-self: center;
-            z-index: 5;
+                &.color2 {
+                    border-color: $color2;
+                }
 
-            &.b-s {
-                height: 16px;
-                width: 16px;
-                margin: 7px;
-                position: relative;
-            }
+                &.color3 {
+                    border-color: $color3;
+                }
 
-            &.b-img {
-                height: 24px;
-                width: 24px;
-                border: 3px solid;
-                overflow: hidden;
-                flex: none;
-
-                img {
-                    width: 24px;
-                    height: 24px;
-                    object-fit: contain;
+                &.color4 {
+                    border-color: $color4;
                 }
             }
 
-            &.color1 {
-                background-color: $color1;
-                border-color: $color1;
+            .spacer-1 {
+                margin-left: 130px;
             }
 
-            &.color2 {
-                background-color: $color2;
-                border-color: $color2;
-            }
-
-            &.color3 {
-                background-color: $color3;
-                border-color: $color3;
-            }
-
-            &.color4 {
-                background-color: $color4;
-                border-color: $color4;
-            }
-        }
-
-        .hline {
-            width: 30px;
-            height: 13px;
-            margin-top: 13px;
-            border-top: 4px solid;
-
-            &.hl-r {
-                width: 15px;
-                right: 0;
-            }
-
-            &.hl-l {
-                width: 15px;
-                left: 0;
-            }
-
-            &.hl-h {
-                height: 14px;
-                margin-top: 14px;
-                border-width: 2px;
-            }
-        }
-
-        .vline {
-            width: 13px;
-            height: auto;
-            margin-right: 13px;
-            border-right: 4px solid;
-            flex: none;
-
-            &.vl-t {
-                height: 100%;
-                top: 0;
-            }
-
-            &.vl-b {
-                height: 100%;
-                bottom: 0;
-            }
-        }
-
-        .topcornerline {
-            width: 13px;
-            height: 13px;
-            margin: 13px 13px 0 0;
-            border-top: 4px solid;
-            border-right: 4px solid;
-            border-radius: 0 15px 0 0;
-        }
-
-        .bottomcornerline {
-            width: 13px;
-            height: 13px;
-            margin: 0 13px 13px 0;
-            border-bottom: 4px solid;
-            border-right: 4px solid;
-            border-radius: 0 0 15px 0;
-        }
-
-        .hline,
-        .vline,
-        .topcornerline,
-        .bottomcornerline {
-            &.color1 {
-                border-color: $color1;
-            }
-
-            &.color2 {
-                border-color: $color2;
-            }
-
-            &.color3 {
-                border-color: $color3;
-            }
-
-            &.color4 {
-                border-color: $color4;
-            }
-        }
-
-        .spacer-1 {
-            margin-left: 130px;
-        }
-
-        .commit {
-            display: flex;
-            width: auto;
-            min-height: 30px;
-            align-self: center;
-
-            > div:first-child {
-                width: 50px;
-                border-right: 3px solid;
-                margin: 3px 10px 3px 0;
-            }
-
-            > div:last-child {
+            .commit {
+                display: flex;
+                width: auto;
+                min-height: 30px;
                 align-self: center;
 
-                &.commit-msg {
-                    width: calc(100% - 155px);
-                    flex: auto;
-                    padding: 2px 0;
+                > div:first-child {
+                    width: 50px;
+                    border-right: 3px solid;
+                    margin: 3px 10px 3px 0;
+                }
+
+                > div:last-child {
+                    align-self: center;
+
+                    &.commit-msg {
+                        width: calc(100% - 155px);
+                        flex: auto;
+                        padding: 2px 0;
+                    }
+                }
+
+                &.c-1 > div:first-child {
+                    width: 80px;
+                }
+
+                &.c-2 > div:first-child {
+                    width: 110px;
+                }
+
+                &.c-3 > div:first-child {
+                    width: 140px;
+                }
+
+                &.c-4 > div:first-child {
+                    width: 170px;
+                }
+
+                &.color1 > div:first-child {
+                    border-color: $color1;
+                    background: linear-gradient(
+                            to right,
+                            $transparent 0%,
+                            rgba($color1, 0.2) 50%,
+                            rgba($color1, 0.5) 100%
+                    );
+                }
+
+                &.color2 > div:first-child {
+                    border-color: $color2;
+                    background: linear-gradient(
+                            to right,
+                            $transparent 0%,
+                            rgba($color2, 0.2) 50%,
+                            rgba($color2, 0.5) 100%
+                    );
+                }
+
+                &.color3 > div:first-child {
+                    border-color: $color3;
+                    background: linear-gradient(
+                            to right,
+                            $transparent 0%,
+                            rgba($color3, 0.2) 50%,
+                            rgba($color3, 0.5) 100%
+                    );
+                }
+
+                &.color4 > div:first-child {
+                    border-color: $color4;
+                    background: linear-gradient(
+                            to right,
+                            $transparent 0%,
+                            rgba($color4, 0.2) 50%,
+                            rgba($color4, 0.5) 100%
+                    );
                 }
             }
+        }
+    }
 
-            &.c-1 > div:first-child {
-                width: 80px;
-            }
+    @media (max-width: $mq-m) {
+        #git {
+            font-size: 14px;
 
-            &.c-2 > div:first-child {
-                width: 110px;
-            }
+            .row {
+                .spacer-1 {
+                    margin-left: 79px;
+                }
 
-            &.c-3 > div:first-child {
-                width: 140px;
-            }
+                .vline {
+                    position: absolute;
+                }
 
-            &.c-4 > div:first-child {
-                width: 170px;
-            }
+                .bottomcornerline, .topcornerline, .block-mobile:not(.color2) {
+                    position: absolute;
+                    left: 87px;
+                }
 
-            &.color1 > div:first-child {
-                border-color: $color1;
-                background: linear-gradient(
-                        to right,
-                        $transparent 0%,
-                        rgba($color1, 0.2) 50%,
-                        rgba($color1, 0.5) 100%
-                );
-            }
+                .vline, .bottomcornerline, .topcornerline, .commit.c-0, .commit.c-1, .commit.c-2 {
+                    border-radius: 0;
+                    border-top: 0;
+                    border-bottom: 0;
+                }
 
-            &.color2 > div:first-child {
-                border-color: $color2;
-                background: linear-gradient(
-                        to right,
-                        $transparent 0%,
-                        rgba($color2, 0.2) 50%,
-                        rgba($color2, 0.5) 100%
-                );
-            }
+                .hline.hl-h:not(.hl-r):not(.hl-l) {
+                    width: 5px;
+                }
 
-            &.color3 > div:first-child {
-                border-color: $color3;
-                background: linear-gradient(
-                        to right,
-                        $transparent 0%,
-                        rgba($color3, 0.2) 50%,
-                        rgba($color3, 0.5) 100%
-                );
-            }
+                .hline.hl-r, .hline:not(.hl-h) {
+                    display: none;
+                }
 
-            &.color4 > div:first-child {
-                border-color: $color4;
-                background: linear-gradient(
-                        to right,
-                        $transparent 0%,
-                        rgba($color4, 0.2) 50%,
-                        rgba($color4, 0.5) 100%
-                );
+                .block:not(:nth-of-type(3)) .hline.color4:not(:first-of-type) {
+                    display: none;
+                }
+
+                .topcornerline {
+                    height: 17px;
+                }
+
+                .tag {
+                    width: 62px;
+                }
+
+                .bullet {
+                    &.b-img {
+                        z-index: 5;
+                    }
+
+                    &.b-s {
+                        z-index: 5;
+                    }
+                }
+
+
+                .commit {
+                    > div:first-child {
+                        width: 10px;
+                    }
+
+                    &.c-1 > div:first-child {
+                        width: 10px;
+                    }
+
+                    &.c-2 > div:first-child {
+                        width: 10px;
+                    }
+
+                    &.c-3 > div:first-child {
+                        width: 10px;
+                    }
+
+                    &.c-4 > div:first-child {
+                        width: 10px;
+                    }
+                }
             }
         }
     }
 }
 
-@media (max-width: $mq-m) {
-    #git {
-        font-size: 14px;
-
-        .row {
-            .spacer-1 {
-                margin-left: 79px;
-            }
-
-            .vline {
-                position: absolute;
-            }
-
-            .bottomcornerline, .topcornerline, .block-mobile:not(.color2) {
-                position: absolute;
-                left: 87px;
-            }
-
-            .vline, .bottomcornerline, .topcornerline, .commit.c-0, .commit.c-1, .commit.c-2 {
-                border-radius: 0;
-                border-top: 0;
-                border-bottom: 0;
-            }
-
-            .hline.hl-h:not(.hl-r):not(.hl-l) {
-                width: 5px;
-            }
-
-            .hline.hl-r, .hline:not(.hl-h) {
-                display: none;
-            }
-
-            .block:not(:nth-of-type(3)) .hline.color4:not(:first-of-type) {
-                display: none;
-            }
-
-            .topcornerline {
-                height: 17px;
-            }
-
-            .tag {
-                width: 62px;
-            }
-
-            .bullet {
-                &.b-img {
-                    z-index: 5;
-                }
-
-                &.b-s {
-                    z-index: 5;
-                }
-            }
-
-
-            .commit {
-                > div:first-child {
-                    width: 10px;
-                }
-
-                &.c-1 > div:first-child {
-                    width: 10px;
-                }
-
-                &.c-2 > div:first-child {
-                    width: 10px;
-                }
-
-                &.c-3 > div:first-child {
-                    width: 10px;
-                }
-
-                &.c-4 > div:first-child {
-                    width: 10px;
-                }
-            }
-        }
-    }
+.programmer #timelineGit {
+    display: flex;
 }
 </style>

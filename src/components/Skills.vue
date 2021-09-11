@@ -55,10 +55,6 @@
                     <img class="star1" data-src=./img/language/csharp.png alt="csharp"/>
                     <div>C#</div>
                 </div>
-                <div>
-                    <img class="star1" data-src=./img/language/aspnet.png alt="csharp"/>
-                    <div>ASP.Net</div>
-                </div>
             </div>
             <h1 class="small">{{$t('skills.frameworks')}}</h1>
             <div v-lazy-container="{ selector: 'img' }" class="img-container">
@@ -101,6 +97,10 @@
                 <div>
                     <img class="star1" data-src=./img/language/knockoutjs.png alt="knockoutjs"/>
                     <div>Knockout.js</div>
+                </div>
+                <div>
+                    <img class="star1" data-src=./img/language/aspnet.png alt="csharp"/>
+                    <div>ASP.Net</div>
                 </div>
             </div>
             <h1 class="small">{{$t('skills.environments')}}</h1>
@@ -278,9 +278,5 @@ export default {
     background-color: $grey;
     margin-top: 16px;
     align-self: center;
-}
-
-.programmer #skills {
-    display: none;
 }
 </style>

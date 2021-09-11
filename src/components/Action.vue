@@ -3,12 +3,13 @@
         <h1 class="small">{{$t('preferences.title')}}</h1>
         <div class="content">
             <div>
-                <span>{{$t('preferences.darkmode')}}</span>
                 <template v-if="dark">
-                    <img @click="onDarkModeToggle" src="img/actions/moon.png" class="pointer" alt="moon">
+                    <span>{{$t('preferences.lightmode')}}</span>
+                    <img @click="onDarkModeToggle" src="img/actions/sun.png" class="pointer" alt="sun">
                 </template>
                 <template v-else>
-                    <img @click="onDarkModeToggle" src="img/actions/sun.png" class="pointer" alt="sun">
+                    <span>{{$t('preferences.darkmode')}}</span>
+                    <img @click="onDarkModeToggle" src="img/actions/moon.png" class="pointer" alt="moon">
                 </template>
             </div>
             <div>
@@ -24,6 +25,10 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <span>{{$t('preferences.programmermode')}}</span>
+                <img @click="onProgrammerModeToggle" src="img/actions/code.png" class="pointer code" :class="programmer ? 'active' : ''" alt="code">
+            </div>
         </div>
     </div>
 </template>
@@ -36,6 +41,7 @@ export default {
     data() {
         return {
             dark: JSON.parse(localStorage.getItem('darkmode')),
+            programmer: JSON.parse(localStorage.getItem('programmermode')),
             language: "en"
         }
     },
@@ -47,17 +53,28 @@ export default {
             } else {
                 this.setDarkMode(this.dark);
             }
+
             if (localStorage.getItem("language") === null) {
                 localStorage.setItem("language", "en")
                 this.setLanguage("en")
             } else {
                 this.setLanguage(localStorage.getItem("language"))
             }
+
+            if (localStorage.getItem("programmermode") === null) {
+                localStorage.setItem("programmermode", false)
+                this.setProgrammerMode(false)
+            } else {
+                this.setProgrammerMode(this.programmer);
+            }
         });
     },
     methods: {
         onDarkModeToggle() {
             this.setDarkMode(!this.dark);
+        },
+        onProgrammerModeToggle() {
+            this.setProgrammerMode(!this.programmer);
         },
         setDarkMode(bool) {
             localStorage.setItem('darkmode', JSON.parse(bool));
@@ -66,6 +83,15 @@ export default {
                 $('#app').addClass('dark');
             } else {
                 $('#app').removeClass('dark');
+            }
+        },
+        setProgrammerMode(bool) {
+            localStorage.setItem('programmermode', JSON.parse(bool));
+            this.programmer = bool
+            if (bool) {
+                $('#app').addClass('programmer');
+            } else {
+                $('#app').removeClass('programmer');
             }
         },
         setLanguage(lan) {
@@ -94,7 +120,12 @@ export default {
             flex-direction: column;
             align-items: center;
             margin: 0.5rem;
-            width: 160px;
+            width: 165px;
+
+            > img {
+                margin: 4px 0;
+                padding: 4px;
+            }
 
             > span {
                 font-weight: bold;
@@ -116,10 +147,10 @@ export default {
                     width: 48px;
                     height: 48px;
                 }
+            }
 
-                .active {
-                    border-bottom: solid 1px $brilliant-red;
-                }
+            .active {
+                border-bottom: solid 2px $brilliant-red;
             }
         }
     }
@@ -132,5 +163,14 @@ export default {
 .dark #action {
     background-color: $dark2;
     color: $light0;
+
+    .code {
+        filter: invert(1);
+
+        &.active {
+            border-bottom-color: $brilliant-turquoise;
+
+        }
+    }
 }
 </style>

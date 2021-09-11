@@ -6,7 +6,9 @@ const translations = {
         preferences: {
             title: "Choose your preference",
             darkmode: "Dark Mode",
-            language: "Language"
+            lightmode: "Light Mode",
+            language: "Language",
+            programmermode: "Programmer Mode"
         },
         quicky: {
             quicky1: "Currently looking for Full Stack Web developer graduation internship for Feb - Jun 2022.",
@@ -18,7 +20,7 @@ const translations = {
         about: {
             title: "Who am I ?",
             resume: "Download Resume",
-            description1: "My name is Omer Erdem and I am a third year Software Engineer student at the Amsterdam University of Applied Sciences. I am currently 22 years old and I like to game, drive around and experiment.",
+            description1: "My name is Omer Erdem and I am a fourth year Software Engineer student at the Amsterdam University of Applied Sciences. I am currently 22 years old and I like to game, drive around and experiment.",
             description2: "I am a hardworking web- and software developer student who is every day in search for new projects and challenges to improve my skills to eventually become a Full Stack Developer. I am really passionate in programming and would not mind to get my hands dirty again. I am eager to learn new techniques and I am surely not afraid of hardware. I am someone who likes to make the world a better place, even if it goes unnoticed."
         },
         skills: {
@@ -83,7 +85,14 @@ const translations = {
             boldDate: "Feb 2020 - Aug 2020",
             boldRole: "Intern Magento Developer",
             boldPlace: "Bold Commerce",
-            boldDescription: "Aimed at improving both my frontend and backend development skills, as well as communication skills with my colleagues and customers. Have worked in a real Agile environment and created a new Dashboard for the Support Team. The new skills I have learned are: Magento 2, Laravel, SASS, Vue.js 2 and Knockout.js."
+            boldDescription: "Aimed at improving both my frontend and backend development skills, as well as communication skills with my colleagues and customers. Have worked in a real Agile environment and created a new Dashboard for the Support Team. The new skills I have learned are: Magento 2, Laravel, SASS, Vue.js 2 and Knockout.js.",
+
+            mergeInternship: "Merge Internship",
+            newInternshipBranch: "New Internship Branch",
+            newStudyBranch: "New Study Branch",
+            mergeStudy: "Merge Study",
+            newWorkBranch: "New Work Branch",
+            initialCommit: "Initial Commit",
         }
     },
     nl: {
@@ -93,7 +102,9 @@ const translations = {
         preferences: {
             title: "Kies jouw voorkeuren",
             darkmode: "Donkere Modus",
-            language: "Taal"
+            lightmode: "Licht Modus",
+            language: "Taal",
+            programmermode: "Programmeer Modus"
         },
         quicky: {
             quicky1: "Momenteel op zoek naar een Full Stack Web ontwikkelaar afstudeerstage voor Feb - Jun 2022.",
@@ -105,7 +116,7 @@ const translations = {
         about: {
             title: "Wie ben ik ?",
             resume: "Download CV",
-            description1: "Mijn naam is Omer Erdem en ik ben een derde jaars Software Ontwikkelaar student aan het Hogeschool van Amsterdam. Ik ben momenteel 22 jaar jong en vind het leuk om te gamen, rondjes te rijden en te experimenteren.",
+            description1: "Mijn naam is Omer Erdem en ik ben een vierde jaars Software Ontwikkelaar student aan het Hogeschool van Amsterdam. Ik ben momenteel 22 jaar jong en vind het leuk om te gamen, rondjes te rijden en te experimenteren.",
             description2: "Ik ben een hard werkend web- en software ontwikkelaar student waarbij ik elke dag op zoek ben naar nieuwe projecten en uitdagingen om mijn vaardigheden te verbeteren om uiteindelijk een Full Stack ontwikkelaar te worden. Ik ben erg gepassioneerd in programmeren en vind het niet erg om me handen vuil te maken. Ik ben gretig om nieuwe technieken te leren en ben zeker niet bang van hardware. Ik ben iemand die de wereld een beter plek wilt maken, zelfs als het onopgemerkt blijft."
         },
         skills: {
@@ -170,7 +181,14 @@ const translations = {
             boldDate: "Feb 2020 - Aug 2020",
             boldRole: "Stagiair Magento Ontwikkelaar",
             boldPlace: "Bold Commerce",
-            boldDescription: "Mijn doel was om mijn frontend en backend programmeer vaardigheden te verbeteren, als ook de communicatie vaardigheden met mijn collega's en klanten. Heb gewerkt in een echte Agile omgeving en heb een Dashboard gemaakt voor de Support team . De nieuwe vaardigheden die ik heb geleerd zijn als volgt: Magento 2, Laravel, SASS, Vue.js 2 en Knockout.js."
+            boldDescription: "Mijn doel was om mijn frontend en backend programmeer vaardigheden te verbeteren, als ook de communicatie vaardigheden met mijn collega's en klanten. Heb gewerkt in een echte Agile omgeving en heb een Dashboard gemaakt voor de Support team . De nieuwe vaardigheden die ik heb geleerd zijn als volgt: Magento 2, Laravel, SASS, Vue.js 2 en Knockout.js.",
+
+            mergeInternship: "Merge Stage",
+            newInternshipBranch: "Nieuwe Stage Branch",
+            newStudyBranch: "Nieuwe Studie Branch",
+            mergeStudy: "Merge Studie",
+            newWorkBranch: "Nieuwe Werk Branch",
+            initialCommit: "Initiële Commit",
         }
     }
 }

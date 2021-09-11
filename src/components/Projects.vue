@@ -281,10 +281,6 @@ export default {
     }
 }
 
-.programmer #projects {
-    display: none;
-}
-
 a {
     margin: 0 4px;
 

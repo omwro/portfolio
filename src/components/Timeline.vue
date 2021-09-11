@@ -128,12 +128,6 @@ $hover-color: rgba(white, .1);
 }
 
 .programmer #timeline {
-    #git {
-        display: flex;
-    }
-
-    #timeline-table {
-        display: none;
-    }
+    display: none;
 }
 </style>
