@@ -30,11 +30,7 @@
                     </div>
                     <div class="carousel-description">{{$t('projects.metafyvueDescription')}}</div>
                     <div class="carousel-languages">
-                        <img class="star5" data-src=./img/language/html.png alt="html"/>
-                        <img class="star5" data-src=./img/language/js.png alt="js"/>
-                        <img class="star4" data-src=./img/language/css.png alt="css"/>
-                        <img class="star4" data-src=./img/language/vue.png alt="vue"/>
-                        <img class="star3" data-src=./img/language/sass.png alt="sass"/>
+                        <img v-for="skill in getLanguages(['html', 'js', 'css', 'vue', 'sass'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
                     </div>
                 </div>
                 <div>
@@ -43,14 +39,7 @@
                     <div class="carousel-title">{{$t('projects.barber2uTitle')}}</div>
                     <div class="carousel-description">{{$t('projects.barber2uDescription')}}</div>
                     <div class="carousel-languages">
-                        <img class="star5" data-src=./img/language/html.png alt="html"/>
-                        <img class="star4" data-src=./img/language/css.png alt="css"/>
-                        <img class="star4" data-src=./img/language/java.png alt="java"/>
-                        <img class="star3" data-src=./img/language/ts.png alt="ts"/>
-                        <img class="star3" data-src=./img/language/react.png  alt="angular"/>
-                        <img class="star3" data-src=./img/language/spring.png alt="spring"/>
-                        <img class="star3" data-src=./img/language/sass.png alt="sass"/>
-                        <img class="star2" data-src=./img/language/mongodb.png alt="mongodb"/>
+						<img v-for="skill in getLanguages(['html', 'css', 'java', 'ts', 'react', 'spring', 'sass', 'mongodb'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
                     </div>
                 </div>
                 <div>
@@ -64,13 +53,7 @@
                     </div>
                     <div class="carousel-description">{{$t('projects.portfolioDescription')}}</div>
                     <div class="carousel-languages">
-                        <img class="star5" data-src=./img/language/html.png alt="html"/>
-                        <img class="star5" data-src=./img/language/js.png alt="js"/>
-                        <img class="star4" data-src=./img/language/php.png alt="php"/>
-                        <img class="star4" data-src=./img/language/css.png alt="css"/>
-                        <img class="star4" data-src=./img/language/jquery.png alt="jquery"/>
-                        <img class="star4" data-src=./img/language/vue.png alt="vue"/>
-                        <img class="star3" data-src=./img/language/sass.png alt="sass"/>
+						<img v-for="skill in getLanguages(['html', 'js', 'php', 'css', 'jquery', 'vue', 'sass'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
                     </div>
                 </div>
                 <div>
@@ -79,8 +62,7 @@
                     <div class="carousel-title">{{$t('projects.nmeaTitle')}}</div>
                     <div class="carousel-description">{{$t('projects.nmeaDescription')}}</div>
                     <div class="carousel-languages">
-                        <img class="star3" data-src=./img/language/kotlin.png alt="kotlin"/>
-                        <img class="star2" data-src=./img/language/xml.png alt="json"/>
+						<img v-for="skill in getLanguages(['kotlin', 'xml'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
                     </div>
                 </div>
                 <div>
@@ -94,8 +76,7 @@
                     </div>
                     <div class="carousel-description">{{$t('projects.metafyAndroidDescription')}}</div>
                     <div class="carousel-languages">
-                        <img class="star3" data-src=./img/language/kotlin.png alt="kotlin"/>
-                        <img class="star2" data-src=./img/language/xml.png alt="json"/>
+						<img v-for="skill in getLanguages(['kotlin', 'xml'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
                     </div>
                 </div>
                 <div>
@@ -104,15 +85,7 @@
                     <div class="carousel-title">{{$t('projects.boldTitle')}}</div>
                     <div class="carousel-description">{{$t('projects.boldDescription')}}</div>
                     <div class="carousel-languages">
-                        <img class="star5" data-src=./img/language/html.png alt="html"/>
-                        <img class="star5" data-src=./img/language/js.png alt="js"/>
-                        <img class="star4" data-src=./img/language/php.png alt="php"/>
-                        <img class="star4" data-src=./img/language/css.png alt="css"/>
-                        <img class="star4" data-src=./img/language/jquery.png alt="jquery"/>
-                        <img class="star4" data-src=./img/language/mysql.png alt="mysql"/>
-                        <img class="star4" data-src=./img/language/vue.png alt="vue"/>
-                        <img class="star3" data-src=./img/language/sass.png alt="sass"/>
-                        <img class="star2" data-src=./img/language/laravel.png alt="laravel"/>
+						<img v-for="skill in getLanguages(['html', 'js', 'php', 'css', 'jquery', 'mysql', 'vue', 'sass', 'laravel'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
                     </div>
                 </div>
                 <div>
@@ -120,13 +93,7 @@
                     <div class="carousel-title">{{$t('projects.aquadisTitle')}}</div>
                     <div class="carousel-description">{{$t('projects.aquadisDescription')}}</div>
                     <div class="carousel-languages">
-                        <img class="star5" data-src=./img/language/html.png alt="html"/>
-                        <img class="star5" data-src=./img/language/js.png alt="js"/>
-                        <img class="star4" data-src=./img/language/css.png alt="css"/>
-                        <img class="star4" data-src=./img/language/java.png alt="java"/>
-                        <img class="star4" data-src=./img/language/mysql.png alt="mysql"/>
-                        <img class="star3" data-src=./img/language/angular.png alt="angular"/>
-                        <img class="star3" data-src=./img/language/spring.png alt="spring"/>
+						<img v-for="skill in getLanguages(['html', 'js', 'css', 'java', 'mysql', 'angular', 'spring'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
                     </div>
                 </div>
                 <div>
@@ -134,9 +101,7 @@
                     <div class="carousel-title">{{$t('projects.amstaTitle')}}</div>
                     <div class="carousel-description">{{$t('projects.amstaDescription')}}</div>
                     <div class="carousel-languages">
-                        <img class="star5" data-src=./img/language/html.png alt="html"/>
-                        <img class="star4" data-src=./img/language/css.png alt="css"/>
-                        <img class="star4" data-src=./img/language/java.png alt="java"/>
+						<img v-for="skill in getLanguages(['html', 'css', 'java'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
                     </div>
                 </div>
                 <div>
@@ -145,10 +110,7 @@
                     <div class="carousel-title">{{$t('projects.corendonTitle')}}</div>
                     <div class="carousel-description">{{$t('projects.corendonDescription')}}</div>
                     <div class="carousel-languages">
-                        <img class="star5" data-src=./img/language/html.png alt="html"/>
-                        <img class="star5" data-src=./img/language/js.png alt="js"/>
-                        <img class="star4" data-src=./img/language/css.png alt="css"/>
-                        <img class="star4" data-src=./img/language/mysql.png alt="mysql"/>
+						<img v-for="skill in getLanguages(['html', 'js', 'css', 'mysql'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
                     </div>
                 </div>
             </vue-tiny-slider>
@@ -159,6 +121,7 @@
 <script>
 import $ from 'jquery';
 import VueTinySlider from 'vue-tiny-slider';
+import json from "@/../public/data/skills.json"
 
 export default {
     name: "Projects",
@@ -170,7 +133,12 @@ export default {
         $('#projects').find('img').on('load', function () {
             slider.updateSliderHeight()
         });
-    }
+    },
+	methods: {
+		getLanguages(array) {
+			return json.filter(x => array.includes(x.name))
+		}
+	}
 }
 
 
