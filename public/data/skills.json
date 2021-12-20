@@ -1,0 +1,460 @@
+[
+  {
+    "type": "Language",
+    "name": "js",
+    "display_name": "JavaScript",
+    "img": "./img/language/js.png",
+    "stars": 5,
+    "xp": [
+      {
+        "months": 30,
+        "desc": "Regio college"
+      },
+      {
+        "months": 30,
+        "desc": "HvA 1e, 2e, 3e jaar"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "html",
+    "display_name": "HTML5",
+    "img": "./img/language/html.png",
+    "stars": 5,
+    "xp": [
+      {
+        "months": 30,
+        "desc": "Regio college"
+      },
+      {
+        "months": 30,
+        "desc": "HvA 1e, 2e, 3e jaar"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "php",
+    "display_name": "PHP7",
+    "img": "./img/language/php.png",
+    "stars": 4,
+    "xp": [
+      {
+        "months": 24,
+        "desc": "Regio college"
+      },
+      {
+        "months": 7,
+        "desc": "boldcommerce"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "java",
+    "display_name": "Java11",
+    "img": "./img/language/java.png",
+    "stars": 4,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "HvA1 oop & pad"
+      },
+      {
+        "months": 6,
+        "desc": "HvA2 ads & ewa"
+      },
+      {
+        "months": 6,
+        "desc": "HvA3 barber2u"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "css",
+    "display_name": "CSS3",
+    "img": "./img/language/css.png",
+    "stars": 4,
+    "xp": [
+      {
+        "months": 30,
+        "desc": "Regio college"
+      },
+      {
+        "months": 30,
+        "desc": "HvA 1e, 2e, 3e jaar"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "ts",
+    "display_name": "Typescript",
+    "img": "./img/language/ts.png",
+    "stars": 3,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "HvA2 angular"
+      },
+      {
+        "months": 6,
+        "desc": "HvA3 react"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "kotlin",
+    "display_name": "Kotlin",
+    "img": "./img/language/kotlin.png",
+    "stars": 3,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "HvA3 mobile dev"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "json",
+    "display_name": "JSON",
+    "img": "./img/language/json.png",
+    "stars": 3,
+    "xp": [
+      {
+        "months": 24,
+        "desc": "Regio college"
+      },
+      {
+        "months": 12,
+        "desc": "HvA1 fys & pad"
+      },
+      {
+        "months": 12,
+        "desc": "HvA2 ewa & bold commerce"
+      },
+      {
+        "months": 12,
+        "desc": "HvA3 mobile dev & barber2u"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "xml",
+    "display_name": "XML",
+    "img": "./img/language/xml.png",
+    "stars": 2,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "HvA1  pad"
+      },
+      {
+        "months": 6,
+        "desc": "HvA3 mobile dev"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "node",
+    "display_name": "NodeJs",
+    "img": "./img/language/node.png",
+    "stars": 2,
+    "xp": [
+      {
+        "months": 1,
+        "desc": "puppeteer"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "csharp",
+    "display_name": "C#",
+    "img": "./img/language/csharp.png",
+    "stars": 1,
+    "xp": [
+      {
+        "months": 12,
+        "desc": "Regio college1"
+      },
+      {
+        "months": 6,
+        "desc": "Kenneth&Koh"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "vue",
+    "display_name": "Vue.Js 2",
+    "img": "./img/language/vue.png",
+    "stars": 4,
+    "xp": [
+      {
+        "months": 3,
+        "desc": "bold commerce"
+      },
+      {
+        "months": 1,
+        "desc": "hvablend"
+      },
+      {
+        "months": 3,
+        "desc": "hobby projects t/m 2021"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "jquery",
+    "display_name": "jQuery",
+    "img": "./img/language/jquery.png",
+    "stars": 3,
+    "xp": [
+      {
+        "months": 18,
+        "desc": "regio college"
+      },
+      {
+        "months": 6,
+        "desc": "hva1"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "angular",
+    "display_name": "Angular 8",
+    "img": "./img/language/angular.png",
+    "stars": 3,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "hva2"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "react",
+    "display_name": "React.js",
+    "img": "./img/language/react.png",
+    "stars": 3,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "hva3"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "spring",
+    "display_name": "Spring Boot",
+    "img": "./img/language/spring.png",
+    "stars": 3,
+    "xp": [
+      {
+        "months": 12,
+        "desc": "hva2 & hva3"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "sass",
+    "display_name": "Sass/Scss",
+    "img": "./img/language/sass.png",
+    "stars": 3,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "bold commerce"
+      },
+      {
+        "months": 6,
+        "desc": "barber2u"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "magento",
+    "display_name": "Magento 2",
+    "img": "./img/language/magento.png",
+    "stars": 2,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "bold commerce"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "laravel",
+    "display_name": "Laravel",
+    "img": "./img/language/laravel.png",
+    "stars": 2,
+    "xp": [
+      {
+        "months": 2,
+        "desc": "bold commerce"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "bootstrap",
+    "display_name": "Bootstrap",
+    "img": "./img/language/bootstrap.png",
+    "stars": 2,
+    "xp": [
+      {
+        "months": 12,
+        "desc": "Regio college"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "knockoutjs",
+    "display_name": "Knockout.js",
+    "img": "./img/language/knockoutjs.png",
+    "stars": 1,
+    "xp": [
+      {
+        "months": 1,
+        "desc": "Bold commerce"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "aspnet",
+    "display_name": "ASP.Net",
+    "img": "./img/language/aspnet.png",
+    "stars": 1,
+    "xp": [
+      {
+        "months": 12,
+        "desc": "Regio college"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "windows",
+    "display_name": "Windows",
+    "img": "./img/language/windows.png",
+    "stars": 4,
+    "xp": [
+      {
+        "months": 180,
+        "desc": "t/m 2021"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "mysql",
+    "display_name": "MySQL",
+    "img": "./img/language/windows.png",
+    "stars": 4,
+    "xp": [
+      {
+        "months": 24,
+        "desc": "regio college"
+      },
+      {
+        "months": 24,
+        "desc": "hva1,2,3"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "git",
+    "display_name": "Git",
+    "img": "./img/language/git.png",
+    "stars": 3,
+    "xp": [
+      {
+        "months": 36,
+        "desc": "hva1,2,3"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "macos",
+    "display_name": "MacOS",
+    "img": "./img/language/macos.png",
+    "stars": 2,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "bold commerce"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "rpi",
+    "display_name": "Raspberry Pi",
+    "img": "./img/language/rpi.png",
+    "stars": 2,
+    "xp": [
+      {
+        "months": 3,
+        "desc": "hobby projects"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "apache",
+    "display_name": "Apache 2",
+    "img": "./img/language/apache.png",
+    "stars": 2,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "rpi & digital ocean"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "mongodb",
+    "display_name": "MongoDB",
+    "img": "./img/language/mongodb.png",
+    "stars": 2,
+    "xp": [
+      {
+        "months": 3,
+        "desc": "barber2u"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "firebase",
+    "display_name": "Firebase",
+    "img": "./img/language/firebase.png",
+    "stars": 2,
+    "xp": [
+      {
+        "months": 3,
+        "desc": "webframeworks & mobile dev"
+      }
+    ]
+  }
+]

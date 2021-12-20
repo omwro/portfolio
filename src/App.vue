@@ -44,7 +44,7 @@ import TimelineGit from "@/components/TimelineGit";
 export default {
     name: 'App',
     created() {
-        console.error("Hey fellow curious developer.\n" +
+        console.warn("Hey fellow curious developer.\n" +
             "My name is Omer and welcome to my portfolio website.\n" +
             "This website is build to introduce myself and show off my skills.\n" +
             "Ofcourse no website is perfect (unless it gets featured in awwwards) so hit me up for ideas or any " +
