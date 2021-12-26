@@ -69,17 +69,15 @@ export default {
             "This website is build in Vue.js just for fun, extra experience and cleaner/easier folder structure as a " +
             "followup from the previous angular portfolio website and older plain html/css/js website.\n" +
             "Website is still in development so 'prepare for trouble, make it double'.")
-		console.log(navigator)
-		this.getClientIp()
+		this.registerVisitor()
 	},
 	methods: {
-		async getClientIp() {
-			try {
-				const response = await this.axios.get('https://api.omererdem.nl/');
-				console.log(response);
-			} catch (error) {
-				console.error(error);
-			}
+		registerVisitor() {
+            this.axios.post('https://api.omererdem.nl/visitor', {
+                "app": "Portfolio",
+                "uri": window.location.href,
+                "useragent": navigator.userAgent
+            });
 		}
 	}
 }
