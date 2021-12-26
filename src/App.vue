@@ -6,17 +6,17 @@
         <Action/>
         <AboutIDE/>
         <About/>
-        <Quicky :msg="$t('quicky.quicky1')"/>
-        <Skills/>
         <Quicky :msg="$t('quicky.quicky2')"/>
-        <Projects/>
+        <Skills/>
         <Quicky :msg="$t('quicky.quicky3')"/>
-        <Companies/>
+        <Projects/>
         <Quicky :msg="$t('quicky.quicky4')"/>
+        <Companies/>
+        <Quicky :msg="$t('quicky.quicky5')"/>
         <Timeline/>
         <TimelineGit/>
-        <Quicky :msg="$t('quicky.quicky5')"/>
-        <Contact/>
+<!--        <Quicky :msg="$t('quicky.quicky5')"/>-->
+<!--        <Contact/>-->
         <Footer/>
         <Menu/>
         <!--        <CV/>-->
@@ -32,7 +32,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Companies from "./components/Companies";
 import Timeline from "./components/Timeline";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Action from "./components/Action";
@@ -49,7 +49,7 @@ export default {
 		Action,
 		Menu,
 		Footer,
-		Contact,
+		// Contact,
 		Timeline,
 		Companies,
 		Skills,

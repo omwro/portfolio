@@ -34,6 +34,7 @@ export default {
     z-index: 10;
 
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-bottom: $grey 2px solid;
 
     display: flex;
@@ -92,5 +93,16 @@ export default {
 
 .dark #header .logo {
     filter: invert(100%);
+}
+
+#header {
+    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        background-color: rgba(255, 255, 255, .9);
+    }
+}
+#app.dark #header{
+    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        background-color: rgba(0, 0, 0, .9);
+    }
 }
 </style>

@@ -16,7 +16,7 @@
             <a href="#companies" @click="closeMenu">{{$t('companies.title')}}</a>
             <a class="normal-only" href="#timeline" @click="closeMenu">{{$t('timeline.title')}}</a>
             <a class="programmer-only" href="#timelineGit" @click="closeMenu">{{$t('timeline.title')}}</a>
-            <a href="#contact" @click="closeMenu">Contact</a>
+<!--            <a href="#contact" @click="closeMenu">Contact</a>-->
         </div>
     </div>
 </template>
@@ -59,9 +59,14 @@ export default {
     right: 0;
     padding: 0;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     z-index: 15;
     transition: 0.5s;
     border-left: solid 2px transparent;
+
+    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        background-color: rgba(0, 0, 0, .5);
+    }
 
     &.active {
         width: 100%;
@@ -149,5 +154,15 @@ export default {
 
 .programmer #menu #menulist a.normal-only {
     display: none;
+}
+#menu {
+    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        background-color: rgba(255, 255, 255, .9);
+    }
+}
+#app.dark #menu{
+    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        background-color: rgba(0, 0, 0, .9);
+    }
 }
 </style>

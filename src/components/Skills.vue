@@ -201,8 +201,11 @@ export default {
 		left: 17px;
 		padding: 3px;
 		border-radius: 6px 10px;
-		background: grey;
+		background: $light6;
 		font-size: 12px;
 	}
+}
+#app.dark .block .badge {
+    background: $dark6;
 }
 </style>

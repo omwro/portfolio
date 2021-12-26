@@ -3,8 +3,20 @@
         <div class="background-image">
             <div class="introduction">
                 <span>{{$t("home.intro")}}</span>
-<!--                <span class="bold">Hi</span>, my name is <span class="bold">Omer Erdem</span>
-                and welcome to my <span class="bold">portfolio website!</span>-->
+            </div>
+            <div class="contact">
+                <div>
+                    <img @click="goToMail" src="img/contact/mail.png" alt="mail">
+                    <span>Public.OmerErdem@outlook.com</span>
+                </div>
+                <div>
+                    <img @click="goToDiscord" src="img/contact/discord.png" alt="discord">
+                    <span>Omer's Hiring Server</span>
+                </div>
+                <div>
+                    <img @click="goToLinkedin" src="img/contact/linkedin.png" alt="linkedin">
+                    <span>Omer Erdem</span>
+                </div>
             </div>
         </div>
     </div>
@@ -12,7 +24,18 @@
 
 <script>
 export default {
-    name: "Home"
+    name: "Home",
+    methods: {
+        goToMail() {
+            window.open("mailto:public.omererdem@outlook.com")
+        },
+        goToDiscord() {
+            window.open("https://discord.gg/UnhW4ykFFp")
+        },
+        goToLinkedin() {
+            window.open("https://www.linkedin.com/in/omer-erdem-179745153/")
+        }
+    }
 }
 </script>
 
@@ -35,16 +58,52 @@ export default {
         top: 25%;
         position: relative;
 
-        padding: 0 10px;
+        padding: 10px;
         max-width: 470px;
         margin: auto;
         text-align: center;
         font-size: 1.5rem;
         color: $light1;
-
+        border: solid 1px white;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
 
         .bold {
             font-weight: bold;
+        }
+    }
+
+    .contact {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0 50px 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: solid 1px white;
+        border-radius: 10px;
+        justify-content: center;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color: white;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8px;
+
+            img {
+                height: 32px;
+                width: auto;
+                cursor: pointer;
+            }
+
+            span {
+                font-size: 10px;
+            }
         }
     }
 
@@ -64,6 +123,11 @@ export default {
         .background-image {
             background: url("../../public/img/selfie/car-selfie-blurred.webp") no-repeat 60% 50%;
         }
+    }
+}
+.contact, .introduction {
+    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        background-color: rgba(0, 0, 0, .5);
     }
 }
 </style>

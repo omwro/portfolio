@@ -366,7 +366,7 @@
     "type": "Environments",
     "name": "mysql",
     "display_name": "MySQL",
-    "img": "./img/language/windows.png",
+    "img": "./img/language/mysql.png",
     "stars": 4,
     "xp": [
       {
