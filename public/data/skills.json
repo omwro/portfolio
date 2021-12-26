@@ -120,6 +120,19 @@
   },
   {
     "type": "Language",
+    "name": "python",
+    "display_name": "Python",
+    "img": "./img/language/python.png",
+    "stars": 3,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "Hva Data Science"
+      }
+    ]
+  },
+  {
+    "type": "Language",
     "name": "json",
     "display_name": "JSON",
     "img": "./img/language/json.png",
@@ -346,6 +359,32 @@
       {
         "months": 12,
         "desc": "Regio college"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "quarkus",
+    "display_name": "Quarkus",
+    "img": "./img/language/quarkus.png",
+    "stars": 1,
+    "xp": [
+      {
+        "months": 1,
+        "desc": "HvaBlend"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "wordpress",
+    "display_name": "WordPress",
+    "img": "./img/language/wordpress.png",
+    "stars": 1,
+    "xp": [
+      {
+        "months": 1,
+        "desc": "Digidot"
       }
     ]
   },
