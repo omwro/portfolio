@@ -1,23 +1,40 @@
 <template>
     <div id="footer" class="section">
-        <div class="copyright">&copy; 2021 Omer Erdem All Rights Reserved</div>
+        <div>&copy; 2021 Omer Erdem All Rights Reserved</div>
+        <div>{{visitCount}}x visited this year!</div>
     </div>
 </template>
 
 <script>
 export default {
-    name: "Footer"
+    name: "Footer",
+    data: () => {
+        return {
+            visitCount: 0
+        }
+    },
+    async created() {
+        this.visitCount = await this.axios
+            .get("https://api.omererdem.nl/visitor/Portfolio/stats")
+            .then((res) => res.data)
+    }
 }
 </script>
 
 <style lang="scss" scoped>
 @import "src/styles/variables";
 
-.copyright {
+#footer {
     color: $light2;
     font-style: italic;
-    text-align: center;
-    margin: 0.5rem;
+    padding: 0.5rem 0;
     font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    > div {
+        padding: 0 0.5rem;
+    }
 }
 </style>
