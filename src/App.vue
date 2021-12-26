@@ -43,6 +43,23 @@ import TimelineGit from "@/components/TimelineGit";
 
 export default {
     name: 'App',
+	components: {
+		TimelineGit,
+		AboutIDE,
+		Action,
+		Menu,
+		Footer,
+		Contact,
+		Timeline,
+		Companies,
+		Skills,
+		Projects,
+		About,
+		Home,
+		Header,
+		Quicky,
+		// CV
+	},
     created() {
         console.warn("Hey fellow curious developer.\n" +
             "My name is Omer and welcome to my portfolio website.\n" +
@@ -52,24 +69,19 @@ export default {
             "This website is build in Vue.js just for fun, extra experience and cleaner/easier folder structure as a " +
             "followup from the previous angular portfolio website and older plain html/css/js website.\n" +
             "Website is still in development so 'prepare for trouble, make it double'.")
-    },
-    components: {
-        TimelineGit,
-        AboutIDE,
-        Action,
-        Menu,
-        Footer,
-        Contact,
-        Timeline,
-        Companies,
-        Skills,
-        Projects,
-        About,
-        Home,
-        Header,
-        Quicky,
-        // CV
-    }
+		console.log(navigator)
+		this.getClientIp()
+	},
+	methods: {
+		async getClientIp() {
+			try {
+				const response = await this.axios.get('https://api.omererdem.nl/');
+				console.log(response);
+			} catch (error) {
+				console.error(error);
+			}
+		}
+	}
 }
 </script>
 
@@ -120,9 +132,9 @@ html, body, #app {
     flex-direction: column;
     justify-content: center;
 
-    &:not(#home):not(#footer) {
-        border-top: solid 2px $grey;
-    }
+    //&:not(#home):not(#footer) {
+    //    border-top: solid 2px $grey;
+    //}
 
     h1 {
         margin: 75px auto 10px auto;

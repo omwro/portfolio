@@ -4,7 +4,7 @@
         <div class="content">
             <div>
                 <img @click="goToMail" src="img/contact/mail.png" alt="mail">
-                <span @click="goToMail">M.O.Erdem@outlook.com</span>
+                <span @click="goToMail">Public.OmerErdem@outlook.com</span>
             </div>
             <div>
                 <img @click="goToDiscord" src="img/contact/discord.png" alt="discord">
@@ -23,7 +23,7 @@ export default {
     name: "Contact",
     methods: {
         goToMail() {
-            window.open("mailto:m.o.erdem@outlook.com")
+            window.open("mailto:public.omererdem@outlook.com")
         },
         goToDiscord() {
             window.open("https://discord.gg/UnhW4ykFFp")
