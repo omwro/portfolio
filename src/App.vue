@@ -4,19 +4,19 @@
         <Header/>
         <Home/>
         <Action/>
-        <AboutIDE/>
-        <About/>
-        <Quicky :msg="$t('quicky.quicky2')"/>
+        <AboutIDE class="programmer-only"/>
+        <About class="non-programmer-only"/>
+        <Quicky :msg="$t('quicky.quicky1')"/>
         <Skills/>
-        <Quicky :msg="$t('quicky.quicky3')"/>
+        <Quicky :msg="$t('quicky.quicky2')"/>
         <Projects/>
-        <Quicky :msg="$t('quicky.quicky4')"/>
+        <Quicky :msg="$t('quicky.quicky3')"/>
         <Companies/>
+        <Quicky :msg="$t('quicky.quicky4')"/>
+        <Timeline class="non-programmer-only"/>
+        <TimelineGit class="programmer-only"/>
         <Quicky :msg="$t('quicky.quicky5')"/>
-        <Timeline/>
-        <TimelineGit/>
-<!--        <Quicky :msg="$t('quicky.quicky5')"/>-->
-<!--        <Contact/>-->
+        <Competitors/>
         <Footer/>
         <Menu/>
         <!--        <CV/>-->
@@ -32,24 +32,24 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Companies from "./components/Companies";
 import Timeline from "./components/Timeline";
-// import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Action from "./components/Action";
 import AboutIDE from "./components/AboutIDE";
 import Quicky from "./forms/Quicky";
 import TimelineGit from "@/components/TimelineGit";
+import Competitors from "@/components/Competitors";
 // import CV from "./components/CV";
 
 export default {
     name: 'App',
 	components: {
+        Competitors,
 		TimelineGit,
 		AboutIDE,
 		Action,
 		Menu,
 		Footer,
-		// Contact,
 		Timeline,
 		Companies,
 		Skills,
@@ -121,6 +121,22 @@ html, body, #app {
                 background-color: $dark2;
             }
         }
+    }
+
+    &.programmer {
+        .programmer-only {
+            display: flex;
+        }
+        .non-programmer-only {
+            display: none;
+        }
+    }
+
+    .programmer-only {
+        display: none;
+    }
+    .non-programmer-only {
+        display: flex;
     }
 }
 

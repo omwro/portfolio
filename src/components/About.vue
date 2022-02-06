@@ -106,8 +106,4 @@ export default {
 
     }
 }
-
-.programmer #about {
-    display: none;
-}
 </style>

@@ -11,8 +11,8 @@ const translations = {
             programmermode: "Programmer Mode"
         },
         quicky: {
-            quicky1: "Currently looking for Full Stack Web developer graduation internship for Feb - Jun 2022.",
-            quicky2: "Following a Data Science Minor with Python.",
+            quicky1: "Currently following an intership at Infi Amsterdam",
+            quicky2: "Searching for fun project ideas.",
             quicky3: "`When something is important enough, you do it even if the odds are not in your favor.` - Elon Musk",
             quicky4: "`Life is not fair, get used to it.` - Bill Gates",
             quicky5: "`Your brand is what other people say about you when you're not in the room.` - Jeff P. Bezos"
@@ -25,6 +25,9 @@ const translations = {
         },
         skills: {
             title: "Skills",
+            personalrating: "Personal Rating",
+            xp: "Experience",
+            xpdesc: "1 Year of Experience",
             languages: "Languages",
             frameworks: "Frameworks",
             environments: "Environments",
@@ -32,8 +35,8 @@ const translations = {
             competencies: "Competencies",
             hardworker: "Hard worker",
             teamplayer: "Team player",
-            problemsolving: "Problem solving",
-            creativity: "Creativity"
+            problemsolving: "Problem solver",
+            creativity: "Creative"
         },
         projects: {
             title: "Projects",
@@ -93,6 +96,10 @@ const translations = {
             mergeStudy: "Merge Study",
             newWorkBranch: "New Work Branch",
             initialCommit: "Initial Commit",
+        },
+        competitors: {
+            title: "Competitors",
+            desc: "Not fit for your job? Take a look at these fantastic competitors."
         }
     },
     nl: {
@@ -107,8 +114,8 @@ const translations = {
             programmermode: "Programmeer Modus"
         },
         quicky: {
-            quicky1: "Momenteel op zoek naar een Full Stack Web ontwikkelaar afstudeerstage voor Feb - Jun 2022.",
-            quicky2: "Momenteel een Data Science Minor met Python aan het volgen.",
+            quicky1: "Momenteel aan het afstuderen bij Infi Amsterdam.",
+            quicky2: "Op zoek naar leuke project ideeën.",
             quicky3: "`Als iets belangrijk genoeg is, zal je het zelfs doen als de kansen niet in je voordeel zijn.` - Elon Musk",
             quicky4: "`Het leven is oneerlijk, wen er maar aan.` - Bill Gates",
             quicky5: "`Jouw merk is wat anderen over je vertellen wanneer je niet in de kamer bent.` - Jeff P. Bezos"
@@ -121,6 +128,9 @@ const translations = {
         },
         skills: {
             title: "Vaardigheden",
+            personalrating: "Persoonlijke Waardering",
+            xp: "Ervaring",
+            xpdesc: "1 Jaar Ervaring",
             languages: "Talen",
             frameworks: "Frameworks",
             environments: "Omgevingen",
@@ -128,8 +138,8 @@ const translations = {
             competencies: "Competenties",
             hardworker: "Harde werker",
             teamplayer: "Team speler",
-            problemsolving: "Problemen oplossen",
-            creativity: "Creativiteit"
+            problemsolving: "Probleemoplosser",
+            creativity: "Creatief"
         },
         projects: {
             title: "Projecten",
@@ -189,6 +199,10 @@ const translations = {
             mergeStudy: "Merge Studie",
             newWorkBranch: "Nieuwe Werk Branch",
             initialCommit: "Initiële Commit",
+        },
+        competitors: {
+            title: "Concurrenten",
+            desc: "Niet geschikt voor je baan? Kijk eens naar deze fantastische concurrenten."
         }
     }
 }

@@ -262,7 +262,7 @@ $transparent: rgba(0, 0, 0, 0);
 $hover-color: rgba(white, .1);
 
 #timelineGit {
-    display: none;
+    display: flex;
 
     #git {
         display: flex;
@@ -632,9 +632,5 @@ $hover-color: rgba(white, .1);
             }
         }
     }
-}
-
-.programmer #timelineGit {
-    display: flex;
 }
 </style>

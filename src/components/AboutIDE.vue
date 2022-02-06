@@ -118,7 +118,7 @@ export default {
 @import "src/styles/variables";
 
 #aboutIde {
-    display: none;
+    display: flex;
     background-color: $light0;
 
     .content {
@@ -210,9 +210,5 @@ export default {
 .dark #aboutIde {
     background-color: $dark2;
     color: $light0;
-}
-
-.programmer #aboutIde {
-    display: flex;
 }
 </style>

@@ -17,6 +17,10 @@
                     <img @click="goToLinkedin" src="img/contact/linkedin.png" alt="linkedin">
                     <span>Omer Erdem</span>
                 </div>
+                <div>
+                    <font-awesome-icon @click="goToGithub" :icon="['fab', 'github']" class="github-icon"/>
+                    <span>Omwro</span>
+                </div>
             </div>
         </div>
     </div>
@@ -34,6 +38,9 @@ export default {
         },
         goToLinkedin() {
             window.open("https://www.linkedin.com/in/omer-erdem-179745153/")
+        },
+        goToGithub() {
+            window.open("https://github.com/omwro")
         }
     }
 }
@@ -95,7 +102,7 @@ export default {
             align-items: center;
             padding: 8px;
 
-            img {
+            img, .github-icon {
                 height: 32px;
                 width: auto;
                 cursor: pointer;

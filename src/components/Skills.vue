@@ -2,19 +2,26 @@
 	<div id="skills" class="section">
 		<h1>{{ $t('skills.title') }}</h1>
 		<div class="content">
-			<div class="star-scheme">
-				<stars class="star5" stars="9"/>
-				<stars class="star4" stars="8"/>
-				<stars class="star3" stars="6"/>
-				<stars class="star2" stars="4"/>
-				<stars class="star1" stars="2"/>
-			</div>
-			<h1 class="small">{{ $t('skills.languages') }}</h1>
+            <h1 class="small desc">{{ $t('skills.personalrating')}}</h1>
+            <div class="star-scheme">
+                <stars class="star5" stars="9"/>
+                <stars class="star4" stars="8"/>
+                <stars class="star3" stars="6"/>
+                <stars class="star2" stars="4"/>
+                <stars class="star1" stars="2"/>
+            </div>
+            <h1 class="small desc">{{ $t('skills.xp')}}</h1>
+            <div class="inline-center">
+                <div class="badge">1y XP</div>
+                = {{$t('skills.xpdesc')}}
+            </div>
+            <h1 class="small">{{ $t('skills.languages') }}</h1>
 			<div v-lazy-container="{ selector: 'img' }" class="img-container">
 				<div class="block" v-for="skill in getLanguages()" :key="skill.name">
 					<img :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
 					<div>{{ skill.display_name }}</div>
-					<div class="badge">{{ getExperienceString(skill) }}</div>				</div>
+					<div class="badge">{{ getExperienceString(skill) }}</div>
+                </div>
 			</div>
 			<h1 class="small">{{ $t('skills.frameworks') }}</h1>
 			<div v-lazy-container="{ selector: 'img' }" class="img-container">
@@ -190,6 +197,22 @@ export default {
 	align-self: center;
 }
 
+h1.small.desc {
+    margin-top: 0;
+    border-bottom-color: $grey;
+}
+
+.badge {
+    width: 40px;
+    height: 16px;
+    padding: 3px;
+    border-radius: 6px 10px;
+    background: $light6;
+    font-size: 12px;
+    text-align: center;
+    margin-right: 4px;
+}
+
 .block {
 	position: relative;
 
@@ -205,7 +228,13 @@ export default {
 		font-size: 12px;
 	}
 }
-#app.dark .block .badge {
+
+.inline-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#app.dark .block .badge,  #app.dark .badge{
     background: $dark6;
 }
 </style>

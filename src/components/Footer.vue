@@ -1,6 +1,6 @@
 <template>
     <div id="footer" class="section">
-        <div>&copy; 2021 Omer Erdem All Rights Reserved</div>
+        <div>&copy; 2015 - 2022 Omer Erdem All Rights Reserved</div>
         <div>{{visitCount}}x visited this year!</div>
     </div>
 </template>
@@ -24,7 +24,7 @@ export default {
 <style lang="scss" scoped>
 @import "src/styles/variables";
 
-#footer {
+#app #footer {
     color: $light2;
     font-style: italic;
     padding: 0.5rem 0;

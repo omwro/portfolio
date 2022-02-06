@@ -16,7 +16,7 @@
             <a href="#companies" @click="closeMenu">{{$t('companies.title')}}</a>
             <a class="normal-only" href="#timeline" @click="closeMenu">{{$t('timeline.title')}}</a>
             <a class="programmer-only" href="#timelineGit" @click="closeMenu">{{$t('timeline.title')}}</a>
-<!--            <a href="#contact" @click="closeMenu">Contact</a>-->
+            <a href="#competitors" @click="closeMenu">{{$t('competitors.title')}}</a>
         </div>
     </div>
 </template>

@@ -1,0 +1,51 @@
+[
+  {
+    "name": "S. Inan",
+    "img": "https://media-exp1.licdn.com/dms/image/C5603AQEGk1u4GbbtMg/profile-displayphoto-shrink_200_200/0/1623692549622?e=1649894400&v=beta&t=azrcYlvd8PnROsgEOfBqGcLaLjNa2fSShf9rP_YkPfY",
+    "linkedin": "https://www.linkedin.com/in/safak-inan/",
+    "website": "https://www.inan.dev/",
+    "role": "Software Engineer"
+  },
+  {
+    "name": "A. Siddique",
+    "img": "https://media-exp1.licdn.com/dms/image/C5603AQFxOEUVezXc3w/profile-displayphoto-shrink_200_200/0/1633363734922?e=1649894400&v=beta&t=8W09QYSx9SCEeR7fRkORBbk-Z2H6_mFG8QzBAPfGd6k",
+    "linkedin": "https://www.linkedin.com/in/arfeen-siddique-2041a3196/",
+    "website": null,
+    "role": "Software Engineer"
+  },
+  {
+    "name": "M. Tetik",
+    "img": "https://media-exp1.licdn.com/dms/image/C4D03AQERilKGlVOmdA/profile-displayphoto-shrink_200_200/0/1540422748183?e=1649894400&v=beta&t=foDAyIbZFOXwV6UsRuuIYvkXj1oPhIc0_qaf7-msqaE",
+    "linkedin": "https://www.linkedin.com/in/mehmet-tetik/",
+    "website": "https://mehmettetik.nl/",
+    "role": "Software Engineer"
+  },
+  {
+    "name": "H. Babat",
+    "img": "https://media-exp1.licdn.com/dms/image/C4D03AQF2N7WxGFsZ-A/profile-displayphoto-shrink_200_200/0/1575480969682?e=1649894400&v=beta&t=bwBGMRTYjWQD4YACaNeGnsQ22AgQaX-ICPWxaJF-JYM",
+    "linkedin": "https://www.linkedin.com/in/hamza-babat/",
+    "website": "https://babat.nl/",
+    "role": "Software Engineer"
+  },
+  {
+    "name": "M. Mughal",
+    "img": "https://media-exp1.licdn.com/dms/image/C4D03AQFgAETYp4iWWw/profile-displayphoto-shrink_200_200/0/1639847382033?e=1649894400&v=beta&t=utikFyPSqOCIuu3SAOeUKE5GSrhf7pQVWdCaH4lCgkQ",
+    "linkedin": "https://www.linkedin.com/in/munauwar-mughal/",
+    "website": "https://www.mughalm.nl/",
+    "role": "Software Engineer"
+  },
+  {
+    "name": "D. Prodanovic",
+    "img": "https://media-exp1.licdn.com/dms/image/C4D03AQE_fVXMaU6eyg/profile-displayphoto-shrink_200_200/0/1542707251609?e=1649894400&v=beta&t=U-iOw4aOBEPFUHiFPGRJe-YawtjBsOXE5tPqWt9LDB0",
+    "linkedin": "https://www.linkedin.com/in/danny-prodanovic/",
+    "website": null,
+    "role": "Software Engineer"
+  },
+  {
+    "name": "Z. Ben Abdessadak",
+    "img": "https://media-exp1.licdn.com/dms/image/C5603AQHfXE6PVLlSFw/profile-displayphoto-shrink_200_200/0/1582717573451?e=1649894400&v=beta&t=StIt_3UUdHJlWoC66FmDtxshVOBHBiBpZuPMf_0mDsA",
+    "linkedin": "https://www.linkedin.com/in/zakaria-ben-abdessadak/",
+    "website": null,
+    "role": "Software Engineer"
+  }
+]

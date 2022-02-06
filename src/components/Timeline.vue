@@ -126,8 +126,4 @@ $hover-color: rgba(white, .1);
         border-bottom-color: $light0;
     }
 }
-
-.programmer #timeline {
-    display: none;
-}
 </style>
