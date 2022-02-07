@@ -17,7 +17,7 @@ class Introduction {
 
     getStudyInformation() {
         return new Study(
-            "Software Engineering",
+            "HBO ICT Software Engineering",
             "Amsterdam University of Applied Sciences",
             4
         )
@@ -26,7 +26,7 @@ class Introduction {
     getGoals() {
         return new Goals(
             "Full Stack Developer",
-            [ "New fun projects", "Challenges to improve my skills", "New programming techniques" ],
+            ["New fun projects", "Challenges to improve my skills", "New programming techniques"],
             "Make the world a better place, even if it goes unnoticed."
         )
     }
@@ -49,8 +49,8 @@ class Coordinates {
     longitude: number
 
     constructor(latitude: number, longitude: number) {
-        this.latitude = latitude;
-        this.longitude = longitude;
+        this.latitude = latitude
+        this.longitude = longitude
     }
 }
 
@@ -60,20 +60,20 @@ class Study {
     year: number
 
     constructor(name: String, university: String, year: number) {
-        this.name = name;
-        this.university = university;
-        this.year = year;
+        this.name = name
+        this.university = university
+        this.year = year
     }
 }
 
-class Goals{
+class Goals {
     job: String
     searchHistory: String[]
     ultimateGoal: String
 
     constructor(job: String, searchHistory: String[], ultimateGoal: String) {
-        this.job = job;
-        this.searchHistory = searchHistory;
-        this.ultimateGoal = ultimateGoal;
+        this.job = job
+        this.searchHistory = searchHistory
+        this.ultimateGoal = ultimateGoal
     }
 }

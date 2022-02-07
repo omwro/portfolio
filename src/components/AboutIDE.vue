@@ -25,12 +25,10 @@
                 </div>
             </div>
             <div class="ide" v-if="activeTab === 'ts'">
-                <IDE/>
+                <IDE filename="Introduction.ts"/>
             </div>
-            <!------------------------------------------------------>
-            <!------------------------------------------------------>
-            <!------------------------------------------------------>
             <div class="ide" v-if="activeTab === 'java'">
+<!--                <IDE filename="Skills.java"/>-->
                 <div class="row" data-line="1">
                     <span class="orange">public class</span> Skills {
                 </div>
