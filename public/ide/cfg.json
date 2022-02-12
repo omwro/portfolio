@@ -1,0 +1,22 @@
+{
+  "ts": {
+    "orange": ["class", "this", "return", "new", "constructor", "enum", "number", "String"],
+    "purple": ["name", "gender", "birthdayTimestamp", "residence", "imageUrl", "resumeUrl", "Male", "Female", "Apache_Helicopter", "latitude", "longitude", "university", "year", "job", "searchHistory", "ultimateGoal"],
+    "yellow": ["getStudyInformation", "getGoals", "getPreferences", "getHobbies"]
+  },
+  "java": {
+    "orange": ["class", "public", "static", "abstract", "protected", "double", "int", "extends", "super", "null", "return", "new", "String", "this"],
+    "purple": ["name", "personalRating", "monthsExperience"],
+    "yellow": ["getLanguages", "getFrameworks", "getEnvironments", "getProjects", "getCompetencies", "asList"]
+  },
+  "php": {
+    "orange": [],
+    "purple": [],
+    "yellow": []
+  },
+  "py": {
+    "orange": [],
+    "purple": [],
+    "yellow": []
+  }
+}

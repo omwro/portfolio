@@ -7,6 +7,8 @@
 </template>
 
 <script>
+import json from "@/../public/ide/cfg.json"
+
 export default {
     name: "IDE",
     props: {
@@ -23,65 +25,72 @@ export default {
     methods: {
         getColoredCode(codeArray) {
             return codeArray.map(row => {
-                row = this.setOrange(row)
-                row = this.setPurple(row)
+                const fileType = this.getFileType(this.filename)
+                const keywords = json[fileType]
+                row = this.setOrange(row, keywords.orange)
+                row = this.setPurple(row, keywords.purple)
                 row = this.setBlue(row)
-                row = this.setYellow(row)
+                row = this.setYellow(row, keywords.yellow)
                 row = this.setGreen(row)
                 return row
             })
         },
-        setOrange(row) {
+        setOrange(row, keywords) {
             let newRow = row
-            const keywords = ["class", "this", "return", "new", "constructor", "enum", "number", "String"]
             for (const keyword of keywords) {
                 if (newRow.includes(keyword)) {
-                    newRow = newRow.replaceAll(keyword, `<span class="orange">${keyword}</span>`)
+                    newRow = newRow.replaceAll(keyword, `<span class='orange'>${keyword}</span>`)
                 }
             }
             return newRow
         },
-        setPurple(row) {
+        setPurple(row, keywords) {
             let newRow = row
-            const keywords = ["name", "gender", "birthdayTimestamp", "residence", "imageUrl", "resumeUrl", "Male",
-                "Female", "Apache_Helicopter", "latitude", "longitude", "university", "year", "job", "searchHistory", "ultimateGoal"]
             for (const keyword of keywords) {
+                // TS rule
                 if (newRow.includes(keyword) && !newRow.includes("constructor") && !newRow.includes("=")) {
-                    newRow = newRow.replaceAll(keyword, `<span class="purple">${keyword}</span>`)
-                } else if (newRow.includes(keyword) && !newRow.includes("constructor")) {
-                    newRow = newRow.replace(keyword, `<span class="purple">${keyword}</span>`)
+                    newRow = newRow.replaceAll(keyword, `<span class='purple'>${keyword}</span>`)
                 }
+                // TS & JAVA rule
+                else if (newRow.includes(keyword) && !newRow.includes("constructor") &&
+                    !newRow.includes("public") && !newRow.includes("super")) {
+                    newRow = newRow.replace(keyword, `<span class='purple'>${keyword}</span>`)
+                }
+
             }
             return newRow
         },
         setBlue(row) {
             let newRow = row
-            const keywords = [52.37319418639191, 4.891432372896032, 922968000, 4]
+            const keywords = newRow.match(/[+-]?([0-9]+\.?[0-9]*|\.[0-9]+)/g)
+            if (!keywords) return newRow
+            console.log(keywords)
             for (const keyword of keywords) {
-                if (newRow.includes(keyword)) {
-                    newRow = newRow.replaceAll(keyword, `<span class="blue">${keyword}</span>`)
-                }
+                newRow = newRow.replace(keyword, `<span class='blue'>${keyword}</span>`)
             }
             return newRow
         },
-        setYellow(row) {
+        setYellow(row, keywords) {
             let newRow = row
-            const keywords = ["getStudyInformation", "getGoals", "getPreferences", "getHobbies"]
             for (const keyword of keywords) {
                 if (newRow.includes(keyword)) {
-                    newRow = newRow.replaceAll(keyword, `<span class="yellow">${keyword}</span>`)
+                    newRow = newRow.replaceAll(keyword, `<span class='yellow'>${keyword}</span>`)
                 }
             }
             return newRow
         },
         setGreen(row) {
             let newRow = row
-            newRow = newRow.replaceAll(' "', `<span class="green"> "`)
+            newRow = newRow.replaceAll('("', `(<span class='green'>"`)
+            newRow = newRow.replaceAll(' "', `<span class='green'> "`)
             newRow = newRow.replaceAll('" ', `" </span>`)
-            newRow = newRow.replaceAll('["', `[<span class="green">"`)
+            newRow = newRow.replaceAll('["', `[<span class='green'>"`)
             newRow = newRow.replaceAll('"]', `"</span>]`)
             newRow = newRow.replaceAll('",', `"</span>,`)
             return newRow
+        },
+        getFileType(filename) {
+            return filename.split(".")[1]
         }
     }
 }
