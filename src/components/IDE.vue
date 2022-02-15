@@ -64,7 +64,6 @@ export default {
             let newRow = row
             const keywords = newRow.match(/[+-]?([0-9]+\.?[0-9]*|\.[0-9]+)/g)
             if (!keywords) return newRow
-            console.log(keywords)
             for (const keyword of keywords) {
                 newRow = newRow.replace(keyword, `<span class='blue'>${keyword}</span>`)
             }

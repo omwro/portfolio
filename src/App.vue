@@ -6,16 +6,16 @@
         <Action/>
         <AboutIDE class="programmer-only"/>
         <About class="non-programmer-only"/>
-        <Quicky :msg="$t('quicky.quicky1')"/>
-        <Skills/>
-        <Quicky :msg="$t('quicky.quicky2')"/>
+        <Quicky :msg="$t('quicky.quicky1')" class="non-programmer-only"/>
+        <Skills class="non-programmer-only"/>
+        <Quicky :msg="$t('quicky.quicky2')" class="non-programmer-only"/>
         <Projects/>
-        <Quicky :msg="$t('quicky.quicky3')"/>
+        <Quicky :msg="$t('quicky.quicky3')" class="non-programmer-only"/>
         <Companies/>
-        <Quicky :msg="$t('quicky.quicky4')"/>
+        <Quicky :msg="$t('quicky.quicky4')" class="non-programmer-only"/>
         <Timeline class="non-programmer-only"/>
         <TimelineGit class="programmer-only"/>
-        <Quicky :msg="$t('quicky.quicky5')"/>
+        <Quicky :msg="$t('quicky.quicky5')" class="non-programmer-only"/>
         <Competitors/>
         <Footer/>
         <Menu/>
