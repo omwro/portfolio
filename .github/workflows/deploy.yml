@@ -21,6 +21,7 @@ jobs:
             cd /var/www/github-actions
             git clone git@github.com:omwro/PortfolioVue.git
             cd PortfolioVue
+            npm install
             npm run build
 
   deploy:
