@@ -19,7 +19,7 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
         with:
           source: "."
-          target: ${{ secrets.TARGETPATH }}
+          target: "/var/www/omererdem/index"
 
       - name: Executing remote command
         uses: appleboy/ssh-action@master
