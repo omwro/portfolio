@@ -17,22 +17,23 @@ jobs:
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
           script: |
-            rm -rf /var/www/omererdem/index-cicd/*
-            cd /var/www/omererdem/index-cicd
+            rm -rf /var/www/github-actions/*
+            cd /var/www/github-actions
             git clone git@github.com:omwro/PortfolioVue.git
+            cd PortfolioVue
             npm run build
 
   deploy:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v1
-      - name: Copy repository contents via scp
-        uses: appleboy/scp-action@master
-        env:
-          HOST: ${{ secrets.HOST }}
+      - name: Deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
           USERNAME: ${{ secrets.USERNAME }}
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
-        with:
-          source: "/var/www/omererdem/index-cicd"
-          target: "/var/www/omererdem/index"
+          script: |
+            rm -rf /var/www/omererdem/index/*
+            mv /var/www/github-actions/PortfolioVue/dist /var/www/omererdem/index
