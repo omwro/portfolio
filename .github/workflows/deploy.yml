@@ -16,6 +16,7 @@ jobs:
           USERNAME: ${{ secrets.USERNAME }}
           PORT: ${{ secrets.PORT }}
           KEY: ${{ secrets.SSHKEY }}
+          command_timeout: 60m
           script: |
             rm -rf /var/www/github-actions/*
             cd /var/www/github-actions
@@ -25,6 +26,7 @@ jobs:
             npm run build
 
   deploy:
+    needs: build
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v1
