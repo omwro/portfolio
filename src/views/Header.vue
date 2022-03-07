@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "src/styles/variables";
+@import "../styles/variables";
 
 #header {
     width: 100%;

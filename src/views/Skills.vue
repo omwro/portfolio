@@ -102,8 +102,8 @@
 </template>
 
 <script>
-import Stars from "@/forms/Stars";
-import json from "@/../public/data/skills.json"
+import Stars from "@/components/Stars";
+import json from "../../public/data/skills.json"
 
 export default {
 	name: "Skills",
@@ -131,7 +131,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "src/styles/variables";
+@import "../styles/variables";
 
 .content .star-scheme {
 	display: flex;

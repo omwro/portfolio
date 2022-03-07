@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "src/styles/variables";
+@import "../styles/variables";
 
 #app #footer {
     color: $light2;

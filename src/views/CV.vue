@@ -173,7 +173,7 @@
 </template>
 
 <script>
-import Stars from "@/forms/Stars";
+import Stars from "@/components/Stars";
 
 export default {
     name: "CV",
@@ -182,7 +182,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "src/styles/variables";
+@import "../styles/variables";
 
 @media print {
     body {

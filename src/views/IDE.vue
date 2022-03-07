@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import json from "@/../public/ide/cfg.json"
+import json from "../../public/ide/cfg.json"
 
 export default {
     name: "IDE",

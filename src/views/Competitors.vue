@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import json from "@/../public/data/competitors.json"
+import json from "../../public/data/competitors.json"
 
 export default {
     name: "Competitors",
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "src/styles/variables";
+@import "../styles/variables";
 
 #competitors {
     background-color: $light0;

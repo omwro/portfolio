@@ -252,7 +252,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "src/styles/variables";
+@import "../styles/variables";
 
 $color1: $brilliant-red;
 $color2: $brilliant-blue;
