@@ -23,20 +23,7 @@ export default {
             if (code != null) {
                 this.axios.get(window.location.origin + "/api/access.php?code=" + code).then(response => {
                     if (response.data === true) {
-                        this.$notify({
-                            type: "success",
-                            duration: 10000,
-                            title: 'Access Granted',
-                            text: 'The file shall start downloading soon.'
-                        });
                         this.downloadCV()
-                    } else {
-                        this.$notify({
-                            type: "error",
-                            duration: 10000,
-                            title: 'Access Denied',
-                            text: 'Wrong code has been entered.'
-                        });
                     }
                 })
             }
