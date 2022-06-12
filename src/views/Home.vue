@@ -7,19 +7,15 @@
             <div class="contact">
                 <div>
                     <img @click="goToMail" src="img/contact/mail.png" alt="mail">
-                    <span>Public.OmerErdem@outlook.com</span>
                 </div>
                 <div>
                     <img @click="goToDiscord" src="img/contact/discord.png" alt="discord">
-                    <span>Omer's Hiring Server</span>
                 </div>
                 <div>
                     <img @click="goToLinkedin" src="img/contact/linkedin.png" alt="linkedin">
-                    <span>Omer Erdem</span>
                 </div>
                 <div>
                     <font-awesome-icon @click="goToGithub" :icon="['fab', 'github']" class="github-icon"/>
-                    <span>Omwro</span>
                 </div>
             </div>
         </div>
@@ -103,7 +99,7 @@ export default {
             padding: 8px;
 
             img, .github-icon {
-                height: 32px;
+                height: 24px;
                 width: auto;
                 cursor: pointer;
             }
