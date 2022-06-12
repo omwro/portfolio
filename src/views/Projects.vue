@@ -121,7 +121,7 @@
 <script>
 import $ from 'jquery';
 import VueTinySlider from 'vue-tiny-slider';
-import json from "@/../public/data/skills.json"
+import json from "../../public/data/skills.json"
 
 export default {
     name: "Projects",
@@ -145,8 +145,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "src/styles/variables";
-@import 'node_modules/tiny-slider/src/tiny-slider';
+@import "../styles/variables";
+@import '../../node_modules/tiny-slider/src/tiny-slider';
 
 .content {
     overflow: hidden;

@@ -25,20 +25,20 @@
 
 <script>
 
-import Header from "./components/Header";
-import Home from "./components/Home";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Companies from "./components/Companies";
-import Timeline from "./components/Timeline";
-import Footer from "./components/Footer";
-import Menu from "./components/Menu";
-import Action from "./components/Action";
-import AboutIDE from "./components/AboutIDE";
-import Quicky from "./forms/Quicky";
-import TimelineGit from "@/components/TimelineGit";
-import Competitors from "@/components/Competitors";
+import Header from "./views/Header";
+import Home from "./views/Home";
+import About from "./views/About";
+import Projects from "./views/Projects";
+import Skills from "./views/Skills";
+import Companies from "./views/Companies";
+import Timeline from "./views/Timeline";
+import Footer from "./views/Footer";
+import Menu from "./views/Menu";
+import Action from "./views/Action";
+import AboutIDE from "./views/AboutIDE";
+import Quicky from "./components/Quicky";
+import TimelineGit from "@/views/TimelineGit";
+import Competitors from "@/views/Competitors";
 // import CV from "./components/CV";
 
 export default {

@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import IDE from "@/components/IDE";
+import IDE from "@/views/IDE";
 
 export default {
     name: "AboutIDE",
@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "src/styles/variables";
+@import "../styles/variables";
 
 #aboutIde {
     display: flex;
