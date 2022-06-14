@@ -4,7 +4,10 @@
         <Home/>
         <Action/>
         <About/>
-        <Separator :left="true"/>
+<!--        <Separator :left="true"/>-->
+        <ImgSeparator :left="true"
+                      img="img/separator/grass-block.jpg"
+                      object="img/separator/minecraft-house.png"/>
         <Skills />
         <Separator :right="true"/>
         <Projects/>
@@ -32,10 +35,12 @@ import Action from "@/views/Action";
 import TimelineGit from "@/views/TimelineGit";
 import Competitors from "@/views/Competitors";
 import Separator from "@/components/Separator";
+import ImgSeparator from "@/components/ImgSeparator";
 
 export default {
     name: "Index",
     components: {
+        ImgSeparator,
         Separator,
         Competitors,
         TimelineGit,
