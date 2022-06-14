@@ -37,7 +37,6 @@ export default {
     data() {
         return {
             dark: JSON.parse(localStorage.getItem('darkmode')),
-            programmer: JSON.parse(localStorage.getItem('programmermode')),
             language: "en"
         }
     },

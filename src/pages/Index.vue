@@ -4,15 +4,15 @@
         <Home/>
         <Action/>
         <About/>
-        <Quicky :msg="$t('quicky.quicky1')"/>
+        <Separator :left="true"/>
         <Skills />
-        <Quicky :msg="$t('quicky.quicky2')"/>
+        <Separator :right="true"/>
         <Projects/>
-        <Quicky :msg="$t('quicky.quicky3')"/>
+        <Separator :left="true"/>
         <Companies/>
-        <Quicky :msg="$t('quicky.quicky4')"/>
+        <Separator :right="true"/>
         <TimelineGit/>
-        <Quicky :msg="$t('quicky.quicky5')"/>
+        <Separator :left="true"/>
         <Competitors/>
         <Footer/>
         <Menu/>
@@ -29,13 +29,14 @@ import Companies from "@/views/Companies";
 import Footer from "@/views/Footer";
 import Menu from "@/views/Menu";
 import Action from "@/views/Action";
-import Quicky from "@/components/Quicky";
 import TimelineGit from "@/views/TimelineGit";
 import Competitors from "@/views/Competitors";
+import Separator from "@/components/Separator";
 
 export default {
     name: "Index",
     components: {
+        Separator,
         Competitors,
         TimelineGit,
         Action,
@@ -46,8 +47,7 @@ export default {
         Projects,
         About,
         Home,
-        Header,
-        Quicky
+        Header
     }
 }
 </script>

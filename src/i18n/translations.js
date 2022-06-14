@@ -10,17 +10,10 @@ const translations = {
             language: "Language",
             programmermode: "Programmer Mode"
         },
-        quicky: {
-            quicky1: "Currently following an intership at Infi Amsterdam",
-            quicky2: "Searching for fun project ideas.",
-            quicky3: "`When something is important enough, you do it even if the odds are not in your favor.` - Elon Musk",
-            quicky4: "`Life is not fair, get used to it.` - Bill Gates",
-            quicky5: "`Your brand is what other people say about you when you're not in the room.` - Jeff P. Bezos"
-        },
         about: {
             title: "Who am I ?",
             resume: "Download Resume",
-            description1: "My name is Omer Erdem and I am a fourth year Software Engineer student at the Amsterdam University of Applied Sciences. I am currently 22 years old and I like to game, drive around and experiment.",
+            description1: "My name is Omer Erdem and I am a fourth year Software Engineer student at the Amsterdam University of Applied Sciences. I am currently 23 years old and I like to game, drive around and experiment.",
             description2: "I am a hardworking web- and software developer student who is every day in search for new projects and challenges to improve my skills to eventually become a Full Stack Developer. I am really passionate in programming and would not mind to get my hands dirty again. I am eager to learn new techniques and I am surely not afraid of hardware. I am someone who likes to make the world a better place, even if it goes unnoticed."
         },
         skills: {
@@ -112,13 +105,6 @@ const translations = {
             lightmode: "Licht Modus",
             language: "Taal",
             programmermode: "Programmeer Modus"
-        },
-        quicky: {
-            quicky1: "Momenteel aan het afstuderen bij Infi Amsterdam.",
-            quicky2: "Op zoek naar leuke project ideeën.",
-            quicky3: "`Als iets belangrijk genoeg is, zal je het zelfs doen als de kansen niet in je voordeel zijn.` - Elon Musk",
-            quicky4: "`Het leven is oneerlijk, wen er maar aan.` - Bill Gates",
-            quicky5: "`Jouw merk is wat anderen over je vertellen wanneer je niet in de kamer bent.` - Jeff P. Bezos"
         },
         about: {
             title: "Wie ben ik ?",
