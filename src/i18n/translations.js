@@ -8,13 +8,17 @@ const translations = {
             darkmode: "Dark Mode",
             lightmode: "Light Mode",
             language: "Language",
-            programmermode: "Programmer Mode"
         },
         about: {
             title: "Who am I ?",
             resume: "Download Resume",
-            description1: "My name is Omer Erdem and I am a fourth year Software Engineer student at the Amsterdam University of Applied Sciences. I am currently 23 years old and I like to game, drive around and experiment.",
-            description2: "I am a hardworking web- and software developer student who is every day in search for new projects and challenges to improve my skills to eventually become a Full Stack Developer. I am really passionate in programming and would not mind to get my hands dirty again. I am eager to learn new techniques and I am surely not afraid of hardware. I am someone who likes to make the world a better place, even if it goes unnoticed."
+            description1: "My name is Omer Erdem and I am a fourth year Software Engineer student at the Amsterdam " +
+                "University of Applied Sciences. I am currently 23 years old and I like to game, drive around and experiment.",
+            description2: "I am a hardworking web- and software developer student who is every day in search for new" +
+                " projects and challenges to improve my skills to eventually become a Full Stack Developer. I am really " +
+                "passionate in programming and would not mind to get my hands dirty again. I am eager to learn new " +
+                "techniques and I am surely not afraid of hardware. I am someone who likes to make the world a better " +
+                "place, even if it goes unnoticed."
         },
         skills: {
             title: "Skills",
@@ -34,24 +38,31 @@ const translations = {
         projects: {
             title: "Projects",
             swipe: "Swipe to scroll",
-            metafyvueTitle: "Metafy spotify web app",
-            metafyvueDescription: "A follow up on the android app with the goal to make it accessible for multiple platforms. With is you can use the Spotify API to create dynamic playlists, where all the meta data is stored in the Spotify servers and works fully client-side. A premium version with server-side actions is in the making, with commercial purposes.",
-            barber2uTitle: "Barber2U barber uber",
-            barber2uDescription: "A school project devised and created by our team, where barbers can give the customers a haircut in the customer's living room. You can select the barbers in de app with the appointment moment and haircut style chosen by you.",
-            corendonTitle: "Corendon dating website",
-            corendonDescription: "A school project for Corendon that would like to have a dating website for travelers that travel alone and would like to have a partner to party with.",
-            amstaTitle: "Amsta Animal Go android app",
-            amstaDescription: "A school project for Amsta that would like to have an Android application which allows the elderlies from Amsta to exercise and stay fit while having fun with catching animals.",
-            aquadisTitle: "Aquadis texting webapp",
-            aquadisDescription: "A school project for Aquadis that would like to have an texting based game which allows the players to place messages on the maps and other people can see them if they are nearby and respond to it.",
-            boldTitle: "Bold Commerce Support Dashboard",
-            boldDescription: "A support dashboard that helps the management to see all the important data in a glimpse of an eye. Using the ActiveCollab API in order to collect task and time management data, while also following the Material IO guidelines.",
-            metafyAndroidTitle: "Metafy spotify android app",
-            metafyAndroidDescription: "An Android application that uses the Spotify API to get your spotify account song and playlist data. You can assign your custom tags to songs and create custom playlists.",
-            nmeaTitle: "NMEA Sensor Reader android app",
-            nmeaDescription: "A project for The Mobile Company that would like to have a SDK that supports the NMEA 0183 protocol, which can also automatically search your Wi-Fi and Bluetooth network in order to connect with the sensors and display all the data inside a simple android application. The SDK can also be used as a library for your application.",
-            portfolioTitle: "Portfolio website",
-            portfolioDescription: "Creating a good looking personal portfolio website have been a hobby project for years with multiple attempts in different languages and frameworks. This website will be continuously developed on, in order to improve my skills and to experiment with new features."
+            desc: {
+                portfolio: "Creating a good looking personal portfolio website have been a hobby project for years with " +
+                    "multiple attempts in different languages and frameworks. This website will be continuously " +
+                    "developed on, in order to improve my skills and to experiment with new features.",
+                metafyweb: "A follow up on the android app with the goal to make it accessible for multiple platforms. " +
+                    "With is you can use the Spotify API to create dynamic playlists, where all the meta data is " +
+                    "stored in the Spotify servers and works fully client-side. A premium version with server-side " +
+                    "actions is in the making, with commercial purposes.",
+                barber2u: "A school project devised and created by our team, where barbers can give the customers a " +
+                    "haircut in the customer's living room. You can select the barbers in de app with the " +
+                    "appointment moment and haircut style chosen by you.",
+                corendon: "A school project for Corendon that would like to have a dating website for travelers that " +
+                    "travel alone and would like to have a partner to party with.",
+                amsta: "A school project for Amsta that would like to have an Android application which allows the " +
+                    "elderlies from Amsta to exercise and stay fit while having fun with catching animals.",
+                aquadis: "A school project for Aquadis that would like to have an texting based game which allows the " +
+                    "players to place messages on the maps and other people can see them if they are nearby and " +
+                    "respond to it.",
+                metafyapp: "An Android application that uses the Spotify API to get your spotify account song and " +
+                    "playlist data. You can assign your custom tags to songs and create custom playlists.",
+                mobilecompany: "A project for The Mobile Company that would like to have a SDK that supports the NMEA 0183 " +
+                    "protocol, which can also automatically search your Wi-Fi and Bluetooth network in order to " +
+                    "connect with the sensors and display all the data inside a simple android application. The SDK " +
+                    "can also be used as a library for your application.",
+            }
         },
         companies: {
             title: "Companies"
@@ -89,6 +100,9 @@ const translations = {
             mergeStudy: "Merge Study",
             newWorkBranch: "New Work Branch",
             initialCommit: "Initial Commit",
+        },
+        contact: {
+            title: "Contact"
         },
         competitors: {
             title: "Competitors",
@@ -130,24 +144,32 @@ const translations = {
         projects: {
             title: "Projecten",
             swipe: "Sleep om te scrollen",
-            metafyvueTitle: "Metafy spotify web app",
-            metafyvueDescription: "Een vervolg op de android app met als doel om het globaal te maken voor meerdere platforms. Hiermee kan je de Spotify API gebruiken om dynamische playlists te gebruiken, waarbij alle meta data wordt opgeslagen in de Spotify servers, waardoor het volledig client-side werkt. Een premium versie met server-side actions is in de maak, met commerciele doeleinden.",
-            barber2uTitle: "Barber2U barber uber",
-            barber2uDescription: "Een school project bedacht en gemaakt door onze team, waarbij kappers de knipbeurten in de woonkamer van de klanten knippen. De kappers kan je selecteren in de app met daarbij door jouw gekozen moment en soort knipbeurt.",
-            corendonTitle: "Corendon dating website",
-            corendonDescription: "Een school project voor Corendon die graag een dating website wilt voor reizigers die alleen reizen en graag een partner willen om mee te feesten.",
-            amstaTitle: "Amsta Animal Go android app",
-            amstaDescription: "Een school project voor Amsta die graag een Android applicatie wilt met als doel om de ouderen van Amsta te laten bewegen en fit te blijven terwijl ze lol hebben met het vangen van dieren.",
-            aquadisTitle: "Aquadis texting webapp",
-            aquadisDescription: "Een school project voor Aquadis die graag een texting gebaseerd spel wilt waarbij de spelers op de kaart een bericht kunnen plaatsen en andere spelers die in de buurt zijn van het bericht, het kunnen lezen en reageren.",
-            boldTitle: "Bold Commerce Support Dashboard",
-            boldDescription: "Een support dashboard dat de directie helpt om alle belangrijke data in een oogopslag te zien. Met behulp van de ActiveCollab API halen we alle taken en de tijdsbeheer data op, terwijl we ook de Material IO richtlijnen volgen.",
-            metafyAndroidTitle: "Metafy spotify android app",
-            metafyAndroidDescription: "Een android app die de Spotify API gebruikt om de liedjes en playlist van je spotify account op te halen. Hiermee kan je liedjes tags en playlisten naar je wensen aanpassen.",
-            nmeaTitle: "NMEA Sensor Reader android app",
-            nmeaDescription: "Een project voor The Mobile Company die graag een SDK wou hebben die de NMEA 0183 protocol ondersteund. De SDK zoekt automatisch naar Wi-Fi en Bluetooth netwerken, zodat het een verbinding kan aanleggen met de sensoren en de sensor data kan tonen in een simpele android app. De SDK kan ook worden gebruikt als een bibliotheek voor jouw eigen app.",
-            portfolioTitle: "Portfolio website",
-            portfolioDescription: "Het maken van een mooie persoonlijke portfolio website is een hobby project waar ik jaren lang meerdere pogingen in verschillende talen en frameworks hebt gewaagd. De website zal continue doorontwikkeld worden om mijn vaardigheden te verbeterend en om met nieuwe features te ontwikkelen."
+            desc: {
+                portfolio: "Het maken van een mooie persoonlijke portfolio website is een hobby project waar ik jaren " +
+                    "lang meerdere pogingen in verschillende talen en frameworks hebt gewaagd. De website zal " +
+                    "continue doorontwikkeld worden om mijn vaardigheden te verbeterend en om met nieuwe features " +
+                    "te ontwikkelen.",
+                metafyweb: "Een vervolg op de android app met als doel om het globaal te maken voor meerdere platforms. " +
+                    "Hiermee kan je de Spotify API gebruiken om dynamische playlists te gebruiken, waarbij alle meta " +
+                    "data wordt opgeslagen in de Spotify servers, waardoor het volledig client-side werkt. Een premium " +
+                    "versie met server-side actions is in de maak, met commerciele doeleinden.",
+                barber2u: "Een school project bedacht en gemaakt door onze team, waarbij kappers de knipbeurten in de " +
+                    "woonkamer van de klanten knippen. De kappers kan je selecteren in de app met daarbij door jouw " +
+                    "gekozen moment en soort knipbeurt.",
+                corendon: "Een school project voor Corendon die graag een dating website wilt voor reizigers die alleen " +
+                    "reizen en graag een partner willen om mee te feesten.",
+                amsta: "Een school project voor Amsta die graag een Android applicatie wilt met als doel om de ouderen " +
+                    "van Amsta te laten bewegen en fit te blijven terwijl ze lol hebben met het vangen van dieren.",
+                aquadis: "Een school project voor Aquadis die graag een texting gebaseerd spel wilt waarbij de spelers " +
+                    "op de kaart een bericht kunnen plaatsen en andere spelers die in de buurt zijn van het bericht, " +
+                    "het kunnen lezen en reageren.",
+                metafyapp: "Een android app die de Spotify API gebruikt om de liedjes en playlist van je spotify account " +
+                    "op te halen. Hiermee kan je liedjes tags en playlisten naar je wensen aanpassen.",
+                mobilecompany: "Een project voor The Mobile Company die graag een SDK wou hebben die de NMEA 0183 " +
+                    "protocol ondersteund. De SDK zoekt automatisch naar Wi-Fi en Bluetooth netwerken, zodat het een " +
+                    "verbinding kan aanleggen met de sensoren en de sensor data kan tonen in een simpele android app. " +
+                    "De SDK kan ook worden gebruikt als een bibliotheek voor jouw eigen app.",
+            },
         },
         companies: {
             title: "Bedrijven"
@@ -185,6 +207,9 @@ const translations = {
             mergeStudy: "Merge Studie",
             newWorkBranch: "Nieuwe Werk Branch",
             initialCommit: "Initiële Commit",
+        },
+        contact: {
+            title: "Contact"
         },
         competitors: {
             title: "Concurrenten",

@@ -16,101 +16,35 @@
                              :loop="false"
                              :mouse-drag="true"
                              :prevent-scroll-on-touch="'auto'">
-                <div>
-                    <img v-lazy="'./img/project/project_metafy_vue.webp'" alt="metafy vue"
-                         class="tns-lazy-img" data-src="./img/project/project_themobilecompany.webp">
+                <div v-for="(p,i) in projects" :key="i">
+                    <img :v-lazy="p.img"
+                         :data-src="p.img"
+                         :alt="p.title"
+                         class="tns-lazy-img" >
                     <div class="carousel-title">
-                        {{$t('projects.metafyvueTitle')}}
-                        <a aria-label="github" href="https://github.com/omwro/metafy-vue" rel="noopener" target="_blank">
+                        {{p.title}}
+                        <a v-if="p.github"
+                           aria-label="github"
+                           :href="p.github"
+                           rel="noopener"
+                           target="_blank">
                             <font-awesome-icon :icon="['fab', 'github']" class="icon"/>
                         </a>
-                        <a aria-label="link" href="https://metafy.omererdem.nl/" rel="noopener" target="_blank">
+                        <a v-if="p.url"
+                           aria-label="link"
+                           :href="p.url"
+                           rel="noopener"
+                           target="_blank">
                             <font-awesome-icon :icon="['fas', 'external-link-alt']" class="icon"/>
                         </a>
                     </div>
-                    <div class="carousel-description">{{$t('projects.metafyvueDescription')}}</div>
+                    <div class="carousel-description">{{$t(p.desc)}}</div>
                     <div class="carousel-languages">
-                        <img v-for="skill in getLanguages(['html', 'js', 'css', 'vue', 'sass'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
-                    </div>
-                </div>
-                <div>
-                    <img v-lazy="'./img/project/project_barber2u.webp'" alt="barber2u"
-                         class="tns-lazy-img" data-src="./img/project/project_themobilecompany.webp">
-                    <div class="carousel-title">{{$t('projects.barber2uTitle')}}</div>
-                    <div class="carousel-description">{{$t('projects.barber2uDescription')}}</div>
-                    <div class="carousel-languages">
-						<img v-for="skill in getLanguages(['html', 'css', 'java', 'ts', 'react', 'spring', 'sass', 'mongodb'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
-                    </div>
-                </div>
-                <div>
-                    <img v-lazy="'./img/project/project_website.webp'" alt="website"
-                         class="tns-lazy-img" data-src="./img/project/project_website.webp">
-                    <div class="carousel-title">
-                        {{$t('projects.portfolioTitle')}}
-                        <a aria-label="github" href="https://github.com/omwro/portfoliovue" rel="noopener" target="_blank">
-                            <font-awesome-icon :icon="['fab', 'github']" class="icon"/>
-                        </a>
-                    </div>
-                    <div class="carousel-description">{{$t('projects.portfolioDescription')}}</div>
-                    <div class="carousel-languages">
-						<img v-for="skill in getLanguages(['html', 'js', 'php', 'css', 'jquery', 'vue', 'sass'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
-                    </div>
-                </div>
-                <div>
-                    <img v-lazy="'./img/project/project_themobilecompany.webp'" alt="themobilecompany"
-                         class="tns-lazy-img" data-src="./img/project/project_themobilecompany.webp">
-                    <div class="carousel-title">{{$t('projects.nmeaTitle')}}</div>
-                    <div class="carousel-description">{{$t('projects.nmeaDescription')}}</div>
-                    <div class="carousel-languages">
-						<img v-for="skill in getLanguages(['kotlin', 'xml'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
-                    </div>
-                </div>
-                <div>
-                    <img v-lazy="'./img/project/project_metafy.webp'" alt="metafy"
-                         class="tns-lazy-img" data-src="./img/project/project_metafy.webp">
-                    <div class="carousel-title">
-                        {{$t('projects.metafyAndroidTitle')}}
-                        <a aria-label="github" href="https://github.com/omwro/MetaFy" rel="noopener" target="_blank">
-                            <font-awesome-icon :icon="['fab', 'github']" class="icon"/>
-                        </a>
-                    </div>
-                    <div class="carousel-description">{{$t('projects.metafyAndroidDescription')}}</div>
-                    <div class="carousel-languages">
-						<img v-for="skill in getLanguages(['kotlin', 'xml'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
-                    </div>
-                </div>
-                <div>
-                    <img v-lazy="'./img/project/project_dashboard.webp'" alt="dashboard"
-                         class="tns-lazy-img" data-src="./img/project/project_dashboard.webp">
-                    <div class="carousel-title">{{$t('projects.boldTitle')}}</div>
-                    <div class="carousel-description">{{$t('projects.boldDescription')}}</div>
-                    <div class="carousel-languages">
-						<img v-for="skill in getLanguages(['html', 'js', 'php', 'css', 'jquery', 'mysql', 'vue', 'sass', 'laravel'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
-                    </div>
-                </div>
-                <div>
-                    <img alt="aquadis" class="tns-lazy-img" data-src="./img/project/project_aquadis.webp">
-                    <div class="carousel-title">{{$t('projects.aquadisTitle')}}</div>
-                    <div class="carousel-description">{{$t('projects.aquadisDescription')}}</div>
-                    <div class="carousel-languages">
-						<img v-for="skill in getLanguages(['html', 'js', 'css', 'java', 'mysql', 'angular', 'spring'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
-                    </div>
-                </div>
-                <div>
-                    <img alt="amsta" class="tns-lazy-img" data-src="./img/project/project_amsta.webp">
-                    <div class="carousel-title">{{$t('projects.amstaTitle')}}</div>
-                    <div class="carousel-description">{{$t('projects.amstaDescription')}}</div>
-                    <div class="carousel-languages">
-						<img v-for="skill in getLanguages(['html', 'css', 'java'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
-                    </div>
-                </div>
-                <div>
-                    <img v-lazy="'./img/project/project_corendon.webp'" alt="corendon"
-                         class="tns-lazy-img" data-src="./img/project/project_corendon.webp">
-                    <div class="carousel-title">{{$t('projects.corendonTitle')}}</div>
-                    <div class="carousel-description">{{$t('projects.corendonDescription')}}</div>
-                    <div class="carousel-languages">
-						<img v-for="skill in getLanguages(['html', 'js', 'css', 'mysql'])" :key="skill.name" :class="'star'+skill.stars" :data-src="skill.img" :alt="skill.name"/>
+                        <img v-for="skill in getLanguages(p.stack)"
+                             :key="skill.name"
+                             :class="'star'+skill.stars"
+                             :data-src="skill.img"
+                             :alt="skill.name"/>
                     </div>
                 </div>
             </vue-tiny-slider>
@@ -121,10 +55,14 @@
 <script>
 import $ from 'jquery';
 import VueTinySlider from 'vue-tiny-slider';
-import json from "../../public/data/skills.json"
+import skillsJson from "../../public/data/skills.json"
+import projectsJson from "../../public/data/projects.json"
 
 export default {
     name: "Projects",
+    data: () => ({
+       projects: projectsJson
+    }),
     components: {
         'vue-tiny-slider': VueTinySlider
     },
@@ -136,7 +74,7 @@ export default {
     },
 	methods: {
 		getLanguages(array) {
-			return json.filter(x => array.includes(x.name))
+			return skillsJson.filter(x => array.includes(x.name))
 		}
 	}
 }

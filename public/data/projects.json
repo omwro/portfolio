@@ -1,0 +1,101 @@
+[
+  {
+    "title": "Portfolio",
+    "desc": "projects.desc.portfolio",
+    "img": "img/project/project_website.webp",
+    "url": "https://omererdem.nl",
+    "github": "https://github.com/omwro/portfoliovue",
+    "stack": [
+      "html",
+      "js",
+      "php",
+      "css",
+      "jquery",
+      "vue",
+      "sass"
+    ]
+  },
+  {
+    "title": "Metafy",
+    "desc": "projects.desc.metafyweb",
+    "img": "img/project/project_metafy_vue.webp",
+    "url": "https://metafy.omererdem.nl",
+    "github": "https://github.com/omwro/metafy-vue",
+    "stack": [
+      "html",
+      "js",
+      "css",
+      "vue",
+      "sass"
+    ]
+  },
+  {
+    "title": "Barber2U",
+    "desc": "projects.desc.barber2u",
+    "img": "img/project/project_barber2u.webp",
+    "url": null,
+    "github": null,
+    "stack": [
+      "html",
+      "css",
+      "java",
+      "ts",
+      "react",
+      "spring",
+      "sass",
+      "mongodb"
+    ]
+  },
+  {
+    "title": "Metafy",
+    "desc": "projects.desc.metafyapp",
+    "img": "img/project/project_metafy.webp",
+    "url": null,
+    "github": "https://github.com/omwro/MetafyKotlin",
+    "stack": [
+      "kotlin",
+      "xml"
+    ]
+  },
+  {
+    "title": "NMEA Sensor Reader",
+    "desc": "projects.desc.mobilecompany",
+    "img": "img/project/project_themobilecompany.webp",
+    "url": null,
+    "github": null,
+    "stack": [
+      "kotlin",
+      "xml"
+    ]
+  },
+  {
+    "title": "Aquadis",
+    "desc": "projects.desc.aquadis",
+    "img": "img/project/project_aquadis.webp",
+    "url": null,
+    "github": null,
+    "stack": [
+      "html", "js", "css", "java", "mysql", "angular", "spring"
+    ]
+  },
+  {
+    "title": "Amsta Animal Go",
+    "desc": "projects.desc.amsta",
+    "img": "img/project/project_amsta.webp",
+    "url": null,
+    "github": null,
+    "stack": [
+      "html", "css", "java"
+    ]
+  },
+  {
+    "title": "Corendon",
+    "desc": "projects.desc.corendon",
+    "img": "img/project/project_corendon.webp",
+    "url": null,
+    "github": null,
+    "stack": [
+      "html", "js", "css", "mysql"
+    ]
+  }
+]
