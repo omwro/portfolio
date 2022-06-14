@@ -26,7 +26,7 @@ export default {
     width: 256px;
     display: flex;
     flex-direction: row;
-    background-color: $dark2;
+    background-color: $light1;
     border: solid 2px $brilliant-red;
     border-radius: 10px;
     margin: 16px;
@@ -38,6 +38,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        filter: brightness(0);
 
         img {
             height: 48px;
@@ -52,7 +53,15 @@ export default {
         font-size: 32px;
         font-weight: bold;
     }
+}
 
+#app.dark {
+    .contact-button-container {
+        background-color: $dark2;
 
+        .contact-button-img-container {
+            filter: brightness(1);
+        }
+    }
 }
 </style>

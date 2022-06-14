@@ -90,18 +90,14 @@ export default {
                     margin-top: 16px;
                     width: 100%;
 
-                    .globe {
+                    .globe, .linkedin {
                         width: 32px;
                         height: 32px;
                         color: white;
                         cursor: pointer;
+                        filter: brightness(0);
                     }
 
-                    .linkedin {
-                        width: 32px;
-                        height: 32px;
-                        cursor: pointer;
-                    }
                     > * {
                         display: flex;
                         flex-direction: column;
@@ -140,13 +136,17 @@ export default {
     }
 }
 
-.dark #competitors {
+#app.dark #competitors {
     background-color: $dark1;
     color: $light0;
 
     .card, .card .card-header svg .polygon{
         fill: $dark2;
         background: $dark2;
+
+        .globe, .linkedin {
+            filter: brightness(1);
+        }
     }
 }
 </style>

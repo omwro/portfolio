@@ -124,8 +124,14 @@ const translations = {
         about: {
             title: "Wie ben ik ?",
             resume: "Download CV",
-            description1: "Mijn naam is Omer Erdem en ik ben een vierde jaars Software Ontwikkelaar student aan het Hogeschool van Amsterdam. Ik ben momenteel 22 jaar jong en vind het leuk om te gamen, rondjes te rijden en te experimenteren.",
-            description2: "Ik ben een hard werkend web- en software ontwikkelaar student waarbij ik elke dag op zoek ben naar nieuwe projecten en uitdagingen om mijn vaardigheden te verbeteren om uiteindelijk een Full Stack ontwikkelaar te worden. Ik ben erg gepassioneerd in programmeren en vind het niet erg om me handen vuil te maken. Ik ben gretig om nieuwe technieken te leren en ben zeker niet bang van hardware. Ik ben iemand die de wereld een beter plek wilt maken, zelfs als het onopgemerkt blijft."
+            description1: "Mijn naam is Omer Erdem en ik ben een vierde jaars Software Ontwikkelaar student aan het " +
+                "Hogeschool van Amsterdam. Ik ben momenteel 23 jaar jong en vind het leuk om te gamen, rondjes te rijden" +
+                " en te experimenteren.",
+            description2: "Ik ben een hard werkend web- en software ontwikkelaar student waarbij ik elke dag op zoek ben" +
+                " naar nieuwe projecten en uitdagingen om mijn vaardigheden te verbeteren om uiteindelijk een Full Stack" +
+                " ontwikkelaar te worden. Ik ben erg gepassioneerd in programmeren en vind het niet erg om me handen " +
+                "vuil te maken. Ik ben gretig om nieuwe technieken te leren en ben zeker niet bang van hardware. Ik ben " +
+                "iemand die de wereld een beter plek wilt maken, zelfs als het onopgemerkt blijft."
         },
         skills: {
             title: "Vaardigheden",
