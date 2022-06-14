@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Email",
+    "img": "img/contact/mail.png",
+    "url": "mailto:public.omererdem@outlook.com"
+  },
+  {
+    "name": "Discord",
+    "img": "img/contact/discord.png",
+    "url": "https://discord.gg/UnhW4ykFFp"
+  },
+  {
+    "name": "LinkedIn",
+    "img": "img/contact/linkedin.png",
+    "url": "https://www.linkedin.com/in/omer-erdem-179745153"
+  },
+  {
+    "name": "GitHub",
+    "img": "img/contact/github.png",
+    "url": "https://github.com/omwro"
+  },
+  {
+    "name": "CV",
+    "img": "img/contact/cv.png",
+    "url": "https://omererdem.nl/cv"
+  }
+]

@@ -102,11 +102,12 @@ const translations = {
             initialCommit: "Initial Commit",
         },
         contact: {
-            title: "Contact"
+            title: "Contact",
+            desc: "Would you like to know more about me? Feel free to contact me and ask your questions."
         },
         competitors: {
             title: "Competitors",
-            desc: "Not fit for your job? Take a look at these fantastic competitors."
+            desc: "Not fit for the job? Take a look at these fantastic competitors."
         }
     },
     nl: {
@@ -209,11 +210,12 @@ const translations = {
             initialCommit: "Initiële Commit",
         },
         contact: {
-            title: "Contact"
+            title: "Contact",
+            desc: "Wil je meer over mij weten? Neem gerust contact op en stel je vragen."
         },
         competitors: {
             title: "Concurrenten",
-            desc: "Niet geschikt voor je baan? Kijk eens naar deze fantastische concurrenten."
+            desc: "Niet geschikt voor de baan? Kijk eens naar deze fantastische concurrenten."
         }
     }
 }

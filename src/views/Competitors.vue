@@ -93,7 +93,7 @@ export default {
                     .globe {
                         width: 32px;
                         height: 32px;
-                        color: $brilliant-red;
+                        color: white;
                         cursor: pointer;
                     }
 
@@ -110,6 +110,7 @@ export default {
                         width: 100%;
 
                         span {
+                            margin-top: 8px;
                             font-size: 12px;
                         }
                     }

@@ -16,6 +16,8 @@
         <Separator :right="true"/>
         <TimelineGit/>
         <Separator :left="true"/>
+        <Contact/>
+        <Separator :right="true"/>
         <Competitors/>
         <Footer/>
         <Menu/>
@@ -36,11 +38,13 @@ import TimelineGit from "@/views/TimelineGit";
 import Competitors from "@/views/Competitors";
 import Separator from "@/components/Separator";
 import ImgSeparator from "@/components/ImgSeparator";
+import Contact from "@/views/Contact";
 
 export default {
     name: "Index",
     components: {
         ImgSeparator,
+        Contact,
         Separator,
         Competitors,
         TimelineGit,
@@ -58,15 +62,11 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/variables";
+@import "src/styles/variables";
 #app {
     section {
         color: $dark0;
         background-color: $light0;
-
-        &#action, &.quicky {
-            background-color: $light1;
-        }
 
         &#footer {
             background-color: $dark5;
@@ -81,10 +81,6 @@ export default {
         section {
             color: $light2;
             background-color: $dark1;
-
-            &#action, &.quicky {
-                background-color: $dark2;
-            }
         }
     }
 }
@@ -94,9 +90,11 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
 
     h1 {
-        margin: 75px auto 10px auto;
+        margin: 0 auto 10px auto;
         text-align: center;
         font-weight: bold;
         border-bottom: solid 2px $brilliant-red;

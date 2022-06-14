@@ -4,7 +4,6 @@
         <div class="content">
             <div class="selfie">
                 <img v-lazy="'./img/selfie/selfie.webp'" alt="selfie">
-                <a href="doc/OmerErdem_Resume.pdf" download="OmerErdem_Resume.pdf">{{$t('about.resume')}}</a>
             </div>
             <div class="intro">
                 <div>{{$t('about.description1')}}</div>
@@ -17,24 +16,6 @@
 <script>
 export default {
     name: "About",
-    methods: {
-        getAccess: function () {
-            let code = prompt("Please enter the access code to download the file. Get in contact in case you don't have a code.")
-            if (code != null) {
-                this.axios.get(window.location.origin + "/api/access.php?code=" + code).then(response => {
-                    if (response.data === true) {
-                        this.downloadCV()
-                    }
-                })
-            }
-        },
-        downloadCV: function () {
-            let link = document.createElement('a');
-            link.href = window.location.origin + "/doc/OmerErdem_Resume.pdf";
-            link.download = 'OmerErdem_Resume.pdf';
-            link.dispatchEvent(new MouseEvent('click'));
-        }
-    }
 }
 </script>
 

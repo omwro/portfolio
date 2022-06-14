@@ -1,42 +1,29 @@
 <template>
-    <section id="home">
+    <div id="home">
         <div class="background-image">
             <div class="introduction">
                 <span>{{$t("home.intro")}}</span>
             </div>
             <div class="contact">
-                <div>
-                    <img @click="goToMail" src="img/contact/mail.png" alt="mail">
-                </div>
-                <div>
-                    <img @click="goToDiscord" src="img/contact/discord.png" alt="discord">
-                </div>
-                <div>
-                    <img @click="goToLinkedin" src="img/contact/linkedin.png" alt="linkedin">
-                </div>
-                <div>
-                    <font-awesome-icon @click="goToGithub" :icon="['fab', 'github']" class="github-icon"/>
+                <div v-for="(c, i) in contact" :key="i">
+                    <img @click="goTo(c.url)" :src="c.img" :alt="c.name">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </template>
 
 <script>
+import contactJson from "../../public/data/contact.json"
+
 export default {
     name: "Home",
+    data: () => ({
+        contact: contactJson
+    }),
     methods: {
-        goToMail() {
-            window.open("mailto:public.omererdem@outlook.com")
-        },
-        goToDiscord() {
-            window.open("https://discord.gg/UnhW4ykFFp")
-        },
-        goToLinkedin() {
-            window.open("https://www.linkedin.com/in/omer-erdem-179745153/")
-        },
-        goToGithub() {
-            window.open("https://github.com/omwro")
+        goTo(url) {
+            window.open(url)
         }
     }
 }
@@ -45,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 @import "src/styles/variables";
 
-section {
+#home {
     height: 100vh;
 
     .background-image {
@@ -84,11 +71,10 @@ section {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        border: solid 1px white;
+        border: solid 1px $brilliant-red;
         border-radius: 10px;
         justify-content: center;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        background-color: $dark1;
         color: white;
 
         > div {

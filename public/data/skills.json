@@ -133,48 +133,6 @@
   },
   {
     "type": "Language",
-    "name": "json",
-    "display_name": "JSON",
-    "img": "./img/language/json.png",
-    "stars": 3,
-    "xp": [
-      {
-        "months": 24,
-        "desc": "Regio college"
-      },
-      {
-        "months": 12,
-        "desc": "HvA1 fys & pad"
-      },
-      {
-        "months": 12,
-        "desc": "HvA2 ewa & bold commerce"
-      },
-      {
-        "months": 12,
-        "desc": "HvA3 mobile dev & barber2u"
-      }
-    ]
-  },
-  {
-    "type": "Language",
-    "name": "xml",
-    "display_name": "XML",
-    "img": "./img/language/xml.png",
-    "stars": 2,
-    "xp": [
-      {
-        "months": 6,
-        "desc": "HvA1  pad"
-      },
-      {
-        "months": 6,
-        "desc": "HvA3 mobile dev"
-      }
-    ]
-  },
-  {
-    "type": "Language",
     "name": "node",
     "display_name": "NodeJs",
     "img": "./img/language/node.png",
