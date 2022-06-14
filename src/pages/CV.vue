@@ -181,8 +181,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import "../styles/variables";
+<style lang="scss" scoped>
+@import "src/styles/variables";
 
 @media print {
     body {
@@ -191,7 +191,7 @@ export default {
     }
 }
 
-html body #app {
+html body #app #cv {
     width: 21cm !important;
     height: 30cm !important;
     background: $dark1 repeat;

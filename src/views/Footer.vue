@@ -1,8 +1,8 @@
 <template>
-    <div id="footer" class="section">
+    <section id="footer">
         <div>&copy; 2015 - 2022 Omer Erdem All Rights Reserved</div>
         <div>{{visitCount}}x visited this year!</div>
-    </div>
+    </section>
 </template>
 
 <script>

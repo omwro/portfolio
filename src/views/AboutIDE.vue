@@ -1,5 +1,5 @@
 <template>
-    <div id="aboutIde" class="section">
+    <section id="aboutIde">
         <h1>{{ $t('about.title') }}</h1>
         <div class="content">
             <div class="tabs">
@@ -36,7 +36,7 @@
             <!--            <div class="ide" v-if="activeTab === 'py'">-->
             <!--            </div>-->
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

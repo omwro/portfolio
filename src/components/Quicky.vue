@@ -1,9 +1,9 @@
 <template>
-    <div class="section quicky">
+    <section class="quicky">
         <div class="gradient-top"></div>
         <div class="quicky-text">{{ msg }}</div>
         <div class="gradient-bottom"></div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -16,7 +16,7 @@ export default {
 <style lang="scss" scoped>
 @import "../styles/variables";
 
-.section.quicky {
+section.quicky {
     .gradient-top {
         height: 48px;
         background: $light0;
@@ -38,7 +38,7 @@ export default {
     }
 }
 
-#app.dark .section.quicky {
+#app.dark section.quicky {
     .gradient-top {
         background: $dark1;
         background: linear-gradient(180deg, rgba($dark1,1) 50%, rgba($dark2,1) 100%);

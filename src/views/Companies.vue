@@ -1,5 +1,5 @@
 <template>
-    <div id="companies" class="section">
+    <section id="companies">
         <h1>{{$t('companies.title')}}</h1>
         <div v-lazy-container="{ selector: 'img' }" class="content">
             <div><img data-src=./img/company/themobilecompany.webp alt="themobilecompany"/></div>
@@ -11,7 +11,7 @@
             <div><img class="dark-bright" data-src=./img/company/kennethkoh.webp alt="kennethkoh"/></div>
             <div><img class="dark-invert" data-src=./img/company/deugderdem.webp alt="deugderdem"/></div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

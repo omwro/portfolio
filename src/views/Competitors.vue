@@ -1,5 +1,5 @@
 <template>
-    <div id="competitors" class="section">
+    <section id="competitors">
         <h1>{{ $t('competitors.title') }}</h1>
         <p>{{ $t('competitors.desc')}}</p>
         <div class="content">
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

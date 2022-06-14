@@ -1,5 +1,5 @@
 <template>
-	<div id="skills" class="section">
+	<section id="skills">
 		<h1>{{ $t('skills.title') }}</h1>
 		<div class="content">
             <h1 class="small desc">{{ $t('skills.personalrating')}}</h1>
@@ -98,7 +98,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 </template>
 
 <script>

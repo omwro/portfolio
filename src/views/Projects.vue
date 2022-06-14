@@ -1,5 +1,5 @@
 <template>
-    <div id="projects" class="section">
+    <section id="projects">
         <h1>{{$t("projects.title")}}</h1>
         <div class="content">
             <span class="swipe-txt">
@@ -115,7 +115,7 @@
                 </div>
             </vue-tiny-slider>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

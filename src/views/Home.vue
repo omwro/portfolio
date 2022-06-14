@@ -1,5 +1,5 @@
 <template>
-    <div id="home" class="section">
+    <section id="home">
         <div class="background-image">
             <div class="introduction">
                 <span>{{$t("home.intro")}}</span>
@@ -19,7 +19,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -43,11 +43,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables";
+@import "src/styles/variables";
 
-#home {
-    width: 100%;
-    height: 100%;
+section {
+    height: 100vh;
 
     .background-image {
         width: 100%;

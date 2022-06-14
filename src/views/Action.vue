@@ -1,5 +1,5 @@
 <template>
-    <div id="action" class="section">
+    <section id="action">
         <h1 class="small">{{$t('preferences.title')}}</h1>
         <div class="content">
             <div>
@@ -30,7 +30,7 @@
                 <img @click="onProgrammerModeToggle" src="img/actions/code.png" class="pointer code" :class="programmer ? 'active' : ''" alt="code">
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

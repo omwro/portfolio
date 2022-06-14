@@ -10,6 +10,9 @@ import { faFontAwesome, faLinkedin, faSkype, faDiscord, faCodepen, faGithub } fr
 import VueTinySlider from 'vue-tiny-slider';
 import VueLazyload from 'vue-lazyload'
 import i18n from './i18n'
+import VueRouter from 'vue-router';
+import Index from './pages/Index'
+import CV from './pages/CV'
 
 library.add(faAt, faLinkedin, faSkype, faDiscord, faCodepen, faGithub, faFontAwesome, faStar, faStarHalfAlt, faStarEmpty, faHandPointer, faExternalLinkAlt, faGlobe)
 
@@ -17,8 +20,18 @@ Vue.config.productionTip = false
 Vue.use(VueAxios, axios)
 Vue.use(VueLazyload)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.use(VueRouter)
+
+const routes = [
+  {path: '/', component: Index},
+  {path: '/cv',component: CV},
+  {path: '*', component: Index}
+]
+
+const router = new VueRouter({routes, mode: 'history'})
 
 new Vue({
+  router,
   render: h => h(App),
   components: {
     'tiny-slider': VueTinySlider

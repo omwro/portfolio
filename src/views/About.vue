@@ -1,5 +1,5 @@
 <template>
-    <div id="about" class="section">
+    <section id="about">
         <h1>{{$t('about.title')}}</h1>
         <div class="content">
             <div class="selfie">
@@ -11,7 +11,7 @@
                 <div>{{$t('about.description2')}}</div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

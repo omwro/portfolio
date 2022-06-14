@@ -1,5 +1,5 @@
 <template>
-    <div id="timeline" class="section">
+    <section id="timeline">
         <h1>{{$t('timeline.title')}}</h1>
         <div class="content">
             <div id="timeline-table">
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
