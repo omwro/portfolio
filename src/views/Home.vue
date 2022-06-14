@@ -80,7 +80,7 @@ section {
         position: absolute;
         bottom: 0;
         right: 0;
-        margin: 0 50px 50px;
+        margin: 0 25px 25px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

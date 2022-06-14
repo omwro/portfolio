@@ -3,18 +3,16 @@
         <Header/>
         <Home/>
         <Action/>
-        <AboutIDE class="programmer-only"/>
-        <About class="non-programmer-only"/>
-        <Quicky :msg="$t('quicky.quicky1')" class="non-programmer-only"/>
-        <Skills class="non-programmer-only"/>
-        <Quicky :msg="$t('quicky.quicky2')" class="non-programmer-only"/>
+        <About/>
+        <Quicky :msg="$t('quicky.quicky1')"/>
+        <Skills />
+        <Quicky :msg="$t('quicky.quicky2')"/>
         <Projects/>
-        <Quicky :msg="$t('quicky.quicky3')" class="non-programmer-only"/>
+        <Quicky :msg="$t('quicky.quicky3')"/>
         <Companies/>
-        <Quicky :msg="$t('quicky.quicky4')" class="non-programmer-only"/>
-        <Timeline class="non-programmer-only"/>
-        <TimelineGit class="programmer-only"/>
-        <Quicky :msg="$t('quicky.quicky5')" class="non-programmer-only"/>
+        <Quicky :msg="$t('quicky.quicky4')"/>
+        <TimelineGit/>
+        <Quicky :msg="$t('quicky.quicky5')"/>
         <Competitors/>
         <Footer/>
         <Menu/>
@@ -28,11 +26,9 @@ import About from "@/views/About";
 import Projects from "@/views/Projects";
 import Skills from "@/views/Skills";
 import Companies from "@/views/Companies";
-import Timeline from "@/views/Timeline";
 import Footer from "@/views/Footer";
 import Menu from "@/views/Menu";
 import Action from "@/views/Action";
-import AboutIDE from "@/views/AboutIDE";
 import Quicky from "@/components/Quicky";
 import TimelineGit from "@/views/TimelineGit";
 import Competitors from "@/views/Competitors";
@@ -42,11 +38,9 @@ export default {
     components: {
         Competitors,
         TimelineGit,
-        AboutIDE,
         Action,
         Menu,
         Footer,
-        Timeline,
         Companies,
         Skills,
         Projects,
@@ -87,22 +81,6 @@ export default {
                 background-color: $dark2;
             }
         }
-    }
-
-    &.programmer {
-        .programmer-only {
-            display: flex;
-        }
-        .non-programmer-only {
-            display: none;
-        }
-    }
-
-    .programmer-only {
-        display: none;
-    }
-    .non-programmer-only {
-        display: flex;
     }
 }
 

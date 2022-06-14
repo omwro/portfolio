@@ -25,10 +25,6 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <span>{{$t('preferences.programmermode')}}</span>
-                <img @click="onProgrammerModeToggle" src="img/actions/code.png" class="pointer code" :class="programmer ? 'active' : ''" alt="code">
-            </div>
         </div>
     </section>
 </template>
@@ -60,21 +56,11 @@ export default {
             } else {
                 this.setLanguage(localStorage.getItem("language"))
             }
-
-            if (localStorage.getItem("programmermode") === null) {
-                localStorage.setItem("programmermode", false)
-                this.setProgrammerMode(false)
-            } else {
-                this.setProgrammerMode(this.programmer);
-            }
         });
     },
     methods: {
         onDarkModeToggle() {
             this.setDarkMode(!this.dark);
-        },
-        onProgrammerModeToggle() {
-            this.setProgrammerMode(!this.programmer);
         },
         setDarkMode(bool) {
             localStorage.setItem('darkmode', JSON.parse(bool));
@@ -83,15 +69,6 @@ export default {
                 $('#app').addClass('dark');
             } else {
                 $('#app').removeClass('dark');
-            }
-        },
-        setProgrammerMode(bool) {
-            localStorage.setItem('programmermode', JSON.parse(bool));
-            this.programmer = bool
-            if (bool) {
-                $('#app').addClass('programmer');
-            } else {
-                $('#app').removeClass('programmer');
             }
         },
         setLanguage(lan) {
