@@ -1,24 +1,24 @@
 <template>
     <section>
-        <h1>{{ $t('contact.title') }}</h1>
-        <p>{{ $t('contact.desc') }}</p>
+        <h1>{{ $t('socials.title') }}</h1>
+        <p>{{ $t('socials.desc') }}</p>
         <div class="contact-container">
-            <ContactButton v-for="(c, i) in contact" :key="i"
-                           :img="c.img"
-                           :text="c.name"
-                           :url="c.url"/>
+            <ContactButton v-for="(s, i) in socials" :key="i"
+                           :img="s.img"
+                           :text="s.name"
+                           :url="s.url"/>
         </div>
     </section>
 </template>
 
 <script>
-import contactJson from "../../public/data/contact.json"
+import socialsJson from "../../public/data/contact.json"
 import ContactButton from "@/components/ContactButton";
 
 export default {
-    name: "Contact",
+    name: "Socials",
     data: () => ({
-        contact: contactJson
+        socials: socialsJson
     }),
     components: {ContactButton}
 }

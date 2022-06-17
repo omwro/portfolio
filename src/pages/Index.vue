@@ -16,7 +16,7 @@
         <Separator :right="true"/>
         <TimelineGit/>
         <Separator :left="true"/>
-        <Contact/>
+        <Socials/>
         <Separator :right="true"/>
         <Competitors/>
         <Footer/>
@@ -39,6 +39,7 @@ import Competitors from "@/views/Competitors";
 import Separator from "@/components/Separator";
 import ImgSeparator from "@/components/ImgSeparator";
 import Contact from "@/views/Contact";
+import Socials from "@/views/Socials";
 
 export default {
     name: "Index",
@@ -56,7 +57,8 @@ export default {
         Projects,
         About,
         Home,
-        Header
+        Header,
+        Socials
     }
 }
 </script>

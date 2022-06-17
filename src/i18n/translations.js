@@ -101,8 +101,8 @@ const translations = {
             newWorkBranch: "New Work Branch",
             initialCommit: "Initial Commit",
         },
-        contact: {
-            title: "Contact",
+        socials: {
+            title: "Socials",
             desc: "Would you like to know more about me? Feel free to contact me and ask your questions."
         },
         competitors: {
@@ -215,8 +215,8 @@ const translations = {
             newWorkBranch: "Nieuwe Werk Branch",
             initialCommit: "Initiële Commit",
         },
-        contact: {
-            title: "Contact",
+        socials: {
+            title: "Socials",
             desc: "Wil je meer over mij weten? Neem gerust contact op en stel je vragen."
         },
         competitors: {
