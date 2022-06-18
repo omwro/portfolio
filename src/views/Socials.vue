@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="socials">
         <h1>{{ $t('socials.title') }}</h1>
         <p>{{ $t('socials.desc') }}</p>
         <div class="contact-container">

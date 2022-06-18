@@ -14,8 +14,8 @@
             <a href="#skills" @click="closeMenu">{{$t('skills.title')}}</a>
             <a href="#projects" @click="closeMenu">{{$t('projects.title')}}</a>
             <a href="#companies" @click="closeMenu">{{$t('companies.title')}}</a>
-            <a class="normal-only" href="#timeline" @click="closeMenu">{{$t('timeline.title')}}</a>
-            <a class="programmer-only" href="#timelineGit" @click="closeMenu">{{$t('timeline.title')}}</a>
+            <a href="#timelineGit" @click="closeMenu">{{$t('timeline.title')}}</a>
+            <a href="#socials" @click="closeMenu">{{$t('socials.title')}}</a>
             <a href="#competitors" @click="closeMenu">{{$t('competitors.title')}}</a>
         </div>
     </div>
@@ -58,19 +58,14 @@ export default {
     bottom: 0;
     right: 0;
     padding: 0;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: $light0;
     z-index: 15;
     transition: 0.5s;
     border-left: solid 2px transparent;
 
-    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-        background-color: rgba(0, 0, 0, .5);
-    }
-
     &.active {
         width: 100%;
-        border-left: solid 2px $grey;
+        border-left: solid 2px $brilliant-red;
         transition: 0.5s;
         transition-timing-function: ease-in-out;
 
@@ -97,6 +92,7 @@ export default {
             display: flex;
             flex-direction: column;
             position: relative;
+            cursor: pointer;
 
             span {
                 width: 100%;
@@ -144,25 +140,7 @@ export default {
     }
 }
 
-#menu #menulist .programmer-only {
-    display: none;
-}
-
-.programmer #menu #menulist a.programmer-only {
-    display: block;
-}
-
-.programmer #menu #menulist a.normal-only {
-    display: none;
-}
-#menu {
-    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-        background-color: rgba(255, 255, 255, .9);
-    }
-}
 #app.dark #menu{
-    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-        background-color: rgba(0, 0, 0, .9);
-    }
+    background-color: $dark1;
 }
 </style>

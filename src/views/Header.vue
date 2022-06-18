@@ -90,6 +90,7 @@ export default {
         padding-top: 5px;
         display: flex;
         flex-direction: column;
+        cursor: pointer;
 
         span {
             width: 100%;
