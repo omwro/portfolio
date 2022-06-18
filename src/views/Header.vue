@@ -1,5 +1,5 @@
 <template>
-    <div id="header">
+    <div id="header" :class="onTop ? 'ontop' : ''">
         <img alt="logo" class="logo" src="../../public/img/company/logo.webp">
         <h1>Omer Erdem</h1>
         <div class="hamburger" @click="openMenu">
@@ -15,9 +15,21 @@ import $ from 'jquery';
 
 export default {
     name: "Header",
+    data: () => ({
+       onTop: true
+    }),
+    created() {
+        window.addEventListener('scroll', this.onScroll)
+    },
+    destroyed() {
+        window.addEventListener('scroll', this.onScroll)
+    },
     methods: {
         openMenu() {
             $('#menu').addClass('active');
+        },
+        onScroll(e) {
+            this.onTop = e.currentTarget.scrollY <= 120;
         }
     }
 }
@@ -32,14 +44,18 @@ export default {
     top: 0;
     position: fixed;
     z-index: 10;
-
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: $grey 2px solid;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: $light0;
+    transition: 0.5s;
+    border-bottom: $brilliant-red 2px solid;
+
+    &.ontop {
+        background-color: transparent;
+        transition: 0.5s;
+        border-bottom: none;
+    }
 
     > * {
         margin: 16px;
@@ -91,18 +107,11 @@ export default {
     }
 }
 
-.dark #header .logo {
-    filter: invert(100%);
-}
-
-#header {
-    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-        background-color: rgba(255, 255, 255, .9);
-    }
-}
 #app.dark #header{
-    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-        background-color: rgba(0, 0, 0, .9);
+    background-color: $dark1;
+
+    .logo {
+        filter: invert(100%);
     }
 }
 </style>
