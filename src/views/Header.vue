@@ -110,6 +110,12 @@ export default {
 
 #app.dark #header{
     background-color: $dark1;
+    
+    &.ontop {
+        background-color: transparent;
+        transition: 0.5s;
+        border-bottom: none;
+    }
 
     .logo {
         filter: invert(100%);
