@@ -9,8 +9,7 @@
         </div>
         <div id="menulist">
             <a href="#home" @click="closeMenu">Home</a>
-            <a class="programmer-only" href="#aboutIde" @click="closeMenu">{{$t('about.title')}}</a>
-            <a class="normal-only" href="#about" @click="closeMenu">{{$t('about.title')}}</a>
+            <a href="#about" @click="closeMenu">{{$t('about.title')}}</a>
             <a href="#skills" @click="closeMenu">{{$t('skills.title')}}</a>
             <a href="#projects" @click="closeMenu">{{$t('projects.title')}}</a>
             <a href="#companies" @click="closeMenu">{{$t('companies.title')}}</a>
