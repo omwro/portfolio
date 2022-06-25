@@ -1,5 +1,13 @@
 const translations = {
     en: {
+        general: {
+            firstname: "Ömer",
+            lastname: "Erdem",
+            study: "Software Engineer",
+            age: "23",
+            area: "Amsterdam, The Netherlands",
+            email: "public.omererdem@outlook.com"
+        },
         home: {
             intro: "Hi, my name is Omer Erdem and welcome to my portfolio website!"
         },

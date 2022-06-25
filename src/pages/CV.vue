@@ -5,66 +5,40 @@
                 <img alt="profile picture" src="../../public/img/selfie/selfie-squared.webp">
             </div>
             <div class="information">
-                <div class="name color-red">ÖMER</div>
-                <div class="name color-blue">ERDEM</div>
-                <div class="study bold">SOFTWARE ENGINEER</div>
+                <div class="name color-red capital">{{$t('general.firstname')}}</div>
+                <div class="name color-blue capital">{{$t('general.lastname')}}</div>
+                <div class="study bold capital">{{$t('general.study')}}</div>
                 <div>
                     <span class="bold">Age:</span>
-                    <span class="color-grey">22</span>
+                    <span class="color-grey">{{$t('general.age')}}</span>
                 </div>
                 <div>
                     <span class="bold">Area:</span>
-                    <span class="color-grey">Amsterdam, The Netherlands</span>
+                    <span class="color-grey">{{$t('general.area')}}</span>
                 </div>
                 <div>
                     <span class="bold">Email:</span>
-                    <span class="color-grey">m.o.erdem@outlook.com</span>
+                    <span class="color-grey">{{$t('general.email')}}</span>
                 </div>
             </div>
             <div class="aboutme">
                 <div class="title bold">ABOUT ME</div>
                 <div class="desc color-grey">
-                    I am a hardworking web- and software developer student who is every day in search for new projects
-                    and challenges to improve my skills to eventually become a Full Stack Developer. I am really
+                    I am a hardworking web- and software developer who is every day in search for new projects
+                    and challenges to improve my skills to become a Full Stack Developer. I am really
                     passionate in programming and would not mind to get my hands dirty again. I am eager to learn new
                     techniques and I am surely not afraid of hardware. I am someone who likes to make the world a better
-                    place, even if it goes unnoticed. My name is Ömer and thank you for showing your interest.
+                    place, even if it goes unnoticed.
                 </div>
             </div>
         </div>
         <div class="timeline">
             <div class="experience">
-                <div class="timeperiod">FEB 2020 - AUG 2020</div>
-                <div class="title">Intern Magento Developer</div>
-                <div class="location">Bold Commerce</div>
-                <div class="desc">
-                    Aimed at improving both my frontend and backend development skills, as well as communication skills
-                    with my colleagues and customers. Have worked in a real Agile environment and created a new
-                    Dashboard for the Support Team. The new skills I have learned are: Magento 2, Laravel, SASS,
-                    Vue.js 2 and Knockout.js.
-                </div>
-                <div class="timeperiod">FEB 2018 - JUN 2018</div>
-                <div class="title">Intern Frontend Developer</div>
-                <div class="location">DiGidot</div>
-                <div class="desc">
-                    Aimed at improving my frontend skills by creating a Web Installation panel for the DiGidot C4
-                    hardware controllers. Designed and developed the installation panel in HTML5, CSS and JavaScript and
-                    worked with API calls.
-                </div>
-                <div class="timeperiod">SEP 2016 - JAN 2017</div>
-                <div class="title">Intern Game Developer</div>
-                <div class="location">Kenneth & Koh</div>
-                <div class="desc">
-                    Aimed at improving my teamwork skills, as well as learning to work in a company setting. Improved
-                    my programming skills by creating a mobile and desktop game in Unity with C# and helped the
-                    developer team in testing their software.
-                </div>
-                <div class="timeperiod">JAN 2015 - PRESENT</div>
-                <div class="title">Cashier</div>
-                <div class="location">Deugd Erdem</div>
-                <div class="desc">
-                    Worked as a cashier with a 0 hour contract to improve my communication skills with customers, while
-                    earning some pocket money and expanding my network.
+                <div v-for="xp in getExperience()" :key="xp.role">
+                    <div class="timeperiod">{{xp.startdate}} - {{xp.enddate}}</div>
+                    <div class="title">{{xp.role}}</div>
+                    <div class="location">{{xp.company}}</div>
+                    <div class="desc">{{xp.desc}}</div>
                 </div>
             </div>
             <div class="vertical_names">
@@ -77,20 +51,11 @@
                 </div>
             </div>
             <div class="education">
-                <div class="timeperiod">SEP 2018 - PRESENT</div>
-                <div class="title">Software Engineering</div>
-                <div class="location">Amsterdam University of Applied Science</div>
-                <div class="desc">
-                    Aimed at improving my skills in programming and in the business field, as well as expanding my
-                    network and keep having fun with my hobby projects. The new skills I have learned are: Java, NoSQL,
-                    Angular, TypeScript, Kotlin and Android Development.
-                </div>
-                <div class="timeperiod">SEP 2015 - JUN 2018</div>
-                <div class="title">Application Developer</div>
-                <div class="location">Regio College Zaandam</div>
-                <div class="desc">
-                    Aimed at getting started with programming and mastering the teamleader role for grouped projects.
-                    The new skills I have learned are: Leadership, HTML5, CSS3, JavaScript, C#, PHP, MySQL and ASP.NET.
+                <div v-for="edu in getEducation()" :key="edu.role">
+                    <div class="timeperiod">{{edu.startdate}} - {{edu.enddate}}</div>
+                    <div class="title">{{edu.role}}</div>
+                    <div class="location">{{edu.company}}</div>
+                    <div class="desc">{{edu.desc}}</div>
                 </div>
                 <div class="qrcode">
                     <img alt="qrcode" src="../../public/img/company/qr.png">
@@ -173,11 +138,20 @@
 </template>
 
 <script>
+import timeline from "../../public/data/timeline.json"
 import Stars from "@/components/Stars";
 
 export default {
     name: "CV",
-    components: {Stars}
+    components: {Stars},
+    methods: {
+        getEducation() {
+            return timeline.filter(x => x.type === "Study")
+        },
+        getExperience() {
+            return timeline.filter(x => x.type === "Internship")
+        }
+    }
 }
 </script>
 
@@ -200,6 +174,10 @@ html body #app #cv {
     font-family: Arial, serif;
     font-size: 12px;
     padding: 16px;
+
+    .capital {
+        text-transform: uppercase;
+    }
 
     .color-red {
         color: rgba($brilliant-red, 0.9);
@@ -271,7 +249,7 @@ html body #app #cv {
         }
 
         .aboutme {
-            width: 365px;
+            width: 330px;
 
             .title {
                 font-size: 20px;
@@ -304,11 +282,12 @@ html body #app #cv {
             display: flex;
             flex-direction: column;
 
-            > div {
+            div > div {
                 margin-bottom: 4px;
             }
 
             .timeperiod {
+                display: inline-flex;
                 font-size: 12px;
                 font-weight: bolder;
                 background: linear-gradient(90deg, rgba($brilliant-blue, 0.6) 0%, rgba($brilliant-red, 0.6) 100%);
