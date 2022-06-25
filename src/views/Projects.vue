@@ -191,9 +191,13 @@ a {
     margin: 0 4px;
 
     .icon {
-        color: white;
+        color: black;
         width: 20px;
         height: 20px;
     }
+}
+
+#app.dark a .icon {
+    color: white;
 }
 </style>
