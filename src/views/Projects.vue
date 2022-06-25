@@ -42,7 +42,7 @@
                     <div class="carousel-languages">
                         <img v-for="skill in getLanguages(p.stack)"
                              :key="skill.name"
-                             :class="'star'+skill.stars"
+                             :class="'c'+skill.color"
                              :data-src="skill.img"
                              :alt="skill.name"/>
                     </div>
@@ -164,23 +164,23 @@ export default {
                 border-radius: 12px;
             }
 
-            .star5 {
+            .c1 {
                 background-color: $brilliant-red;
             }
 
-            .star4 {
+            .c2 {
                 background-color: $brilliant-blue;
             }
 
-            .star3 {
+            .c3 {
                 background-color: $brilliant-green;
             }
 
-            .star2 {
+            .c4 {
                 background-color: $brilliant-orange;
             }
 
-            .star1 {
+            .c5 {
                 background-color: $dark5;
             }
         }

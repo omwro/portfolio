@@ -4,7 +4,7 @@
     "name": "js",
     "display_name": "JavaScript",
     "img": "./img/language/js.png",
-    "stars": 5,
+    "color": 1,
     "xp": [
       {
         "months": 30,
@@ -21,7 +21,7 @@
     "name": "html",
     "display_name": "HTML5",
     "img": "./img/language/html.png",
-    "stars": 5,
+    "color": 1,
     "xp": [
       {
         "months": 30,
@@ -38,7 +38,7 @@
     "name": "php",
     "display_name": "PHP7",
     "img": "./img/language/php.png",
-    "stars": 4,
+    "color": 1,
     "xp": [
       {
         "months": 24,
@@ -55,7 +55,7 @@
     "name": "java",
     "display_name": "Java11",
     "img": "./img/language/java.png",
-    "stars": 4,
+    "color": 1,
     "xp": [
       {
         "months": 6,
@@ -76,7 +76,7 @@
     "name": "css",
     "display_name": "CSS3",
     "img": "./img/language/css.png",
-    "stars": 4,
+    "color": 1,
     "xp": [
       {
         "months": 30,
@@ -93,7 +93,7 @@
     "name": "ts",
     "display_name": "Typescript",
     "img": "./img/language/ts.png",
-    "stars": 3,
+    "color": 1,
     "xp": [
       {
         "months": 6,
@@ -110,7 +110,7 @@
     "name": "kotlin",
     "display_name": "Kotlin",
     "img": "./img/language/kotlin.png",
-    "stars": 3,
+    "color": 1,
     "xp": [
       {
         "months": 6,
@@ -123,7 +123,7 @@
     "name": "python",
     "display_name": "Python",
     "img": "./img/language/python.png",
-    "stars": 3,
+    "color": 1,
     "xp": [
       {
         "months": 6,
@@ -136,7 +136,7 @@
     "name": "node",
     "display_name": "NodeJs",
     "img": "./img/language/node.png",
-    "stars": 2,
+    "color": 1,
     "xp": [
       {
         "months": 1,
@@ -149,7 +149,7 @@
     "name": "csharp",
     "display_name": "C#",
     "img": "./img/language/csharp.png",
-    "stars": 1,
+    "color": 1,
     "xp": [
       {
         "months": 12,
@@ -166,7 +166,7 @@
     "name": "vue",
     "display_name": "Vue.Js 2",
     "img": "./img/language/vue.png",
-    "stars": 4,
+    "color": 2,
     "xp": [
       {
         "months": 3,
@@ -187,7 +187,7 @@
     "name": "jquery",
     "display_name": "jQuery",
     "img": "./img/language/jquery.png",
-    "stars": 3,
+    "color": 2,
     "xp": [
       {
         "months": 18,
@@ -204,7 +204,7 @@
     "name": "angular",
     "display_name": "Angular 8",
     "img": "./img/language/angular.png",
-    "stars": 3,
+    "color": 2,
     "xp": [
       {
         "months": 6,
@@ -217,7 +217,7 @@
     "name": "react",
     "display_name": "React.js",
     "img": "./img/language/react.png",
-    "stars": 3,
+    "color": 2,
     "xp": [
       {
         "months": 6,
@@ -230,7 +230,7 @@
     "name": "spring",
     "display_name": "Spring Boot",
     "img": "./img/language/spring.png",
-    "stars": 3,
+    "color": 2,
     "xp": [
       {
         "months": 12,
@@ -243,7 +243,7 @@
     "name": "sass",
     "display_name": "Sass/Scss",
     "img": "./img/language/sass.png",
-    "stars": 3,
+    "color": 2,
     "xp": [
       {
         "months": 6,
@@ -260,7 +260,7 @@
     "name": "magento",
     "display_name": "Magento 2",
     "img": "./img/language/magento.png",
-    "stars": 2,
+    "color": 2,
     "xp": [
       {
         "months": 6,
@@ -273,7 +273,7 @@
     "name": "laravel",
     "display_name": "Laravel",
     "img": "./img/language/laravel.png",
-    "stars": 2,
+    "color": 2,
     "xp": [
       {
         "months": 2,
@@ -286,7 +286,7 @@
     "name": "bootstrap",
     "display_name": "Bootstrap",
     "img": "./img/language/bootstrap.png",
-    "stars": 2,
+    "color": 2,
     "xp": [
       {
         "months": 12,
@@ -299,7 +299,7 @@
     "name": "knockoutjs",
     "display_name": "Knockout.js",
     "img": "./img/language/knockoutjs.png",
-    "stars": 1,
+    "color": 2,
     "xp": [
       {
         "months": 1,
@@ -312,7 +312,7 @@
     "name": "aspnet",
     "display_name": "ASP.Net",
     "img": "./img/language/aspnet.png",
-    "stars": 1,
+    "color": 2,
     "xp": [
       {
         "months": 12,
@@ -325,7 +325,7 @@
     "name": "quarkus",
     "display_name": "Quarkus",
     "img": "./img/language/quarkus.png",
-    "stars": 1,
+    "color": 2,
     "xp": [
       {
         "months": 1,
@@ -338,7 +338,7 @@
     "name": "wordpress",
     "display_name": "WordPress",
     "img": "./img/language/wordpress.png",
-    "stars": 1,
+    "color": 2,
     "xp": [
       {
         "months": 1,
@@ -351,7 +351,7 @@
     "name": "windows",
     "display_name": "Windows",
     "img": "./img/language/windows.png",
-    "stars": 4,
+    "color": 3,
     "xp": [
       {
         "months": 180,
@@ -364,7 +364,7 @@
     "name": "mysql",
     "display_name": "MySQL",
     "img": "./img/language/mysql.png",
-    "stars": 4,
+    "color": 3,
     "xp": [
       {
         "months": 24,
@@ -381,7 +381,7 @@
     "name": "git",
     "display_name": "Git",
     "img": "./img/language/git.png",
-    "stars": 3,
+    "color": 3,
     "xp": [
       {
         "months": 36,
@@ -394,7 +394,7 @@
     "name": "macos",
     "display_name": "MacOS",
     "img": "./img/language/macos.png",
-    "stars": 2,
+    "color": 3,
     "xp": [
       {
         "months": 6,
@@ -407,7 +407,7 @@
     "name": "rpi",
     "display_name": "Raspberry Pi",
     "img": "./img/language/rpi.png",
-    "stars": 2,
+    "color": 3,
     "xp": [
       {
         "months": 3,
@@ -420,7 +420,7 @@
     "name": "apache",
     "display_name": "Apache 2",
     "img": "./img/language/apache.png",
-    "stars": 2,
+    "color": 3,
     "xp": [
       {
         "months": 6,
@@ -433,7 +433,7 @@
     "name": "mongodb",
     "display_name": "MongoDB",
     "img": "./img/language/mongodb.png",
-    "stars": 2,
+    "color": 3,
     "xp": [
       {
         "months": 3,
@@ -446,7 +446,7 @@
     "name": "firebase",
     "display_name": "Firebase",
     "img": "./img/language/firebase.png",
-    "stars": 2,
+    "color": 3,
     "xp": [
       {
         "months": 3,
