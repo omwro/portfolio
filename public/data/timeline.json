@@ -39,7 +39,7 @@
   {
     "type": "Internship",
     "role": "Intern Developer",
-    "company": "Infi",
+    "company": "Infi Amsterdam",
     "desc": "Aimed at improving my backend skills by writing a thesis about gaining insights into KPI's with EventStore. Using Event Sourcing to fetch data with cron jobs. Also made an user interface.",
     "startdate": "FEB 2022",
     "enddate": "JUN 2022",
@@ -64,7 +64,7 @@
       "php",
       "magento",
       "laravel",
-      "knockout"
+      "knockoutjs"
     ]
   },
   {

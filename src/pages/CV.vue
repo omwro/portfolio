@@ -39,6 +39,13 @@
                     <div class="title">{{xp.role}}</div>
                     <div class="location">{{xp.company}}</div>
                     <div class="desc">{{xp.desc}}</div>
+                    <div class="stack-container right">
+                        <img v-for="s in xp.stack"
+                             :key="s"
+                             :src="getSkillimg(s)"
+                             :alt="s"
+                             class="stack"/>
+                    </div>
                 </div>
             </div>
             <div class="vertical_names">
@@ -56,6 +63,13 @@
                     <div class="title">{{edu.role}}</div>
                     <div class="location">{{edu.company}}</div>
                     <div class="desc">{{edu.desc}}</div>
+                    <div class="stack-container left">
+                        <img v-for="s in edu.stack"
+                             :key="s"
+                             :src="getSkillimg(s)"
+                             :alt="s"
+                             class="stack"/>
+                    </div>
                 </div>
                 <div class="qrcode">
                     <img alt="qrcode" src="../../public/img/company/qr.png">
@@ -139,6 +153,7 @@
 
 <script>
 import timeline from "../../public/data/timeline.json"
+import skills from "../../public/data/skills.json"
 import Stars from "@/components/Stars";
 
 export default {
@@ -150,6 +165,9 @@ export default {
         },
         getExperience() {
             return timeline.filter(x => x.type === "Internship")
+        },
+        getSkillimg(name) {
+            return skills.find(x => x.name === name).img
         }
     }
 }
@@ -204,7 +222,7 @@ html body #app #cv {
         display: flex;
         flex-direction: row;
         color: $light2;
-        margin-bottom: 32px;
+        margin-bottom: 16px;
 
         .profile-img {
             display: flex;
@@ -310,6 +328,26 @@ html body #app #cv {
                 color: $light5;
                 line-height: 1.4;
             }
+
+            .stack-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                &.left {
+                    justify-content: left;
+                }
+
+                &.right {
+                    justify-content: right;
+                }
+
+                .stack {
+                    height: 24px;
+                    width: 24px;
+                    margin: 0 4px 4px;
+                }
+            }
         }
 
         .experience {
@@ -369,7 +407,7 @@ html body #app #cv {
         width: calc(100% - 16px);
         padding: 8px;
         border-radius: 10px;
-        margin-top: 32px;
+        margin-top: 16px;
         background: linear-gradient(90deg, rgba($brilliant-red, 0.4) 0%, rgba($brilliant-blue, 0.4) 100%);
 
         .title {
