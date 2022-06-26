@@ -27,63 +27,19 @@
 				</div>
 			</div>
 			<h1 class="small">{{ $t('skills.projects') }}</h1>
-			<div v-lazy-container="{ selector: 'img' }" class="img-container">
-				<div>
-					<img class="c4" data-src=./img/language/web.png alt="web"/>
-					<div>Website Builder</div>
-				</div>
-				<div>
-					<img class="c4" data-src=./img/language/pcbuild.png alt="pcbuild"/>
-					<div>Custom Desktop PC Builder</div>
-				</div>
-				<div>
-					<img class="c4" data-src=./img/language/android.png alt="android"/>
-					<div>Android App</div>
-				</div>
-				<div>
-					<img class="c4" data-src=./img/language/api.png alt="api"/>
-					<div>Web API</div>
-				</div>
-				<div>
-					<img class="c4" data-src=./img/language/webscraper.png alt="webscraper"/>
-					<div>Web Scraper</div>
-				</div>
-				<div>
-					<img class="c4" data-src=./img/language/minecraft.png alt="minecraft"/>
-					<div>Minecraft Plugin</div>
-				</div>
-				<div>
-					<img class="c4" data-src=./img/language/discord.png alt="discord"/>
-					<div>Discord Bot</div>
-				</div>
-				<div>
-					<img class="c4" data-src=./img/language/unity.png alt="unity"/>
-					<div>Unity Game</div>
-				</div>
-				<div>
-					<img class="c4" data-src=./img/language/magento.png alt="unity"/>
-					<div>E-Commerce Webshop</div>
-				</div>
-			</div>
+            <div v-lazy-container="{ selector: 'img' }" class="img-container">
+                <div class="block" v-for="skill in getProjects()" :key="skill.name">
+                    <img :class="'c'+skill.color" :data-src="skill.img" :alt="skill.name"/>
+                    <div>{{ skill.display_name }}</div>
+                </div>
+            </div>
 			<h1 class="small">{{ $t('skills.competencies') }}</h1>
-			<div v-lazy-container="{ selector: 'img' }" class="img-container">
-				<div>
-					<img class="c5" data-src=./img/language/fist.png alt="fist"/>
-					<div>{{ $t('skills.hardworker') }}</div>
-				</div>
-				<div>
-					<img class="c5" data-src=./img/language/team.png alt="team"/>
-					<div>{{ $t('skills.teamplayer') }}</div>
-				</div>
-				<div>
-					<img class="c5" data-src=./img/language/problem.png alt="problem"/>
-					<div>{{ $t('skills.problemsolving') }}</div>
-				</div>
-				<div>
-					<img class="c5" data-src=./img/language/creative.png alt="light bulb"/>
-					<div>{{ $t('skills.creativity') }}</div>
-				</div>
-			</div>
+            <div v-lazy-container="{ selector: 'img' }" class="img-container">
+                <div class="block" v-for="skill in getCompetencies()" :key="skill.name">
+                    <img :class="'c'+skill.color" :data-src="skill.img" :alt="skill.name"/>
+                    <div>{{ $t(skill.display_name)  }}</div>
+                </div>
+            </div>
 		</div>
 	</section>
 </template>
@@ -110,6 +66,12 @@ export default {
 		},
 		getEnvironments() {
 			return json.filter(x => x.type === "Environments")
+		},
+		getProjects() {
+			return json.filter(x => x.type === "Projects")
+		},
+		getCompetencies() {
+			return json.filter(x => x.type === "Competencies")
 		}
 	}
 }

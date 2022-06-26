@@ -153,7 +153,7 @@ const translations = {
             competencies: "Competenties",
             hardworker: "Harde werker",
             teamplayer: "Team speler",
-            problemsolving: "Probleemoplosser",
+            problemsolving: "Probleem oplosser",
             creativity: "Creatief"
         },
         projects: {

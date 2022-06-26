@@ -5,20 +5,20 @@
                 <img alt="profile picture" src="../../public/img/selfie/selfie-squared.webp">
             </div>
             <div class="information">
-                <div class="name color-red capital">{{$t('general.firstname')}}</div>
-                <div class="name color-blue capital">{{$t('general.lastname')}}</div>
-                <div class="study bold capital">{{$t('general.study')}}</div>
+                <div class="name color-red capital">{{ $t('general.firstname') }}</div>
+                <div class="name color-blue capital">{{ $t('general.lastname') }}</div>
+                <div class="study bold capital">{{ $t('general.study') }}</div>
                 <div>
                     <span class="bold">Age:</span>
-                    <span class="color-grey">{{$t('general.age')}}</span>
+                    <span class="color-grey">{{ $t('general.age') }}</span>
                 </div>
                 <div>
                     <span class="bold">Area:</span>
-                    <span class="color-grey">{{$t('general.area')}}</span>
+                    <span class="color-grey">{{ $t('general.area') }}</span>
                 </div>
                 <div>
                     <span class="bold">Email:</span>
-                    <span class="color-grey">{{$t('general.email')}}</span>
+                    <span class="color-grey">{{ $t('general.email') }}</span>
                 </div>
             </div>
             <div class="aboutme">
@@ -32,37 +32,14 @@
                 </div>
             </div>
         </div>
-        <div class="timeline">
-            <div class="experience">
-                <div v-for="xp in getExperience()" :key="xp.role">
-                    <div class="timeperiod">{{xp.startdate}} - {{xp.enddate}}</div>
-                    <div class="title">{{xp.role}}</div>
-                    <div class="location">{{xp.company}}</div>
-                    <div class="desc">{{xp.desc}}</div>
-                    <div class="stack-container right">
-                        <img v-for="s in xp.stack"
-                             :key="s"
-                             :src="getSkillimg(s)"
-                             :alt="s"
-                             class="stack"/>
-                    </div>
-                </div>
-            </div>
-            <div class="vertical_names">
-                <div>
-                    <div>EXPERIENCE</div>
-                </div>
-                <div>
-                    <div>EDUCATION</div>
-                    <div>WEBSITE</div>
-                </div>
-            </div>
-            <div class="education">
-                <div v-for="edu in getEducation()" :key="edu.role">
-                    <div class="timeperiod">{{edu.startdate}} - {{edu.enddate}}</div>
-                    <div class="title">{{edu.role}}</div>
-                    <div class="location">{{edu.company}}</div>
-                    <div class="desc">{{edu.desc}}</div>
+        <div class="container">
+            <div class="container-title capital">Education</div>
+            <div class="content">
+                <div class="content-card" v-for="edu in getEducation()" :key="edu.role">
+                    <div class="timeperiod">{{ edu.startdate }} - {{ edu.enddate }}</div>
+                    <div class="title">{{ edu.role }}</div>
+                    <div class="location">{{ edu.company }}</div>
+                    <div class="desc">{{ edu.desc }}</div>
                     <div class="stack-container left">
                         <img v-for="s in edu.stack"
                              :key="s"
@@ -71,81 +48,40 @@
                              class="stack"/>
                     </div>
                 </div>
-                <div class="qrcode">
-                    <img alt="qrcode" src="../../public/img/company/qr.png">
-                    <div>https://www.omererdem.nl</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-title capital">Experience</div>
+            <div class="content">
+                <div class="content-card" v-for="xp in getExperience()" :key="xp.role">
+                    <div class="timeperiod">{{ xp.startdate }} - {{ xp.enddate }}</div>
+                    <div class="title">{{ xp.role }}</div>
+                    <div class="location">{{ xp.company }}</div>
+                    <div class="desc">{{ xp.desc }}</div>
+                    <div class="stack-container left">
+                        <img v-for="s in xp.stack"
+                             :key="s"
+                             :src="getSkillimg(s)"
+                             :alt="s"
+                             class="stack"/>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="skills">
-            <div class="title">SKILLS</div>
-            <div class="body">
-                <div class="col">
-                    <div>
-                        <div>HTML5</div>
-                        <img alt="html" src="../../public/img/language/html.png"/>
-                        <stars stars="9"/>
-                    </div>
-                    <div>
-                        <div>JAVASCRIPT</div>
-                        <img alt="javascript" src="../../public/img/language/js.png"/>
-                        <stars stars="9"/>
-                    </div>
-                    <div>
-                        <div>PHP</div>
-                        <img alt="php" src="../../public/img/language/php.png"/>
-                        <stars stars="8"/>
-                    </div>
-                    <div>
-                        <div>JAVA</div>
-                        <img alt="java" src="../../public/img/language/java.png"/>
-                        <stars stars="8"/>
+        <div class="container-half">
+            <div class="container half">
+                <div class="container-title capital">Skills</div>
+                <div class="content">
+                    <div class="skill" v-for="cv in getCVSkills()" :key="cv.name">
+                        <div class="displayname">{{ cv.display_name }}</div>
+                        <img :src="cv.img" :alt="cv.name"/>
+                        <div>{{getExperienceString(cv)}}</div>
                     </div>
                 </div>
-                <div class="col">
-                    <div>
-                        <div>CSS3</div>
-                        <img alt="css3" src="../../public/img/language/css.png"/>
-                        <stars stars="8"/>
-                    </div>
-                    <div>
-                        <div>VUE.JS 2</div>
-                        <img alt="vuejs" src="../../public/img/language/vue.png"/>
-                        <stars stars="8"/>
-                    </div>
-                    <div>
-                        <div>ANGULAR 8</div>
-                        <img alt="angular" src="../../public/img/language/angular.png"/>
-                        <stars stars="6"/>
-                    </div>
-                    <div>
-                        <div>MYSQL</div>
-                        <img alt="mysql" src="../../public/img/language/mysql.png"/>
-                        <stars stars="6"/>
-                    </div>
-                </div>
-                <div class="col">
-                    <div>
-                        <div>HARD WORKER</div>
-                        <img alt="fist" src="../../public/img/language/fist.png"/>
-                        <stars stars="9"/>
-                    </div>
-                    <div>
-                        <div>TEAM PLAYER</div>
-                        <img alt="team" src="../../public/img/language/team.png"/>
-                        <stars stars="8"/>
-                    </div>
-                    <div>
-                        <div>PROBLEM SOLVER</div>
-                        <img alt="problem" src="../../public/img/language/problem.png"/>
-                        <stars stars="8"/>
-                    </div>
-                    <div>
-                        <div>CREATIVITY</div>
-                        <img alt="creative" src="../../public/img/language/creative.png"/>
-                        <stars stars="8"/>
-                    </div>
-                </div>
+            </div>
+            <div class="qrcode">
+                <img src="../../public/img/company/qr.png" alt="qrcode"/>
+                <div>Learn more about me at: https://www.omererdem.nl</div>
             </div>
         </div>
     </div>
@@ -154,11 +90,9 @@
 <script>
 import timeline from "../../public/data/timeline.json"
 import skills from "../../public/data/skills.json"
-import Stars from "@/components/Stars";
 
 export default {
     name: "CV",
-    components: {Stars},
     methods: {
         getEducation() {
             return timeline.filter(x => x.type === "Study")
@@ -168,6 +102,20 @@ export default {
         },
         getSkillimg(name) {
             return skills.find(x => x.name === name).img
+        },
+        getCVSkills() {
+            return skills.filter(x => x.oncv === true)
+        },
+        getCompetencies() {
+            return skills.filter(x => x.type === "Competencies")
+        },
+        getExperienceString(skill) {
+            const totalxp = skill.xp
+                .map(x => x.months)
+                .reduce((prevValue, currValue) => prevValue + currValue)
+            let years = Math.floor(totalxp / 12)
+            if (years) return years+" years"
+            return totalxp+" months"
         }
     }
 }
@@ -231,7 +179,7 @@ html body #app #cv {
             overflow: hidden;
             width: 200px;
             height: 200px;
-            background: linear-gradient(180deg, rgba($brilliant-red, 0.9) 0%, rgba($brilliant-blue, 0.9) 100%);
+            background: linear-gradient(90deg, rgba($brilliant-red, 0.9) 0%, rgba($brilliant-blue, 0.9) 100%);
             border-radius: 200px;
             margin-right: 16px;
 
@@ -282,169 +230,129 @@ html body #app #cv {
         }
     }
 
-    .timeline {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        color: $light2;
-        width: calc(100% - 16px);
-        padding: 8px;
+    .container {
+        padding: 5px 10px 10px;
         border-radius: 10px;
         background: linear-gradient(90deg, rgba($brilliant-red, 0.4) 0%, rgba($brilliant-blue, 0.4) 100%);
+        color: $light2;
+        margin-bottom: 16px;
 
-        .experience, .education {
-            width: calc(100% - 100px / 2);
+        &.half {
+            width: 100%;
         }
 
-        .experience, .vertical_names, .education {
+        .container-title {
+            font-size: 22px;
+            font-weight: bolder;
+            text-align: center;
+            padding-bottom: 5px;
+        }
+
+        .content {
+            background: $dark1;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 10px;
+            border-radius: 10px;
+            justify-content: space-between;
 
-            div > div {
+            .content-card {
+                width: 48%;
                 margin-bottom: 4px;
+
+                > div {
+                    margin-bottom: 4px;
+                }
+
+                .timeperiod {
+                    display: inline-flex;
+                    font-size: 12px;
+                    font-weight: bolder;
+                    background: linear-gradient(90deg, rgba($brilliant-red, 0.6) 0%, rgba($brilliant-blue, 0.6) 100%);
+                    padding: 6px;
+                    border-radius: 25px;
+                }
+
+                .title {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+
+                .location {
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+
+                .desc {
+                    color: $light5;
+                    line-height: 1.4;
+                }
+
+                .stack-container {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    &.left {
+                        justify-content: left;
+                    }
+
+                    &.right {
+                        justify-content: right;
+                    }
+
+                    .stack {
+                        height: 24px;
+                        width: 24px;
+                        margin: 0 4px 4px;
+                    }
+                }
             }
 
-            .timeperiod {
-                display: inline-flex;
-                font-size: 12px;
-                font-weight: bolder;
-                background: linear-gradient(90deg, rgba($brilliant-blue, 0.6) 0%, rgba($brilliant-red, 0.6) 100%);
-                padding: 6px;
-                border-radius: 25px;
-                margin-top: 8px;
-            }
-
-            .title {
-                font-size: 16px;
-                font-weight: bold;
-            }
-
-            .location {
-                font-size: 12px;
-                font-weight: bold;
-            }
-
-            .desc {
-                color: $light5;
-                line-height: 1.4;
-            }
-
-            .stack-container {
+            .skill {
+                width: 50%;
                 display: flex;
                 flex-direction: row;
-                flex-wrap: wrap;
-
-                &.left {
-                    justify-content: left;
-                }
-
-                &.right {
-                    justify-content: right;
-                }
-
-                .stack {
-                    height: 24px;
-                    width: 24px;
-                    margin: 0 4px 4px;
-                }
-            }
-        }
-
-        .experience {
-            text-align: right;
-            margin-left: auto;
-
-            .timeperiod {
-                margin-left: auto;
-            }
-        }
-
-        .vertical_names {
-            flex-direction: row;
-
-            > div {
-                display: flex;
-                justify-content: space-around;
-                writing-mode: vertical-rl;
-                text-orientation: mixed;
-                font-weight: bolder;
-                font-size: 22px;
-                padding: 8px;
-                text-align: center;
-            }
-        }
-
-        .education {
-            text-align: left;
-            margin-right: auto;
-
-            .timeperiod {
-                margin-right: auto;
-            }
-
-            .qrcode {
-                text-align: center;
-                margin-top: 32px;
-                font-size: 14px;
-
-                img {
-                    width: 200px;
-                    height: 200px;
-                }
 
                 div {
-                    padding-top: 8px;
+                    font-size: 16px;
+                    align-self: center;
+                }
+
+                .displayname {
+                    width: 75px;
+                    text-align: right;
+                }
+
+                img {
+                    width: 32px;
+                    height: 32px;
+                    margin: 5px;
                 }
             }
         }
     }
 
-    .skills {
+    .container-half {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
-        color: $light2;
-        width: calc(100% - 16px);
-        padding: 8px;
-        border-radius: 10px;
-        margin-top: 16px;
-        background: linear-gradient(90deg, rgba($brilliant-red, 0.4) 0%, rgba($brilliant-blue, 0.4) 100%);
+    }
 
-        .title {
-            font-size: 22px;
-            font-weight: bolder;
-            text-align: center;
-            width: 100%;
-            margin-bottom: 8px;
+    .qrcode {
+        text-align: center;
+        font-size: 14px;
+        margin: auto ;
+
+        img {
+            width: 200px;
+            height: 200px;
         }
 
-        .body {
-            display: flex;
-            flex-direction: row;
-            font-size: 16px;
-            justify-content: space-around;
-
-            .col {
-                display: flex;
-                flex-direction: column;
-
-                > div {
-                    display: flex;
-                    flex-direction: row;
-                    text-align: right;
-                    margin-left: auto;
-
-                    > * {
-                        padding: 4px;
-                        align-self: center;
-                    }
-                }
-            }
-
-            img {
-                width: 32px;
-                height: 32px;
-            }
+        div {
+            color: $light2;
+            padding-top: 4px;
         }
     }
 }
