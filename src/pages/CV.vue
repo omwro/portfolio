@@ -314,14 +314,15 @@ html body #app #cv {
                 width: 50%;
                 display: flex;
                 flex-direction: row;
+                justify-content: center;
 
                 div {
                     font-size: 16px;
                     align-self: center;
+                    width: 75px;
                 }
 
                 .displayname {
-                    width: 75px;
                     text-align: right;
                 }
 

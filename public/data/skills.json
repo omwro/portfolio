@@ -13,7 +13,7 @@
       },
       {
         "months": 30,
-        "desc": "HvA 1e, 2e, 3e jaar"
+        "desc": "HvA"
       }
     ]
   },
@@ -31,7 +31,7 @@
       },
       {
         "months": 30,
-        "desc": "HvA 1e, 2e, 3e jaar"
+        "desc": "HvA"
       }
     ]
   },
@@ -49,7 +49,7 @@
       },
       {
         "months": 30,
-        "desc": "HvA 1e, 2e, 3e jaar"
+        "desc": "HvA"
       }
     ]
   },
@@ -80,16 +80,8 @@
     "oncv": true,
     "xp": [
       {
-        "months": 6,
-        "desc": "HvA1 oop & pad"
-      },
-      {
-        "months": 6,
-        "desc": "HvA2 ads & ewa"
-      },
-      {
-        "months": 6,
-        "desc": "HvA3 barber2u"
+        "months": 18,
+        "desc": "HvA oop & pad, ads & ewa, barber2u"
       }
     ]
   },
@@ -103,11 +95,7 @@
     "xp": [
       {
         "months": 6,
-        "desc": "HvA2 angular"
-      },
-      {
-        "months": 6,
-        "desc": "HvA3 react"
+        "desc": "HvA angular, barber2u"
       }
     ]
   },
@@ -136,6 +124,10 @@
       {
         "months": 6,
         "desc": "Hva Data Science"
+      },
+      {
+        "months": 1,
+        "desc": "fastapi"
       }
     ]
   },
@@ -168,6 +160,10 @@
       {
         "months": 6,
         "desc": "Kenneth&Koh"
+      },
+      {
+        "months": 6,
+        "desc": "Infi"
       }
     ]
   },
@@ -188,8 +184,16 @@
         "desc": "hvablend"
       },
       {
-        "months": 3,
-        "desc": "hobby projects t/m 2021"
+        "months": 2,
+        "desc": "Portfolio"
+      },
+      {
+        "months": 1,
+        "desc": "Metafy"
+      },
+      {
+        "months": 1,
+        "desc": "Other projects (zamfir, cv)"
       }
     ]
   },
@@ -235,7 +239,7 @@
     "xp": [
       {
         "months": 6,
-        "desc": "hva3"
+        "desc": "hva barber2u"
       }
     ]
   },
@@ -268,6 +272,10 @@
       {
         "months": 6,
         "desc": "barber2u"
+      },
+      {
+        "months": 2,
+        "desc": "portfolio"
       }
     ]
   },
@@ -338,6 +346,10 @@
       {
         "months": 12,
         "desc": "Regio college"
+      },
+      {
+        "months": 1,
+        "desc": "Infi"
       }
     ]
   },
@@ -410,8 +422,8 @@
     "oncv": false,
     "xp": [
       {
-        "months": 36,
-        "desc": "hva1,2,3"
+        "months": 48,
+        "desc": "hva"
       }
     ]
   },
@@ -482,6 +494,20 @@
       {
         "months": 3,
         "desc": "webframeworks & mobile dev"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "eventstore",
+    "display_name": "Event Store",
+    "img": "./img/language/eventstore.png",
+    "color": 3,
+    "oncv": false,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "Infi"
       }
     ]
   },
