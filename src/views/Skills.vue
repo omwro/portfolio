@@ -59,19 +59,19 @@ export default {
 			return totalxp+"m XP"
 		},
 		getLanguages() {
-			return json.filter(x => x.type === "Language")
+			return json.filter(x => x.type === "Language" && x.show_portfolio === true)
 		},
 		getFrameworks() {
-			return json.filter(x => x.type === "Framework")
+			return json.filter(x => x.type === "Framework" && x.show_portfolio === true)
 		},
 		getEnvironments() {
-			return json.filter(x => x.type === "Environments")
+			return json.filter(x => x.type === "Environments" && x.show_portfolio === true)
 		},
 		getProjects() {
-			return json.filter(x => x.type === "Projects")
+			return json.filter(x => x.type === "Projects" && x.show_portfolio === true)
 		},
 		getCompetencies() {
-			return json.filter(x => x.type === "Competencies")
+			return json.filter(x => x.type === "Competencies" && x.show_portfolio === true)
 		}
 	}
 }

@@ -5,7 +5,8 @@
     "display_name": "HTML5",
     "img": "./img/language/html.png",
     "color": 1,
-    "oncv": true,
+    "show_portfolio": true,
+    "show_cv": true,
     "xp": [
       {
         "months": 30,
@@ -23,7 +24,8 @@
     "display_name": "CSS3",
     "img": "./img/language/css.png",
     "color": 1,
-    "oncv": true,
+    "show_portfolio": true,
+    "show_cv": true,
     "xp": [
       {
         "months": 30,
@@ -41,7 +43,8 @@
     "display_name": "JavaScript",
     "img": "./img/language/js.png",
     "color": 1,
-    "oncv": true,
+    "show_portfolio": true,
+    "show_cv": true,
     "xp": [
       {
         "months": 30,
@@ -59,7 +62,8 @@
     "display_name": "PHP7",
     "img": "./img/language/php.png",
     "color": 1,
-    "oncv": true,
+    "show_portfolio": true,
+    "show_cv": true,
     "xp": [
       {
         "months": 24,
@@ -77,7 +81,8 @@
     "display_name": "Java11",
     "img": "./img/language/java.png",
     "color": 1,
-    "oncv": true,
+    "show_portfolio": true,
+    "show_cv": true,
     "xp": [
       {
         "months": 18,
@@ -91,7 +96,8 @@
     "display_name": "Typescript",
     "img": "./img/language/ts.png",
     "color": 1,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -105,7 +111,8 @@
     "display_name": "Kotlin",
     "img": "./img/language/kotlin.png",
     "color": 1,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -119,7 +126,8 @@
     "display_name": "Python",
     "img": "./img/language/python.png",
     "color": 1,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -137,7 +145,8 @@
     "display_name": "NodeJs",
     "img": "./img/language/node.png",
     "color": 1,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 1,
@@ -151,7 +160,8 @@
     "display_name": "C#",
     "img": "./img/language/csharp.png",
     "color": 1,
-    "oncv": true,
+    "show_portfolio": true,
+    "show_cv": true,
     "xp": [
       {
         "months": 12,
@@ -173,7 +183,8 @@
     "display_name": "Vue.Js 2",
     "img": "./img/language/vue.png",
     "color": 2,
-    "oncv": true,
+    "show_portfolio": true,
+    "show_cv": true,
     "xp": [
       {
         "months": 3,
@@ -203,7 +214,8 @@
     "display_name": "jQuery",
     "img": "./img/language/jquery.png",
     "color": 2,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 18,
@@ -221,7 +233,8 @@
     "display_name": "Angular 8",
     "img": "./img/language/angular.png",
     "color": 2,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -235,7 +248,8 @@
     "display_name": "React.js",
     "img": "./img/language/react.png",
     "color": 2,
-    "oncv": true,
+    "show_portfolio": true,
+    "show_cv": true,
     "xp": [
       {
         "months": 6,
@@ -249,7 +263,8 @@
     "display_name": "Spring Boot",
     "img": "./img/language/spring.png",
     "color": 2,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 12,
@@ -263,7 +278,8 @@
     "display_name": "Sass/Scss",
     "img": "./img/language/sass.png",
     "color": 2,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -285,7 +301,8 @@
     "display_name": "Magento 2",
     "img": "./img/language/magento.png",
     "color": 2,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -299,7 +316,8 @@
     "display_name": "Laravel",
     "img": "./img/language/laravel.png",
     "color": 2,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 2,
@@ -313,7 +331,8 @@
     "display_name": "Bootstrap",
     "img": "./img/language/bootstrap.png",
     "color": 2,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 12,
@@ -327,7 +346,8 @@
     "display_name": "Knockout.js",
     "img": "./img/language/knockoutjs.png",
     "color": 2,
-    "oncv": false,
+    "show_portfolio": false,
+    "show_cv": false,
     "xp": [
       {
         "months": 1,
@@ -341,7 +361,8 @@
     "display_name": "ASP.Net",
     "img": "./img/language/aspnet.png",
     "color": 2,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 12,
@@ -359,7 +380,8 @@
     "display_name": "Quarkus",
     "img": "./img/language/quarkus.png",
     "color": 2,
-    "oncv": false,
+    "show_portfolio": false,
+    "show_cv": false,
     "xp": [
       {
         "months": 1,
@@ -373,7 +395,8 @@
     "display_name": "WordPress",
     "img": "./img/language/wordpress.png",
     "color": 2,
-    "oncv": false,
+    "show_portfolio": false,
+    "show_cv": false,
     "xp": [
       {
         "months": 1,
@@ -387,7 +410,8 @@
     "display_name": "Windows",
     "img": "./img/language/windows.png",
     "color": 3,
-    "oncv": false,
+    "show_portfolio": false,
+    "show_cv": false,
     "xp": [
       {
         "months": 180,
@@ -401,7 +425,8 @@
     "display_name": "MySQL",
     "img": "./img/language/mysql.png",
     "color": 3,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 24,
@@ -419,7 +444,8 @@
     "display_name": "Git",
     "img": "./img/language/git.png",
     "color": 3,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 48,
@@ -433,7 +459,8 @@
     "display_name": "MacOS",
     "img": "./img/language/macos.png",
     "color": 3,
-    "oncv": false,
+    "show_portfolio": false,
+    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -447,7 +474,8 @@
     "display_name": "Raspberry Pi",
     "img": "./img/language/rpi.png",
     "color": 3,
-    "oncv": false,
+    "show_portfolio": false,
+    "show_cv": false,
     "xp": [
       {
         "months": 3,
@@ -461,7 +489,8 @@
     "display_name": "Apache 2",
     "img": "./img/language/apache.png",
     "color": 3,
-    "oncv": false,
+    "show_portfolio": false,
+    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -475,7 +504,8 @@
     "display_name": "MongoDB",
     "img": "./img/language/mongodb.png",
     "color": 3,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 3,
@@ -489,7 +519,8 @@
     "display_name": "Firebase",
     "img": "./img/language/firebase.png",
     "color": 3,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 3,
@@ -503,7 +534,8 @@
     "display_name": "Event Store",
     "img": "./img/language/eventstore.png",
     "color": 3,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -517,7 +549,8 @@
     "display_name": "Website Builder",
     "img": "./img/language/web.png",
     "color": 4,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": []
   },
   {
@@ -526,7 +559,8 @@
     "display_name": "Custom Desktop PC Builder",
     "img": "./img/language/pcbuild.png",
     "color": 4,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": []
   },
   {
@@ -535,7 +569,8 @@
     "display_name": "Android App",
     "img": "./img/language/android.png",
     "color": 4,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": []
   },
   {
@@ -544,7 +579,8 @@
     "display_name": "Web API",
     "img": "./img/language/api.png",
     "color": 4,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": []
   },
   {
@@ -553,7 +589,8 @@
     "display_name": "Web Scraper",
     "img": "./img/language/webscraper.png",
     "color": 4,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": []
   },
   {
@@ -562,7 +599,8 @@
     "display_name": "Minecraft Plugin",
     "img": "./img/language/minecraft.png",
     "color": 4,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": []
   },
   {
@@ -571,7 +609,8 @@
     "display_name": "Discord Bot",
     "img": "./img/language/discord.png",
     "color": 4,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": []
   },
   {
@@ -580,7 +619,8 @@
     "display_name": "Unity Game",
     "img": "./img/language/unity.png",
     "color": 4,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": []
   },
   {
@@ -589,7 +629,8 @@
     "display_name": "E-Commerce Webshop",
     "img": "./img/language/magento.png",
     "color": 4,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": []
   },
   {
@@ -598,7 +639,8 @@
     "display_name": "skills.hardworker",
     "img": "./img/language/fist.png",
     "color": 5,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": []
   },
   {
@@ -607,7 +649,8 @@
     "display_name": "skills.teamplayer",
     "img": "./img/language/team.png",
     "color": 5,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": []
   },
   {
@@ -616,7 +659,8 @@
     "display_name": "skills.problemsolving",
     "img": "./img/language/problem.png",
     "color": 5,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": []
   },
   {
@@ -625,7 +669,8 @@
     "display_name": "skills.creativity",
     "img": "./img/language/creative.png",
     "color": 5,
-    "oncv": false,
+    "show_portfolio": true,
+    "show_cv": false,
     "xp": []
   }
 ]

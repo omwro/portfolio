@@ -104,7 +104,7 @@ export default {
             return skills.find(x => x.name === name).img
         },
         getCVSkills() {
-            return skills.filter(x => x.oncv === true)
+            return skills.filter(x => x.show_cv === true)
         },
         getCompetencies() {
             return skills.filter(x => x.type === "Competencies")

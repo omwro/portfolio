@@ -1,23 +1,12 @@
 <template>
     <section id="footer">
-        <div>&copy; 2015 - 2022 Omer Erdem All Rights Reserved</div>
-        <div>{{visitCount}}x visited this year!</div>
+        <div>&copy; 1999 - 2022 Omer Erdem All Rights Reserved</div>
     </section>
 </template>
 
 <script>
 export default {
-    name: "Footer",
-    data: () => {
-        return {
-            visitCount: 0
-        }
-    },
-    async created() {
-        this.visitCount = await this.axios
-            .get("https://api.omererdem.nl/visitor/Portfolio/stats")
-            .then((res) => res.data)
-    }
+    name: "Footer"
 }
 </script>
 
