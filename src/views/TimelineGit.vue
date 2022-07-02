@@ -338,22 +338,22 @@ $hover-color: rgba(white, .1);
                 border-radius: 2px;
 
                 &.color1 {
-                    background-color: $accent-dark;
+                    background-color: $accent-tp;
                     border: solid 1px $accent;
                 }
 
                 &.color2 {
-                    background-color: $accent2-dark;
+                    background-color: $accent2-tp;
                     border: solid 1px $accent2;
                 }
 
                 &.color3 {
-                    background-color: $accent3-dark;
+                    background-color: $accent3-tp;
                     border: solid 1px $accent3;
                 }
 
                 &.color4 {
-                    background-color: $accent4-dark;
+                    background-color: $accent4-tp;
                     border: solid 1px $accent4;
                 }
             }

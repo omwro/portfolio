@@ -26,7 +26,7 @@ export default {
     width: 256px;
     display: flex;
     flex-direction: row;
-    background-color: $accent-dark;
+    background-color: $accent-tp;
     border: solid 2px $accent;
     border-radius: 10px;
     margin: 16px;
@@ -45,7 +45,7 @@ export default {
 
         img {
             height: 40px;
-
+            filter: invert(1);
         }
     }
 
@@ -55,7 +55,17 @@ export default {
         padding-left: 8px;
         font-size: 32px;
         font-weight: bold;
+        color: black;
+    }
+}
+
+#app.dark .contact-button-container{
+    .text {
         color: white;
+    }
+
+    img {
+        filter: invert(0);
     }
 }
 </style>
