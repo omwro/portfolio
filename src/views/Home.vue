@@ -71,7 +71,7 @@ export default {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        border: solid 1px $brilliant-red;
+        border: solid 1px $accent;
         border-radius: 10px;
         justify-content: center;
         background-color: $dark1;

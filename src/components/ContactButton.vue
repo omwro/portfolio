@@ -26,12 +26,16 @@ export default {
     width: 256px;
     display: flex;
     flex-direction: row;
-    background-color: rgba($brilliant-red, 1);
-    border: solid 2px $brilliant-red;
+    background-color: $accent-dark;
+    border: solid 2px $accent;
     border-radius: 10px;
     margin: 16px;
     justify-content: left;
     cursor: pointer;
+
+    &:hover {
+        background-color: $accent;
+    }
 
     .contact-button-img-container {
         width: 75px;
@@ -52,12 +56,6 @@ export default {
         font-size: 32px;
         font-weight: bold;
         color: white;
-    }
-}
-
-#app.dark {
-    .contact-button-container {
-        background-color: rgba($brilliant-red, 0.7);
     }
 }
 </style>

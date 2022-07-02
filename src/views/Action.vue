@@ -126,7 +126,7 @@ export default {
             }
 
             .active {
-                border-bottom: solid 2px $brilliant-red;
+                border-bottom: solid 2px $accent;
             }
         }
     }

@@ -66,12 +66,17 @@
                             </template>
                             <template v-else-if="item.style === 'merge'">
                                 <template v-if="i < item.merge">
-                                    <div :key="i" :class="'vline color'+i"></div>
+                                    <div :key="i" class="block block-mobile">
+                                        <div :class="'vline vl-t color'+i"></div>
+                                        <div :class="'vline vl-b color'+i"></div>
+                                        <div :class="'hline hl-h color'+item.line"></div>
+                                    </div>
                                 </template>
                                 <template v-else-if="i === item.merge">
                                     <div :key="i" class="block">
                                         <div :class="'vline vl-t color'+i"></div>
                                         <div :class="'vline vl-b color'+i"></div>
+                                        <div :class="'hline hl-l hl-h color'+item.line"></div>
                                         <div :class="'hline hl-r color'+item.line"></div>
                                         <div :class="'bullet b-s color'+item.line"></div>
                                     </div>
@@ -113,11 +118,40 @@ export default {
         gitItems() {
             return [
                 {
+                    id: 20,
+                    line: 3,
+                    tag: "Jun 2022",
+                    style: "merge",
+                    merge: 2,
+                    spacing: 1,
+                    msg: this.$t('timeline.mergeStudy')
+                }, {
+                    id: 19,
+                    line: 4,
+                    tag: "Jun 2022",
+                    style: "merge",
+                    merge: 3,
+                    spacing: 0,
+                    msg: this.$t('timeline.mergeInternship')
+                }, {
+                    id: 18,
+                    line: 4,
+                    style: "commit",
+                    spacing: 0,
+                    msg: this.$t('timeline.infi.role'),
+                    desc: this.$t('timeline.infi.desc')
+                }, {
                     id: 17,
-                    line: 3
+                    line: 4,
+                    tag: "Feb 2022",
+                    style: "start",
+                    start: 3,
+                    spacing: 0,
+                    msg: this.$t('timeline.newInternshipBranch')
                 }, {
                     id: 16,
                     line: 4,
+                    tag: "Aug 2020",
                     style: "merge",
                     merge: 3,
                     spacing: 0,
@@ -127,8 +161,8 @@ export default {
                     line: 4,
                     style: "commit",
                     spacing: 0,
-                    msg: this.$t('timeline.boldRole'),
-                    desc: this.$t('timeline.boldDescription')
+                    msg: this.$t('timeline.bold.role'),
+                    desc: this.$t('timeline.bold.desc')
                 }, {
                     id: 14,
                     line: 4,
@@ -142,8 +176,8 @@ export default {
                     line: 3,
                     style: "commit",
                     spacing: 1,
-                    msg: this.$t('timeline.hvaRole'),
-                    desc: this.$t('timeline.hvaDescription')
+                    msg: this.$t('timeline.hva.role'),
+                    desc: this.$t('timeline.hva.desc')
                 }, {
                     id: 12,
                     line: 3,
@@ -155,6 +189,7 @@ export default {
                 }, {
                     id: 11,
                     line: 3,
+                    tag: "Jun 2018",
                     style: "merge",
                     merge: 1,
                     spacing: 1,
@@ -162,6 +197,7 @@ export default {
                 }, {
                     id: 10,
                     line: 4,
+                    tag: "Jun 2018",
                     style: "merge",
                     merge: 3,
                     spacing: 0,
@@ -171,8 +207,8 @@ export default {
                     line: 4,
                     style: "commit",
                     spacing: 0,
-                    msg: this.$t('timeline.dgdRole'),
-                    desc: this.$t('timeline.dgdDescription')
+                    msg: this.$t('timeline.dgd.role'),
+                    desc: this.$t('timeline.dgd.desc')
                 }, {
                     id: 8,
                     line: 4,
@@ -184,6 +220,7 @@ export default {
                 }, {
                     id: 7,
                     line: 4,
+                    tag: "Jan 2017",
                     style: "merge",
                     merge: 3,
                     spacing: 0,
@@ -193,8 +230,8 @@ export default {
                     line: 4,
                     style: "commit",
                     spacing: 0,
-                    msg: this.$t('timeline.kkRole'),
-                    desc: this.$t('timeline.kkDescription')
+                    msg: this.$t('timeline.kk.role'),
+                    desc: this.$t('timeline.kk.desc')
                 }, {
                     id: 5,
                     line: 4,
@@ -209,8 +246,8 @@ export default {
                     line: 3,
                     style: "commit",
                     spacing: 1,
-                    msg: this.$t('timeline.regioRole'),
-                    desc: this.$t('timeline.regioDescription')
+                    msg: this.$t('timeline.regio.role'),
+                    desc: this.$t('timeline.regio.desc')
                 },
                 {
                     id: 3,
@@ -226,8 +263,8 @@ export default {
                     line: 2,
                     style: "commit",
                     spacing: 2,
-                    msg: this.$t('timeline.deugdRole'),
-                    desc: this.$t('timeline.deugdDescription')
+                    msg: this.$t('timeline.deugd.role'),
+                    desc: this.$t('timeline.deugd.desc')
                 },
                 {
                     id: 1,
@@ -254,10 +291,6 @@ export default {
 <style lang="scss" scoped>
 @import "../styles/variables";
 
-$color1: $brilliant-red;
-$color2: $brilliant-blue;
-$color3: $brilliant-green;
-$color4: $brilliant-orange;
 $transparent: rgba(0, 0, 0, 0);
 $hover-color: rgba(white, .1);
 
@@ -305,23 +338,23 @@ $hover-color: rgba(white, .1);
                 border-radius: 2px;
 
                 &.color1 {
-                    background-color: rgba($color1, 0.5);
-                    border: solid 1px $color1;
+                    background-color: $accent-dark;
+                    border: solid 1px $accent;
                 }
 
                 &.color2 {
-                    background-color: rgba($color2, 0.5);
-                    border: solid 1px rgba($color2, 1);
+                    background-color: $accent2-dark;
+                    border: solid 1px $accent2;
                 }
 
                 &.color3 {
-                    background-color: rgba($color3, 0.5);
-                    border: solid 1px rgba($color3, 1);
+                    background-color: $accent3-dark;
+                    border: solid 1px $accent3;
                 }
 
                 &.color4 {
-                    background-color: rgba($color4, 0.5);
-                    border: solid 1px rgba($color4, 1);
+                    background-color: $accent4-dark;
+                    border: solid 1px $accent4;
                 }
             }
 
@@ -368,23 +401,23 @@ $hover-color: rgba(white, .1);
                 }
 
                 &.color1 {
-                    background-color: $color1;
-                    border-color: $color1;
+                    background-color: $accent;
+                    border-color: $accent;
                 }
 
                 &.color2 {
-                    background-color: $color2;
-                    border-color: $color2;
+                    background-color: $accent2;
+                    border-color: $accent2;
                 }
 
                 &.color3 {
-                    background-color: $color3;
-                    border-color: $color3;
+                    background-color: $accent3;
+                    border-color: $accent3;
                 }
 
                 &.color4 {
-                    background-color: $color4;
-                    border-color: $color4;
+                    background-color: $accent4;
+                    border-color: $accent4;
                 }
             }
 
@@ -452,19 +485,19 @@ $hover-color: rgba(white, .1);
             .topcornerline,
             .bottomcornerline {
                 &.color1 {
-                    border-color: $color1;
+                    border-color: $accent;
                 }
 
                 &.color2 {
-                    border-color: $color2;
+                    border-color: $accent2;
                 }
 
                 &.color3 {
-                    border-color: $color3;
+                    border-color: $accent3;
                 }
 
                 &.color4 {
-                    border-color: $color4;
+                    border-color: $accent4;
                 }
             }
 
@@ -511,42 +544,42 @@ $hover-color: rgba(white, .1);
                 }
 
                 &.color1 > div:first-child {
-                    border-color: $color1;
+                    border-color: $accent;
                     background: linear-gradient(
                             to right,
                             $transparent 0%,
-                            rgba($color1, 0.2) 50%,
-                            rgba($color1, 0.5) 100%
+                            rgba($accent, 0.2) 50%,
+                            rgba($accent, 0.5) 100%
                     );
                 }
 
                 &.color2 > div:first-child {
-                    border-color: $color2;
+                    border-color: $accent2;
                     background: linear-gradient(
                             to right,
                             $transparent 0%,
-                            rgba($color2, 0.2) 50%,
-                            rgba($color2, 0.5) 100%
+                            rgba($accent2, 0.2) 50%,
+                            rgba($accent2, 0.5) 100%
                     );
                 }
 
                 &.color3 > div:first-child {
-                    border-color: $color3;
+                    border-color: $accent3;
                     background: linear-gradient(
                             to right,
                             $transparent 0%,
-                            rgba($color3, 0.2) 50%,
-                            rgba($color3, 0.5) 100%
+                            rgba($accent3, 0.2) 50%,
+                            rgba($accent3, 0.5) 100%
                     );
                 }
 
                 &.color4 > div:first-child {
-                    border-color: $color4;
+                    border-color: $accent4;
                     background: linear-gradient(
                             to right,
                             $transparent 0%,
-                            rgba($color4, 0.2) 50%,
-                            rgba($color4, 0.5) 100%
+                            rgba($accent4, 0.2) 50%,
+                            rgba($accent4, 0.5) 100%
                     );
                 }
             }

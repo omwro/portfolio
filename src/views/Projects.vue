@@ -107,7 +107,7 @@ export default {
     }
 
     .tns-nav > button {
-        border: solid $brilliant-red 3px;
+        border: solid $accent 3px;
         width: 16px;
         height: 16px;
         border-radius: 25px;
@@ -120,7 +120,7 @@ export default {
         }
 
         &.tns-nav-active {
-            background-color: $brilliant-red;
+            background-color: $accent;
         }
     }
 
@@ -165,19 +165,19 @@ export default {
             }
 
             .c1 {
-                background-color: $brilliant-red;
+                background-color: $accent;
             }
 
             .c2 {
-                background-color: $brilliant-blue;
+                background-color: $accent2;
             }
 
             .c3 {
-                background-color: $brilliant-green;
+                background-color: $accent3;
             }
 
             .c4 {
-                background-color: $brilliant-orange;
+                background-color: $accent4;
             }
 
             .c5 {

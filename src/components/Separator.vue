@@ -44,7 +44,7 @@ export default {
 
   .line {
     width: 100%;
-    background-color: $brilliant-red;
+    background-color: $accent;
   }
 }
 #app.dark .separator {

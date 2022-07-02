@@ -47,10 +47,10 @@ export default {
 <style lang="scss" scoped>
 @import "../styles/variables";
 
-$color1: $brilliant-red;
-$color2: $brilliant-blue;
-$color3: $brilliant-green;
-$color4: $brilliant-orange;
+$color1: $accent;
+$color2: $accent2;
+$color3: $accent3;
+$color4: $accent4;
 $transparent: rgba(0, 0, 0, 0);
 $hover-color: rgba(white, .1);
 

@@ -118,7 +118,7 @@ export default {
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(to top, rgba($brilliant-red, 1), rgba(white, 0.0) 50%);
+                background: linear-gradient(to top, rgba($accent, 1), rgba(white, 0.0) 50%);
             }
 
             svg .polygon{

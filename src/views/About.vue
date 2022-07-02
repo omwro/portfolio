@@ -47,7 +47,7 @@ export default {
             margin-top: 4px;
 
             &:active {
-                color: $brilliant-red;
+                color: $accent;
             }
         }
     }

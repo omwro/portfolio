@@ -49,7 +49,7 @@ export default {
     align-items: center;
     background-color: $light0;
     transition: 0.5s;
-    border-bottom: $brilliant-red 2px solid;
+    border-bottom: $accent 2px solid;
 
     &.ontop {
         background-color: transparent;

@@ -64,7 +64,7 @@ export default {
 
     &.active {
         width: 100%;
-        border-left: solid 2px $brilliant-red;
+        border-left: solid 2px $accent;
         transition: 0.5s;
         transition-timing-function: ease-in-out;
 
@@ -82,7 +82,7 @@ export default {
         justify-content: space-between;
 
         .title {
-            border-bottom: solid 2px $brilliant-red;
+            border-bottom: solid 2px $accent;
         }
 
         .cross {
@@ -133,7 +133,7 @@ export default {
             margin: 10px;
 
             &:hover {
-                color: $brilliant-red;
+                color: $accent;
             }
         }
     }

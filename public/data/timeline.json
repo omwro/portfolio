@@ -4,8 +4,8 @@
     "role": "Software Engineering",
     "company": "Amsterdam University of Applied Science",
     "desc": "Aimed at improving my skills in programming and in the business field, as well as expanding my network and keep having fun with my hobby projects.",
-    "startdate": "SEP 2018",
-    "enddate": "JUN 2022",
+    "startdate": "Sep 2018",
+    "enddate": "Jun 2022",
     "stack": [
       "html",
       "css",
@@ -25,8 +25,8 @@
     "role": "Application Developer",
     "company": "Regio College Zaandam",
     "desc": "Aimed at getting started with programming and mastering the teamleader role for grouped projects.",
-    "startdate": "SEP 2015",
-    "enddate": "JUN 2018",
+    "startdate": "Sep 2015",
+    "enddate": "Jun 2018",
     "stack": [
       "html",
       "css",
@@ -41,8 +41,8 @@
     "role": "Intern Developer",
     "company": "Infi Amsterdam",
     "desc": "Aimed at improving my backend skills by writing a thesis about gaining insights into KPI's with EventStore. Using Event Sourcing to fetch data with cron jobs. Also made an user interface.",
-    "startdate": "FEB 2022",
-    "enddate": "JUN 2022",
+    "startdate": "Feb 2022",
+    "enddate": "Jun 2022",
     "stack": [
       "csharp",
       "aspnet"
@@ -53,8 +53,8 @@
     "role": "Intern Magento Developer",
     "company": "Bold Commerce",
     "desc": "Aimed at improving both my frontend and backend development skills, as well as communication skills with my colleagues and customers. Have worked in a real Agile environment and created a new Dashboard for the Support Team.",
-    "startdate": "FEB 2020",
-    "enddate": "AUG 2020",
+    "startdate": "Feb 2020",
+    "enddate": "Aug 2020",
     "stack": [
       "html",
       "css",
@@ -72,8 +72,8 @@
     "role": "Intern Frontend Developer",
     "company": "DiGidot",
     "desc": "Aimed at improving my frontend skills by creating a Web Installation panel for the DiGidot C4 hardware controllers. Designed and developed the installation panel",
-    "startdate": "FEB 2020",
-    "enddate": "AUG 2020",
+    "startdate": "Feb 2020",
+    "enddate": "Aug 2020",
     "stack": [
       "html",
       "css",
@@ -85,8 +85,8 @@
     "role": "Intern Game Developer",
     "company": "Kenneth & Koh",
     "desc": "Aimed at improving my teamwork skills, as well as learning to work in a company setting. Improved my programming skills by creating a mobile and desktop game in Unity and helped the developer team in testing their software.",
-    "startdate": "SEP 2016",
-    "enddate": "JAN 2017",
+    "startdate": "Sep 2016",
+    "enddate": "Jan 2017",
     "stack": [
       "csharp"
     ]

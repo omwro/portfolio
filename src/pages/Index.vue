@@ -99,7 +99,7 @@ section {
         margin: 0 auto 10px auto;
         text-align: center;
         font-weight: bold;
-        border-bottom: solid 2px $brilliant-red;
+        border-bottom: solid 2px $accent;
         font-size: 2rem;
 
         &.small {

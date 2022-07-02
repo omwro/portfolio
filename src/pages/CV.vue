@@ -146,11 +146,11 @@ html body #app #cv {
     }
 
     .color-red {
-        color: rgba($brilliant-red, 0.9);
+        color: rgba($accent, 0.9);
     }
 
     .color-blue {
-        color: rgba($brilliant-blue, 0.9);
+        color: rgba($accent2, 0.9);
     }
 
     .color-grey {
@@ -179,7 +179,7 @@ html body #app #cv {
             overflow: hidden;
             width: 200px;
             height: 200px;
-            background: linear-gradient(90deg, rgba($brilliant-red, 0.9) 0%, rgba($brilliant-blue, 0.9) 100%);
+            background: linear-gradient(90deg, rgba($accent, 0.9) 0%, rgba($accent2, 0.9) 100%);
             border-radius: 200px;
             margin-right: 16px;
 
@@ -233,7 +233,7 @@ html body #app #cv {
     .container {
         padding: 5px 10px 10px;
         border-radius: 10px;
-        background: linear-gradient(90deg, rgba($brilliant-red, 0.4) 0%, rgba($brilliant-blue, 0.4) 100%);
+        background: linear-gradient(90deg, rgba($accent, 0.4) 0%, rgba($accent2, 0.4) 100%);
         color: $light2;
         margin-bottom: 16px;
 
@@ -269,7 +269,7 @@ html body #app #cv {
                     display: inline-flex;
                     font-size: 12px;
                     font-weight: bolder;
-                    background: linear-gradient(90deg, rgba($brilliant-red, 0.6) 0%, rgba($brilliant-blue, 0.6) 100%);
+                    background: linear-gradient(90deg, rgba($accent, 0.6) 0%, rgba($accent2, 0.6) 100%);
                     padding: 6px;
                     border-radius: 25px;
                 }
