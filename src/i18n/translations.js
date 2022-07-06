@@ -9,6 +9,7 @@ const translations = {
             email: "public.omererdem@outlook.com"
         },
         home: {
+            title: "Home",
             intro: "Hi, my name is Omer Erdem and welcome to my portfolio website!"
         },
         preferences: {
@@ -138,6 +139,7 @@ const translations = {
     },
     nl: {
         home: {
+            title: "Home",
             intro: "Hey, mijn naam is Omer Erdem en welkom tot mijn portfolio website!"
         },
         preferences: {

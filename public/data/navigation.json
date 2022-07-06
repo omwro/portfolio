@@ -1,0 +1,42 @@
+[
+  {
+    "href": "#home",
+    "name": "Home",
+    "translate": "home.title"
+  },
+  {
+    "href": "#about",
+    "name": "About",
+    "translate": "about.title"
+  },
+  {
+    "href": "#skills",
+    "name": "Skills",
+    "translate": "skills.title"
+  },
+  {
+    "href": "#projects",
+    "name": "Projects",
+    "translate": "projects.title"
+  },
+  {
+    "href": "#companies",
+    "name": "Companies",
+    "translate": "companies.title"
+  },
+  {
+    "href": "#timelineGit",
+    "name": "Timeline",
+    "translate": "timeline.title"
+  },
+  {
+    "href": "#socials",
+    "name": "Socials",
+    "translate": "socials.title"
+  },
+  {
+    "href": "#competitors",
+    "name": "Competitors",
+    "translate": "competitors.title"
+  }
+]

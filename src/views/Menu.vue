@@ -8,23 +8,23 @@
             </div>
         </div>
         <div id="menulist">
-            <a href="#home" @click="closeMenu">Home</a>
-            <a href="#about" @click="closeMenu">{{$t('about.title')}}</a>
-            <a href="#skills" @click="closeMenu">{{$t('skills.title')}}</a>
-            <a href="#projects" @click="closeMenu">{{$t('projects.title')}}</a>
-            <a href="#companies" @click="closeMenu">{{$t('companies.title')}}</a>
-            <a href="#timelineGit" @click="closeMenu">{{$t('timeline.title')}}</a>
-            <a href="#socials" @click="closeMenu">{{$t('socials.title')}}</a>
-            <a href="#competitors" @click="closeMenu">{{$t('competitors.title')}}</a>
+            <a v-for="n in nav"
+               :href="n.href"
+               @click="closeMenu"
+               :key="n.name">{{ $t(n.translate) }}</a>
         </div>
     </div>
 </template>
 
 <script>
 import $ from 'jquery';
+import json from "../../public/data/navigation.json"
 
 export default {
     name: "Menu",
+    data: () => ({
+        nav: json
+    }),
     created() {
         $(document).on('click', (e) => {
             if (
@@ -60,7 +60,7 @@ export default {
     background-color: $light0;
     z-index: 15;
     transition: 0.5s;
-    border-left: solid 2px transparent;
+    border-left: solid 0 transparent;
 
     &.active {
         width: 100%;
@@ -130,7 +130,8 @@ export default {
             font-size: 1rem;
             color: inherit;
             text-decoration: none;
-            margin: 10px;
+            margin: 16px;
+            justify-content: center;
 
             &:hover {
                 color: $accent;
@@ -139,7 +140,7 @@ export default {
     }
 }
 
-#app.dark #menu{
+#app.dark #menu {
     background-color: $dark1;
 }
 </style>
