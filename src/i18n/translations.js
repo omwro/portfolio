@@ -42,7 +42,9 @@ const translations = {
             hardworker: "Hard worker",
             teamplayer: "Team player",
             problemsolving: "Problem solver",
-            creativity: "Creative"
+            creativity: "Creative",
+            years: "years",
+            months: "months"
         },
         projects: {
             title: "Projects",
@@ -174,7 +176,9 @@ const translations = {
             hardworker: "Harde werker",
             teamplayer: "Team speler",
             problemsolving: "Probleem oplosser",
-            creativity: "Creatief"
+            creativity: "Creatief",
+            years: "jaar",
+            months: "maanden"
         },
         projects: {
             title: "Projecten",
