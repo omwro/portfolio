@@ -1,82 +1,55 @@
 <template>
     <section id="projects">
-        <h1>{{$t("projects.title")}}</h1>
+        <h1>{{ $t("projects.title") }}</h1>
         <div class="content">
-            <span class="swipe-txt">
-                <font-awesome-icon :icon="['fas', 'hand-pointer']" class="icon linkedin"/>
-                {{$t("projects.swipe")}}
-            </span>
-            <vue-tiny-slider ref="tinySlider"
-                             :auto-height="true"
-                             :center="true"
-                             :controls="false"
-                             :gutter="10"
-                             :items="1"
-                             :lazyload="true"
-                             :loop="false"
-                             :mouse-drag="true"
-                             :prevent-scroll-on-touch="'auto'">
-                <div v-for="(p,i) in projects" :key="i">
-                    <img :v-lazy="p.img"
-                         :data-src="p.img"
-                         :alt="p.title"
-                         class="tns-lazy-img" >
-                    <div class="carousel-title">
-                        {{p.title}}
-                        <a v-if="p.github"
-                           aria-label="github"
-                           :href="p.github"
-                           rel="noopener"
-                           target="_blank">
-                            <font-awesome-icon :icon="['fab', 'github']" class="icon"/>
-                        </a>
-                        <a v-if="p.url"
-                           aria-label="link"
-                           :href="p.url"
-                           rel="noopener"
-                           target="_blank">
-                            <font-awesome-icon :icon="['fas', 'external-link-alt']" class="icon"/>
-                        </a>
-                    </div>
-                    <div class="carousel-description">{{$t(p.desc)}}</div>
-                    <div class="carousel-languages">
-                        <img v-for="skill in getLanguages(p.stack)"
-                             :key="skill.name"
-                             :class="'c'+skill.color"
-                             :data-src="skill.img"
-                             :alt="skill.name"/>
-                    </div>
+            <div class="project-container" v-for="(p,i) in projects" :key="i">
+                <img :v-lazy="p.img"
+                     :src="p.img"
+                     :alt="p.title">
+                <div class="carousel-title">
+                    {{ p.title }}
+                    <a v-if="p.github"
+                       aria-label="github"
+                       :href="p.github"
+                       rel="noopener"
+                       target="_blank">
+                        <font-awesome-icon :icon="['fab', 'github']" class="icon"/>
+                    </a>
+                    <a v-if="p.url"
+                       aria-label="link"
+                       :href="p.url"
+                       rel="noopener"
+                       target="_blank">
+                        <font-awesome-icon :icon="['fas', 'external-link-alt']" class="icon"/>
+                    </a>
                 </div>
-            </vue-tiny-slider>
+                <div class="carousel-description">{{ $t(p.desc) }}</div>
+                <div class="carousel-languages">
+                    <img v-for="skill in getLanguages(p.stack)"
+                         :key="skill.name"
+                         :class="'c'+skill.color"
+                         :src="skill.img"
+                         :alt="skill.name"/>
+                </div>
+            </div>
         </div>
     </section>
 </template>
 
 <script>
-import $ from 'jquery';
-import VueTinySlider from 'vue-tiny-slider';
 import skillsJson from "../../public/data/skills.json"
 import projectsJson from "../../public/data/projects.json"
 
 export default {
     name: "Projects",
     data: () => ({
-       projects: projectsJson
+        projects: projectsJson
     }),
-    components: {
-        'vue-tiny-slider': VueTinySlider
-    },
-    mounted() {
-        let slider = this.$refs.tinySlider.slider
-        $('#projects').find('img').on('load', function () {
-            slider.updateSliderHeight()
-        });
-    },
-	methods: {
-		getLanguages(array) {
-			return skillsJson.filter(x => array.includes(x.name))
-		}
-	}
+    methods: {
+        getLanguages(array) {
+            return skillsJson.filter(x => array.includes(x.name))
+        }
+    }
 }
 
 
@@ -84,48 +57,13 @@ export default {
 
 <style lang="scss">
 @import "../styles/variables";
-@import '../../node_modules/tiny-slider/src/tiny-slider';
 
 .content {
     overflow: hidden;
 
-    .swipe-txt {
+    .project-container {
         text-align: center;
-    }
-
-    .tns-outer {
-        display: grid;
-    }
-
-    .tns-nav, .tns-controls {
-        text-align: center;
-        margin: 8px;
-
-        &:focus {
-            outline: none;
-        }
-    }
-
-    .tns-nav > button {
-        border: solid $accent 3px;
-        width: 16px;
-        height: 16px;
-        border-radius: 25px;
-        background-color: transparent;
-        margin: 4px;
-        padding: 4px;
-
-        &:focus {
-            outline: none;
-        }
-
-        &.tns-nav-active {
-            background-color: $accent;
-        }
-    }
-
-    .tns-item {
-        text-align: center;
+        margin-bottom: 32px;
 
         > * {
             padding-top: 4px;

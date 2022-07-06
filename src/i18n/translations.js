@@ -60,13 +60,6 @@ const translations = {
                 barber2u: "A school project devised and created by our team, where barbers can give the customers a " +
                     "haircut in the customer's living room. You can select the barbers in de app with the " +
                     "appointment moment and haircut style chosen by you.",
-                corendon: "A school project for Corendon that would like to have a dating website for travelers that " +
-                    "travel alone and would like to have a partner to party with.",
-                amsta: "A school project for Amsta that would like to have an Android application which allows the " +
-                    "elderlies from Amsta to exercise and stay fit while having fun with catching animals.",
-                aquadis: "A school project for Aquadis that would like to have an texting based game which allows the " +
-                    "players to place messages on the maps and other people can see them if they are nearby and " +
-                    "respond to it.",
                 metafyapp: "An Android application that uses the Spotify API to get your spotify account song and " +
                     "playlist data. You can assign your custom tags to songs and create custom playlists.",
                 mobilecompany: "A project for The Mobile Company that would like to have a SDK that supports the NMEA 0183 " +
@@ -195,13 +188,6 @@ const translations = {
                 barber2u: "Een school project bedacht en gemaakt door onze team, waarbij kappers de knipbeurten in de " +
                     "woonkamer van de klanten knippen. De kappers kan je selecteren in de app met daarbij door jouw " +
                     "gekozen moment en soort knipbeurt.",
-                corendon: "Een school project voor Corendon die graag een dating website wilt voor reizigers die alleen " +
-                    "reizen en graag een partner willen om mee te feesten.",
-                amsta: "Een school project voor Amsta die graag een Android applicatie wilt met als doel om de ouderen " +
-                    "van Amsta te laten bewegen en fit te blijven terwijl ze lol hebben met het vangen van dieren.",
-                aquadis: "Een school project voor Aquadis die graag een texting gebaseerd spel wilt waarbij de spelers " +
-                    "op de kaart een bericht kunnen plaatsen en andere spelers die in de buurt zijn van het bericht, " +
-                    "het kunnen lezen en reageren.",
                 metafyapp: "Een android app die de Spotify API gebruikt om de liedjes en playlist van je spotify account " +
                     "op te halen. Hiermee kan je liedjes tags en playlisten naar je wensen aanpassen.",
                 mobilecompany: "Een project voor The Mobile Company die graag een SDK wou hebben die de NMEA 0183 " +

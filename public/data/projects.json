@@ -67,35 +67,5 @@
       "kotlin",
       "xml"
     ]
-  },
-  {
-    "title": "Aquadis",
-    "desc": "projects.desc.aquadis",
-    "img": "img/project/project_aquadis.webp",
-    "url": null,
-    "github": null,
-    "stack": [
-      "html", "js", "css", "java", "mysql", "angular", "spring"
-    ]
-  },
-  {
-    "title": "Amsta Animal Go",
-    "desc": "projects.desc.amsta",
-    "img": "img/project/project_amsta.webp",
-    "url": null,
-    "github": null,
-    "stack": [
-      "html", "css", "java"
-    ]
-  },
-  {
-    "title": "Corendon",
-    "desc": "projects.desc.corendon",
-    "img": "img/project/project_corendon.webp",
-    "url": null,
-    "github": null,
-    "stack": [
-      "html", "js", "css", "mysql"
-    ]
   }
 ]
