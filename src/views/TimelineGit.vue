@@ -16,6 +16,7 @@
                         <template v-if="i === item.line">
                             <template v-if="item.style === 'commit'">
                                 <div :key="i" class="block">
+                                    <div :class="'tpbg tpbg-h color'+i"/>
                                     <div :class="'vline vl-t color'+i"></div>
                                     <div :class="'vline vl-b color'+i"></div>
                                     <div :class="'bullet b-img color'+item.line">
@@ -24,10 +25,18 @@
                                 </div>
                             </template>
                             <template v-else-if="item.style === 'start'">
-                                <div :key="i" :class="'bottomcornerline color'+item.line"></div>
+                                <div class="block block-mobile" :key="i">
+                                    <div :class="'tpbg color'+item.line"/>
+                                    <div :class="'bottomcornerline color'+item.line"></div>
+                                </div>
+<!--                                <div :key="i" :class="'bottomcornerline color'+item.line"></div>-->
                             </template>
                             <template v-else-if="item.style === 'merge'">
-                                <div :key="i" :class="'topcornerline color'+item.line"></div>
+                                <div class="block block-mobile" :key="i">
+                                    <div :class="'tpbg color'+item.line"/>
+                                    <div :class="'topcornerline color'+item.line"></div>
+                                </div>
+<!--                                <div :key="i" :class="'topcornerline color'+item.line"></div>-->
                             </template>
                             <template v-else>
                                 <div :key="i" :class="'vline color'+i"></div>
@@ -45,6 +54,7 @@
                                 </template>
                                 <template v-else-if="i === item.start">
                                     <div :key="i" :class="'block block-mobile color'+item.line">
+                                        <div :class="'tpbg tpbg-h color'+item.line"/>
                                         <div :class="'vline vl-t color'+i"></div>
                                         <div :class="'vline vl-b color'+i"></div>
                                         <div :class="'hline hl-l hl-h color'+item.line"></div>
@@ -54,6 +64,7 @@
                                 </template>
                                 <template v-else-if="i > item.start">
                                     <div :key="i" class="block">
+                                        <div :class="'tpbg color'+item.line"/>
                                         <div :class="'vline vl-t color'+i"></div>
                                         <div :class="'vline vl-b color'+i"></div>
                                         <div :class="'hline color'+item.line"></div>
@@ -74,6 +85,7 @@
                                 </template>
                                 <template v-else-if="i === item.merge">
                                     <div :key="i" class="block">
+                                        <div :class="'tpbg tpbg-h color'+item.line"/>
                                         <div :class="'vline vl-t color'+i"></div>
                                         <div :class="'vline vl-b color'+i"></div>
                                         <div :class="'hline hl-l hl-h color'+item.line"></div>
@@ -83,6 +95,7 @@
                                 </template>
                                 <template v-else-if="i > item.merge">
                                     <div :key="i" :class="'block block-mobile color'+item.line">
+                                        <div :class="'tpbg color'+item.line"/>
                                         <div :class="'vline vl-t color'+i"></div>
                                         <div :class="'vline vl-b color'+i"></div>
                                         <div :class="'hline color'+item.line"></div>
@@ -292,7 +305,6 @@ export default {
 @import "../styles/variables";
 
 $transparent: rgba(0, 0, 0, 0);
-$hover-color: rgba(white, .1);
 
 #timelineGit {
     display: flex;
@@ -309,6 +321,10 @@ $hover-color: rgba(white, .1);
             display: flex;
             flex-direction: row;
             height: auto;
+
+            &:hover {
+                background-color: rgba(black, .1);
+            }
 
             .vline, .bottomcornerline, .topcornerline{
                 .color1 {
@@ -369,6 +385,34 @@ $hover-color: rgba(white, .1);
                 .vline,
                 .b-s {
                     position: absolute;
+                }
+
+                .tpbg {
+                    width: 30px;
+                    height: calc(100% - 6px);
+                    position: absolute;
+                    margin-top: 3px;
+
+                    &.tpbg-h {
+                        width: 15px;
+                        margin-left: 15px;
+                    }
+
+                    &.color1 {
+                        background-color: $accent-tp;
+                    }
+
+                    &.color2 {
+                        background-color: $accent2-tp;
+                    }
+
+                    &.color3 {
+                        background-color: $accent3-tp;
+                    }
+
+                    &.color4 {
+                        background-color: $accent4-tp;
+                    }
                 }
             }
 
@@ -545,42 +589,22 @@ $hover-color: rgba(white, .1);
 
                 &.color1 > div:first-child {
                     border-color: $accent;
-                    background: linear-gradient(
-                            to right,
-                            $transparent 0%,
-                            rgba($accent, 0.2) 50%,
-                            rgba($accent, 0.5) 100%
-                    );
+                    background-color: $accent-tp;
                 }
 
                 &.color2 > div:first-child {
                     border-color: $accent2;
-                    background: linear-gradient(
-                            to right,
-                            $transparent 0%,
-                            rgba($accent2, 0.2) 50%,
-                            rgba($accent2, 0.5) 100%
-                    );
+                    background-color: $accent2-tp;
                 }
 
                 &.color3 > div:first-child {
                     border-color: $accent3;
-                    background: linear-gradient(
-                            to right,
-                            $transparent 0%,
-                            rgba($accent3, 0.2) 50%,
-                            rgba($accent3, 0.5) 100%
-                    );
+                    background-color: $accent3-tp;
                 }
 
                 &.color4 > div:first-child {
                     border-color: $accent4;
-                    background: linear-gradient(
-                            to right,
-                            $transparent 0%,
-                            rgba($accent4, 0.2) 50%,
-                            rgba($accent4, 0.5) 100%
-                    );
+                    background-color: $accent4-tp;
                 }
             }
         }
@@ -599,7 +623,7 @@ $hover-color: rgba(white, .1);
                     position: absolute;
                 }
 
-                .bottomcornerline, .topcornerline, .block-mobile:not(.color2) {
+                .block-mobile:not(.color2) {
                     position: absolute;
                     left: 87px;
                 }
@@ -615,10 +639,6 @@ $hover-color: rgba(white, .1);
                 }
 
                 .hline.hl-r, .hline:not(.hl-h) {
-                    display: none;
-                }
-
-                .block:not(:nth-of-type(3)) .hline.color4:not(:first-of-type) {
                     display: none;
                 }
 
@@ -640,6 +660,12 @@ $hover-color: rgba(white, .1);
                     }
                 }
 
+                .tpbg {
+                    display: none;
+                    &.tpbg-h {
+                        display: block;
+                    }
+                }
 
                 .commit {
                     > div:first-child {
@@ -664,6 +690,12 @@ $hover-color: rgba(white, .1);
                 }
             }
         }
+    }
+}
+
+#app.dark #timelineGit .row {
+    &:hover {
+        background-color: rgba(white, .1);
     }
 }
 </style>
