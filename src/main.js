@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faAt, faStar, faStarHalfAlt, faHandPointer, faExternalLinkAlt, faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { faStar as faStarEmpty } from '@fortawesome/free-regular-svg-icons'
 import { faFontAwesome, faLinkedin, faSkype, faDiscord, faCodepen, faGithub } from '@fortawesome/free-brands-svg-icons'
-import VueTinySlider from 'vue-tiny-slider';
 import VueLazyload from 'vue-lazyload'
 import i18n from './i18n'
 import VueRouter from 'vue-router';
@@ -33,8 +32,5 @@ const router = new VueRouter({routes, mode: 'history'})
 new Vue({
   router,
   render: h => h(App),
-  components: {
-    'tiny-slider': VueTinySlider
-  },
   i18n
 }).$mount('#app')
