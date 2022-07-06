@@ -6,7 +6,8 @@
             <ContactButton v-for="(s, i) in socials" :key="i"
                            :img="s.img"
                            :text="s.name"
-                           :url="s.url"/>
+                           :url="s.url"
+                           :color="s.color"/>
         </div>
     </section>
 </template>

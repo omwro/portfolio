@@ -8,7 +8,7 @@
         <div class="header-right">
             <nav class="navbar">
                 <template v-for="n in nav">
-                    <a v-if="n.name != 'Home'"
+                    <a v-if="n.name !== 'Home'"
                        :key="n.name"
                        :href="n.href">{{ $t(n.translate) }}</a>
                 </template>

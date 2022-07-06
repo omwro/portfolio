@@ -2,26 +2,51 @@
   {
     "name": "Email",
     "img": "img/contact/mail.png",
-    "url": "mailto:public.omererdem@outlook.com"
+    "url": "mailto:public.omererdem@outlook.com",
+    "color": {
+      "r": 0,
+      "g": 144,
+      "b": 198
+    }
   },
   {
     "name": "Discord",
     "img": "img/contact/discord.png",
-    "url": "https://discord.gg/UnhW4ykFFp"
+    "url": "https://discord.gg/UnhW4ykFFp",
+    "color": {
+      "r": 115,
+      "g": 138,
+      "b": 219
+    }
   },
   {
     "name": "LinkedIn",
     "img": "img/contact/linkedin.png",
-    "url": "https://www.linkedin.com/in/omer-erdem-179745153"
+    "url": "https://www.linkedin.com/in/omer-erdem-179745153",
+    "color": {
+      "r": 0,
+      "g": 97,
+      "b": 146
+    }
   },
   {
     "name": "GitHub",
     "img": "img/contact/github.png",
-    "url": "https://github.com/omwro"
+    "url": "https://github.com/omwro",
+    "color": {
+      "r": 33,
+      "g": 31,
+      "b": 31
+    }
   },
   {
     "name": "CV",
     "img": "img/contact/cv.png",
-    "url": "https://omererdem.nl/cv"
+    "url": "https://omererdem.nl/cv",
+    "color": {
+      "r": 181,
+      "g": 28,
+      "b": 20
+    }
   }
 ]
