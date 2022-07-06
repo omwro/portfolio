@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Infi",
+    "img": "./img/company/infi.png",
+    "url": "https://infi.nl/"
+  },
+  {
+    "name": "The Mobile Company",
+    "img": "./img/company/themobilecompany.webp",
+    "url": "https://themobilecompany.com/"
+  },
+  {
+    "name": "Bold Commerce",
+    "img": "./img/company/boldcommerce.webp",
+    "url": "https://www.boldcommerce.nl/",
+    "class": "dark-invert"
+  },
+  {
+    "name": "Digidot",
+    "img": "./img/company/digidot.webp",
+    "url": "https://digidot.eu/",
+    "class": "dark-bright"
+  },
+  {
+    "name": "Kenneth & Koh",
+    "img": "./img/company/kennethkoh.webp",
+    "url": "https://www.kenneth-koh.nl/",
+    "class": "dark-bright"
+  },
+  {
+    "name": "Deugd Erdem",
+    "img": "./img/company/deugderdem.webp",
+    "url": "https://deugderdem.nl/",
+    "class": "dark-invert"
+  }
+]

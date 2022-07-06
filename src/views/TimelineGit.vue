@@ -135,7 +135,7 @@ export default {
                     line: 3,
                     tag: "Jun 2022",
                     style: "merge",
-                    merge: 2,
+                    merge: 1,
                     spacing: 1,
                     msg: this.$t('timeline.mergeStudy')
                 }, {
