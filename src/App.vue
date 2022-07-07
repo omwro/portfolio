@@ -1,12 +1,17 @@
 <template>
-    <main id="app">
+    <main id="app" :class="dark ? 'dark' : ''">
         <router-view/>
     </main>
 </template>
 
 <script>
 export default {
-    name: 'App'
+    name: 'App',
+    computed: {
+        dark () {
+            return this.$store.state.darkmode
+        }
+    }
 }
 </script>
 

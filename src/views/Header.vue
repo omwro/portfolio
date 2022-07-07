@@ -12,7 +12,18 @@
                        :key="n.name"
                        :href="n.href">{{ $t(n.translate) }}</a>
                 </template>
-
+                <template v-if="dark">
+                    <a><img @click="onDarkModeToggle" src="img/actions/sun.png" class="icon" alt="sun"></a>
+                </template>
+                <template v-else>
+                    <a><img @click="onDarkModeToggle" src="img/actions/moon.png" class="icon" alt="moon"></a>
+                </template>
+                <template v-if="lan === 'nl'">
+                    <a><img @click="setLanguage('en')" src="img/actions/usa.png" class="icon" alt="en"></a>
+                </template>
+                <template v-else>
+                    <a><img @click="setLanguage('nl')" src="img/actions/nl.png" class="icon" alt="en"></a>
+                </template>
             </nav>
             <div class="hamburger" @click="openMenu">
                 <span class="hamburger-top"></span>
@@ -24,15 +35,22 @@
 </template>
 
 <script>
-import $ from 'jquery';
 import json from "../../public/data/navigation.json"
 
 export default {
     name: "Header",
     data: () => ({
         onTop: true,
-        nav: json
+        nav: json,
     }),
+    computed: {
+        dark() {
+            return this.$store.state.darkmode
+        },
+        lan() {
+            return this.$i18n.locale
+        }
+    },
     created() {
         window.addEventListener('scroll', this.onScroll)
     },
@@ -41,10 +59,16 @@ export default {
     },
     methods: {
         openMenu() {
-            $('#menu').addClass('active');
+            this.$store.commit('toggleMenu')
         },
         onScroll(e) {
             this.onTop = e.currentTarget.scrollY <= 120;
+        },
+        onDarkModeToggle() {
+            this.$store.commit('toggleDarkmode')
+        },
+        setLanguage(lan) {
+            this.$i18n.locale = lan
         }
     }
 }
@@ -103,6 +127,7 @@ export default {
                 text-decoration: none;
                 font-size: 14px;
                 margin: 0 8px;
+                align-self: center;
 
                 &:hover {
                     color: $accent;
@@ -141,6 +166,12 @@ export default {
             }
         }
     }
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }
 
 #app.dark #header {

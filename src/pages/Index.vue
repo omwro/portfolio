@@ -2,7 +2,6 @@
     <div>
         <Header/>
         <Home/>
-        <Action/>
         <About/>
 <!--        <Separator :left="true"/>-->
         <ImgSeparator :left="true"
@@ -33,7 +32,6 @@ import Skills from "@/views/Skills";
 import Companies from "@/views/Companies";
 import Footer from "@/views/Footer";
 import Menu from "@/views/Menu";
-import Action from "@/views/Action";
 import TimelineGit from "@/views/TimelineGit";
 import Competitors from "@/views/Competitors";
 import Separator from "@/components/Separator";
@@ -49,7 +47,6 @@ export default {
         Separator,
         Competitors,
         TimelineGit,
-        Action,
         Menu,
         Footer,
         Companies,

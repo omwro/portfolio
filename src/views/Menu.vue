@@ -1,5 +1,5 @@
 <template>
-    <div id="menu">
+    <div id="menu" :class="menu ? 'active' : ''">
         <div class="header">
             <div class="title">Menu</div>
             <div class="cross" @click="closeMenu">
@@ -12,33 +12,70 @@
                :href="n.href"
                @click="closeMenu"
                :key="n.name">{{ $t(n.translate) }}</a>
+            <template v-if="dark">
+                <a>
+                    <div class="a-block"  @click="onDarkModeToggle">
+                        <img src="img/actions/sun.png" class="icon" alt="sun">
+                        <span>{{ $t('preferences.lightmode') }}</span>
+                    </div>
+                </a>
+            </template>
+            <template v-else>
+                <a>
+                    <div class="a-block" @click="onDarkModeToggle">
+                        <img src="img/actions/moon.png" class="icon" alt="moon">
+                        <span>{{ $t('preferences.darkmode') }}</span>
+                    </div>
+                </a>
+            </template>
+            <template v-if="lan === 'nl'">
+                <a>
+                    <div class="a-block" @click="setLanguage('en')">
+                        <img src="img/actions/usa.png" class="icon" alt="en">
+                        <span>{{ $t('general.en') }}</span>
+                    </div>
+                </a>
+            </template>
+            <template v-else>
+                <a>
+                    <div class="a-block" @click="setLanguage('nl')">
+                        <img src="img/actions/nl.png" class="icon" alt="en">
+                        <span>{{ $t('general.nl') }}</span>
+                    </div>
+                </a>
+            </template>
         </div>
     </div>
 </template>
 
 <script>
-import $ from 'jquery';
 import json from "../../public/data/navigation.json"
 
 export default {
     name: "Menu",
     data: () => ({
-        nav: json
+        nav: json,
     }),
-    created() {
-        $(document).on('click', (e) => {
-            if (
-                $(e.target)[0].id !== "menu" &&
-                $("#menu").hasClass("active") &&
-                !$(e.target)[0].className.includes("hamburger")
-            ) {
-                this.closeMenu();
-            }
-        });
+    computed: {
+        dark () {
+            return this.$store.state.darkmode
+        },
+        menu () {
+            return this.$store.state.menu
+        },
+        lan() {
+            return this.$i18n.locale
+        }
     },
     methods: {
+        onDarkModeToggle() {
+            this.$store.commit('toggleDarkmode')
+        },
         closeMenu() {
-            $('#menu').removeClass('active');
+            this.$store.commit('toggleMenu')
+        },
+        setLanguage(lan) {
+            this.$i18n.locale = lan
         }
     }
 }
@@ -139,6 +176,24 @@ export default {
         }
     }
 }
+.a-block {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 16px;
+
+    > * {
+        align-self: center;
+        &:first-child {
+            margin-bottom: 4px;
+        }
+    }
+    .icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
 
 #app.dark #menu {
     background-color: $background-dark;

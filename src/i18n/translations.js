@@ -6,7 +6,9 @@ const translations = {
             study: "Software Engineer",
             age: "23",
             area: "Amsterdam, The Netherlands",
-            email: "public.omererdem@outlook.com"
+            email: "public.omererdem@outlook.com",
+            nl: "Dutch",
+            en: "English"
         },
         home: {
             title: "Home",
@@ -133,6 +135,10 @@ const translations = {
         }
     },
     nl: {
+        general: {
+            nl: "Nederlands",
+            en: "Engels"
+        },
         home: {
             title: "Home",
             intro: "Hey, mijn naam is Omer Erdem en welkom tot mijn portfolio website!"

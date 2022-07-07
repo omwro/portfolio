@@ -12,6 +12,7 @@ import i18n from './i18n'
 import VueRouter from 'vue-router';
 import Index from './pages/Index'
 import CV from './pages/CV'
+import Vuex from 'vuex'
 
 library.add(faAt, faLinkedin, faSkype, faDiscord, faCodepen, faGithub, faFontAwesome, faStar, faStarHalfAlt, faStarEmpty, faHandPointer, faExternalLinkAlt, faGlobe)
 
@@ -20,6 +21,7 @@ Vue.use(VueAxios, axios)
 Vue.use(VueLazyload)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(VueRouter)
+Vue.use(Vuex)
 
 const routes = [
   {path: '/', component: Index},
@@ -29,8 +31,25 @@ const routes = [
 
 const router = new VueRouter({routes, mode: 'history'})
 
+const store = new Vuex.Store({
+  state: {
+    darkmode: false,
+    menu: false,
+  },
+  mutations:{
+    toggleDarkmode(state) {
+      state.darkmode = !state.darkmode
+    },
+    toggleMenu(state) {
+      state.menu = !state.menu
+    }
+  }
+})
+
+
 new Vue({
   router,
+  store,
   render: h => h(App),
   i18n
 }).$mount('#app')
