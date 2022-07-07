@@ -22,5 +22,6 @@ html, body, #app {
     height: 100%;
     font-size: 16px;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 </style>
