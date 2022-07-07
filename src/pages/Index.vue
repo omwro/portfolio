@@ -67,12 +67,8 @@ export default {
 @import "src/styles/variables";
 #app {
     section {
-        color: $dark0;
-        background-color: $light0;
-
-        &#footer {
-            background-color: $dark5;
-        }
+        color: $color-light;
+        background-color: $background-light;
     }
 
     &.dark {
@@ -82,7 +78,7 @@ export default {
 
         section {
             color: $light2;
-            background-color: $dark1;
+            background-color: $background-dark;
         }
     }
 }

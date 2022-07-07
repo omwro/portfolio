@@ -134,7 +134,7 @@ export default {
 html body #app #cv {
     width: 21cm !important;
     height: 30cm !important;
-    background: $dark1 repeat;
+    background: $background-dark repeat;
     display: flex;
     flex-direction: column;
     font-family: Arial, serif;
@@ -249,7 +249,7 @@ html body #app #cv {
         }
 
         .content {
-            background: $dark1;
+            background: $background-dark;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;

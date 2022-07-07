@@ -121,9 +121,9 @@ $hover-color: rgba(white, .1);
 
 .dark #timeline {
     #timeline-table .event {
-        border-top-color: $light0;
-        border-right-color: $light0;
-        border-bottom-color: $light0;
+        border-top-color: $background-light;
+        border-right-color: $background-light;
+        border-bottom-color: $background-light;
     }
 }
 </style>

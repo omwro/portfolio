@@ -63,7 +63,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $light0;
+    background-color: $background-light;
     transition: 0.5s;
     border-bottom: $accent 2px solid;
 
@@ -144,7 +144,7 @@ export default {
 }
 
 #app.dark #header {
-    background-color: $dark1;
+    background-color: $background-dark;
 
     &.ontop {
         background-color: transparent;
@@ -153,7 +153,7 @@ export default {
     }
 
     .navbar a {
-        color: $light1;
+        color: $block-light;
     }
 
     .logo {

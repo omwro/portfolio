@@ -48,6 +48,6 @@ export default {
   }
 }
 #app.dark .separator {
-    background-color: $dark1;
+    background-color: $background-dark;
 }
 </style>

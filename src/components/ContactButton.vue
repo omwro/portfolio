@@ -74,7 +74,7 @@ export default {
         padding-left: 8px;
         font-size: 32px;
         font-weight: bold;
-        color: $light1;
+        color: $block-light;
         transition: .2s;
     }
 }

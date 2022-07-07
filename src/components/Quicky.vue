@@ -19,8 +19,8 @@ export default {
 section.quicky {
     .gradient-top {
         height: 48px;
-        background: $light0;
-        background: linear-gradient(180deg, rgba($light0,1) 50%, rgba($light2,1) 100%);
+        background: $background-light;
+        background: linear-gradient(180deg, rgba($background-light,1) 50%, rgba($light2,1) 100%);
     }
 
     .quicky-text {
@@ -33,24 +33,24 @@ section.quicky {
 
     .gradient-bottom {
         height: 48px;
-        background: $light0;
-        background: linear-gradient(0deg, rgba($light0,1) 50%, rgba($light2,1) 100%);
+        background: $background-light;
+        background: linear-gradient(0deg, rgba($background-light,1) 50%, rgba($light2,1) 100%);
     }
 }
 
 #app.dark section.quicky {
     .gradient-top {
-        background: $dark1;
-        background: linear-gradient(180deg, rgba($dark1,1) 50%, rgba($dark2,1) 100%);
+        background: $background-dark;
+        background: linear-gradient(180deg, rgba($background-dark,1) 50%, rgba($block-dark,1) 100%);
     }
 
     .quicky-text {
-        background-color: $dark2;
+        background-color: $block-dark;
     }
 
     .gradient-bottom {
-        background: $dark1;
-        background: linear-gradient(0deg, rgba($dark1,1) 50%, rgba($dark2,1) 100%);
+        background: $background-dark;
+        background: linear-gradient(0deg, rgba($background-dark,1) 50%, rgba($block-dark,1) 100%);
     }
 }
 </style>

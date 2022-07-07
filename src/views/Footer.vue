@@ -14,16 +14,20 @@ export default {
 @import "../styles/variables";
 
 #app #footer {
-    color: $light2;
+    color: $color-light;
+    background-color: $block-light;
     font-style: italic;
     padding: 0.5rem 0;
     font-size: 0.9rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    text-align: center;
 
     > div {
         padding: 0 0.5rem;
     }
+}
+
+#app.dark #footer {
+    color: $color-dark;
+    background-color: $block-dark;
 }
 </style>

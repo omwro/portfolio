@@ -83,7 +83,7 @@ export default {
 @import "../styles/variables";
 
 #action {
-    background-color: $light1;
+    background-color: $block-light;
 
     .content {
         display: flex;
@@ -137,8 +137,8 @@ export default {
 }
 
 .dark #action {
-    background-color: $dark2;
-    color: $light0;
+    background-color: $block-dark;
+    color: $background-light;
 
     .code {
         filter: invert(1);

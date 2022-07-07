@@ -52,7 +52,7 @@ export default {
         margin: auto;
         text-align: center;
         font-size: 1.5rem;
-        color: $light1;
+        color: $block-light;
         border: solid 1px white;
         border-radius: 10px;
         backdrop-filter: blur(10px);
@@ -67,14 +67,14 @@ export default {
         position: absolute;
         bottom: 0;
         right: 0;
-        margin: 0 25px 25px;
+        margin: 0 16px 16px 0;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         border: solid 1px $accent;
         border-radius: 10px;
         justify-content: center;
-        background-color: $dark1;
+        background-color: $background-dark;
         color: white;
 
         > div {
@@ -92,6 +92,12 @@ export default {
             span {
                 font-size: 10px;
             }
+        }
+    }
+
+    @media (min-width: $mq-m) {
+        .contact {
+            flex-direction: row;
         }
     }
 

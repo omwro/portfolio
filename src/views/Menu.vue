@@ -57,7 +57,7 @@ export default {
     bottom: 0;
     right: 0;
     padding: 0;
-    background-color: $light0;
+    background-color: $background-light;
     z-index: 15;
     transition: 0.5s;
     border-left: solid 0 transparent;
@@ -141,6 +141,6 @@ export default {
 }
 
 #app.dark #menu {
-    background-color: $dark1;
+    background-color: $background-dark;
 }
 </style>
