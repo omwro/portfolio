@@ -1,5 +1,6 @@
 [
   {
+    "type": "Hobby",
     "title": "Portfolio",
     "desc": "projects.desc.portfolio",
     "img": "img/project/project_website.webp",
@@ -16,6 +17,7 @@
     ]
   },
   {
+    "type": "Hobby",
     "title": "Metafy",
     "desc": "projects.desc.metafyweb",
     "img": "img/project/project_metafy_vue.webp",
@@ -30,6 +32,7 @@
     ]
   },
   {
+    "type": "Study",
     "title": "Barber2U",
     "desc": "projects.desc.barber2u",
     "img": "img/project/project_barber2u.webp",
@@ -47,9 +50,11 @@
     ]
   },
   {
+    "type": "Study",
     "title": "Metafy",
     "desc": "projects.desc.metafyapp",
     "img": "img/project/project_metafy.webp",
+    "isMobile": true,
     "url": null,
     "github": "https://github.com/omwro/MetafyKotlin",
     "stack": [
@@ -58,9 +63,10 @@
     ]
   },
   {
+    "type": "Study",
     "title": "NMEA Sensor Reader",
     "desc": "projects.desc.mobilecompany",
-    "img": "img/project/project_themobilecompany.webp",
+    "img": "img/stock/classified.jpg",
     "url": null,
     "github": null,
     "stack": [

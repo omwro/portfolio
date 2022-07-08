@@ -3,10 +3,8 @@
         <h1>{{ $t("projects.title") }}</h1>
         <div class="content">
             <div class="project-container" v-for="(p,i) in projects" :key="i">
-                <img :v-lazy="p.img"
-                     :src="p.img"
-                     :alt="p.title">
-                <div class="carousel-title">
+                <ProjectImage :project="p"/>
+                <div class="title">
                     {{ p.title }}
                     <a v-if="p.github"
                        aria-label="github"
@@ -39,9 +37,11 @@
 <script>
 import skillsJson from "../../public/data/skills.json"
 import projectsJson from "../../public/data/projects.json"
+import ProjectImage from "@/components/ProjectImage";
 
 export default {
     name: "Projects",
+    components: {ProjectImage},
     data: () => ({
         projects: projectsJson
     }),
@@ -58,25 +58,29 @@ export default {
 <style lang="scss">
 @import "../styles/variables";
 
-.content {
-    overflow: hidden;
+#projects .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 8px;
+    margin-right: 8px;
 
     .project-container {
         text-align: center;
-        margin-bottom: 32px;
+        margin: 0 8px 32px;
+        max-width: 640px;
+
+        @media (min-width: $mq-l) {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
 
         > * {
             padding-top: 4px;
         }
 
-        > img {
-            width: auto;
-            height: auto;
-            max-width: 100%;
-            max-height: 75vh;
-        }
-
-        .carousel-title {
+        .title {
             font-size: 1.5rem;
         }
 
