@@ -38,15 +38,12 @@
                                 :t="true"/>
                 </div>
             </div>
-
-
-            <h1 class="small">{{ $t('skills.projects') }}</h1>
-            <div v-lazy-container="{ selector: 'img' }" class="img-container">
-                <SkillBlock v-for="skill in getProjects()"
-                            :key="skill.name"
-                            :skill="skill"/>
-            </div>
-
+<!--            <h1 class="small">{{ $t('skills.projects') }}</h1>-->
+<!--            <div v-lazy-container="{ selector: 'img' }" class="img-container">-->
+<!--                <SkillBlock v-for="skill in getProjects()"-->
+<!--                            :key="skill.name"-->
+<!--                            :skill="skill"/>-->
+<!--            </div>-->
         </div>
     </section>
 </template>

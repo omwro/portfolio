@@ -35,7 +35,7 @@
     "type": "hobby",
     "title": "Alex's Portfolio",
     "desc": "",
-    "img": "img/stock/missing.jpg",
+    "img": "img/project/zamfir.png",
     "url": "https://zamfir.nl",
     "github": "https://github.com/omwro/portfolio-az",
     "stack": [
@@ -62,7 +62,7 @@
     "type": "hobby",
     "title": "War of Warlord",
     "desc": "",
-    "img": "img/stock/missing.jpg",
+    "img": "img/project/minecraft.webp",
     "url": null,
     "github": "https://github.com/omwro/WarOfWarlord",
     "stack": [
@@ -163,7 +163,8 @@
     "type": "study",
     "title": "Lantern Detector",
     "desc": "",
-    "img": "img/stock/missing.jpg",
+    "img": "img/project/lantern.png",
+    "isMobile": true,
     "url": null,
     "github": null,
     "stack": [
