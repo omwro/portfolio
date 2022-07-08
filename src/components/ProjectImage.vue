@@ -40,7 +40,7 @@ export default {
         position: relative;
         z-index: 1;
         max-width: 100%;
-        max-height: 365px;
+        max-height: 342px;
     }
 
     .project-laptop {

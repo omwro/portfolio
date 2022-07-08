@@ -51,6 +51,9 @@ const translations = {
         projects: {
             title: "Projects",
             swipe: "Swipe to scroll",
+            hobby: "Hobby",
+            study: "Study",
+            intern: "Intern",
             desc: {
                 portfolio: "Creating a good looking personal portfolio website have been a hobby project for years with " +
                     "multiple attempts in different languages and frameworks. This website will be continuously " +
@@ -182,6 +185,9 @@ const translations = {
         projects: {
             title: "Projecten",
             swipe: "Sleep om te scrollen",
+            hobby: "Hobby",
+            study: "Studie",
+            intern: "Stage",
             desc: {
                 portfolio: "Het maken van een mooie persoonlijke portfolio website is een hobby project waar ik jaren " +
                     "lang meerdere pogingen in verschillende talen en frameworks hebt gewaagd. De website zal " +

@@ -1,7 +1,7 @@
 [
   {
-    "type": "Hobby",
-    "title": "Portfolio",
+    "type": "hobby",
+    "title": "My Portfolio",
     "desc": "projects.desc.portfolio",
     "img": "img/project/project_website.webp",
     "url": "https://omererdem.nl",
@@ -17,7 +17,7 @@
     ]
   },
   {
-    "type": "Hobby",
+    "type": "hobby",
     "title": "Metafy",
     "desc": "projects.desc.metafyweb",
     "img": "img/project/project_metafy_vue.webp",
@@ -32,7 +32,104 @@
     ]
   },
   {
-    "type": "Study",
+    "type": "hobby",
+    "title": "Alex's Portfolio",
+    "desc": "",
+    "img": "img/stock/missing.jpg",
+    "url": "https://zamfir.nl",
+    "github": "https://github.com/omwro/portfolio-az",
+    "stack": [
+      "html",
+      "js",
+      "css",
+      "vue",
+      "sass"
+    ]
+  },
+  {
+    "type": "hobby",
+    "title": "GPU Tracker",
+    "desc": "",
+    "img": "img/stock/missing.jpg",
+    "url": null,
+    "github": "https://github.com/omwro/GpuTracker",
+    "stack": [
+      "js",
+      "node"
+    ]
+  },
+  {
+    "type": "hobby",
+    "title": "War of Warlord",
+    "desc": "",
+    "img": "img/stock/missing.jpg",
+    "url": null,
+    "github": "https://github.com/omwro/WarOfWarlord",
+    "stack": [
+      "java"
+    ]
+  },
+  {
+    "type": "intern",
+    "title": "KPI interface",
+    "desc": "",
+    "img": "img/stock/classified.jpg",
+    "url": null,
+    "github": null,
+    "stack": [
+      "html",
+      "css",
+      "js",
+      "csharp",
+      "aspnet"
+    ]
+  },
+  {
+    "type": "intern",
+    "title": "NMEA Sensor Reader",
+    "desc": "projects.desc.mobilecompany",
+    "img": "img/stock/classified.jpg",
+    "isMobile": true,
+    "url": null,
+    "github": null,
+    "stack": [
+      "kotlin"
+    ]
+  },
+  {
+    "type": "intern",
+    "title": "Support Dashboard",
+    "desc": "",
+    "img": "img/stock/classified.jpg",
+    "url": null,
+    "github": null,
+    "stack": [
+      "html",
+      "css",
+      "js",
+      "php",
+      "vue",
+      "sass",
+      "laravel"
+    ]
+  },
+  {
+    "type": "intern",
+    "title": "Firmware Interface",
+    "desc": "",
+    "img": "img/stock/classified.jpg",
+    "url": null,
+    "github": null,
+    "stack": [
+      "html",
+      "css",
+      "js",
+      "php",
+      "wordpress"
+    ]
+  },
+  {
+    "type": "study",
     "title": "Barber2U",
     "desc": "projects.desc.barber2u",
     "img": "img/project/project_barber2u.webp",
@@ -50,8 +147,8 @@
     ]
   },
   {
-    "type": "Study",
-    "title": "Metafy",
+    "type": "study",
+    "title": "Metafy App",
     "desc": "projects.desc.metafyapp",
     "img": "img/project/project_metafy.webp",
     "isMobile": true,
@@ -63,15 +160,14 @@
     ]
   },
   {
-    "type": "Study",
-    "title": "NMEA Sensor Reader",
-    "desc": "projects.desc.mobilecompany",
-    "img": "img/stock/classified.jpg",
+    "type": "study",
+    "title": "Lantern Detector",
+    "desc": "",
+    "img": "img/stock/missing.jpg",
     "url": null,
     "github": null,
     "stack": [
-      "kotlin",
-      "xml"
+      "python"
     ]
   }
 ]
