@@ -638,7 +638,7 @@
     "name": "hardworker",
     "display_name": "skills.hardworker",
     "img": "./img/language/fist.png",
-    "color": 5,
+    "color": 4,
     "show_portfolio": true,
     "show_cv": false,
     "xp": []
@@ -648,7 +648,7 @@
     "name": "teamplayer",
     "display_name": "skills.teamplayer",
     "img": "./img/language/team.png",
-    "color": 5,
+    "color": 4,
     "show_portfolio": true,
     "show_cv": false,
     "xp": []
@@ -658,7 +658,7 @@
     "name": "problemsolver",
     "display_name": "skills.problemsolving",
     "img": "./img/language/problem.png",
-    "color": 5,
+    "color": 4,
     "show_portfolio": true,
     "show_cv": false,
     "xp": []
@@ -668,7 +668,7 @@
     "name": "creativity",
     "display_name": "skills.creativity",
     "img": "./img/language/creative.png",
-    "color": 5,
+    "color": 4,
     "show_portfolio": true,
     "show_cv": false,
     "xp": []

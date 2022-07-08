@@ -2,40 +2,51 @@
     <section id="skills">
         <h1>{{ $t('skills.title') }}</h1>
         <div class="content">
-            <h1 class="small">{{ $t('skills.languages') }}</h1>
-            <div v-lazy-container="{ selector: 'img' }" class="img-container">
-                <SkillBlock v-for="skill in getLanguages()"
-                            :key="skill.name"
-                            :skill="skill"
-                            :xp="true"/>
+            <div class="skill-container c1">
+                <h1 class="small">{{ $t('skills.languages') }}</h1>
+                <div v-lazy-container="{ selector: 'img' }" class="img-container">
+                    <SkillBlock v-for="skill in getLanguages()"
+                                :key="skill.name"
+                                :skill="skill"
+                                :xp="true"/>
+                </div>
             </div>
-            <h1 class="small">{{ $t('skills.frameworks') }}</h1>
-            <div v-lazy-container="{ selector: 'img' }" class="img-container">
-                <SkillBlock v-for="skill in getFrameworks()"
-                            :key="skill.name"
-                            :skill="skill"
-                            :xp="true"/>
+            <div class="skill-container c2">
+                <h1 class="small">{{ $t('skills.frameworks') }}</h1>
+                <div v-lazy-container="{ selector: 'img' }" class="img-container">
+                    <SkillBlock v-for="skill in getFrameworks()"
+                                :key="skill.name"
+                                :skill="skill"
+                                :xp="true"/>
+                </div>
             </div>
-            <h1 class="small">{{ $t('skills.environments') }}</h1>
-            <div v-lazy-container="{ selector: 'img' }" class="img-container">
-                <SkillBlock v-for="skill in getEnvironments()"
-                            :key="skill.name"
-                            :skill="skill"
-                            :xp="true"/>
+            <div class="skill-container c3">
+                <h1 class="small">{{ $t('skills.environments') }}</h1>
+                <div v-lazy-container="{ selector: 'img' }" class="img-container">
+                    <SkillBlock v-for="skill in getEnvironments()"
+                                :key="skill.name"
+                                :skill="skill"
+                                :xp="true"/>
+                </div>
             </div>
+            <div class="skill-container c4">
+                <h1 class="small">{{ $t('skills.competencies') }}</h1>
+                <div v-lazy-container="{ selector: 'img' }" class="img-container">
+                    <SkillBlock v-for="skill in getCompetencies()"
+                                :key="skill.name"
+                                :skill="skill"
+                                :t="true"/>
+                </div>
+            </div>
+
+
             <h1 class="small">{{ $t('skills.projects') }}</h1>
             <div v-lazy-container="{ selector: 'img' }" class="img-container">
                 <SkillBlock v-for="skill in getProjects()"
                             :key="skill.name"
                             :skill="skill"/>
             </div>
-            <h1 class="small">{{ $t('skills.competencies') }}</h1>
-            <div v-lazy-container="{ selector: 'img' }" class="img-container">
-                <SkillBlock v-for="skill in getCompetencies()"
-                            :key="skill.name"
-                            :skill="skill"
-                            :t="true"/>
-            </div>
+
         </div>
     </section>
 </template>
@@ -81,6 +92,52 @@ export default {
 .content {
     margin-top: 0;
 
+    .skill-container {
+        margin: 16px;
+        background-color: $block-light;
+        border-left: solid 5px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+
+        h1 {
+            margin-top: 0;
+        }
+
+        &.c1 {
+            border-left-color: $accent;
+
+            h1 {
+                border-bottom-color: $accent;
+            }
+        }
+
+        &.c2 {
+            border-left-color: $accent2;
+
+            h1 {
+                border-bottom-color: $accent2;
+            }
+        }
+
+        &.c3 {
+            border-left-color: $accent3;
+
+            h1 {
+                border-bottom-color: $accent3;
+            }
+        }
+
+        &.c4 {
+            border-left-color: $accent4;
+
+            h1 {
+                border-bottom-color: $accent4;
+            }
+        }
+    }
+
     .img-container {
         display: flex;
         flex-direction: row;
@@ -91,9 +148,12 @@ export default {
         font-size: 0.9rem;
     }
 
-    h1.small.desc {
-        margin-top: 0;
-        border-bottom-color: $grey;
+
+}
+
+#app.dark .content {
+    .skill-container {
+        background-color: $block-dark;
     }
 }
 </style>
