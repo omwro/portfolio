@@ -2,7 +2,7 @@
     <div id="cv">
         <div class="header">
             <div class="profile-img">
-                <img alt="profile picture" src="../../public/img/selfie/selfie-squared.webp">
+                <img alt="profile picture" src="../../public/img/selfie/selfie-squared.png">
             </div>
             <div class="information">
                 <div class="name color-red capital">{{ $t('general.firstname') }}</div>

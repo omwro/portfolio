@@ -60,19 +60,24 @@ export default {
 
 #projects .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-left: 8px;
     margin-right: 8px;
+    align-content: center;
+
+    @media (min-width: $mq-l) {
+        flex-direction: row;
+    }
 
     .project-container {
         text-align: center;
         margin: 0 8px 32px;
-        max-width: 640px;
+        max-width: 600px;
 
         @media (min-width: $mq-l) {
-            margin-left: 40px;
-            margin-right: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
         }
 
 

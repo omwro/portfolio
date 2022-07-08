@@ -3,7 +3,7 @@
         <h1>{{$t('about.title')}}</h1>
         <div class="content">
             <div class="selfie">
-                <img v-lazy="'./img/selfie/selfie.webp'" alt="selfie">
+                <img v-lazy="'./img/selfie/selfie.png'" alt="selfie">
             </div>
             <div class="intro">
                 <div>{{$t('about.description1')}}</div>
@@ -38,7 +38,7 @@ export default {
             max-height: 450px;
             min-width: 200px;
             max-width: 300px;
-            border: solid $dark5 2px;
+            border-radius: 25px;
         }
 
         a {
