@@ -140,11 +140,11 @@
     ]
   },
   {
-    "type": "Language",
+    "type": "Framework",
     "name": "node",
-    "display_name": "NodeJs",
+    "display_name": "NodeJS",
     "img": "./img/language/node.png",
-    "color": 1,
+    "color": 2,
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
@@ -180,7 +180,7 @@
   {
     "type": "Framework",
     "name": "vue",
-    "display_name": "Vue.Js 2",
+    "display_name": "Vue 2",
     "img": "./img/language/vue.png",
     "color": 2,
     "show_portfolio": true,
@@ -245,7 +245,7 @@
   {
     "type": "Framework",
     "name": "react",
-    "display_name": "React.js",
+    "display_name": "ReactJS",
     "img": "./img/language/react.png",
     "color": 2,
     "show_portfolio": true,

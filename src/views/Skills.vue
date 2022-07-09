@@ -56,26 +56,35 @@ export default {
     name: "Skills",
     components: {SkillBlock},
     methods: {
-        getExperienceString(skill) {
-            const totalxp = skill.xp
+        getTotalMonths(skill) {
+            return skill.xp
                 .map(x => x.months)
                 .reduce((prevValue, currValue) => prevValue + currValue)
+        },
+        getExperienceString(skill) {
+            const totalxp = this.getTotalMonths(skill)
             let years = Math.floor(totalxp / 12)
             if (years) return `${years} ${this.$t('skills.years')}`
             return `${totalxp} ${this.$t('skills.months')}`
         },
         getLanguages() {
-            return json.filter(x => x.type === "Language" && x.show_portfolio === true)
+            return json
+                .filter(x => x.type === "Language" && x.show_portfolio === true)
+                .sort((x, y) => this.getTotalMonths(y) - this.getTotalMonths(x))
         },
         getFrameworks() {
-            return json.filter(x => x.type === "Framework" && x.show_portfolio === true)
+            return json
+                .filter(x => x.type === "Framework" && x.show_portfolio === true)
+                .sort((x, y) => this.getTotalMonths(y) - this.getTotalMonths(x))
         },
         getEnvironments() {
-            return json.filter(x => x.type === "Environments" && x.show_portfolio === true)
+            return json
+                .filter(x => x.type === "Environments" && x.show_portfolio === true)
+                .sort((x, y) => this.getTotalMonths(y) - this.getTotalMonths(x))
         },
-        getProjects() {
-            return json.filter(x => x.type === "Projects" && x.show_portfolio === true)
-        },
+        // getProjects() {
+        //     return json.filter(x => x.type === "Projects" && x.show_portfolio === true)
+        // },
         getCompetencies() {
             return json.filter(x => x.type === "Competencies" && x.show_portfolio === true)
         }

@@ -1,7 +1,7 @@
 [
   {
     "type": "hobby",
-    "title": "My Portfolio",
+    "title": "Portfolio",
     "desc": "projects.desc.portfolio",
     "img": "img/project/project_website.webp",
     "url": "https://omererdem.nl",
@@ -11,7 +11,6 @@
       "js",
       "php",
       "css",
-      "jquery",
       "vue",
       "sass"
     ]
