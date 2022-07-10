@@ -12,7 +12,7 @@ const translations = {
         },
         home: {
             title: "Home",
-            intro: "Hi, my name is Omer Erdem and welcome to my portfolio website!"
+            intro: "Hi, my name is Ömer Erdem and welcome to my portfolio website!"
         },
         preferences: {
             title: "Choose your preference",
@@ -22,7 +22,14 @@ const translations = {
         },
         about: {
             title: "Who am I ?",
-            resume: "Download Resume",
+            resume: "View my resume",
+            desc1: "My name is Ömer Erdem and I am a Software Engineer graduated at the Amsterdam University of Applied Sciences.",
+            desc2: "I am currenctly 23 years old and like to game, drive around and experiment.",
+            desc3: "I am a hard working web- en software developer, who is every day in search for new projects and challenges.",
+            desc4: "I am improving my skills with the aim to become a Full Stack developer.",
+            desc5: "I am really passionate in programming and would not mind to get my hands dirty again.",
+            desc6: "I am eager to learn new techniques and I am surely not afraid of hardware.",
+            desc7: "I am someone who likes to make the world a better place, even if it goes unnoticed.",
             description1: "My name is Omer Erdem and I am a fourth year Software Engineer student at the Amsterdam " +
                 "University of Applied Sciences. I am currently 23 years old and I like to game, drive around and experiment.",
             description2: "I am a hardworking web- and software developer student who is every day in search for new" +
@@ -144,7 +151,7 @@ const translations = {
         },
         home: {
             title: "Home",
-            intro: "Hey, mijn naam is Omer Erdem en welkom tot mijn portfolio website!"
+            intro: "Hey, mijn naam is Ömer Erdem en welkom tot mijn portfolio website!"
         },
         preferences: {
             title: "Kies jouw voorkeuren",
@@ -155,7 +162,14 @@ const translations = {
         },
         about: {
             title: "Wie ben ik ?",
-            resume: "Download CV",
+            resume: "Bekijk mijn CV",
+            desc1: "Mijn naam is Ömer Erdem en ik ben een Software Ontwikkelaar afgestudeerd aan het Hogeschool van Amsterdam.",
+            desc2: "Ik ben momenteel 23 jaar jong en vind het leuk om te gamen, rondjes te rijden en te experimenteren.",
+            desc3: "Ik ben een hard werkend web- en software ontwikkelaar, waarbij ik elke dag op zoek naar nieuwe projecten en uitdagingen.",
+            desc4: "Ik ben mijn vaardigen aan het verbeteren met als doel om een Full Stack ontwikkelaar te worden.",
+            desc5: "Ik ben erg gepassioneerd in programmeren en vind het niet erg om me handen vuil te maken.",
+            desc6: "Ik ben gretig om nieuwe technieken te leren en ben zeker niet bang van hardware.",
+            desc7: "Ik ben iemand die de wereld een beter plek wilt maken, zelfs als het onopgemerkt blijft.",
             description1: "Mijn naam is Omer Erdem en ik ben een vierde jaars Software Ontwikkelaar student aan het " +
                 "Hogeschool van Amsterdam. Ik ben momenteel 23 jaar jong en vind het leuk om te gamen, rondjes te rijden" +
                 " en te experimenteren.",

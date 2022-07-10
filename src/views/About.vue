@@ -6,8 +6,8 @@
                 <img v-lazy="'./img/selfie/selfie.png'" alt="selfie">
             </div>
             <div class="intro">
-                <div>{{$t('about.description1')}}</div>
-                <div>{{$t('about.description2')}}</div>
+                <div>{{$t('about.desc1')}} {{$t('about.desc2')}}</div>
+                <div>{{$t('about.desc3')}} {{$t('about.desc4')}} {{$t('about.desc5')}} {{$t('about.desc6')}} {{$t('about.desc7')}}</div>
             </div>
         </div>
     </section>

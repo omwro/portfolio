@@ -46,17 +46,15 @@ export default {
         display: block;
         top: 25%;
         position: relative;
-
         padding: 10px;
         max-width: 470px;
         margin: auto;
         text-align: center;
         font-size: 1.5rem;
-        color: $block-light;
-        border: solid 1px white;
+        color: $color-dark;
+        border: solid 1px $accent;
         border-radius: 10px;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        background-color: $background-dark;
 
         .bold {
             font-weight: bold;
@@ -75,7 +73,7 @@ export default {
         border-radius: 10px;
         justify-content: center;
         background-color: $background-dark;
-        color: white;
+        color: $color-dark;
 
         > div {
             display: flex;
@@ -117,11 +115,6 @@ export default {
         .background-image {
             background: url("../../public/img/selfie/car-selfie-blurred.webp") no-repeat 60% 50%;
         }
-    }
-}
-.contact, .introduction {
-    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-        background-color: rgba(0, 0, 0, .5);
     }
 }
 </style>
