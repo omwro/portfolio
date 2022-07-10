@@ -3,7 +3,7 @@
         <h1>{{$t('about.title')}}</h1>
         <div class="content">
             <div class="selfie">
-                <img v-lazy="'./img/selfie/selfie.png'" alt="selfie">
+                <img v-lazy="'./img/selfie/selfie.webp'" alt="selfie">
             </div>
             <div class="intro">
                 <div>{{$t('about.desc1')}} {{$t('about.desc2')}}</div>
