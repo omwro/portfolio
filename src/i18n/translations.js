@@ -26,18 +26,11 @@ const translations = {
             resume: "View my resume",
             desc1: "My name is Ömer Erdem and I am a Software Engineer graduated at the Amsterdam University of Applied Sciences.",
             desc2: "I am currenctly 23 years old and like to game, drive around and experiment.",
-            desc3: "I am a hard working web- en software developer, who is every day in search for new projects and challenges.",
-            desc4: "I am improving my skills with the aim to become a Full Stack developer.",
-            desc5: "I am really passionate in programming and would not mind to get my hands dirty again.",
-            desc6: "I am eager to learn new techniques and I am surely not afraid of hardware.",
-            desc7: "I am someone who likes to make the world a better place, even if it goes unnoticed.",
-            description1: "My name is Omer Erdem and I am a fourth year Software Engineer student at the Amsterdam " +
-                "University of Applied Sciences. I am currently 23 years old and I like to game, drive around and experiment.",
-            description2: "I am a hardworking web- and software developer student who is every day in search for new" +
-                " projects and challenges to improve my skills to eventually become a Full Stack Developer. I am really " +
-                "passionate in programming and would not mind to get my hands dirty again. I am eager to learn new " +
-                "techniques and I am surely not afraid of hardware. I am someone who likes to make the world a better " +
-                "place, even if it goes unnoticed."
+            desc3: "I am a hardworking web- en software developer, looking for new projects and challenges every day.",
+            desc4: "I am improving my skills with the aim of becoming a Full Stack developer.",
+            desc5: "I am very passionate about programming and don't mind getting my hands dirty.",
+            desc6: "I like to learn new techniques and I am certainly not afraid of hardware.",
+            desc7: "I am someone who wants to make the world a better place, even if it goes unnoticed.",
         },
         skills: {
             title: "Skills",
@@ -179,19 +172,11 @@ const translations = {
             resume: "Bekijk mijn CV",
             desc1: "Mijn naam is Ömer Erdem en ik ben een Software Ontwikkelaar afgestudeerd aan het Hogeschool van Amsterdam.",
             desc2: "Ik ben momenteel 23 jaar jong en vind het leuk om te gamen, rondjes te rijden en te experimenteren.",
-            desc3: "Ik ben een hard werkend web- en software ontwikkelaar, waarbij ik elke dag op zoek naar nieuwe projecten en uitdagingen.",
-            desc4: "Ik ben mijn vaardigen aan het verbeteren met als doel om een Full Stack ontwikkelaar te worden.",
-            desc5: "Ik ben erg gepassioneerd in programmeren en vind het niet erg om me handen vuil te maken.",
-            desc6: "Ik ben gretig om nieuwe technieken te leren en ben zeker niet bang van hardware.",
-            desc7: "Ik ben iemand die de wereld een beter plek wilt maken, zelfs als het onopgemerkt blijft.",
-            description1: "Mijn naam is Omer Erdem en ik ben een vierde jaars Software Ontwikkelaar student aan het " +
-                "Hogeschool van Amsterdam. Ik ben momenteel 23 jaar jong en vind het leuk om te gamen, rondjes te rijden" +
-                " en te experimenteren.",
-            description2: "Ik ben een hard werkend web- en software ontwikkelaar student waarbij ik elke dag op zoek ben" +
-                " naar nieuwe projecten en uitdagingen om mijn vaardigheden te verbeteren om uiteindelijk een Full Stack" +
-                " ontwikkelaar te worden. Ik ben erg gepassioneerd in programmeren en vind het niet erg om me handen " +
-                "vuil te maken. Ik ben gretig om nieuwe technieken te leren en ben zeker niet bang van hardware. Ik ben " +
-                "iemand die de wereld een beter plek wilt maken, zelfs als het onopgemerkt blijft."
+            desc3: "Ik ben een hardwerkende web- en softwareontwikkelaar, elke dag op zoek naar nieuwe projecten en uitdagingen.",
+            desc4: "Ik verbeter mijn vaardigen met als doel een Full Stack ontwikkelaar te worden.",
+            desc5: "Ik ben erg gepassioneerd in programmeren en vind het niet erg om mijn handen vuil te maken.",
+            desc6: "Ik leer graag nieuwe technieken en ben zeker niet bang van hardware.",
+            desc7: "Ik ben iemand die van de wereld een betere plek wil maken, ook als dat onopgemerkt blijft.",
         },
         skills: {
             title: "Vaardigheden",
