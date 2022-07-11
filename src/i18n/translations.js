@@ -12,7 +12,8 @@ const translations = {
         },
         home: {
             title: "Home",
-            intro: "Hi, my name is Ömer Erdem and welcome to my portfolio website!"
+            intro1: "Yo👋🏻! I Am",
+            intro2: "and I'm a"
         },
         preferences: {
             title: "Choose your preference",
@@ -62,22 +63,34 @@ const translations = {
             study: "Study",
             intern: "Intern",
             desc: {
-                portfolio: "Creating a good looking personal portfolio website have been a hobby project for years with " +
-                    "multiple attempts in different languages and frameworks. This website will be continuously " +
-                    "developed on, in order to improve my skills and to experiment with new features.",
-                metafyweb: "A follow up on the android app with the goal to make it accessible for multiple platforms. " +
-                    "With is you can use the Spotify API to create dynamic playlists, where all the meta data is " +
-                    "stored in the Spotify servers and works fully client-side. A premium version with server-side " +
-                    "actions is in the making, with commercial purposes.",
-                barber2u: "A school project devised and created by our team, where barbers can give the customers a " +
-                    "haircut in the customer's living room. You can select the barbers in de app with the " +
-                    "appointment moment and haircut style chosen by you.",
+                portfolio: "My 3rd attempt at creating a good looking and unique personal portfolio website. " +
+                    "This website will be continuously developed on, in order to improve my skills " +
+                    "and to experiment with new features.",
+                metafyweb: "A follow up on the android app with the goal to make it accessible for multiple " +
+                    "platforms. With is you can use the Spotify API to create dynamic playlists, " +
+                    "where all the meta data is stored in the Spotify servers.",
+                barber2u: "A unique school project, where barbers can give the customers a haircut in the customer's " +
+                    "living room. You can select the barbers in de app with the appointment moment and haircut style " +
+                    "chosen by you.",
                 metafyapp: "An Android application that uses the Spotify API to get your spotify account song and " +
                     "playlist data. You can assign your custom tags to songs and create custom playlists.",
-                mobilecompany: "A project for The Mobile Company that would like to have a SDK that supports the NMEA 0183 " +
-                    "protocol, which can also automatically search your Wi-Fi and Bluetooth network in order to " +
-                    "connect with the sensors and display all the data inside a simple android application. The SDK " +
-                    "can also be used as a library for your application.",
+                mobilecompany: "A project, where an SDK has been created that supports the NMEA 0183 protocol. " +
+                    "The SDK automatically searches for Wi-Fi and Bluetooth networks in order to connect to the " +
+                    "NMEA hardware sensors.The sensor data can be displayed in a simple android application.",
+                zamfir: "A portfolio page for a friend who is studying robotics and electronics.",
+                gputracker: "A webscraper to keep track of GPU stocks in times of GPU shortages. Also has an " +
+                    "automatic checkout feature with a manual payment step.",
+                minecraft: "A Minecraft PvP gamemode, where the player fights other players to stay the warlord of " +
+                    "the arena.",
+                bold:"A dashboard that helps the support management to see all the important data in a glimpse of " +
+                    "an eye. Using the ActiveCollab API in order to collect tasks and times and display them in " +
+                    "data tables and graphs, while also following the Material IO guidelines.",
+                lantern: "Training a Machine Learning model that can detect 7 different Amsterdam lampposts. It also " +
+                    "looks at the intensity of the headlights in order to detect if the bulbs are nearly broken.",
+                kpi: "A project that contains both cron jobs and an interface, where pre-programmed statuses can " +
+                    "be read from EventStore. KPI's can be calculated with the statuses, so that the statistics " +
+                    "can be seen in the interface.",
+                firmware: "Creating an interface, where the installation firmware is installed to a hardware controller."
             }
         },
         companies: {
@@ -151,7 +164,8 @@ const translations = {
         },
         home: {
             title: "Home",
-            intro: "Hey, mijn naam is Ömer Erdem en welkom tot mijn portfolio website!"
+            intro1: "Yo👋🏻! Ik ben",
+            intro2: "en ik ben een"
         },
         preferences: {
             title: "Kies jouw voorkeuren",
@@ -203,23 +217,36 @@ const translations = {
             study: "Studie",
             intern: "Stage",
             desc: {
-                portfolio: "Het maken van een mooie persoonlijke portfolio website is een hobby project waar ik jaren " +
-                    "lang meerdere pogingen in verschillende talen en frameworks hebt gewaagd. De website zal " +
-                    "continue doorontwikkeld worden om mijn vaardigheden te verbeterend en om met nieuwe features " +
-                    "te ontwikkelen.",
-                metafyweb: "Een vervolg op de android app met als doel om het globaal te maken voor meerdere platforms. " +
-                    "Hiermee kan je de Spotify API gebruiken om dynamische playlists te gebruiken, waarbij alle meta " +
-                    "data wordt opgeslagen in de Spotify servers, waardoor het volledig client-side werkt. Een premium " +
-                    "versie met server-side actions is in de maak, met commerciele doeleinden.",
-                barber2u: "Een school project bedacht en gemaakt door onze team, waarbij kappers de knipbeurten in de " +
-                    "woonkamer van de klanten knippen. De kappers kan je selecteren in de app met daarbij door jouw " +
-                    "gekozen moment en soort knipbeurt.",
-                metafyapp: "Een android app die de Spotify API gebruikt om de liedjes en playlist van je spotify account " +
-                    "op te halen. Hiermee kan je liedjes tags en playlisten naar je wensen aanpassen.",
-                mobilecompany: "Een project voor The Mobile Company die graag een SDK wou hebben die de NMEA 0183 " +
-                    "protocol ondersteund. De SDK zoekt automatisch naar Wi-Fi en Bluetooth netwerken, zodat het een " +
-                    "verbinding kan aanleggen met de sensoren en de sensor data kan tonen in een simpele android app. " +
-                    "De SDK kan ook worden gebruikt als een bibliotheek voor jouw eigen app.",
+                portfolio: "Mijn 3e poging tot het maken van een mooie en unieke persoonlijke portfolio website. " +
+                    "De website zal continue doorontwikkeld worden om mijn vaardigheden te verbeterend " +
+                    "en om met nieuwe features te experimenteren.",
+                metafyweb: "Een vervolg op de android app met als doel om het globaal te maken voor meerdere " +
+                    "platforms. Hiermee kan je de Spotify API gebruiken om dynamische playlists te maken, " +
+                    "waarbij alle meta data wordt opgeslagen in de Spotify servers.",
+                barber2u: "Een unieke school project, waarbij kappers in de woonkamer van de klanten knippen. " +
+                    "De kappers kan je selecteren in de app met de door jouw gekozen moment en soort knipbeurt.",
+                metafyapp: "Een android app die de Spotify API gebruikt om de liedjes en afspeellijsten van je " +
+                    "spotify account ophaald. Hiermee kan je liedjes taggen en afspeellijsten naar je wensen aanpassen.",
+                mobilecompany: "Een project, waarbij een SDK is gemaakt die de NMEA 0183 protocol ondersteund. " +
+                    "De SDK zoekt automatisch naar Wi-Fi en Bluetooth netwerken, zodat het een verbinding kan " +
+                    "vastleggen met de NMEA hardware sensoren. De sensor data kan getoond worden in een simpele " +
+                    "android app.",
+                zamfir: "Een portfolio pagina voor een vriend die robotica en elektronica studeert.",
+                gputracker: "Een webscraper om GPU voorraden bij te houden in tijden van GPU tekorten. Heeft ook een " +
+                    "functie voor automatisch afrekenen met een handmatige betalingsstap.",
+                minecraft: "Een Minecaft PVP spelmodus, waarin de speler tegen andere spelers vecht om de krijgsheer " +
+                    "van de arena te blijven.",
+                bold: "Een dashboard dat de supportmanagement helpt om in één oogopslag alle belangrijke data te " +
+                    "zien. De ActiveCollab API wordt gebruikt om alle taken en tijden te verzamelen en te tonen in " +
+                    "data tabellen en grafieken, terwijl ik ook de Material IO richtlijnen volg.",
+                lantern: "Het trainen van een Machine Learning model die 7 verschillende Amsterdamse lantaarnpalen " +
+                    "kan detecteren. Hierbij kijkt het ook naar de intensiteit van de koplampen om te detecteren " +
+                    "of de lampen bijna stuk zijn.",
+                kpi: "Een project die zowel cron jobs als een interface bevat, waarbij voorgeprogrammeerde statussen " +
+                    "afgelezen kunnen worden vanuit EventStore. Met de statussen kunnen KPI's berekend worden, " +
+                    "zodat de statistieken te zien zijn in de interface.",
+                firmware: "Het maken van een interface, waarbij de installatie firmware wordt geïnstalleerd aan een " +
+                    "hardware controller."
             },
         },
         companies: {
@@ -232,7 +259,7 @@ const translations = {
             newInternshipBranch: "Nieuwe stage begonnen",
             newStudyBranch: "Nieuwe studie begonnen",
             mergeStudy: "Afgestudeerd",
-            mergeWorkBranch: "Baan afgerond",
+            mergeWork: "Baan afgerond",
             newWorkBranch: "Nieuwe baan begonnen",
             deugd: {
                 date: "Jan 2015 - Huidig",

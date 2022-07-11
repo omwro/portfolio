@@ -2,7 +2,8 @@
     <div id="home">
         <div class="background-image">
             <div class="introduction">
-                <span>{{$t("home.intro")}}</span>
+                {{$t("home.intro1")}} <div>{{$t("general.firstname")}} {{$t("general.lastname")}}</div>
+                {{$t("home.intro2")}} <div>{{$t("general.study")}}</div>
             </div>
             <div class="contact">
                 <div v-for="(c, i) in contact" :key="i">
@@ -44,20 +45,25 @@ export default {
 
     .introduction {
         display: block;
-        top: 25%;
+        top: 100px;
         position: relative;
         padding: 10px;
-        max-width: 470px;
+        max-width: 750px;
         margin: auto;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: $color-dark;
-        border: solid 1px $accent;
-        border-radius: 10px;
-        background-color: $background-dark;
+        font-weight: normal;
 
-        .bold {
+        > div {
+            display: inline-block;
             font-weight: bold;
+            background: $accent;
+            padding: 4px;
+            margin: 8px 0;
+            border-radius: 3px;
+            -webkit-box-shadow: 5px 5px 10px 5px $accent-dark;
+            box-shadow: 5px 5px 10px 5px $accent-dark;
         }
     }
 
@@ -94,6 +100,9 @@ export default {
     }
 
     @media (min-width: $mq-m) {
+        .introduction {
+            font-size: 3rem;
+        }
         .contact {
             flex-direction: row;
         }

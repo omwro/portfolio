@@ -33,7 +33,7 @@
   {
     "type": "hobby",
     "title": "Alex's Portfolio",
-    "desc": "",
+    "desc": "projects.desc.zamfir",
     "img": "img/project/zamfir.png",
     "url": "https://zamfir.nl",
     "github": "https://github.com/omwro/portfolio-az",
@@ -48,7 +48,7 @@
   {
     "type": "hobby",
     "title": "GPU Tracker",
-    "desc": "",
+    "desc": "projects.desc.gputracker",
     "img": "img/stock/missing.jpg",
     "url": null,
     "github": "https://github.com/omwro/GpuTracker",
@@ -60,7 +60,7 @@
   {
     "type": "hobby",
     "title": "War of Warlord",
-    "desc": "",
+    "desc": "projects.desc.minecraft",
     "img": "img/project/minecraft.webp",
     "url": null,
     "github": "https://github.com/omwro/WarOfWarlord",
@@ -71,7 +71,7 @@
   {
     "type": "intern",
     "title": "KPI interface",
-    "desc": "",
+    "desc": "projects.desc.kpi",
     "img": "img/stock/classified.jpg",
     "url": null,
     "github": null,
@@ -98,7 +98,7 @@
   {
     "type": "intern",
     "title": "Support Dashboard",
-    "desc": "",
+    "desc": "projects.desc.bold",
     "img": "img/stock/classified.jpg",
     "url": null,
     "github": null,
@@ -115,7 +115,7 @@
   {
     "type": "intern",
     "title": "Firmware Interface",
-    "desc": "",
+    "desc": "projects.desc.firmware",
     "img": "img/stock/classified.jpg",
     "url": null,
     "github": null,
@@ -161,7 +161,7 @@
   {
     "type": "study",
     "title": "Lantern Detector",
-    "desc": "",
+    "desc": "projects.desc.lantern",
     "img": "img/project/lantern.png",
     "isMobile": true,
     "url": null,

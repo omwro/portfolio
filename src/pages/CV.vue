@@ -24,11 +24,11 @@
             <div class="aboutme">
                 <div class="title bold">ABOUT ME</div>
                 <div class="desc color-grey">
-                    I am a hardworking web- and software developer who is every day in search for new projects
-                    and challenges to improve my skills to become a Full Stack Developer. I am really
-                    passionate in programming and would not mind to get my hands dirty again. I am eager to learn new
-                    techniques and I am surely not afraid of hardware. I am someone who likes to make the world a better
-                    place, even if it goes unnoticed.
+                    {{ $t('about.desc3', 'en') }}
+                    {{ $t('about.desc4', 'en') }}
+                    {{ $t('about.desc5', 'en') }}
+                    {{ $t('about.desc6', 'en') }}
+                    {{ $t('about.desc7', 'en') }}
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@
                     <div class="skill" v-for="cv in getCVSkills()" :key="cv.name">
                         <div class="displayname">{{ cv.display_name }}</div>
                         <img :src="cv.img" :alt="cv.name"/>
-                        <div>{{getExperienceString(cv)}}</div>
+                        <div>{{ getExperienceString(cv) }}</div>
                     </div>
                 </div>
             </div>
@@ -114,8 +114,8 @@ export default {
                 .map(x => x.months)
                 .reduce((prevValue, currValue) => prevValue + currValue)
             let years = Math.floor(totalxp / 12)
-            if (years) return years+" years"
-            return totalxp+" months"
+            if (years) return years + " years"
+            return totalxp + " months"
         }
     }
 }
@@ -345,7 +345,7 @@ html body #app #cv {
     .qrcode {
         text-align: center;
         font-size: 14px;
-        margin: auto ;
+        margin: auto;
 
         img {
             width: 200px;
