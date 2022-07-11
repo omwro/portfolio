@@ -42,7 +42,7 @@
     "company": "Infi Amsterdam",
     "desc": "Aimed at improving my backend skills by writing a thesis about gaining insights into KPI's with EventStore. Using Event Sourcing to fetch data with cron jobs. Also made an user interface.",
     "startdate": "Feb 2022",
-    "enddate": "Jun 2022",
+    "enddate": "Jul 2022",
     "stack": [
       "csharp",
       "aspnet"

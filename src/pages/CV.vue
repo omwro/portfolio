@@ -20,6 +20,10 @@
                     <span class="bold">Email:</span>
                     <span class="color-grey">{{ $t('general.email') }}</span>
                 </div>
+                <div>
+                    <span class="bold">Tel:</span>
+                    <span class="color-grey">{{ $t('general.tel') }}</span>
+                </div>
             </div>
             <div class="aboutme">
                 <div class="title bold">ABOUT ME</div>
@@ -134,27 +138,16 @@ export default {
 html body #app #cv {
     width: 21cm !important;
     height: 30cm !important;
-    background: $background-dark repeat;
+    background: white;
     display: flex;
     flex-direction: column;
     font-family: Arial, serif;
     font-size: 12px;
     padding: 16px;
+    color: $color-light;
 
     .capital {
         text-transform: uppercase;
-    }
-
-    .color-red {
-        color: rgba($accent, 0.9);
-    }
-
-    .color-blue {
-        color: rgba($accent2, 0.9);
-    }
-
-    .color-grey {
-        color: $light5;
     }
 
     .bold {
@@ -169,7 +162,6 @@ html body #app #cv {
     .header {
         display: flex;
         flex-direction: row;
-        color: $light2;
         margin-bottom: 16px;
 
         .profile-img {
@@ -179,7 +171,7 @@ html body #app #cv {
             overflow: hidden;
             width: 200px;
             height: 200px;
-            background: linear-gradient(90deg, rgba($accent, 0.9) 0%, rgba($accent2, 0.9) 100%);
+            background: rgba(black, 0.1);
             border-radius: 200px;
             margin-right: 16px;
 
@@ -187,13 +179,13 @@ html body #app #cv {
                 width: 190px;
                 height: 190px;
                 border-radius: 190px;
-                background-color: $background-dark;
+                background-color: white;
             }
         }
 
         .information {
             padding-right: 16px;
-            border-right: solid 1px $grey;
+            border-right: solid 1px rgba(black, 0.1);
             margin-right: 16px;
 
             & > div:not(.name) {
@@ -234,8 +226,7 @@ html body #app #cv {
     .container {
         padding: 5px 10px 10px;
         border-radius: 10px;
-        background: linear-gradient(90deg, rgba($accent, 0.4) 0%, rgba($accent2, 0.4) 100%);
-        color: $light2;
+        background: rgba(black, 0.1);
         margin-bottom: 16px;
 
         &.half {
@@ -250,7 +241,7 @@ html body #app #cv {
         }
 
         .content {
-            background: $background-dark;
+            background: white;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -270,7 +261,7 @@ html body #app #cv {
                     display: inline-flex;
                     font-size: 12px;
                     font-weight: bolder;
-                    background: linear-gradient(90deg, rgba($accent, 0.6) 0%, rgba($accent2, 0.6) 100%);
+                    background: rgba(black, 0.1);
                     padding: 6px;
                     border-radius: 25px;
                 }
@@ -286,7 +277,6 @@ html body #app #cv {
                 }
 
                 .desc {
-                    color: $light5;
                     line-height: 1.4;
                 }
 
@@ -306,6 +296,7 @@ html body #app #cv {
                     .stack {
                         height: 24px;
                         width: 24px;
+                        filter: invert(1);
                         margin: 0 4px 4px;
                     }
                 }
@@ -331,6 +322,7 @@ html body #app #cv {
                     width: 32px;
                     height: 32px;
                     margin: 5px;
+                    filter: invert(1);
                 }
             }
         }
@@ -345,7 +337,7 @@ html body #app #cv {
     .qrcode {
         text-align: center;
         font-size: 14px;
-        margin: auto;
+        margin: 0 auto;
 
         img {
             width: 200px;
@@ -353,7 +345,6 @@ html body #app #cv {
         }
 
         div {
-            color: $light2;
             padding-top: 4px;
         }
     }

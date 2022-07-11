@@ -7,6 +7,7 @@ const translations = {
             age: "23",
             area: "Amsterdam, The Netherlands",
             email: "public.omererdem@outlook.com",
+            tel: "(+31) 6 XX XX XX XX",
             nl: "Dutch",
             en: "English"
         },
