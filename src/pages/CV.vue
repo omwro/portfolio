@@ -44,13 +44,6 @@
                     <div class="title">{{ edu.role }}</div>
                     <div class="location">{{ edu.company }}</div>
                     <div class="desc">{{ edu.desc }}</div>
-                    <div class="stack-container left">
-                        <img v-for="s in edu.stack"
-                             :key="s"
-                             :src="getSkillimg(s)"
-                             :alt="s"
-                             class="stack"/>
-                    </div>
                 </div>
             </div>
         </div>
@@ -62,13 +55,6 @@
                     <div class="title">{{ xp.role }}</div>
                     <div class="location">{{ xp.company }}</div>
                     <div class="desc">{{ xp.desc }}</div>
-                    <div class="stack-container left">
-                        <img v-for="s in xp.stack"
-                             :key="s"
-                             :src="getSkillimg(s)"
-                             :alt="s"
-                             class="stack"/>
-                    </div>
                 </div>
             </div>
         </div>
@@ -162,7 +148,7 @@ html body #app #cv {
     .header {
         display: flex;
         flex-direction: row;
-        margin-bottom: 16px;
+        margin-bottom: 32px;
 
         .profile-img {
             display: flex;
@@ -227,7 +213,7 @@ html body #app #cv {
         padding: 5px 10px 10px;
         border-radius: 10px;
         background: rgba(black, 0.1);
-        margin-bottom: 16px;
+        margin-bottom: 32px;
 
         &.half {
             width: 100%;
@@ -278,27 +264,6 @@ html body #app #cv {
 
                 .desc {
                     line-height: 1.4;
-                }
-
-                .stack-container {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-
-                    &.left {
-                        justify-content: left;
-                    }
-
-                    &.right {
-                        justify-content: right;
-                    }
-
-                    .stack {
-                        height: 24px;
-                        width: 24px;
-                        filter: invert(1);
-                        margin: 0 4px 4px;
-                    }
                 }
             }
 
