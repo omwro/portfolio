@@ -62,7 +62,7 @@ export default {
             this.$store.commit('toggleMenu')
         },
         onScroll(e) {
-            this.onTop = e.currentTarget.scrollY <= 120;
+            this.onTop = e.currentTarget.scrollY <= 80;
         },
         onDarkModeToggle() {
             this.$store.commit('toggleDarkmode')

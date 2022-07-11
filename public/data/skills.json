@@ -180,7 +180,7 @@
   {
     "type": "Framework",
     "name": "vue",
-    "display_name": "Vue 2",
+    "display_name": "VueJS 2",
     "img": "./img/language/vue.png",
     "color": 2,
     "show_portfolio": true,

@@ -13,8 +13,9 @@ const translations = {
         },
         home: {
             title: "Home",
-            intro1: "Yo👋🏻! I Am",
-            intro2: "and I'm a"
+            intro1: "Yo👋🏻! I am",
+            intro2: "and I am a",
+            readmore: "Read More"
         },
         preferences: {
             title: "Choose your preference",
@@ -159,7 +160,8 @@ const translations = {
         home: {
             title: "Home",
             intro1: "Yo👋🏻! Ik ben",
-            intro2: "en ik ben een"
+            intro2: "en ik ben een",
+            readmore: "Lees Verder"
         },
         preferences: {
             title: "Kies jouw voorkeuren",
