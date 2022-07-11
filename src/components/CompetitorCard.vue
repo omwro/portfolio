@@ -1,6 +1,5 @@
 <template>
     <div class="card-block">
-        <div class="card-bg"/>
         <div class="card">
             <div class="card-header" :style="'background-image: url('+profile.img+')'">
                 <div class="card-header-slanted-edge">
@@ -47,28 +46,10 @@ export default {
     border-radius: 5px;
     position: relative;
 
-    .card-bg {
-        width: 100%;
-        height: 0;
-        background-color: $accent;
-        position: absolute;
-        z-index: 0;
-        border-radius: 8px;
-        -webkit-transition: height .5s;
-        -moz-transition: height .5s;
-        -ms-transition: height .5s;
-        -o-transition: height .5s;
-        transition: height .5s;
-    }
-
     &:hover {
-        .card-bg {
-            height: 100%;
-            -webkit-transition: height .5s;
-            -moz-transition: height .5s;
-            -ms-transition: height .5s;
-            -o-transition: height .5s;
-            transition: height .5s;
+        .card-header:after{
+            height: 0;
+            transition: .5s;
         }
     }
 }
@@ -80,7 +61,6 @@ export default {
     border-radius: 5px;
     overflow: hidden;
     z-index: 1;
-    margin: 3px;
 
     .card-header {
         position: relative;
@@ -135,6 +115,8 @@ export default {
         position: absolute;
         width: 100%;
         height: 100%;
+        transition: .5s;
+        bottom: 0;
         background: linear-gradient(to top, rgba($accent, 1), rgba(white, 0.0) 50%);
     }
 
