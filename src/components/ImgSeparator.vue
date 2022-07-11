@@ -1,7 +1,8 @@
 <template>
     <div class="container">
-        <img :src="object" alt="object"/>
-        <div class="separator" :class="getSide()">
+        <img v-if="extern" :src="extern" alt="extern" class="absolute"/>
+        <img :src="object" alt="object" :class="absolute ? 'absolute' : ''"/>
+        <div class="separator">
             <div :style="'background-image: url('+img+');'" class="line"/>
         </div>
     </div>
@@ -10,61 +11,48 @@
 <script>
 export default {
     name: "ImgSeparator",
-    props: ["left", "right", "img", "object"],
-    methods: {
-        getSide() {
-            if (this.left) {
-                return 'left'
-            } else if (this.right) {
-                return 'right'
-            } else {
-                return null
-            }
-        }
-    }
+    props: ["img", "object", "absolute", "extern"]
 }
 </script>
 
 <style lang="scss" scoped>
 @import "src/styles/variables";
 
-img {
-    object-fit: cover;
-    background-color: transparent;
+.container {
     position: relative;
-    bottom: -5px;
-}
-
-.separator {
-    height: 16px;
-    width: 100%;
-    display: flex;
-
-    &.left {
-        justify-content: left;
-    }
-
-    &.right {
-        justify-content: right;
-    }
-
-    &.left .line, &.right .line {
-        width: 67%;
-    }
-
     img {
         object-fit: cover;
+        background-color: transparent;
+
+        &.absolute {
+            position: absolute;
+        }
+
+        &:not(&.absolute) {
+            margin-bottom: -4px;
+        }
+
     }
 
-    .line {
+    .separator {
+        height: 16px;
         width: 100%;
-        background-repeat: repeat;
+        display: flex;
+
+        img {
+            object-fit: cover;
+        }
+
+        .line {
+            width: 100%;
+            background-repeat: repeat;
+        }
     }
 }
 
 #app.dark{
     .separator, .container {
-        background-color: $dark1;
+        background-color: $background-dark;
     }
 }
 </style>

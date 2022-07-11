@@ -3,12 +3,17 @@
         <Header/>
         <Home/>
         <About/>
-<!--        <Separator :left="true"/>-->
-        <ImgSeparator :left="true"
-                      img="img/separator/grass-block.jpg"
-                      object="img/separator/minecraft-house.png"/>
-        <Skills />
-        <Separator :right="true"/>
+                <Separator :left="true"/>
+<!--        <ImgSeparator :left="true"-->
+<!--                      img="img/separator/grass-block.jpg"-->
+<!--                      object="img/separator/creeper.png"-->
+<!--                      extern="img/separator/minecraft-house.png"/>-->
+        <Skills/>
+                <Separator :right="true"/>
+<!--        <ImgSeparator :right="true"-->
+<!--                      :absolute="true"-->
+<!--                      img="img/separator/road.png"-->
+<!--                      object="img/separator/car.png"/>-->
         <Projects/>
         <Separator :left="true"/>
         <Companies/>
@@ -24,7 +29,7 @@
 </template>
 
 <script>
-import Header from "@//views/Header";
+import Header from "@/views/Header";
 import Home from "@/views/Home";
 import About from "@/views/About";
 import Projects from "@/views/Projects";
@@ -35,15 +40,13 @@ import Menu from "@/views/Menu";
 import TimelineGit from "@/views/TimelineGit";
 import Competitors from "@/views/Competitors";
 import Separator from "@/components/Separator";
-import ImgSeparator from "@/components/ImgSeparator";
-import Contact from "@/views/Contact";
+// import ImgSeparator from "@/components/ImgSeparator";
 import Socials from "@/views/Socials";
 
 export default {
     name: "Index",
     components: {
-        ImgSeparator,
-        Contact,
+        // ImgSeparator,
         Separator,
         Competitors,
         TimelineGit,
@@ -62,6 +65,7 @@ export default {
 
 <style lang="scss">
 @import "src/styles/variables";
+
 #app {
     section {
         color: $color-light;
