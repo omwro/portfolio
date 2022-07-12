@@ -12,102 +12,104 @@
                         <div class="spacer-1"></div>
                     </template>
 
-                    <template v-for="i in item.line">
-                        <template v-if="i === item.line">
-                            <template v-if="item.style === 'commit'">
-                                <div :key="i" class="block">
-                                    <div :class="'tpbg tpbg-h color'+i"/>
-                                    <div :class="'vline vl-t color'+i"></div>
-                                    <div :class="'vline vl-b color'+i"></div>
-                                    <div :class="'bullet b-img color'+item.line">
-                                        <img v-lazy="'./img/company/logo.webp'" alt="profile picture"/>
-                                    </div>
-                                </div>
-                            </template>
-                            <template v-else-if="item.style === 'start'">
-                                <div class="block block-mobile" :key="i">
-                                    <div :class="'tpbg color'+item.line"/>
-                                    <div :class="'bottomcornerline color'+item.line"></div>
-                                </div>
-<!--                                <div :key="i" :class="'bottomcornerline color'+item.line"></div>-->
-                            </template>
-                            <template v-else-if="item.style === 'merge'">
-                                <div class="block block-mobile" :key="i">
-                                    <div :class="'tpbg color'+item.line"/>
-                                    <div :class="'topcornerline color'+item.line"></div>
-                                </div>
-<!--                                <div :key="i" :class="'topcornerline color'+item.line"></div>-->
-                            </template>
-                            <template v-else>
-                                <div :key="i" :class="'vline color'+i"></div>
-                            </template>
-                        </template>
-                        <template v-else>
-                            <template v-if="item.style === 'start'">
-                                <template v-if="i < item.start">
-                                    <div :key="i" :class="'block block-mobile color'+i">
-                                        <div :class="'vline vl-t color'+i"></div>
-                                        <div :class="'vline vl-b color'+i"></div>
-                                        <div :class="'hline hl-l hl-h color'+item.line"></div>
-                                        <div :class="'hline hl-r hl-h color'+item.line"></div>
-                                    </div>
-                                </template>
-                                <template v-else-if="i === item.start">
-                                    <div :key="i" :class="'block block-mobile color'+item.line">
-                                        <div :class="'tpbg tpbg-h color'+item.line"/>
-                                        <div :class="'vline vl-t color'+i"></div>
-                                        <div :class="'vline vl-b color'+i"></div>
-                                        <div :class="'hline hl-l hl-h color'+item.line"></div>
-                                        <div :class="'hline hl-r color'+item.line"></div>
-                                        <div :class="'bullet b-s color'+item.line"></div>
-                                    </div>
-                                </template>
-                                <template v-else-if="i > item.start">
+                    <div class="flow">
+                        <template v-for="i in item.line">
+                            <template v-if="i === item.line">
+                                <template v-if="item.style === 'commit'">
                                     <div :key="i" class="block">
+                                        <div :class="'tpbg tpbg-h color'+i"/>
+                                        <div :class="'vline vl-t color'+i"></div>
+                                        <div :class="'vline vl-b color'+i"></div>
+                                        <div :class="'bullet b-img color'+item.line">
+                                            <img v-lazy="'./img/company/logo.webp'" alt="profile picture"/>
+                                        </div>
+                                    </div>
+                                </template>
+                                <template v-else-if="item.style === 'start'">
+                                    <div class="block block-mobile" :key="i">
                                         <div :class="'tpbg color'+item.line"/>
-                                        <div :class="'vline vl-t color'+i"></div>
-                                        <div :class="'vline vl-b color'+i"></div>
-                                        <div :class="'hline color'+item.line"></div>
-                                        <div :class="'hline color'+item.line"></div>
+                                        <div :class="'bottomcornerline color'+item.line"></div>
                                     </div>
+                                    <!--                                <div :key="i" :class="'bottomcornerline color'+item.line"></div>-->
                                 </template>
-                            </template>
-                            <template v-else-if="item.style === 'commit'">
-                                <div :key="i" :class="'vline color'+i"></div>
-                            </template>
-                            <template v-else-if="item.style === 'merge'">
-                                <template v-if="i < item.merge">
-                                    <div :key="i" class="block block-mobile">
-                                        <div :class="'vline vl-t color'+i"></div>
-                                        <div :class="'vline vl-b color'+i"></div>
-                                        <div :class="'hline hl-h color'+item.line"></div>
-                                    </div>
-                                </template>
-                                <template v-else-if="i === item.merge">
-                                    <div :key="i" class="block">
-                                        <div :class="'tpbg tpbg-h color'+item.line"/>
-                                        <div :class="'vline vl-t color'+i"></div>
-                                        <div :class="'vline vl-b color'+i"></div>
-                                        <div :class="'hline hl-l hl-h color'+item.line"></div>
-                                        <div :class="'hline hl-r color'+item.line"></div>
-                                        <div :class="'bullet b-s color'+item.line"></div>
-                                    </div>
-                                </template>
-                                <template v-else-if="i > item.merge">
-                                    <div :key="i" :class="'block block-mobile color'+item.line">
+                                <template v-else-if="item.style === 'merge'">
+                                    <div class="block block-mobile" :key="i">
                                         <div :class="'tpbg color'+item.line"/>
-                                        <div :class="'vline vl-t color'+i"></div>
-                                        <div :class="'vline vl-b color'+i"></div>
-                                        <div :class="'hline color'+item.line"></div>
-                                        <div :class="'hline color'+item.line"></div>
+                                        <div :class="'topcornerline color'+item.line"></div>
                                     </div>
+                                    <!--                                <div :key="i" :class="'topcornerline color'+item.line"></div>-->
+                                </template>
+                                <template v-else>
+                                    <div :key="i" :class="'vline color'+i"></div>
                                 </template>
                             </template>
                             <template v-else>
-                                <div :key="i" :class="'vline color'+i"></div>
+                                <template v-if="item.style === 'start'">
+                                    <template v-if="i < item.start">
+                                        <div :key="i" :class="'block block-mobile color'+i">
+                                            <div :class="'vline vl-t color'+i"></div>
+                                            <div :class="'vline vl-b color'+i"></div>
+                                            <div :class="'hline hl-l hl-h color'+item.line"></div>
+                                            <div :class="'hline hl-r hl-h color'+item.line"></div>
+                                        </div>
+                                    </template>
+                                    <template v-else-if="i === item.start">
+                                        <div :key="i" class="block">
+                                            <div :class="'tpbg tpbg-h color'+item.line"/>
+                                            <div :class="'vline vl-t color'+i"></div>
+                                            <div :class="'vline vl-b color'+i"></div>
+                                            <div :class="'hline hl-l hl-h color'+item.line"></div>
+                                            <div :class="'hline hl-r color'+item.line"></div>
+                                            <div :class="'bullet b-s color'+item.line"></div>
+                                        </div>
+                                    </template>
+                                    <template v-else-if="i > item.start">
+                                        <div :key="i" class="block block-mobile">
+                                            <div :class="'tpbg color'+item.line"/>
+                                            <div :class="'vline vl-t color'+i"></div>
+                                            <div :class="'vline vl-b color'+i"></div>
+                                            <div :class="'hline color'+item.line"></div>
+                                            <div :class="'hline color'+item.line"></div>
+                                        </div>
+                                    </template>
+                                </template>
+                                <template v-else-if="item.style === 'commit'">
+                                    <div :key="i" :class="'vline color'+i"></div>
+                                </template>
+                                <template v-else-if="item.style === 'merge'">
+                                    <template v-if="i < item.merge">
+                                        <div :key="i" class="block block-mobile">
+                                            <div :class="'vline vl-t color'+i"></div>
+                                            <div :class="'vline vl-b color'+i"></div>
+                                            <div :class="'hline hl-h color'+item.line"></div>
+                                        </div>
+                                    </template>
+                                    <template v-else-if="i === item.merge">
+                                        <div :key="i" class="block">
+                                            <div :class="'tpbg tpbg-h color'+item.line"/>
+                                            <div :class="'vline vl-t color'+i"></div>
+                                            <div :class="'vline vl-b color'+i"></div>
+                                            <div :class="'hline hl-l hl-h color'+item.line"></div>
+                                            <div :class="'hline hl-r color'+item.line"></div>
+                                            <div :class="'bullet b-s color'+item.line"></div>
+                                        </div>
+                                    </template>
+                                    <template v-else-if="i > item.merge">
+                                        <div :key="i" :class="'block block-mobile color'+item.line">
+                                            <div :class="'tpbg color'+item.line"/>
+                                            <div :class="'vline vl-t color'+i"></div>
+                                            <div :class="'vline vl-b color'+i"></div>
+                                            <div :class="'hline color'+item.line"></div>
+                                            <div :class="'hline color'+item.line"></div>
+                                        </div>
+                                    </template>
+                                </template>
+                                <template v-else>
+                                    <div :key="i" :class="'vline color'+i"></div>
+                                </template>
                             </template>
                         </template>
-                    </template>
+                    </div>
 
                     <template v-if="item.msg">
                         <div :class="'commit c-'+item.spacing+' color'+item.line">
@@ -132,73 +134,81 @@ export default {
             return [
                 {
                     id: 20,
-                    line: 3,
+                    line: 2,
                     tag: "Jun 2022",
                     style: "merge",
                     merge: 1,
-                    spacing: 1,
+                    spacing: 2,
                     msg: this.$t('timeline.mergeStudy')
                 }, {
                     id: 19,
-                    line: 4,
+                    line: 3,
                     tag: "Jun 2022",
                     style: "merge",
-                    merge: 3,
-                    spacing: 0,
+                    merge: 2,
+                    spacing: 1,
                     msg: this.$t('timeline.mergeInternship')
                 }, {
                     id: 18,
-                    line: 4,
+                    line: 3,
                     style: "commit",
-                    spacing: 0,
+                    spacing: 1,
                     msg: this.$t('timeline.infi.role'),
                     desc: this.$t('timeline.infi.desc')
                 }, {
                     id: 17,
-                    line: 4,
+                    line: 3,
                     tag: "Feb 2022",
                     style: "start",
-                    start: 3,
-                    spacing: 0,
+                    start: 2,
+                    spacing: 1,
                     msg: this.$t('timeline.newInternshipBranch')
                 }, {
                     id: 16,
-                    line: 4,
+                    line: 3,
                     tag: "Aug 2020",
                     style: "merge",
-                    merge: 3,
-                    spacing: 0,
+                    merge: 2,
+                    spacing: 1,
                     msg: this.$t('timeline.mergeInternship')
                 }, {
                     id: 15,
-                    line: 4,
+                    line: 3,
                     style: "commit",
-                    spacing: 0,
+                    spacing: 1,
                     msg: this.$t('timeline.bold.role'),
                     desc: this.$t('timeline.bold.desc')
                 }, {
                     id: 14,
-                    line: 4,
+                    line: 3,
                     tag: "Feb 2020",
                     style: "start",
-                    start: 3,
-                    spacing: 0,
+                    start: 2,
+                    spacing: 1,
                     msg: this.$t('timeline.newInternshipBranch')
                 }, {
                     id: 13,
-                    line: 3,
+                    line: 2,
                     style: "commit",
-                    spacing: 1,
+                    spacing: 2,
                     msg: this.$t('timeline.hva.role'),
                     desc: this.$t('timeline.hva.desc')
                 }, {
                     id: 12,
-                    line: 3,
+                    line: 2,
                     tag: "Sep 2018",
                     style: "start",
                     start: 1,
-                    spacing: 1,
+                    spacing: 2,
                     msg: this.$t('timeline.newStudyBranch')
+                }, {
+                    id: 111,
+                    line: 2,
+                    tag: "Jun 2018",
+                    style: "merge",
+                    merge: 1,
+                    spacing: 2,
+                    msg: this.$t('timeline.mergeWork')
                 }, {
                     id: 11,
                     line: 3,
@@ -326,7 +336,11 @@ $transparent: rgba(0, 0, 0, 0);
                 background-color: rgba(black, .1);
             }
 
-            .vline, .bottomcornerline, .topcornerline{
+            .flow {
+                display: inline-flex;
+            }
+
+            .vline, .bottomcornerline, .topcornerline {
                 .color1 {
                     z-index: 1;
                 }
@@ -615,6 +629,11 @@ $transparent: rgba(0, 0, 0, 0);
             font-size: 14px;
 
             .row {
+
+                .flow {
+                    max-width: 30px;
+                }
+
                 .spacer-1 {
                     margin-left: 79px;
                 }
@@ -662,6 +681,7 @@ $transparent: rgba(0, 0, 0, 0);
 
                 .tpbg {
                     display: none;
+
                     &.tpbg-h {
                         display: block;
                     }
