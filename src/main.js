@@ -13,6 +13,7 @@ import VueRouter from 'vue-router';
 import Index from './pages/Index'
 import CV from './pages/CV'
 import Vuex from 'vuex'
+import GitFlow from 'gitflow-component'
 
 library.add(faAt, faLinkedin, faSkype, faDiscord, faCodepen, faGithub, faFontAwesome, faStar, faStarHalfAlt, faStarEmpty, faHandPointer, faExternalLinkAlt, faGlobe)
 
@@ -22,6 +23,7 @@ Vue.use(VueLazyload)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(VueRouter)
 Vue.use(Vuex)
+Vue.use(GitFlow)
 
 const routes = [
   {path: '/', component: Index},

@@ -47,6 +47,20 @@
   },
   {
     "type": "hobby",
+    "title": "GitFlow",
+    "desc": "projects.desc.gitflow",
+    "img": "img/project/project-gitflow.webp",
+    "github": "https://github.com/omwro/gitflow",
+    "stack": [
+      "html",
+      "js",
+      "css",
+      "vue",
+      "sass"
+    ]
+  },
+  {
+    "type": "hobby",
     "title": "GPU Tracker",
     "desc": "projects.desc.gputracker",
     "img": "img/stock/missing.jpg",

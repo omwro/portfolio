@@ -18,7 +18,7 @@
         <Separator :left="true"/>
         <Companies/>
         <Separator :right="true"/>
-        <TimelineGit/>
+        <Timeline/>
         <Separator :left="true"/>
         <Socials/>
         <Separator :right="true"/>
@@ -37,7 +37,7 @@ import Skills from "@/views/Skills";
 import Companies from "@/views/Companies";
 import Footer from "@/views/Footer";
 import Menu from "@/views/Menu";
-import TimelineGit from "@/views/TimelineGit";
+import Timeline from "@/views/Timeline";
 import Competitors from "@/views/Competitors";
 import Separator from "@/components/Separator";
 // import ImgSeparator from "@/components/ImgSeparator";
@@ -49,7 +49,7 @@ export default {
         // ImgSeparator,
         Separator,
         Competitors,
-        TimelineGit,
+        Timeline,
         Menu,
         Footer,
         Companies,

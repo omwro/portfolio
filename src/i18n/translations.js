@@ -85,7 +85,8 @@ const translations = {
                 kpi: "A project that contains both cron jobs and an interface, where pre-programmed statuses can " +
                     "be read from EventStore. KPI's can be calculated with the statuses, so that the statistics " +
                     "can be seen in the interface.",
-                firmware: "Creating an interface, where the installation firmware is installed to a hardware controller."
+                firmware: "Creating an interface, where the installation firmware is installed to a hardware controller.",
+                gitflow: "The well known Git Flow, but as a css vue component, used the timeline for the portfolio page.",
             }
         },
         companies: {
@@ -234,7 +235,9 @@ const translations = {
                     "afgelezen kunnen worden vanuit EventStore. Met de statussen kunnen KPI's berekend worden, " +
                     "zodat de statistieken te zien zijn in de interface.",
                 firmware: "Het maken van een interface, waarbij de installatie firmware wordt geïnstalleerd aan een " +
-                    "hardware controller."
+                    "hardware controller.",
+                gitflow: "De welbekende Git Flow, maar als een css vue component, die gebruikt wordt als een " +
+                    "tijdlijn voor de portfolio pagina.",
             },
         },
         companies: {
