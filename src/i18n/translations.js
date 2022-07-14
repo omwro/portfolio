@@ -86,7 +86,8 @@ const translations = {
                     "be read from EventStore. KPI's can be calculated with the statuses, so that the statistics " +
                     "can be seen in the interface.",
                 firmware: "Creating an interface, where the installation firmware is installed to a hardware controller.",
-                gitflow: "The well known Git Flow, but as a css vue component, used the timeline for the portfolio page.",
+                gitflow: "The well known Git Flow, but as a css vue component, that is used as the timeline for the " +
+                    "portfolio page.",
             }
         },
         companies: {

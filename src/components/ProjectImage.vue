@@ -1,8 +1,7 @@
 <template>
     <div class="project-image-container">
         <template v-if="project.isMobile">
-            <img v-lazy="'img/stock/dev-mobile.png'"
-                 src="img/stock/dev-mobile.png"
+            <img src="img/stock/dev-mobile.png"
                  alt="mobile"
                  class="stock">
             <img :v-lazy="project.img"
@@ -11,8 +10,7 @@
                  class="project-mobile">
         </template>
         <template v-else>
-            <img v-lazy="'img/stock/dev-laptop.png'"
-                 src="img/stock/dev-laptop.png"
+            <img src="img/stock/dev-laptop.png"
                  alt="laptop"
                  class="stock">
             <img :v-lazy="project.img"

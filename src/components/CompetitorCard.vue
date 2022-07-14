@@ -12,14 +12,14 @@
                 <div>{{ profile.name }}</div>
                 <div class="role">{{ profile.role }}</div>
                 <div class="card-buttons">
-                    <div v-if="profile.website != null" @click="goToUrl(profile.website)">
+                    <a :href="profile.website" v-if="profile.website != null">
                         <font-awesome-icon class="globe" icon="globe"/>
                         <span>Website</span>
-                    </div>
-                    <div v-if="profile.linkedin != null" @click="goToUrl(profile.linkedin)">
-                        <img class="linkedin" src="../../public/img/contact/linkedin.png" alt="linked in image"/>
+                    </a>
+                    <a :href="profile.linkedin" v-if="profile.linkedin != null">
+                        <font-awesome-icon class="linkedin" :icon="['fab', 'linkedin']" />
                         <span>LinkedIn</span>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -29,12 +29,7 @@
 <script>
 export default {
     name: "CompetitorCard",
-    props: ["profile"],
-    methods: {
-        goToUrl(url) {
-            window.open(url)
-        }
-    }
+    props: ["profile"]
 }
 </script>
 
@@ -83,7 +78,8 @@ export default {
 
         .card-buttons {
             display: flex;
-            justify-content: space-evenly;
+            flex-direction: row;
+            flex-wrap: nowrap;
             margin-top: 16px;
             width: 100%;
 
@@ -95,16 +91,30 @@ export default {
                 filter: brightness(0);
             }
 
-            > * {
+            > a {
+                text-decoration: none;
                 display: flex;
                 flex-direction: column;
                 text-align: center;
                 align-items: center;
                 width: 100%;
+                flex: 1;
+
+                &:hover {
+                    .globe, .linkedin {
+                        filter: brightness(1);
+                        color: $accent;
+                    }
+
+                    span {
+                        color: $accent;
+                    }
+                }
 
                 span {
                     margin-top: 8px;
                     font-size: 12px;
+                    color: $color-light;
                 }
             }
         }
@@ -144,6 +154,10 @@ export default {
 
         .card-body {
             background-color: $block-dark;
+        }
+
+        span {
+            color: $color-dark;
         }
     }
 }
