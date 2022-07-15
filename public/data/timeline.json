@@ -1,14 +1,13 @@
 [
   {
+    "id": "hva",
     "type": "Study",
-    "role": "Software Engineering",
-    "company": "Amsterdam University of Applied Science",
-    "desc": "Aimed at improving my skills in programming and in the business field, as well as expanding my network and keep having fun with my hobby projects.",
+    "role": "timeline.hva.role",
+    "company": "Hogeschool van Amsterdam",
+    "desc": "timeline.hva.desc",
     "startdate": "Sep 2018",
-    "enddate": "Jun 2022",
+    "enddate": "Jul 2022",
     "stack": [
-      "html",
-      "css",
       "sass",
       "js",
       "ts",
@@ -21,10 +20,11 @@
     ]
   },
   {
+    "id": "regio",
     "type": "Study",
-    "role": "Application Developer",
+    "role": "timeline.regio.role",
     "company": "Regio College Zaandam",
-    "desc": "Aimed at getting started with programming and mastering the teamleader role for grouped projects.",
+    "desc": "timeline.regio.desc",
     "startdate": "Sep 2015",
     "enddate": "Jun 2018",
     "stack": [
@@ -37,10 +37,11 @@
     ]
   },
   {
+    "id": "infi",
     "type": "Internship",
-    "role": "Intern Developer",
+    "role": "timeline.infi.role",
     "company": "Infi Amsterdam",
-    "desc": "Aimed at improving my backend skills by writing a thesis about gaining insights into KPI's with EventStore. Using Event Sourcing to fetch data with cron jobs. Also made an user interface.",
+    "desc": "timeline.infi.desc",
     "startdate": "Feb 2022",
     "enddate": "Jul 2022",
     "stack": [
@@ -49,17 +50,16 @@
     ]
   },
   {
+    "id": "bold",
     "type": "Internship",
-    "role": "Intern Magento Developer",
+    "role": "timeline.bold.role",
     "company": "Bold Commerce",
-    "desc": "Aimed at improving both my frontend and backend development skills, as well as communication skills with my colleagues and customers. Have worked in a real Agile environment and created a new Dashboard for the Support Team.",
+    "desc": "timeline.bold.desc",
     "startdate": "Feb 2020",
     "enddate": "Aug 2020",
     "stack": [
-      "html",
-      "css",
-      "sass",
       "js",
+      "sass",
       "vue",
       "php",
       "magento",
@@ -68,12 +68,13 @@
     ]
   },
   {
+    "id": "dgd",
     "type": "Internship",
-    "role": "Intern Frontend Developer",
+    "role": "timeline.dgd.role",
     "company": "DiGidot",
-    "desc": "Aimed at improving my frontend skills by creating a Web Installation panel for the DiGidot C4 hardware controllers. Designed and developed the installation panel",
-    "startdate": "Feb 2020",
-    "enddate": "Aug 2020",
+    "desc": "timeline.dgd.desc",
+    "startdate": "Feb 2018",
+    "enddate": "Jun 2018",
     "stack": [
       "html",
       "css",
@@ -81,14 +82,24 @@
     ]
   },
   {
+    "id": "kk",
     "type": "Internship",
-    "role": "Intern Game Developer",
+    "role": "timeline.kk.role",
     "company": "Kenneth & Koh",
-    "desc": "Aimed at improving my teamwork skills, as well as learning to work in a company setting. Improved my programming skills by creating a mobile and desktop game in Unity and helped the developer team in testing their software.",
+    "desc": "timeline.kk.desc",
     "startdate": "Sep 2016",
     "enddate": "Jan 2017",
     "stack": [
       "csharp"
     ]
+  },
+  {
+    "id": "deugd",
+    "type": "Work",
+    "role": "timeline.deugd.role",
+    "company": "Deugd Erdem",
+    "desc": "timeline.deugd.desc",
+    "startdate": "Jan 2015",
+    "enddate": "Jul 2018"
   }
 ]

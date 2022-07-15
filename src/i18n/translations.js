@@ -103,45 +103,31 @@ const translations = {
             mergeStudy: "Graduated",
             mergeInternship: "Internship completed",
             deugd: {
-                date: "Jan 2015 - Present",
                 role: "Cashier",
-                place: "Deugd Erdem",
                 desc: "Worked as a cashier with a 0 hour contract to improve my communication skills with customers, while earning some pocket money and expanding my network.",
             },
             regio: {
-                date: "Sep 2015 - Jun 2018",
                 role: "Application Developer",
-                place: "Regio College Zaandam",
-                desc: "Aimed at getting started with programming and mastering the teamleader role for grouped projects. The new skills I have learned are: Leadership, HTML5, CSS3, JavaScript, C#, PHP, MySQL and ASP.NET.",
+                desc: "Aimed at getting started with programming and mastering the teamleader role for grouped projects.",
             },
             kk: {
-                date: "Sep 2016 - Jan 2017",
                 role: "Intern Game Developer",
-                place: "Kenneth & Koh",
-                desc: "Aimed at improving my teamwork skills, as well as learning to work in a company setting. Improved my programming skills by creating a mobile and desktop game in Unity with C# and helped the developer team in testing their software.",
+                desc: "Aimed at improving my teamwork skills, as well as learning to work in a company setting. Improved my programming skills by creating a mobile and desktop game in Unity and helped the developer team in testing their software.",
             },
             dgd: {
-                date: "Feb 2018 - Jun 2018",
                 role: "Intern Frontend Developer",
-                place: "Digidot",
-                desc: "Aimed at improving my frontend skills by creating a Web Installation panel for the DiGidot C4 hardware controllers. Designed and developed the installation panel in HTML5, CSS and JavaScript and worked with API calls.",
+                desc: "Aimed at improving my frontend skills by creating a Web Installation panel for the DiGidot C4 hardware controllers. Designed and developed the installation panel",
             },
             hva: {
-                date: "Sep 2018 - Jun 2022",
                 role: "Software Engineering",
-                place: "Amsterdam University of Applied Science",
-                desc: "Aimed at improving my skills in programming and in the business field, as well as expanding my network and keep having fun with my hobby projects. The new skills I have learned are: Java, NoSQL, Angular, TypeScript, Kotlin and Android Development.",
+                desc: "Aimed at improving my skills in programming and in the business field, as well as expanding my network and keep having fun with my hobby projects.",
             },
             bold: {
-                date: "Feb 2020 - Aug 2020",
                 role: "Intern Magento Developer",
-                place: "Bold Commerce",
-                desc: "Aimed at improving both my frontend and backend development skills, as well as communication skills with my colleagues and customers. Have worked in a real Agile environment and created a new Dashboard for the Support Team. The new skills I have learned are: Magento 2, Laravel, SASS, Vue.js 2 and Knockout.js.",
+                desc: "Aimed at improving both my frontend and backend development skills, as well as communication skills with my colleagues and customers. Have worked in a real Agile environment and created a new Dashboard for the Support Team.",
             },
             infi: {
-                date: "Feb 2022 - Jun 2022",
                 role: "Intern Developer",
-                place: "Infi Amsterdam",
                 desc: "Aimed at improving my backend skills by writing a thesis about gaining insights into KPI's with EventStore. Using Event Sourcing to fetch data with cron jobs. Also made an user interface.",
             }
         },
@@ -156,6 +142,13 @@ const translations = {
     },
     nl: {
         general: {
+            firstname: "Ömer",
+            lastname: "Erdem",
+            study: "Software Engineer",
+            age: "23",
+            area: "Amsterdam, The Netherlands",
+            email: "public.omererdem@outlook.com",
+            tel: "(+31) 6 XX XX XX XX",
             nl: "Nederlands",
             en: "Engels"
         },

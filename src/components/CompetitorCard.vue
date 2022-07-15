@@ -107,7 +107,7 @@ export default {
                     }
 
                     span {
-                        color: $accent;
+                        color: $accent !important;
                     }
                 }
 

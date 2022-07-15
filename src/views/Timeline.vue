@@ -9,6 +9,7 @@
 
 <script>
 import GitFlow from "gitflow-component";
+import json from "../../public/data/timeline.json";
 
 export default {
     name: "Timeline",
@@ -22,21 +23,27 @@ export default {
             "#0074A0",
             "#00764E",
             "#cd8700"
-        ]
+        ],
+        json: json
     }),
+    methods: {
+      getTimelineObj(id) {
+          return json.find(x => x.id === id)
+      }
+    },
     computed: {
         gitItems() {
             return [
                 {
                     line: 2,
-                    tag: "Jun 2022",
+                    tag: this.getTimelineObj("hva").enddate,
                     style: "merge",
                     merge: 1,
                     spacing: 2,
                     msg: this.$t('timeline.mergeStudy')
                 }, {
                     line: 3,
-                    tag: "Jun 2022",
+                    tag: this.getTimelineObj("infi").enddate,
                     style: "merge",
                     merge: 2,
                     spacing: 1,
@@ -50,14 +57,14 @@ export default {
                     img: "./img/company/logo.webp"
                 }, {
                     line: 3,
-                    tag: "Feb 2022",
+                    tag: this.getTimelineObj("infi").startdate,
                     style: "start",
                     start: 2,
                     spacing: 1,
                     msg: this.$t('timeline.newInternshipBranch')
                 }, {
                     line: 3,
-                    tag: "Aug 2020",
+                    tag: this.getTimelineObj("bold").enddate,
                     style: "merge",
                     merge: 2,
                     spacing: 1,
@@ -71,7 +78,7 @@ export default {
                     img: "./img/company/logo.webp"
                 }, {
                     line: 3,
-                    tag: "Feb 2020",
+                    tag: this.getTimelineObj("bold").startdate,
                     style: "start",
                     start: 2,
                     spacing: 1,
@@ -85,28 +92,28 @@ export default {
                     img: "./img/company/logo.webp"
                 }, {
                     line: 2,
-                    tag: "Sep 2018",
+                    tag: this.getTimelineObj("hva").startdate,
                     style: "start",
                     start: 1,
                     spacing: 2,
                     msg: this.$t('timeline.newStudyBranch')
                 }, {
                     line: 2,
-                    tag: "Jun 2018",
+                    tag: this.getTimelineObj("deugd").enddate,
                     style: "merge",
                     merge: 1,
                     spacing: 2,
                     msg: this.$t('timeline.mergeWork')
                 }, {
                     line: 3,
-                    tag: "Jun 2018",
+                    tag: this.getTimelineObj("regio").enddate,
                     style: "merge",
                     merge: 1,
                     spacing: 1,
                     msg: this.$t('timeline.mergeStudy')
                 }, {
                     line: 4,
-                    tag: "Jun 2018",
+                    tag: this.getTimelineObj("dgd").enddate,
                     style: "merge",
                     merge: 3,
                     spacing: 0,
@@ -120,14 +127,14 @@ export default {
                     img: "./img/company/logo.webp"
                 }, {
                     line: 4,
-                    tag: "Feb 2018",
+                    tag: this.getTimelineObj("dgd").startdate,
                     style: "start",
                     start: 3,
                     spacing: 0,
                     msg: this.$t('timeline.newInternshipBranch')
                 }, {
                     line: 4,
-                    tag: "Jan 2017",
+                    tag: this.getTimelineObj("kk").enddate,
                     style: "merge",
                     merge: 3,
                     spacing: 0,
@@ -141,7 +148,7 @@ export default {
                     img: "./img/company/logo.webp"
                 }, {
                     line: 4,
-                    tag: "Sep 2016",
+                    tag: this.getTimelineObj("kk").startdate,
                     style: "start",
                     start: 3,
                     spacing: 0,
@@ -157,7 +164,7 @@ export default {
                 },
                 {
                     line: 3,
-                    tag: "Sep 2015",
+                    tag: this.getTimelineObj("regio").startdate,
                     style: "start",
                     start: 1,
                     spacing: 1,
@@ -173,7 +180,7 @@ export default {
                 },
                 {
                     line: 2,
-                    tag: "Jan 2015",
+                    tag: this.getTimelineObj("deugd").startdate,
                     style: "start",
                     start: 1,
                     spacing: 2,
