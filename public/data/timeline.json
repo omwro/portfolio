@@ -8,14 +8,34 @@
     "startdate": "Sep 2018",
     "enddate": "Jul 2022",
     "stack": [
-      "sass",
       "js",
       "ts",
       "java",
-      "kotlin",
       "angular",
-      "react",
-      "vue",
+      "react"
+    ]
+  },
+  {
+    "id": "md",
+    "type": "Study",
+    "role": "timeline.md.role",
+    "company": "Hogeschool van Amsterdam",
+    "desc": "timeline.md.desc",
+    "startdate": "Sep 2020",
+    "enddate": "Jan 2021",
+    "stack": [
+      "kotlin"
+    ]
+  },
+  {
+    "id": "ds",
+    "type": "Study",
+    "role": "timeline.ds.role",
+    "company": "Hogeschool van Amsterdam",
+    "desc": "timeline.ds.desc",
+    "startdate": "Sep 2021",
+    "enddate": "Jan 2022",
+    "stack": [
       "python"
     ]
   },

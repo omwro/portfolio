@@ -14,7 +14,7 @@ const translations = {
         home: {
             title: "Home",
             intro1: "Yo👋🏻! I am",
-            intro2: "and I am a",
+            intro2: ", a graduated",
             readmore: "Read More"
         },
         preferences: {
@@ -155,7 +155,7 @@ const translations = {
         home: {
             title: "Home",
             intro1: "Yo👋🏻! Ik ben",
-            intro2: "en ik ben een",
+            intro2: ", een afgestudeerde",
             readmore: "Lees Verder"
         },
         preferences: {
@@ -247,45 +247,39 @@ const translations = {
             mergeWork: "Baan afgerond",
             newWorkBranch: "Nieuwe baan begonnen",
             deugd: {
-                date: "Jan 2015 - Huidig",
                 role: "Kassamedewerker",
-                place: "Deugd Erdem",
                 desc: "Heb gewerkt als een kassamedewerker met een 0 uren contract om mijn communicatie vaardigheden te verbeteren met klanten, wat zakgeld te verdienen en mijn netwerk uit te bereiden.",
             },
             regio: {
-                date: "Sep 2015 - Jun 2018",
                 role: "Applicatie Ontwikkelaar",
-                place: "Regio College Zaandam",
                 desc: "Mijn doel was om een start te maken met het programmeren en om mijn leiderschap vaardigheden te verbeteren voor groepsprojecten. De vaardigheden die ik heb geleerd zijn als volgt: Leiderschap, HTML5, CSS3, JavaScript, C#, PHP, MySQL and ASP.NET.",
             },
             kk: {
-                date: "Sep 2016 - Jan 2017",
                 role: "Stagiair Spel Ontwikkelaar",
-                place: "Kenneth & Koh",
                 desc: "Mijn doel was om mijn samenwerking vaardigheden te verbeteren en ook om te leren hoe je moet werken in een bedrijfsomgeving. Heb mijn programmeer vaardigheden verbeterd door een mobiel en desktop spel te maken in Unity met C# en heb de ontwikkelaars team geholpen met het testen van hun software.",
             },
             dgd: {
-                date: "Feb 2018 - Jun 2018",
                 role: "Stagiair Frontend Ontwikkelaar",
-                place: "Digidot",
                 desc: "Mijn doel was om mijn frontend vaardigheden te verbeteren door een web installatie paneel te maken voor de DiGidot C4 hardware bestuurders. Het paneel is ontworpen en ontwikkeld in HTML5, CSS en JavaScript en heb gewerkt met API verzoeken.",
             },
             hva: {
-                date: "Sep 2018 - Jun 2022",
                 role: "Software Ontwikkelaar",
-                place: "Hogeschool van Amsterdam",
+                desc: "Mijn doel was om mij vaardigheden te verbeteren in het programmeren en in de bedrijfsomgeving, als ook mijn netwerk uit te breiden en om lol te hebben leuke hobby projecten. De nieuwe vaardigheden die ik heb geleerd zijn als volgt: Java, NoSQL, Angular, TypeScript, Kotlin en Android ontwikkeling.",
+            },
+            md: {
+                role: "Mobiele Applicatie Ontwikkelaar",
+                desc: "Mijn doel was om meer kennis op te doen binnen het mobiele applicatie sector, door dit minor te volgen.",
+            },
+            ds: {
+                role: "Data Scientist",
                 desc: "Mijn doel was om mij vaardigheden te verbeteren in het programmeren en in de bedrijfsomgeving, als ook mijn netwerk uit te breiden en om lol te hebben leuke hobby projecten. De nieuwe vaardigheden die ik heb geleerd zijn als volgt: Java, NoSQL, Angular, TypeScript, Kotlin en Android ontwikkeling.",
             },
             bold: {
-                date: "Feb 2020 - Aug 2020",
                 role: "Stagiair Magento Ontwikkelaar",
-                place: "Bold Commerce",
                 desc: "Mijn doel was om mijn frontend en backend programmeer vaardigheden te verbeteren, als ook de communicatie vaardigheden met mijn collega's en klanten. Heb gewerkt in een echte Agile omgeving en heb een Dashboard gemaakt voor de Support team . De nieuwe vaardigheden die ik heb geleerd zijn als volgt: Magento 2, Laravel, SASS, Vue.js 2 en Knockout.js.",
             },
             infi: {
-                date: "Feb 2022 - Jun 2022",
                 role: "Stagiair Ontwikkelaar",
-                place: "Infi Amsterdam",
                 desc: "Mijn doel was om mijn backend vaardigheden te verbeteren door mijn scriptie te schrijven over het inzichtelijk krijgen van KPI's en statistieken met EventStore. Event Sourcing is gebruikt om gegevens op te halen met cron jobs. Ook heb ik een gebruikersinterface gemaakt.",
             }
         },
