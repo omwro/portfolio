@@ -61,7 +61,49 @@ export default {
                     style: "start",
                     start: 2,
                     spacing: 1,
-                    msg: this.$t('timeline.newInternshipBranch')
+                    msg: this.$t('timeline.newInternship')
+                }, {
+                    line: 3,
+                    tag: this.getTimelineObj("ds").enddate,
+                    style: "merge",
+                    merge: 2,
+                    spacing: 1,
+                    msg: this.$t('timeline.mergeMinor')
+                }, {
+                    line: 3,
+                    style: "commit",
+                    spacing: 1,
+                    msg: this.$t('timeline.ds.role'),
+                    desc: this.$t('timeline.ds.desc'),
+                    img: "./img/company/logo.webp"
+                }, {
+                    line: 3,
+                    tag: this.getTimelineObj("ds").startdate,
+                    style: "start",
+                    start: 2,
+                    spacing: 1,
+                    msg: this.$t('timeline.newMinor')
+                }, {
+                    line: 3,
+                    tag: this.getTimelineObj("md").enddate,
+                    style: "merge",
+                    merge: 2,
+                    spacing: 1,
+                    msg: this.$t('timeline.mergeMinor')
+                }, {
+                    line: 3,
+                    style: "commit",
+                    spacing: 1,
+                    msg: this.$t('timeline.md.role'),
+                    desc: this.$t('timeline.md.desc'),
+                    img: "./img/company/logo.webp"
+                }, {
+                    line: 3,
+                    tag: this.getTimelineObj("md").startdate,
+                    style: "start",
+                    start: 2,
+                    spacing: 1,
+                    msg: this.$t('timeline.newMinor')
                 }, {
                     line: 3,
                     tag: this.getTimelineObj("bold").enddate,
@@ -82,7 +124,7 @@ export default {
                     style: "start",
                     start: 2,
                     spacing: 1,
-                    msg: this.$t('timeline.newInternshipBranch')
+                    msg: this.$t('timeline.newInternship')
                 }, {
                     line: 2,
                     style: "commit",
@@ -96,7 +138,7 @@ export default {
                     style: "start",
                     start: 1,
                     spacing: 2,
-                    msg: this.$t('timeline.newStudyBranch')
+                    msg: this.$t('timeline.newStudy')
                 }, {
                     line: 2,
                     tag: this.getTimelineObj("deugd").enddate,
@@ -131,7 +173,7 @@ export default {
                     style: "start",
                     start: 3,
                     spacing: 0,
-                    msg: this.$t('timeline.newInternshipBranch')
+                    msg: this.$t('timeline.newInternship')
                 }, {
                     line: 4,
                     tag: this.getTimelineObj("kk").enddate,
@@ -152,7 +194,7 @@ export default {
                     style: "start",
                     start: 3,
                     spacing: 0,
-                    msg: this.$t('timeline.newInternshipBranch')
+                    msg: this.$t('timeline.newInternship')
                 },
                 {
                     line: 3,
@@ -168,7 +210,7 @@ export default {
                     style: "start",
                     start: 1,
                     spacing: 1,
-                    msg: this.$t('timeline.newStudyBranch')
+                    msg: this.$t('timeline.newStudy')
                 },
                 {
                     line: 2,
@@ -184,7 +226,7 @@ export default {
                     style: "start",
                     start: 1,
                     spacing: 2,
-                    msg: this.$t('timeline.newWorkBranch')
+                    msg: this.$t('timeline.newWork')
                 },
                 {
                     line: 1,

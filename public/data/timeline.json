@@ -17,7 +17,7 @@
   },
   {
     "id": "md",
-    "type": "Study",
+    "type": "Minor",
     "role": "timeline.md.role",
     "company": "Hogeschool van Amsterdam",
     "desc": "timeline.md.desc",
@@ -29,7 +29,7 @@
   },
   {
     "id": "ds",
-    "type": "Study",
+    "type": "Minor",
     "role": "timeline.ds.role",
     "company": "Hogeschool van Amsterdam",
     "desc": "timeline.ds.desc",

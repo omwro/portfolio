@@ -96,12 +96,14 @@ const translations = {
         timeline: {
             title: "Timeline",
             initialCommit: "Entering the real world",
-            newWorkBranch: "Starting new job",
-            newStudyBranch: "Starting new study",
-            newInternshipBranch: "Starting new internship",
+            newWork: "Starting new job",
+            newStudy: "Starting new study",
+            newInternship: "Starting new internship",
+            newMinor: "Starting new minor",
             mergeWork: "Job completed",
             mergeStudy: "Graduated",
             mergeInternship: "Internship completed",
+            mergeMinor: "Minor completed",
             deugd: {
                 role: "Cashier",
                 desc: "Worked as a cashier with a 0 hour contract to improve my communication skills with customers, while earning some pocket money and expanding my network.",
@@ -116,11 +118,19 @@ const translations = {
             },
             dgd: {
                 role: "Intern Frontend Developer",
-                desc: "Aimed at improving my frontend skills by creating a Web Installation panel for the DiGidot C4 hardware controllers. Designed and developed the installation panel",
+                desc: "Aimed at improving my frontend skills by creating a Web Installation panel for the DiGidot C4 hardware controllers. Designed and developed the installation panel myself.",
             },
             hva: {
                 role: "Software Engineering",
                 desc: "Aimed at improving my skills in programming and in the business field, as well as expanding my network and keep having fun with my hobby projects.",
+            },
+            md: {
+                role: "Mobile Application Development",
+                desc: "Aimed at improving my skills with mobile development and user interaction.",
+            },
+            ds: {
+                role: "Data Scientist",
+                desc: "Aimed at improving my skills in data analysis and visualisation, while learning Python.",
             },
             bold: {
                 role: "Intern Magento Developer",
@@ -240,19 +250,21 @@ const translations = {
         timeline: {
             title: "Tijdlijn",
             initialCommit: "De echte wereld betreden",
+            newInternship: "Nieuwe stage begonnen",
+            newStudy: "Nieuwe studie begonnen",
+            newWork: "Nieuwe baan begonnen",
+            newMinor: "Nieuwe minor begonnen",
             mergeInternship: "Stage afgerond",
-            newInternshipBranch: "Nieuwe stage begonnen",
-            newStudyBranch: "Nieuwe studie begonnen",
             mergeStudy: "Afgestudeerd",
             mergeWork: "Baan afgerond",
-            newWorkBranch: "Nieuwe baan begonnen",
+            mergeMinor: "Minor afgerond",
             deugd: {
                 role: "Kassamedewerker",
                 desc: "Heb gewerkt als een kassamedewerker met een 0 uren contract om mijn communicatie vaardigheden te verbeteren met klanten, wat zakgeld te verdienen en mijn netwerk uit te bereiden.",
             },
             regio: {
                 role: "Applicatie Ontwikkelaar",
-                desc: "Mijn doel was om een start te maken met het programmeren en om mijn leiderschap vaardigheden te verbeteren voor groepsprojecten. De vaardigheden die ik heb geleerd zijn als volgt: Leiderschap, HTML5, CSS3, JavaScript, C#, PHP, MySQL and ASP.NET.",
+                desc: "Mijn doel was om een start te maken met het programmeren en om mijn leiderschap vaardigheden te verbeteren voor groepsprojecten.",
             },
             kk: {
                 role: "Stagiair Spel Ontwikkelaar",
@@ -260,23 +272,23 @@ const translations = {
             },
             dgd: {
                 role: "Stagiair Frontend Ontwikkelaar",
-                desc: "Mijn doel was om mijn frontend vaardigheden te verbeteren door een web installatie paneel te maken voor de DiGidot C4 hardware bestuurders. Het paneel is ontworpen en ontwikkeld in HTML5, CSS en JavaScript en heb gewerkt met API verzoeken.",
+                desc: "Mijn doel was om mijn frontend vaardigheden te verbeteren door een web installatie paneel te maken voor de DiGidot C4 hardware bestuurders.",
             },
             hva: {
                 role: "Software Ontwikkelaar",
-                desc: "Mijn doel was om mij vaardigheden te verbeteren in het programmeren en in de bedrijfsomgeving, als ook mijn netwerk uit te breiden en om lol te hebben leuke hobby projecten. De nieuwe vaardigheden die ik heb geleerd zijn als volgt: Java, NoSQL, Angular, TypeScript, Kotlin en Android ontwikkeling.",
+                desc: "Mijn doel was om mij vaardigheden te verbeteren in het programmeren en in de bedrijfsomgeving, als ook mijn netwerk uit te breiden en om lol te hebben leuke hobby projecten.",
             },
             md: {
-                role: "Mobiele Applicatie Ontwikkelaar",
-                desc: "Mijn doel was om meer kennis op te doen binnen het mobiele applicatie sector, door dit minor te volgen.",
+                role: "Mobiele Applicatie Ontwikkeling",
+                desc: "Mijn doel was om meer kennis op te doen met mobiele applicatie onwikkeling en de gebruikersinteractie.",
             },
             ds: {
                 role: "Data Scientist",
-                desc: "Mijn doel was om mij vaardigheden te verbeteren in het programmeren en in de bedrijfsomgeving, als ook mijn netwerk uit te breiden en om lol te hebben leuke hobby projecten. De nieuwe vaardigheden die ik heb geleerd zijn als volgt: Java, NoSQL, Angular, TypeScript, Kotlin en Android ontwikkeling.",
+                desc: "Mijn doel was om meer kennis op te doen met data analyses en visualisaties, terwijl ik ook Python leer.",
             },
             bold: {
                 role: "Stagiair Magento Ontwikkelaar",
-                desc: "Mijn doel was om mijn frontend en backend programmeer vaardigheden te verbeteren, als ook de communicatie vaardigheden met mijn collega's en klanten. Heb gewerkt in een echte Agile omgeving en heb een Dashboard gemaakt voor de Support team . De nieuwe vaardigheden die ik heb geleerd zijn als volgt: Magento 2, Laravel, SASS, Vue.js 2 en Knockout.js.",
+                desc: "Mijn doel was om mijn frontend en backend programmeer vaardigheden te verbeteren, als ook de communicatie vaardigheden met mijn collega's en klanten. Heb gewerkt in een echte Agile omgeving en heb een Dashboard gemaakt voor de Support team.",
             },
             infi: {
                 role: "Stagiair Ontwikkelaar",

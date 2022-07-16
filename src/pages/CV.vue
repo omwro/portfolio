@@ -39,19 +39,26 @@
         <div class="container">
             <div class="container-title capital">Education</div>
             <div class="content">
-                <div class="content-card" v-for="edu in getEducation()" :key="edu.role">
-                    <div class="timeperiod">{{ edu.startdate }} - {{ edu.enddate !== null ? edu.enddate : "Present" }}</div>
-                    <div class="title">{{ $t(edu.role, 'en') }}</div>
-                    <div class="location">{{ edu.company }}</div>
-                    <div class="desc">{{ $t(edu.desc, 'en') }}</div>
-                </div>
+                <template v-for="edu in getEducation()">
+                    <div class="content-card" :key="edu.role" v-if="!edu.hidecv">
+                        <div class="timeperiod">
+                            {{ edu.startdate }} - {{ edu.enddate !== null ? edu.enddate : "Present" }}
+                        </div>
+                        <div class="title">{{ $t(edu.role, 'en') }}</div>
+                        <div class="location">{{ edu.company }}</div>
+                        <div class="desc">{{ $t(edu.desc, 'en') }}</div>
+                    </div>
+                </template>
             </div>
         </div>
         <div class="container">
             <div class="container-title capital">Experience</div>
             <div class="content">
                 <div class="content-card" v-for="xp in getExperience()" :key="xp.role">
-                    <div class="timeperiod">{{ xp.startdate }} - {{ xp.enddate !== null ? xp.enddate : "Present" }}</div>
+                    <div class="timeperiod">{{ xp.startdate }} - {{
+                            xp.enddate !== null ? xp.enddate : "Present"
+                        }}
+                    </div>
                     <div class="title">{{ $t(xp.role, 'en') }}</div>
                     <div class="location">{{ xp.company }}</div>
                     <div class="desc">{{ $t(xp.desc, 'en') }}</div>
