@@ -1,5 +1,5 @@
 <template>
-    <div id="header" :class="onTop ? 'ontop' : ''">
+    <div id="header">
         <div class="header-left">
             <a href="#home">
                 <img alt="logo" class="logo" src="../../public/img/company/logo.webp">
@@ -40,7 +40,6 @@ import json from "../../public/data/navigation.json"
 export default {
     name: "Header",
     data: () => ({
-        onTop: true,
         nav: json,
     }),
     computed: {
@@ -51,18 +50,9 @@ export default {
             return this.$i18n.locale
         }
     },
-    created() {
-        window.addEventListener('scroll', this.onScroll)
-    },
-    destroyed() {
-        window.addEventListener('scroll', this.onScroll)
-    },
     methods: {
         openMenu() {
             this.$store.commit('toggleMenu')
-        },
-        onScroll(e) {
-            this.onTop = e.currentTarget.scrollY <= 80;
         },
         onDarkModeToggle() {
             this.$store.commit('toggleDarkmode')
@@ -78,9 +68,10 @@ export default {
 @import "../styles/variables";
 
 #app #header {
-    width: calc(100% - 24px);
+    width: calc(100% - 24px - 4px - 32px);
     height: 48px;
     padding: 6px 12px;
+    margin: 16px;
     top: 0;
     position: fixed;
     z-index: 10;
@@ -89,13 +80,8 @@ export default {
     align-items: center;
     background-color: $background-light;
     transition: 0.5s;
-    border-bottom: $accent 2px solid;
-
-    &.ontop {
-        background-color: transparent;
-        transition: 0.5s;
-        border-bottom: none;
-    }
+    border: $accent 2px solid;
+    border-radius: 50px;
 
     .header-left, .header-right {
         display: flex;

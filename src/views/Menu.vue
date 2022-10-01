@@ -89,19 +89,22 @@ export default {
     flex-wrap: wrap;
     flex-direction: column;
     position: fixed;
-    height: 100%;
+    height: calc(100% - 32px);
     width: 0;
     bottom: 0;
     right: 0;
     padding: 0;
+    top: 0;
     background-color: $background-light;
     z-index: 15;
     transition: 0.5s;
-    border-left: solid 0 transparent;
+    border: solid 0 transparent;
+    border-radius: 32px;
+    margin: 16px;
 
     &.active {
-        width: 100%;
-        border-left: solid 2px $accent;
+        width: calc(100% - 16px);
+        border: solid 2px $accent;
         transition: 0.5s;
         transition-timing-function: ease-in-out;
 

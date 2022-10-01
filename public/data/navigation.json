@@ -20,11 +20,6 @@
     "translate": "projects.title"
   },
   {
-    "href": "#companies",
-    "name": "Companies",
-    "translate": "companies.title"
-  },
-  {
     "href": "#timelineGit",
     "name": "Timeline",
     "translate": "timeline.title"
@@ -33,10 +28,5 @@
     "href": "#socials",
     "name": "Socials",
     "translate": "socials.title"
-  },
-  {
-    "href": "#competitors",
-    "name": "Competitors",
-    "translate": "competitors.title"
   }
 ]
