@@ -89,7 +89,8 @@ export default {
     flex-wrap: wrap;
     flex-direction: column;
     position: fixed;
-    height: calc(100% - 32px);
+    height: fit-content;
+    max-height: calc(100% - 32px);
     width: 0;
     bottom: 0;
     right: 0;
@@ -99,17 +100,17 @@ export default {
     z-index: 15;
     transition: 0.5s;
     border: solid 0 transparent;
-    border-radius: 32px;
+    border-radius: 24px;
     margin: 16px;
 
     &.active {
-        width: calc(100% - 16px);
+        width: calc(100% - 36px);
         border: solid 2px $accent;
         transition: 0.5s;
         transition-timing-function: ease-in-out;
 
         @media (min-width: $mq-sm) {
-            width: 250px;
+            width: 160px;
         }
     }
 

@@ -69,7 +69,7 @@ export default {
 
 #app #header {
     width: calc(100% - 24px - 4px - 32px);
-    height: 48px;
+    height: 32px;
     padding: 6px 12px;
     margin: 16px;
     top: 0;
@@ -91,16 +91,9 @@ export default {
 
     .header-left {
         .logo {
-            max-height: 16px;
+            max-height: 24px;
             margin: auto;
             cursor: pointer;
-
-            @media (min-width: $mq-sm) {
-                max-height: 24px;
-            }
-            @media (min-width: $mq-m) {
-                max-height: 32px;
-            }
         }
     }
 
@@ -111,12 +104,13 @@ export default {
             a {
                 color: black;
                 text-decoration: none;
-                font-size: 14px;
+                font-size: 16px;
                 margin: 0 8px;
                 align-self: center;
 
                 &:hover {
                     color: $accent;
+                    border-bottom: solid 1px red;
                 }
             }
 
