@@ -15,7 +15,8 @@ const translations = {
             title: "Home",
             intro1: "Yo👋🏻! I am",
             intro2: ", a graduated",
-            readmore: "Read More"
+            readmore: "Read More",
+            catchphrase: "A software engineer that will shake the world!"
         },
         preferences: {
             title: "Choose your preference",
@@ -166,7 +167,8 @@ const translations = {
             title: "Home",
             intro1: "Yo👋🏻! Ik ben",
             intro2: ", een afgestudeerde",
-            readmore: "Lees Verder"
+            readmore: "Lees Verder",
+            catchphrase: "Een software engineer die de wereld zal schudden!"
         },
         preferences: {
             title: "Kies jouw voorkeuren",

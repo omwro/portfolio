@@ -99,18 +99,6 @@
   },
   {
     "type": "intern",
-    "title": "NMEA Sensor Reader",
-    "desc": "projects.desc.mobilecompany",
-    "img": "img/stock/classified.jpg",
-    "isMobile": true,
-    "url": null,
-    "github": null,
-    "stack": [
-      "kotlin"
-    ]
-  },
-  {
-    "type": "intern",
     "title": "Support Dashboard",
     "desc": "projects.desc.bold",
     "img": "img/stock/classified.jpg",
@@ -124,6 +112,18 @@
       "vue",
       "sass",
       "laravel"
+    ]
+  },
+  {
+    "type": "intern",
+    "title": "NMEA Sensor Reader",
+    "desc": "projects.desc.mobilecompany",
+    "img": "img/stock/classified.jpg",
+    "isMobile": true,
+    "url": null,
+    "github": null,
+    "stack": [
+      "kotlin"
     ]
   },
   {

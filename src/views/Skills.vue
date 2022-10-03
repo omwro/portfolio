@@ -150,7 +150,6 @@ export default {
         flex-wrap: wrap;
         text-align: center;
         justify-content: center;
-        margin: 0 15px;
         font-size: 0.9rem;
     }
 

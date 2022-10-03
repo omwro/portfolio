@@ -2,26 +2,17 @@
     <div>
         <Header/>
         <Home/>
+        <Companies/>
         <About/>
-                <Separator :left="true"/>
-<!--        <ImgSeparator :left="true"-->
-<!--                      img="img/separator/grass-block.jpg"-->
-<!--                      object="img/separator/creeper.png"-->
-<!--                      extern="img/separator/minecraft-house.png"/>-->
+        <Separator :left="true"/>
         <Skills/>
-                <Separator :right="true"/>
-<!--        <ImgSeparator :right="true"-->
-<!--                      :absolute="true"-->
-<!--                      img="img/separator/road.png"-->
-<!--                      object="img/separator/car.png"/>-->
+        <Separator :right="true"/>
         <Projects/>
         <Separator :left="true"/>
-        <Companies/>
-        <Separator :right="true"/>
         <Timeline/>
-        <Separator :left="true"/>
-        <Socials/>
         <Separator :right="true"/>
+        <Socials/>
+        <Separator :left="true"/>
         <Competitors/>
         <Footer/>
         <Menu/>

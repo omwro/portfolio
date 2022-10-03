@@ -1,16 +1,15 @@
 <template>
-    <section id="companies">
-        <h1>{{ $t('companies.title') }}</h1>
+    <div id="companies">
         <div v-lazy-container="{ selector: 'img' }" class="content">
             <a v-for="c in companies"
                :key="c.name"
                :href="c.url"
                target="_blank"
                rel="author">
-                <img :data-src="c.img" :alt="c.name" :class="c.class ? c.class : ''"/>
+                <img :data-src="c.img" :alt="c.name"/>
             </a>
         </div>
-    </section>
+    </div>
 </template>
 
 <script>
@@ -38,32 +37,46 @@ export default {
 <style lang="scss" scoped>
 @import "../styles/variables";
 
+#companies {
+    padding: 64px 0;
+    overflow: hidden;
 
-#companies .content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        transform: rotate(-3deg);
+        background-color: $block-light;
+        overflow: hidden;
+        justify-content: center;
+        width: calc(106%);
+        margin-left: -3%;
 
-    > * {
-        padding: 16px;
-        align-self: center;
+        > * {
+            padding: 16px;
+            align-self: center;
 
-        img {
-            width: auto;
-            height: auto;
-            max-width: 256px;
-            max-height: 128px;
+            img {
+                width: auto;
+                height: auto;
+                max-width: 128px;
+                max-height: 64px;
+                filter: invert(1);
+            }
         }
     }
 }
 
 .dark #companies {
-    .dark-invert {
-        filter: invert(100%);
+    background-color: $background-dark;
+
+    .content {
+        background-color: $block-dark;
+
+        img {
+            filter: unset;
+        }
     }
 
-    .dark-bright {
-        filter: brightness(2);
-    }
 }
 </style>

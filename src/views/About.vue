@@ -3,7 +3,7 @@
         <h1>{{$t('about.title')}}</h1>
         <div class="content">
             <div class="selfie">
-                <img v-lazy="'./img/selfie/selfie.webp'" alt="selfie">
+                <Selfie/>
             </div>
             <div class="intro">
                 <div>{{$t('about.desc1')}} {{$t('about.desc2')}}</div>
@@ -14,8 +14,10 @@
 </template>
 
 <script>
+import Selfie from "../components/Selfie";
 export default {
     name: "About",
+    components: {Selfie},
 }
 </script>
 
@@ -32,24 +34,6 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        img {
-            width: 100%;
-            max-height: 450px;
-            min-width: 200px;
-            max-width: 300px;
-            border-radius: 25px;
-        }
-
-        a {
-            color: inherit;
-            font-size: 16px;
-            margin-top: 4px;
-
-            &:active {
-                color: $accent;
-            }
-        }
     }
 
     .intro {
