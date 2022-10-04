@@ -12,11 +12,11 @@
                 <div>{{ profile.name }}</div>
                 <div class="role">{{ profile.role }}</div>
                 <div class="card-buttons">
-                    <a :href="profile.website" v-if="profile.website != null">
+                    <a :href="profile.website" v-if="profile.website != null" target="_blank">
                         <font-awesome-icon class="globe" icon="globe"/>
                         <span>Website</span>
                     </a>
-                    <a :href="profile.linkedin" v-if="profile.linkedin != null">
+                    <a :href="profile.linkedin" v-if="profile.linkedin != null" target="_blank">
                         <font-awesome-icon class="linkedin" :icon="['fab', 'linkedin']" />
                         <span>LinkedIn</span>
                     </a>

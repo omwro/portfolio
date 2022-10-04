@@ -14,6 +14,7 @@ import Index from './pages/Index'
 import CV from './pages/CV'
 import Vuex from 'vuex'
 import GitFlow from 'gitflow-component'
+import createPersistedState from "vuex-persistedstate"
 
 library.add(faAt, faLinkedin, faSkype, faDiscord, faCodepen, faGithub, faFontAwesome, faStar, faStarHalfAlt, faStarEmpty, faHandPointer, faExternalLinkAlt, faGlobe)
 
@@ -31,14 +32,17 @@ const router = new VueRouter({routes, mode: 'history'})
 
 const store = new Vuex.Store({
     state: {
-        darkmode: false, menu: false,
+        // darkmode: window.matchMedia && window.matchMedia('prefers-color-scheme: dark').matches,
+        darkmode: false,
+        menu: false,
     }, mutations: {
         toggleDarkmode(state) {
             state.darkmode = !state.darkmode
         }, toggleMenu(state) {
             state.menu = !state.menu
         }
-    }
+    },
+    plugins: [createPersistedState()]
 })
 
 
