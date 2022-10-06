@@ -2,9 +2,6 @@
     <section id="about">
         <h1>{{$t('about.title')}}</h1>
         <div class="content">
-            <div class="selfie">
-                <Selfie/>
-            </div>
             <div class="intro">
                 <div>{{$t('about.desc1')}} {{$t('about.desc2')}}</div>
                 <div>{{$t('about.desc3')}} {{$t('about.desc4')}} {{$t('about.desc5')}} {{$t('about.desc6')}} {{$t('about.desc7')}}</div>
@@ -14,10 +11,9 @@
 </template>
 
 <script>
-import Selfie from "../components/Selfie";
 export default {
     name: "About",
-    components: {Selfie},
+    components: {},
 }
 </script>
 
@@ -30,11 +26,6 @@ export default {
         margin: 10px;
     }
 
-    .selfie {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     .intro {
         font-size: 1rem;
