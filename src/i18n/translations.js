@@ -183,7 +183,7 @@ const translations = {
             desc1: "Mijn naam is Ömer Erdem en ik ben een Software Ontwikkelaar afgestudeerd aan het Hogeschool van Amsterdam.",
             desc2: "Ik ben momenteel 23 jaar jong en vind het leuk om te gamen, rondjes te rijden en te experimenteren.",
             desc3: "Ik ben een hardwerkende web- en softwareontwikkelaar, elke dag op zoek naar nieuwe projecten en uitdagingen.",
-            desc4: "Ik verbeter mijn vaardigen met als doel een Full Stack ontwikkelaar te worden.",
+            desc4: "Ik verbeter mijn vaardigheden met als doel een Full Stack ontwikkelaar te worden.",
             desc5: "Ik ben erg gepassioneerd in programmeren en vind het niet erg om mijn handen vuil te maken.",
             desc6: "Ik leer graag nieuwe technieken en ben zeker niet bang van hardware.",
             desc7: "Ik ben iemand die van de wereld een betere plek wil maken, ook als dat onopgemerkt blijft.",

@@ -95,6 +95,7 @@ export default {
             margin-top: 32px;
             justify-content: space-between;
             flex-wrap: wrap;
+            row-gap: 8px;
 
             .socials {
                 display: flex;
@@ -102,17 +103,27 @@ export default {
 
                 > div {
                     align-items: center;
-                    padding: 0 8px;
 
-                    img, .github-icon {
+                    a {
+                        width: 24px;
                         height: 24px;
-                        width: auto;
-                        cursor: pointer;
-                        filter: invert(1);
-                    }
+                        padding: 8px;
 
-                    span {
-                        font-size: 10px;
+                        &:hover {
+                            background-color: $accent;
+                            border-radius: 8px;
+                        }
+
+                        img, .github-icon {
+                            height: 24px;
+                            width: auto;
+                            cursor: pointer;
+                            filter: invert(1);
+                        }
+
+                        span {
+                            font-size: 10px;
+                        }
                     }
                 }
             }
@@ -144,7 +155,7 @@ export default {
                 animation-iteration-count: infinite;
                 animation-name: bounce;
                 animation-timing-function: ease;
-                color: $accent;
+                color: $color-light;
             }
 
             @keyframes bounce {
@@ -180,6 +191,10 @@ export default {
 
     .socials img {
         filter: unset;
+    }
+
+    svg {
+        color: $color-dark;
     }
 }
 </style>
