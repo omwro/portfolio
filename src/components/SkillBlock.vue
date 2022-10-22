@@ -62,7 +62,7 @@ export default {
 
 #app.dark .block .badge, #app.dark {
     .badge {
-        background: $accent-dark;
+        background: $background-dark;
     }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-    <div class="contact-button-container"
-         @click="goTo(url)"
+    <a class="contact-button-container"
+         :href="url"
          :style="[
              {'background-color': getColor()},
              {'border-color': getColor()},
@@ -9,7 +9,7 @@
             <img :src="img" alt="image"/>
         </div>
         <div class="text">{{ text }}</div>
-    </div>
+    </a>
 </template>
 
 <script>
@@ -17,9 +17,6 @@ export default {
     name: "ContactButton",
     props: ["img", "text", "url", "color"],
     methods: {
-        goTo(url) {
-            window.open(url)
-        },
         getColor() {
             return `rgb(${this.color.r}, ${this.color.g}, ${this.color.b})`
         }
@@ -40,6 +37,7 @@ export default {
     margin: 16px;
     justify-content: left;
     cursor: pointer;
+    text-decoration: none;
 
     &:hover {
         .contact-button-img-container {

@@ -1,32 +1,18 @@
-$color-light: #000000;
+$accent: #014F86;
+$accent-light: #78A2C1;
+$accent-dark: #01497C;
+
+$color-light: #141414;
 $background-light: #eef4fc;
-$block-light: #A9D6E5;
+// rgba($accent, 0.2) op background #eef4fc
+$block-light: #BED3E5;
 
 $color-dark: #ebebeb;
-$background-dark: #012A4A;
-$block-dark: #013A63;
-
-$dark5: #3c3c3c;
-$dark6: #464646;
-$grey: #7d7d7d;
+$background-dark: #001e34;
+// rgba($accent, 0.3) op background #001e34
+$block-dark: #00385D;
 
 $light2: #e1e1e1;
-$light3: #d7d7d7;
-$light4: #cdcdcd;
-$light5: #c3c3c3;
-$light6: #b9b9b9;
-
-$accent: #014F86;
-$accent-light: #61A5C2;
-$accent-dark: #01497C;
-$accent-tp: rgba($accent, 0.4);
-$accent2: #0074A0;
-$accent2-tp: rgba($accent2, 0.4);
-$accent3: #00764E;
-$accent3-tp: rgba($accent3, 0.4);
-$accent4: #cd8700;
-$accent4-tp: rgba($accent4, 0.4);
-$brilliant-turquoise: #4ae3eb;
 
 $mq-s: 320px;
 $mq-sm: 480px;

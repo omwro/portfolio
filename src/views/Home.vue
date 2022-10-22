@@ -8,7 +8,9 @@
             <div>
                 <div class="socials">
                     <div v-for="(c, i) in contact" :key="i">
-                        <img @click="goTo(c.url)" :src="c.img" :alt="c.name">
+                        <a :href="c.url">
+                            <img :src="c.img" :alt="c.name">
+                        </a>
                     </div>
                 </div>
                 <a href="#about" class="readmore">
@@ -38,12 +40,7 @@ export default {
     components: {Selfie},
     data: () => ({
         contact: contactJson
-    }),
-    methods: {
-        goTo(url) {
-            window.open(url)
-        }
-    }
+    })
 }
 </script>
 
