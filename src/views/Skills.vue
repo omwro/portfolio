@@ -2,7 +2,7 @@
     <section id="skills">
         <h1>{{ $t('skills.title') }}</h1>
         <div class="content">
-            <div class="skill-container c1">
+            <div class="skill-container">
                 <h1 class="small">{{ $t('skills.languages') }}</h1>
                 <div v-lazy-container="{ selector: 'img' }" class="img-container">
                     <SkillBlock v-for="skill in getLanguages()"
@@ -11,7 +11,7 @@
                                 :xp="true"/>
                 </div>
             </div>
-            <div class="skill-container c2">
+            <div class="skill-container">
                 <h1 class="small">{{ $t('skills.frameworks') }}</h1>
                 <div v-lazy-container="{ selector: 'img' }" class="img-container">
                     <SkillBlock v-for="skill in getFrameworks()"
@@ -20,7 +20,7 @@
                                 :xp="true"/>
                 </div>
             </div>
-            <div class="skill-container c3">
+            <div class="skill-container">
                 <h1 class="small">{{ $t('skills.environments') }}</h1>
                 <div v-lazy-container="{ selector: 'img' }" class="img-container">
                     <SkillBlock v-for="skill in getEnvironments()"
@@ -29,7 +29,7 @@
                                 :xp="true"/>
                 </div>
             </div>
-            <div class="skill-container c4">
+            <div class="skill-container">
                 <h1 class="small">{{ $t('skills.competencies') }}</h1>
                 <div v-lazy-container="{ selector: 'img' }" class="img-container">
                     <SkillBlock v-for="skill in getCompetencies()"
@@ -101,7 +101,8 @@ export default {
     .skill-container {
         margin: 16px;
         background-color: $block-light;
-        border-left: solid 5px;
+        border-left: solid 5px $accent;
+        border-right: solid 5px $accent;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -109,38 +110,7 @@ export default {
 
         h1 {
             margin-top: 0;
-        }
-
-        &.c1 {
-            border-left-color: $accent;
-
-            h1 {
-                border-bottom-color: $accent;
-            }
-        }
-
-        &.c2 {
-            border-left-color: $accent2;
-
-            h1 {
-                border-bottom-color: $accent2;
-            }
-        }
-
-        &.c3 {
-            border-left-color: $accent3;
-
-            h1 {
-                border-bottom-color: $accent3;
-            }
-        }
-
-        &.c4 {
-            border-left-color: $accent4;
-
-            h1 {
-                border-bottom-color: $accent4;
-            }
+            border-bottom-color: $accent;
         }
     }
 

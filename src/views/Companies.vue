@@ -40,6 +40,7 @@ export default {
 #companies {
     padding: 64px 0;
     overflow: hidden;
+    background-color: $background-light;
 
     .content {
         display: flex;

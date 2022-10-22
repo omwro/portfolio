@@ -34,7 +34,7 @@
                 <div class="languages">
                     <img v-for="skill in getLanguages(p.stack)"
                          :key="skill.name"
-                         :class="'c'+skill.color"
+                         :class="'c1'"
                          :src="skill.img"
                          :alt="skill.name"/>
                 </div>
@@ -156,22 +156,6 @@ export default {
                 .c1 {
                     background-color: $accent;
                 }
-
-                .c2 {
-                    background-color: $accent2;
-                }
-
-                .c3 {
-                    background-color: $accent3;
-                }
-
-                .c4 {
-                    background-color: $accent4;
-                }
-
-                .c5 {
-                    background-color: $dark5;
-                }
             }
         }
     }
@@ -187,7 +171,13 @@ a {
     }
 }
 
-#app.dark a .icon {
-    color: white;
+#app.dark {
+    a .icon {
+        color: white;
+    }
+
+    .filterbtn {
+        color: $color-dark;
+    }
 }
 </style>

@@ -73,7 +73,7 @@ export default {
 
 
         .role {
-            color: $grey;
+            color: $accent;
         }
 
         .card-buttons {
@@ -158,6 +158,20 @@ export default {
 
         span {
             color: $color-dark;
+        }
+
+        .role {
+            color: $accent-light;
+        }
+
+        a:hover {
+            .globe, .linkedin {
+                color: $accent-light;
+            }
+
+            span {
+                color: $accent-light !important;
+            }
         }
     }
 }

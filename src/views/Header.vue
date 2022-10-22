@@ -110,7 +110,7 @@ export default {
 
                 &:hover {
                     color: $accent;
-                    border-bottom: solid 1px red;
+                    border-bottom: solid 1px $accent;
                 }
             }
 
@@ -164,7 +164,12 @@ export default {
     }
 
     .navbar a {
-        color: $block-light;
+        color: $color-dark;
+
+        &:hover {
+            color: $accent-light;
+            border-bottom-color: $accent-light;
+        }
     }
 
     .logo {

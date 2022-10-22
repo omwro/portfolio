@@ -29,6 +29,7 @@ export default {
   height: 2px;
   width: 100%;
   display: flex;
+    background-color: $background-light;
 
   &.left {
     justify-content: left;

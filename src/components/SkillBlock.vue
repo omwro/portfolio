@@ -1,6 +1,6 @@
 <template>
     <div class="block">
-        <img :class="'c'+skill.color" :data-src="skill.img" :alt="skill.name"/>
+        <img :data-src="skill.img" :alt="skill.name"/>
         <div>
             <template v-if="t">
                 {{ $t(skill.display_name) }}
@@ -43,6 +43,7 @@ export default {
         height: 64px;
         padding: 8px;
         border-radius: 25px 12px;
+        background-color: $accent;
     }
 
     .badge {
@@ -53,32 +54,15 @@ export default {
         left: 8px;
         padding: 3px;
         border-radius: 6px 12px;
-        background: $light6;
+        background: $accent-light;
         font-size: 12px;
-    }
 
-    .c1 {
-        background-color: $accent;
-    }
-
-    .c2 {
-        background-color: $accent2;
-    }
-
-    .c3 {
-        background-color: $accent3;
-    }
-
-    .c4 {
-        background-color: $accent4;
-    }
-
-    .c5 {
-        background-color: $dark5;
     }
 }
 
-#app.dark .block .badge, #app.dark .badge {
-    background: $dark6;
+#app.dark .block .badge, #app.dark {
+    .badge {
+        background: $accent-dark;
+    }
 }
 </style>

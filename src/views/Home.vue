@@ -61,6 +61,7 @@ export default {
     column-gap: 64px;
     align-content: flex-start;
     align-items: center;
+    background-color: $background-light;
 
     @media (min-width: $mq-m) {
         padding-top: 200px;
