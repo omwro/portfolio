@@ -1,24 +1,24 @@
 <template>
-  <div class="separator" :class="getSide()">
-    <div class="line"></div>
-  </div>
+    <div class="separator" :class="getSide()">
+        <div class="line"></div>
+    </div>
 </template>
 
 <script>
 export default {
-  name: "Separator",
-  props: ["left", "right"],
-  methods: {
-    getSide() {
-      if (this.left) {
-        return 'left'
-      } else if (this.right) {
-        return 'right'
-      } else {
-        return null
-      }
+    name: "Separator",
+    props: ["left", "right"],
+    methods: {
+        getSide() {
+            if (this.left) {
+                return 'left'
+            } else if (this.right) {
+                return 'right'
+            } else {
+                return null
+            }
+        }
     }
-  }
 }
 </script>
 
@@ -26,28 +26,37 @@ export default {
 @import "src/styles/variables";
 
 .separator {
-  height: 2px;
-  width: 100%;
-  display: flex;
+    height: 8px;
+    width: 100%;
+    display: flex;
     background-color: $background-light;
 
-  &.left {
-    justify-content: left;
-  }
+    &.left {
+        justify-content: left;
+    }
 
-  &.right {
-    justify-content: right;
-  }
+    &.right {
+        justify-content: right;
+    }
 
-  &.left .line, &.right .line {
-    width: 67%;
-  }
+    &.left .line, &.right .line {
+        width: 67%;
+    }
 
-  .line {
-    width: 100%;
-    background-color: $accent;
-  }
+    .line {
+        width: 100%;
+        background-color: $accent;
+    }
+
+    &.right .line {
+        border-radius: 10px 0 0 10px;
+    }
+
+    &.left .line {
+        border-radius: 0 10px 10px 0;
+    }
 }
+
 #app.dark .separator {
     background-color: $background-dark;
 }
