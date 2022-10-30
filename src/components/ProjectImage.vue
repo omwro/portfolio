@@ -33,6 +33,7 @@ export default {
     position: relative;
     display: inline-flex;
     z-index: 1;
+    align-self: center;
 
     .stock {
         position: relative;
@@ -43,9 +44,9 @@ export default {
 
     .project-laptop {
         position: absolute;
-        top: 4.9%;
+        top: 4%;
         left: 11.7%;
-        height: 86.1%;
+        height: 87%;
         width: 76.4%;
     }
 
