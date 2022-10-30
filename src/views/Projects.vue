@@ -38,7 +38,11 @@
                     </div>
                 </template>
                 </div>
-                <div v-if="!loadmore.includes(type)" @click="showmore(type)" class="showmorebtn">Load more</div>
+                <div v-if="!loadmore.includes(type)"
+                     @click="showmore(type)"
+                     class="showmorebtn">
+                    {{$t('projects.loadmore')}}
+                </div>
             </div>
         </div>
     </section>
@@ -165,7 +169,7 @@ export default {
             border-radius: 3px;
             margin: 0 auto;
             cursor: pointer;
-            box-shadow: 3px 3px 10px $accent-dark;
+            box-shadow: 0 0 10px 1px $accent-dark;
 
             &:hover {
                 background-color: $accent-dark;

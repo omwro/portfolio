@@ -58,6 +58,7 @@ const translations = {
             hobby: "Hobby",
             study: "Study",
             intern: "Intern",
+            loadmore: "Load More",
             desc: {
                 portfolio: "My 3rd attempt at creating a good looking and unique personal portfolio website. " +
                     "This website will be continuously developed on, in order to improve my skills " +
@@ -211,6 +212,7 @@ const translations = {
             hobby: "Hobby",
             study: "Studie",
             intern: "Stage",
+            loadmore: "Meer Laden",
             desc: {
                 portfolio: "Mijn 3e poging tot het maken van een mooie en unieke persoonlijke portfolio website. " +
                     "De website zal continue doorontwikkeld worden om mijn vaardigheden te verbeterend " +
