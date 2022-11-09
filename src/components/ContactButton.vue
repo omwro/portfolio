@@ -28,13 +28,13 @@ export default {
 @import "src/styles/variables";
 
 .contact-button-container {
-    height: 65px;
-    width: 256px;
+    height: 32px;
+    width: 128px;
     display: flex;
     flex-direction: row;
     border: solid 2px;
     border-radius: 10px;
-    margin: 16px;
+    margin: 8px;
     justify-content: left;
     cursor: pointer;
     text-decoration: none;
@@ -42,25 +42,25 @@ export default {
     &:hover {
         .contact-button-img-container {
             img {
-                height: 46px;
+                height: 22px;
                 transition: .2s;
             }
         }
 
         .text {
-            font-size: 38px;
+            font-size: 22px;
             transition: .2s;
         }
     }
 
     .contact-button-img-container {
-        width: 75px;
+        width: 32px;
         display: flex;
         justify-content: center;
         align-items: center;
 
         img {
-            height: 40px;
+            height: 18px;
             filter: invert(0);
             transition: .2s;
         }
@@ -70,7 +70,7 @@ export default {
         display: flex;
         align-self: center;
         padding-left: 8px;
-        font-size: 32px;
+        font-size: 18px;
         font-weight: bold;
         color: $color-dark;
         transition: .2s;
