@@ -15,6 +15,7 @@ import CV from './pages/CV'
 import Vuex from 'vuex'
 import GitFlow from 'gitflow-component'
 import createPersistedState from "vuex-persistedstate"
+import './assets/tailwind.css'
 
 library.add(faAt, faLinkedin, faSkype, faDiscord, faCodepen, faGithub, faFontAwesome, faStar, faStarHalfAlt, faStarEmpty, faHandPointer, faExternalLinkAlt, faGlobe)
 
