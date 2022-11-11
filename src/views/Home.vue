@@ -1,29 +1,33 @@
 <template>
     <div id="home">
-        <Selfie class="selfie-container"/>
+        <Selfie class="selfie-container" />
         <div class="container">
             <div>{{ $t("home.intro1") }}</div>
-            <div>{{ $t("general.firstname") }} {{ $t("general.lastname") }}</div>
+            <div>
+                {{ $t("general.firstname") }} {{ $t("general.lastname") }}
+            </div>
             <div>{{ $t("home.catchphrase") }}</div>
             <div>
                 <div class="socials">
                     <div v-for="(c, i) in contact" :key="i">
                         <a :href="c.url">
-                            <img :src="c.img" :alt="c.name">
+                            <img :src="c.img" :alt="c.name" />
                         </a>
                     </div>
                 </div>
                 <a href="#about" class="readmore">
-                    {{ $t('home.readmore') }}
-                    <svg stroke="currentColor"
-                         fill="currentColor"
-                         stroke-width="0"
-                         viewBox="0 0 16 16"
-                         height="20px"
-                         width="20px"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    {{ $t("home.readmore") }}
+                    <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 16 16"
+                        height="20px"
+                        width="20px"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                     </svg>
                 </a>
             </div>
@@ -32,16 +36,16 @@
 </template>
 
 <script>
-import contactJson from "../../public/data/contact.json"
+import contactJson from "../../public/data/contact.json";
 import Selfie from "../components/Selfie";
 
 export default {
     name: "Home",
-    components: {Selfie},
+    components: { Selfie },
     data: () => ({
-        contact: contactJson
-    })
-}
+        contact: contactJson,
+    }),
+};
 </script>
 
 <style lang="scss" scoped>
@@ -50,18 +54,19 @@ export default {
 #home {
     height: fit-content;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 100px;
     row-gap: 64px;
     column-gap: 64px;
-    align-content: flex-start;
     align-items: center;
     background-color: $background-light;
+    align-content: center;
 
-    @media (min-width: $mq-m) {
+    @media (min-width: $mq-l) {
         padding-top: 200px;
+        flex-direction: row-reverse;
     }
 
     .container {
@@ -76,6 +81,26 @@ export default {
         border-radius: 10px;
         border: solid 2px $accent;
         background-color: $block-light;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            margin-top: -15px;
+            top: -15px;
+            border: solid 15px transparent;
+            border-bottom-color: $accent;
+            z-index: 1;
+
+            @media (min-width: $mq-l) {
+                top: 50%;
+                left: 100%;
+                margin-top: -15px;
+                right: -30px;
+                border: solid 15px transparent;
+                border-left-color: $accent;
+            }
+        }
 
         > div {
             padding: 2px 0;
@@ -114,7 +139,8 @@ export default {
                             border-radius: 8px;
                         }
 
-                        img, .github-icon {
+                        img,
+                        .github-icon {
                             height: 24px;
                             width: auto;
                             cursor: pointer;
@@ -140,7 +166,8 @@ export default {
             text-decoration: none;
             border: solid 2px $accent;
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 background-color: $accent;
                 color: $color-dark;
 

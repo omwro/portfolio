@@ -65,7 +65,6 @@
   ],
   "prettier": {
     "tabWidth": 4,
-    "useTabs": true,
     "semi": true,
     "bracketSameLine": true
   }
