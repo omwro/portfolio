@@ -5,43 +5,52 @@
             <div class="content-block" v-for="type in getTypes()" :key="type">
                 <h1 class="small">{{ $t(`projects.${type}`) }}</h1>
                 <div class="project-container">
-                <template v-for="(p,i) in getProjects(type)">
-                    <div v-if="i < 2 || loadmore.includes(type)"
-                         :key="i"
-                         class="project">
-                        <ProjectImage :project="p"/>
-                        <div class="title">
-                            {{ p.title }}
-                            <a v-if="p.github"
-                               aria-label="github"
-                               :href="p.github"
-                               rel="noopener"
-                               target="_blank">
-                                <font-awesome-icon :icon="['fab', 'github']" class="icon"/>
-                            </a>
-                            <a v-if="p.url"
-                               aria-label="link"
-                               :href="p.url"
-                               rel="noopener"
-                               target="_blank">
-                                <font-awesome-icon :icon="['fas', 'external-link-alt']" class="icon"/>
-                            </a>
+                    <template v-for="(p, i) in getProjects(type)">
+                        <div
+                            v-if="i < 2 || loadmore.includes(type)"
+                            :key="i"
+                            class="project">
+                            <ProjectImage :project="p" />
+                            <div class="title">
+                                {{ p.title }}
+                                <a
+                                    v-if="p.github"
+                                    aria-label="github"
+                                    :href="p.github"
+                                    rel="noopener"
+                                    target="_blank">
+                                    <font-awesome-icon
+                                        :icon="['fab', 'github']"
+                                        class="icon" />
+                                </a>
+                                <a
+                                    v-if="p.url"
+                                    aria-label="link"
+                                    :href="p.url"
+                                    rel="noopener"
+                                    target="_blank">
+                                    <font-awesome-icon
+                                        :icon="['fas', 'external-link-alt']"
+                                        class="icon" />
+                                </a>
+                            </div>
+                            <div class="description">{{ $t(p.desc) }}</div>
+                            <div class="languages">
+                                <img
+                                    v-for="skill in getLanguages(p.stack)"
+                                    :key="skill.name"
+                                    :class="'c1'"
+                                    :src="skill.img"
+                                    :alt="skill.name" />
+                            </div>
                         </div>
-                        <div class="description">{{ $t(p.desc) }}</div>
-                        <div class="languages">
-                            <img v-for="skill in getLanguages(p.stack)"
-                                 :key="skill.name"
-                                 :class="'c1'"
-                                 :src="skill.img"
-                                 :alt="skill.name"/>
-                        </div>
-                    </div>
-                </template>
+                    </template>
                 </div>
-                <div v-if="!loadmore.includes(type)"
-                     @click="showmore(type)"
-                     class="showmorebtn">
-                    {{$t('projects.loadmore')}}
+                <div
+                    v-if="!loadmore.includes(type)"
+                    @click="showmore(type)"
+                    class="showmorebtn">
+                    {{ $t("projects.loadmore") }}
                 </div>
             </div>
         </div>
@@ -49,38 +58,38 @@
 </template>
 
 <script>
-import skillsJson from "../../public/data/skills.json"
-import projectsJson from "../../public/data/projects.json"
+import skillsJson from "../../public/data/skills.json";
+import projectsJson from "../../public/data/projects.json";
 import ProjectImage from "@/components/ProjectImage";
 
 export default {
     name: "Projects",
-    components: {ProjectImage},
+    components: { ProjectImage },
     data: () => ({
         projects: projectsJson,
-        loadmore: []
+        loadmore: [],
     }),
     methods: {
         getLanguages(array) {
-            return skillsJson.filter(x => array.includes(x.name))
+            return skillsJson.filter((x) => array.includes(x.name));
         },
         getTypes() {
-            return this.projects.map(x => x.type).filter((v, i, s) => s.indexOf(v) === i)
+            return this.projects
+                .map((x) => x.type)
+                .filter((v, i, s) => s.indexOf(v) === i);
         },
         setFilter(filter) {
-            this.filter = filter
+            this.filter = filter;
         },
         getProjects(type) {
-            return this.projects.filter(x => x.type === type)
+            return this.projects.filter((x) => x.type === type);
         },
         showmore(t) {
-            this.loadmore.push(t)
-            console.log(t)
-        }
-    }
-}
-
-
+            this.loadmore.push(t);
+            console.log(t);
+        },
+    },
+};
 </script>
 
 <style lang="scss">
@@ -91,8 +100,6 @@ export default {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        margin-left: 8px;
-        margin-right: 8px;
         align-content: center;
 
         @media (min-width: $mq-l) {
@@ -113,6 +120,7 @@ export default {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 32px;
 
             @media (min-width: $mq-l) {
                 margin-left: 20px;
@@ -123,8 +131,7 @@ export default {
                 display: flex;
                 flex-direction: column;
                 padding-top: 4px;
-                margin: 16px;
-                max-width: 600px;
+                max-width: 300px;
 
                 .title {
                     font-size: 1.5rem;
@@ -132,7 +139,7 @@ export default {
 
                 .description {
                     font-style: italic;
-                    font-size: 1rem;
+                    font-size: 0.875rem;
                     margin: 0 5%;
                 }
 
@@ -167,7 +174,7 @@ export default {
             color: $color-dark;
             width: fit-content;
             border-radius: 3px;
-            margin: 0 auto;
+            margin: 32px auto 0;
             cursor: pointer;
             box-shadow: 0 0 10px 1px $accent-dark;
 

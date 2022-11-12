@@ -1,10 +1,17 @@
 <template>
     <section id="about">
-        <h1>{{$t('about.title')}}</h1>
+        <h1>{{ $t("about.title") }}</h1>
         <div class="content">
             <div class="intro">
-                <div>{{$t('about.desc1')}} {{$t('about.desc2')}}</div>
-                <div>{{$t('about.desc3')}} {{$t('about.desc4')}} {{$t('about.desc5')}} {{$t('about.desc6')}} {{$t('about.desc7')}}</div>
+                <div>
+                    {{ $t("about.desc1") }} {{ $t("about.desc2") }}
+                    {{ $t("about.desc25") }}
+                </div>
+                <div>
+                    {{ $t("about.desc3") }} {{ $t("about.desc4") }}
+                    {{ $t("about.desc5") }} {{ $t("about.desc6") }}
+                    {{ $t("about.desc7") }}
+                </div>
             </div>
         </div>
     </section>
@@ -14,18 +21,16 @@
 export default {
     name: "About",
     components: {},
-}
+};
 </script>
 
 <style lang="scss" scoped>
 @import "../styles/variables";
 
-
 #about .content {
     > div {
         margin: 10px;
     }
-
 
     .intro {
         font-size: 1rem;
@@ -40,13 +45,9 @@ export default {
     @media (min-width: $mq-sm) {
         flex-direction: column;
     }
-    @media (min-width: $mq-sm) {
-        margin: 20px 50px;
-    }
+
     @media (min-width: $mq-m) {
         flex-direction: row;
-        margin: 20px 100px;
-
     }
 }
 </style>

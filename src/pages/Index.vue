@@ -1,21 +1,21 @@
 <template>
     <div>
-        <Header/>
-        <Home/>
-        <Companies/>
-        <About/>
-        <Separator :left="true"/>
-        <Skills/>
-        <Separator :right="true"/>
-        <Projects/>
-        <Separator :left="true"/>
-        <Timeline/>
-        <Separator :right="true"/>
-        <Socials/>
-        <Separator :left="true"/>
-        <Competitors/>
-        <Footer/>
-        <Menu/>
+        <Header />
+        <Home />
+        <Companies />
+        <About />
+        <Separator :left="true" />
+        <Skills />
+        <Separator :right="true" />
+        <Projects />
+        <Separator :left="true" />
+        <Timeline />
+        <Separator :right="true" />
+        <Socials />
+        <Separator :left="true" />
+        <Competitors />
+        <Footer />
+        <Menu />
     </div>
 </template>
 
@@ -49,9 +49,9 @@ export default {
         About,
         Home,
         Header,
-        Socials
-    }
-}
+        Socials,
+    },
+};
 </script>
 
 <style lang="scss">
@@ -64,7 +64,8 @@ export default {
     }
 
     &.dark {
-        #header, #menu {
+        #header,
+        #menu {
             color: $light2;
         }
 
@@ -80,8 +81,13 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding: 100px 16px 50px;
+
+    > * {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     h1 {
         margin: 0 auto 10px auto;
@@ -94,7 +100,6 @@ section {
             margin: 25px auto 10px auto;
             font-size: 1.25rem;
         }
-
     }
 
     .content {

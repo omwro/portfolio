@@ -1,5 +1,5 @@
 <template>
-    <div id="home">
+    <section id="home">
         <Selfie class="selfie-container" />
         <div class="container">
             <div>{{ $t("home.intro1") }}</div>
@@ -32,7 +32,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -57,12 +57,17 @@ export default {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 100px;
     row-gap: 64px;
     column-gap: 64px;
     align-items: center;
     background-color: $background-light;
     align-content: center;
+    overflow: hidden;
+
+    > * {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     @media (min-width: $mq-l) {
         padding-top: 200px;
@@ -76,7 +81,6 @@ export default {
         padding: 16px;
         width: fit-content;
         height: fit-content;
-        margin: 0 8px;
         font-size: 2rem;
         border-radius: 10px;
         border: solid 2px $accent;

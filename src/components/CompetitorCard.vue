@@ -1,10 +1,14 @@
 <template>
     <div class="card-block">
         <div class="card">
-            <div class="card-header" :style="'background-image: url('+profile.img+')'">
+            <div
+                class="card-header"
+                :style="'background-image: url(' + profile.img + ')'">
                 <div class="card-header-slanted-edge">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                        <path class="polygon" d="M-20,200,1000,0V200Z"/>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 200 200">
+                        <path class="polygon" d="M-20,200,1000,0V200Z" />
                     </svg>
                 </div>
             </div>
@@ -12,12 +16,20 @@
                 <div>{{ profile.name }}</div>
                 <div class="role">{{ profile.role }}</div>
                 <div class="card-buttons">
-                    <a :href="profile.website" v-if="profile.website != null" target="_blank">
-                        <font-awesome-icon class="globe" icon="globe"/>
+                    <a
+                        :href="profile.website"
+                        v-if="profile.website != null"
+                        target="_blank">
+                        <font-awesome-icon class="globe" icon="globe" />
                         <span>Website</span>
                     </a>
-                    <a :href="profile.linkedin" v-if="profile.linkedin != null" target="_blank">
-                        <font-awesome-icon class="linkedin" :icon="['fab', 'linkedin']" />
+                    <a
+                        :href="profile.linkedin"
+                        v-if="profile.linkedin != null"
+                        target="_blank">
+                        <font-awesome-icon
+                            class="linkedin"
+                            :icon="['fab', 'linkedin']" />
                         <span>LinkedIn</span>
                     </a>
                 </div>
@@ -29,22 +41,21 @@
 <script>
 export default {
     name: "CompetitorCard",
-    props: ["profile"]
-}
+    props: ["profile"],
+};
 </script>
 
 <style lang="scss" scoped>
 @import "../styles/variables";
 
 .card-block {
-    margin: 16px;
     border-radius: 5px;
     position: relative;
 
     &:hover {
-        .card-header:after{
+        .card-header:after {
             height: 0;
-            transition: .5s;
+            transition: 0.5s;
         }
     }
 }
@@ -64,13 +75,12 @@ export default {
         background-size: contain;
     }
 
-    .card-body{
+    .card-body {
         padding: 8px;
         text-align: center;
         width: 100%;
         z-index: 1;
         background: $block-light;
-
 
         .role {
             color: $accent;
@@ -83,7 +93,8 @@ export default {
             margin-top: 16px;
             width: 100%;
 
-            .globe, .linkedin {
+            .globe,
+            .linkedin {
                 width: 32px;
                 height: 32px;
                 color: white;
@@ -101,7 +112,8 @@ export default {
                 flex: 1;
 
                 &:hover {
-                    .globe, .linkedin {
+                    .globe,
+                    .linkedin {
                         filter: brightness(1);
                         color: $accent;
                     }
@@ -120,35 +132,41 @@ export default {
         }
     }
 
-    .card-header:after{
-        content:'';
+    .card-header:after {
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
-        transition: .5s;
+        transition: 0.5s;
         bottom: 0;
-        background: linear-gradient(to top, rgba($accent, 1), rgba(white, 0.0) 50%);
+        background: linear-gradient(
+            to top,
+            rgba($accent, 1),
+            rgba(white, 0) 50%
+        );
     }
 
-    svg .polygon{
+    svg .polygon {
         fill: $block-light;
     }
 
-    .card-header-slanted-edge{
+    .card-header-slanted-edge {
         position: absolute;
         z-index: 1;
         width: 100%;
-        right:0;
-        left:0;
+        right: 0;
+        left: 0;
     }
 }
 
 #app.dark {
-    .card, .card .card-header svg .polygon {
+    .card,
+    .card .card-header svg .polygon {
         fill: $block-dark;
         background: $block-dark;
 
-        .globe, .linkedin {
+        .globe,
+        .linkedin {
             filter: brightness(1);
         }
 
@@ -165,7 +183,8 @@ export default {
         }
 
         a:hover {
-            .globe, .linkedin {
+            .globe,
+            .linkedin {
                 color: $accent-light;
             }
 

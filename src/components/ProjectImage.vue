@@ -1,22 +1,20 @@
 <template>
     <div class="project-image-container">
         <template v-if="project.isMobile">
-            <img src="img/stock/dev-mobile.png"
-                 alt="mobile"
-                 class="stock">
-            <img :v-lazy="project.img"
-                 :src="project.img"
-                 :alt="project.title"
-                 class="project-mobile">
+            <img src="img/stock/dev-mobile.png" alt="mobile" class="stock" />
+            <img
+                :v-lazy="project.img"
+                :src="project.img"
+                :alt="project.title"
+                class="project-mobile" />
         </template>
         <template v-else>
-            <img src="img/stock/dev-laptop.png"
-                 alt="laptop"
-                 class="stock">
-            <img :v-lazy="project.img"
-                 :src="project.img"
-                 :alt="project.title"
-                 class="project-laptop">
+            <img src="img/stock/dev-laptop.png" alt="laptop" class="stock" />
+            <img
+                :v-lazy="project.img"
+                :src="project.img"
+                :alt="project.title"
+                class="project-laptop" />
         </template>
     </div>
 </template>
@@ -24,8 +22,8 @@
 <script>
 export default {
     name: "ProjectImage",
-    props: ["project"]
-}
+    props: ["project"],
+};
 </script>
 
 <style lang="scss" scoped>
@@ -39,7 +37,7 @@ export default {
         position: relative;
         z-index: 1;
         max-width: 100%;
-        max-height: 342px;
+        max-height: 171px;
     }
 
     .project-laptop {
