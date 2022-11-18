@@ -46,12 +46,10 @@
                         </div>
                     </template>
                 </div>
-                <div
+                <LoadMoreButton
                     v-if="!loadmore.includes(type)"
-                    @click="showmore(type)"
-                    class="showmorebtn">
-                    {{ $t("projects.loadmore") }}
-                </div>
+                    :value="type"
+                    @clicked="showmore" />
             </div>
         </div>
     </section>
@@ -61,10 +59,11 @@
 import skillsJson from "../../public/data/skills.json";
 import projectsJson from "../../public/data/projects.json";
 import ProjectImage from "@/components/ProjectImage";
+import LoadMoreButton from "../components/LoadMoreButton";
 
 export default {
     name: "Projects",
-    components: { ProjectImage },
+    components: { LoadMoreButton, ProjectImage },
     data: () => ({
         projects: projectsJson,
         loadmore: [],
@@ -115,7 +114,7 @@ export default {
 
         .project-container {
             text-align: center;
-            margin: 0 auto;
+            margin: 0 auto 32px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -163,23 +162,6 @@ export default {
                         background-color: $accent;
                     }
                 }
-            }
-        }
-
-        .showmorebtn {
-            display: block;
-            padding: 8px 32px;
-            border: solid 2px $accent-dark;
-            background-color: $accent;
-            color: $color-dark;
-            width: fit-content;
-            border-radius: 3px;
-            margin: 32px auto 0;
-            cursor: pointer;
-            box-shadow: 0 0 10px 1px $accent-dark;
-
-            &:hover {
-                background-color: $accent-dark;
             }
         }
     }

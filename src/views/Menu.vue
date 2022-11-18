@@ -182,7 +182,8 @@ export default {
             justify-content: center;
 
             &:hover {
-                color: $accent;
+                color: $accent-light;
+                text-decoration: underline;
             }
         }
     }

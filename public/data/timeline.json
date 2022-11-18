@@ -1,5 +1,25 @@
 [
   {
+    "id": "bold2",
+    "type": "Work",
+    "role": "timeline.bold2.role",
+    "company": "Bold Commerce",
+    "desc": "timeline.bold2.desc",
+    "startdate": "Okt 2022",
+    "enddate": null,
+    "stack": [
+      "js",
+      "knockoutjs",
+      "alpinejs",
+      "sass",
+      "tailwind",
+      "vue",
+      "nuxt",
+      "php",
+      "magento"
+    ]
+  },
+  {
     "id": "hva",
     "type": "Study",
     "role": "timeline.hva.role",
@@ -16,15 +36,16 @@
     ]
   },
   {
-    "id": "md",
-    "type": "Minor",
-    "role": "timeline.md.role",
-    "company": "Hogeschool van Amsterdam",
-    "desc": "timeline.md.desc",
-    "startdate": "Sep 2020",
-    "enddate": "Jan 2021",
+    "id": "infi",
+    "type": "Internship",
+    "role": "timeline.infi.role",
+    "company": "Infi Amsterdam",
+    "desc": "timeline.infi.desc",
+    "startdate": "Feb 2022",
+    "enddate": "Jul 2022",
     "stack": [
-      "kotlin"
+      "csharp",
+      "aspnet"
     ]
   },
   {
@@ -40,33 +61,16 @@
     ]
   },
   {
-    "id": "regio",
-    "type": "Study",
-    "role": "timeline.regio.role",
-    "company": "Regio College Zaandam",
-    "desc": "timeline.regio.desc",
-    "startdate": "Sep 2015",
-    "enddate": "Jun 2018",
+    "id": "md",
+    "parent": "hva",
+    "type": "Minor",
+    "role": "timeline.md.role",
+    "company": "Hogeschool van Amsterdam",
+    "desc": "timeline.md.desc",
+    "startdate": "Sep 2020",
+    "enddate": "Jan 2021",
     "stack": [
-      "html",
-      "css",
-      "js",
-      "csharp",
-      "php",
-      "aspnet"
-    ]
-  },
-  {
-    "id": "infi",
-    "type": "Internship",
-    "role": "timeline.infi.role",
-    "company": "Infi Amsterdam",
-    "desc": "timeline.infi.desc",
-    "startdate": "Feb 2022",
-    "enddate": "Jul 2022",
-    "stack": [
-      "csharp",
-      "aspnet"
+      "kotlin"
     ]
   },
   {
@@ -88,6 +92,24 @@
     ]
   },
   {
+    "id": "regio",
+    "type": "Study",
+    "role": "timeline.regio.role",
+    "company": "Regio College Zaandam",
+    "desc": "timeline.regio.desc",
+    "startdate": "Sep 2015",
+    "enddate": "Jun 2018",
+    "showmore": true,
+    "stack": [
+      "html",
+      "css",
+      "js",
+      "csharp",
+      "php",
+      "aspnet"
+    ]
+  },
+  {
     "id": "dgd",
     "type": "Internship",
     "role": "timeline.dgd.role",
@@ -95,6 +117,7 @@
     "desc": "timeline.dgd.desc",
     "startdate": "Feb 2018",
     "enddate": "Jun 2018",
+    "showmore": true,
     "stack": [
       "html",
       "css",
@@ -109,6 +132,7 @@
     "desc": "timeline.kk.desc",
     "startdate": "Sep 2016",
     "enddate": "Jan 2017",
+    "showmore": true,
     "stack": [
       "csharp"
     ]
@@ -120,6 +144,7 @@
     "company": "Deugd Erdem",
     "desc": "timeline.deugd.desc",
     "startdate": "Jan 2015",
-    "enddate": "Jul 2018"
+    "enddate": "Jul 2018",
+    "showmore": true
   }
 ]

@@ -10,6 +10,7 @@ const translations = {
             tel: "(+31) 6 XX XX XX XX",
             nl: "Nederlands",
             en: "Engels",
+            loadmore: "Meer Laden",
         },
         home: {
             title: "Home",
@@ -60,7 +61,6 @@ const translations = {
             hobby: "Hobby",
             study: "Studie",
             intern: "Stage",
-            loadmore: "Meer Laden",
             desc: {
                 portfolio:
                     "Mijn 3e poging tot het maken van een mooie en unieke persoonlijke portfolio website. " +
@@ -113,6 +113,7 @@ const translations = {
         },
         timeline: {
             title: "Tijdlijn",
+            present: "Huidig",
             initialCommit: "De echte wereld betreden",
             newInternship: "Nieuwe stage begonnen",
             newStudy: "Nieuwe studie begonnen",
@@ -139,7 +140,7 @@ const translations = {
                 desc: "Mijn doel was om mijn frontend vaardigheden te verbeteren door een web installatie paneel te maken voor de DiGidot C4 hardware bestuurders.",
             },
             hva: {
-                role: "Software Ontwikkelaar",
+                role: "Software Engineering",
                 desc: "Mijn doel was om mij vaardigheden te verbeteren in het programmeren en in de bedrijfsomgeving, als ook mijn netwerk uit te breiden en om lol te hebben leuke hobby projecten.",
             },
             md: {
@@ -167,6 +168,7 @@ const translations = {
             title: "Concurrenten",
             desc: "Niet geschikt voor de baan? Kijk eens naar deze fantastische concurrenten.",
         },
+        "Okt 2022": "Okt 2022",
     },
     en: {
         general: {
@@ -179,6 +181,7 @@ const translations = {
             tel: "(+31) 6 XX XX XX XX",
             nl: "Dutch",
             en: "English",
+            loadmore: "Load More",
         },
         home: {
             title: "Home",
@@ -228,7 +231,6 @@ const translations = {
             hobby: "Hobby",
             study: "Study",
             intern: "Intern",
-            loadmore: "Load More",
             desc: {
                 portfolio:
                     "My 3rd attempt at creating a good looking and unique personal portfolio website. " +
@@ -279,6 +281,7 @@ const translations = {
         },
         timeline: {
             title: "Timeline",
+            present: "Present",
             initialCommit: "Entering the real world",
             newWork: "Starting new job",
             newStudy: "Starting new study",
@@ -333,6 +336,7 @@ const translations = {
             title: "Competitors",
             desc: "Not fit for the job? Take a look at these fantastic competitors.",
         },
+        "Okt 2022": "Oct 2022",
     },
 };
 
