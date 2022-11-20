@@ -155,6 +155,10 @@ const translations = {
                 role: "Stagiair Magento Ontwikkelaar",
                 desc: "Mijn doel was om mijn frontend en backend programmeer vaardigheden te verbeteren, als ook de communicatie vaardigheden met mijn collega's en klanten. Heb gewerkt in een echte Agile omgeving en heb een Dashboard gemaakt voor de Support team.",
             },
+            bold2: {
+                role: "Magento Full-Stack Ontwikkelaar",
+                desc: "Mijn frontend en backend programmeer vaardigheden aan te verbeteren met nieuwe technologieën.",
+            },
             infi: {
                 role: "Stagiair Ontwikkelaar",
                 desc: "Mijn doel was om mijn backend vaardigheden te verbeteren door mijn scriptie te schrijven over het inzichtelijk krijgen van KPI's en statistieken met EventStore. Event Sourcing is gebruikt om gegevens op te halen met cron jobs. Ook heb ik een gebruikersinterface gemaakt.",
@@ -318,6 +322,10 @@ const translations = {
             ds: {
                 role: "Data Scientist",
                 desc: "Aimed at improving my skills in data analysis and visualisation, while learning Python.",
+            },
+            bold2: {
+                role: "Magento Full-Stack Developer",
+                desc: "Improving both my frontend and backend development skills with new technologies.",
             },
             bold: {
                 role: "Intern Magento Developer",

@@ -29,6 +29,7 @@ import CV from "./pages/CV";
 import Vuex from "vuex";
 import GitFlow from "gitflow-component";
 import createPersistedState from "vuex-persistedstate";
+import { Moment } from "moment/moment";
 
 library.add(
     faAt,
@@ -84,4 +85,5 @@ new Vue({
     store,
     render: (h) => h(App),
     i18n,
+    Moment,
 }).$mount("#app");

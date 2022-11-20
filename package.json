@@ -17,6 +17,7 @@
     "core-js": "^3.6.5",
     "gitflow-component": "^1.0.0",
     "loglevel": "^1.7.1",
+    "moment": "^2.29.4",
     "punycode": "^2.1.1",
     "url-loader": "^4.1.1",
     "vue": "^2.7.3",
