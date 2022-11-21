@@ -124,42 +124,52 @@ const translations = {
             mergeWork: "Baan afgerond",
             mergeMinor: "Minor afgerond",
             deugd: {
+                company: "Deugd Erdem",
                 role: "Kassamedewerker",
                 desc: "Heb gewerkt als een kassamedewerker met een 0 uren contract om mijn communicatie vaardigheden te verbeteren met klanten, wat zakgeld te verdienen en mijn netwerk uit te bereiden.",
             },
             regio: {
+                company: "Regio College",
                 role: "Applicatie Ontwikkelaar",
                 desc: "Mijn doel was om een start te maken met het programmeren en om mijn leiderschap vaardigheden te verbeteren voor groepsprojecten.",
             },
             kk: {
+                company: "Kenneth & Koh",
                 role: "Stagiair Spel Ontwikkelaar",
                 desc: "Mijn doel was om mijn samenwerking vaardigheden te verbeteren en ook om te leren hoe je moet werken in een bedrijfsomgeving. Heb mijn programmeer vaardigheden verbeterd door een mobiel en desktop spel te maken in Unity met C# en heb de ontwikkelaars team geholpen met het testen van hun software.",
             },
             dgd: {
+                company: "Digidot",
                 role: "Stagiair Frontend Ontwikkelaar",
                 desc: "Mijn doel was om mijn frontend vaardigheden te verbeteren door een web installatie paneel te maken voor de DiGidot C4 hardware bestuurders.",
             },
             hva: {
+                company: "Hogeschool van Amsterdam",
                 role: "Software Engineering",
                 desc: "Mijn doel was om mij vaardigheden te verbeteren in het programmeren en in de bedrijfsomgeving, als ook mijn netwerk uit te breiden en om lol te hebben leuke hobby projecten.",
             },
             md: {
+                company: "Hogeschool van Amstedam",
                 role: "Mobiele Applicatie Ontwikkeling",
                 desc: "Mijn doel was om meer kennis op te doen met mobiele applicatie onwikkeling en de gebruikersinteractie.",
             },
             ds: {
+                company: "Hogeschool van Amsterdam",
                 role: "Data Scientist",
                 desc: "Mijn doel was om meer kennis op te doen met data analyses en visualisaties, terwijl ik ook Python leer.",
             },
             bold: {
+                company: "Bold Commerce",
                 role: "Stagiair Magento Ontwikkelaar",
                 desc: "Mijn doel was om mijn frontend en backend programmeer vaardigheden te verbeteren, als ook de communicatie vaardigheden met mijn collega's en klanten. Heb gewerkt in een echte Agile omgeving en heb een Dashboard gemaakt voor de Support team.",
             },
             bold2: {
+                company: "Bold Commerce",
                 role: "Magento Full-Stack Ontwikkelaar",
                 desc: "Mijn frontend en backend programmeer vaardigheden aan te verbeteren met nieuwe technologieën.",
             },
             infi: {
+                company: "Infi",
                 role: "Stagiair Ontwikkelaar",
                 desc: "Mijn doel was om mijn backend vaardigheden te verbeteren door mijn scriptie te schrijven over het inzichtelijk krijgen van KPI's en statistieken met EventStore. Event Sourcing is gebruikt om gegevens op te halen met cron jobs. Ook heb ik een gebruikersinterface gemaakt.",
             },
@@ -172,7 +182,7 @@ const translations = {
             title: "Concurrenten",
             desc: "Niet geschikt voor de baan? Kijk eens naar deze fantastische concurrenten.",
         },
-        "Okt 2022": "Okt 2022",
+        "Oct 2022": "Okt 2022",
     },
     en: {
         general: {
@@ -344,7 +354,7 @@ const translations = {
             title: "Competitors",
             desc: "Not fit for the job? Take a look at these fantastic competitors.",
         },
-        "Okt 2022": "Oct 2022",
+        "Oct 2022": "Oct 2022",
     },
 };
 

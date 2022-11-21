@@ -34,7 +34,7 @@ export default {
                         line: x.line,
                         merge: x.parentline ? x.parentline : x.line - 1,
                         date: enddate,
-                        tag: enddate.format(DATE_FORMAT),
+                        tag: this.$t(enddate.format(DATE_FORMAT)),
                         spacing: 4 - x.line,
                         msg: " ",
                     });
@@ -43,8 +43,13 @@ export default {
                     style: "commit",
                     line: x.line,
                     img: "./img/company/logo.webp",
-                    msg: this.$t(`timeline.${x.id}.role`),
-                    desc: this.$t(`timeline.${x.id}.desc`),
+                    msg: `<div style="font-size: 1rem">${this.$t(
+                        "timeline." + x.id + ".role"
+                    )}<span style="font-size: 0.875rem"> @ ${this.$t(
+                        "timeline." + x.id + ".company"
+                    )}</span></div><div style="font-size: 0.75rem">${this.$t(
+                        "timeline." + x.id + ".desc"
+                    )}</div>`,
                     date: startdate.add(1, "days"),
                     spacing: 4 - x.line,
                 });
@@ -53,7 +58,7 @@ export default {
                     line: x.line,
                     start: x.parentline ? x.parentline : x.line - 1,
                     date: startdate,
-                    tag: startdate.format(DATE_FORMAT),
+                    tag: this.$t(startdate.format(DATE_FORMAT)),
                     spacing: 4 - x.line,
                     msg: " ",
                 });
@@ -73,7 +78,7 @@ export default {
 </script>
 
 <style lang="scss">
-#app.dark #gitflow .row:hover {
+#app.dark #gitflow .gitflow-row:hover {
     background-color: rgba(white, 0.1);
 }
 </style>
