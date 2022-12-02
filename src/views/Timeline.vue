@@ -130,22 +130,22 @@ export default {
 
 #gitflow {
     &.gitflow-mobile {
-        display: flex;
+        display: flex !important;
 
         .gitflow-tag.gitflow-tag-mobile {
             width: 135px;
         }
 
         @media (min-width: $mq-m) {
-            display: none;
+            display: none !important;
         }
     }
 
     &.gitflow-desktop {
-        display: none;
+        display: none !important;
 
         @media (min-width: $mq-m) {
-            display: flex;
+            display: flex !important;
         }
     }
 }
