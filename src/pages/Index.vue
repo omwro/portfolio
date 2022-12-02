@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="index">
         <Header />
         <Home />
         <Companies />
@@ -31,13 +31,11 @@ import Menu from "@/views/Menu";
 import Timeline from "@/views/Timeline";
 import Competitors from "@/views/Competitors";
 import Separator from "@/components/Separator";
-// import ImgSeparator from "@/components/ImgSeparator";
 import Socials from "@/views/Socials";
 
 export default {
     name: "Index",
     components: {
-        // ImgSeparator,
         Separator,
         Competitors,
         Timeline,

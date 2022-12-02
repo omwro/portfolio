@@ -2,7 +2,14 @@
     <section id="timeline">
         <h1>{{ $t("timeline.title") }}</h1>
         <div class="content">
-            <GitFlow :items="sortedGitItems" :colors="colors" />
+            <GitFlow
+                class="gitflow-mobile"
+                :items="sortedGitItemsMobile"
+                :colors="colors" />
+            <GitFlow
+                class="gitflow-desktop"
+                :items="sortedGitItemsDesktop"
+                :colors="colors" />
         </div>
     </section>
 </template>
@@ -22,7 +29,48 @@ export default {
         json: json,
     }),
     computed: {
-        sortedGitItems() {
+        sortedGitItemsMobile() {
+            const DATE_FORMAT = "MMM YYYY";
+            let items = [];
+            json.forEach((x) => {
+                const startdate = moment(x.startdate, DATE_FORMAT);
+                const enddate = moment(x.enddate, DATE_FORMAT);
+                items.push({
+                    style: "commit",
+                    line: x.line,
+                    img: "./img/company/logo.webp",
+                    msg: `<div style="font-size: 1rem">${this.$t(
+                        "timeline." + x.id + ".role"
+                    )}<span style="font-size: 0.875rem"> @ ${this.$t(
+                        "timeline." + x.id + ".company"
+                    )}</span></div><div style="font-size: 0.75rem">${this.$t(
+                        "timeline." + x.id + ".desc"
+                    )}</div>`,
+                    date: startdate.add(1, "days"),
+                    spacing: 4 - x.line,
+                    tag: `${this.$t(startdate.format(DATE_FORMAT))} - ${
+                        enddate.isValid()
+                            ? this.$t(enddate.format(DATE_FORMAT))
+                            : this.$t("timeline.present")
+                    }`,
+                });
+                console.log(
+                    this.$t(startdate.format(DATE_FORMAT)),
+                    enddate.isValid(),
+                    this.$t(enddate.format(DATE_FORMAT))
+                );
+            });
+            items.push({
+                style: "commit",
+                line: 1,
+                img: "./img/company/logo.webp",
+                msg: this.$t(`timeline.initialCommit`),
+                date: moment("01/01/1999"),
+                spacing: 4 - 1,
+            });
+            return items.sort((a, b) => b.date - a.date);
+        },
+        sortedGitItemsDesktop() {
             const DATE_FORMAT = "MMM YYYY";
             let items = [];
             json.forEach((x) => {
@@ -78,6 +126,30 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../styles/variables";
+
+#gitflow {
+    &.gitflow-mobile {
+        display: flex;
+
+        .gitflow-tag.gitflow-tag-mobile {
+            width: 130px;
+        }
+
+        @media (min-width: $mq-m) {
+            display: none;
+        }
+    }
+
+    &.gitflow-desktop {
+        display: none;
+
+        @media (min-width: $mq-m) {
+            display: flex;
+        }
+    }
+}
+
 #app.dark #gitflow .gitflow-row:hover {
     background-color: rgba(white, 0.1);
 }

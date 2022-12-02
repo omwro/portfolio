@@ -149,7 +149,7 @@ const translations = {
                 desc: "Mijn doel was om mij vaardigheden te verbeteren in het programmeren en in de bedrijfsomgeving, als ook mijn netwerk uit te breiden en om lol te hebben leuke hobby projecten.",
             },
             md: {
-                company: "Hogeschool van Amstedam",
+                company: "The Mobile Company",
                 role: "Mobiele Applicatie Ontwikkeling",
                 desc: "Mijn doel was om meer kennis op te doen met mobiele applicatie onwikkeling en de gebruikersinteractie.",
             },
@@ -306,42 +306,52 @@ const translations = {
             mergeInternship: "Internship completed",
             mergeMinor: "Minor completed",
             deugd: {
+                company: "Deugd Erdem",
                 role: "Cashier",
                 desc: "Worked as a cashier with a 0 hour contract to improve my communication skills with customers, while earning some pocket money and expanding my network.",
             },
             regio: {
+                company: "Regio College",
                 role: "Application Developer",
                 desc: "Aimed at getting started with programming and mastering the teamleader role for grouped projects.",
             },
             kk: {
+                company: "Kenneth & Koh",
                 role: "Intern Game Developer",
                 desc: "Aimed at improving my teamwork skills, as well as learning to work in a company setting. Improved my programming skills by creating a mobile and desktop game in Unity and helped the developer team in testing their software.",
             },
             dgd: {
+                company: "Digidot",
                 role: "Intern Frontend Developer",
                 desc: "Aimed at improving my frontend skills by creating a Web Installation panel for the DiGidot C4 hardware controllers. Designed and developed the installation panel myself.",
             },
             hva: {
+                company: "Amsterdam University of Applied Science",
                 role: "Software Engineering",
                 desc: "Aimed at improving my skills in programming and in the business field, as well as expanding my network and keep having fun with my hobby projects.",
             },
             md: {
+                company: "The Mobile Company",
                 role: "Mobile Application Development",
                 desc: "Aimed at improving my skills with mobile development and user interaction.",
             },
             ds: {
+                company: "Amsterdam Univeristy of Applied Science",
                 role: "Data Scientist",
                 desc: "Aimed at improving my skills in data analysis and visualisation, while learning Python.",
             },
             bold2: {
+                company: "Bold Commerce",
                 role: "Magento Full-Stack Developer",
                 desc: "Improving both my frontend and backend development skills with new technologies.",
             },
             bold: {
+                company: "Bold Commerce",
                 role: "Intern Magento Developer",
                 desc: "Aimed at improving both my frontend and backend development skills, as well as communication skills with my colleagues and customers. Have worked in a real Agile environment and created a new Dashboard for the Support Team.",
             },
             infi: {
+                company: "Infi",
                 role: "Intern Developer",
                 desc: "Aimed at improving my backend skills by writing a thesis about gaining insights into KPI's with EventStore. Using Event Sourcing to fetch data with cron jobs. Also made an user interface.",
             },
