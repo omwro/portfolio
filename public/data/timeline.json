@@ -11,7 +11,7 @@
     "stack": [
       "js",
       "knockoutjs",
-      "alpinejs",
+      "alpine",
       "sass",
       "tailwind",
       "vue",

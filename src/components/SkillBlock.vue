@@ -69,6 +69,7 @@ export default {
         border-radius: 12px;
         background: $accent-light;
         font-size: 12px;
+        color: $color-dark;
     }
 }
 
