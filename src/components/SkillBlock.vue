@@ -1,6 +1,6 @@
 <template>
     <div class="block">
-        <img :data-src="skill.img" :alt="skill.name"/>
+        <img :data-src="skill.img" :alt="skill.name" />
         <div>
             <template v-if="t">
                 {{ $t(skill.display_name) }}
@@ -20,14 +20,26 @@ export default {
     methods: {
         getExperienceString(skill) {
             const totalxp = skill.xp
-                .map(x => x.months)
-                .reduce((prevValue, currValue) => prevValue + currValue)
-            let years = Math.floor(totalxp / 12)
-            if (years) return `${years} ${this.$t('skills.years')}`
-            return `${totalxp} ${this.$t('skills.months')}`
-        }
-    }
-}
+                .map((x) => x.months)
+                .reduce((prevValue, currValue) => prevValue + currValue);
+            let years = Math.floor(totalxp / 12);
+            if (years) return this.getYearText(years);
+            return this.getMonthText(totalxp);
+        },
+        getYearText(years) {
+            const yearText =
+                years > 1 ? this.$t("skills.years") : this.$t("skills.year");
+            return `${years} ${yearText}`;
+        },
+        getMonthText(totalXp) {
+            const monthText =
+                totalXp > 1
+                    ? this.$t("skills.months")
+                    : this.$t("skills.month");
+            return `${totalXp} ${monthText}`;
+        },
+    },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -44,23 +56,24 @@ export default {
         padding: 8px;
         border-radius: 25px 12px;
         background-color: $accent;
+        object-fit: contain;
     }
 
     .badge {
         position: absolute;
-        width: 64px;
+        width: 70px;
         height: 16px;
         top: -14px;
-        left: 8px;
+        left: 2px;
         padding: 3px;
-        border-radius: 6px 12px;
+        border-radius: 12px;
         background: $accent-light;
         font-size: 12px;
-
     }
 }
 
-#app.dark .block .badge, #app.dark {
+#app.dark .block .badge,
+#app.dark {
     .badge {
         background: $background-dark;
     }

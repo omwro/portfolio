@@ -133,7 +133,7 @@ export default {
         display: flex;
 
         .gitflow-tag.gitflow-tag-mobile {
-            width: 130px;
+            width: 135px;
         }
 
         @media (min-width: $mq-m) {
