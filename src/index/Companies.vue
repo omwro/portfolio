@@ -1,19 +1,20 @@
 <template>
     <div id="companies">
         <div v-lazy-container="{ selector: 'img' }" class="content">
-            <a v-for="c in companies"
-               :key="c.name"
-               :href="c.url"
-               target="_blank"
-               rel="author">
-                <img :data-src="c.img" :alt="c.name"/>
+            <a
+                v-for="c in companies"
+                :key="c.name"
+                :href="c.url"
+                target="_blank"
+                rel="author">
+                <img :data-src="c.img" :alt="c.name" />
             </a>
         </div>
     </div>
 </template>
 
 <script>
-import json from "../../public/data/companies.json"
+import json from "../../public/data/companies.json";
 
 export default {
     name: "Companies",
@@ -21,21 +22,21 @@ export default {
         return {
             companies: json,
             settings: {
-                "dots": true,
-                "focusOnSelect": true,
-                "infinite": true,
-                "speed": 500,
-                "slidesToShow": 3,
-                "slidesToScroll": 3,
-                "touchThreshold": 5
-            }
-        }
-    }
-}
+                dots: true,
+                focusOnSelect: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                touchThreshold: 5,
+            },
+        };
+    },
+};
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables";
+@import "src/variables";
 
 #companies {
     padding: 64px 0;
@@ -78,6 +79,5 @@ export default {
             filter: unset;
         }
     }
-
 }
 </style>

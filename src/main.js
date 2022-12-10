@@ -25,6 +25,8 @@ import VueLazyload from "vue-lazyload";
 import i18n from "./i18n";
 import VueRouter from "vue-router";
 import Index from "./pages/Index";
+import Projects from "./pages/Projects";
+import Project from "./pages/Project";
 import CV from "./pages/CV";
 import Vuex from "vuex";
 import GitFlow from "gitflow-component";
@@ -57,6 +59,8 @@ Vue.use(GitFlow);
 
 const routes = [
     { path: "/", component: Index },
+    { path: "/projects", component: Projects },
+    { path: "/projects/:id", component: Project },
     { path: "/cv", component: CV },
     { path: "*", component: Index },
 ];

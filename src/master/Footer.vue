@@ -6,12 +6,12 @@
 
 <script>
 export default {
-    name: "Footer"
-}
+    name: "Footer",
+};
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables";
+@import "src/variables";
 
 #app #footer {
     color: $color-light;
@@ -20,9 +20,11 @@ export default {
     padding: 0.5rem 0;
     font-size: 0.9rem;
     text-align: center;
+    overflow: hidden;
 
     > div {
         padding: 0 0.5rem;
+        white-space: nowrap;
     }
 }
 

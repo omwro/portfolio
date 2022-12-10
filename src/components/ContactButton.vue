@@ -1,12 +1,13 @@
 <template>
-    <a class="contact-button-container"
-         :href="url"
-         :style="[
-             {'background-color': getColor()},
-             {'border-color': getColor()},
-          ]">
+    <a
+        class="contact-button-container"
+        :href="url"
+        :style="[
+            { 'background-color': getColor() },
+            { 'border-color': getColor() },
+        ]">
         <div class="contact-button-img-container">
-            <img :src="img" alt="image"/>
+            <img :src="img" alt="image" />
         </div>
         <div class="text">{{ text }}</div>
     </a>
@@ -18,14 +19,14 @@ export default {
     props: ["img", "text", "url", "color"],
     methods: {
         getColor() {
-            return `rgb(${this.color.r}, ${this.color.g}, ${this.color.b})`
-        }
-    }
-}
+            return `rgb(${this.color.r}, ${this.color.g}, ${this.color.b})`;
+        },
+    },
+};
 </script>
 
 <style lang="scss" scoped>
-@import "src/styles/variables";
+@import "src/variables";
 
 .contact-button-container {
     height: 32px;
@@ -43,13 +44,13 @@ export default {
         .contact-button-img-container {
             img {
                 height: 22px;
-                transition: .2s;
+                transition: 0.2s;
             }
         }
 
         .text {
             font-size: 22px;
-            transition: .2s;
+            transition: 0.2s;
         }
     }
 
@@ -62,7 +63,7 @@ export default {
         img {
             height: 18px;
             filter: invert(0);
-            transition: .2s;
+            transition: 0.2s;
         }
     }
 
@@ -73,7 +74,7 @@ export default {
         font-size: 18px;
         font-weight: bold;
         color: $color-dark;
-        transition: .2s;
+        transition: 0.2s;
     }
 }
 </style>

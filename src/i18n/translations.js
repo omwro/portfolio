@@ -11,6 +11,7 @@ const translations = {
             nl: "Nederlands",
             en: "Engels",
             loadmore: "Meer Laden",
+            viewmore: "Bekijk Meer",
         },
         home: {
             title: "Home",
@@ -63,6 +64,8 @@ const translations = {
             hobby: "Hobby",
             study: "Studie",
             intern: "Stage",
+            viewongithub: "Bekijk het op Github",
+            viewonwebsite: "Bekijk de website",
             desc: {
                 portfolio:
                     "Mijn 3e poging tot het maken van een mooie en unieke persoonlijke portfolio website. " +
@@ -193,6 +196,7 @@ const translations = {
             nl: "Dutch",
             en: "English",
             loadmore: "Load More",
+            viewmore: "View More",
         },
         home: {
             title: "Home",
@@ -244,6 +248,8 @@ const translations = {
             hobby: "Hobby",
             study: "Study",
             intern: "Intern",
+            viewongithub: "View on Github",
+            viewonwebsite: "View the website",
             desc: {
                 portfolio:
                     "My 3rd attempt at creating a good looking and unique personal portfolio website. " +

@@ -18,7 +18,10 @@
             <template v-if="dark">
                 <a>
                     <div class="a-block" @click="onDarkModeToggle">
-                        <img src="img/actions/sun.png" class="icon" alt="sun" />
+                        <img
+                            src="/img/actions/sun.png"
+                            class="icon"
+                            alt="sun" />
                         <span>{{ $t("preferences.lightmode") }}</span>
                     </div>
                 </a>
@@ -27,7 +30,7 @@
                 <a>
                     <div class="a-block" @click="onDarkModeToggle">
                         <img
-                            src="img/actions/moon.png"
+                            src="/img/actions/moon.png"
                             class="icon"
                             alt="moon" />
                         <span>{{ $t("preferences.darkmode") }}</span>
@@ -37,7 +40,7 @@
             <template v-if="lan === 'nl'">
                 <a>
                     <div class="a-block" @click="setLanguage('en')">
-                        <img src="img/actions/usa.png" class="icon" alt="en" />
+                        <img src="/img/actions/usa.png" class="icon" alt="en" />
                         <span>{{ $t("general.en") }}</span>
                     </div>
                 </a>
@@ -45,7 +48,7 @@
             <template v-else>
                 <a>
                     <div class="a-block" @click="setLanguage('nl')">
-                        <img src="img/actions/nl.png" class="icon" alt="en" />
+                        <img src="/img/actions/nl.png" class="icon" alt="en" />
                         <span>{{ $t("general.nl") }}</span>
                     </div>
                 </a>
@@ -88,7 +91,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "src/styles/variables";
+@import "src/variables";
 
 #menu {
     display: flex;

@@ -1,15 +1,15 @@
 <template>
-    <img :src="'./img/selfie/selfie.webp'">
+    <img :src="'./img/selfie/selfie.webp'" />
 </template>
 
 <script>
 export default {
-    name: "Selfie"
-}
+    name: "Selfie",
+};
 </script>
 
 <style lang="scss" scoped>
-@import "src/styles/variables";
+@import "src/variables";
 
 img {
     height: 450px;

@@ -1,7 +1,7 @@
 <template>
     <div id="header">
         <div class="header-left">
-            <a href="#home">
+            <a href="/#home">
                 <img
                     alt="logo"
                     class="logo"
@@ -19,7 +19,7 @@
                     <a>
                         <img
                             @click="onDarkModeToggle"
-                            src="img/actions/sun.png"
+                            src="/img/actions/sun.png"
                             class="icon"
                             alt="sun" />
                     </a>
@@ -28,7 +28,7 @@
                     <a>
                         <img
                             @click="onDarkModeToggle"
-                            src="img/actions/moon.png"
+                            src="/img/actions/moon.png"
                             class="icon"
                             alt="moon" />
                     </a>
@@ -37,7 +37,7 @@
                     <a>
                         <img
                             @click="setLanguage('en')"
-                            src="img/actions/usa.png"
+                            src="/img/actions/usa.png"
                             class="icon"
                             alt="en" />
                     </a>
@@ -46,7 +46,7 @@
                     <a>
                         <img
                             @click="setLanguage('nl')"
-                            src="img/actions/nl.png"
+                            src="/img/actions/nl.png"
                             class="icon"
                             alt="en" />
                     </a>
@@ -92,7 +92,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables";
+@import "src/variables";
 
 #app #header {
     background-color: $background-light;

@@ -11,19 +11,19 @@ export default {
     methods: {
         getSide() {
             if (this.left) {
-                return 'left'
+                return "left";
             } else if (this.right) {
-                return 'right'
+                return "right";
             } else {
-                return null
+                return null;
             }
-        }
-    }
-}
+        },
+    },
+};
 </script>
 
 <style lang="scss" scoped>
-@import "src/styles/variables";
+@import "src/variables";
 
 .separator {
     height: 8px;
@@ -39,7 +39,8 @@ export default {
         justify-content: right;
     }
 
-    &.left .line, &.right .line {
+    &.left .line,
+    &.right .line {
         width: 67%;
     }
 

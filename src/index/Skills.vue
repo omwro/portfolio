@@ -120,7 +120,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables";
+@import "src/variables";
 
 .content {
     margin-top: 0;

@@ -1,11 +1,13 @@
 [
   {
+    "id": 0,
     "type": "hobby",
     "title": "Portfolio",
     "desc": "projects.desc.portfolio",
-    "img": "img/project/project_website.webp",
+    "img": "/img/project/project_website.webp",
     "url": "https://omererdem.nl",
     "github": "https://github.com/omwro/portfoliovue",
+    "homepage": true,
     "stack": [
       "html",
       "js",
@@ -15,12 +17,14 @@
     ]
   },
   {
+    "id": 1,
     "type": "hobby",
     "title": "Metafy",
     "desc": "projects.desc.metafyweb",
-    "img": "img/project/project_metafy_vue.webp",
+    "img": "/img/project/project_metafy_vue.webp",
     "url": "https://metafy.omererdem.nl",
     "github": "https://github.com/omwro/metafy-vue",
+    "homepage": true,
     "stack": [
       "html",
       "js",
@@ -30,10 +34,11 @@
     ]
   },
   {
+    "id": 2,
     "type": "hobby",
     "title": "Alex's Portfolio",
     "desc": "projects.desc.zamfir",
-    "img": "img/project/zamfir.png",
+    "img": "/img/project/zamfir.png",
     "url": "https://zamfir.nl",
     "github": "https://github.com/omwro/portfolio-az",
     "stack": [
@@ -45,10 +50,11 @@
     ]
   },
   {
+    "id": 3,
     "type": "hobby",
     "title": "GitFlow",
     "desc": "projects.desc.gitflow",
-    "img": "img/project/project-gitflow.webp",
+    "img": "/img/project/project-gitflow.webp",
     "github": "https://github.com/omwro/gitflow",
     "stack": [
       "html",
@@ -59,10 +65,11 @@
     ]
   },
   {
+    "id": 4,
     "type": "hobby",
     "title": "GPU Tracker",
     "desc": "projects.desc.gputracker",
-    "img": "img/stock/missing.jpg",
+    "img": "/img/stock/missing.jpg",
     "url": null,
     "github": "https://github.com/omwro/GpuTracker",
     "stack": [
@@ -71,10 +78,11 @@
     ]
   },
   {
+    "id": 5,
     "type": "hobby",
     "title": "War of Warlord",
     "desc": "projects.desc.minecraft",
-    "img": "img/project/minecraft.webp",
+    "img": "/img/project/minecraft.webp",
     "url": null,
     "github": "https://github.com/omwro/WarOfWarlord",
     "stack": [
@@ -82,10 +90,11 @@
     ]
   },
   {
+    "id": 6,
     "type": "intern",
     "title": "KPI interface",
     "desc": "projects.desc.kpi",
-    "img": "img/stock/classified.jpg",
+    "img": "/img/stock/classified.jpg",
     "url": null,
     "github": null,
     "stack": [
@@ -97,10 +106,11 @@
     ]
   },
   {
+    "id": 7,
     "type": "intern",
     "title": "Support Dashboard",
     "desc": "projects.desc.bold",
-    "img": "img/stock/classified.jpg",
+    "img": "/img/stock/classified.jpg",
     "url": null,
     "github": null,
     "stack": [
@@ -114,10 +124,11 @@
     ]
   },
   {
+    "id": 8,
     "type": "intern",
     "title": "NMEA Sensor Reader",
     "desc": "projects.desc.mobilecompany",
-    "img": "img/stock/classified.jpg",
+    "img": "/img/stock/classified.jpg",
     "isMobile": true,
     "url": null,
     "github": null,
@@ -126,10 +137,11 @@
     ]
   },
   {
+    "id": 9,
     "type": "intern",
     "title": "Firmware Interface",
     "desc": "projects.desc.firmware",
-    "img": "img/stock/classified.jpg",
+    "img": "/img/stock/classified.jpg",
     "url": null,
     "github": null,
     "stack": [
@@ -141,12 +153,14 @@
     ]
   },
   {
+    "id": 10,
     "type": "study",
     "title": "Barber2U",
     "desc": "projects.desc.barber2u",
-    "img": "img/project/project_barber2u.webp",
+    "img": "/img/project/project_barber2u.webp",
     "url": null,
     "github": null,
+    "homepage": true,
     "stack": [
       "html",
       "css",
@@ -159,10 +173,11 @@
     ]
   },
   {
+    "id": 11,
     "type": "study",
     "title": "Metafy App",
     "desc": "projects.desc.metafyapp",
-    "img": "img/project/project_metafy.webp",
+    "img": "/img/project/project_metafy.webp",
     "isMobile": true,
     "url": null,
     "github": "https://github.com/omwro/MetafyKotlin",
@@ -172,10 +187,11 @@
     ]
   },
   {
+    "id": 12,
     "type": "study",
     "title": "Lantern Detector",
     "desc": "projects.desc.lantern",
-    "img": "img/project/lantern.png",
+    "img": "/img/project/lantern.png",
     "isMobile": true,
     "url": null,
     "github": null,

@@ -1,9 +1,9 @@
 <template>
     <div class="container">
-        <img v-if="extern" :src="extern" alt="extern" class="absolute"/>
-        <img :src="object" alt="object" :class="absolute ? 'absolute' : ''"/>
+        <img v-if="extern" :src="extern" alt="extern" class="absolute" />
+        <img :src="object" alt="object" :class="absolute ? 'absolute' : ''" />
         <div class="separator">
-            <div :style="'background-image: url('+img+');'" class="line"/>
+            <div :style="'background-image: url(' + img + ');'" class="line" />
         </div>
     </div>
 </template>
@@ -11,12 +11,12 @@
 <script>
 export default {
     name: "ImgSeparator",
-    props: ["img", "object", "absolute", "extern"]
-}
+    props: ["img", "object", "absolute", "extern"],
+};
 </script>
 
 <style lang="scss" scoped>
-@import "src/styles/variables";
+@import "src/variables";
 
 .container {
     position: relative;
@@ -31,7 +31,6 @@ export default {
         &:not(&.absolute) {
             margin-bottom: -4px;
         }
-
     }
 
     .separator {
@@ -50,8 +49,9 @@ export default {
     }
 }
 
-#app.dark{
-    .separator, .container {
+#app.dark {
+    .separator,
+    .container {
         background-color: $background-dark;
     }
 }

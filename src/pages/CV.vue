@@ -2,37 +2,43 @@
     <div id="cv">
         <div class="header">
             <div class="profile-img">
-                <img alt="profile picture" src="../../public/img/selfie/selfie-squared.webp">
+                <img
+                    alt="profile picture"
+                    src="../../public/img/selfie/selfie-squared.webp" />
             </div>
             <div class="information">
-                <div class="name color-red capital">{{ $t('general.firstname') }}</div>
-                <div class="name color-blue capital">{{ $t('general.lastname') }}</div>
-                <div class="study bold capital">{{ $t('general.study') }}</div>
+                <div class="name color-red capital">
+                    {{ $t("general.firstname") }}
+                </div>
+                <div class="name color-blue capital">
+                    {{ $t("general.lastname") }}
+                </div>
+                <div class="study bold capital">{{ $t("general.study") }}</div>
                 <div>
                     <span class="bold">Age:</span>
-                    <span class="color-grey">{{ $t('general.age') }}</span>
+                    <span class="color-grey">{{ $t("general.age") }}</span>
                 </div>
                 <div>
                     <span class="bold">Area:</span>
-                    <span class="color-grey">{{ $t('general.area') }}</span>
+                    <span class="color-grey">{{ $t("general.area") }}</span>
                 </div>
                 <div>
                     <span class="bold">Email:</span>
-                    <span class="color-grey">{{ $t('general.email') }}</span>
+                    <span class="color-grey">{{ $t("general.email") }}</span>
                 </div>
                 <div>
                     <span class="bold">Tel:</span>
-                    <span class="color-grey">{{ $t('general.tel') }}</span>
+                    <span class="color-grey">{{ $t("general.tel") }}</span>
                 </div>
             </div>
             <div class="aboutme">
                 <div class="title bold">ABOUT ME</div>
                 <div class="desc color-grey">
-                    {{ $t('about.desc3', 'en') }}
-                    {{ $t('about.desc4', 'en') }}
-                    {{ $t('about.desc5', 'en') }}
-                    {{ $t('about.desc6', 'en') }}
-                    {{ $t('about.desc7', 'en') }}
+                    {{ $t("about.desc3", "en") }}
+                    {{ $t("about.desc4", "en") }}
+                    {{ $t("about.desc5", "en") }}
+                    {{ $t("about.desc6", "en") }}
+                    {{ $t("about.desc7", "en") }}
                 </div>
             </div>
         </div>
@@ -40,13 +46,17 @@
             <div class="container-title capital">Education</div>
             <div class="content">
                 <template v-for="edu in getEducation()">
-                    <div class="content-card" :key="edu.role" v-if="!edu.hidecv">
+                    <div
+                        class="content-card"
+                        :key="edu.role"
+                        v-if="!edu.hidecv">
                         <div class="timeperiod">
-                            {{ edu.startdate }} - {{ edu.enddate !== null ? edu.enddate : "Present" }}
+                            {{ edu.startdate }} -
+                            {{ edu.enddate !== null ? edu.enddate : "Present" }}
                         </div>
-                        <div class="title">{{ $t(edu.role, 'en') }}</div>
+                        <div class="title">{{ $t(edu.role, "en") }}</div>
                         <div class="location">{{ edu.company }}</div>
-                        <div class="desc">{{ $t(edu.desc, 'en') }}</div>
+                        <div class="desc">{{ $t(edu.desc, "en") }}</div>
                     </div>
                 </template>
             </div>
@@ -54,30 +64,36 @@
         <div class="container">
             <div class="container-title capital">Experience</div>
             <div class="content">
-                <div class="content-card" v-for="xp in getExperience()" :key="xp.role">
-                    <div class="timeperiod">{{ xp.startdate }} - {{
-                            xp.enddate !== null ? xp.enddate : "Present"
-                        }}
+                <div
+                    class="content-card"
+                    v-for="xp in getExperience()"
+                    :key="xp.role">
+                    <div class="timeperiod">
+                        {{ xp.startdate }} -
+                        {{ xp.enddate !== null ? xp.enddate : "Present" }}
                     </div>
-                    <div class="title">{{ $t(xp.role, 'en') }}</div>
+                    <div class="title">{{ $t(xp.role, "en") }}</div>
                     <div class="location">{{ xp.company }}</div>
-                    <div class="desc">{{ $t(xp.desc, 'en') }}</div>
+                    <div class="desc">{{ $t(xp.desc, "en") }}</div>
                 </div>
             </div>
         </div>
         <div class="container-half">
-            <div class="container half">
+            <div class="half container">
                 <div class="container-title capital">Skills</div>
                 <div class="content">
-                    <div class="skill" v-for="cv in getCVSkills()" :key="cv.name">
+                    <div
+                        class="skill"
+                        v-for="cv in getCVSkills()"
+                        :key="cv.name">
                         <div class="displayname">{{ cv.display_name }}</div>
-                        <img :src="cv.img" :alt="cv.name"/>
+                        <img :src="cv.img" :alt="cv.name" />
                         <div>{{ getExperienceString(cv) }}</div>
                     </div>
                 </div>
             </div>
             <div class="qrcode">
-                <img src="../../public/img/company/qr.png" alt="qrcode"/>
+                <img src="../../public/img/company/qr.png" alt="qrcode" />
                 <div>Learn more about me at: https://www.omererdem.nl</div>
             </div>
         </div>
@@ -85,41 +101,41 @@
 </template>
 
 <script>
-import timeline from "../../public/data/timeline.json"
-import skills from "../../public/data/skills.json"
+import timeline from "../../public/data/timeline.json";
+import skills from "../../public/data/skills.json";
 
 export default {
     name: "CV",
     methods: {
         getEducation() {
-            return timeline.filter(x => x.type === "Study")
+            return timeline.filter((x) => x.type === "Study");
         },
         getExperience() {
-            return timeline.filter(x => x.type === "Internship")
+            return timeline.filter((x) => x.type === "Internship");
         },
         getSkillimg(name) {
-            return skills.find(x => x.name === name).img
+            return skills.find((x) => x.name === name).img;
         },
         getCVSkills() {
-            return skills.filter(x => x.show_cv === true)
+            return skills.filter((x) => x.show_cv === true);
         },
         getCompetencies() {
-            return skills.filter(x => x.type === "Competencies")
+            return skills.filter((x) => x.type === "Competencies");
         },
         getExperienceString(skill) {
             const totalxp = skill.xp
-                .map(x => x.months)
-                .reduce((prevValue, currValue) => prevValue + currValue)
-            let years = Math.floor(totalxp / 12)
-            if (years) return years + " years"
-            return totalxp + " months"
-        }
-    }
-}
+                .map((x) => x.months)
+                .reduce((prevValue, currValue) => prevValue + currValue);
+            let years = Math.floor(totalxp / 12);
+            if (years) return years + " years";
+            return totalxp + " months";
+        },
+    },
+};
 </script>
 
 <style lang="scss" scoped>
-@import "src/styles/variables";
+@import "src/variables";
 
 @media print {
     body {

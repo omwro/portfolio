@@ -20,18 +20,18 @@
 </template>
 
 <script>
-import Header from "@/views/Header";
-import Home from "@/views/Home";
-import About from "@/views/About";
-import Projects from "@/views/Projects";
-import Skills from "@/views/Skills";
-import Companies from "@/views/Companies";
-import Footer from "@/views/Footer";
-import Menu from "@/views/Menu";
-import Timeline from "@/views/Timeline";
-import Competitors from "@/views/Competitors";
+import Header from "@/master/Header";
+import Home from "@/index/Home";
+import About from "@/index/About";
+import Projects from "@/index/Projects";
+import Skills from "@/index/Skills";
+import Companies from "@/index/Companies";
+import Footer from "@/master/Footer";
+import Menu from "@/master/Menu";
+import Timeline from "@/index/Timeline";
+import Competitors from "@/index/Competitors";
 import Separator from "@/components/Separator";
-import Socials from "@/views/Socials";
+import Socials from "@/index/Socials";
 
 export default {
     name: "Index",
@@ -52,64 +52,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import "src/styles/variables";
-
-#app {
-    section {
-        color: $color-light;
-        background-color: $background-light;
-    }
-
-    &.dark {
-        #header,
-        #menu {
-            color: $light2;
-        }
-
-        section {
-            color: $light2;
-            background-color: $background-dark;
-        }
-    }
-}
-
-section {
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 100px 16px 50px;
-
-    > * {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    h1 {
-        margin: 0 auto 10px auto;
-        text-align: center;
-        font-weight: bold;
-        border-bottom: solid 2px $accent;
-        font-size: 2rem;
-
-        &.small {
-            margin: 25px auto 10px auto;
-            font-size: 1.25rem;
-        }
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 1rem;
-        margin: 2rem auto;
-    }
-
-    .hide {
-        display: none;
-    }
-}
-</style>
+<style lang="scss"></style>

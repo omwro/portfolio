@@ -1,31 +1,31 @@
 [
   {
-    "href": "#home",
+    "href": "/#home",
     "name": "Home",
     "translate": "home.title"
   },
   {
-    "href": "#about",
+    "href": "/#about",
     "name": "About",
     "translate": "about.title"
   },
   {
-    "href": "#skills",
+    "href": "/#skills",
     "name": "Skills",
     "translate": "skills.title"
   },
   {
-    "href": "#projects",
+    "href": "/projects",
     "name": "Projects",
     "translate": "projects.title"
   },
   {
-    "href": "#timeline",
+    "href": "/#timeline",
     "name": "Timeline",
     "translate": "timeline.title"
   },
   {
-    "href": "#socials",
+    "href": "/#socials",
     "name": "Socials",
     "translate": "socials.title"
   }
