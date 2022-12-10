@@ -8,6 +8,7 @@
     "startdate": "Oct 2022",
     "enddate": null,
     "line": 2,
+    "homepage": true,
     "stack": [
       "js",
       "knockoutjs",
@@ -29,6 +30,7 @@
     "startdate": "Sep 2018",
     "enddate": "Jul 2022",
     "line": 2,
+    "homepage": true,
     "stack": [
       "js",
       "ts",
@@ -46,6 +48,7 @@
     "startdate": "Feb 2022",
     "enddate": "Jul 2022",
     "line": 3,
+    "homepage": true,
     "stack": [
       "csharp",
       "aspnet"
@@ -60,6 +63,7 @@
     "startdate": "Sep 2021",
     "enddate": "Jan 2022",
     "line": 3,
+    "homepage": true,
     "stack": [
       "python"
     ]
@@ -74,6 +78,7 @@
     "startdate": "Sep 2020",
     "enddate": "Jan 2021",
     "line": 3,
+    "homepage": true,
     "stack": [
       "kotlin"
     ]
@@ -87,6 +92,7 @@
     "startdate": "Feb 2020",
     "enddate": "Aug 2020",
     "line": 3,
+    "homepage": true,
     "stack": [
       "js",
       "sass",

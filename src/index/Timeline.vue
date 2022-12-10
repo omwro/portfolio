@@ -11,6 +11,7 @@
                 :items="sortedGitItemsDesktop"
                 :colors="colors" />
         </div>
+        <ViewMoreLink title="timeline.title" url="/timeline" />
     </section>
 </template>
 
@@ -19,10 +20,12 @@ import GitFlow from "gitflow-component";
 import timelineJson from "../../public/data/timeline.json";
 import skillsJson from "../../public/data/skills.json";
 import moment from "moment/moment";
+import ViewMoreLink from "@/components/ViewMoreLink";
 
 export default {
     name: "Timeline",
     components: {
+        ViewMoreLink,
         GitFlow,
     },
     data: () => ({
@@ -53,101 +56,87 @@ export default {
         sortedGitItemsMobile() {
             const DATE_FORMAT = "MMM YYYY";
             let items = [];
-            timelineJson.forEach((x) => {
-                const startdate = moment(x.startdate, DATE_FORMAT);
-                const enddate = moment(x.enddate, DATE_FORMAT);
-                items.push({
-                    style: "commit",
-                    line: x.line,
-                    img: "./img/company/logo.webp",
-                    msg:
-                        `<div style="font-size: 1rem">${this.$t(
+            timelineJson
+                .filter((x) => x.homepage)
+                .forEach((x) => {
+                    const startdate = moment(x.startdate, DATE_FORMAT);
+                    const enddate = moment(x.enddate, DATE_FORMAT);
+                    items.push({
+                        style: "commit",
+                        line: x.line,
+                        img: "./img/company/logo.webp",
+                        msg: `<div style="font-size: 1rem">${this.$t(
                             "timeline." + x.id + ".role"
                         )}<span style="font-size: 0.875rem"> @ ${this.$t(
                             "timeline." + x.id + ".company"
                         )}</span></div><div style="font-size: 0.75rem">${this.$t(
                             "timeline." + x.id + ".desc"
-                        )}</div>` + this.getSkillChips(x),
-                    date: startdate.add(1, "days"),
-                    spacing: 4 - x.line,
-                    tag: `${this.$t(startdate.format(DATE_FORMAT))} - ${
-                        enddate.isValid()
-                            ? this.$t(enddate.format(DATE_FORMAT))
-                            : this.$t("timeline.present")
-                    }`,
+                        )}</div>`,
+                        date: startdate.add(1, "days"),
+                        spacing: 4 - x.line,
+                        tag: `${this.$t(startdate.format(DATE_FORMAT))} - ${
+                            enddate.isValid()
+                                ? this.$t(enddate.format(DATE_FORMAT))
+                                : this.$t("timeline.present")
+                        }`,
+                    });
                 });
-            });
-            items.push({
-                style: "commit",
-                line: 1,
-                img: "./img/company/logo.webp",
-                msg: this.$t(`timeline.initialCommit`),
-                date: moment("01/01/1999"),
-                spacing: 4 - 1,
-            });
             return items.sort((a, b) => b.date - a.date);
         },
         sortedGitItemsDesktop() {
             const DATE_FORMAT = "MMM YYYY";
             let items = [];
-            timelineJson.forEach((x) => {
-                const startdate = moment(x.startdate, DATE_FORMAT);
-                const enddate = moment(x.enddate, DATE_FORMAT);
-                if (enddate.isValid()) {
+            timelineJson
+                .filter((x) => x.homepage)
+                .forEach((x) => {
+                    const startdate = moment(x.startdate, DATE_FORMAT);
+                    const enddate = moment(x.enddate, DATE_FORMAT);
+                    if (enddate.isValid()) {
+                        items.push({
+                            style: "merge",
+                            line: x.line,
+                            merge: x.parentline ? x.parentline : x.line - 1,
+                            date: enddate,
+                            tag: this.$t(enddate.format(DATE_FORMAT)),
+                            spacing: 4 - x.line,
+                            msg:
+                                x.type === "Internship"
+                                    ? `<div style="font-size: 0.75rem">${this.$t(
+                                          "timeline.stoppedAsStudy"
+                                      )}</div>`
+                                    : `<div style="font-size: 0.75rem">${this.$t(
+                                          "timeline.stoppedAs"
+                                      )} ${this.$t(
+                                          "timeline." + x.id + ".role"
+                                      )}</div>`,
+                        });
+                    }
                     items.push({
-                        style: "merge",
+                        style: "commit",
                         line: x.line,
-                        merge: x.parentline ? x.parentline : x.line - 1,
-                        date: enddate,
-                        tag: this.$t(enddate.format(DATE_FORMAT)),
-                        spacing: 4 - x.line,
-                        msg:
-                            x.type === "Internship"
-                                ? `<div style="font-size: 0.75rem">${this.$t(
-                                      "timeline.stoppedAsStudy"
-                                  )}</div>`
-                                : `<div style="font-size: 0.75rem">${this.$t(
-                                      "timeline.stoppedAs"
-                                  )} ${this.$t(
-                                      "timeline." + x.id + ".role"
-                                  )}</div>`,
-                    });
-                }
-                items.push({
-                    style: "commit",
-                    line: x.line,
-                    img: "./img/company/logo.webp",
-                    msg:
-                        `<div style="font-size: 1rem">${this.$t(
+                        img: "./img/company/logo.webp",
+                        msg: `<div style="font-size: 1rem">${this.$t(
                             "timeline." + x.id + ".role"
                         )}<span style="font-size: 0.875rem"> @ ${this.$t(
                             "timeline." + x.id + ".company"
                         )}</span></div><div style="font-size: 0.75rem">${this.$t(
                             "timeline." + x.id + ".desc"
-                        )}</div>` + this.getSkillChips(x),
-                    date: startdate.add(1, "days"),
-                    spacing: 4 - x.line,
+                        )}</div>`,
+                        date: startdate.add(1, "days"),
+                        spacing: 4 - x.line,
+                    });
+                    items.push({
+                        style: "start",
+                        line: x.line,
+                        start: x.parentline ? x.parentline : x.line - 1,
+                        date: startdate,
+                        tag: this.$t(startdate.format(DATE_FORMAT)),
+                        spacing: 4 - x.line,
+                        msg: `<div style="font-size: 0.75rem; ">${this.$t(
+                            "timeline.startedAs"
+                        )} ${this.$t("timeline." + x.id + ".role")}</div>`,
+                    });
                 });
-                items.push({
-                    style: "start",
-                    line: x.line,
-                    start: x.parentline ? x.parentline : x.line - 1,
-                    date: startdate,
-                    tag: this.$t(startdate.format(DATE_FORMAT)),
-                    spacing: 4 - x.line,
-                    msg: `<div style="font-size: 0.75rem; ">${this.$t(
-                        "timeline.startedAs"
-                    )} ${this.$t("timeline." + x.id + ".role")}</div>`,
-                });
-            });
-            items.push({
-                style: "commit",
-                line: 1,
-                img: "./img/company/logo.webp",
-                msg: this.$t(`timeline.initialCommit`),
-                date: moment("01/01/1999"),
-                spacing: 4 - 1,
-            });
             return items.sort((a, b) => b.date - a.date);
         },
     },

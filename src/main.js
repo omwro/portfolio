@@ -27,6 +27,7 @@ import VueRouter from "vue-router";
 import Index from "./pages/Index";
 import Projects from "./pages/Projects";
 import Project from "./pages/Project";
+import Timeline from "./pages/Timeline";
 import CV from "./pages/CV";
 import Vuex from "vuex";
 import GitFlow from "gitflow-component";
@@ -61,6 +62,7 @@ const routes = [
     { path: "/", component: Index },
     { path: "/projects", component: Projects },
     { path: "/projects/:id", component: Project },
+    { path: "/timeline", component: Timeline },
     { path: "/cv", component: CV },
     { path: "*", component: Index },
 ];

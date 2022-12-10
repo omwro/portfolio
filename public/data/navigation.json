@@ -20,7 +20,7 @@
     "translate": "projects.title"
   },
   {
-    "href": "/#timeline",
+    "href": "/timeline",
     "name": "Timeline",
     "translate": "timeline.title"
   },

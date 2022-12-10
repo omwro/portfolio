@@ -6,8 +6,8 @@
                 v-for="(p, i) in getProjects()"
                 :project="p"
                 :key="i" />
-            <ViewMoreLink title="projects.title" url="/projects" />
         </div>
+        <ViewMoreLink title="projects.title" url="/projects" />
     </section>
 </template>
 

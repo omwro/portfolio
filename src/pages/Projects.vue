@@ -3,7 +3,7 @@
         <Header />
         <section id="projects" class="full-height">
             <div class="content project-content">
-                <BreadcrumbLink text="/ Home" url="/" />
+                <BreadcrumbLink text="/ Home" url="/#projects" />
                 <h1>{{ $t("projects.title") }}</h1>
                 <div
                     class="types-container"
