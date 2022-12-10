@@ -85,7 +85,6 @@ export default {
         },
         showmore(t) {
             this.loadmore.push(t);
-            console.log(t);
         },
     },
 };

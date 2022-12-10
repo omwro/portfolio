@@ -36,7 +36,6 @@ export default {
             x.stack
                 ? x.stack.forEach((stack) => {
                       const skill = skillsJson.find((x) => x.name === stack);
-                      console.log(stack, skill);
                       str +=
                           `<div class="skill-chip-block" ` +
                           `style="border-color: ${this.colors[x.line]}; ` +
@@ -77,11 +76,6 @@ export default {
                             : this.$t("timeline.present")
                     }`,
                 });
-                console.log(
-                    this.$t(startdate.format(DATE_FORMAT)),
-                    enddate.isValid(),
-                    this.$t(enddate.format(DATE_FORMAT))
-                );
             });
             items.push({
                 style: "commit",
@@ -107,7 +101,16 @@ export default {
                         date: enddate,
                         tag: this.$t(enddate.format(DATE_FORMAT)),
                         spacing: 4 - x.line,
-                        msg: " ",
+                        msg:
+                            x.type === "Internship"
+                                ? `<div style="font-size: 0.75rem">${this.$t(
+                                      "timeline.stoppedAsStudy"
+                                  )}</div>`
+                                : `<div style="font-size: 0.75rem">${this.$t(
+                                      "timeline.stoppedAs"
+                                  )} ${this.$t(
+                                      "timeline." + x.id + ".role"
+                                  )}</div>`,
                     });
                 }
                 items.push({
@@ -132,7 +135,9 @@ export default {
                     date: startdate,
                     tag: this.$t(startdate.format(DATE_FORMAT)),
                     spacing: 4 - x.line,
-                    msg: " ",
+                    msg: `<div style="font-size: 0.75rem; ">${this.$t(
+                        "timeline.startedAs"
+                    )} ${this.$t("timeline." + x.id + ".role")}</div>`,
                 });
             });
             items.push({
@@ -191,6 +196,7 @@ export default {
                 width: 16px;
                 height: 16px;
                 filter: invert(1);
+                object-fit: contain;
             }
 
             span {
