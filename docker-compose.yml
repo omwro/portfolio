@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  frontend:
+    container_name: portfolio-vue
+    build: .
+    networks:
+      - proxy
+      - default
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=proxy"
+      - "traefik.http.routers.portfolio-secure.entrypoints=websecure"
+      - "traefik.http.routers.portfolio-secure.rule=Host(`www.omererdem.nl`, `omererdem.nl`)"
+
+networks:
+  proxy:
+    external: true
