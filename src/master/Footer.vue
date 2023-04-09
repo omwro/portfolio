@@ -1,12 +1,19 @@
 <template>
     <section id="footer">
-        <div>&copy; 1999 - 2022 Omer Erdem All Rights Reserved</div>
+        <div>
+            &copy; 1999 - {{ currentYear() }} Omer Erdem All Rights Reserved
+        </div>
     </section>
 </template>
 
 <script>
 export default {
     name: "Footer",
+    methods: {
+        currentYear() {
+            return new Date().getFullYear();
+        },
+    },
 };
 </script>
 
