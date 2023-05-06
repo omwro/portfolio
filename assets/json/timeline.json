@@ -1,0 +1,167 @@
+[
+  {
+    "id": "bold2",
+    "type": "Work",
+    "role": "timeline.bold2.role",
+    "company": "Bold Commerce",
+    "desc": "timeline.bold2.desc",
+    "startdate": "Oct 2022",
+    "enddate": null,
+    "line": 2,
+    "homepage": true,
+    "stack": [
+      "js",
+      "knockoutjs",
+      "alpine",
+      "sass",
+      "tailwind",
+      "vue",
+      "nuxt",
+      "php",
+      "magento"
+    ]
+  },
+  {
+    "id": "hva",
+    "type": "Study",
+    "role": "timeline.hva.role",
+    "company": "Hogeschool van Amsterdam",
+    "desc": "timeline.hva.desc",
+    "startdate": "Sep 2018",
+    "enddate": "Jul 2022",
+    "line": 2,
+    "homepage": true,
+    "stack": [
+      "js",
+      "ts",
+      "java",
+      "angular",
+      "react"
+    ]
+  },
+  {
+    "id": "infi",
+    "type": "Internship",
+    "role": "timeline.infi.role",
+    "company": "Infi Amsterdam",
+    "desc": "timeline.infi.desc",
+    "startdate": "Feb 2022",
+    "enddate": "Jul 2022",
+    "line": 3,
+    "homepage": true,
+    "stack": [
+      "csharp",
+      "aspnet"
+    ]
+  },
+  {
+    "id": "ds",
+    "type": "Minor",
+    "role": "timeline.ds.role",
+    "company": "Hogeschool van Amsterdam",
+    "desc": "timeline.ds.desc",
+    "startdate": "Sep 2021",
+    "enddate": "Jan 2022",
+    "line": 3,
+    "homepage": true,
+    "stack": [
+      "python"
+    ]
+  },
+  {
+    "id": "md",
+    "parent": "hva",
+    "type": "Minor",
+    "role": "timeline.md.role",
+    "company": "Hogeschool van Amsterdam",
+    "desc": "timeline.md.desc",
+    "startdate": "Sep 2020",
+    "enddate": "Jan 2021",
+    "line": 3,
+    "homepage": true,
+    "stack": [
+      "kotlin"
+    ]
+  },
+  {
+    "id": "bold",
+    "type": "Internship",
+    "role": "timeline.bold.role",
+    "company": "Bold Commerce",
+    "desc": "timeline.bold.desc",
+    "startdate": "Feb 2020",
+    "enddate": "Aug 2020",
+    "line": 3,
+    "homepage": true,
+    "stack": [
+      "js",
+      "sass",
+      "vue",
+      "php",
+      "magento",
+      "laravel",
+      "knockoutjs"
+    ]
+  },
+  {
+    "id": "regio",
+    "type": "Study",
+    "role": "timeline.regio.role",
+    "company": "Regio College Zaandam",
+    "desc": "timeline.regio.desc",
+    "startdate": "Sep 2015",
+    "enddate": "Jun 2018",
+    "showmore": true,
+    "line": 3,
+    "parentline": 1,
+    "stack": [
+      "html",
+      "css",
+      "js",
+      "csharp",
+      "php",
+      "aspnet"
+    ]
+  },
+  {
+    "id": "dgd",
+    "type": "Internship",
+    "role": "timeline.dgd.role",
+    "company": "DiGidot",
+    "desc": "timeline.dgd.desc",
+    "startdate": "Feb 2018",
+    "enddate": "Jun 2018",
+    "showmore": true,
+    "line": 4,
+    "stack": [
+      "html",
+      "css",
+      "js"
+    ]
+  },
+  {
+    "id": "kk",
+    "type": "Internship",
+    "role": "timeline.kk.role",
+    "company": "Kenneth & Koh",
+    "desc": "timeline.kk.desc",
+    "startdate": "Sep 2016",
+    "enddate": "Jan 2017",
+    "showmore": true,
+    "line": 4,
+    "stack": [
+      "csharp"
+    ]
+  },
+  {
+    "id": "deugd",
+    "type": "Work",
+    "role": "timeline.deugd.role",
+    "company": "Deugd Erdem",
+    "desc": "timeline.deugd.desc",
+    "startdate": "Jan 2015",
+    "enddate": "Jul 2018",
+    "line": 2,
+    "showmore": true
+  }
+]

@@ -1,0 +1,757 @@
+[
+  {
+    "type": "Language",
+    "name": "html",
+    "display_name": "HTML",
+    "img": "/img/language/html.png",
+    "color": 1,
+    "show_portfolio": true,
+    "show_cv": true,
+    "xp": [
+      {
+        "months": 30,
+        "desc": "Regio college"
+      },
+      {
+        "months": 30,
+        "desc": "HvA"
+      },
+      {
+        "months": 2,
+        "desc": "Bold 2022"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "css",
+    "display_name": "CSS",
+    "img": "/img/language/css.png",
+    "color": 1,
+    "show_portfolio": true,
+    "show_cv": true,
+    "xp": [
+      {
+        "months": 30,
+        "desc": "Regio college"
+      },
+      {
+        "months": 30,
+        "desc": "HvA"
+      },
+      {
+        "months": 2,
+        "desc": "Bold 2022"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "js",
+    "display_name": "JavaScript",
+    "img": "/img/language/js.png",
+    "color": 1,
+    "show_portfolio": true,
+    "show_cv": true,
+    "xp": [
+      {
+        "months": 30,
+        "desc": "Regio college"
+      },
+      {
+        "months": 30,
+        "desc": "HvA"
+      },
+      {
+        "months": 2,
+        "desc": "Bold 2022"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "php",
+    "display_name": "PHP",
+    "img": "/img/language/php.png",
+    "color": 1,
+    "show_portfolio": true,
+    "show_cv": true,
+    "xp": [
+      {
+        "months": 24,
+        "desc": "Regio college"
+      },
+      {
+        "months": 7,
+        "desc": "boldcommerce"
+      },
+      {
+        "months": 2,
+        "desc": "Bold 2022"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "java",
+    "display_name": "Java",
+    "img": "/img/language/java.png",
+    "color": 1,
+    "show_portfolio": true,
+    "show_cv": true,
+    "xp": [
+      {
+        "months": 18,
+        "desc": "HvA oop & pad, ads & ewa, barber2u"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "ts",
+    "display_name": "Typescript",
+    "img": "/img/language/ts.png",
+    "color": 1,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "HvA angular, barber2u"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "kotlin",
+    "display_name": "Kotlin",
+    "img": "/img/language/kotlin.png",
+    "color": 1,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "HvA3 mobile dev"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "python",
+    "display_name": "Python",
+    "img": "/img/language/python.png",
+    "color": 1,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "Hva Data Science"
+      },
+      {
+        "months": 1,
+        "desc": "fastapi"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "node",
+    "display_name": "NodeJS",
+    "img": "/img/language/node.png",
+    "color": 2,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 1,
+        "desc": "puppeteer"
+      }
+    ]
+  },
+  {
+    "type": "Language",
+    "name": "csharp",
+    "display_name": "C#",
+    "img": "/img/language/csharp.png",
+    "color": 1,
+    "show_portfolio": true,
+    "show_cv": true,
+    "xp": [
+      {
+        "months": 12,
+        "desc": "Regio college1"
+      },
+      {
+        "months": 6,
+        "desc": "Kenneth&Koh"
+      },
+      {
+        "months": 6,
+        "desc": "Infi"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "vue",
+    "display_name": "VueJS",
+    "img": "/img/language/vue.png",
+    "color": 2,
+    "show_portfolio": true,
+    "show_cv": true,
+    "xp": [
+      {
+        "months": 3,
+        "desc": "bold commerce"
+      },
+      {
+        "months": 1,
+        "desc": "hvablend"
+      },
+      {
+        "months": 3,
+        "desc": "Portfolio"
+      },
+      {
+        "months": 1,
+        "desc": "Metafy"
+      },
+      {
+        "months": 1,
+        "desc": "Other projects (zamfir, cv)"
+      },
+      {
+        "months": 2,
+        "desc": "Bold 2022"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "jquery",
+    "display_name": "jQuery",
+    "img": "/img/language/jquery.png",
+    "color": 2,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 18,
+        "desc": "regio college"
+      },
+      {
+        "months": 6,
+        "desc": "hva1"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "angular",
+    "display_name": "Angular",
+    "img": "/img/language/angular.png",
+    "color": 2,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "hva2"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "react",
+    "display_name": "ReactJS",
+    "img": "/img/language/react.png",
+    "color": 2,
+    "show_portfolio": true,
+    "show_cv": true,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "hva barber2u"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "spring",
+    "display_name": "Spring Boot",
+    "img": "/img/language/spring.png",
+    "color": 2,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 12,
+        "desc": "hva2 & hva3"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "sass",
+    "display_name": "Sass/Scss",
+    "img": "/img/language/sass.png",
+    "color": 2,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "bold commerce"
+      },
+      {
+        "months": 6,
+        "desc": "barber2u"
+      },
+      {
+        "months": 2,
+        "desc": "portfolio"
+      },
+      {
+        "months": 2,
+        "desc": "Bold 2022"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "magento",
+    "display_name": "Magento",
+    "img": "/img/language/magento.png",
+    "color": 2,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "bold commerce"
+      },
+      {
+        "months": 2,
+        "desc": "Bold 2022"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "laravel",
+    "display_name": "Laravel",
+    "img": "/img/language/laravel.png",
+    "color": 2,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 2,
+        "desc": "bold commerce"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "bootstrap",
+    "display_name": "Bootstrap",
+    "img": "/img/language/bootstrap.png",
+    "color": 2,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 12,
+        "desc": "Regio college"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "knockoutjs",
+    "display_name": "KnockoutJs",
+    "img": "/img/language/knockoutjs.png",
+    "color": 2,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 1,
+        "desc": "Bold commerce"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "aspnet",
+    "display_name": "ASP.Net",
+    "img": "/img/language/aspnet.png",
+    "color": 2,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 12,
+        "desc": "Regio college"
+      },
+      {
+        "months": 1,
+        "desc": "Infi"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "quarkus",
+    "display_name": "Quarkus",
+    "img": "/img/language/quarkus.png",
+    "color": 2,
+    "show_portfolio": false,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 1,
+        "desc": "HvaBlend"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "wordpress",
+    "display_name": "WordPress",
+    "img": "/img/language/wordpress.png",
+    "color": 2,
+    "show_portfolio": false,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 1,
+        "desc": "Digidot"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "nuxt",
+    "display_name": "NuxtJs",
+    "img": "/img/language/nuxt.png",
+    "color": 2,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 2,
+        "desc": "Bold 2022"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "tailwind",
+    "display_name": "TailWindCss",
+    "img": "/img/language/tailwind.png",
+    "color": 2,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 2,
+        "desc": "Bold 2022"
+      }
+    ]
+  },
+  {
+    "type": "Framework",
+    "name": "alpine",
+    "display_name": "AlpineJs",
+    "img": "/img/language/alpine.png",
+    "color": 2,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 2,
+        "desc": "Bold 2022"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "windows",
+    "display_name": "Windows",
+    "img": "/img/language/windows.png",
+    "color": 3,
+    "show_portfolio": false,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 180,
+        "desc": "t/m 2021"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "mysql",
+    "display_name": "MySQL",
+    "img": "/img/language/mysql.png",
+    "color": 3,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 24,
+        "desc": "regio college"
+      },
+      {
+        "months": 24,
+        "desc": "hva1,2,3"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "git",
+    "display_name": "Git",
+    "img": "/img/language/git.png",
+    "color": 3,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 48,
+        "desc": "hva"
+      },
+      {
+        "months": 2,
+        "desc": "Bold 2022"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "macos",
+    "display_name": "MacOS",
+    "img": "/img/language/macos.png",
+    "color": 3,
+    "show_portfolio": false,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "bold commerce"
+      },
+      {
+        "months": 2,
+        "desc": "Bold 2022"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "rpi",
+    "display_name": "Raspberry Pi",
+    "img": "/img/language/rpi.png",
+    "color": 3,
+    "show_portfolio": false,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 3,
+        "desc": "hobby projects"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "apache",
+    "display_name": "Apache 2",
+    "img": "/img/language/apache.png",
+    "color": 3,
+    "show_portfolio": false,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "rpi & digital ocean"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "mongodb",
+    "display_name": "MongoDB",
+    "img": "/img/language/mongodb.png",
+    "color": 3,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 3,
+        "desc": "barber2u"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "firebase",
+    "display_name": "Firebase",
+    "img": "/img/language/firebase.png",
+    "color": 3,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 3,
+        "desc": "webframeworks & mobile dev"
+      }
+    ]
+  },
+  {
+    "type": "Environments",
+    "name": "eventstore",
+    "display_name": "Event Store",
+    "img": "/img/language/eventstore.png",
+    "color": 3,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": [
+      {
+        "months": 6,
+        "desc": "Infi"
+      }
+    ]
+  },
+  {
+    "type": "Projects",
+    "name": "websitebuilder",
+    "display_name": "Website Builder",
+    "img": "/img/language/web.png",
+    "color": 4,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "type": "Projects",
+    "name": "pcbuilder",
+    "display_name": "Custom Desktop PC Builder",
+    "img": "/img/language/pcbuild.png",
+    "color": 4,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "type": "Projects",
+    "name": "android",
+    "display_name": "Android App",
+    "img": "/img/language/android.png",
+    "color": 4,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "type": "Projects",
+    "name": "api",
+    "display_name": "Web API",
+    "img": "/img/language/api.png",
+    "color": 4,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "type": "Projects",
+    "name": "webscraper",
+    "display_name": "Web Scraper",
+    "img": "/img/language/webscraper.png",
+    "color": 4,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "type": "Projects",
+    "name": "minecraft",
+    "display_name": "Minecraft Plugin",
+    "img": "/img/language/minecraft.png",
+    "color": 4,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "type": "Projects",
+    "name": "discord",
+    "display_name": "Discord Bot",
+    "img": "/img/language/discord.png",
+    "color": 4,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "type": "Projects",
+    "name": "unity",
+    "display_name": "Unity Game",
+    "img": "/img/language/unity.png",
+    "color": 4,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "type": "Projects",
+    "name": "magento",
+    "display_name": "E-Commerce Webshop",
+    "img": "/img/language/magento.png",
+    "color": 4,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "type": "Competencies",
+    "name": "hardworker",
+    "display_name": "skills.hardworker",
+    "img": "/img/language/fist.png",
+    "color": 4,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "type": "Competencies",
+    "name": "teamplayer",
+    "display_name": "skills.teamplayer",
+    "img": "/img/language/team.png",
+    "color": 4,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "type": "Competencies",
+    "name": "problemsolver",
+    "display_name": "skills.problemsolving",
+    "img": "/img/language/problem.png",
+    "color": 4,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "type": "Competencies",
+    "name": "creativity",
+    "display_name": "skills.creativity",
+    "img": "/img/language/creative.png",
+    "color": 4,
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  }
+]

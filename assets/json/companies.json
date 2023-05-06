@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Infi",
+    "img": "./img/company/infi.webp",
+    "url": "https://infi.nl/?ref=omererdem.nl"
+  },
+  {
+    "name": "The Mobile Company",
+    "img": "./img/company/themobilecompany.webp",
+    "url": "https://themobilecompany.com/?ref=omererdem.nl"
+  },
+  {
+    "name": "Bold Commerce",
+    "img": "./img/company/boldcommerce.webp",
+    "url": "https://www.boldcommerce.nl/?ref=omererdem.nl"
+  },
+  {
+    "name": "Digidot",
+    "img": "./img/company/digidot.webp",
+    "url": "https://digidot.eu/?ref=omererdem.nl"
+  },
+  {
+    "name": "Kenneth & Koh",
+    "img": "./img/company/kennethkoh.webp",
+    "url": "https://www.kenneth-koh.nl/?ref=omererdem.nl"
+  },
+  {
+    "name": "Deugd Erdem",
+    "img": "./img/company/deugderdem.webp",
+    "url": "https://deugderdem.nl/?ref=omererdem.nl"
+  }
+]
