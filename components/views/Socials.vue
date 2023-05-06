@@ -1,6 +1,5 @@
 <template>
-    <section id="socials">
-        <h1>{{ $t("socials.title") }}</h1>
+    <Section id="socials" :heading="$t('socials.title')">
         <p class="text-center">{{ $t("socials.desc") }}</p>
         <div class="flex flex-row flex-wrap justify-center">
             <ContactButton
@@ -11,12 +10,13 @@
                 :url="s.url"
                 :color="s.color" />
         </div>
-    </section>
+    </Section>
 </template>
 
 <script setup>
 import socials from "../../assets/json/contact.json";
 import ContactButton from "../elements/ContactButton";
+import Section from "../elements/Section";
 </script>
 
 <script>

@@ -1,6 +1,5 @@
 <template>
-    <section id="timeline">
-        <h1>{{ $t("timeline.title") }}</h1>
+    <Section id="timeline" :heading="$t('timeline.title')">
         <div class="content">
             <GitFlow
                 class="gitflow-mobile"
@@ -12,12 +11,13 @@
                 :colors="colors" />
         </div>
         <ViewMoreLink title="timeline.title" url="/timeline" />
-    </section>
+    </Section>
 </template>
 
 <script setup>
 import ViewMoreLink from "../elements/ViewMoreLink";
 import GitFlow from "../gitflow/GitFlow";
+import Section from "../elements/Section";
 </script>
 
 <script>

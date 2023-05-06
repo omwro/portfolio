@@ -1,5 +1,5 @@
 <template>
-    <div id="overflow-hidden bg-primary-bg-light px-0 py-16">
+    <div class="overflow-hidden bg-primary-bg-light px-0 py-16">
         <div class="flex flex-row flex-wrap -rotate-3 bg-primary-block-light overflow-hidden justify-center w-[calc(106%)] ml-[-3%]">
             <a
                 v-for="c in companies"

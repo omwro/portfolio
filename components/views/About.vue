@@ -1,6 +1,5 @@
 <template>
-    <section id="about">
-        <h1>{{ $t("about.title") }}</h1>
+    <Section id="about" :heading="$t('about.title')">
         <div class="content sm:flex-col md:flex-row">
             <div class="m-2.5 text-base leading-[1.6] max-w-[650px]">
                 <div class="pb-5">
@@ -14,8 +13,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </Section>
 </template>
+
+<script setup>
+import Section from "../elements/Section";
+</script>
 
 <script>
 export default {

@@ -1,6 +1,5 @@
 <template>
-    <section id="skills">
-        <h1>{{ $t("skills.title") }}</h1>
+    <Section id="skills" :heading="$t('skills.title')">
         <div class="content">
             <div class="skill-container">
                 <h1 class="small">{{ $t("skills.languages") }}</h1>
@@ -47,12 +46,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </Section>
 </template>
 
 <script setup>
 import skills from "../../assets/json/skills.json";
 import SkillBlock from "../elements/SkillBlock";
+import Section from "../elements/Section";
 
 const getTotalMonths = (skill) => skill.xp
         .map((x) => x.months)

@@ -5,19 +5,13 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
 html,
 body,
 #app {
     @apply w-full h-full text-base scroll-smooth m-0;
-    font-family: sans-serif;
-}
-
-#app section {
-    @apply text-primary-text-dark bg-primary-bg-light overflow-auto flex flex-col justify-center pt-[100px] pb-[50px] px-4;
-}
-
-#app section.full-height {
-    @apply min-h-[calc(100vh_-_50px_-_50px_-_32px)] pt-[50px];
+    font-family: 'Roboto', sans-serif;
 }
 
 #app section > * {
@@ -45,13 +39,5 @@ body,
     text-decoration: unset;
 }
 
-#app.dark #header,
-#app.dark #menu {
-    @apply text-primary-light2;
-}
-
-#app.dark section {
-    @apply text-primary-light2 bg-primary-bg-dark;
-}
 
 </style>

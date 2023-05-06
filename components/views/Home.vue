@@ -1,5 +1,5 @@
 <template>
-    <section id="home"
+    <Section id="home"
              class="h-fit flex flex-col flex-wrap justify-center gap-y-16 gap-x-16 items-center bg-primary-bg-light content-center overflow-hidden lg:flex-row-reverse lg:pt-[200px]">
         <Selfie class="mx-0 relative" />
         <div
@@ -29,12 +29,13 @@
                 </a>
             </div>
         </div>
-    </section>
+    </Section>
 </template>
 
 <script setup>
 import contact from "../../assets/json/contact.json";
 import Selfie from "../elements/Selfie";
+import Section from "../elements/Section";
 </script>
 
 <script>
