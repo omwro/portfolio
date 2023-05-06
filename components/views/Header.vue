@@ -18,11 +18,10 @@
                 <DarkModeSwitcher/>
                 <LanguageSwitcher/>
             </nav>
-            <div class="hamburger" @click="openMenu">
-                <span class="hamburger-top"></span>
-                <span class="hamburger-middle"></span>
-                <span class="hamburger-bottom"></span>
-            </div>
+            <Icon @click="openMenu()"
+                  class=""
+                  name="ic:baseline-menu"
+                  size="32px"/>
         </div>
     </header>
 </template>
@@ -32,25 +31,13 @@ import nav from "../../assets/json/navigation.json";
 import LanguageSwitcher from "../elements/LanguageSwitcher";
 import DarkModeSwitcher from "../elements/DarkModeSwitcher";
 
+const openMenu = () => document.documentElement.classList.add("menu");
 </script>
 
 <script>
 
 export default {
-    name: "Header",
-    computed: {
-        dark() {
-            // return this.$store.state.darkmode;
-        },
-    },
-    methods: {
-        openMenu() {
-            // this.$store.commit("toggleMenu");
-        },
-        onDarkModeToggle() {
-            this.$store.commit("toggleDarkmode");
-        },
-    },
+    name: "Header"
 };
 </script>
 
