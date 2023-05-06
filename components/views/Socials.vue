@@ -1,7 +1,6 @@
 <template>
-    <Section id="socials" :heading="$t('socials.title')">
-        <p class="text-center">{{ $t("socials.desc") }}</p>
-        <div class="flex flex-row flex-wrap justify-center">
+    <Section id="socials" :heading="$t('socials.title')" :paragraph="$t('socials.desc')">
+        <Content class="sm:flex-row flex-wrap">
             <ContactButton
                 v-for="(s, i) in socials"
                 :key="i"
@@ -9,7 +8,7 @@
                 :text="s.name"
                 :url="s.url"
                 :color="s.color" />
-        </div>
+        </Content>
     </Section>
 </template>
 
@@ -17,6 +16,7 @@
 import socials from "../../assets/json/contact.json";
 import ContactButton from "../elements/ContactButton";
 import Section from "../elements/Section";
+import Content from "../elements/Content";
 </script>
 
 <script>

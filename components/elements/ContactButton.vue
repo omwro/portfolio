@@ -1,17 +1,18 @@
 <template>
     <a
-        class="h-8 w-32 flex flex-row cursor-pointer no-underline m-2 rounded-[10px] border group"
+        class="h-8 w-36 flex flex-row cursor-pointer no-underline m-2 gap-2 rounded-[10px] border group"
         :href="url"
         :style="[
             { 'background-color': getColor() },
             { 'border-color': getColor() },
         ]">
         <div class="w-8 flex justify-center items-center">
-            <Icon class="text-primary-text-light h-[18px] transition-[0.2s] group-hover:h-[22px] group-hover:transition-[0.2s]"
-                  :name="icon"
-                  size="32px"/>
+            <Icon class="text-primary-text-light h-5 w-5 duration-200 ease-in-out group-hover:h-7 group-hover:w-7"
+                  :name="icon"/>
         </div>
-        <div class="flex self-center text-lg font-[bold] text-primary-text-light transition-[0.2s] pl-2 group-hover:text-[22px] group-hover:transition-[0.2s]">{{ text }}</div>
+        <div class="flex self-center text-lg font-bold text-primary-text-light duration-200 ease-in-out group-hover:text-2xl">
+            {{ text }}
+        </div>
     </a>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
     <Section id="timeline" :heading="$t('timeline.title')">
-        <div class="content">
+        <Content class="content">
             <GitFlow
                 class="gitflow-mobile"
                 :items="sortedGitItemsMobile"
@@ -9,7 +9,7 @@
                 class="gitflow-desktop"
                 :items="sortedGitItemsDesktop"
                 :colors="colors" />
-        </div>
+        </Content>
         <ViewMoreLink title="timeline.title" url="/timeline" />
     </Section>
 </template>
@@ -18,6 +18,7 @@
 import ViewMoreLink from "../elements/ViewMoreLink";
 import GitFlow from "../gitflow/GitFlow";
 import Section from "../elements/Section";
+import Content from "../elements/Content";
 </script>
 
 <script>

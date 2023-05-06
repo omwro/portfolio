@@ -14,26 +14,7 @@ body,
     font-family: 'Roboto', sans-serif;
 }
 
-#app section > * {
-    @apply max-w-[1200px] mx-auto;
-}
-
 #app section h1.small {
     @apply text-xl mt-[25px] mb-2.5 mx-auto;
 }
-
-#app section .content {
-    @apply flex flex-col justify-center text-base mx-auto my-8;
-}
-
-#app section .hide {
-    @apply hidden;
-}
-
-#app section a {
-    @apply text-[unset];
-    text-decoration: unset;
-}
-
-
 </style>

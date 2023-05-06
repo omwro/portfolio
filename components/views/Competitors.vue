@@ -1,12 +1,11 @@
 <template>
-    <Section id="bg-primary-bg-light" :heading="$t('competitors.title')">
-        <p class="text-center">{{ $t("competitors.desc") }}</p>
-        <div class="content flex flex-row flex-wrap gap-8">
+    <Section id="bg-primary-bg-light" :heading="$t('competitors.title')" :paragraph="$t('competitors.desc')">
+        <Content class="sm:flex-row flex-wrap gap-8">
             <CompetitorCard
                 v-for="profile in profiles"
                 :profile="profile"
                 :key="profile.name" />
-        </div>
+        </Content>
     </Section>
 </template>
 
@@ -14,6 +13,7 @@
 import profiles from "../../assets/json/competitors.json";
 import CompetitorCard from "../elements/CompetitorCard";
 import Section from "../elements/Section";
+import Content from "../elements/Content";
 </script>
 
 <script>
