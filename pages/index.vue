@@ -3,10 +3,15 @@
         <Home/>
         <Companies/>
         <About/>
+        <Separator :left="true"/>
         <Skills/>
+        <Separator :right="true"/>
         <Projects/>
+        <Separator :left="true"/>
         <Timeline/>
+        <Separator :right="true"/>
         <Socials/>
+        <Separator :left="true"/>
         <Competitors/>
     </NuxtLayout>
 </template>
@@ -20,6 +25,7 @@ import Skills from "../components/views/Skills";
 import Projects from "../components/views/Projects";
 import Socials from "../components/views/Socials";
 import Competitors from "../components/views/Competitors";
+import Separator from "../components/elements/Separator";
 </script>
 
 <script>
@@ -27,7 +33,3 @@ export default {
     name: "index"
 };
 </script>
-
-<style scoped>
-
-</style>
