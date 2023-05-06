@@ -65,9 +65,3 @@ import SkillChip from "../../components/elements/SkillChip";
 const project =  projects.find(x => x.id === parseInt(useRoute().params.id))
 const getLanguages = (array) => skills.filter(x => array.includes(x.name))
 </script>
-
-<style scoped>
-#app .project-page section .content .external a .icon {
-    @apply text-[black] w-6 h-6 mr-2;
-}
-</style>
