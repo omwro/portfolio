@@ -1,29 +1,34 @@
 <template>
-    <header id="header">
-        <div class="header-left">
+    <header class="fixed top-0 left-0 z-10 flex w-full items-center justify-between border-b p-3 transition duration-500 bg-primary-bg-light border-b-primary">
+        <div>
             <a href="/#home">
-                <img
-                    alt="logo"
-                    class="logo"
-                    src="/img/company/logo.webp" />
+                <img alt="logo"
+                     class="m-auto max-h-6 cursor-pointer"
+                     src="/img/company/logo.webp" />
             </a>
         </div>
-        <div class="header-right">
-            <nav class="navbar">
-                <template v-for="n in nav">
-                    <a v-if="n.name !== 'Home'" :key="n.name" :href="n.href">
-                        {{ $t(n.translate) }}
-                    </a>
-                </template>
-                <DarkModeSwitcher/>
-                <LanguageSwitcher/>
+        <div class="flex flex-nowrap">
+            <nav class="hidden md:flex gap-4">
+                <ul class="flex flex-row items-center gap-4">
+                    <li v-for="n in nav">
+                        <a v-if="n.name !== 'Home'"
+                           :key="n.name"
+                           :href="n.href"
+                           class="my-0 self-center text-base no-underline text-[black] hover:text-primary hover:border-b-primary hover:border-b">
+                            {{ $t(n.translate) }}
+                        </a>
+                    </li>
+                </ul>
+                <DarkModeSwitcher />
+                <LanguageSwitcher />
             </nav>
             <Icon @click="openMenu()"
-                  class=""
+                  class="hamburger"
                   name="ic:baseline-menu"
-                  size="32px"/>
+                  size="32px" />
         </div>
     </header>
+    <div class="h-[58px]"></div>
 </template>
 
 <script setup>
@@ -35,52 +40,13 @@ const openMenu = () => document.documentElement.classList.add("menu");
 </script>
 
 <script>
-
 export default {
     name: "Header"
 };
 </script>
 
 <style scoped>
-#app #header {
-    @apply bg-primary-bg-light transition-[0.5s] fixed z-10 flex items-center justify-between h-8 p-3 border-b-primary border-b-[solid] top-0 inset-x-0;
+header .hamburger {
+    @apply cursor-pointer md:hidden;
 }
-#app #header .header-left .logo {
-    @apply max-h-6 cursor-pointer m-auto;
-}
-#app #header .header-right {
-    @apply flex flex-nowrap;
-}
-#app #header .header-right .navbar {
-    @apply hidden md:flex;
-}
-#app #header .header-right .navbar a {
-    @apply text-[black] no-underline text-base self-center mx-2 my-0 hover:text-primary hover:border-b-[solid] hover:border-b-primary;
-}
-
-#app #header .header-right .hamburger {
-    @apply w-[25px] h-[25px] flex flex-col cursor-pointer pt-[5px] md:hidden;
-}
-
-#app #header .header-right .hamburger span {
-    @apply w-full h-1/4 transition-[0.3s] border-t-[solid];
-}
-#app #header .header-right .hamburger:hover .hamburger-top,
-#app #header .header-right .hamburger:hover .hamburger-bottom {
-    @apply w-6/12 transition-[0.3s] mx-[25%] my-0;
-}
-
-#app.dark #header {
-    @apply bg-primary-bg-dark;
-}
-#app.dark #header.ontop {
-    @apply bg-transparent transition-[0.5s] border-b-[none];
-}
-#app.dark #header .navbar a {
-    @apply text-primary-text-light hover:text-primary-light hover:border-b-primary-light;
-}
-#app.dark #header .logo {
-    @apply invert;
-}
-
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <menu class="flex flex-wrap flex-col fixed h-fit max-h-[calc(100%_-_32px)] w-0 bg-primary-bg-light z-[15] transition-[0.5s] p-0 border-l-2 border-l-transparent border-b-2 border-b-transparent right-0 inset-y-0">
+    <menu class="flex flex-wrap flex-col fixed h-fit max-h-[calc(100%_-_32px)] w-0 bg-primary-bg-light z-[15] transition-[0.5s] p-0 border-l border-l-transparent border-b border-b-transparent right-0 inset-y-0">
         <div class="flex flex-row items-center text-2xl justify-between p-3">
             <div class="border-b-[solid] border-b-primary">Menu</div>
             <Icon @click="closeMenu()"
@@ -38,6 +38,6 @@ export default {
 
 <style scoped>
 html.menu menu {
-    @apply w-full transition-[0.5s] ease-[ease-in-out] border-b-2 border-b-primary  md:w-40 md:rounded-[0_0_0_24px] md:border-l-2 md:border-l-primary;
+    @apply w-full transition-[0.5s] ease-[ease-in-out] border-b border-b-primary  md:w-40 md:rounded-[0_0_0_24px] md:border-l md:border-l-primary;
 }
 </style>

@@ -6,6 +6,7 @@ module.exports = {
         "./plugins/**/*.{js,ts}",
         "./nuxt.config.{js,ts}",
     ],
+    darkMode: 'class',
     theme: {
         extend: {
             screens: {
@@ -24,7 +25,10 @@ module.exports = {
                     'text-dark': '#141414',
                     'light2': '#e1e1e1',
                 }
-            }
+            },
+            borderWidth: {
+                DEFAULT: '2px'
+            },
         }
     },
     plugins: []

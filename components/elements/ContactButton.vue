@@ -1,6 +1,6 @@
 <template>
     <a
-        class="h-8 w-32 flex flex-row cursor-pointer no-underline m-2 rounded-[10px] border-2 group"
+        class="h-8 w-32 flex flex-row cursor-pointer no-underline m-2 rounded-[10px] border group"
         :href="url"
         :style="[
             { 'background-color': getColor() },

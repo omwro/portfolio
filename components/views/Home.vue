@@ -3,7 +3,7 @@
              class="h-fit flex flex-col flex-wrap justify-center gap-y-16 gap-x-16 items-center bg-primary-bg-light content-center overflow-hidden lg:flex-row-reverse lg:pt-[200px]">
         <Selfie class="mx-0 relative" />
         <div
-            class="container mx-0 flex flex-col relative w-fit h-fit text-[2rem] bg-primary-block-light p-4 rounded-[10px] border-2 border-primary before:content-[''] before:absolute before:mt-[-15px] before:top-[-15px] before:z-[1] before:border-b-primary before:border-[15px] before:border-transparent before:left-2/4">
+            class="container mx-0 flex flex-col relative w-fit h-fit text-[2rem] bg-primary-block-light p-4 rounded-[10px] border border-primary before:content-[''] before:absolute before:mt-[-15px] before:top-[-15px] before:z-[1] before:border-b-primary before:border-[15px] before:border-transparent before:left-2/4">
             <div>{{ $t("home.intro1") }}</div>
             <div>
                 {{ $t("general.firstname") }} {{ $t("general.lastname") }}
@@ -19,7 +19,7 @@
                         </a>
                     </div>
                 </div>
-                <a href="#about" class="readmore text-base w-fit text-primary-text-dark flex items-center no-underline p-2 rounded-[10px] border-2 border-primary">
+                <a href="#about" class="readmore text-base w-fit text-primary-text-dark flex items-center no-underline p-2 rounded-[10px] border border-primary">
                     <span>{{ $t("home.readmore") }}</span>
                     <svg class="text-primary-text-dark ml-1" stroke="currentColor" fill="currentColor" stroke-width="0"
                          viewBox="0 0 16 16" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
