@@ -1,0 +1,165 @@
+{
+  "general": {
+    "firstname": "Ömer",
+    "lastname": "Erdem",
+    "study": "Software Engineer",
+    "age": "24",
+    "area": "Amsterdam, The Netherlands",
+    "email": "public.omererdem@outlook.com",
+    "tel": "(+31) 6 XX XX XX XX",
+    "nl": "Dutch",
+    "en": "English",
+    "loadmore": "Load More",
+    "viewmore": "View More"
+  },
+  "home": {
+    "title": "Home",
+    "intro1": "Yo👋🏻! I am",
+    "intro2": ", a graduated",
+    "readmore": "Read More",
+    "catchphrase": "A software engineer that will shake the world!"
+  },
+  "preferences": {
+    "title": "Choose your preference",
+    "darkmode": "Dark Mode",
+    "lightmode": "Light Mode",
+    "language": "Language"
+  },
+  "about": {
+    "title": "Who am I ?",
+    "resume": "View my resume",
+    "desc1": "My name is Ömer Erdem and I am a Software Engineer graduated at the Amsterdam University of Applied Sciences.",
+    "desc2": "I am currenctly 24 years old and like to game, drive around and experiment.",
+    "desc25": "I am currenctly employed at Bold Commerce as a Full Stack Magento Developer.",
+    "desc3": "I am a hardworking web- en software developer, looking for new projects and challenges every day.",
+    "desc4": "I am improving my skills with the aim of becoming a Full Stack developer.",
+    "desc5": "I am very passionate about programming and don't mind getting my hands dirty.",
+    "desc6": "I like to learn new techniques and I am certainly not afraid of hardware.",
+    "desc7": "I am someone who wants to make the world a better place, even if it goes unnoticed."
+  },
+  "skills": {
+    "title": "Skills",
+    "personalrating": "Personal Rating",
+    "xp": "Experience",
+    "xpdesc": "1 Year of Experience",
+    "languages": "Languages",
+    "frameworks": "Frameworks",
+    "environments": "Environments",
+    "projects": "Projects",
+    "competencies": "Competencies",
+    "hardworker": "Hard worker",
+    "teamplayer": "Team player",
+    "problemsolving": "Problem solver",
+    "creativity": "Creative",
+    "year": "year",
+    "years": "years",
+    "month": "month",
+    "months": "months"
+  },
+  "projects": {
+    "title": "Projects",
+    "swipe": "Swipe to scroll",
+    "hobby": "Hobby",
+    "study": "Study",
+    "intern": "Intern",
+    "viewongithub": "View on Github",
+    "viewonwebsite": "View the website",
+    "desc": {
+      "portfolio":
+      "My 3rd attempt at creating a good looking and unique personal portfolio website. This website will be continuously developed on, in order to improve my skills and to experiment with new features.",
+      "metafyweb":
+      "A follow up on the android app with the goal to make it accessible for multiple platforms. With is you can use the Spotify API to create dynamic playlists, where all the meta data is stored in the Spotify servers.",
+      "barber2u":
+      "A unique school project, where barbers can give the customers a haircut in the customer's living room. You can select the barbers in de app with the appointment moment and haircut style chosen by you.",
+      "metafyapp":
+      "An Android application that uses the Spotify API to get your spotify account song and playlist data. You can assign your custom tags to songs and create custom playlists.",
+      "mobilecompany":
+      "A project, where an SDK has been created that supports the NMEA 0183 protocol. The SDK automatically searches for Wi-Fi and Bluetooth networks in order to connect to the NMEA hardware sensors.The sensor data can be displayed in a simple android application.",
+      "zamfir": "A portfolio page for a friend who is studying robotics and electronics.",
+      "gputracker":
+      "A webscraper to keep track of GPU stocks in times of GPU shortages. Also has an automatic checkout feature with a manual payment step.",
+      "minecraft":
+      "A Minecraft PvP gamemode, where the player fights other players to stay the warlord of the arena.",
+      "bold":
+      "A dashboard that helps the support management to see all the important data in a glimpse of an eye. Using the ActiveCollab API in order to collect tasks and times and display them in data tables and graphs, while also following the Material IO guidelines.",
+      "lantern":
+      "Training a Machine Learning model that can detect 7 different Amsterdam lampposts. It also looks at the intensity of the headlights in order to detect if the bulbs are nearly broken.",
+      "kpi":
+      "A project that contains both cron jobs and an interface, where pre-programmed statuses can be read from EventStore. KPI's can be calculated with the statuses, so that the statistics can be seen in the interface.",
+      "firmware":
+      "Creating an interface, where the installation firmware is installed to a hardware controller.",
+      "gitflow":
+      "The well known Git Flow, but as a css vue component, that is used as the timeline for the portfolio page."
+    }
+  },
+  "companies": {
+    "title": "Companies"
+  },
+  "timeline": {
+    "title": "Timeline",
+    "present": "Present",
+    "initialCommit": "Entering the real world",
+    "startedAs": "Started as a",
+    "stoppedAs": "Stopped as a",
+    "stoppedAsStudy": "Graduated",
+    "deugd": {
+      "company": "Deugd Erdem",
+      "role": "Cashier",
+      "desc": "Worked as a cashier with a 0 hour contract to improve my communication skills with customers, while earning some pocket money and expanding my network."
+    },
+    "regio": {
+      "company": "Regio College",
+      "role": "Application Developer",
+      "desc": "Aimed at getting started with programming and mastering the teamleader role for grouped projects."
+    },
+    "kk": {
+      "company": "Kenneth & Koh",
+      "role": "Intern Game Developer",
+      "desc": "Aimed at improving my teamwork skills, as well as learning to work in a company setting. Improved my programming skills by creating a mobile and desktop game in Unity and helped the developer team in testing their software."
+    },
+    "dgd": {
+      "company": "Digidot",
+      "role": "Intern Frontend Developer",
+      "desc": "Aimed at improving my frontend skills by creating a Web Installation panel for the DiGidot C4 hardware controllers. Designed and developed the installation panel myself."
+    },
+    "hva": {
+      "company": "Amsterdam University of Applied Science",
+      "role": "Software Engineering",
+      "desc": "Aimed at improving my skills in programming and in the business field, as well as expanding my network and keep having fun with my hobby projects."
+    },
+    "md": {
+      "company": "The Mobile Company",
+      "role": "Mobile Application Development",
+      "desc": "Aimed at improving my skills with mobile development and user interaction."
+    },
+    "ds": {
+      "company": "Amsterdam Univeristy of Applied Science",
+      "role": "Data Scientist",
+      "desc": "Aimed at improving my skills in data analysis and visualisation, while learning Python."
+    },
+    "bold2": {
+      "company": "Bold Commerce",
+      "role": "Magento Full-Stack Developer",
+      "desc": "Improving both my frontend and backend development skills with new technologies."
+    },
+    "bold": {
+      "company": "Bold Commerce",
+      "role": "Intern Magento Developer",
+      "desc": "Aimed at improving both my frontend and backend development skills, as well as communication skills with my colleagues and customers. Have worked in a real Agile environment and created a new Dashboard for the Support Team."
+    },
+    "infi": {
+      "company": "Infi",
+      "role": "Intern Developer",
+      "desc": "Aimed at improving my backend skills by writing a thesis about gaining insights into KPI's with EventStore. Using Event Sourcing to fetch data with cron jobs. Also made an user interface."
+    }
+  },
+  "socials": {
+    "title": "Socials",
+    "desc": "Would you like to know more about me? Feel free to contact me and ask your questions."
+  },
+  "competitors": {
+    "title": "Competitors",
+    "desc": "Not fit for the job? Take a look at these fantastic competitors."
+  },
+  "Oct 2022": "Oct 2022"
+}
