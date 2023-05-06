@@ -21,7 +21,7 @@ body,
     @apply max-w-[1200px] mx-auto;
 }
 #app section h1 {
-    @apply text-center font-[bold] text-[2rem] mt-0 mb-2.5 mx-auto border-b-[solid] border-b-primary;
+    @apply text-center font-[bold] text-[2rem] mt-0 mb-2.5 mx-auto border-b-2 border-b-primary;
 }
 #app section h1.small {
     @apply text-xl mt-[25px] mb-2.5 mx-auto;
