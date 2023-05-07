@@ -5,7 +5,7 @@
             <div class="border-b-[solid] border-b-primary">Menu</div>
             <Icon @click="closeMenu()"
                   class="cursor-pointer hover:rotate-[90deg] hover:transition-[1s]"
-                  name="ic:outline-close"
+                  :name="IconMapper.close"
                   size="32px" />
         </div>
         <div class="m-2 mb-4 flex flex-col gap-2">
@@ -27,8 +27,8 @@
 import nav from "../../assets/json/navigation.json";
 import DarkModeSwitcher from "../elements/DarkModeSwitcher";
 import LanguageSwitcher from "../elements/LanguageSwitcher";
-
-const closeMenu = () => document.documentElement.classList.remove("menu");
+import { IconMapper } from "../../composables/IconMapper";
+import { closeMenu } from "../../composables/useMenu";
 </script>
 
 <script>

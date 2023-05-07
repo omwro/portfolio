@@ -4,7 +4,7 @@
             <ContactButton
                 v-for="(s, i) in socials"
                 :key="i"
-                :icon="s.icon"
+                :icon="IconMapper[s.icon]"
                 :text="s.name"
                 :url="s.url"
                 :color="s.color" />
@@ -17,6 +17,7 @@ import socials from "../../assets/json/contact.json";
 import ContactButton from "../elements/ContactButton";
 import Section from "../elements/Section";
 import Content from "../elements/Content";
+import { IconMapper } from "../../composables/IconMapper";
 </script>
 
 <script>

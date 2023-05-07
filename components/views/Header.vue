@@ -25,7 +25,7 @@
             </nav>
             <Icon @click="openMenu()"
                   class="hamburger"
-                  name="ic:baseline-menu"
+                  :name="IconMapper.hamburger"
                   size="32px" />
         </div>
     </header>
@@ -36,8 +36,8 @@
 import nav from "../../assets/json/navigation.json";
 import LanguageSwitcher from "../elements/LanguageSwitcher";
 import DarkModeSwitcher from "../elements/DarkModeSwitcher";
-
-const openMenu = () => document.documentElement.classList.add("menu");
+import { IconMapper } from "../../composables/IconMapper";
+import { openMenu } from "../../composables/useMenu";
 </script>
 
 <script>
@@ -48,6 +48,7 @@ export default {
 
 <style scoped>
 header .hamburger {
+    /* Overriding default icon style */
     @apply cursor-pointer md:hidden;
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
-    <div class="block">
-        <img :src="skill.img" :alt="skill.name" />
+    <div class="relative max-w-[96px] mt-4 mb-2 mx-2">
+        <Icon :name="IconMapper[skill.name]"
+              size="64px" class="bg-primary p-2 rounded-[25px_12px] text-primary-text-light dark:text-primary-text-dark"/>
         <div>
             <template v-if="t">
                 {{ $t(skill.display_name) }}
@@ -9,9 +10,13 @@
                 {{ skill.display_name }}
             </template>
         </div>
-        <div v-if="xp" class="badge">{{ getExperienceString(skill) }}</div>
+        <div v-if="xp" class="absolute w-[70px] h-4 text-xs text-primary-text-light p-[3px] rounded-xl left-0.5 -top-3.5 bg-primary-light">{{ getExperienceString(skill) }}</div>
     </div>
 </template>
+
+<script setup>
+import { IconMapper } from "../../composables/IconMapper";
+</script>
 
 <script>
 export default {
@@ -43,15 +48,7 @@ export default {
 </script>
 
 <style scoped>
-.block {
-    @apply relative max-w-[96px] mt-4 mb-2 mx-2;
-}
-.block img {
-    @apply w-16 h-16 bg-primary object-contain p-2 rounded-[25px_12px];
-}
-.block .badge {
-    @apply absolute w-[70px] h-4 text-xs text-primary-text-light p-[3px] rounded-xl left-0.5 -top-3.5 bg-primary-light;
-}
+
 #app.dark .block .badge .badge,
 #app.dark .badge {
     @apply bg-primary-bg-dark

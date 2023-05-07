@@ -22,7 +22,7 @@
                         target="_blank"
                         class="no-underline flex flex-col text-center items-center w-fit flex-1 group/button">
                         <Icon class="text-primary-text-dark dark:text-primary-text-light group-hover/button:text-primary"
-                              name="iconoir:www"
+                              :name="IconMapper.www"
                               size="32px"/>
                         <span class="text-xs text-primary-text-dark dark:text-primary-text-light mt-2 group-hover/button:text-primary dark:group-hover/button:text-primary-light">Website</span>
                     </a>
@@ -32,7 +32,7 @@
                         target="_blank"
                         class="no-underline flex flex-col text-center items-center w-fit flex-1 group/button">
                         <Icon class="text-primary-text-dark dark:text-primary-text-light group-hover/button:text-primary"
-                              name="mdi:linkedin"
+                              :name="IconMapper.linkedin"
                               size="32px"/>
                         <span class="text-xs text-primary-text-dark dark:text-primary-text-light mt-2 group-hover/button:text-primary dark:group-hover/button:text-primary-light">LinkedIn</span>
                     </a>
@@ -41,6 +41,10 @@
         </div>
     </div>
 </template>
+
+<script setup>
+import { IconMapper } from "../../composables/IconMapper";
+</script>
 
 <script>
 export default {

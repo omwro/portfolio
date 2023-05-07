@@ -4,14 +4,18 @@
         :style="
             'border-color: #014F86' + color !== undefined ? color : '#014F86'
         ">
-        <img :src="img" :alt="name" class="w-4 h-4 invert-[1] object-contain md:w-8 md:h-8"/>
+        <Icon :name="IconMapper[icon]" size="20px" class="text-primary-text-dark dark:text-primary-text-light"/>
         <span class="text-xs self-center md:text-base">{{ name }}</span>
     </div>
 </template>
 
+<script setup>
+import { IconMapper } from "../../composables/IconMapper";
+</script>
+
 <script>
 export default {
     name: "SkillChip",
-    props: ["name", "img", "color"],
+    props: ["name", "icon", "color"],
 };
 </script>

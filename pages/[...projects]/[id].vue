@@ -16,7 +16,7 @@
                         v-for="skill in getLanguages(project.stack)"
                         :key="skill.name"
                         :name="$t(skill.display_name)"
-                        :img="skill.img" />
+                        :icon="skill.name" />
                 </div>
                 <p class="text-base px-0 py-4 md:text-[1.4rem] md:pt-8">{{ $t(project.desc) }}</p>
                 <div class="flex flex-row gap-8">
@@ -28,7 +28,7 @@
                         target="_blank"
                         class="flex flex-row place-items-center">
                         <Icon class="text-primary-text-dark mr-2 dark:text-primary-text-light"
-                              name="mdi:github"
+                              :name="IconMapper.github"
                               size="24px"/>
                         <div>{{ $t("projects.viewongithub") }}</div>
                     </a>
@@ -40,7 +40,7 @@
                         target="_blank"
                         class="flex flex-row place-items-center">
                         <Icon class="text-primary-text-dark dark:text-primary-text-light mr-2"
-                              name="iconoir:www"
+                              :name="IconMapper.www"
                               size="24px"/>
                         <div>{{ $t("projects.viewonwebsite") }}</div>
                     </a>
@@ -61,6 +61,7 @@ import Section from "../../components/elements/Section";
 import Content from "../../components/elements/Content";
 import BreadcrumbLink from "../../components/elements/BreadcrumbLink";
 import SkillChip from "../../components/elements/SkillChip";
+import { IconMapper } from "../../composables/IconMapper";
 
 const project =  projects.find(x => x.id === parseInt(useRoute().params.id))
 const getLanguages = (array) => skills.filter(x => array.includes(x.name))

@@ -1,17 +1,22 @@
 <template>
-        <Icon @click="toggleDarkMode"
+        <Icon @click="toggle(); "
               class="light-mode-icon icon"
-              name="material-symbols:light-mode"
+              :name="IconMapper.sun"
               size="32px"/>
-        <Icon @click="toggleDarkMode"
+        <Icon @click="toggle()"
               class="dark-mode-icon icon"
-              name="material-symbols:dark-mode"
+              :name="IconMapper.moon"
               size="32px"/>
 </template>
 
 <script setup>
-const toggleDarkMode = () => {
-    document.documentElement.classList.toggle("dark");
+import { IconMapper } from "../../composables/IconMapper";
+import { toggleDarkMode } from "../../composables/useDarkMode";
+import { closeMenu } from "../../composables/useMenu";
+
+const toggle = () => {
+    toggleDarkMode();
+    closeMenu();
 }
 </script>
 

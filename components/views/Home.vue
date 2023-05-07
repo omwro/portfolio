@@ -14,18 +14,16 @@
                     <div v-for="(c, i) in contact" :key="i" class="items-center">
                         <a :href="c.url" class="p-2 group hover:bg-primary hover:rounded-lg">
                             <Icon class="text-primary-text-dark dark:text-primary-text-light group-hover:text-primary-text-light"
-                                  :name="c.icon"
+                                  :name="IconMapper[c.icon]"
                                   size="32px"/>
                         </a>
                     </div>
                 </div>
                 <a href="#about" class="text-base w-fit text-primary-text-dark dark:text-primary-text-light group flex flex-row gap-2 items-center no-underline p-2 rounded-[10px] border border-primary hover:bg-primary hover:text-primary-text-light">
                     <span class="group-hover:text-primary-text-light">{{ $t("home.readmore") }}</span>
-                    <svg class=" group-hover:text-primary-text-light animate-bounce" stroke="currentColor" fill="currentColor" stroke-width="0"
-                         viewBox="0 0 16 16" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                    </svg>
+                    <Icon class="group-hover:text-primary-text-light animate-bounce"
+                          :name="IconMapper.arrowDown"
+                          size="32px"/>
                 </a>
             </div>
         </div>
@@ -36,6 +34,7 @@
 import contact from "../../assets/json/contact.json";
 import Selfie from "../elements/Selfie";
 import Section from "../elements/Section";
+import { IconMapper } from "../../composables/IconMapper";
 </script>
 
 <script>
