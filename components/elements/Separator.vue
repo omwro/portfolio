@@ -1,5 +1,5 @@
 <template>
-    <div class="flex h-2 w-full separator bg-primary-bg-light" :class="getSide()">
+    <div class="flex h-2 w-full separator" :class="getSide()">
         <div class="w-full line bg-primary"></div>
     </div>
 </template>

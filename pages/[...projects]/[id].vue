@@ -27,7 +27,7 @@
                         rel="noopener"
                         target="_blank"
                         class="flex flex-row place-items-center">
-                        <Icon class="text-primary-text-dark mr-2"
+                        <Icon class="text-primary-text-dark mr-2 dark:text-primary-text-light"
                               name="mdi:github"
                               size="24px"/>
                         <div>{{ $t("projects.viewongithub") }}</div>
@@ -39,7 +39,7 @@
                         rel="noopener"
                         target="_blank"
                         class="flex flex-row place-items-center">
-                        <Icon class="text-primary-text-dark mr-2"
+                        <Icon class="text-primary-text-dark dark:text-primary-text-light mr-2"
                               name="iconoir:www"
                               size="24px"/>
                         <div>{{ $t("projects.viewonwebsite") }}</div>

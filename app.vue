@@ -1,5 +1,5 @@
 <template>
-    <div id="app" class="bg-primary-bg-light">
+    <div id="app" class="bg-primary-bg-light text-primary-text-dark dark:bg-primary-bg-dark dark:text-primary-text-light">
         <NuxtPage />
     </div>
 </template>

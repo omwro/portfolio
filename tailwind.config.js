@@ -15,7 +15,8 @@ module.exports = {
             colors: {
                 primary: {
                     DEFAULT: '#014F86',
-                    light: '#3B6FAA',
+                    // light: '#3B6FAA',
+                    light: '#337db3',
                     dark: '#01497C',
                     'bg-light': '#eef4fc',
                     'bg-dark': '#001e34',
@@ -27,7 +28,8 @@ module.exports = {
                 }
             },
             borderWidth: {
-                DEFAULT: '2px'
+                DEFAULT: '2px',
+                '1': '1px',
             },
         }
     },

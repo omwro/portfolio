@@ -39,6 +39,6 @@ html.dark .light-mode-icon{
 }
 
 .icon {
-    @apply text-primary-text-dark cursor-pointer;
+    @apply text-primary-text-dark hover:text-primary dark:text-primary-text-light dark:hover:text-primary cursor-pointer mx-auto md:mx-0;
 }
 </style>

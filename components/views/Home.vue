@@ -1,27 +1,27 @@
 <template>
     <Section id="home"
-             class="h-fit flex flex-col flex-wrap justify-center gap-y-16 gap-x-16 items-center bg-primary-bg-light content-center overflow-hidden lg:flex-row-reverse lg:pt-[200px]">
+             class="h-fit flex flex-col flex-wrap justify-center gap-y-16 gap-x-16 items-center content-center overflow-hidden lg:flex-row-reverse lg:pt-[200px]">
         <Selfie class="mx-0 relative" />
         <div
-            class="message-box mx-0 flex flex-col gap-2 relative w-fit h-fit text-[2rem] bg-primary-block-light p-4 rounded-[10px] border border-primary before:content-[''] before:absolute before:mt-[-15px] before:top-[-15px] before:z-[1] before:border-b-primary before:border-[15px] before:border-transparent before:left-1/2 lg:before:mt-[-15px] lg:before:right-[-30px] lg:before:border-l-primary lg:before:border-transparent lg:before:left-full lg:before:top-1/2">
+            class="message-box mx-0 flex flex-col gap-2 relative w-fit h-fit text-[2rem] bg-primary-block-light dark:bg-primary-block-dark p-4 rounded-[10px] border border-primary before:content-[''] before:absolute before:mt-[-15px] before:top-[-15px] before:z-[1] before:border-b-primary before:border-[15px] before:border-transparent before:left-1/2 lg:before:mt-[-15px] lg:before:right-[-30px] lg:before:border-l-primary lg:before:border-transparent lg:before:left-full lg:before:top-1/2">
             <div>{{ $t("home.intro1") }}</div>
             <div>
                 {{ $t("general.firstname") }} {{ $t("general.lastname") }}
             </div>
             <div class="text-[1.6rem]">{{ $t("home.catchphrase") }}</div>
             <div>
-                <div class="socials flex flex-row">
+                <div class="flex flex-row">
                     <div v-for="(c, i) in contact" :key="i" class="items-center">
                         <a :href="c.url" class="p-2 group hover:bg-primary hover:rounded-lg">
-                            <Icon class="text-primary-text-dark group-hover:text-primary-text-light"
+                            <Icon class="text-primary-text-dark dark:text-primary-text-light group-hover:text-primary-text-light"
                                   :name="c.icon"
                                   size="32px"/>
                         </a>
                     </div>
                 </div>
-                <a href="#about" class="readmore text-base w-fit text-primary-text-dark group flex flex-row gap-2 items-center no-underline p-2 rounded-[10px] border border-primary hover:bg-primary hover:text-primary-text-light">
+                <a href="#about" class="text-base w-fit text-primary-text-dark dark:text-primary-text-light group flex flex-row gap-2 items-center no-underline p-2 rounded-[10px] border border-primary hover:bg-primary hover:text-primary-text-light">
                     <span class="group-hover:text-primary-text-light">{{ $t("home.readmore") }}</span>
-                    <svg class="group-hover:text-primary-text-light animate-bounce" stroke="currentColor" fill="currentColor" stroke-width="0"
+                    <svg class=" group-hover:text-primary-text-light animate-bounce" stroke="currentColor" fill="currentColor" stroke-width="0"
                          viewBox="0 0 16 16" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                               d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
