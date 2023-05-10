@@ -1,710 +1,753 @@
 [
   {
-    "type": "Language",
-    "name": "html",
-    "display_name": "HTML",
-    "color": 1,
-    "show_portfolio": true,
-    "show_cv": true,
-    "xp": [
-      {
-        "months": 30,
-        "desc": "Regio college"
-      },
-      {
-        "months": 30,
-        "desc": "HvA"
-      },
-      {
-        "months": 2,
-        "desc": "Bold 2022"
-      }
-    ]
-  },
-  {
-    "type": "Language",
-    "name": "css",
-    "display_name": "CSS",
-    "color": 1,
-    "show_portfolio": true,
-    "show_cv": true,
-    "xp": [
-      {
-        "months": 30,
-        "desc": "Regio college"
-      },
-      {
-        "months": 30,
-        "desc": "HvA"
-      },
-      {
-        "months": 2,
-        "desc": "Bold 2022"
-      }
-    ]
-  },
-  {
-    "type": "Language",
+    "group": "js",
     "name": "js",
     "display_name": "JavaScript",
-    "color": 1,
+    "role": "main",
     "show_portfolio": true,
     "show_cv": true,
     "xp": [
       {
         "months": 30,
-        "desc": "Regio college"
+        "type": "education",
+        "desc": "Regio"
       },
       {
         "months": 30,
+        "type": "education",
         "desc": "HvA"
       },
       {
-        "months": 2,
+        "months": 3,
+        "type": "work",
         "desc": "Bold 2022"
       }
     ]
   },
   {
-    "type": "Language",
+    "group": "css",
+    "name": "css",
+    "display_name": "CSS",
+    "role": "main",
+    "show_portfolio": true,
+    "show_cv": true,
+    "xp": [
+      {
+        "months": 30,
+        "type": "education",
+        "desc": "Regio"
+      },
+      {
+        "months": 30,
+        "type": "education",
+        "desc": "HvA"
+      },
+      {
+        "months": 3,
+        "type": "work",
+        "desc": "Bold 2022"
+      }
+    ]
+  },
+  {
+    "group": "markup",
+    "name": "html",
+    "display_name": "HTML",
+    "role": "main",
+    "show_portfolio": true,
+    "show_cv": true,
+    "xp": [
+      {
+        "months": 30,
+        "type": "education",
+        "desc": "Regio"
+      },
+      {
+        "months": 30,
+        "type": "education",
+        "desc": "HvA"
+      },
+      {
+        "months": 3,
+        "type": "work",
+        "desc": "Bold 2022"
+      }
+    ]
+  },
+  {
+    "group": "markup",
+    "name": "xml",
+    "display_name": "XML",
+    "role": "body",
+    "show_portfolio": false,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "group": "markup",
+    "name": "md",
+    "display_name": "Markdown",
+    "role": "deprecated",
+    "show_portfolio": false,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "group": "markup",
+    "name": "wysiwyg",
+    "display_name": "WYSIWYG",
+    "role": "body",
+    "show_portfolio": false,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "group": "php",
     "name": "php",
     "display_name": "PHP",
-    "color": 1,
+    "role": "main",
     "show_portfolio": true,
     "show_cv": true,
     "xp": [
       {
         "months": 24,
-        "desc": "Regio college"
+        "type": "education",
+        "desc": "Regio "
       },
       {
         "months": 7,
-        "desc": "boldcommerce"
+        "type": "work",
+        "desc": "Bold 2020"
       },
       {
-        "months": 2,
+        "months": 3,
+        "type": "work",
         "desc": "Bold 2022"
       }
     ]
   },
   {
-    "type": "Language",
+    "group": "java",
     "name": "java",
     "display_name": "Java",
-    "color": 1,
+    "role": "main",
     "show_portfolio": true,
     "show_cv": true,
     "xp": [
       {
         "months": 18,
+        "type": "education",
         "desc": "HvA oop & pad, ads & ewa, barber2u"
       }
     ]
   },
   {
-    "type": "Language",
+    "group": "js",
     "name": "ts",
     "display_name": "Typescript",
-    "color": 1,
+    "role": "body",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 6,
+        "type": "education",
         "desc": "HvA angular, barber2u"
       }
     ]
   },
   {
-    "type": "Language",
+    "group": "java",
     "name": "kotlin",
     "display_name": "Kotlin",
-    "color": 1,
+    "role": "deprecated",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 6,
+        "type": "education",
         "desc": "HvA3 mobile dev"
       }
     ]
   },
   {
-    "type": "Language",
+    "group": "python",
     "name": "python",
     "display_name": "Python",
-    "color": 1,
+    "role": "main",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 6,
+        "type": "education",
         "desc": "Hva Data Science"
       },
       {
         "months": 1,
+        "type": "hobby",
         "desc": "fastapi"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "python",
+    "name": "fastapi",
+    "display_name": "FastAPI",
+    "role": "deprecated",
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "group": "python",
+    "name": "pandas",
+    "display_name": "Pandas",
+    "role": "deprecated",
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "group": "python",
+    "name": "detectron",
+    "display_name": "Detrectron",
+    "role": "deprecated",
+    "show_portfolio": true,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "group": "js",
     "name": "node",
     "display_name": "Node.JS",
-    "color": 2,
+    "role": "body",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 1,
+        "type": "hobby",
         "desc": "puppeteer"
       }
     ]
   },
   {
-    "type": "Language",
+    "group": "c",
     "name": "csharp",
     "display_name": "C#",
-    "color": 1,
+    "role": "main",
     "show_portfolio": true,
     "show_cv": true,
     "xp": [
       {
         "months": 12,
-        "desc": "Regio college1"
+        "type": "education",
+        "desc": "Regio"
       },
       {
         "months": 6,
+        "type": "education",
         "desc": "Kenneth&Koh"
       },
       {
         "months": 6,
+        "type": "education",
         "desc": "Infi"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "js",
     "name": "vue",
     "display_name": "Vue.Js",
-    "color": 2,
+    "role": "body",
     "show_portfolio": true,
     "show_cv": true,
     "xp": [
       {
         "months": 3,
-        "desc": "bold commerce"
+        "type": "work",
+        "desc": "Bold 2020"
       },
       {
         "months": 1,
+        "type": "education",
         "desc": "hvablend"
       },
       {
         "months": 3,
+        "type": "hobby",
         "desc": "Portfolio"
       },
       {
         "months": 1,
+        "type": "hobby",
         "desc": "Metafy"
       },
       {
         "months": 1,
+        "type": "hobby",
         "desc": "Other projects (zamfir, cv)"
       },
       {
         "months": 2,
+        "type": "work",
         "desc": "Bold 2022"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "js",
     "name": "jquery",
     "display_name": "jQuery",
-    "color": 2,
+    "role": "body",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 18,
-        "desc": "regio college"
+        "type": "education",
+        "desc": "Regio"
       },
       {
         "months": 6,
+        "type": "education",
         "desc": "hva1"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "js",
     "name": "angular",
     "display_name": "Angular",
-    "color": 2,
+    "role": "deprecated",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 6,
+        "type": "education",
         "desc": "hva2"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "js",
     "name": "react",
     "display_name": "React.Js",
-    "color": 2,
+    "role": "deprecated",
     "show_portfolio": true,
     "show_cv": true,
     "xp": [
       {
         "months": 6,
+        "type": "education",
         "desc": "hva barber2u"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "java",
     "name": "spring",
     "display_name": "Spring Boot",
-    "color": 2,
+    "role": "deprecated",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 12,
+        "type": "education",
         "desc": "hva2 & hva3"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "css",
     "name": "sass",
     "display_name": "Sass/Scss",
-    "color": 2,
+    "role": "body",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 6,
-        "desc": "bold commerce"
+        "type": "work",
+        "desc": "Bold 2020"
       },
       {
         "months": 6,
+        "type": "education",
         "desc": "barber2u"
       },
       {
         "months": 2,
+        "type": "hobby",
         "desc": "portfolio"
       },
       {
-        "months": 2,
+        "months": 3,
+        "type": "work",
         "desc": "Bold 2022"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "php",
     "name": "magento",
     "display_name": "Magento",
-    "color": 2,
+    "role": "body",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 6,
-        "desc": "bold commerce"
+        "type": "work",
+        "desc": "Bold 2020"
       },
       {
-        "months": 2,
+        "months": 3,
+        "type": "work",
         "desc": "Bold 2022"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "php",
     "name": "laravel",
     "display_name": "Laravel",
-    "color": 2,
+    "role": "deprecated",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 2,
-        "desc": "bold commerce"
+        "type": "work",
+        "desc": "Bold 2020"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "css",
     "name": "bootstrap",
     "display_name": "Bootstrap",
-    "color": 2,
+    "role": "deprecated",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 12,
-        "desc": "Regio college"
+        "type": "education",
+        "desc": "Regio"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "js",
     "name": "knockout",
     "display_name": "Knockout.Js",
     "img": "/img/language/knockoutjs.png",
-    "color": 2,
+    "role": "body",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
-        "months": 1,
-        "desc": "Bold commerce"
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "c",
     "name": "aspnet",
     "display_name": ".Net",
-    "color": 2,
+    "role": "deprecated",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 12,
-        "desc": "Regio college"
+        "type": "education",
+        "desc": "Regio"
       },
       {
         "months": 1,
+        "type": "education",
         "desc": "Infi"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "java",
     "name": "quarkus",
     "display_name": "Quarkus",
-    "color": 2,
+    "role": "deprecated",
     "show_portfolio": false,
     "show_cv": false,
     "xp": [
       {
         "months": 1,
+        "type": "education",
         "desc": "HvaBlend"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "php",
     "name": "wordpress",
     "display_name": "WordPress",
-    "color": 2,
+    "role": "deprecated",
     "show_portfolio": false,
     "show_cv": false,
     "xp": [
       {
         "months": 1,
+        "type": "education",
         "desc": "Digidot"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "js",
     "name": "nuxt",
     "display_name": "Nuxt.Js",
-    "color": 2,
+    "role": "body",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
-        "months": 2,
+        "months": 3,
+        "type": "work",
         "desc": "Bold 2022"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "css",
     "name": "tailwind",
     "display_name": "TailWindCss",
-    "color": 2,
+    "role": "body",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
-        "months": 2,
+        "months": 3,
+        "type": "work",
         "desc": "Bold 2022"
       }
     ]
   },
   {
-    "type": "Framework",
+    "group": "js",
     "name": "alpine",
     "display_name": "Alpine.Js",
-    "color": 2,
+    "role": "body",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
-        "months": 2,
+        "months": 3,
+        "type": "work",
         "desc": "Bold 2022"
       }
     ]
   },
   {
-    "type": "Environments",
+    "group": "os",
     "name": "windows",
     "display_name": "Windows",
-    "color": 3,
+    "role": "main",
     "show_portfolio": false,
     "show_cv": false,
     "xp": [
       {
-        "months": 180,
-        "desc": "t/m 2021"
+        "months": 192,
+        "type": "hobby",
+        "desc": "t/m 2022"
       }
     ]
   },
   {
-    "type": "Environments",
+    "group": "db",
     "name": "mysql",
     "display_name": "MySQL",
-    "color": 3,
+    "role": "main",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 24,
-        "desc": "regio college"
+        "type": "education",
+        "desc": "Regio"
       },
       {
         "months": 24,
+        "type": "education",
         "desc": "hva1,2,3"
       }
     ]
   },
   {
-    "type": "Environments",
+    "group": "app",
     "name": "git",
     "display_name": "Git",
-    "color": 3,
+    "role": "main",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 48,
+        "type": "education",
         "desc": "hva"
       },
       {
-        "months": 2,
+        "months": 3,
+        "type": "work",
         "desc": "Bold 2022"
       }
     ]
   },
   {
-    "type": "Environments",
+    "group": "os",
     "name": "macos",
     "display_name": "MacOS",
-    "color": 3,
+    "role": "body",
     "show_portfolio": false,
     "show_cv": false,
     "xp": [
       {
         "months": 6,
-        "desc": "bold commerce"
+        "type": "work",
+        "desc": "Bold 2020"
       },
       {
-        "months": 2,
+        "months": 3,
+        "type": "work",
         "desc": "Bold 2022"
       }
     ]
   },
   {
-    "type": "Environments",
+    "group": "os",
     "name": "rpi",
     "display_name": "Raspberry Pi",
-    "color": 3,
+    "role": "deprecated",
     "show_portfolio": false,
     "show_cv": false,
     "xp": [
       {
         "months": 3,
+        "type": "hobby",
         "desc": "hobby projects"
       }
     ]
   },
   {
-    "type": "Environments",
+    "group": "os",
+    "name": "ubuntu",
+    "display_name": "Ubuntu",
+    "role": "body",
+    "show_portfolio": false,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "group": "app",
     "name": "apache",
     "display_name": "Apache 2",
-    "color": 3,
+    "role": "body",
     "show_portfolio": false,
     "show_cv": false,
     "xp": [
       {
         "months": 6,
+        "type": "hobby",
         "desc": "rpi & digital ocean"
       }
     ]
   },
   {
-    "type": "Environments",
+    "group": "app",
+    "name": "docker",
+    "display_name": "Docker",
+    "role": "body",
+    "show_portfolio": false,
+    "show_cv": false,
+    "xp": []
+  },
+  {
+    "group": "db",
     "name": "mongodb",
     "display_name": "MongoDB",
-    "color": 3,
+    "role": "deprecated",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 3,
+        "type": "education",
         "desc": "barber2u"
       }
     ]
   },
   {
-    "type": "Environments",
+    "group": "db",
     "name": "firebase",
     "display_name": "Firebase",
-    "color": 3,
+    "role": "deprecated",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 3,
+        "type": "education",
         "desc": "webframeworks & mobile dev"
       }
     ]
   },
   {
-    "type": "Environments",
+    "group": "db",
     "name": "eventstore",
     "display_name": "Event Store",
-    "color": 3,
+    "role": "deprecated",
     "show_portfolio": true,
     "show_cv": false,
     "xp": [
       {
         "months": 6,
+        "type": "education",
         "desc": "Infi"
       }
     ]
   },
   {
-    "type": "Projects",
-    "name": "websitebuilder",
-    "display_name": "Website Builder",
-    "color": 4,
-    "show_portfolio": true,
-    "show_cv": false,
-    "xp": []
-  },
-  {
-    "type": "Projects",
-    "name": "pcbuilder",
-    "display_name": "Custom Desktop PC Builder",
-    "color": 4,
-    "show_portfolio": true,
-    "show_cv": false,
-    "xp": []
-  },
-  {
-    "type": "Projects",
-    "name": "android",
-    "display_name": "Android App",
-    "color": 4,
-    "show_portfolio": true,
-    "show_cv": false,
-    "xp": []
-  },
-  {
-    "type": "Projects",
-    "name": "api",
-    "display_name": "Web API",
-    "color": 4,
-    "show_portfolio": true,
-    "show_cv": false,
-    "xp": []
-  },
-  {
-    "type": "Projects",
-    "name": "webscraper",
-    "display_name": "Web Scraper",
-    "color": 4,
-    "show_portfolio": true,
-    "show_cv": false,
-    "xp": []
-  },
-  {
-    "type": "Projects",
-    "name": "minecraft",
-    "display_name": "Minecraft Plugin",
-    "color": 4,
-    "show_portfolio": true,
-    "show_cv": false,
-    "xp": []
-  },
-  {
-    "type": "Projects",
-    "name": "discord",
-    "display_name": "Discord Bot",
-    "color": 4,
-    "show_portfolio": true,
-    "show_cv": false,
-    "xp": []
-  },
-  {
-    "type": "Projects",
-    "name": "unity",
-    "display_name": "Unity Game",
-    "color": 4,
-    "show_portfolio": true,
-    "show_cv": false,
-    "xp": []
-  },
-  {
-    "type": "Projects",
-    "name": "magento",
-    "display_name": "E-Commerce Webshop",
-    "color": 4,
-    "show_portfolio": true,
-    "show_cv": false,
-    "xp": []
-  },
-  {
-    "type": "Competencies",
+    "group": "Competencies",
     "name": "hardworker",
     "display_name": "skills.hardworker",
-    "color": 4,
     "show_portfolio": true,
-    "show_cv": false,
-    "xp": []
+    "show_cv": false
   },
   {
-    "type": "Competencies",
+    "group": "Competencies",
     "name": "teamplayer",
     "display_name": "skills.teamplayer",
-    "color": 4,
     "show_portfolio": true,
-    "show_cv": false,
-    "xp": []
+    "show_cv": false
   },
   {
-    "type": "Competencies",
+    "group": "Competencies",
     "name": "problemsolver",
     "display_name": "skills.problemsolving",
-    "color": 4,
     "show_portfolio": true,
-    "show_cv": false,
-    "xp": []
+    "show_cv": false
   },
   {
-    "type": "Competencies",
+    "group": "Competencies",
     "name": "creativity",
     "display_name": "skills.creativity",
-    "color": 4,
     "show_portfolio": true,
-    "show_cv": false,
-    "xp": []
+    "show_cv": false
   }
 ]

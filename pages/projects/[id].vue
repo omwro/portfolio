@@ -1,6 +1,6 @@
 <template>
     <NuxtLayout>
-        <Section :heading="project.title" class="pt-4">
+        <Section v-if="project" :heading="project.title" class="pt-4">
             <template #top>
                 <div class="flex flex-row gap-2">
                     <BreadcrumbLink text="/ Home" url="/#projects" />
@@ -65,4 +65,10 @@ import { IconMapper } from "../../composables/IconMapper";
 
 const project =  projects.find(x => x.id === parseInt(useRoute().params.id))
 const getLanguages = (array) => skills.filter(x => array.includes(x.name))
+</script>
+
+<script>
+export default {
+    name: "[id]"
+};
 </script>

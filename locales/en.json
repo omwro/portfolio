@@ -34,7 +34,9 @@
   "skills": {
     "title": "Skills",
     "personalrating": "Personal Rating",
-    "xp": "Experience",
+    "xp": "experience",
+    "inuse": "In use",
+    "deprecated": "Deprecated",
     "xpdesc": "1 Year of Experience",
     "languages": "Languages",
     "frameworks": "Frameworks",
@@ -45,10 +47,15 @@
     "teamplayer": "Team player",
     "problemsolving": "Problem solver",
     "creativity": "Creative",
+    "y": "y",
     "year": "year",
     "years": "years",
+    "m": "m",
     "month": "month",
-    "months": "months"
+    "months": "months",
+    "hobby": "hobby",
+    "education": "education",
+    "work": "work"
   },
   "projects": {
     "title": "Projects",

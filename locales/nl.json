@@ -35,7 +35,9 @@
   "skills": {
     "title": "Vaardigheden",
     "personalrating": "Persoonlijke Waardering",
-    "xp": "Ervaring",
+    "xp": "ervaring",
+    "inuse": "In gebruik",
+    "deprecated": "Verouderd",
     "xpdesc": "1 Jaar Ervaring",
     "languages": "Talen",
     "frameworks": "Frameworks",
@@ -46,10 +48,15 @@
     "teamplayer": "Team speler",
     "problemsolving": "Probleem oplosser",
     "creativity": "Creatief",
+    "y": "j",
     "year": "jaar",
     "years": "jaar",
+    "m": "m",
     "month": "maand",
-    "months": "maanden"
+    "months": "maanden",
+    "hobby": "hobby",
+    "education": "studie",
+    "work": "werk"
   },
   "projects": {
     "title": "Projecten",
