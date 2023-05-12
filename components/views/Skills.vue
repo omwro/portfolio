@@ -2,8 +2,8 @@
     <Section id="skills" :heading="$t('skills.title')">
         <Content class="sm:flex-row flex-wrap gap-8">
             <SkillCard v-for="(skillGroup, key) in groupedHomepageSkills" :key="key" :skillGroup="skillGroup"/>
-            <ViewMoreLink title="skills.title" url="/skills" />
         </Content>
+        <ViewMoreLink title="skills.title" url="/skills" />
     </Section>
 </template>
 

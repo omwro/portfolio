@@ -1,16 +1,13 @@
 <template>
     <div
-        class="flex flex-col gap-1 border-8 w-[300px] border-primary rounded-[60px_15px] bg-primary-block-light dark:bg-primary-block-dark">
+        class="flex flex-col gap-1 border-8 sm:w-[320px] border-primary rounded-[60px_15px] bg-primary-block-light dark:bg-primary-block-dark">
         <div v-if="mainSkill" class="p-4 pb-0 flex flex-col gap-1">
             <div class="flex flex-row justify-between items-center">
                 <h3 class="text-xl font-bold pl-2">{{ mainSkill.display_name }}</h3>
                 <div class="flex flex-row gap-4">
                     <Icon :name="IconMapper[getExperienceType(mainSkill)]" size="24"
                           class="text-primary dark:text-primary-text-light " />
-                    <span class="relative flex h-4 w-4">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-4 w-4 bg-green-500"></span>
-                    </span>
+                    <LivePulse v-if="isSkillLive(mainSkill)"/>
                 </div>
             </div>
             <div
@@ -41,7 +38,7 @@
                 </div>
             </div>
         </div>
-        <a class="pl-4 py-1 underline" :href="`/skills/${mainSkill.name}`">
+        <a class="pl-4 py-1 underline mt-auto" :href="`/skills/${mainSkill.name}`">
             <span class="text-sm">{{$t('home.readmore')}}</span>
             <Icon :name="IconMapper.arrowRight" size="20"/>
         </a>
@@ -50,8 +47,8 @@
 
 <script setup>
 import { IconMapper } from "../../composables/IconMapper";
-import { getExperienceString, getExperienceType } from "../../composables/useSkills";
-import ViewMoreLink from "./ViewMoreLink";
+import { getExperienceString, getExperienceType, isSkillLive } from "../../composables/useSkills";
+import LivePulse from "./LivePulse";
 
 const props = defineProps({
     skillGroup: Object

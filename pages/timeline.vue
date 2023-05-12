@@ -23,6 +23,7 @@ import Section from "../components/elements/Section";
 import BreadcrumbLink from "../components/elements/BreadcrumbLink";
 import Content from "../components/elements/Content";
 import GitFlow from "../components/gitflow/GitFlow";
+import { IconMapper } from "../composables/IconMapper";
 
 import timeline from "../assets/json/timeline.json";
 import skills from "../assets/json/skills.json";
@@ -34,7 +35,10 @@ const getSkillChips = (x) => {
     x.stack
         ? x.stack.forEach((stack) => {
             const skill = skills.find((x) => x.name === stack);
-            str += `<div class="skill-chip-block" ` + `style="border-color: ${colors[x.line]}; ` + `">` + `<img src="${skill.img}" alt="${skill.name}" />` + `<span>${skill["display_name"]}</span>` + `</div>`;
+            if (skill) {
+                str += `<div class="skill-chip-block" ` + `style="border-color: ${colors[x.line]}; ` + `">` + `<Icon name="${IconMapper[skill.name]}" size="16" />` + `<span>${skill["display_name"]}</span>` + `</div>`;
+            }
+
         })
         : null;
     str += "</div>";

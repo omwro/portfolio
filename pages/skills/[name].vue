@@ -7,15 +7,15 @@
                     <BreadcrumbLink text="/ Skills" url="/skills" />
                 </div>
             </template>
-            <div class="">
+            <div v-if="mainSkill">
                 <SkillDetails :skill="mainSkill"/>
             </div>
             <Heading v-if="bodySkills" :text="$t('skills.inuse')" class="pt-8"/>
-            <div class="grid md:grid-cols-2 gap-4">
+            <div v-if="bodySkills" class="grid gap-4" :class="{'md:grid-cols-2': bodySkills.length >= 2}">
                 <SkillDetails v-for="skill in bodySkills" :skill="skill"/>
             </div>
             <Heading v-if="deprecatedSkills" :text="$t('skills.deprecated')" class="pt-8"/>
-            <div class="grid md:grid-cols-2 gap-4">
+            <div v-if="deprecatedSkills" :class="{'md:grid-cols-2': deprecatedSkills.length >= 2}" class="grid md:grid-cols-2 gap-4">
                 <SkillDetails v-for="skill in deprecatedSkills" :skill="skill"/>
             </div>
         </Section>
@@ -29,9 +29,8 @@ import Section from "../../components/elements/Section";
 import BreadcrumbLink from "../../components/elements/BreadcrumbLink";
 import SkillDetails from "../../components/elements/SkillDetails";
 import Heading from "../../components/elements/Heading";
-import Content from "../../components/elements/Content";
+
 const groupedSkill = getGroupedSkills(skills, [useRoute().params.name])[[useRoute().params.name]]
-console.log(groupedSkill);
 const mainSkill = groupedSkill.main[0]
 const bodySkills = groupedSkill.body
 const deprecatedSkills = groupedSkill.deprecated

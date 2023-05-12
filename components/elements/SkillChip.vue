@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex gap-1 px-3 py-1 rounded-full border border-primary "
+        class="flex gap-1 px-3 py-1 rounded-full border border-primary rounded-[15px_5px] items-center bg-primary-block-light dark:bg-primary-block-dark"
         :style="
             'border-color: #014F86' + color !== undefined ? color : '#014F86'
         ">

@@ -10,17 +10,17 @@
     "translate": "about.title"
   },
   {
+    "href": "/#projects",
+    "name": "Projects",
+    "translate": "projects.title"
+  },
+  {
     "href": "/#skills",
     "name": "Skills",
     "translate": "skills.title"
   },
   {
-    "href": "/projects",
-    "name": "Projects",
-    "translate": "projects.title"
-  },
-  {
-    "href": "/timeline",
+    "href": "/#timeline",
     "name": "Timeline",
     "translate": "timeline.title"
   },

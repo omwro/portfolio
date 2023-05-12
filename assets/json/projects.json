@@ -8,6 +8,8 @@
     "url": "https://omererdem.nl",
     "github": "https://github.com/omwro/portfoliovue",
     "homepage": true,
+    "live": true,
+    "mainstack": "vue",
     "stack": [
       "html",
       "js",
@@ -25,6 +27,8 @@
     "url": "https://metafy.omererdem.nl",
     "github": "https://github.com/omwro/metafy-vue",
     "homepage": true,
+    "live": true,
+    "mainstack": "vue",
     "stack": [
       "html",
       "js",
@@ -41,6 +45,8 @@
     "img": "/img/project/zamfir.png",
     "url": "https://zamfir.nl",
     "github": "https://github.com/omwro/portfolio-az",
+    "live": true,
+    "mainstack": "vue",
     "stack": [
       "html",
       "js",
@@ -56,6 +62,7 @@
     "desc": "projects.desc.gitflow",
     "img": "/img/project/project-gitflow.webp",
     "github": "https://github.com/omwro/gitflow",
+    "mainstack": "vue",
     "stack": [
       "html",
       "js",
@@ -72,6 +79,7 @@
     "img": "/img/stock/missing.jpg",
     "url": null,
     "github": "https://github.com/omwro/GpuTracker",
+    "mainstack": "node",
     "stack": [
       "js",
       "node"
@@ -85,6 +93,7 @@
     "img": "/img/project/minecraft.webp",
     "url": null,
     "github": "https://github.com/omwro/WarOfWarlord",
+    "mainstack": "java",
     "stack": [
       "java"
     ]
@@ -97,6 +106,7 @@
     "img": "/img/stock/classified.jpg",
     "url": null,
     "github": null,
+    "mainstack": "aspnet",
     "stack": [
       "html",
       "css",
@@ -113,6 +123,7 @@
     "img": "/img/stock/classified.jpg",
     "url": null,
     "github": null,
+    "mainstack": "vue",
     "stack": [
       "html",
       "css",
@@ -132,6 +143,7 @@
     "isMobile": true,
     "url": null,
     "github": null,
+    "mainstack": "kotlin",
     "stack": [
       "kotlin"
     ]
@@ -144,6 +156,7 @@
     "img": "/img/stock/classified.jpg",
     "url": null,
     "github": null,
+    "mainstack": "js",
     "stack": [
       "html",
       "css",
@@ -161,6 +174,7 @@
     "url": null,
     "github": null,
     "homepage": true,
+    "mainstack": "react",
     "stack": [
       "html",
       "css",
@@ -181,6 +195,7 @@
     "isMobile": true,
     "url": null,
     "github": "https://github.com/omwro/MetafyKotlin",
+    "mainstack": "kotlin",
     "stack": [
       "kotlin",
       "xml"
@@ -195,6 +210,7 @@
     "isMobile": true,
     "url": null,
     "github": null,
+    "mainstack": "python",
     "stack": [
       "python"
     ]

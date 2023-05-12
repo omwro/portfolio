@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.6.7",
+    "@pinia/nuxt": "^0.4.10",
     "moment": "^2.29.4",
     "nuxt-icon": "^0.4.0"
   }

@@ -4,7 +4,7 @@
             <template #top>
                 <BreadcrumbLink text="/ Home" url="/#projects" />
             </template>
-            <Content class="sm:flex-row flex-wrap gap-4">
+            <Content class="sm:flex-row flex-wrap gap-3">
                 <ProjectBlock
                     v-for="(p, i) in projects"
                     :project="p"

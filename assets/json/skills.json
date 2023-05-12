@@ -18,9 +18,14 @@
         "desc": "HvA"
       },
       {
-        "months": 3,
+        "months": 6,
         "type": "work",
-        "desc": "Bold 2022"
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
       }
     ]
   },
@@ -43,14 +48,19 @@
         "desc": "HvA"
       },
       {
-        "months": 3,
+        "months": 6,
         "type": "work",
-        "desc": "Bold 2022"
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
       }
     ]
   },
   {
-    "group": "markup",
+    "group": "html",
     "name": "html",
     "display_name": "HTML",
     "role": "main",
@@ -68,38 +78,76 @@
         "desc": "HvA"
       },
       {
-        "months": 3,
+        "months": 6,
         "type": "work",
-        "desc": "Bold 2022"
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
       }
     ]
   },
   {
-    "group": "markup",
+    "group": "html",
     "name": "xml",
     "display_name": "XML",
     "role": "body",
     "show_portfolio": false,
     "show_cv": false,
-    "xp": []
+    "xp": [
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
   },
   {
-    "group": "markup",
+    "group": "html",
     "name": "md",
     "display_name": "Markdown",
     "role": "deprecated",
     "show_portfolio": false,
     "show_cv": false,
-    "xp": []
+    "xp": [
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
   },
   {
-    "group": "markup",
+    "group": "html",
     "name": "wysiwyg",
     "display_name": "WYSIWYG",
     "role": "body",
     "show_portfolio": false,
     "show_cv": false,
-    "xp": []
+    "xp": [
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
   },
   {
     "group": "php",
@@ -115,14 +163,14 @@
         "desc": "Regio "
       },
       {
-        "months": 7,
+        "months": 6,
         "type": "work",
         "desc": "Bold 2020"
       },
       {
-        "months": 3,
+        "start": "1-10-2022",
         "type": "work",
-        "desc": "Bold 2022"
+        "desc": "Bold 2023"
       }
     ]
   },
@@ -198,7 +246,13 @@
     "role": "deprecated",
     "show_portfolio": true,
     "show_cv": false,
-    "xp": []
+    "xp": [
+      {
+        "months": 1,
+        "type": "hobby",
+        "desc": "fastapi"
+      }
+    ]
   },
   {
     "group": "python",
@@ -207,7 +261,13 @@
     "role": "deprecated",
     "show_portfolio": true,
     "show_cv": false,
-    "xp": []
+    "xp": [
+      {
+        "months": 6,
+        "type": "education",
+        "desc": "Hva Data Science"
+      }
+    ]
   },
   {
     "group": "python",
@@ -216,7 +276,13 @@
     "role": "deprecated",
     "show_portfolio": true,
     "show_cv": false,
-    "xp": []
+    "xp": [
+      {
+        "months": 2,
+        "type": "education",
+        "desc": "Hva Data Science"
+      }
+    ]
   },
   {
     "group": "js",
@@ -234,7 +300,7 @@
     ]
   },
   {
-    "group": "c",
+    "group": "csharp",
     "name": "csharp",
     "display_name": "C#",
     "role": "main",
@@ -292,9 +358,19 @@
         "desc": "Other projects (zamfir, cv)"
       },
       {
-        "months": 2,
+        "months": 1,
         "type": "work",
-        "desc": "Bold 2022"
+        "desc": "raifkaya"
+      },
+      {
+        "months": 1,
+        "type": "work",
+        "desc": "deugderdem"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
       }
     ]
   },
@@ -315,6 +391,16 @@
         "months": 6,
         "type": "education",
         "desc": "hva1"
+      },
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2023"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
       }
     ]
   },
@@ -387,9 +473,9 @@
         "desc": "portfolio"
       },
       {
-        "months": 3,
+        "start": "1-10-2022",
         "type": "work",
-        "desc": "Bold 2022"
+        "desc": "Bold 2023"
       }
     ]
   },
@@ -407,9 +493,9 @@
         "desc": "Bold 2020"
       },
       {
-        "months": 3,
+        "start": "1-10-2022",
         "type": "work",
-        "desc": "Bold 2022"
+        "desc": "Bold 2023"
       }
     ]
   },
@@ -456,11 +542,16 @@
         "months": 6,
         "type": "work",
         "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
       }
     ]
   },
   {
-    "group": "c",
+    "group": "csharp",
     "name": "aspnet",
     "display_name": ".Net",
     "role": "deprecated",
@@ -518,9 +609,19 @@
     "show_cv": false,
     "xp": [
       {
-        "months": 3,
+        "months": 1,
         "type": "work",
-        "desc": "Bold 2022"
+        "desc": "raifkaya"
+      },
+      {
+        "months": 1,
+        "type": "work",
+        "desc": "deugderdem"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
       }
     ]
   },
@@ -533,9 +634,19 @@
     "show_cv": false,
     "xp": [
       {
-        "months": 3,
+        "months": 1,
         "type": "work",
-        "desc": "Bold 2022"
+        "desc": "raifkaya"
+      },
+      {
+        "months": 1,
+        "type": "work",
+        "desc": "deugderdem"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
       }
     ]
   },
@@ -548,14 +659,14 @@
     "show_cv": false,
     "xp": [
       {
-        "months": 3,
+        "start": "1-10-2022",
         "type": "work",
-        "desc": "Bold 2022"
+        "desc": "Bold 2023"
       }
     ]
   },
   {
-    "group": "os",
+    "group": "windows",
     "name": "windows",
     "display_name": "Windows",
     "role": "main",
@@ -563,14 +674,14 @@
     "show_cv": false,
     "xp": [
       {
-        "months": 192,
+        "start": "1-1-2007",
         "type": "hobby",
         "desc": "t/m 2022"
       }
     ]
   },
   {
-    "group": "db",
+    "group": "mysql",
     "name": "mysql",
     "display_name": "MySQL",
     "role": "main",
@@ -590,7 +701,7 @@
     ]
   },
   {
-    "group": "app",
+    "group": "git",
     "name": "git",
     "display_name": "Git",
     "role": "main",
@@ -603,14 +714,19 @@
         "desc": "hva"
       },
       {
-        "months": 3,
+        "months": 6,
         "type": "work",
-        "desc": "Bold 2022"
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
       }
     ]
   },
   {
-    "group": "os",
+    "group": "windows",
     "name": "macos",
     "display_name": "MacOS",
     "role": "body",
@@ -623,14 +739,14 @@
         "desc": "Bold 2020"
       },
       {
-        "months": 3,
+        "start": "1-10-2022",
         "type": "work",
-        "desc": "Bold 2022"
+        "desc": "Bold 2023"
       }
     ]
   },
   {
-    "group": "os",
+    "group": "windows",
     "name": "rpi",
     "display_name": "Raspberry Pi",
     "role": "deprecated",
@@ -645,16 +761,22 @@
     ]
   },
   {
-    "group": "os",
+    "group": "windows",
     "name": "ubuntu",
     "display_name": "Ubuntu",
     "role": "body",
     "show_portfolio": false,
     "show_cv": false,
-    "xp": []
+    "xp": [
+      {
+        "months": 6,
+        "type": "hobby",
+        "desc": "rpi & digital ocean"
+      }
+    ]
   },
   {
-    "group": "app",
+    "group": "git",
     "name": "apache",
     "display_name": "Apache 2",
     "role": "body",
@@ -669,16 +791,27 @@
     ]
   },
   {
-    "group": "app",
+    "group": "git",
     "name": "docker",
     "display_name": "Docker",
     "role": "body",
     "show_portfolio": false,
     "show_cv": false,
-    "xp": []
+    "xp": [
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
   },
   {
-    "group": "db",
+    "group": "mysql",
     "name": "mongodb",
     "display_name": "MongoDB",
     "role": "deprecated",
@@ -693,7 +826,7 @@
     ]
   },
   {
-    "group": "db",
+    "group": "mysql",
     "name": "firebase",
     "display_name": "Firebase",
     "role": "deprecated",
@@ -708,7 +841,7 @@
     ]
   },
   {
-    "group": "db",
+    "group": "mysql",
     "name": "eventstore",
     "display_name": "Event Store",
     "role": "deprecated",

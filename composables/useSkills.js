@@ -1,7 +1,12 @@
+import moment from "moment/moment";
+
 export const getExperienceString = (skill, $t, abbreviation = false) => {
     if (!skill.xp.length) return "";
     const totalxp = skill.xp
-        .map((x) => x.months)
+        .map((x) => {
+            if (x.months) return x.months;
+            if (x.start) return getMonthsBetween(x.start)
+        })
         .reduce((prevValue, currValue) => prevValue + currValue);
     return getExperienceText(totalxp, $t, abbreviation)
 };
@@ -39,6 +44,10 @@ export const getGroupedSkills = (skills, filter = null) => {
     return groupedData;
 };
 
+const getMonthsBetween = (dateString) => {
+    return Math.ceil(moment.duration(moment().diff(moment(dateString))).asMonths())
+}
+
 export const getExperienceType = (skill) => {
     if (skill.xp.filter(x => x.type === "work").length) return "work"
     if (skill.xp.filter(x => x.type === "education").length) return "education"
@@ -48,10 +57,14 @@ export const getExperienceType = (skill) => {
 export const getGroupedExperience = (experiences, $t) => {
     let groupedData = {};
     experiences.forEach(xp => {
-        // debugger;
         if (!groupedData[xp.type]) groupedData[xp.type] = 0;
-        groupedData[xp.type] = groupedData[xp.type] + xp.months;
+        if (xp.months) groupedData[xp.type] = groupedData[xp.type] + xp.months;
+        if (xp.start) groupedData[xp.type] = groupedData[xp.type] + getMonthsBetween(xp.start);
     });
     Object.keys(groupedData).forEach((key) => groupedData[key] = getExperienceText(groupedData[key] ,$t, false));
     return groupedData
+}
+
+export const isSkillLive = (skill) => {
+    return skill.xp.filter(xp => xp.start).length
 }

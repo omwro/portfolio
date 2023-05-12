@@ -4,9 +4,9 @@
         <Companies/>
         <About/>
         <Separator :left="true"/>
-        <Skills/>
-        <Separator :right="true"/>
         <Projects/>
+        <Separator :right="true"/>
+        <Skills/>
         <Separator :left="true"/>
         <Timeline/>
         <Separator :right="true"/>

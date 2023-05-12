@@ -1,6 +1,6 @@
 <template>
     <Section id="projects" :heading="$t('projects.title')">
-        <Content class="sm:flex-row flex-wrap gap-4">
+        <Content class="sm:flex-row flex-wrap gap-3">
             <ProjectBlock
                 v-for="(p, i) in getProjects()"
                 :project="p"
