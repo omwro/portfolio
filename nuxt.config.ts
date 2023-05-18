@@ -10,6 +10,9 @@ export default defineNuxtConfig({
         '@pinia/nuxt',
         '@pinia-plugin-persistedstate/nuxt',
     ],
+    extends: [
+        'nuxt-seo-kit'
+    ],
     // @ts-ignore
     css: ['@/assets/css/tailwind.css'],
     i18n: {
@@ -30,5 +33,14 @@ export default defineNuxtConfig({
     },
     imports: {
         dirs: ['./stores'],
+    },
+    runtimeConfig: {
+        public: {
+            siteUrl: 'https://omererdem.nl',
+            siteName: 'Omer Erdem Portfolio Website',
+            siteDescription: 'Omer Erdem is a Software Engineer graduated in Amsterdam, The Netherlands. Take a look at his Portfolio Website so you can get to know him better, look at which type projects he has made, check his skills in programming and get in contact in case you have questions.',
+            language: 'nl-NL',
+        },
+        indexable: true
     },
 })
