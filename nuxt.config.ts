@@ -10,6 +10,7 @@ export default defineNuxtConfig({
         '@pinia/nuxt',
         '@pinia-plugin-persistedstate/nuxt',
     ],
+    // @ts-ignore
     css: ['@/assets/css/tailwind.css'],
     i18n: {
         locales: ['nl', 'en'],

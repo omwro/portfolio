@@ -4,7 +4,6 @@
     "name": "js",
     "display_name": "JavaScript",
     "role": "main",
-    "show_portfolio": true,
     "show_cv": true,
     "xp": [
       {
@@ -34,7 +33,6 @@
     "name": "css",
     "display_name": "CSS",
     "role": "main",
-    "show_portfolio": true,
     "show_cv": true,
     "xp": [
       {
@@ -64,8 +62,6 @@
     "name": "html",
     "display_name": "HTML",
     "role": "main",
-    "show_portfolio": true,
-    "show_cv": true,
     "xp": [
       {
         "months": 30,
@@ -94,8 +90,6 @@
     "name": "xml",
     "display_name": "XML",
     "role": "body",
-    "show_portfolio": false,
-    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -114,8 +108,6 @@
     "name": "md",
     "display_name": "Markdown",
     "role": "deprecated",
-    "show_portfolio": false,
-    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -134,8 +126,6 @@
     "name": "wysiwyg",
     "display_name": "WYSIWYG",
     "role": "body",
-    "show_portfolio": false,
-    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -154,7 +144,6 @@
     "name": "php",
     "display_name": "PHP",
     "role": "main",
-    "show_portfolio": true,
     "show_cv": true,
     "xp": [
       {
@@ -179,8 +168,6 @@
     "name": "java",
     "display_name": "Java",
     "role": "main",
-    "show_portfolio": true,
-    "show_cv": true,
     "xp": [
       {
         "months": 18,
@@ -194,8 +181,6 @@
     "name": "ts",
     "display_name": "Typescript",
     "role": "body",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -209,8 +194,6 @@
     "name": "kotlin",
     "display_name": "Kotlin",
     "role": "deprecated",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -224,8 +207,6 @@
     "name": "python",
     "display_name": "Python",
     "role": "main",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -244,8 +225,6 @@
     "name": "fastapi",
     "display_name": "FastAPI",
     "role": "deprecated",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 1,
@@ -259,8 +238,6 @@
     "name": "pandas",
     "display_name": "Pandas",
     "role": "deprecated",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -274,8 +251,6 @@
     "name": "detectron",
     "display_name": "Detrectron",
     "role": "deprecated",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 2,
@@ -289,8 +264,6 @@
     "name": "node",
     "display_name": "Node.JS",
     "role": "body",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 1,
@@ -304,8 +277,6 @@
     "name": "csharp",
     "display_name": "C#",
     "role": "main",
-    "show_portfolio": true,
-    "show_cv": true,
     "xp": [
       {
         "months": 12,
@@ -329,7 +300,6 @@
     "name": "vue",
     "display_name": "Vue.Js",
     "role": "body",
-    "show_portfolio": true,
     "show_cv": true,
     "xp": [
       {
@@ -379,8 +349,6 @@
     "name": "jquery",
     "display_name": "jQuery",
     "role": "body",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 18,
@@ -409,8 +377,6 @@
     "name": "angular",
     "display_name": "Angular",
     "role": "deprecated",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -424,8 +390,6 @@
     "name": "react",
     "display_name": "React.Js",
     "role": "deprecated",
-    "show_portfolio": true,
-    "show_cv": true,
     "xp": [
       {
         "months": 6,
@@ -439,8 +403,6 @@
     "name": "spring",
     "display_name": "Spring Boot",
     "role": "deprecated",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 12,
@@ -454,8 +416,6 @@
     "name": "sass",
     "display_name": "Sass/Scss",
     "role": "body",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -484,8 +444,7 @@
     "name": "magento",
     "display_name": "Magento",
     "role": "body",
-    "show_portfolio": true,
-    "show_cv": false,
+    "show_cv": true,
     "xp": [
       {
         "months": 6,
@@ -504,8 +463,6 @@
     "name": "laravel",
     "display_name": "Laravel",
     "role": "deprecated",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 2,
@@ -519,8 +476,6 @@
     "name": "bootstrap",
     "display_name": "Bootstrap",
     "role": "deprecated",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 12,
@@ -535,8 +490,6 @@
     "display_name": "Knockout.Js",
     "img": "/img/language/knockoutjs.png",
     "role": "body",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -555,8 +508,6 @@
     "name": "aspnet",
     "display_name": ".Net",
     "role": "deprecated",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 12,
@@ -575,8 +526,6 @@
     "name": "quarkus",
     "display_name": "Quarkus",
     "role": "deprecated",
-    "show_portfolio": false,
-    "show_cv": false,
     "xp": [
       {
         "months": 1,
@@ -590,8 +539,6 @@
     "name": "wordpress",
     "display_name": "WordPress",
     "role": "deprecated",
-    "show_portfolio": false,
-    "show_cv": false,
     "xp": [
       {
         "months": 1,
@@ -604,9 +551,8 @@
     "group": "js",
     "name": "nuxt",
     "display_name": "Nuxt.Js",
+    "show_cv": true,
     "role": "body",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 1,
@@ -630,8 +576,6 @@
     "name": "tailwind",
     "display_name": "TailWindCss",
     "role": "body",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 1,
@@ -655,8 +599,6 @@
     "name": "alpine",
     "display_name": "Alpine.Js",
     "role": "body",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "start": "1-10-2022",
@@ -670,8 +612,6 @@
     "name": "windows",
     "display_name": "Windows",
     "role": "main",
-    "show_portfolio": false,
-    "show_cv": false,
     "xp": [
       {
         "start": "1-1-2007",
@@ -685,8 +625,6 @@
     "name": "mysql",
     "display_name": "MySQL",
     "role": "main",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 24,
@@ -705,8 +643,6 @@
     "name": "git",
     "display_name": "Git",
     "role": "main",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 48,
@@ -730,8 +666,6 @@
     "name": "macos",
     "display_name": "MacOS",
     "role": "body",
-    "show_portfolio": false,
-    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -750,8 +684,6 @@
     "name": "rpi",
     "display_name": "Raspberry Pi",
     "role": "deprecated",
-    "show_portfolio": false,
-    "show_cv": false,
     "xp": [
       {
         "months": 3,
@@ -765,8 +697,6 @@
     "name": "ubuntu",
     "display_name": "Ubuntu",
     "role": "body",
-    "show_portfolio": false,
-    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -780,8 +710,6 @@
     "name": "apache",
     "display_name": "Apache 2",
     "role": "body",
-    "show_portfolio": false,
-    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -795,8 +723,6 @@
     "name": "docker",
     "display_name": "Docker",
     "role": "body",
-    "show_portfolio": false,
-    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -815,8 +741,6 @@
     "name": "mongodb",
     "display_name": "MongoDB",
     "role": "deprecated",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 3,
@@ -830,8 +754,6 @@
     "name": "firebase",
     "display_name": "Firebase",
     "role": "deprecated",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 3,
@@ -845,8 +767,6 @@
     "name": "eventstore",
     "display_name": "Event Store",
     "role": "deprecated",
-    "show_portfolio": true,
-    "show_cv": false,
     "xp": [
       {
         "months": 6,
@@ -858,29 +778,21 @@
   {
     "group": "Competencies",
     "name": "hardworker",
-    "display_name": "skills.hardworker",
-    "show_portfolio": true,
-    "show_cv": false
+    "display_name": "skills.hardworker"
   },
   {
     "group": "Competencies",
     "name": "teamplayer",
-    "display_name": "skills.teamplayer",
-    "show_portfolio": true,
-    "show_cv": false
+    "display_name": "skills.teamplayer"
   },
   {
     "group": "Competencies",
     "name": "problemsolver",
-    "display_name": "skills.problemsolving",
-    "show_portfolio": true,
-    "show_cv": false
+    "display_name": "skills.problemsolving"
   },
   {
     "group": "Competencies",
     "name": "creativity",
-    "display_name": "skills.creativity",
-    "show_portfolio": true,
-    "show_cv": false
+    "display_name": "skills.creativity"
   }
 ]
