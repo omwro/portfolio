@@ -44,8 +44,8 @@ export const getGroupedSkills = (skills, filter = null) => {
     return groupedData;
 };
 
-const getMonthsBetween = (dateString) => {
-    return Math.ceil(moment.duration(moment().diff(moment(dateString))).asMonths())
+const getMonthsBetween = (dateString, format = "D-M-YYYY") => {
+    return Math.ceil(moment.duration(moment().diff(moment(dateString, format))).asMonths())
 }
 
 export const getExperienceType = (skill) => {
