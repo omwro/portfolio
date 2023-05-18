@@ -1,29 +1,23 @@
 <template>
-        <Icon @click="toggle(); "
+        <Icon @click="toggleTheme(); "
               class="light-mode-icon icon"
               :name="IconMapper.sun"
               size="32px"/>
-        <Icon @click="toggle()"
+        <Icon @click="toggleTheme()"
               class="dark-mode-icon icon"
               :name="IconMapper.moon"
               size="32px"/>
 </template>
 
-<script setup>
-import { IconMapper } from "../../composables/IconMapper";
-import { toggleDarkMode } from "../../composables/useDarkMode";
-import { closeMenu } from "../../composables/useMenu";
+<script setup lang="ts">
+import { IconMapper } from "~/composables/IconMapper";
+import useTheme from "~/composables/useTheme";
+const { toggleTheme } = useTheme();
+import { useHead } from "@unhead/vue";
 
-const toggle = () => {
-    toggleDarkMode();
-    closeMenu();
-}
-</script>
-
-<script>
-export default {
-    name: "DarkModeSwitcher"
-};
+useHead({
+    script: [{ children: `if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.classList.add('dark')} else { document.documentElement.classList.remove('dark')}` }]
+})
 </script>
 
 <style scoped>

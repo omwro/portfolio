@@ -659,6 +659,30 @@
     unimport "^3.0.6"
     untyped "^1.3.2"
 
+"@nuxt/kit@^3.2.3":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.5.0.tgz#ae8d8a64936714b3603230a2861539f95dbd218e"
+  integrity sha512-QqhOPTan5cpaYCksSWdmtpldCGfnsqTd55blztMSF+OPxfGav4GE4BrBD3ZSMn2/5MxieF3GU/w5/tgcDXE3bA==
+  dependencies:
+    "@nuxt/schema" "3.5.0"
+    c12 "^1.4.1"
+    consola "^3.1.0"
+    defu "^6.1.2"
+    globby "^13.1.4"
+    hash-sum "^2.0.0"
+    ignore "^5.2.4"
+    jiti "^1.18.2"
+    knitwork "^1.0.0"
+    lodash.template "^4.5.0"
+    mlly "^1.2.1"
+    pathe "^1.1.0"
+    pkg-types "^1.0.3"
+    scule "^1.0.0"
+    semver "^7.5.1"
+    unctx "^2.3.0"
+    unimport "^3.0.6"
+    untyped "^1.3.2"
+
 "@nuxt/postcss8@^1.1.3":
   version "1.1.3"
   resolved "https://registry.npmjs.org/@nuxt/postcss8/-/postcss8-1.1.3.tgz"
@@ -685,6 +709,21 @@
     postcss-import-resolver "^2.0.0"
     std-env "^3.3.2"
     ufo "^1.1.1"
+    unimport "^3.0.6"
+    untyped "^1.3.2"
+
+"@nuxt/schema@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@nuxt/schema/-/schema-3.5.0.tgz#53ec59ea85c30813dc692fc5a6d0075eedc9dce6"
+  integrity sha512-zz7S5RTCTGSCAyfNxO0R+TYvgk7WQdHUWJiAiTFQ+iFtqQkb/re1I86Ba9VKTJjZmm3fUI5kT5Y62emJcOLlXw==
+  dependencies:
+    defu "^6.1.2"
+    hookable "^5.5.3"
+    pathe "^1.1.0"
+    pkg-types "^1.0.3"
+    postcss-import-resolver "^2.0.0"
+    std-env "^3.3.3"
+    ufo "^1.1.2"
     unimport "^3.0.6"
     untyped "^1.3.2"
 
@@ -809,6 +848,15 @@
     tailwindcss "~3.3.2"
     ufo "^1.1.1"
     uncrypto "^0.1.2"
+
+"@pinia-plugin-persistedstate/nuxt@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@pinia-plugin-persistedstate/nuxt/-/nuxt-1.1.1.tgz#53d1f26fa405aa20803da6d710c6777ab50445f2"
+  integrity sha512-b6ZNP3Re8COmfZEpj4KQmbp2TuDKrLggDFLZa8FiJF68xE/oCsPXIuXUvAt8E4ht/5sq4Z/grlA+iGXaI2aeKQ==
+  dependencies:
+    "@nuxt/kit" "^3.2.3"
+    defu "^6.1.2"
+    pinia-plugin-persistedstate ">=3.1.0"
 
 "@pinia/nuxt@^0.4.10":
   version "0.4.10"
@@ -3424,6 +3472,16 @@ mlly@^1.0.0, mlly@^1.1.0, mlly@^1.2.0:
     pkg-types "^1.0.2"
     ufo "^1.1.1"
 
+mlly@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/mlly/-/mlly-1.2.1.tgz#cd50151f5712b651c5c379085157bcdff661133b"
+  integrity sha512-1aMEByaWgBPEbWV2BOPEMySRrzl7rIHXmQxam4DM8jVjalTQDjpN2ZKOLUrwyhfZQO7IXHml2StcHMhooDeEEQ==
+  dependencies:
+    acorn "^8.8.2"
+    pathe "^1.1.0"
+    pkg-types "^1.0.3"
+    ufo "^1.1.2"
+
 moment@^2.29.4:
   version "2.29.4"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
@@ -3923,6 +3981,11 @@ pify@^2.3.0:
   version "2.3.0"
   resolved "https://registry.npmjs.org/pify/-/pify-2.3.0.tgz"
   integrity sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==
+
+pinia-plugin-persistedstate@>=3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/pinia-plugin-persistedstate/-/pinia-plugin-persistedstate-3.1.0.tgz#eada2b61ecd478fce88e490a685210415cd7a1b4"
+  integrity sha512-8UN+vYMEPBdgNLwceY08mi5olI0wkYaEb8b6hD6xW7SnBRuPydWHlEhZvUWgNb/ibuf4PvufpvtS+dmhYjJQOw==
 
 pinia@>=2.0.36:
   version "2.0.36"
@@ -4546,6 +4609,13 @@ semver@^7.3.4, semver@^7.3.5, semver@^7.5.0:
   version "7.5.0"
   resolved "https://registry.npmjs.org/semver/-/semver-7.5.0.tgz"
   integrity sha512-+XC0AD/R7Q2mPSRuy2Id0+CGTZ98+8f+KvwirxOKIEyid+XSx6HbC63p+O4IndTHuX5Z+JxQ0TghCkO5Cg/2HA==
+  dependencies:
+    lru-cache "^6.0.0"
+
+semver@^7.5.1:
+  version "7.5.1"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.1.tgz#c90c4d631cf74720e46b21c1d37ea07edfab91ec"
+  integrity sha512-Wvss5ivl8TMRZXXESstBA4uR5iXgEN/VC5/sOcuXdVLzcdkz4HWetIoRfG5gb5X+ij/G9rw9YoGn3QoQ8OCSpw==
   dependencies:
     lru-cache "^6.0.0"
 

@@ -7,6 +7,8 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         '@nuxtjs/i18n',
         'nuxt-icon',
+        '@pinia/nuxt',
+        '@pinia-plugin-persistedstate/nuxt',
     ],
     css: ['@/assets/css/tailwind.css'],
     i18n: {
@@ -24,5 +26,8 @@ export default defineNuxtConfig({
             alwaysRedirect: true,
             redirectOn: 'root',
         }
-    }
+    },
+    imports: {
+        dirs: ['./stores'],
+    },
 })
