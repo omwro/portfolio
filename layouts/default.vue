@@ -1,10 +1,12 @@
 <template>
-    <Header/>
-    <main>
-        <slot/>
-    </main>
-    <Footer/>
-    <Menu/>
+    <div id="app" class="bg-primary-bg-light text-primary-text-dark dark:bg-primary-bg-dark dark:text-primary-text-light">
+        <Header/>
+        <main>
+            <slot/>
+        </main>
+        <Footer/>
+        <Menu/>
+    </div>
 </template>
 
 <script setup>

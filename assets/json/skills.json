@@ -794,5 +794,10 @@
     "group": "Competencies",
     "name": "creativity",
     "display_name": "skills.creativity"
+  },
+  {
+    "group": "Competencies",
+    "name": "snakearrow",
+    "display_name": "skills.edgecase"
   }
 ]

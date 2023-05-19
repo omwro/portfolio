@@ -1,12 +1,15 @@
 <template>
-    <div id="app" class="bg-primary-bg-light text-primary-text-dark dark:bg-primary-bg-dark dark:text-primary-text-light">
-        <SeoKit />
-        <NuxtPage />
-    </div>
+    <SeoKit/>
+    <NuxtPage/>
 </template>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+html,
+body {
+    background-color: white;
+}
 
 html,
 body,

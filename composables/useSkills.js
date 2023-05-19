@@ -1,6 +1,6 @@
 import moment from "moment/moment";
 
-export const getExperienceString = (skill, $t, abbreviation = false) => {
+export const getExperienceString = (skill, $t, abbreviation = false, locale = null) => {
     if (!skill.xp.length) return "";
     const totalxp = skill.xp
         .map((x) => {
@@ -8,22 +8,32 @@ export const getExperienceString = (skill, $t, abbreviation = false) => {
             if (x.start) return getMonthsBetween(x.start)
         })
         .reduce((prevValue, currValue) => prevValue + currValue);
-    return getExperienceText(totalxp, $t, abbreviation)
+    return getExperienceText(totalxp, $t, abbreviation, locale)
 };
-const getExperienceText = (totalxp, $t, abbreviation) => {
+const getExperienceText = (totalxp, $t, abbreviation, locale) => {
     let years = Math.floor(totalxp / 12);
-    if (years) return getYearText(years, $t, abbreviation);
-    return getMonthText(totalxp, $t, abbreviation);
+    if (years) return getYearText(years, $t, abbreviation, locale);
+    return getMonthText(totalxp, $t, abbreviation, locale);
 }
-const getYearText = (years, $t, abbreviation) => {
-    if (abbreviation) return `${years}${$t("skills.y")}`;
-    else if (years > 1) return `${years} ${$t("skills.years")}`;
-    return `${years} ${$t("skills.year")}`;
+const getYearText = (years, $t, abbreviation, locale) => {
+    if (!locale) {
+        if (abbreviation) return `${years}${$t("skills.y")}`;
+        else if (years > 1) return `${years} ${$t("skills.years")}`;
+        return `${years} ${$t("skills.year")}`;
+    }
+    if (abbreviation) return `${years}${$t("skills.y", 1, {locale})}`;
+    else if (years > 1) return `${years} ${$t("skills.years", 1, {locale})}`;
+    return `${years} ${$t("skills.year", 1, {locale})}`;
 };
-const getMonthText = (totalXp, $t, abbreviation) => {
-    if (abbreviation) return `${totalXp}${$t("skills.m")}`;
-    else if (totalXp > 1) return `${totalXp} ${$t("skills.months")}`;
-    return `${totalXp} ${$t("skills.month")}`;
+const getMonthText = (totalXp, $t, abbreviation, locale) => {
+    if (!locale) {
+        if (abbreviation) return `${totalXp}${$t("skills.m")}`;
+        else if (totalXp > 1) return `${totalXp} ${$t("skills.months")}`;
+        return `${totalXp} ${$t("skills.month")}`;
+    }
+    if (abbreviation) return `${totalXp}${$t("skills.m", 1, {locale})}`;
+    else if (totalXp > 1) return `${totalXp} ${$t("skills.months", 1, {locale})}`;
+    return `${totalXp} ${$t("skills.month", 1, {locale})}`;
 };
 
 export const getGroupedSkills = (skills, filter = null) => {

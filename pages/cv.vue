@@ -20,11 +20,11 @@
                 </div>
                 <div class="px-0 py-1">
                     <span class="font-bold">Area:</span>
-                    <span class="color-grey">{{ $t("general.area") }}</span>
+                    <span class="color-grey">{{ $t("general.area", 1, {locale: "en"}) }}</span>
                 </div>
                 <div class="px-0 py-1">
                     <span class="font-bold">Email:</span>
-                    <span class="color-grey">{{ $t("general.email") }}</span>
+                    <span class="color-grey">info@omererdem.nl</span>
                 </div>
                 <div class="px-0 py-1">
                     <span class="font-bold">Tel:</span>
@@ -34,7 +34,7 @@
             <div class="w-[330px]">
                 <div class="text-xl text-center mb-2 font-bold">ABOUT ME</div>
                 <div class="text-sm leading-[1.35] color-grey">
-                    {{ $t("about.paragraph1", "en") }}
+                    {{ $t("about.paragraph1", 1, {locale: "en"}) }}
                 </div>
             </div>
         </div>
@@ -48,11 +48,11 @@
                         v-if="!edu.hidecv">
                         <div class="timeperiod">
                             {{ edu.startdate }} -
-                            {{ edu.enddate !== null ? edu.enddate : "Present" }}
+                            {{ edu.enddate !== null ? edu.enddate : $t("timeline.present", 1, {locale: "en"}) }}
                         </div>
-                        <div class="text-base font-bold">{{ $t(edu.role, "en") }}</div>
+                        <div class="text-base font-bold">{{ $t(edu.role, 1, {locale: "en"}) }}</div>
                         <div class="text-xs font-bold">{{ edu.company }}</div>
-                        <div class="leading-[1.4]">{{ $t(edu.desc, "en") }}</div>
+                        <div class="leading-[1.4]">{{ $t(edu.desc, 1, {locale: "en"}) }}</div>
                     </div>
                 </template>
             </div>
@@ -66,11 +66,11 @@
                     :key="xp.role">
                     <div class="timeperiod">
                         {{ xp.startdate }} -
-                        {{ xp.enddate !== null ? xp.enddate : "Present" }}
+                        {{ xp.enddate !== null ? xp.enddate : $t("timeline.present", 1, {locale: "en"}) }}
                     </div>
-                    <div class="text-base font-bold">{{ $t(xp.role, "en") }}</div>
+                    <div class="text-base font-bold">{{ $t(xp.role, 1, {locale: "en"}) }}</div>
                     <div class="text-xs font-bold">{{ xp.company }}</div>
-                    <div class="leading-[1.4]">{{ $t(xp.desc, "en") }}</div>
+                    <div class="leading-[1.4]">{{ $t(xp.desc, 1, {locale: "en"}) }}</div>
                 </div>
             </div>
         </div>
@@ -84,7 +84,7 @@
                         <IconWrapper :name="cv.name" size="64" />
                         <div class="flex flex-col">
                             <div>{{ cv.display_name }}</div>
-                            <div>{{ getExperienceString(cv, $t) }}</div>
+                            <div>{{ getExperienceString(cv, $t, false, "en") }}</div>
                         </div>
 
                     </div>
@@ -104,7 +104,7 @@ import skills from "../assets/json/skills.json";
 import { getExperienceString } from "../composables/useSkills";
 import IconWrapper from "../components/elements/IconWrapper";
 const getEducation = () => timeline.filter((x) => x.type === "Study")
-const getExperience = () => timeline.filter((x) => x.type === "Internship")
+const getExperience = () => timeline.filter((x) => x.type === "Internship" || x.type === "Work").slice(0, 4)
 const getCVSkills = () => skills.filter((x) => x.show_cv === true)
 </script>
 

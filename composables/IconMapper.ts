@@ -64,4 +64,5 @@ export enum IconMapper {
     work = "ion:business",
     education = "ion:university",
     hobby = "mdi:puzzle",
+    snakearrow = "streamline:interface-arrows-curvy-right-snake-arrow-sideways-diagram-right"
 }
