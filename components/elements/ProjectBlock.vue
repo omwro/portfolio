@@ -1,6 +1,6 @@
 <template>
     <a :href="'/projects/' + project.id" class="relative cursor-pointer rounded-[20px] overflow-hidden">
-        <nuxt-img :src="project.img" :alt="project.title" class="w-[380px] h-[250px] object-cover relative"/>
+        <nuxt-img :src="project.img" :alt="project.title" class="object-cover relative" width="380" height="250"/>
         <div class="text-2xl absolute w-fit text-primary-text-light mx-auto my-0 p-1.5 top-0 left-0 bg-[rgba(0,0,0,0.7)] rounded-br-xl">
             <IconWrapper :name="project.mainstack" size="32px"/>
         </div>
