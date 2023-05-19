@@ -3,7 +3,7 @@
         class="fixed top-0 left-0 z-10 flex w-full items-center justify-between border-b p-3 transition duration-500 bg-primary-bg-light border-b-primary dark:bg-primary-bg-dark">
         <div>
             <a href="/#home">
-                <img alt="logo"
+                <nuxt-img alt="logo"
                      class="m-auto max-h-6 cursor-pointer dark:invert"
                      src="/img/company/logo.webp" />
             </a>
@@ -23,9 +23,9 @@
                 <DarkModeSwitcher />
                 <LanguageSwitcher />
             </nav>
-            <Icon @click="openMenu()"
+            <IconWrapper @click="openMenu()"
                   class="hamburger"
-                  :name="IconMapper.hamburger"
+                  name="hamburger"
                   size="32px" />
         </div>
     </header>
@@ -36,8 +36,8 @@
 import nav from "../../assets/json/navigation.json";
 import LanguageSwitcher from "../elements/LanguageSwitcher";
 import DarkModeSwitcher from "../elements/DarkModeSwitcher";
-import { IconMapper } from "../../composables/IconMapper";
 import { openMenu } from "../../composables/useMenu";
+import IconWrapper from "../elements/IconWrapper";
 </script>
 
 <script>

@@ -27,8 +27,8 @@
                         rel="noopener"
                         target="_blank"
                         class="flex flex-row place-items-center">
-                        <Icon class="text-primary-text-dark mr-2 dark:text-primary-text-light"
-                              :name="IconMapper.github"
+                        <IconWrapper class="text-primary-text-dark mr-2 dark:text-primary-text-light"
+                              name="github"
                               size="24px"/>
                         <div>{{ $t("projects.viewongithub") }}</div>
                     </a>
@@ -39,8 +39,8 @@
                         rel="noopener"
                         target="_blank"
                         class="flex flex-row place-items-center">
-                        <Icon class="text-primary-text-dark dark:text-primary-text-light mr-2"
-                              :name="IconMapper.www"
+                        <IconWrapper class="text-primary-text-dark dark:text-primary-text-light mr-2"
+                              name="www"
                               size="24px"/>
                         <div>{{ $t("projects.viewonwebsite") }}</div>
                     </a>
@@ -61,7 +61,7 @@ import Section from "../../components/elements/Section";
 import Content from "../../components/elements/Content";
 import BreadcrumbLink from "../../components/elements/BreadcrumbLink";
 import SkillChip from "../../components/elements/SkillChip";
-import { IconMapper } from "../../composables/IconMapper";
+import IconWrapper from "../../components/elements/IconWrapper";
 
 const project =  projects.find(x => x.id === parseInt(useRoute().params.id))
 const getLanguages = (array) => skills.filter(x => array.includes(x.name))

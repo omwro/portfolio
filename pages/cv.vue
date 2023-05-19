@@ -81,7 +81,7 @@
                     <div class="flex flex-row text-base items-center gap-1"
                         v-for="cv in getCVSkills()"
                         :key="cv.name">
-                        <Icon :name="IconMapper[cv.name]" size="64" />
+                        <IconWrapper :name="cv.name" size="64" />
                         <div class="flex flex-col">
                             <div>{{ cv.display_name }}</div>
                             <div>{{ getExperienceString(cv, $t) }}</div>
@@ -101,9 +101,8 @@
 <script setup>
 import timeline from "../assets/json/timeline.json";
 import skills from "../assets/json/skills.json";
-import { IconMapper } from "../composables/IconMapper";
 import { getExperienceString } from "../composables/useSkills";
-
+import IconWrapper from "../components/elements/IconWrapper";
 const getEducation = () => timeline.filter((x) => x.type === "Study")
 const getExperience = () => timeline.filter((x) => x.type === "Internship")
 const getCVSkills = () => skills.filter((x) => x.show_cv === true)

@@ -12,17 +12,17 @@
             <div>
                 <div class="flex flex-row">
                     <div v-for="(c, i) in contact" :key="i" class="items-center">
-                        <a :href="c.url" class="p-2 group hover:bg-primary hover:rounded-lg">
-                            <Icon class="text-primary-text-dark dark:text-primary-text-light group-hover:text-primary-text-light"
-                                  :name="IconMapper[c.icon]"
+                        <a :href="c.url" class="p-2 group hover:bg-primary hover:rounded-lg" :aria-label="c.name">
+                            <IconWrapper class="text-primary-text-dark dark:text-primary-text-light group-hover:text-primary-text-light"
+                                  :name="c.icon"
                                   size="32px"/>
                         </a>
                     </div>
                 </div>
                 <a href="#about" class="text-base w-fit text-primary-text-dark dark:text-primary-text-light group flex flex-row gap-2 items-center no-underline p-2 rounded-[10px] border border-primary hover:bg-primary hover:text-primary-text-light">
                     <span class="group-hover:text-primary-text-light">{{ $t("home.readmore") }}</span>
-                    <Icon class="group-hover:text-primary-text-light animate-bounce"
-                          :name="IconMapper.arrowDown"
+                    <IconWrapper class="group-hover:text-primary-text-light animate-bounce"
+                          name="arrowDown"
                           size="32px"/>
                 </a>
             </div>
@@ -34,7 +34,7 @@
 import contact from "../../assets/json/contact.json";
 import Selfie from "../elements/Selfie";
 import Section from "../elements/Section";
-import { IconMapper } from "../../composables/IconMapper";
+import IconWrapper from "../elements/IconWrapper";
 </script>
 
 <script>

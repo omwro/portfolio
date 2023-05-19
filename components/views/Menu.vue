@@ -3,9 +3,9 @@
         class="flex flex-wrap flex-col fixed h-fit max-h-[calc(100%_-_32px)] w-0 bg-primary-bg-light dark:bg-primary-bg-dark z-[15] transition-[0.5s] p-0 border-l border-l-transparent border-b border-b-transparent right-0 inset-y-0">
         <div class="flex flex-row items-center justify-between p-3 text-2xl">
             <div class="border-b-[solid] border-b-primary">Menu</div>
-            <Icon @click="closeMenu()"
+            <IconWrapper @click="closeMenu()"
                   class="cursor-pointer hover:rotate-[90deg] hover:transition-[1s]"
-                  :name="IconMapper.close"
+                  name="close"
                   size="32px" />
         </div>
         <div class="m-2 mb-4 flex flex-col gap-2">
@@ -27,8 +27,8 @@
 import nav from "../../assets/json/navigation.json";
 import DarkModeSwitcher from "../elements/DarkModeSwitcher";
 import LanguageSwitcher from "../elements/LanguageSwitcher";
-import { IconMapper } from "../../composables/IconMapper";
 import { closeMenu } from "../../composables/useMenu";
+import IconWrapper from "../elements/IconWrapper";
 </script>
 
 <script>
