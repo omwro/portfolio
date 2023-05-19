@@ -1,0 +1,798 @@
+[
+  {
+    "group": "js",
+    "name": "js",
+    "display_name": "JavaScript",
+    "role": "main",
+    "show_cv": true,
+    "xp": [
+      {
+        "months": 30,
+        "type": "education",
+        "desc": "Regio"
+      },
+      {
+        "months": 30,
+        "type": "education",
+        "desc": "HvA"
+      },
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "css",
+    "name": "css",
+    "display_name": "CSS",
+    "role": "main",
+    "show_cv": true,
+    "xp": [
+      {
+        "months": 30,
+        "type": "education",
+        "desc": "Regio"
+      },
+      {
+        "months": 30,
+        "type": "education",
+        "desc": "HvA"
+      },
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "html",
+    "name": "html",
+    "display_name": "HTML",
+    "role": "main",
+    "xp": [
+      {
+        "months": 30,
+        "type": "education",
+        "desc": "Regio"
+      },
+      {
+        "months": 30,
+        "type": "education",
+        "desc": "HvA"
+      },
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "html",
+    "name": "xml",
+    "display_name": "XML",
+    "role": "body",
+    "xp": [
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "html",
+    "name": "md",
+    "display_name": "Markdown",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "html",
+    "name": "wysiwyg",
+    "display_name": "WYSIWYG",
+    "role": "body",
+    "xp": [
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "php",
+    "name": "php",
+    "display_name": "PHP",
+    "role": "main",
+    "show_cv": true,
+    "xp": [
+      {
+        "months": 24,
+        "type": "education",
+        "desc": "Regio "
+      },
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "java",
+    "name": "java",
+    "display_name": "Java",
+    "role": "main",
+    "xp": [
+      {
+        "months": 18,
+        "type": "education",
+        "desc": "HvA oop & pad, ads & ewa, barber2u"
+      }
+    ]
+  },
+  {
+    "group": "js",
+    "name": "ts",
+    "display_name": "Typescript",
+    "role": "body",
+    "xp": [
+      {
+        "months": 6,
+        "type": "education",
+        "desc": "HvA angular, barber2u"
+      }
+    ]
+  },
+  {
+    "group": "java",
+    "name": "kotlin",
+    "display_name": "Kotlin",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 6,
+        "type": "education",
+        "desc": "HvA3 mobile dev"
+      }
+    ]
+  },
+  {
+    "group": "python",
+    "name": "python",
+    "display_name": "Python",
+    "role": "main",
+    "xp": [
+      {
+        "months": 6,
+        "type": "education",
+        "desc": "Hva Data Science"
+      },
+      {
+        "months": 1,
+        "type": "hobby",
+        "desc": "fastapi"
+      }
+    ]
+  },
+  {
+    "group": "python",
+    "name": "fastapi",
+    "display_name": "FastAPI",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 1,
+        "type": "hobby",
+        "desc": "fastapi"
+      }
+    ]
+  },
+  {
+    "group": "python",
+    "name": "pandas",
+    "display_name": "Pandas",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 6,
+        "type": "education",
+        "desc": "Hva Data Science"
+      }
+    ]
+  },
+  {
+    "group": "python",
+    "name": "detectron",
+    "display_name": "Detrectron",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 2,
+        "type": "education",
+        "desc": "Hva Data Science"
+      }
+    ]
+  },
+  {
+    "group": "js",
+    "name": "node",
+    "display_name": "Node.JS",
+    "role": "body",
+    "xp": [
+      {
+        "months": 1,
+        "type": "hobby",
+        "desc": "puppeteer"
+      }
+    ]
+  },
+  {
+    "group": "csharp",
+    "name": "csharp",
+    "display_name": "C#",
+    "role": "main",
+    "xp": [
+      {
+        "months": 12,
+        "type": "education",
+        "desc": "Regio"
+      },
+      {
+        "months": 6,
+        "type": "education",
+        "desc": "Kenneth&Koh"
+      },
+      {
+        "months": 6,
+        "type": "education",
+        "desc": "Infi"
+      }
+    ]
+  },
+  {
+    "group": "js",
+    "name": "vue",
+    "display_name": "Vue.Js",
+    "role": "body",
+    "show_cv": true,
+    "xp": [
+      {
+        "months": 3,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "months": 1,
+        "type": "education",
+        "desc": "hvablend"
+      },
+      {
+        "months": 3,
+        "type": "hobby",
+        "desc": "Portfolio"
+      },
+      {
+        "months": 1,
+        "type": "hobby",
+        "desc": "Metafy"
+      },
+      {
+        "months": 1,
+        "type": "hobby",
+        "desc": "Other projects (zamfir, cv)"
+      },
+      {
+        "months": 1,
+        "type": "work",
+        "desc": "raifkaya"
+      },
+      {
+        "months": 1,
+        "type": "work",
+        "desc": "deugderdem"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "js",
+    "name": "jquery",
+    "display_name": "jQuery",
+    "role": "body",
+    "xp": [
+      {
+        "months": 18,
+        "type": "education",
+        "desc": "Regio"
+      },
+      {
+        "months": 6,
+        "type": "education",
+        "desc": "hva1"
+      },
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2023"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "js",
+    "name": "angular",
+    "display_name": "Angular",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 6,
+        "type": "education",
+        "desc": "hva2"
+      }
+    ]
+  },
+  {
+    "group": "js",
+    "name": "react",
+    "display_name": "React.Js",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 6,
+        "type": "education",
+        "desc": "hva barber2u"
+      }
+    ]
+  },
+  {
+    "group": "java",
+    "name": "spring",
+    "display_name": "Spring Boot",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 12,
+        "type": "education",
+        "desc": "hva2 & hva3"
+      }
+    ]
+  },
+  {
+    "group": "css",
+    "name": "sass",
+    "display_name": "Sass/Scss",
+    "role": "body",
+    "xp": [
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "months": 6,
+        "type": "education",
+        "desc": "barber2u"
+      },
+      {
+        "months": 2,
+        "type": "hobby",
+        "desc": "portfolio"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "php",
+    "name": "magento",
+    "display_name": "Magento",
+    "role": "body",
+    "show_cv": true,
+    "xp": [
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "php",
+    "name": "laravel",
+    "display_name": "Laravel",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 2,
+        "type": "work",
+        "desc": "Bold 2020"
+      }
+    ]
+  },
+  {
+    "group": "css",
+    "name": "bootstrap",
+    "display_name": "Bootstrap",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 12,
+        "type": "education",
+        "desc": "Regio"
+      }
+    ]
+  },
+  {
+    "group": "js",
+    "name": "knockout",
+    "display_name": "Knockout.Js",
+    "img": "/img/language/knockoutjs.png",
+    "role": "body",
+    "xp": [
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "csharp",
+    "name": "aspnet",
+    "display_name": ".Net",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 12,
+        "type": "education",
+        "desc": "Regio"
+      },
+      {
+        "months": 1,
+        "type": "education",
+        "desc": "Infi"
+      }
+    ]
+  },
+  {
+    "group": "java",
+    "name": "quarkus",
+    "display_name": "Quarkus",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 1,
+        "type": "education",
+        "desc": "HvaBlend"
+      }
+    ]
+  },
+  {
+    "group": "php",
+    "name": "wordpress",
+    "display_name": "WordPress",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 1,
+        "type": "education",
+        "desc": "Digidot"
+      }
+    ]
+  },
+  {
+    "group": "js",
+    "name": "nuxt",
+    "display_name": "Nuxt.Js",
+    "show_cv": true,
+    "role": "body",
+    "xp": [
+      {
+        "months": 1,
+        "type": "work",
+        "desc": "raifkaya"
+      },
+      {
+        "months": 1,
+        "type": "work",
+        "desc": "deugderdem"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "css",
+    "name": "tailwind",
+    "display_name": "TailWindCss",
+    "role": "body",
+    "xp": [
+      {
+        "months": 1,
+        "type": "work",
+        "desc": "raifkaya"
+      },
+      {
+        "months": 1,
+        "type": "work",
+        "desc": "deugderdem"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "js",
+    "name": "alpine",
+    "display_name": "Alpine.Js",
+    "role": "body",
+    "xp": [
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "windows",
+    "name": "windows",
+    "display_name": "Windows",
+    "role": "main",
+    "xp": [
+      {
+        "start": "1-1-2007",
+        "type": "hobby",
+        "desc": "t/m 2022"
+      }
+    ]
+  },
+  {
+    "group": "mysql",
+    "name": "mysql",
+    "display_name": "MySQL",
+    "role": "main",
+    "xp": [
+      {
+        "months": 24,
+        "type": "education",
+        "desc": "Regio"
+      },
+      {
+        "months": 24,
+        "type": "education",
+        "desc": "hva1,2,3"
+      }
+    ]
+  },
+  {
+    "group": "git",
+    "name": "git",
+    "display_name": "Git",
+    "role": "main",
+    "xp": [
+      {
+        "months": 48,
+        "type": "education",
+        "desc": "hva"
+      },
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "windows",
+    "name": "macos",
+    "display_name": "MacOS",
+    "role": "body",
+    "xp": [
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "windows",
+    "name": "rpi",
+    "display_name": "Raspberry Pi",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 3,
+        "type": "hobby",
+        "desc": "hobby projects"
+      }
+    ]
+  },
+  {
+    "group": "windows",
+    "name": "ubuntu",
+    "display_name": "Ubuntu",
+    "role": "body",
+    "xp": [
+      {
+        "months": 6,
+        "type": "hobby",
+        "desc": "rpi & digital ocean"
+      }
+    ]
+  },
+  {
+    "group": "git",
+    "name": "apache",
+    "display_name": "Apache 2",
+    "role": "body",
+    "xp": [
+      {
+        "months": 6,
+        "type": "hobby",
+        "desc": "rpi & digital ocean"
+      }
+    ]
+  },
+  {
+    "group": "git",
+    "name": "docker",
+    "display_name": "Docker",
+    "role": "body",
+    "xp": [
+      {
+        "months": 6,
+        "type": "work",
+        "desc": "Bold 2020"
+      },
+      {
+        "start": "1-10-2022",
+        "type": "work",
+        "desc": "Bold 2023"
+      }
+    ]
+  },
+  {
+    "group": "mysql",
+    "name": "mongodb",
+    "display_name": "MongoDB",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 3,
+        "type": "education",
+        "desc": "barber2u"
+      }
+    ]
+  },
+  {
+    "group": "mysql",
+    "name": "firebase",
+    "display_name": "Firebase",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 3,
+        "type": "education",
+        "desc": "webframeworks & mobile dev"
+      }
+    ]
+  },
+  {
+    "group": "mysql",
+    "name": "eventstore",
+    "display_name": "Event Store",
+    "role": "deprecated",
+    "xp": [
+      {
+        "months": 6,
+        "type": "education",
+        "desc": "Infi"
+      }
+    ]
+  },
+  {
+    "group": "Competencies",
+    "name": "hardworker",
+    "display_name": "skills.hardworker"
+  },
+  {
+    "group": "Competencies",
+    "name": "teamplayer",
+    "display_name": "skills.teamplayer"
+  },
+  {
+    "group": "Competencies",
+    "name": "problemsolver",
+    "display_name": "skills.problemsolving"
+  },
+  {
+    "group": "Competencies",
+    "name": "creativity",
+    "display_name": "skills.creativity"
+  }
+]

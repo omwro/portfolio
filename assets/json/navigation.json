@@ -1,0 +1,32 @@
+[
+  {
+    "href": "/#home",
+    "name": "Home",
+    "translate": "home.title"
+  },
+  {
+    "href": "/#about",
+    "name": "About",
+    "translate": "about.title"
+  },
+  {
+    "href": "/#projects",
+    "name": "Projects",
+    "translate": "projects.title"
+  },
+  {
+    "href": "/#skills",
+    "name": "Skills",
+    "translate": "skills.title"
+  },
+  {
+    "href": "/#timeline",
+    "name": "Timeline",
+    "translate": "timeline.title"
+  },
+  {
+    "href": "/#socials",
+    "name": "Socials",
+    "translate": "socials.title"
+  }
+]

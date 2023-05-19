@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Email",
+    "icon": "mail",
+    "url": "mailto:public.omererdem@outlook.com",
+    "color": {
+      "r": 0,
+      "g": 144,
+      "b": 198
+    }
+  },
+  {
+    "name": "Discord",
+    "icon": "discord",
+    "url": "https://discord.gg/UnhW4ykFFp",
+    "color": {
+      "r": 115,
+      "g": 138,
+      "b": 219
+    }
+  },
+  {
+    "name": "LinkedIn",
+    "icon": "linkedin",
+    "url": "https://www.linkedin.com/in/omer-erdem-179745153?ref=omererdem.nl",
+    "color": {
+      "r": 0,
+      "g": 97,
+      "b": 146
+    }
+  },
+  {
+    "name": "GitHub",
+    "icon": "github",
+    "url": "https://github.com/omwro?ref=omererdem.nl",
+    "color": {
+      "r": 33,
+      "g": 31,
+      "b": 31
+    }
+  },
+  {
+    "name": "CV",
+    "icon": "resume",
+    "url": "https://omererdem.nl/cv",
+    "color": {
+      "r": 181,
+      "g": 28,
+      "b": 20
+    }
+  }
+]

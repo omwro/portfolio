@@ -1,0 +1,218 @@
+[
+  {
+    "id": 0,
+    "type": "hobby",
+    "title": "Portfolio",
+    "desc": "projects.desc.portfolio",
+    "img": "/img/project/project_website.webp",
+    "url": "https://omererdem.nl",
+    "github": "https://github.com/omwro/portfoliovue",
+    "homepage": true,
+    "live": true,
+    "mainstack": "vue",
+    "stack": [
+      "html",
+      "js",
+      "css",
+      "vue",
+      "sass"
+    ]
+  },
+  {
+    "id": 1,
+    "type": "hobby",
+    "title": "Metafy",
+    "desc": "projects.desc.metafyweb",
+    "img": "/img/project/project_metafy_vue.webp",
+    "url": "https://metafy.omererdem.nl",
+    "github": "https://github.com/omwro/metafy-vue",
+    "homepage": true,
+    "live": true,
+    "mainstack": "vue",
+    "stack": [
+      "html",
+      "js",
+      "css",
+      "vue",
+      "sass"
+    ]
+  },
+  {
+    "id": 2,
+    "type": "hobby",
+    "title": "Alex's Portfolio",
+    "desc": "projects.desc.zamfir",
+    "img": "/img/project/zamfir.png",
+    "url": "https://zamfir.nl",
+    "github": "https://github.com/omwro/portfolio-az",
+    "live": true,
+    "mainstack": "vue",
+    "stack": [
+      "html",
+      "js",
+      "css",
+      "vue",
+      "sass"
+    ]
+  },
+  {
+    "id": 3,
+    "type": "hobby",
+    "title": "GitFlow",
+    "desc": "projects.desc.gitflow",
+    "img": "/img/project/project-gitflow.webp",
+    "github": "https://github.com/omwro/gitflow",
+    "mainstack": "vue",
+    "stack": [
+      "html",
+      "js",
+      "css",
+      "vue",
+      "sass"
+    ]
+  },
+  {
+    "id": 4,
+    "type": "hobby",
+    "title": "GPU Tracker",
+    "desc": "projects.desc.gputracker",
+    "img": "/img/stock/missing.jpg",
+    "url": null,
+    "github": "https://github.com/omwro/GpuTracker",
+    "mainstack": "node",
+    "stack": [
+      "js",
+      "node"
+    ]
+  },
+  {
+    "id": 5,
+    "type": "hobby",
+    "title": "War of Warlord",
+    "desc": "projects.desc.minecraft",
+    "img": "/img/project/minecraft.webp",
+    "url": null,
+    "github": "https://github.com/omwro/WarOfWarlord",
+    "mainstack": "java",
+    "stack": [
+      "java"
+    ]
+  },
+  {
+    "id": 6,
+    "type": "intern",
+    "title": "KPI interface",
+    "desc": "projects.desc.kpi",
+    "img": "/img/stock/classified.jpg",
+    "url": null,
+    "github": null,
+    "mainstack": "aspnet",
+    "stack": [
+      "html",
+      "css",
+      "js",
+      "csharp",
+      "aspnet"
+    ]
+  },
+  {
+    "id": 7,
+    "type": "intern",
+    "title": "Support Dashboard",
+    "desc": "projects.desc.bold",
+    "img": "/img/stock/classified.jpg",
+    "url": null,
+    "github": null,
+    "mainstack": "vue",
+    "stack": [
+      "html",
+      "css",
+      "js",
+      "php",
+      "vue",
+      "sass",
+      "laravel"
+    ]
+  },
+  {
+    "id": 8,
+    "type": "intern",
+    "title": "NMEA Sensor Reader",
+    "desc": "projects.desc.mobilecompany",
+    "img": "/img/stock/classified.jpg",
+    "isMobile": true,
+    "url": null,
+    "github": null,
+    "mainstack": "kotlin",
+    "stack": [
+      "kotlin"
+    ]
+  },
+  {
+    "id": 9,
+    "type": "intern",
+    "title": "Firmware Interface",
+    "desc": "projects.desc.firmware",
+    "img": "/img/stock/classified.jpg",
+    "url": null,
+    "github": null,
+    "mainstack": "js",
+    "stack": [
+      "html",
+      "css",
+      "js",
+      "php",
+      "wordpress"
+    ]
+  },
+  {
+    "id": 10,
+    "type": "study",
+    "title": "Barber2U",
+    "desc": "projects.desc.barber2u",
+    "img": "/img/project/project_barber2u.webp",
+    "url": null,
+    "github": null,
+    "homepage": true,
+    "mainstack": "react",
+    "stack": [
+      "html",
+      "css",
+      "java",
+      "ts",
+      "react",
+      "spring",
+      "sass",
+      "mongodb"
+    ]
+  },
+  {
+    "id": 11,
+    "type": "study",
+    "title": "Metafy App",
+    "desc": "projects.desc.metafyapp",
+    "img": "/img/project/project_metafy.webp",
+    "isMobile": true,
+    "url": null,
+    "github": "https://github.com/omwro/MetafyKotlin",
+    "mainstack": "kotlin",
+    "stack": [
+      "kotlin",
+      "xml"
+    ]
+  },
+  {
+    "id": 12,
+    "type": "study",
+    "title": "Lantern Detector",
+    "desc": "projects.desc.lantern",
+    "img": "/img/project/lantern.png",
+    "isMobile": true,
+    "url": null,
+    "github": null,
+    "mainstack": "python",
+    "stack": [
+      "python"
+    ]
+  }
+]
