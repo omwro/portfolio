@@ -5,14 +5,14 @@
             <div class="flex flex-row justify-between items-center">
                 <h3 class="text-xl font-bold pl-2">{{ mainSkill.display_name }}</h3>
                 <div class="flex flex-row gap-4">
-                    <Icon :name="IconMapper[getExperienceType(mainSkill)]" size="24"
+                    <IconWrapper :name="getExperienceType(mainSkill)" size="24"
                           class="text-primary dark:text-primary-text-light " />
                     <LivePulse v-if="isSkillLive(mainSkill)"/>
                 </div>
             </div>
             <div
                 class="w-full border-4 border bg-gradient-to-br text-center border-primary from-primary-bg-dark to-primary-light">
-                <Icon :name="IconMapper[mainSkill.name]" size="128px" class="text-primary-text-light p-2" />
+                <IconWrapper :name="mainSkill.name" size="128px" class="text-primary-text-light p-2" />
             </div>
             <div class="w-full border text-center border-primary bg-primary text-primary-text-light leading-[0]">
                 <span class="text-sm">{{ getExperienceString(mainSkill, $t) }} {{ $t("skills.xp") }} *</span>
@@ -21,9 +21,9 @@
         <div v-if="bodySkills" class="px-4">
             <span class="text-xs font-bold">{{ $t("skills.inuse") }}</span>
             <div v-for="skill in bodySkills" :key="skill.name" class="flex flex-row items-center gap-4 justify-between">
-                <Icon :name="IconMapper[skill.name]" size="32px" class="text-primary dark:text-primary-text-light" />
+                <IconWrapper :name="skill.name" size="32px" class="text-primary dark:text-primary-text-light" />
                 <span>{{ skill.display_name }}</span>
-                <Icon :name="IconMapper[getExperienceType(skill)]" size="20px"
+                <IconWrapper :name="getExperienceType(skill)" size="20px"
                       class="text-primary dark:text-primary-text-light" />
             </div>
         </div>
@@ -33,22 +33,22 @@
             </div>
             <div class="flex flex-row flex-wrap gap-2">
                 <div v-for="skill in deprecatedSkills" :key="skill.name" class="flex flex-col items-center">
-                    <Icon :name="IconMapper[skill.name]" size="20" class="text-primary dark:text-primary-text-light" />
+                    <IconWrapper :name="skill.name" size="20" class="text-primary dark:text-primary-text-light" />
                     <span class="text-xs">{{ skill.display_name }}</span>
                 </div>
             </div>
         </div>
         <a class="pl-4 py-1 underline mt-auto" :href="`/skills/${mainSkill.name}`">
             <span class="text-sm">{{$t('home.readmore')}}</span>
-            <Icon :name="IconMapper.arrowRight" size="20"/>
+            <IconWrapper name="arrowRight" size="20"/>
         </a>
     </div>
 </template>
 
 <script setup>
-import { IconMapper } from "../../composables/IconMapper";
 import { getExperienceString, getExperienceType, isSkillLive } from "../../composables/useSkills";
 import LivePulse from "./LivePulse";
+import IconWrapper from "./IconWrapper";
 
 const props = defineProps({
     skillGroup: Object

@@ -4,13 +4,13 @@
         :style="
             'border-color: #014F86' + color !== undefined ? color : '#014F86'
         ">
-        <Icon :name="IconMapper[icon]" size="20px" class="text-primary-text-dark dark:text-primary-text-light"/>
+        <IconWrapper :name="icon" size="20px" class="text-primary-text-dark dark:text-primary-text-light"/>
         <span class="text-xs self-center md:text-base">{{ name }}</span>
     </div>
 </template>
 
 <script setup>
-import { IconMapper } from "../../composables/IconMapper";
+import IconWrapper from "./IconWrapper";
 </script>
 
 <script>

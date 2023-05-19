@@ -1,5 +1,5 @@
 <template>
-    <img src="/img/selfie/selfie.webp" class="h-[450px] w-[300px] justify-center bg-primary" alt="selfie"/>
+    <nuxt-img src="/img/selfie/selfie.webp" class="h-[450px] w-[300px] justify-center bg-primary" alt="selfie"/>
 </template>
 
 <script>

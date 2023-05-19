@@ -1,19 +1,19 @@
 <template>
-        <Icon @click="toggleTheme(); "
+        <IconWrapper @click="toggleTheme(); "
               class="light-mode-icon icon"
-              :name="IconMapper.sun"
+              name="sun"
               size="32px"/>
-        <Icon @click="toggleTheme()"
+        <IconWrapper @click="toggleTheme()"
               class="dark-mode-icon icon"
-              :name="IconMapper.moon"
+              name="moon"
               size="32px"/>
 </template>
 
 <script setup lang="ts">
-import { IconMapper } from "~/composables/IconMapper";
 import useTheme from "~/composables/useTheme";
 const { toggleTheme } = useTheme();
 import { useHead } from "@unhead/vue";
+import IconWrapper from "~/components/elements/IconWrapper.vue";
 
 useHead({
     script: [{ children: `if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.classList.add('dark')} else { document.documentElement.classList.remove('dark')}` }]

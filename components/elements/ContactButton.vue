@@ -7,7 +7,7 @@
             { 'border-color': getColor() },
         ]">
         <div class="w-8 flex justify-center items-center">
-            <Icon class="text-primary-text-light h-5 w-5 duration-200 ease-in-out group-hover:h-7 group-hover:w-7"
+            <IconWrapper class="text-primary-text-light h-5 w-5 duration-200 ease-in-out group-hover:h-7 group-hover:w-7"
                   :name="icon"/>
         </div>
         <div class="flex self-center text-lg font-bold text-primary-text-light duration-200 ease-in-out group-hover:text-2xl">
@@ -18,8 +18,10 @@
 
 
 <script>
+import IconWrapper from "./IconWrapper";
 export default {
     name: "ContactButton",
+    components: { IconWrapper },
     props: ["icon", "text", "url", "color"],
     methods: {
         getColor() {
