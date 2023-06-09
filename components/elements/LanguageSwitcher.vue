@@ -26,6 +26,7 @@ import { useI18n } from '#imports'
 const { locale, setLocale } = useI18n()
 import { closeMenu } from "../../composables/useMenu";
 import IconWrapper from "./IconWrapper";
+import moment from "moment";
 
 let dropdownStatus = ref(false);
 const toggleDropdown = (value = null) => {
@@ -37,6 +38,7 @@ let currentLanguage = locale.value;
 const setLanguage = (value) => {
     setLocale(value);
     currentLanguage = locale.value;
+    moment.locale(locale.value)
     toggleDropdown()
     closeMenu()
 }

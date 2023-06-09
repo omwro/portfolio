@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         'nuxt-icon',
         '@pinia/nuxt',
         '@pinia-plugin-persistedstate/nuxt',
-        '@nuxt/image-edge',
+        '@nuxt/image',
     ],
     extends: [
         'nuxt-seo-kit'

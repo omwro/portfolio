@@ -5,18 +5,19 @@
     "title": "Portfolio",
     "desc": "projects.desc.portfolio",
     "img": "/img/project/project_website.webp",
-    "url": "https://omererdem.nl",
+    "url": "https://omererdem.nl/?ref=omererdem.nl",
     "github": "https://github.com/omwro/portfoliovue",
     "homepage": true,
     "live": true,
-    "mainstack": "vue",
+    "mainstack": "nuxt",
     "stack": [
       "html",
       "js",
       "css",
       "vue",
       "sass"
-    ]
+    ],
+    "sortOrder": 0
   },
   {
     "id": 1,
@@ -24,7 +25,7 @@
     "title": "Metafy",
     "desc": "projects.desc.metafyweb",
     "img": "/img/project/project_metafy_vue.webp",
-    "url": "https://metafy.omererdem.nl",
+    "url": "https://metafy.omererdem.nl/?ref=omererdem.nl",
     "github": "https://github.com/omwro/metafy-vue",
     "homepage": true,
     "live": true,
@@ -35,7 +36,8 @@
       "css",
       "vue",
       "sass"
-    ]
+    ],
+    "sortOrder": 10
   },
   {
     "id": 2,
@@ -43,7 +45,7 @@
     "title": "Alex's Portfolio",
     "desc": "projects.desc.zamfir",
     "img": "/img/project/zamfir.png",
-    "url": "https://zamfir.nl",
+    "url": "https://zamfir.nl/?ref=omererdem.nl",
     "github": "https://github.com/omwro/portfolio-az",
     "live": true,
     "mainstack": "vue",
@@ -53,7 +55,8 @@
       "css",
       "vue",
       "sass"
-    ]
+    ],
+    "sortOrder": 20
   },
   {
     "id": 3,
@@ -69,7 +72,8 @@
       "css",
       "vue",
       "sass"
-    ]
+    ],
+    "sortOrder": 30
   },
   {
     "id": 4,
@@ -83,7 +87,8 @@
     "stack": [
       "js",
       "node"
-    ]
+    ],
+    "sortOrder": 40
   },
   {
     "id": 5,
@@ -96,7 +101,8 @@
     "mainstack": "java",
     "stack": [
       "java"
-    ]
+    ],
+    "sortOrder": 60
   },
   {
     "id": 6,
@@ -113,7 +119,8 @@
       "js",
       "csharp",
       "aspnet"
-    ]
+    ],
+    "sortOrder": 61
   },
   {
     "id": 7,
@@ -132,7 +139,8 @@
       "vue",
       "sass",
       "laravel"
-    ]
+    ],
+    "sortOrder": 70
   },
   {
     "id": 8,
@@ -146,7 +154,8 @@
     "mainstack": "kotlin",
     "stack": [
       "kotlin"
-    ]
+    ],
+    "sortOrder": 80
   },
   {
     "id": 9,
@@ -163,7 +172,8 @@
       "js",
       "php",
       "wordpress"
-    ]
+    ],
+    "sortOrder": 90
   },
   {
     "id": 10,
@@ -173,7 +183,7 @@
     "img": "/img/project/project_barber2u.webp",
     "url": null,
     "github": null,
-    "homepage": true,
+    "homepage": false,
     "mainstack": "react",
     "stack": [
       "html",
@@ -184,7 +194,8 @@
       "spring",
       "sass",
       "mongodb"
-    ]
+    ],
+    "sortOrder": 50
   },
   {
     "id": 11,
@@ -199,7 +210,8 @@
     "stack": [
       "kotlin",
       "xml"
-    ]
+    ],
+    "sortOrder": 51
   },
   {
     "id": 12,
@@ -213,6 +225,29 @@
     "mainstack": "python",
     "stack": [
       "python"
-    ]
+    ],
+    "sortOrder": 52
+  },
+  {
+    "id": 13,
+    "type": "work",
+    "title": "Raif's Portfolio",
+    "desc": "projects.desc.raifkaya",
+    "img": "/img/project/project_kaya.png",
+    "url": "https://raifkaya.nl/?ref=omererdem.nl",
+    "github": null,
+    "homepage": true,
+    "live": true,
+    "mainstack": "nuxt",
+    "stack": [
+      "html",
+      "js",
+      "css",
+      "tailwind",
+      "vue",
+      "nuxt",
+      "sass"
+    ],
+    "sortOrder": 1
   }
 ]

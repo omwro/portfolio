@@ -90,7 +90,8 @@
       "firmware":
       "Creating an interface, where the installation firmware is installed to a hardware controller.",
       "gitflow":
-      "The well known Git Flow, but as a css vue component, that is used as the timeline for the portfolio page."
+      "The well known Git Flow, but as a css vue component, that is used as the timeline for the portfolio page.",
+      "raifkaya": "A portfolio page for a Cyber Security Engineer who wants to introduce himself to the world."
     }
   },
   "companies": {
@@ -100,9 +101,14 @@
     "title": "Timeline",
     "present": "Present",
     "initialCommit": "Entering the real world",
-    "startedAs": "Started as a",
-    "stoppedAs": "Stopped as a",
-    "stoppedAsStudy": "Graduated",
+    "startedStudy": "New study started as a ",
+    "startedInternship": "New internship started as a ",
+    "startedMinor": "New minor started as a ",
+    "startedWork": "New job started as a ",
+    "stoppedStudy": "Graduated as a ",
+    "stoppedInternship": "Internship completed as a ",
+    "stoppedMinor": "Minor completed as a ",
+    "stoppedWork": "Job completed as a  ",
     "deugd": {
       "company": "Deugd Erdem",
       "role": "Cashier",
@@ -152,6 +158,11 @@
       "company": "Infi",
       "role": "Intern Developer",
       "desc": "Aimed at improving my backend skills by writing a thesis about gaining insights into KPI's with EventStore. Using Event Sourcing to fetch data with cron jobs. Also made an user interface."
+    },
+    "xenon": {
+      "company": "Xenon IT",
+      "role": "CEO & Lead Developer",
+      "desc": "My independent company where I apply web solutions to automation, statistics and web pages."
     }
   },
   "socials": {
@@ -161,6 +172,5 @@
   "competitors": {
     "title": "Competitors",
     "desc": "Not fit for the job? Take a look at these fantastic competitors."
-  },
-  "Oct 2022": "Oct 2022"
+  }
 }

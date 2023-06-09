@@ -7,7 +7,7 @@
             <template v-if="tag">
                 <GitFlowTag class="gitflow-tag-mobile" :color="color" :message="tag"/>
             </template>
-            <div v-html="message"/>
+            <div class="py-1" v-html="message"/>
         </div>
     </div>
 </template>

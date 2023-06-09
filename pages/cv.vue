@@ -47,8 +47,8 @@
                         :key="edu.role"
                         v-if="!edu.hidecv">
                         <div class="timeperiod">
-                            {{ edu.startdate }} -
-                            {{ edu.enddate !== null ? edu.enddate : $t("timeline.present", 1, {locale: "en"}) }}
+                            {{ formatDate(edu.startdate) }} -
+                            {{ edu.enddate !== null ? formatDate(edu.enddate) : $t("timeline.present", 1, {locale: "en"}) }}
                         </div>
                         <div class="text-base font-bold">{{ $t(edu.role, 1, {locale: "en"}) }}</div>
                         <div class="text-xs font-bold">{{ edu.company }}</div>
@@ -65,8 +65,8 @@
                     v-for="xp in getExperience()"
                     :key="xp.role">
                     <div class="timeperiod">
-                        {{ xp.startdate }} -
-                        {{ xp.enddate !== null ? xp.enddate : $t("timeline.present", 1, {locale: "en"}) }}
+                        {{ formatDate(xp.startdate) }} -
+                        {{ xp.enddate !== null ? formatDate(xp.enddate) : $t("timeline.present", 1, {locale: "en"}) }}
                     </div>
                     <div class="text-base font-bold">{{ $t(xp.role, 1, {locale: "en"}) }}</div>
                     <div class="text-xs font-bold">{{ xp.company }}</div>
@@ -103,9 +103,12 @@ import timeline from "../assets/json/timeline.json";
 import skills from "../assets/json/skills.json";
 import { getExperienceString } from "../composables/useSkills";
 import IconWrapper from "../components/elements/IconWrapper";
+import moment from "moment/moment";
+import {DATE_FORMAT, RAW_DATE_FORMAT} from "../composables/useGitFlow";
 const getEducation = () => timeline.filter((x) => x.type === "Study")
 const getExperience = () => timeline.filter((x) => x.type === "Internship" || x.type === "Work").slice(0, 4)
 const getCVSkills = () => skills.filter((x) => x.show_cv === true)
+const formatDate = (date) => moment(date, RAW_DATE_FORMAT).format(DATE_FORMAT);
 </script>
 
 <style scoped>

@@ -6,7 +6,7 @@
             </template>
             <Content class="sm:flex-row flex-wrap gap-3">
                 <ProjectBlock
-                    v-for="(p, i) in projects"
+                    v-for="(p, i) in projects()"
                     :project="p"
                     :key="i" />
             </Content>
@@ -15,11 +15,12 @@
 </template>
 
 <script setup>
-import projects from "../../assets/json/projects.json";
+import projectsJson from "../../assets/json/projects.json";
 import Section from "../../components/elements/Section";
 import Content from "../../components/elements/Content";
 import ProjectBlock from "../../components/elements/ProjectBlock";
 import BreadcrumbLink from "../../components/elements/BreadcrumbLink";
+const projects = () => projectsJson.sort((a, b) => a.sortOrder - b.sortOrder)
 </script>
 
 <script>

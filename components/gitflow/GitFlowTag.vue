@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import moment from "moment/moment";
+
 export default {
     name: "GitFlowTag",
     props: ["color", "message"],

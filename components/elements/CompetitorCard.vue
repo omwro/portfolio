@@ -21,7 +21,7 @@
                         v-if="profile.website != null"
                         target="_blank"
                         class="no-underline flex flex-col text-center items-center w-fit flex-1 group/button">
-                        <IconWrapper class="text-primary-text-dark dark:text-primary-text-light group-hover/button:text-primary"
+                        <IconWrapper class="text-primary-text-dark dark:text-primary-text-light group-hover/button:text-primary dark:group-hover/button:text-primary-light"
                               name="www"
                               size="32px"/>
                         <span class="text-xs text-primary-text-dark dark:text-primary-text-light mt-2 group-hover/button:text-primary dark:group-hover/button:text-primary-light">Website</span>
@@ -31,7 +31,7 @@
                         v-if="profile.linkedin != null"
                         target="_blank"
                         class="no-underline flex flex-col text-center items-center w-fit flex-1 group/button">
-                        <IconWrapper class="text-primary-text-dark dark:text-primary-text-light group-hover/button:text-primary"
+                        <IconWrapper class="text-primary-text-dark dark:text-primary-text-light group-hover/button:text-primary dark:group-hover/button:text-primary-light"
                               name="linkedin"
                               size="32px"/>
                         <span class="text-xs text-primary-text-dark dark:text-primary-text-light mt-2 group-hover/button:text-primary dark:group-hover/button:text-primary-light">LinkedIn</span>

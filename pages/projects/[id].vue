@@ -15,7 +15,7 @@
                     <SkillChip
                         v-for="skill in getLanguages(project.stack)"
                         :key="skill.name"
-                        :name="$t(skill.display_name)"
+                        :name="skill.display_name"
                         :icon="skill.name" />
                 </div>
                 <p class="text-base px-0 py-4 md:text-[1.4rem] md:pt-8">{{ $t(project.desc) }}</p>

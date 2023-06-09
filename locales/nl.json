@@ -91,7 +91,8 @@
       "firmware":
       "Het maken van een interface, waarbij de installatie firmware wordt geïnstalleerd aan een hardware controller.",
       "gitflow":
-      "De welbekende Git Flow, maar als een css vue component, die gebruikt wordt als een tijdlijn voor de portfolio pagina."
+      "De welbekende Git Flow, maar als een css vue component, die gebruikt wordt als een tijdlijn voor de portfolio pagina.",
+      "raifkaya": "Een portfoliopagina voor een Cyber Security Engineer die zichzelf aan de wereld wil voorstellen."
     }
   },
   "companies": {
@@ -101,9 +102,14 @@
     "title": "Tijdlijn",
     "present": "Huidig",
     "initialCommit": "De echte wereld betreden",
-    "startedAs": "Gestart als een",
-    "stoppedAs": "Gestopt als een",
-    "stoppedAsStudy": "Afgestudeerd",
+    "startedStudy": "Nieuwe opleiding gestart als ",
+    "startedInternship": "Nieuwe stage gestart als ",
+    "startedMinor": "Nieuwe minor gestart als ",
+    "startedWork": "Nieuwe baan gestart als ",
+    "stoppedStudy": "Afgestudeerd als ",
+    "stoppedInternship": "Stage afgerond als ",
+    "stoppedMinor": "Minor afgerond als ",
+    "stoppedWork": "Baan afgerond als ",
     "deugd": {
       "company": "Deugd Erdem",
       "role": "Kassamedewerker",
@@ -153,6 +159,11 @@
       "company": "Infi",
       "role": "Stagiair Ontwikkelaar",
       "desc": "Mijn doel was om mijn backend vaardigheden te verbeteren door mijn scriptie te schrijven over het inzichtelijk krijgen van KPI's en statistieken met EventStore. Event Sourcing is gebruikt om gegevens op te halen met cron jobs. Ook heb ik een gebruikersinterface gemaakt."
+    },
+    "xenon": {
+      "company": "Xenon IT",
+      "role": "CEO & Lead Developer",
+      "desc": "Mijn zelfstandige onderneming waarbij ik web oplossingen toepas op automatisering, statistieken en webpagina's."
     }
   },
   "socials": {
@@ -162,6 +173,5 @@
   "competitors": {
     "title": "Concurrenten",
     "desc": "Niet geschikt voor de baan? Kijk eens naar deze fantastische concurrenten."
-  },
-  "Oct 2022": "Okt 2022"
+  }
 }
