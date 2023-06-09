@@ -8,7 +8,7 @@
                 target="_blank"
                 rel="author"
                 class="self-center p-4">
-                <nuxt-img :src="c.img" :alt="c.name" class="w-auto h-auto max-w-[128px] max-h-16 invert dark:invert-0"/>
+                <nuxt-img :src="c.img" :alt="c.name" class="w-auto h-auto max-w-[128px] invert dark:invert-0" height="64"/>
             </a>
         </div>
     </div>

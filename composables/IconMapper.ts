@@ -64,5 +64,10 @@ export enum IconMapper {
     work = "ion:business",
     education = "ion:university",
     hobby = "mdi:puzzle",
-    snakearrow = "streamline:interface-arrows-curvy-right-snake-arrow-sideways-diagram-right"
+    snakearrow = "streamline:interface-arrows-curvy-right-snake-arrow-sideways-diagram-right",
+    controller = "mdi:controller",
+    steeringwheel = "game-icons:steering-wheel",
+    music = "ph:music-notes-fill",
+    billiard = "ri:billiards-line",
+    experiment = "ant-design:experiment-filled",
 }

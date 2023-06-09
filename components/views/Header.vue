@@ -5,7 +5,7 @@
             <a href="/#home">
                 <nuxt-img alt="logo"
                      class="m-auto max-h-6 cursor-pointer dark:invert"
-                     src="/img/company/logo.webp" />
+                     src="/img/company/logo.webp" width="58" height="24"/>
             </a>
         </div>
         <div class="flex flex-nowrap">

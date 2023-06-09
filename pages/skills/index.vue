@@ -25,7 +25,7 @@ import BreadcrumbLink from "../../components/elements/BreadcrumbLink";
 import SkillCard from "../../components/elements/SkillCard";
 import SkillBlock from "../../components/elements/SkillBlock";
 
-const groupedTechStack = getGroupedSkills(skills.filter(x => x.group !== "Competencies"));
+const groupedTechStack = getGroupedSkills(skills.filter(x => !["Competencies", "Hobbies"].includes(x.group)));
 const competencies = skills.filter(x => x.group === "Competencies");
 </script>
 

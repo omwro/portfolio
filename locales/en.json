@@ -27,8 +27,9 @@
   "about": {
     "title": "Who am I ?",
     "resume": "View my resume",
-    "paragraph1": "My name is Ömer Erdem and I am a Software Engineer graduated at the Amsterdam University of Applied Sciences. I am currenctly 24 years old and like to game, drive around and experiment. I am currenctly employed at Bold Commerce as a Full Stack Magento Developer.",
-    "paragraph2": "I am a hardworking web- en software developer, looking for new projects and challenges every day. I am improving my skills with the aim of becoming a Full Stack developer. I am very passionate about programming and don't mind getting my hands dirty. I like to learn new techniques and I am certainly not afraid of hardware. I am someone who wants to make the world a better place, even if it goes unnoticed."
+    "paragraph1": "My name is Ömer Erdem and I am a Software Engineer graduated at the Amsterdam University of Applied Sciences. I am currenctly 24 years old and I am currenctly working at Bold Commerce as a Full Stack Magento Developer as well as Xenon IT as CEO and Lead Developer.",
+    "paragraph2": "I am a hardworking web- en software developer, looking for new projects and challenges every day. I am improving my skills with the aim of becoming a Full Stack developer. I am very passionate about programming and don't mind getting my hands dirty. I like to learn new techniques and I am certainly not afraid of hardware. I am someone who wants to make the world a better place, even if it goes unnoticed.",
+    "hobbies": "My hobbies are gaming, driving around, listening to good (bass-boosted) music, playing billiards and experimenting with code."
   },
   "skills": {
     "title": "Skills",
@@ -55,7 +56,8 @@
     "months": "months",
     "hobby": "hobby",
     "education": "education",
-    "work": "work"
+    "work": "work",
+    "readmoreabout": "Read more about "
   },
   "projects": {
     "title": "Projects",
@@ -126,7 +128,7 @@
     },
     "dgd": {
       "company": "Digidot",
-      "role": "Intern Frontend Developer",
+      "role": "Graduation Intern Frontend Developer",
       "desc": "Aimed at improving my frontend skills by creating a Web Installation panel for the DiGidot C4 hardware controllers. Designed and developed the installation panel myself."
     },
     "hva": {
@@ -156,7 +158,7 @@
     },
     "infi": {
       "company": "Infi",
-      "role": "Intern Developer",
+      "role": "Graduation Intern Developer",
       "desc": "Aimed at improving my backend skills by writing a thesis about gaining insights into KPI's with EventStore. Using Event Sourcing to fetch data with cron jobs. Also made an user interface."
     },
     "xenon": {

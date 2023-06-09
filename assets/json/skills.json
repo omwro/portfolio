@@ -799,5 +799,30 @@
     "group": "Competencies",
     "name": "snakearrow",
     "display_name": "skills.edgecase"
+  },
+  {
+    "group": "Hobbies",
+    "name": "controller",
+    "display_name": "skills.edgecase"
+  },
+  {
+    "group": "Hobbies",
+    "name": "steeringwheel",
+    "display_name": "skills.edgecase"
+  },
+  {
+    "group": "Hobbies",
+    "name": "music",
+    "display_name": "skills.edgecase"
+  },
+  {
+    "group": "Hobbies",
+    "name": "billiard",
+    "display_name": "skills.edgecase"
+  },
+  {
+    "group": "Hobbies",
+    "name": "experiment",
+    "display_name": "skills.edgecase"
   }
 ]

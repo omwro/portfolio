@@ -2,7 +2,7 @@
     <div class="relative w-24 flex flex-col gap-2 items-center text-center">
         <IconWrapper :name="skill.name"
               size="64px" class="bg-primary p-2 rounded-[25px_12px] text-primary-text-light"/>
-        <div>
+        <div v-if="!hideText">
             <template v-if="translate">
                 {{ $t(skill.display_name) }}
             </template>
@@ -20,6 +20,6 @@ import IconWrapper from "./IconWrapper";
 <script>
 export default {
     name: "SkillBlock",
-    props: ["skill", "translate"]
+    props: ["skill", "translate", "hideText"]
 };
 </script>

@@ -39,7 +39,7 @@
             </div>
         </div>
         <a class="pl-4 py-1 underline mt-auto" :href="`/skills/${mainSkill.name}`">
-            <span class="text-sm">{{$t('home.readmore')}}</span>
+            <span class="text-sm">{{$t('skills.readmoreabout')}} {{mainSkill.display_name}}</span>
             <IconWrapper name="arrowRight" size="20"/>
         </a>
     </div>

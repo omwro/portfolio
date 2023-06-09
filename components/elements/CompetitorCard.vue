@@ -2,9 +2,9 @@
     <div class="card-block group/card relative rounded-[5px]">
         <div class="card flex flex-col items-center overflow-hidden z-[1] rounded-[5px]">
             <div
-                class="card-header relative w-[200px] h-[200px] bg-contain after:content-[''] after:absolute after:w-full after:h-full after:duration-500 after:bottom-0 group-hover/card:after:h-0 group-hover/card:after:duration-500"
-                :style="'background-image: url(' + profile.img + ')'">
-                <div class="absolute z-[1] w-full inset-x-0">
+                class="card-header relative w-[200px] h-[200px] bg-contain after:content-[''] after:absolute after:w-full after:h-full after:duration-500 after:bottom-0 group-hover/card:after:h-0 group-hover/card:after:duration-500">
+                <nuxt-img :src="profile.img" :alt="'profile image of '+profile.name" width="200" height="200" format="webp"/>
+                <div class="absolute z-[1] w-full inset-x-0 top-0">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 200 200">

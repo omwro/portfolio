@@ -15,26 +15,26 @@
                 </div>
                 <div class="px-0 py-1 text-base font-bold uppercase">{{ $t("general.study") }}</div>
                 <div class="px-0 py-1">
-                    <span class="font-bold">Age:</span>
+                    <span class="font-bold">Age: </span>
                     <span class="color-grey">{{ $t("general.age") }}</span>
                 </div>
                 <div class="px-0 py-1">
-                    <span class="font-bold">Area:</span>
+                    <span class="font-bold">Area: </span>
                     <span class="color-grey">{{ $t("general.area", 1, {locale: "en"}) }}</span>
                 </div>
                 <div class="px-0 py-1">
-                    <span class="font-bold">Email:</span>
+                    <span class="font-bold">Email: </span>
                     <span class="color-grey">info@omererdem.nl</span>
                 </div>
                 <div class="px-0 py-1">
-                    <span class="font-bold">Tel:</span>
+                    <span class="font-bold">Tel: </span>
                     <span class="color-grey">{{ $t("general.tel") }}</span>
                 </div>
             </div>
             <div class="w-[330px]">
                 <div class="text-xl text-center mb-2 font-bold">ABOUT ME</div>
                 <div class="text-sm leading-[1.35] color-grey">
-                    {{ $t("about.paragraph1", 1, {locale: "en"}) }}
+                    {{ $t("about.paragraph2", 1, {locale: "en"}) }}
                 </div>
             </div>
         </div>
@@ -92,7 +92,7 @@
             </div>
             <div class="text-center text-sm my-0 basis-1/3">
                 <img src="/img/company/qr.png" alt="qrcode" class="w-[200px] h-[200px] mx-auto"/>
-                <div class="pt-1">https://www.omererdem.nl</div>
+                <div>https://www.omererdem.nl</div>
             </div>
         </div>
     </div>

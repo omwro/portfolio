@@ -65,7 +65,7 @@
     "startdate": "1-9-2021",
     "enddate": "30-1-2022",
     "line": 3,
-    "homepage": true,
+    "homepage": false,
     "stack": [
       "python"
     ]
@@ -80,7 +80,7 @@
     "startdate": "1-9-2020",
     "enddate": "30-1-2021",
     "line": 3,
-    "homepage": true,
+    "homepage": false,
     "stack": [
       "kotlin"
     ]
