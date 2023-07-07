@@ -112,11 +112,6 @@
     "stoppedInternship": "Stage afgerond als ",
     "stoppedMinor": "Minor afgerond als ",
     "stoppedWork": "Baan afgerond als ",
-    "deugd": {
-      "company": "Deugd Erdem",
-      "role": "Kassamedewerker",
-      "desc": "Heb gewerkt als een kassamedewerker met een 0 uren contract om mijn communicatie vaardigheden te verbeteren met klanten, wat zakgeld te verdienen en mijn netwerk uit te bereiden."
-    },
     "regio": {
       "company": "Regio College",
       "role": "Applicatie Ontwikkelaar",
@@ -124,12 +119,12 @@
     },
     "kk": {
       "company": "Kenneth & Koh",
-      "role": "Stagiair Spel Ontwikkelaar",
+      "role": "Spel Ontwikkelaar",
       "desc": "Mijn doel was om mijn samenwerking vaardigheden te verbeteren en ook om te leren hoe je moet werken in een bedrijfsomgeving. Heb mijn programmeer vaardigheden verbeterd door een mobiel en desktop spel te maken in Unity met C# en heb de ontwikkelaars team geholpen met het testen van hun software."
     },
     "dgd": {
       "company": "Digidot",
-      "role": "Afstudeer Stagiair Frontend Ontwikkelaar",
+      "role": "Frontend Ontwikkelaar",
       "desc": "Mijn doel was om mijn frontend vaardigheden te verbeteren door een web installatie paneel te maken voor de DiGidot C4 hardware bestuurders."
     },
     "hva": {
@@ -139,7 +134,7 @@
     },
     "md": {
       "company": "The Mobile Company",
-      "role": "Mobiele Applicatie Ontwikkeling",
+      "role": "Mobiele Applicatie Ontwikkelaar",
       "desc": "Mijn doel was om meer kennis op te doen met mobiele applicatie onwikkeling en de gebruikersinteractie."
     },
     "ds": {
@@ -149,7 +144,7 @@
     },
     "bold": {
       "company": "Bold Commerce",
-      "role": "Stagiair Magento Ontwikkelaar",
+      "role": "Magento Ontwikkelaar",
       "desc": "Mijn doel was om mijn frontend en backend programmeer vaardigheden te verbeteren, als ook de communicatie vaardigheden met mijn collega's en klanten. Heb gewerkt in een echte Agile omgeving en heb een Dashboard gemaakt voor de Support team."
     },
     "bold2": {
@@ -159,7 +154,7 @@
     },
     "infi": {
       "company": "Infi",
-      "role": "Afstudeer Stagiair Ontwikkelaar",
+      "role": "Ontwikkelaar",
       "desc": "Mijn doel was om mijn backend vaardigheden te verbeteren door mijn scriptie te schrijven over het inzichtelijk krijgen van KPI's en statistieken met EventStore. Event Sourcing is gebruikt om gegevens op te halen met cron jobs. Ook heb ik een gebruikersinterface gemaakt."
     },
     "xenon": {

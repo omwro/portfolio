@@ -111,11 +111,6 @@
     "stoppedInternship": "Internship completed as a ",
     "stoppedMinor": "Minor completed as a ",
     "stoppedWork": "Job completed as a  ",
-    "deugd": {
-      "company": "Deugd Erdem",
-      "role": "Cashier",
-      "desc": "Worked as a cashier with a 0 hour contract to improve my communication skills with customers, while earning some pocket money and expanding my network."
-    },
     "regio": {
       "company": "Regio College",
       "role": "Application Developer",
@@ -123,12 +118,12 @@
     },
     "kk": {
       "company": "Kenneth & Koh",
-      "role": "Intern Game Developer",
+      "role": "Game Developer",
       "desc": "Aimed at improving my teamwork skills, as well as learning to work in a company setting. Improved my programming skills by creating a mobile and desktop game in Unity and helped the developer team in testing their software."
     },
     "dgd": {
       "company": "Digidot",
-      "role": "Graduation Intern Frontend Developer",
+      "role": "Frontend Developer",
       "desc": "Aimed at improving my frontend skills by creating a Web Installation panel for the DiGidot C4 hardware controllers. Designed and developed the installation panel myself."
     },
     "hva": {
@@ -138,7 +133,7 @@
     },
     "md": {
       "company": "The Mobile Company",
-      "role": "Mobile Application Development",
+      "role": "Mobile Application Developer",
       "desc": "Aimed at improving my skills with mobile development and user interaction."
     },
     "ds": {
@@ -153,12 +148,12 @@
     },
     "bold": {
       "company": "Bold Commerce",
-      "role": "Intern Magento Developer",
+      "role": "Magento Developer",
       "desc": "Aimed at improving both my frontend and backend development skills, as well as communication skills with my colleagues and customers. Have worked in a real Agile environment and created a new Dashboard for the Support Team."
     },
     "infi": {
       "company": "Infi",
-      "role": "Graduation Intern Developer",
+      "role": "Developer",
       "desc": "Aimed at improving my backend skills by writing a thesis about gaining insights into KPI's with EventStore. Using Event Sourcing to fetch data with cron jobs. Also made an user interface."
     },
     "xenon": {
@@ -174,5 +169,6 @@
   "competitors": {
     "title": "Competitors",
     "desc": "Not fit for the job? Take a look at these fantastic competitors."
-  }
+  },
+  "Minor": "Minor"
 }
