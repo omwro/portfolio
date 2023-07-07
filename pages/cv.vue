@@ -1,7 +1,7 @@
 <template>
     <div id="cv">
-        <div class="header flex flex-col sm:flex-row mb-4">
-            <div class="flex items-center justify-center overflow-hidden w-[200px] h-[200px] mr-4 rounded-[60px_15px] bg-gray-200">
+        <div class="header flex flex-col md:flex-row print:flex-row mb-2 items-center">
+            <div class="flex items-center justify-center overflow-hidden w-[200px] h-[200px] mr-4 rounded-[60px_15px] bg-gray-200 place-content-center">
                 <nuxt-img width="190" height="190" quality="100" class="bg-white rounded-[55px_10px]"
                     alt="profile picture"
                     src="/img/selfie/selfie-squared.webp" />
@@ -31,7 +31,7 @@
                     <span class="color-grey">{{ $t("general.tel") }}</span>
                 </div>
             </div>
-            <div class="w-[330px]">
+            <div class="max-w-[330px]">
                 <div class="text-xl text-center mb-2 font-bold">ABOUT ME</div>
                 <div class="text-sm leading-[1.35] color-grey">
                     {{ $t("about.paragraph2", 1, {locale: "en"}) }}
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-row">
+        <div class="flex flex-row flex-wrap md:flex-nowrap print:flex-nowrap">
             <div class="half container skills-container">
                 <div class="container-title uppercase">Skills</div>
                 <div class="content">
@@ -123,7 +123,7 @@ const formatDate = (date) => moment(date, RAW_DATE_FORMAT).format(DATE_FORMAT);
     margin: 0;
 }
 html, body, #app, #cv {
-    @apply w-[210mm] h-[297mm] flex flex-col text-xs text-primary-text-dark p-4 bg-white;
+    @apply md:max-w-[210mm] md:max-h-[297mm] flex flex-col text-xs text-primary-text-dark p-4 bg-white;
     font-family: Arial, serif;
 }
 #cv .container {
