@@ -28,7 +28,7 @@
   "about": {
     "title": "Wie ben ik ?",
     "resume": "Bekijk mijn CV",
-    "paragraph1": "Mijn naam is Ömer Erdem en ik ben een Software Ontwikkelaar afgestudeerd aan het Hogeschool van Amsterdam. Ik ben momenteel 24 jaar jong en ik ben momenteel zowel werkzaam bij Bold Commerce als een Full Stack Magento Developer als ook bij Xenon IT als CEO en Lead Developer.",
+    "paragraph1": "Mijn naam is Ömer Erdem, een Software Ontwikkelaar afgestudeerd aan de Hogeschool van Amsterdam. Ik ben momenteel 24 jaar jong en werkzaam bij Bold Commerce als een Full Stack Magento Developer en bij Xenon IT als Oprichter.",
     "paragraph2": "Ik ben een hardwerkende web- en softwareontwikkelaar, elke dag op zoek naar nieuwe projecten en uitdagingen. Ik verbeter mijn vaardigheden met als doel een Full Stack ontwikkelaar te worden. Ik ben erg gepassioneerd in programmeren en vind het niet erg om mijn handen vuil te maken. Ik leer graag nieuwe technieken en ben zeker niet bang van hardware. Ik ben iemand die van de wereld een betere plek wil maken, ook als dat onopgemerkt blijft.",
     "hobbies": "Mijn hobby's zijn gamen, rondrijden, naar goede (basversterkte) muziek luisteren, biljarten en experimenteren met code."
   },
@@ -70,15 +70,15 @@
     "viewonwebsite": "Bekijk de website",
     "desc": {
       "portfolio":
-      "Mijn 3e poging tot het maken van een mooie en unieke persoonlijke portfolio website. De website zal continue doorontwikkeld worden om mijn vaardigheden te verbeterend en om met nieuwe features te experimenteren.",
+      "Mijn 3e poging tot het maken van een mooie en unieke persoonlijke portfolio website. De website zal continu doorontwikkeld worden om mijn vaardigheden te verbeterend en om met nieuwe features te experimenteren.",
       "metafyweb":
-      "Een vervolg op de android app met als doel om het globaal te maken voor meerdere platforms. Hiermee kan je de Spotify API gebruiken om dynamische playlists te maken, waarbij alle meta data wordt opgeslagen in de Spotify servers.",
+      "Een vervolg op de Android app met als doel om het globaal te maken voor meerdere platforms. Hiermee kan je de Spotify API gebruiken om dynamische playlists te maken, waarbij alle meta data wordt opgeslagen in de Spotify servers.",
       "barber2u":
-      "Een unieke school project, waarbij kappers in de woonkamer van de klanten knippen. De kappers kan je selecteren in de app met de door jouw gekozen moment en soort knipbeurt.",
+      "Een unieke school project, waarbij kappers in de woonkamer van de klanten knippen. De kappers kan je selecteren in de app met de door jou gekozen moment en soort knipbeurt.",
       "metafyapp":
-      "Een android app die de Spotify API gebruikt om de liedjes en afspeellijsten van je spotify account ophaald. Hiermee kan je liedjes taggen en afspeellijsten naar je wensen aanpassen.",
+      "Een Android app die de Spotify API gebruikt om de liedjes en afspeellijsten van je Spotify account ophaalt. Hiermee kan je liedjes taggen en afspeellijsten naar je wensen aanpassen.",
       "mobilecompany":
-      "Een project, waarbij een SDK is gemaakt die de NMEA 0183 protocol ondersteund. De SDK zoekt automatisch naar Wi-Fi en Bluetooth netwerken, zodat het een verbinding kan vastleggen met de NMEA hardware sensoren. De sensor data kan getoond worden in een simpele android app.",
+      "Een project, waarbij een SDK is gemaakt die de NMEA 0183 protocol ondersteund. De SDK zoekt automatisch naar Wi-Fi en Bluetooth netwerken, zodat het een verbinding kan vastleggen met de NMEA hardware sensoren. De sensor data kan getoond worden in een simpele Android app.",
       "zamfir": "Een portfolio pagina voor een vriend die robotica en elektronica studeert.",
       "gputracker":
       "Een webscraper om GPU voorraden bij te houden in tijden van GPU tekorten. Heeft ook een functie voor automatisch afrekenen met een handmatige betalingsstap.",
@@ -115,47 +115,47 @@
     "regio": {
       "company": "Regio College",
       "role": "Applicatie Ontwikkelaar",
-      "desc": "Mijn doel was om een start te maken met het programmeren en om mijn leiderschap vaardigheden te verbeteren voor groepsprojecten."
+      "desc": "Een start maken met het programmeren van eenvoudige websites en applicaties. Daarnaast  het verbeteren van mijn leiderschapsvaardigheden en soft skills."
     },
     "kk": {
       "company": "Kenneth & Koh",
       "role": "Spel Ontwikkelaar",
-      "desc": "Mijn doel was om mijn samenwerking vaardigheden te verbeteren en ook om te leren hoe je moet werken in een bedrijfsomgeving. Heb mijn programmeer vaardigheden verbeterd door een mobiel en desktop spel te maken in Unity met C# en heb de ontwikkelaars team geholpen met het testen van hun software."
+      "desc": "De eerste stap zetten in een bedrijfsomgeving om mijn programmeervaardigheden te verbeteren met een mobiele en desktop applicatie in Unity. Daarnaast kennis opbouwen van het testen van applicaties en software binnen het ontwikkelteam."
     },
     "dgd": {
       "company": "Digidot",
       "role": "Frontend Ontwikkelaar",
-      "desc": "Mijn doel was om mijn frontend vaardigheden te verbeteren door een web installatie paneel te maken voor de DiGidot C4 hardware bestuurders."
+      "desc": "Mijn frontend vaardigheden gebruiken om een web installatiepaneel te ontwerpen en bouwen voor de DiGidot C4 hardware bestuurders."
     },
     "hva": {
       "company": "Hogeschool van Amsterdam",
       "role": "Software Engineering",
-      "desc": "Mijn doel was om mij vaardigheden te verbeteren in het programmeren en in de bedrijfsomgeving, als ook mijn netwerk uit te breiden en om lol te hebben leuke hobby projecten."
+      "desc": "Mijn programmeervaardigheden verbeteren met design-patterns, algoritmen, machine learning-modellen en volledige web-, mobiele en native applicaties. Natuurlijk horen hobbyprojecten er ook bij."
     },
     "md": {
       "company": "The Mobile Company",
       "role": "Mobiele Applicatie Ontwikkelaar",
-      "desc": "Mijn doel was om meer kennis op te doen met mobiele applicatie onwikkeling en de gebruikersinteractie."
+      "desc": "Kennis opdoen op het gebied van mobiele applicatieontwikkeling en gebruikersinteractie."
     },
     "ds": {
       "company": "Hogeschool van Amsterdam",
       "role": "Data Scientist",
-      "desc": "Mijn doel was om meer kennis op te doen met data analyses en visualisaties, terwijl ik ook Python leer."
+      "desc": "Kennis opdoen op het gebied van data analyses, machine-learning en visualisaties."
     },
     "bold": {
       "company": "Bold Commerce",
       "role": "Magento Ontwikkelaar",
-      "desc": "Mijn doel was om mijn frontend en backend programmeer vaardigheden te verbeteren, als ook de communicatie vaardigheden met mijn collega's en klanten. Heb gewerkt in een echte Agile omgeving en heb een Dashboard gemaakt voor de Support team."
+      "desc": "Mijn frontend en backend programmeervaardigheden verder ontwikkelen terwijl ik e-commerce ervaring opdoe. Werken in een echte Agile omgeving en een Dashboard bouwen voor het Support team."
     },
     "bold2": {
       "company": "Bold Commerce",
       "role": "Magento Full-Stack Ontwikkelaar",
-      "desc": "Mijn frontend en backend programmeer vaardigheden aan te verbeteren met nieuwe technologieën."
+      "desc": "Het verder ontwikkelen van mijn frontend en backend programmeervaardigheden binnen Magento, zoals versie upgrades, integraties, Google Tagmanager, Core Web Vitals."
     },
     "infi": {
       "company": "Infi",
       "role": "Ontwikkelaar",
-      "desc": "Mijn doel was om mijn backend vaardigheden te verbeteren door mijn scriptie te schrijven over het inzichtelijk krijgen van KPI's en statistieken met EventStore. Event Sourcing is gebruikt om gegevens op te halen met cron jobs. Ook heb ik een gebruikersinterface gemaakt."
+      "desc": "Het inzichtelijk krijgen van KPI's en statistieken met EventStore. Een gebruikersinterface is gemaakt en Event Sourcing is gebruikt om gegevens op te halen met cron jobs."
     },
     "xenon": {
       "company": "Xenon IT",

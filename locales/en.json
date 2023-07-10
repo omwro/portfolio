@@ -27,7 +27,7 @@
   "about": {
     "title": "Who am I ?",
     "resume": "View my resume",
-    "paragraph1": "My name is Ömer Erdem and I am a Software Engineer graduated at the Amsterdam University of Applied Sciences. I am currenctly 24 years old and I am currenctly working at Bold Commerce as a Full Stack Magento Developer as well as Xenon IT as CEO and Lead Developer.",
+    "paragraph1": "My name is Ömer Erdem, a Software Developer graduated from the Amsterdam, University of Applied Sciences. I am currently 24 years young and working at Bold Commerce as a Full Stack Magento Developer and at Xenon IT as Founder",
     "paragraph2": "I am a hardworking web and software developer, looking for new projects and challenges every day. I am improving my skills with the aim of becoming a full stack developer. I am very passionate about programming and don't mind getting my hands dirty. I like to learn new techniques and I am certainly not afraid of hardware. I am someone who wants to make the world a better place, even if it goes unnoticed.",
     "hobbies": "My hobbies are gaming, driving around, listening to good (bass-boosted) music, playing billiards and experimenting with code."
   },
@@ -114,47 +114,47 @@
     "regio": {
       "company": "Regio College",
       "role": "Application Developer",
-      "desc": "Aimed at getting started with programming and mastering the teamleader role for grouped projects."
+      "desc": "Getting started with programming simple websites and applications. In addition, improving my leadership skills as well as soft skills."
     },
     "kk": {
       "company": "Kenneth & Koh",
       "role": "Game Developer",
-      "desc": "Aimed at improving my teamwork skills, as well as learning to work in a company setting. Improved my programming skills by creating a mobile and desktop game in Unity and helped the developer team in testing their software."
+      "desc": "Taking the first step in a corporate environment to improve my programming skills with a mobile and desktop application in Unity. In addition, building knowledge of testing applications and software within the development team."
     },
     "dgd": {
       "company": "Digidot",
       "role": "Frontend Developer",
-      "desc": "Aimed at improving my frontend skills by creating a Web Installation panel for the DiGidot C4 hardware controllers. Designed and developed the installation panel myself."
+      "desc": "Using my frontend skills to design and build a web installation panel for the DiGidot C4 hardware drivers."
     },
     "hva": {
       "company": "Amsterdam University of Applied Science",
       "role": "Software Engineering",
-      "desc": "Aimed at improving my skills in programming and in the business field, as well as expanding my network and keep having fun with my hobby projects."
+      "desc": "Improve my programming skills with design patterns, algorithms, machine learning models and full web, mobile and native applications. Of course hobby projects are also part of it."
     },
     "md": {
       "company": "The Mobile Company",
       "role": "Mobile Application Developer",
-      "desc": "Aimed at improving my skills with mobile development and user interaction."
+      "desc": "Gaining knowledge in the field of mobile application development and user interaction."
     },
     "ds": {
       "company": "Amsterdam Univeristy of Applied Science",
       "role": "Data Scientist",
-      "desc": "Aimed at improving my skills in data analysis and visualisation, while learning Python."
+      "desc": "Gaining knowledge in the field of data analysis, machine-learning and visualization."
     },
     "bold2": {
       "company": "Bold Commerce",
       "role": "Magento Full-Stack Developer",
-      "desc": "Improving both my frontend and backend development skills with new technologies."
+      "desc": "Further developing my frontend and backend programming skills within Magento, such as version upgrades, integrations, Google Tagmanager, Core Web Vitals."
     },
     "bold": {
       "company": "Bold Commerce",
       "role": "Magento Developer",
-      "desc": "Aimed at improving both my frontend and backend development skills, as well as communication skills with my colleagues and customers. Have worked in a real Agile environment and created a new Dashboard for the Support Team."
+      "desc": "Further developing my frontend and backend programming skills while gaining e-commerce experience. Working in a real Agile environment and building a Dashboard for the Support team."
     },
     "infi": {
       "company": "Infi",
       "role": "Developer",
-      "desc": "Aimed at improving my backend skills by writing a thesis about gaining insights into KPI's with EventStore. Using Event Sourcing to fetch data with cron jobs. Also made an user interface."
+      "desc": "Gaining insight into KPIs and statistics with EventStore. A user interface has been created and Event Sourcing has been used to retrieve data with cron jobs."
     },
     "xenon": {
       "company": "Xenon IT",
