@@ -118,7 +118,7 @@ import moment from "moment/moment";
 import {DATE_FORMAT, RAW_DATE_FORMAT} from "../composables/useGitFlow";
 
 const languageIcons = ["js", "php", "java", "python", "csharp", "ts", "html", "css"]
-const frontendFrameworkIcons = ["vue", "nuxt", "angular", "jquery", "alpine", "knockout", "sass", "tailwind", "bootstrap"]
+const frontendFrameworkIcons = ["vue", "nuxt", "angular", "react", "jquery", "alpine", "knockout", "sass", "tailwind", "bootstrap"]
 const backendFrameworkIcons = ["magento", "node", "spring", "laravel", "kotlin", "quarkus", "fastapi", "aspnet"]
 const databasesIcons = ["mysql", "mongodb", "firebase", "eventstore", "git", "docker"]
 
