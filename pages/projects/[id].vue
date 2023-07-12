@@ -8,9 +8,7 @@
                 </div>
             </template>
             <Content v-if="project" class="gap-2 md:gap-4">
-                <img :src="project.img"
-                     :alt="project.title"
-                     class="aspect-[3/2] object-cover max-w-full rounded-[25px]"/>
+                <p class="text-base px-0 md:text-[1.4rem]">{{ $t(project.desc) }}</p>
                 <div class="flex flex-row flex-wrap gap-2 md:gap-4 pt-1">
                     <SkillChip
                         v-for="skill in getLanguages(project.stack)"
@@ -18,7 +16,6 @@
                         :name="skill.display_name"
                         :icon="skill.name" />
                 </div>
-                <p class="text-base px-0 py-4 md:text-[1.4rem] md:pt-8">{{ $t(project.desc) }}</p>
                 <div class="flex flex-row gap-8">
                     <a
                         v-if="project.github"
@@ -45,6 +42,9 @@
                         <div>{{ $t("projects.viewonwebsite") }}</div>
                     </a>
                 </div>
+                <nuxt-img :src="project.imglong"
+                     :alt="project.title" format="webp"
+                     class="object-cover max-w-full rounded-[25px] shadow"/>
             </Content>
             <Content v-else>
                 <h3>Project not found!</h3>
