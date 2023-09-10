@@ -1,5 +1,25 @@
 [
   {
+    "id": "klm",
+    "type": "Work",
+    "role": "timeline.klm.role",
+    "company": "KLM",
+    "desc": "timeline.klm.desc",
+    "startdate": "1-9-2023",
+    "enddate": null,
+    "line": 2,
+    "parentline": 1,
+    "homepage": true,
+    "stack": [
+      "js",
+      "ts",
+      "sass",
+      "angular",
+      "java",
+      "spring"
+    ]
+  },
+  {
     "id": "xenon",
     "type": "Work",
     "role": "timeline.xenon.role",
@@ -26,7 +46,7 @@
     "company": "Bold Commerce",
     "desc": "timeline.bold2.desc",
     "startdate": "1-10-2022",
-    "enddate": null,
+    "enddate": "30-7-2023",
     "line": 2,
     "homepage": true,
     "stack": [
@@ -50,7 +70,7 @@
     "startdate": "1-2-2022",
     "enddate": "29-7-2022",
     "line": 3,
-    "homepage": true,
+    "homepage": false,
     "stack": [
       "csharp",
       "aspnet",
@@ -95,7 +115,7 @@
     "startdate": "1-2-2020",
     "enddate": "30-8-2020",
     "line": 3,
-    "homepage": true,
+    "homepage": false,
     "stack": [
       "js",
       "sass",

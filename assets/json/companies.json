@@ -1,5 +1,15 @@
 [
   {
+    "name": "KLM",
+    "img": "./img/company/klm.webp",
+    "url": "https://www.klm.nl/?ref=omererdem.nl"
+  },
+  {
+    "name": "Bold Commerce",
+    "img": "./img/company/boldcommerce.webp",
+    "url": "https://www.boldcommerce.nl/?ref=omererdem.nl"
+  },
+  {
     "name": "Infi",
     "img": "./img/company/infi.webp",
     "url": "https://infi.nl/?ref=omererdem.nl"
@@ -8,11 +18,6 @@
     "name": "The Mobile Company",
     "img": "./img/company/themobilecompany.webp",
     "url": "https://themobilecompany.com/?ref=omererdem.nl"
-  },
-  {
-    "name": "Bold Commerce",
-    "img": "./img/company/boldcommerce.webp",
-    "url": "https://www.boldcommerce.nl/?ref=omererdem.nl"
   },
   {
     "name": "Digidot",

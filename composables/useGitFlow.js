@@ -37,9 +37,12 @@ export const sortedGitItemsMobile = ($t, isHomePage = false) => {
 
 export const sortedGitItemsDesktop = ($t, isHomePage = false) => {
     let items = [];
+    let continuedItem = null;
 
     timeline.forEach((x) => {
         if (isHomePage && !x.homepage) return;
+
+        if (x.enddate === null) continuedItem = x;
 
         const startDate = moment(x.startdate, RAW_DATE_FORMAT);
         const endDate = moment(x.enddate, RAW_DATE_FORMAT);
@@ -77,6 +80,14 @@ export const sortedGitItemsDesktop = ($t, isHomePage = false) => {
     });
 
     items.push(initialCommit($t));
+
+    items.map(x => {
+        if (moment(x.date, RAW_DATE_FORMAT).isAfter(moment(continuedItem.startdate, RAW_DATE_FORMAT))) {
+            x.continuedLine = continuedItem.line;
+            x.spacing--;
+        }
+        return x;
+    })
 
     return sortByDates(items);
 }

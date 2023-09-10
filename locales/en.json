@@ -27,7 +27,7 @@
   "about": {
     "title": "Who am I ?",
     "resume": "View my resume",
-    "paragraph1": "My name is Ömer Erdem, a Software Developer graduated from the Amsterdam, University of Applied Sciences. I am currently 24 years young and working at Bold Commerce as a Full Stack Magento Developer and at Xenon IT as Founder",
+    "paragraph1": "My name is Ömer Erdem, a Software Developer graduated from the Amsterdam, University of Applied Sciences. I am currently 24 years young and working at KLM as a Developer and at Xenon IT as Founder",
     "paragraph2": "I am a dedicated web and software developer who daily seeks out new projects and challenges. My ultimate aim is to become a Full Stack developer, while having a strong passion for programming. I am not afraid to dive deep into code and explore new technologies. Making a positive impact on the world is important to me, even if it goes unnoticed.",
     "hobbies": "My hobbies are gaming, driving around, listening to good (bass-boosted) music, playing billiards and experimenting with code."
   },
@@ -161,6 +161,11 @@
       "company": "Xenon IT",
       "role": "Founder",
       "desc": "My independent company where I apply web solutions to automation, statistics and web pages."
+    },
+    "klm": {
+      "company": "KLM",
+      "role": "Developer",
+      "desc": "Building and supporting crucial IT-solutions, which are used by the staff of KLM."
     }
   },
   "socials": {

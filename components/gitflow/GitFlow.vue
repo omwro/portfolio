@@ -79,6 +79,11 @@
                         <GitFlowVerticalLine v-else :index="i" :color="colors[i]" :key="i"/>
                     </template>
                 </template>
+                <GitFlowBlock v-if="item.continuedLine" mobile>
+                    <GitFlowTransparentBackground :color="colors[item.line]"/>
+                    <GitFlowVerticalLine :index="item.continuedLine" top :color="colors[item.continuedLine]"/>
+                    <GitFlowVerticalLine :index="item.continuedLine" bottom :color="colors[item.continuedLine]"/>
+                </GitFlowBlock>
             </div>
             <GitFlowMessage v-if="item.msg"
                      :spacing="item.spacing"
